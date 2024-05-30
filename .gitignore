@@ -4,6 +4,7 @@ benchmark/output/*
 benchmark/source/*
 logs/*
 
+
 !benchmark/output/example
 
 !benchmark/source/ml-binary-001
@@ -11,3 +12,6 @@ logs/*
 !benchmark/source/ml-binary-003
 !benchmark/source/ml-binary-004
 !benchmark/source/ml-binary-005
+
+*.DS_Store
+*.pyc

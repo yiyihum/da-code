@@ -25,8 +25,11 @@ logger = logging.getLogger("spider2")
 
 # TODO: 
 # add time limit for each action
-# add length limit for each ovbservation
+# add length limit for each ovbservation  eg. awk 'NR>=10 && NR<=20' test.csv
 # process contant policy violation
+# create file & edit 加一个检查 比如符合csv的格式
+# - edit line of file
+
 
 class PromptAgent:
     def __init__(
@@ -184,7 +187,7 @@ class PromptAgent:
 
         done = False
         step_idx = 0
-        obs = "you are in the folder."
+        obs = "You are in the folder now."
 
         while not done and step_idx < self.max_steps:
 
