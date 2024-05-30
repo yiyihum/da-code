@@ -1,0 +1,17 @@
+{
+  "id": "ml-binary-001",
+  "config":{
+      "task": "machinelearning",
+      "type": "binary classification",
+      "competition": false
+  },
+  "func":[
+      "compare_ml"
+  ],
+  "result":[
+      {
+          "file": "result.csv"
+      }
+  ],
+  "options": [{}]
+}

@@ -5,29 +5,6 @@ import logging, yaml, re
 import pandas as pd
 from sklearn.metrics import f1_score
 from sklearn.preprocessing import LabelEncoder
-import sys, threading, os
-from pathlib import Path
-here = Path(__file__).absolute().parent.parent
-sys.path.append(str(here.parent))
-from controllers.python import PythonController
-# from envs.spider2 import DEFAULT_WORK_DIR
-
-DEFAULT_WORK_DIR = '/workspace'
-LABELS = ['label', 'labels', 'output','result', 'results', 'Label', 'Labels', 'Output',"Result","Results"]
-
-def run_command(container, cmd, result_holder, work_dir=DEFAULT_WORK_DIR):
-    result = container.exec_run(cmd, workdir=work_dir)
-    result_holder.append(result)
-
-def exec_with_timeout(container, cmd, timeout, work_dir):
-    result_holder = []
-    thread = threading.Thread(target=run_command, args=(container, cmd, result_holder, work_dir))
-    thread.start()
-    thread.join(timeout)
-    if thread.is_alive():
-        print("Command timed out")
-        return None
-    return result_holder[0]
 
 
 @dataclass
@@ -59,14 +36,7 @@ class CalculateML:
                         break
             result = df[label].tolist() if label else []
         return result
-    @staticmethod
-    def read_txt(filename):
-        try:
-            with open(filename, 'r') as f:
-                result = f.readlines()
-        except:
-            result = []
-        return result
+   
     @staticmethod
     def calculate_labels(hyp_label, ref_label, threshold=0.9):
         labels = set(hyp_label)
@@ -79,57 +49,8 @@ class CalculateML:
         else:
             return score / threshold
         
-    @staticmethod
-    def find_py(mnt_dir):
-        py_files = [os.path.join(mnt_dir, py_path) for py_path in os.listdir(mnt_dir) \
-            if os.path.isfile(os.path.join(mnt_dir, py_path)) and py_path.endswith('.py')]
-        assert len(py_files) > 0, f"{mnt_dir} contains no py files"
-        '''
-        Find the py file used to generate the result image
-        '''
-        def is_sklearn(filename: str):
-            with open(filename, 'r') as f:
-                file_content = f.readlines()
-            stores = ['sklearn', 'xgboost']
-            _find = False
-            for line in file_content:
-                for store in stores:
-                    if store in line:
-                        _find = True
-                        break
-            return _find
-    
-        plt_files = [py_path for py_path in py_files if is_sklearn(py_path)]
-        return plt_files
-
-    @classmethod
-    def evaluate_time(cls, py_file: str, mnt_dir: str, controller: PythonController, threshold: float=60):
-        py_file = py_file.replace(mnt_dir, DEFAULT_WORK_DIR) 
-        cmd = f'bash -c "time python {py_file}"'
-        outputs = exec_with_timeout(container=controller.container, cmd=cmd, timeout=2 * threshold, work_dir=DEFAULT_WORK_DIR)
-        output = outputs.output.decode('utf-8')
-        use_time = cls.extract_real_time(output)
-        if use_time:
-            if use_time < threshold:
-                return 1.0
-            else:
-                return (2*threshold - use_time) / threshold
-        else:
-            return 0.0 
-
-    @staticmethod
-    def extract_real_time(log_string):
-        pattern = r"real\s+(\d+m\d+\.\d+s)"
-        match = re.search(pattern, log_string)
-        if match:
-            time_string =  match.group(1)
-        else:
-            return 0
-        minutes, seconds = map(float, re.findall(r'\d+\.\d+|\d+', time_string))
-        return minutes * 60 + seconds
         
-
-def compare_ml(result: str, expected: str|List[str], **options) -> dict:
+def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
     """ 
     @args:
         result(str): the pred text file

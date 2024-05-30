@@ -16,7 +16,7 @@ class Evaluator:
         self.output_dir = output_dir
         self.gold_dir = gold_dir
 
-    def get_result_file(self, results: List, dir: str):
+    def get_result_file(self, results: List, dir: str, isgold: bool):
         results = results if isinstance(results, list)\
             else [results]
         result_files = []
@@ -25,11 +25,13 @@ class Evaluator:
             files = result['file'] if isinstance(result['file'], list) \
                 else [result['file']]
             if multi:
-                files = [os.path.join(dir, file) for file in files]
+                files = [os.path.join(dir, file) for file in files] if not isgold \
+                    else [os.path.join(dir, os.path.basename(file)) for file in files]
                 result_files.append(files)
             else:
                 for file in files:
-                    result_files.append(file)
+                    file = file if not isgold else os.path.basename(file)
+                    result_files.append(os.path.join(dir, file))
         return result_files
 
     def _get_eval_config_info(self, eval_config: Dict[str, Any]):
@@ -47,14 +49,15 @@ class Evaluator:
         gold_id_dir = os.path.join(self.gold_dir, id)
         assert os.path.exists(output_id_dir), f'{output_id_dir} does not exist'
         assert os.path.exists(gold_id_dir), f'{gold_id_dir} does not exist'
+        config = eval_config.get('config', {})
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\
             else [getattr(metrics, eval_config["func"])]
         metric_conj: str = eval_config.get("conj", "and")  # take conjunction of multiple metrics
         result = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
-        output_results = self.get_result_file(result, dir=output_id_dir)
-        gold_results = self.get_result_file(result, dir=gold_id_dir)
+        output_results = self.get_result_file(result, dir=output_id_dir, isgold=False)
+        gold_results = self.get_result_file(result, dir=gold_id_dir, isgold=True)
         metric_options: Union[List[Dict[str, Any]], Dict[str, Any]] = \
             [opt if opt else {} for opt in eval_config["options"]] \
             if isinstance(eval_config.get("options", {}), list) \
@@ -70,7 +73,6 @@ class Evaluator:
         
         return metric, metric_conj, metric_options, output_results, gold_results
     
-        
     def evaluate(self, env_config: Dict|str):
         """
         Evaluate task

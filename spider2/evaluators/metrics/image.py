@@ -51,24 +51,24 @@ class ImageTest:
             raise \
             ValueError('please check your key, must in [figsize, type, labels, x_label, y_label, title, color, xtick_labels, ytick_lables]')
             
+    @classmethod
+    def scale_to_percentage(cls, arr):
+        total_sum = np.sum(arr)
+        return arr / total_sum
 
     @classmethod
-    def compare_numpy(cls, hyp_np: np.ndarray, ref_np: np.ndarray, 
-        hyp_order: list, ref_order: list , tol=1e-5):
+    def compare_numpy(cls, hyp_np: np.ndarray, 
+        ref_np: np.ndarray, tol=1e-5):
         if hyp_np.shape != ref_np.shape:
-            return [], []
-        if len(hyp_order) and len(ref_order):
-            if np.allclose(hyp_np[list(hyp_order)], ref_np[list(ref_order)], atol=tol):
-                return list(hyp_order), list(ref_order)
-            else:
-                return [], []
-        hyp_order = np.argsort(hyp_np)
-        sorted_hyp = hyp_np[hyp_order]
-        ref_order = np.argsort(ref_np)
-        sorted_ref = ref_np[ref_order]
-        if np.allclose(sorted_hyp, sorted_ref, atol=1e-5):
-            return list(hyp_order), list(ref_order)
-        return [], []
+            return False
+        hyp_np = cls.scale_to_percentage(hyp_np)
+        ref_np = cls.scale_to_percentage(ref_np)
+        hyp_np = np.sort(hyp_np, axis=None).reshape(hyp_np.shape)
+        ref_np = np.sort(ref_np, axis=None).reshape(ref_np.shape)
+        if np.allclose(hyp_np, ref_np, atol=tol):
+            return True
+        else:
+            return False
 
     @staticmethod
     def test_image(results: str | List[str], golds: str | List[str]):
@@ -97,23 +97,15 @@ class ImageTest:
             return (0.0, {'data': False})
         assert os.path.exists(gold_np), f'the gold file {gold_np} does not exist'
         results, golds = np.load(result_np), np.load(gold_np)
-        output, hyp_order, ref_order = [], [], []
+        output = []
         for idx, result in enumerate(results):
             find = False
             result = np.array(result) if isinstance(result, list) else result
             for row in range(golds.shape[0]):
                 gold = golds[row]
-                hyp_temp_order, ref_temp_order = cls.compare_numpy(hyp_np=result, ref_np=gold, 
-                    hyp_order=hyp_order, ref_order=ref_order)
-                if len(hyp_temp_order) and len(ref_temp_order) and idx == 0:
-                    hyp_order, ref_order = hyp_temp_order, ref_temp_order
-                    find = True
+                find = cls.compare_numpy(hyp_np=result, ref_np=gold)
+                if find:
                     break
-                elif len(hyp_temp_order) and len(ref_temp_order):
-                    find = True
-                    break
-            if not len(hyp_order) and not len(ref_order) and idx != 0:
-                find = False
             output.append(find)
 
         return (1.0, {'data': True}) if all(output) else (0.0, {'data': False})
