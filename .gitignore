@@ -4,11 +4,7 @@ benchmark/output/*
 benchmark/source/*
 logs/*
 
-!benchmark/output/azure-ML-test/ml-binary-001
-!benchmark/output/azure-ML-test/ml-binary-002
-!benchmark/output/azure-ML-test/ml-binary-003
-!benchmark/output/azure-ML-test/ml-binary-004
-!benchmark/output/azure-ML-test/ml-binary-005
+!benchmark/output/example
 
 !benchmark/source/ml-binary-001
 !benchmark/source/ml-binary-002
