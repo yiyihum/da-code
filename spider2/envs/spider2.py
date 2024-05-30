@@ -96,10 +96,8 @@ class Spider2Env(gym.Env):
         self.mnt_dir = mnt_dir
         self.work_dir = DEFAULT_WORK_DIR
         self.kwargs = env_config['init_args']
-        
+
         self._set_task_info(task_config)
-        
-        
         logger.info("Initializing...")
         self._construct_container()
         
@@ -247,7 +245,9 @@ class Spider2Env(gym.Env):
         post_process_files = []
         for post_process_f in self.post_process_func:
             process_function = getattr(configs, post_process_f, None)
-            post_process_files.append(process_function(self.mnt_dir, self.controller))
+            post_files = process_function(self.mnt_dir, self.controller)
+            post_files = post_files if isinstance(post_files, list) else list(post_files)
+            post_process_files.extend(process_function(self.mnt_dir, self.controller))
 
         return {**diff_files, "post_process_files": post_process_files}
         

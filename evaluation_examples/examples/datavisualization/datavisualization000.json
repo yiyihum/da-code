@@ -33,32 +33,5 @@
     ],
     "post_process": [
         "plot_process"
-    ],
-    "evaluator": {
-        "postconfig": [
-            {
-              "type": "download_and_unzip",
-              "parameters": {
-                "url": "https://drive.usercontent.google.com/download?id=1k0KsfscuXYmS72LLGvZ4oK0I3c_hNvVK&export=download&authuser=0&confirm=t",
-                "path": "/workspace/gold.zip"
-              }
-            }
-        ],
-        "func": [
-            "compare_image"
-        ],
-        "result": [
-            {
-                "type": "docker_file",
-                "path": "/workspace/result.png"
-            }
-        ],
-        "expected": [
-            {
-                "multi": true, 
-                "type": "docker_file",
-                "path": ["/workspace/gold/result.png", "/workspace/gold/evaluation.yaml"]
-            }
-        ]
-    }
+    ]
 }

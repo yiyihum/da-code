@@ -37,16 +37,21 @@ def human_agent():
     """
     Runs the Gym environment with human input.
     """    
-    data_path = './evaluation_examples/examples/dataanalysis/dataanalysis001lfy.json'
+    data_path = './evaluation_examples/examples/datavisualization/datavisualization000.json'
     with open(data_path, "r") as f:
         data = json.load(f)
 
     container_name = 'spider2'
     data['init_args']['name'] = container_name
 
+    mnt_dir = '/Users/stewiepeter/Desktop/VsProjects/VaftBench/dabench/benchmark/output/gpt-4-20240530-144050'
+
+    os.makedirs(os.path.join(mnt_dir, 'dabench'), exist_ok=True)
     env = Spider2Env(
         task_config=data,
-        cache_dir="./cache"
+        env_config=data,
+        cache_dir="./cache",
+        mnt_dir= mnt_dir
     )
     
     logger.info('Task input:' + data['instruction'])
@@ -56,9 +61,8 @@ def human_agent():
     input("Press Enter to finish human operation.")
     print("Time elapsed of human operation: %.2f" % (time.time() - human_start_time))
 
-
     while True:
-        score = env.evaluate()
+        score = env.post_process()
         print(score)
         import pdb; pdb.set_trace()
 

@@ -117,7 +117,7 @@ def test(
     )
     
     
-    task_config_path = './benchmark/ML.jsonl'
+    task_config_path = './benchmark/Visual.jsonl'
     with open(task_config_path, "r") as f:
         task_configs = [json.loads(line) for line in f]
 
