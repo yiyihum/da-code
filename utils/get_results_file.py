@@ -2,8 +2,8 @@ import os
 import json
 import glob
 
-output_path = "./benchmark/output/azure-ML-test/" 
-result_path = "./benchmark/results/azure-ML-test/" 
+output_path = "./benchmark/output/azure-visual-test/" 
+result_path = "./benchmark/results/azure-visual-test/" 
 os.makedirs(output_path, exist_ok=True)
 
 result_json_path = output_path + "*/dabench/result.json"

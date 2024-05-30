@@ -63,55 +63,43 @@ import numpy as np
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-# Load data
-add = "./AppleStore.csv"
-data = pd.read_csv(add)
+# Read the dataset
+df = pd.read_csv('AppleStore.csv')
 
-# Filter out outliers where price is greater than $50
-outlier = data[data.price > 50][['track_name', 'price', 'prime_genre', 'user_rating']]
+# Define the categories of interest
+categories = ['Education', 'Entertainment', 'Games', 'Others', 'Photo & Video']
 
-# Identify the top categories
-s = data.prime_genre.value_counts().index[:4]
+# Initialize a dictionary to hold the counts for free and paid apps
+category_counts = {category: {'free': 0, 'paid': 0} for category in categories}
 
-# Define a function to categorize each app
-def categ(x):
-    if x in s:
-        return x
+# Other category will include all apps not in the predefined categories
+other_category = 'Others'
+
+# Process the data
+for index, row in df.iterrows():
+    category = row['prime_genre']
+    if category not in categories:
+        category = other_category
+    
+    if row['price'] == 0.0:
+        category_counts[category]['free'] += 1
     else:
-        return "Others"
+        category_counts[category]['paid'] += 1
 
-# Apply the categorization function
-data['Category'] = data['prime_genre'].apply(categ)
+# Calculate proportions
+total_counts = {category: sum(counts.values()) for category, counts in category_counts.items()}
+tuple_free = [category_counts[category]['free'] / total_counts[category] for category in categories]
+tuple_paidapps = [category_counts[category]['paid'] / total_counts[category] for category in categories]
 
-# Define the categories order
-categories_order = ['Education', 'Entertainment', 'Games', 'Others', 'Photo & Video']
-
-# Filter the dataframe to only include the specified categories
-filtered_data = data[data['Category'].isin(categories_order)]
-
-# Add a new column to classify apps into 'Free' or 'Paid'
-filtered_data['type'] = filtered_data['price'].apply(lambda x: 'Free' if x == 0 else 'Paid')
-
-# Group the data by category and type
-grouped = filtered_data.groupby(['Category', 'type']).size().unstack().fillna(0)
-
-# Reorder the dataframe according to the specified order
-grouped = grouped.reindex(categories_order)
-
-# Get the number of free and paid apps in tuples
-tuple_free = tuple(grouped['Free'])
-tuple_paidapps = tuple(grouped['Paid'])
-
-# Plot setup
 plt.figure(figsize=(15,8))
-N = 5
+N = len(categories)
 ind = np.arange(N)    # the x locations for the groups
-width = 0.56          # the width of the bars: can also be len(x) sequence
+width = 0.56   # the width of the bars
 
 p1 = plt.bar(ind, tuple_free, width, color='#45cea2')
 p2 = plt.bar(ind, tuple_paidapps, width, bottom=tuple_free, color='#fdd470')
 
-plt.xticks(ind, tuple(grouped.index.tolist()))
+plt.xticks(ind, categories)
 plt.legend((p1[0], p2[0]), ('Free', 'Paid'))
 plt.savefig('./result.png')
 
