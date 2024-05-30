@@ -65,11 +65,14 @@ def config() -> argparse.Namespace:
     
     # example config
     parser.add_argument("--domain", type=str, default="all")
-    parser.add_argument("--test_all_meta_path", type=str, default="evaluation_examples/test_all.json")
+    parser.add_argument("--test_all_meta_path", type=str, default="./benchmark/ML.jsonl")
+    parser.add_argument("--exmple_range", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
+    parser.add_argument("--skip_existing", action="store_true", default=False)
+    parser.add_argument("--retry_failed", action="store_true", default=False)
+
 
     # output related
     parser.add_argument("--output_dir", type=str, default="./benchmark/output")
-    parser.add_argument("--skip_existing", action="store_true", default=False)
     args = parser.parse_args()
 
     return args
@@ -116,10 +119,19 @@ def test(
         max_steps=args.max_steps,
     )
     
-    
-    task_config_path = './benchmark/Visual.jsonl'
-    with open(task_config_path, "r") as f:
+    ## load task configs
+    assert os.path.exists(args.test_all_meta_path) and args.test_all_meta_path.endswith(".jsonl"), f"Invalid test_all_meta_path, must be a valid jsonl file: {args.test_all_meta_path}"
+    with open(args.test_all_meta_path, "r") as f:
         task_configs = [json.loads(line) for line in f]
+    if args.exmple_range != "all":
+        if "-" in args.exmple_range:
+            start, end = map(int, args.exmple_range.split("-"))
+            task_configs = task_configs[start:end]
+        else:
+            indices = list(map(int, args.exmple_range.split(",")))
+            task_configs = [task_configs[i] for i in indices]
+    
+
 
     if args.suffix == "":
         experiment_id = args.model + "-" +datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -136,6 +148,14 @@ def test(
         if args.skip_existing and os.path.exists(result_json_path):
             logger.info("Skipping %s", instance_id)
             continue
+        if args.retry_failed and os.path.exists(result_json_path):
+            with open(result_json_path, "r") as f:
+                result = json.load(f)
+                if result["finished"]:
+                    logger.info("Skipping %s", instance_id)
+                    continue
+            logger.info("Retrying %s", instance_id)
+            
         if os.path.exists(output_dir):
             os.system(f"rm -rf {output_dir}")
             logger.info("Removed existing %s", output_dir)

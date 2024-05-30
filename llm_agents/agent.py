@@ -24,12 +24,14 @@ import tiktoken
 logger = logging.getLogger("spider2")
 
 # TODO: 
-# add time limit for each action
-# add length limit for each ovbservation  eg. awk 'NR>=10 && NR<=20' test.csv
-# process contant policy violation
-# create file & edit 加一个检查 比如符合csv的格式
-# - edit line of file
+# add time limit for each action ⭕️
+# add length limit for each ovbservation  ✅
+# process contant policy violation ⭕️
+# process massage too long ⭕️
+# create file & edit 加一个检查 比如符合csv的格式 ⭕️
+# - edit line of file ⭕️
 
+MAX_OBSERVATION_LENGTH = 1000
 
 class PromptAgent:
     def __init__(
@@ -175,6 +177,7 @@ class PromptAgent:
             action = action_cls.parse_action_from_text(action_string)
             if action is not None:
                 output_action = action
+        # TODO: add a default action if no action is parsed
         if output_action is None:
             output_action = ExecuteCode(code=action_string)
         self.actions.append(output_action)
@@ -601,10 +604,18 @@ class PromptAgent:
             done = True
         else:
             raise ValueError(f"Unrecognized action type {action.action_type} !")
+        
+        observation = self._handle_observation(observation)
         logger.info("Observation: %s", observation)
         return observation, done
-        
-        
+    
+    def _handle_observation(observation):
+        max_length = MAX_OBSERVATION_LENGTH  
+        if len(observation) > max_length:
+            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated]\n"
+            return truncated_observation
+        return observation
+
         
     def create_file_action(self, action: CreateFile):
         try:
