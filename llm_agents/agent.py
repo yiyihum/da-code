@@ -31,7 +31,7 @@ logger = logging.getLogger("spider2")
 # create file & edit 加一个检查 比如符合csv的格式 ⭕️
 # - edit line of file ⭕️
 
-MAX_OBSERVATION_LENGTH = 1000
+MAX_OBSERVATION_LENGTH = 2000
 
 class PromptAgent:
     def __init__(
@@ -609,10 +609,10 @@ class PromptAgent:
         logger.info("Observation: %s", observation)
         return observation, done
     
-    def _handle_observation(observation):
+    def _handle_observation(self, observation):
         max_length = MAX_OBSERVATION_LENGTH  
         if len(observation) > max_length:
-            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated]\n"
+            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated; Try other actions to get the left part.]"
             return truncated_observation
         return observation
 

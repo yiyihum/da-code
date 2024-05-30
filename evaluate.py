@@ -2,12 +2,12 @@ import argparse
 from tqdm import tqdm
 from spider2.evaluators.evaluation import Evaluator
 
-output_dir = './benchmark/output/example'
+output_dir = './benchmark/results/azure-DV-test'
 gold_dir = './benchmark/gold'
 
 evalutor = Evaluator(output_dir=output_dir, gold_dir=gold_dir)
 
-eval_json = './evaluation_examples/examples/datavisualization/evaluation000.json'
+eval_json = 'benchmark/configs/evaluation000.json'
 
 score, info = evalutor.evaluate(env_config=eval_json)
 print(score) # 1.0

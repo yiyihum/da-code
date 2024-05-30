@@ -65,7 +65,7 @@ def config() -> argparse.Namespace:
     
     # example config
     parser.add_argument("--domain", type=str, default="all")
-    parser.add_argument("--test_all_meta_path", type=str, default="./benchmark/ML.jsonl")
+    parser.add_argument("--test_all_meta_path","-t",type=str, default="benchmark/configs/ML.jsonl")
     parser.add_argument("--exmple_range", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--skip_existing", action="store_true", default=False)
     parser.add_argument("--retry_failed", action="store_true", default=False)
