@@ -1,0 +1,34 @@
+{
+    "id": "ga007",
+    "source": "https://towardsdatascience.com/looking-for-power-user-journeys-in-e-commerce-746f5f68b697",
+    "image_name": "bash-py-postgres",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "I am using GA4 to analyze user click time. Now that I have completed the data conversion, the code is query.py. You need to add two new fields according to the given data model design. Please complete the final data model, just show the first 10 records and store the answer in 'result.csv'.",
+    "hardness": "level2",
+    "config": [
+        {
+            "type": "download_and_execute",
+            "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1-vrMXB8Y0l5amkTF0eqD6dMGKfurjTZY&export=download&authuser=0&confirm=t",
+                "path": "/workspace/init.sh"
+            }
+        }
+    ],
+    "evaluator": {
+        "func": "compare_csv",
+        "result": {
+            "type": "docker_file",
+            "path": "/workspace/result.csv"
+        },
+        "expected": {
+            "type": "cloud_file",
+            "path": "https://drive.usercontent.google.com/download?id=1QXI_GTVL0xCE1SlppyCfqZ8BRHhWwkvI&export=download&authuser=0&confirm=t",
+            "dest": "/workspace/gold.csv"
+        }
+    }
+}

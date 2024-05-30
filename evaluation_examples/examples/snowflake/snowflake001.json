@@ -1,0 +1,34 @@
+{
+    "id": "snowflake001",
+    "source": "https://medium.com/firebase-developers/using-the-unnest-function-in-bigquery-to-analyze-event-parameters-in-analytics-fb828f890b42",
+    "image_name": "bash-py-postgres",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "The firebase public sample data for Flood-it game is stored in Bigquery. Figure out the average score and standard deviation for each game board type for 2018-09-15. We have provided you with some query examples and query results for this database. Note that the database is very complex. Please refer to this information to write SQL and get the answer.",
+    "hardness": "level2",
+    "config": [
+        {
+            "type": "download_and_execute",
+            "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1u8sm-uM4Yz7n2FkSBD3gHLjCZkMHtraC&export=download&authuser=0&confirm=t",
+                "path": "/workspace/init.sh"
+            }
+        }
+    ],
+    "evaluator": {
+        "func": "compare_csv",
+        "result": {
+            "type": "docker_file",
+            "path": "/workspace/result.csv"
+        },
+        "expected": {
+            "type": "cloud_file",
+            "path": "https://drive.usercontent.google.com/download?id=1XbVkxl06hAvIEbswzf4J1EgagmonXOrK&export=download&authuser=0&confirm=t",
+            "dest": "/workspace/gold.csv"
+        }
+    }
+}

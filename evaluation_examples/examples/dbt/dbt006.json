@@ -1,0 +1,38 @@
+{
+    "id": "dbt006",
+    "source": "https://github.com/dbt-labs/jaffle_shop",
+    "image_name": "bash-py-postgres-dbt",
+    "data_path": "benchmark/data/dbt001",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "This is a dbt project for modeling jaffle_shop data. The full data working flow is shown in the figure. I have encountered some bugs now, Encountered an error: Compilation Error Documentation for 'model.jaffle_shop.orders' depends on doc 'orders_status'  which was not found. Please help me improve this project and supplement these codes. The goal is that “dbt run” can be executed correctly.",
+    "hardness": "level4",
+    "config": [
+        {
+            "type": "download_and_execute",
+            "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1LjhHTAatrdTwX_QsO9hMZArRJWzZ_xBt&export=download&authuser=0&confirm=t",
+                "path": "/workspace/init.sh"
+            }
+        }
+    ],
+    "evaluator": {
+        "func": "check_include_exclude",
+        "result": {
+            "type": "docker_script_output",
+            "url": "https://drive.usercontent.google.com/download?id=1U7npRKhoe1ms3Nkj7OVT6x-w9K9KzZtL&export=download&authuser=0&confirm=t",
+            "dest": "/workspace/eval.sh"
+        },
+        "expected": {
+            "type": "rule",
+            "rules": {
+                "include": ["succeed"],
+                "exclude": ["failed"]
+            }
+        }
+    }
+}

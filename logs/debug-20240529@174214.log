@@ -1,0 +1,5 @@
+[1;33m[2024-05-29 17:42:14,990 [31mINFO [32mrun/86-MainProcess[1;33m] [0mArgs: Namespace(max_steps=15, max_memory_length=15, suffix='ML-test', test_config_base_dir='evaluation_examples', model='azure', temperature=1.0, top_p=0.9, max_tokens=1500, stop_token=None, domain='all', test_all_meta_path='evaluation_examples/test_all.json', output_dir='./benchmark/output', skip_existing=True)
+[1;33m[2024-05-29 17:42:14,991 [31mINFO [32mrun/135-MainProcess[1;33m] [0mSkipping azure-ML-test/ml-binary-001
+[1;33m[2024-05-29 17:42:14,991 [31mINFO [32mrun/135-MainProcess[1;33m] [0mSkipping azure-ML-test/ml-binary-002
+[1;33m[2024-05-29 17:42:14,991 [31mINFO [32mrun/135-MainProcess[1;33m] [0mSkipping azure-ML-test/ml-binary-003
+[1;33m[2024-05-29 17:42:14,992 [31mINFO [32mspider2/103-MainProcess[1;33m] [0mInitializing...

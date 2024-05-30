@@ -1,0 +1,61 @@
+{
+    "id": "datavisulization001",
+    "source": "https://www.kaggle.com/code/adityapatil673/visual-analysis-of-apps-on-applestore",
+    "image_name": "dabench-image",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "categories: 'Education', 'Entertainment', 'Games', 'Others', and 'Photo & Video'. Please plot this information on a bar chart, following the specific order of categories mentioned. Complete the code below to accomplish this task.",
+    "hardness": "level1",
+    "config": [
+        {
+            "type": "download",
+            "parameters": {
+                "files": [
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=13_6A_Ia374hAwSRsPLSMoz4bDBaAmRc7&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/analysis.txt"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1hX5uKCyq9awQc48SFpmsZfSGalrWUf-X&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/appStore_description.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1pv4YJ5Rc065mc9ml4vHsWBBIPsaD3Hnn&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/AppleStore.csv"
+                  }
+                ]
+            }
+        }
+    ],
+    "evaluator": {
+        "postconfig": [
+            {
+              "type": "download_and_unzip",
+              "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1k0KsfscuXYmS72LLGvZ4oK0I3c_hNvVK&export=download&authuser=0&confirm=t",
+                "path": "/workspace/gold.zip"
+              }
+            }
+        ],
+        "func": [
+            "compare_image"
+        ],
+        "result": [
+            {
+                "type": "docker_file",
+                "path": "/workspace/result.png"
+            }
+        ],
+        "expected": [
+            {
+                "multi": true, 
+                "type": "docker_file",
+                "path": ["/workspace/gold/result.png", "/workspace/gold/evaluation.yaml"]
+            }
+        ]
+    }
+}

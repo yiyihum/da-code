@@ -1,0 +1,34 @@
+{
+    "id": "ga004",
+    "source": "https://developers.google.com/analytics/bigquery/basic-queries?hl=en",
+    "image_name": "bash-py-postgres",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "I want to get the Average number of pageviews by purchaser type (purchasers vs non-purchasers) in December 2020. The following is my preliminary code. Please help me complete it. This database is very large and you may need to understand the table schema somehow. Here are the results corresponding to October and November 2020. The answer should be saved in 'result.csv'.",
+    "hardness": "level2",
+    "config": [
+        {
+            "type": "download_and_execute",
+            "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1QRsjNTEGdTjvyX91Ogwk5tKyPCzQTM8w&export=download&authuser=0&confirm=t",
+                "path": "/workspace/init.sh"
+            }
+        }
+    ],
+    "evaluator": {
+        "func": "compare_csv",
+        "result": {
+            "type": "docker_file",
+            "path": "/workspace/result.csv"
+        },
+        "expected": {
+            "type": "cloud_file",
+            "path": "https://drive.usercontent.google.com/download?id=1cKikFqW__3vNFPbGLC7MoQ_PSC8-j-R5&export=download&authuser=0&confirm=t",
+            "dest": "/workspace/gold.csv"
+        }
+    }
+}

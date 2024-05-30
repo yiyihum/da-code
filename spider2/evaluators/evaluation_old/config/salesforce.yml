@@ -1,0 +1,11 @@
+client_id: 3MVG9pRzvMkjMb6m8aGuYsrUbfQcST4Am_5UJM2kE4hFAbbwb7mCly3OXLIaG_4dHSVGhV2Wz2q1EAWMt74ip
+client_secret: CF8859E5B807F474B65CDB1AAAE9FAB85A205A01F4523882109D67DF4693B30D
+refresh_token: 5Aep861ipJw565VwRFmNzmifao3pAedJ7rrUznsLnCGDLb3ufWdiG9Z1EOFQXLSSVgsOpv1jZse4pX5Y1rfrVKy
+is_sandbox: False
+auth_type: Client
+start_date: 2021-07-25
+force_use_bulk_api: False
+access_token: 00DIR0000007zd0!AQoAQI39kMO8.PNdwt064pLB.jnGTLUFeeEG47uBcU.nWaGlM7WTJX8vunU1GRLi4o9NJEOtX4GwR4yzdfKEbmcLsq56CAdS
+Instance_Url: https://xlanglab2-dev-ed.develop.my.salesforce.com
+account: xlanglab@company.sandbox
+

@@ -1,0 +1,60 @@
+{
+    "id": "dataanalysis001lfy",
+    "source": "https://www.kaggle.com/code/mustafagerme/hypothesis-testing-with-men-women-s-soccermatches",
+    "image_name": "dabench-image",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "The data exists in  CSV file and xls file. Perform an appropriate hypothesis test to determine the p-value, whether to reject or fail to reject the null hypothesis that the mean number of goals scored in women's international soccer matches is the same as men's. Use a 10% significance level. Save the p-value and result('fail to reject' or 'reject') to result.csv.",
+    "hardness": "level1",
+    "config": [
+        {
+            "type": "download",
+            "parameters": {
+                "files": [
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1tYMVSuyazsdzumyge_eCsZMmwdLoCt1j&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/women_results.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1nTqtOkpQhA4wH0j38D2fJilaoUF22Xig&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/men_results.xls"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1x1Tt3bE6aLy_9sxsve7ySeB9anmXblSg&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/result.csv"
+                  }
+                ]
+            }
+        }
+    ],
+    "evaluator": {
+        "postconfig": [
+            {
+              "type": "download",
+              "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1ZNqNFes0zh6reiwsX4SHHJH6FBqx4AcB&export=download&authuser=0&confirm=t",
+                "path": "/workspace/gold/result.csv"
+              }
+            }
+        ],
+        "func": [
+            "compare_csv"
+        ],
+        "result": [
+            {
+                "type": "docker_file",
+                "path": "/workspace/result.csv"
+            }
+        ],
+        "expected": [
+            {
+                "type": "docker_file",
+                "path": "/workspace/gold/result.csv"
+            }
+        ]
+    }
+}

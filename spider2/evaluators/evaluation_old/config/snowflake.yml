@@ -1,0 +1,7 @@
+host: AJDZBMF-ANB28852.snowflakecomputing.com
+role: ACCOUNTADMIN
+warehouse: COMPUTE_WH
+database: AIRBYTE
+schema: PUBLIC
+username: leifangyu
+password: 20010213lfyLFY!

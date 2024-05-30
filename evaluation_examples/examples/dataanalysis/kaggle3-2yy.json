@@ -1,0 +1,84 @@
+{
+    "id": "kaggle3-2yy",
+    "source": "https://www.kaggle.com/code/dillonmyrick/sql-beginner-to-advanced-with-practical-examples",
+    "image_name": "dabench-image",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "Find all pairs of products that have been ordered together, count how often each pair appears, and save the most commonly co-purchased pairs to result.csv.",
+    "hardness": "level1",
+    "config": [
+        {
+            "type": "download",
+            "parameters": {
+                "files": [
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1CuTvKoyalyeJB9-CxYaF4DBWKUs6r9mB&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/stores.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1GDixHPlPL2M7Dj_2Su8eFPnrsP_xehpd&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/stocks.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1apXhtlLVwBvSF92bf2Q-e9N_idgx9vZV&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/staffs.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1yuqI5coA4KILhG3n1Ryi4AEGOpA_VFM5&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/products.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=19KIXEfFdEy3pFvYUjK7YCtVZaO1jpKwM&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/orders.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1VwlD2g3p-M0EhjqE9vwDezKEbcMozNgy&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/order_items.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1gGqBodkQ4EGScfuf2k-t23Z41khuxVpV&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/customers.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1-wvM3Y9iQQYo-0MnaPmAmPA5Sh7mHZ_X&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/catogories.csv"
+                  },
+                  {
+                    "url": "https://drive.usercontent.google.com/download?id=1y3V-FJq7EknKOvIie0lXg8MQzNsnj2fE&export=download&authuser=0&confirm=t",
+                    "path": "/workspace/brands.csv"
+                  }
+                ]
+            }
+        }
+    ],
+    "evaluator": {
+        "postconfig": [
+            {
+              "type": "download",
+              "parameters": {
+                "url": "https://drive.usercontent.google.com/download?id=1jyKtKezbQsagUBeb6iI5NUYAocr-ZLtg&export=download&authuser=0&confirm=t",
+                "path": "/workspace/gold/result.csv"
+              }
+            }
+        ],
+        "func": [
+            "compare_csv"
+        ],
+        "result": [
+            {
+                "type": "docker_file",
+                "path": "/workspace/result.csv"
+            }
+        ],
+        "expected": [
+            {
+                "type": "docker_file",
+                "path": "/workspace/gold/result.csv"
+            }
+        ]
+    }
+}

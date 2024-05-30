@@ -1,0 +1,65 @@
+{
+    "id": "machinelearning001jw",
+    "source": "https://www.kaggle.com/code/teejmahal20/classification-predicting-customer-satisfaction",
+    "image_name": "dabench-image",
+    "init_args": {
+        "work_dir": "/workspace",
+        "ports": {
+            "5432": "12001"
+        }
+    },
+    "instruction": "This dataset pertains to the satisfaction levels of airplane passengers. You are required to select appropriate features based on the information provided in ReadMe.md to train a machine learning model. Test the model using test.csv and write the final test results line by line into result.txt. Ensure that the labels written are the original string labels, such as 'satisfied'. Optimize your data processing methods and workflow design as much as possible. Failure criteria include an F1 score of less than 0.9 for the final prediction in result.txt or a program runtime exceeding 60 seconds.",
+    "hardness": "level1",
+    "config": [
+        {
+            "type": "copy",
+            "parameters": {
+                "files": [
+                  {
+                    "url": "./benchmark/source/machinelearning001jw/ReadMe.md",
+                    "path": "/workspace/ReadMe.md"
+                  },
+                  {
+                    "url": "./benchmark/source/machinelearning001jw/test.csv",
+                    "path": "/workspace/test.csv"
+                  },
+                  {
+                    "url": "./benchmark/source/machinelearning001jw/train.csv",
+                    "path": "/workspace/train.csv"
+                  }
+                ]
+            }
+        }
+    ],
+    "evaluator": {
+        "postconfig": [
+            {
+              "type": "copy",
+              "parameters": {
+                "files": [
+                    {
+                      "url": "./benchmark/source/machinelearning001jw/gold",
+                      "path": "/workspace/gold"
+                    }
+                  ]
+              }
+            }
+        ],
+        "func": [
+            "compare_ml"
+        ],
+        "result": [
+            {
+                "type": "docker_file",
+                "path": "/workspace/result.txt"
+            }
+        ],
+        "expected": [
+            {   
+                "multi": true, 
+                "type": "docker_file",
+                "path": ["/workspace/gold/result.txt","/workspace/gold/eval.yaml"]
+            }
+        ]
+    }
+}
