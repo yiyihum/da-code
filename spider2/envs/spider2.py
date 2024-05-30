@@ -17,8 +17,6 @@ from spider2.evaluators import metrics, getters
 from spider2 import configs
 import hashlib
 
-
-
 logger = logging.getLogger("spider2.env")
 
 Metric = Callable[[Any, Any], float]
@@ -81,7 +79,6 @@ class Spider2Env(gym.Env):
               * task id (uuid)
               * instruction
               * setup config
-              * evaluator config
 
             tmp_dir (str): temporary directory to store trajectory stuffs like
               the extracted screenshots

@@ -1,22 +1,14 @@
 {
-    "id": "datavisulization001",
-    "config": [
-        {
-            "type": "copy_all_subfiles", 
-            "parameters": {
-                "dirs": ["./benchmark/source/datavisulization001/gold"]
-            }
-        }
-    ],
+    "id": "datavisual-001",
     "func": [
         "compare_image"
     ],
     "result": [
     {   
         "multi": true,
-        "files": ["result.png", "result.json"]
+        "file": ["result.png", "result.npy", "plot.json"]
     }
     ],
-    "options": [],
+    "options": [{}],
     "conj": "and"
 }

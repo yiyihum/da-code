@@ -1,18 +1,38 @@
 import logging
-import os
-from typing import Callable, Any, Optional, Tuple
+import os, json
+from typing import Callable, Any
 from typing import List, Dict, Union
-import gymnasium as gym
-import time
-from spider2 import configs
+from pathlib import Path
+import sys
+here=Path(__file__).absolute()
+sys.path.append(str(here.parent))
+import metrics
 
-logger = logging.getLogger("spider2.env")
 Metric = Callable[[Any, Any], float]
-Getter = Callable[[gym.Env, Dict[str, Any]], Any]
 
-class Evaluation:
-    
-    def _set_task_info(self, task_config: Dict[str, Any]):
+class Evaluator:
+
+    def __init__(self, output_dir: str, gold_dir: str):
+        self.output_dir = output_dir
+        self.gold_dir = gold_dir
+
+    def get_result_file(self, results: List, dir: str):
+        results = results if isinstance(results, list)\
+            else [results]
+        result_files = []
+        for result in results:
+            multi = result.get("multi", False)
+            files = result['file'] if isinstance(result['file'], list) \
+                else [result['file']]
+            if multi:
+                files = [os.path.join(dir, file) for file in files]
+                result_files.append(files)
+            else:
+                for file in files:
+                    result_files.append(file)
+        return result_files
+
+    def _get_eval_config_info(self, eval_config: Dict[str, Any]):
         # evaluator dict
         # func -> metric function string, or list of metric function strings
         # conj -> conjunction of multiple metrics if func is a list with length > 1, "and"/"or"
@@ -22,91 +42,69 @@ class Evaluation:
         # if func is a str list, then result, expected (if exists), options (if exists) should also be lists of the same length
         # even if one of the metrics does not need expected or options field, it should be included in the list with None
         # self.evaluator = task_config["evaluator"]
-        # self.metric: Metric = [getattr(metrics, func) for func in self.evaluator["func"]] \
-        # if isinstance(self.evaluator["func"], list) \
-        # else getattr(metrics, self.evaluator["func"])
-        # self.metric_conj: str = self.evaluator.get("conj", "and")  # take conjunction of multiple metrics
+        id = eval_config['id']
+        output_id_dir = os.path.join(self.output_dir, id)
+        gold_id_dir = os.path.join(self.gold_dir, id)
+        assert os.path.exists(output_id_dir), f'{output_id_dir} does not exist'
+        assert os.path.exists(gold_id_dir), f'{gold_id_dir} does not exist'
+        metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
+            if isinstance(eval_config["func"], list)\
+            else [getattr(metrics, eval_config["func"])]
+        metric_conj: str = eval_config.get("conj", "and")  # take conjunction of multiple metrics
+        result = eval_config['result'] if isinstance(eval_config['result'], list) \
+            else [eval_config['result']]
+        output_results = self.get_result_file(result, dir=output_id_dir)
+        gold_results = self.get_result_file(result, dir=gold_id_dir)
+        metric_options: Union[List[Dict[str, Any]], Dict[str, Any]] = \
+            [opt if opt else {} for opt in eval_config["options"]] \
+            if isinstance(eval_config.get("options", {}), list) \
+            else eval_config["options"] \
+            if "options" in eval_config.keys() \
+            else [{}] * len(metric) \
+            if isinstance(metric, list) \
+            else {}
+
+        assert (not isinstance(eval_config["func"], list)
+            or (len(metric) == len(output_results) == len(gold_results) == len(
+                metric_options)))
         
-        
-        # if "result" in self.evaluator:
-        #     self.result_getter: Getter = [getattr(getters, "get_{:}".format(res["type"])) for res in
-        #                               self.evaluator["result"]] \
-        #     if isinstance(self.evaluator["result"], list) \
-        #     else getattr(getters, "get_{:}".format(self.evaluator["result"]["type"]))
-        # else:
-        #     self.result_getter = [None] * len(self.metric) \
-        #         if isinstance(self.metric, list) \
-        #         else None
-
-        # if "expected" in self.evaluator:
-        #     self.expected_getter: Getter = [getattr(getters, "get_{:}".format(exp["type"])) if exp else None for exp in
-        #                                     self.evaluator["expected"]] \
-        #         if isinstance(self.evaluator["expected"], list) \
-        #         else getattr(getters, "get_{:}".format(self.evaluator["expected"]["type"]))
-        # else:
-        #     self.expected_getter = [None] * len(self.metric) \
-        #         if isinstance(self.metric, list) \
-        #         else None
-        # self.metric_options: Union[List[Dict[str, Any]], Dict[str, Any]] = [opt if opt else {} for opt in
-        #                                                                     self.evaluator["options"]] \
-        #     if isinstance(self.evaluator.get("options", {}), list) \
-        #     else self.evaluator["options"] \
-        #     if "options" in self.evaluator \
-        #     else [{}] * len(self.metric) \
-        #     if isinstance(self.metric, list) \
-        #     else {}
-
-        # assert (not isinstance(self.evaluator["func"], list)
-        #         or (len(self.metric) == len(self.result_getter) == len(self.expected_getter) == len(
-        #             self.metric_options)))
-        
-        
-    # def evaluate(self):
-    #     """
-    #     Evaluate whether the task is successfully completed.
-    #     """
-
-    #     self.setup_controller.setup(self.evaluator.get("postconfig", []))
-    #     if self.metric == "infeasible":
-    #         return 0
-
-    #     if type(self.metric) == list:
-    #         results = []
-    #         for idx, metric in enumerate(self.metric):
-    #             try:
-    #                 config = self.evaluator["result"][idx]
-    #                 result_state = self.result_getter[idx](self, config)
-    #                 expected = self.evaluator["expected"][idx]
-
-    #                 expected_state = self.expected_getter[idx](self, expected) if expected else None
-    #                 self.metric_options[idx]["mnt_dir"] = self.mnt_dir
-    #                 self.metric_options[idx]["controller"] = self.controller
-    #                 metric: int = metric(result_state, expected_state,
-    #                                     **self.metric_options[idx]) if expected_state is not None \
-    #                     else metric(result_state, **self.metric_options[idx])
-    #             except FileNotFoundError:
-    #                 logger.error("File not found!")
-    #                 results.append(0.0)
-    #                 continue
-    #             results.append(metric)
-
-    #         if self.metric_conj == 'and':
-    #             return sum(results) / len(results)
-    #         elif self.metric_conj == 'or':
-    #             return max(results)
-    #     else:
-    #         try:
-    #             result_state = self.result_getter(self, self.evaluator["result"])
-    #         except FileNotFoundError:
-    #             logger.error("File not found!")
-    #             return 0
-
-    #         expected_state = self.expected_getter(self, self.evaluator["expected"]) if "expected" in self.evaluator \
-    #             else None
-
-    #         metric: float = self.metric(result_state, expected_state,
-    #                                     **self.metric_options) if expected_state is not None \
-    #             else self.metric(result_state, **self.metric_options)
-
-    #     return metric
+        return metric, metric_conj, metric_options, output_results, gold_results
     
+        
+    def evaluate(self, env_config: Dict|str):
+        """
+        Evaluate task
+        """
+        if isinstance(env_config, str):
+            with open(env_config, 'r') as f:
+                env_config = json.load(f)
+        metrics, metric_conj, metric_options, output_results, gold_results = \
+            self._get_eval_config_info(env_config)
+        if metrics == "infeasible":
+           return 0
+        results = []
+        info = []
+        for idx, metric in enumerate(metrics):
+            try:
+               output_result = output_results[idx]
+               gold_result = gold_results[idx]
+               metric: int = metric(output_result, gold_result,
+                **metric_options[idx])
+            except FileNotFoundError:
+                logging.error("File not found!")
+                results.append(0.0)
+                continue
+            if isinstance(metric, dict):
+                results.append(metric.pop('score', 0.0))
+                info.append(metric)
+            else:
+                results.append(metric)
+
+        if metric_conj == 'and':
+            return sum(results) / len(results), info
+        elif metric_conj == 'or':
+            return max(results), info
+        
+      
+    
+ 

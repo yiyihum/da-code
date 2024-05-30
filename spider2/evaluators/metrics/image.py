@@ -1,135 +1,191 @@
 # import operator
 import numpy as np
-import re
 from typing import List
 from PIL import Image
-import os, uuid, pickle
+import os, logging, json
 from dataclasses import dataclass
-import sys
-from pathlib import Path
-here = Path(__file__).absolute().parent.parent
-sys.path.append(str(here.parent))
-from controllers.python import PythonController
-# from envs.spider2 import DEFAULT_WORK_DIR
+from typing import Dict
+from fuzzywuzzy import fuzz
 
-DEFAULT_WORK_DIR = '/workspace'
-def preprocess_py(py_path: str):
-    with open(py_path, 'r', encoding='utf-8') as f:
-        py_content = f.readlines()
-    py_content = [line for line in py_content if 'plt.close()' not in line and \
-                  'matplotlib.pyplot.close()' not in line]
-    py_content = [line for line in py_content if 'plt.show()' not in line and \
-                  'matplotlib.pyplot.show()' not in line]
-    find_main = None
-    for idx, line in enumerate(py_content):
-        if 'if __name__ == "__main__"' in line or "if __name__ == '__main__'" in line:
-            find_main = idx
-            break
-    if find_main is not None:
-        py_content = py_content[:find_main] + \
-            [re.sub(r'^ {4}', '', line) for line in py_content[find_main+1:]]
-    return py_content
-
-    
 @dataclass
 class ImageTest:
-    dir: str = str(Path(__file__).absolute().parent / "image_scripts")
-    container_name : str= "spider2"
+
+    @classmethod
+    def compare_key(cls, key: str, result: Dict, gold: Dict):
+        if key == 'figsize' or key == 'color':
+            result_fig, gold_fig = result.get(key, []), gold.get(key, [])
+            result_fig = result_fig if isinstance(result_fig, list)\
+                else list(result_fig)
+            gold_fig = gold_fig if isinstance(gold_fig, list)\
+                else list(gold_fig)
+            return (1.0, {key: True}) if result_fig == gold_fig \
+                else (0.0, {key: False})
+        elif key == 'type':
+            result_fig, gold_fig = result.get(key, ''), gold.get(key, '')
+            return (1.0, {key: True}) if result_fig == gold_fig \
+                else (0.0, {key: False})
+        elif key == 'title' or key == 'x_label' or key == 'y_label':
+            result_fig, gold_fig = result.get(key, ''), gold.get(key, '')
+            if not result_fig and gold_fig:
+                return (0.0, {key: False})
+            similarity_score = fuzz.ratio(result_fig, gold_fig)
+            return (1.0, {key: True}) if similarity_score >= 0.9 \
+                else (0.0, {key: False})
+        elif key == 'labels' or key == 'xtick_labels' or key == 'ytick_labels':
+            result_fig, gold_fig = result.get(key, []), gold.get(key, [])
+            if len(result_fig) != len(gold_fig):
+                return (0.0, {key: False})
+            match_founds = []
+            for gold in gold_fig:
+                match_found = False
+                for result in result_fig:
+                    similarity_score = fuzz.ratio(result_fig, gold_fig)
+                    if similarity_score > 0.9:
+                        match_found = True
+                        match_founds.append(True)
+                        break
+                if not match_found:
+                    match_founds.append(False)
+            return (1.0, {key: True}) if all(match_founds) else (0.0, {key: False})
+        else:
+            raise \
+            ValueError('please check your key, must in [figsize, type, labels, x_label, y_label, title, color, xtick_labels, ytick_lables]')
+            
+
+    @classmethod
+    def compare_numpy(cls, hyp_np: np.ndarray, ref_np: np.ndarray, 
+        hyp_order: list, ref_order: list , tol=1e-5):
+        if hyp_np.shape != ref_np.shape:
+            return [], []
+        if len(hyp_order) and len(ref_order):
+            if np.allclose(hyp_np[list(hyp_order)], ref_np[list(ref_order)], atol=tol):
+                return list(hyp_order), list(ref_order)
+            else:
+                return [], []
+        hyp_order = np.argsort(hyp_np)
+        sorted_hyp = hyp_np[hyp_order]
+        ref_order = np.argsort(ref_np)
+        sorted_ref = ref_np[ref_order]
+        if np.allclose(sorted_hyp, sorted_ref, atol=1e-5):
+            return list(hyp_order), list(ref_order)
+        return [], []
 
     @staticmethod
-    def find_plt_py(mnt_dir: str, result: str):
-        image_name = os.path.basename(result)
-        py_files = [os.path.join(mnt_dir, py_path) for py_path in os.listdir(mnt_dir) \
-                if os.path.isfile(os.path.join(mnt_dir, py_path)) and py_path.endswith('.py')]
-        
-        assert len(py_files) > 0, f"{mnt_dir} contains no py files"
+    def test_image(results: str | List[str], golds: str | List[str]):
+        results = results if isinstance(results, list) else [results]
+        golds = golds if isinstance(golds, list) else [golds]
+        score = 0.0
+        for gold in golds:
+            assert os.path.exists(gold), f'gold path {gold} do not exist'
+            image_name = os.path.basename(gold)
+            result = next((file for file in results if image_name in file), '')
+            if not result or not os.path.exists(result):
+                logging.error(f"could not find {image_name} in agent's results")
+                return 0.0
+            result_img = np.array(Image.open(result))
+            gold_img = np.array(Image.open(gold))
+            image_stat = (
+                result_img.shape == gold_img.shape
+                and np.allclose(result, gold_img)
+            )
+            score += float(image_stat)
+        return (1.0, {'img': True}) if score == float(len(golds)) else (0.0, {'img': False})
 
-        '''
-        Find the py file used to generate the result image
-        '''
-        def is_matplotlib(filename: str, imagename: str):
-            with open(filename, 'r') as f:
-                file_content = f.readlines()
-            plt_find, image_find = False, False
-            for line in file_content:
-                if 'matplotlib' in line:
-                    plt_find = True
-                if imagename in line and ('plt.savefig' in line or 'matplotlib.pyplot.savefig' in line):
-                    image_find = True
-                if plt_find and image_find:
-                    return True
-            return False
-        
-        plt_files = [py_path for py_path in py_files if is_matplotlib(py_path, image_name)] 
+    @classmethod
+    def test_numpy(cls,result_np: str, gold_np: str):
+        if not os.path.exists(result_np):
+            return (0.0, {'data': False})
+        assert os.path.exists(gold_np), f'the gold file {gold_np} does not exist'
+        results, golds = np.load(result_np), np.load(gold_np)
+        output, hyp_order, ref_order = [], [], []
+        for idx, result in enumerate(results):
+            find = False
+            result = np.array(result) if isinstance(result, list) else result
+            for row in range(golds.shape[0]):
+                gold = golds[row]
+                hyp_temp_order, ref_temp_order = cls.compare_numpy(hyp_np=result, ref_np=gold, 
+                    hyp_order=hyp_order, ref_order=ref_order)
+                if len(hyp_temp_order) and len(ref_temp_order) and idx == 0:
+                    hyp_order, ref_order = hyp_temp_order, ref_temp_order
+                    find = True
+                    break
+                elif len(hyp_temp_order) and len(ref_temp_order):
+                    find = True
+                    break
+            if not len(hyp_order) and not len(ref_order) and idx != 0:
+                find = False
+            output.append(find)
 
-        return plt_files
+        return (1.0, {'data': True}) if all(output) else (0.0, {'data': False})
     
     @classmethod
-    def evaluate_graph(cls, py_content: List[str], gt: str, mnt_dir: str, controller: PythonController):
-        graph_file = os.path.join(cls.dir, f'graph.py')
-        assert os.path.exists(graph_file), f'{graph_file} does not exist'
-        with open(graph_file, 'r') as f:
-            graph_content = f.readlines()
+    def test_info(cls, result_js: str, gold_js: str):
+        output_dict = {}
+        if not os.path.exists(result_js):
+            return (0.0, {})
+        assert os.path.exists(gold_js), f'the gold file {gold_js} does not exist'
+        with open(result_js, 'r') as js:
+            result = json.load(js)
+        with open(gold_js, 'r') as js:
+            gold = json.load(js)
 
-        # add ground truth to the code
-        gt = os.path.abspath(gt).replace(os.path.abspath(mnt_dir), DEFAULT_WORK_DIR) \
-            if not gt.startswith(DEFAULT_WORK_DIR)\
-            else gt
+        scores = 0.0
+        for key in gold.keys():
+            score, key_dict = cls.compare_key(key, result=result, gold=gold)
+            scores += score
+            output_dict.update(key_dict)
         
-        graph_import, graph_code = graph_content[0:6], graph_content[6:]
-        test_code = graph_import + py_content + graph_code
-        test_path = os.path.join(mnt_dir, str(uuid.uuid4())[:4] + '_eval.py')
-        with open(test_path, 'w') as f:
-            f.writelines(test_code)
-        controller.container.exec_run(cmd=f'bash -c "python {os.path.basename(test_path)} -y {gt}"', workdir=DEFAULT_WORK_DIR)
-        output_path = os.path.join(mnt_dir, 'evaluation_results.pkl')
-        assert os.path.exists(output_path), f'{output_path} does not exist'
-        with open(output_path, 'rb') as file:
-            loaded = pickle.load(file)
-    
-        return loaded
-    
-
-def compare_image(result: str, expected: List[str], **options):
+        return (1.0, output_dict) if scores == float(len(gold.keys())) \
+            else (0.0, output_dict)
+        
+def compare_image(results: List[str] | str, expected: List[str], **options):
     """ 
     @args:
         result(str): the pred image file
         expect(str|List[str]): the gold image file or image files, maybe multiple potential answers, not there are two answers
         option(dict): the configuration dictionary
     """
-    if isinstance(expected, List):
-        mnt_dir = options.pop('mnt_dir')
-        controller = options.pop('controller')
-    else:
-        raise TypeError('expected must be List, which contains of image and npy files')
-    if not isinstance(result, str):
-        raise TypeError('result must be str')
+    assert isinstance(expected, List), TypeError('expected must be List, which contains of image and json files')
     
-    result_img = np.array(Image.open(result))
-    expected_yaml = [gt for gt in expected if gt.endswith('.yaml')]
-    assert len(expected_yaml) == 1, "expect a yaml file containing ground truth of figure in graph"
-    expected_imgs = [np.array(Image.open(gt)) for gt in expected if gt not in expected_yaml]
+    output_dict = {}
     
-    # Image Testing
-    for gt in expected_imgs:
-        sample_image_stat = (
-            result_img.shape == gt.shape
-            and np.allclose(result, gt)
-        )
-        if sample_image_stat:
-            return 1.0
-    
-    # Code Testing
-    assert os.path.exists(mnt_dir), 'Please provide correct mount directory'
-    
-    plt_files = ImageTest.find_plt_py(mnt_dir=mnt_dir, result=result)
-    assert len(plt_files) > 0, 'Expect files that uses matplotlib to generates code'
+    result_images = [image for image in results if image.endswith('.png') or image.endswith('jpg')]
+    gold_images = [image for image in expected if image.endswith('.png') or image.endswith('jpg')]
+    result_json = [js for js in results if js.endswith('.json')]
+    gold_json = [js for js in expected if js.endswith('.json')]
+    result_npy = [npy for npy  in results if npy.endswith('.npy')]
+    gold_npy = [npy for npy  in expected if npy.endswith('.npy')]
 
+    assert (result_images and gold_images and result_npy and gold_npy), \
+        'result and gold files must contains image and npy, please check again.'
     
-    for py_file in plt_files:
-        py_lines = preprocess_py(py_path=py_file)
-        result = ImageTest.evaluate_graph(py_content=py_lines, gt=expected_yaml[0], \
-                    mnt_dir=mnt_dir, controller=controller)
-        if result:
-            return 1.0
-    return 0.0
+    image_score, img_dict = ImageTest.test_image(results=result_images, golds=gold_images)
+    output_dict.update(img_dict)
+    if image_score:
+        output_dict = output_dict.update({'score': 1.0})
+        return output_dict
+
+    result_npy = result_npy[0]
+    gold_npy = gold_npy[0]
+    
+    numpy_score, np_dict = ImageTest.test_numpy(result_np=result_npy, gold_np=gold_npy)
+    output_dict.update(np_dict)
+
+    if gold_json and result_json:
+        gold_json = gold_json[0]
+        result_json = result_json[0]
+        info_score, info_dict = ImageTest.test_info(result_js=result_json, gold_js=gold_json)
+        output_dict.update(info_dict)
+        if numpy_score and info_score:
+            output_dict.update({"score": 1.0})
+            return output_dict
+        else:
+            output_dict.update({'score': 0.0})
+            return output_dict
+    else:
+        if numpy_score:
+            output_dict.update({"score": 1.0})
+            return output_dict
+        else:
+            output_dict.update({'score': 0.0})
+            return output_dict

@@ -86,7 +86,6 @@ xtick_labels = [label.get_text() for label in ax.get_xticklabels()]
 ytick_labels = [label.get_text() for label in ax.get_yticklabels()]
 
 image_parameters['type'] = gt_graph
-image_parameters['data'] = 'result.npy'
 image_parameters['color'] = colors
 image_parameters['figsize'] = list(figsize)
 image_parameters['title'] = title
