@@ -86,7 +86,7 @@ class ImageTest:
             gold_img = np.array(Image.open(gold))
             image_stat = (
                 result_img.shape == gold_img.shape
-                and np.allclose(result, gold_img)
+                and np.allclose(result_img, gold_img)
             )
             score += float(image_stat)
         return (1.0, {'img': True}) if score == float(len(golds)) else (0.0, {'img': False})
