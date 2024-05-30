@@ -1,7 +1,8 @@
 # Byte-compiled / optimized / DLL files
 **/__pycache__/
-benchmark/output/
-benchmark/source/
+benchmark/output/*
+benchmark/source/*
+logs/*
 
 !benchmark/output/azure-ML-test/ml-binary-001
 !benchmark/output/azure-ML-test/ml-binary-002
