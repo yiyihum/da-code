@@ -29,7 +29,7 @@ logger = logging.getLogger("spider2")
 # process contant policy violation ⭕️
 # process massage too long ⭕️
 # create file & edit 加一个检查 比如符合csv的格式 ⭕️
-# - edit line of file ⭕️
+# - edit line of file ❌
 
 MAX_OBSERVATION_LENGTH = 2000
 
