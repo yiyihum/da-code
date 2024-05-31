@@ -15,7 +15,8 @@
     ],
     "result":[
         {
-            "file": "result.csv"
+            "public_file": "result.csv",
+            "gold_file": "leaderboard.csv"
         }
     ],
     "options": [{}]

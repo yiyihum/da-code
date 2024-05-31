@@ -12,6 +12,8 @@ logs/*
 !benchmark/source/ml-binary-003
 !benchmark/source/ml-binary-004
 !benchmark/source/ml-binary-005
+!benchmark/source/ml-cluster-001
+!benchmark/soucre/ml-regression-001
 
 *.DS_Store
 *.pyc

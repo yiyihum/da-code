@@ -1,13 +1,13 @@
 # import operator
-from typing import Dict, List
+from typing import List
 import logging, re, os
 import pandas as pd
 from sklearn.metrics import f1_score, r2_score, silhouette_score
 from sklearn.preprocessing import LabelEncoder
-from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 import numpy as np
-
+import difflib
+from sklearn.metrics import roc_auc_score
 
 TYPES = ['binary classification', 'multi classification', 'cluster', 'regression']
 
@@ -53,11 +53,12 @@ class PreprocessML:
             if target_column and unique_column:
                 return df, unique_column, target_column
 
-            unique_id_columns, target_column2 = cls.identify_columns(df, type)
-            unique_column2 = unique_id_columns[0] if unique_id_columns else ""
-            
+            unique_id_columns, target_column2 = cls.identify_columns(df, type, target_column)
+            unique_column2 = unique_id_columns[0] if unique_id_columns else ""   
             target_column = target_column2 if not target_column else target_column
             unique_column = unique_column2 if not unique_column else unique_column
+            if unique_column:
+                df = df.sort_values(by=unique_column)
         else:
             unique_id_columns, target_column = cls.identify_columns(df, type)
             for unique_column in unique_id_columns:
@@ -67,16 +68,17 @@ class PreprocessML:
         return df, unique_column, target_column
 
     @classmethod
-    def identify_columns(cls, df, type):
+    def identify_columns(cls, df, type, ref_column: str=None):
         target_column = None
+        columns = list(df.columns)
+        ref_column = ref_column if type != 'cluster' else 'Cluster'
+        if ref_column:
+            columns = sorted(columns, key=lambda x: difflib.SequenceMatcher(None, x.lower(), ref_column.lower()).ratio(), reverse=True)
+            columns = [item for item in columns if difflib.SequenceMatcher(None, item.lower(), ref_column.lower()).ratio() >= 0.5]
         unique_id_columns = []
-        if type == 'cluster':
-            target_column = next((col for col in df.columns \
-            if col.lower() in ['cluster', 'clusters']), '')
-
-        for column in df.columns:
-            if df[column].nunique() == len(df):
-                unique_id_columns.append(column) 
+        for column in columns:
+            if ('id' in column.lower() or 'unnamed' in column.lower()) and df[column].nunique() == len(df):
+                unique_id_columns.append(column)
             if type =='binary':
                 if len(df[column].unique()) == 2: 
                     target_column = column if not target_column \
@@ -86,9 +88,8 @@ class PreprocessML:
                     target_column = column if not target_column \
                         else target_column
             elif type == 'cluster':
-                if len(df[column].unique()) >=1 and len(df[column].unique()) < 0.5 * len(df) and df[column].dtype == 'int64':
+                if len(df[column].unique()) >=1 and len(df[column].unique()) < 0.6 * len(df):
                     target_column= column if not target_column else target_column
-
         return unique_id_columns, target_column
 
 class CalculateML:
@@ -158,9 +159,53 @@ class CalculateML:
             score = silhouette_score(result, target_labels)
         except Exception as e:
             output['errors'].apppend(f"fail to calculate silhouette_score: {str(e)}")
-
         return (score, output)
-        
+    
+    @staticmethod
+    def calculate_roc_score(result: pd.DataFrame, gold: pd.DataFrame, task_type: str):
+        output = {'errors': []}
+        try:
+            result_np = result.to_numpy()
+        except Exception as e:
+            output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
+            return (0.0, output)
+        gold_np = gold.to_numpy()
+        if task_type == 'binary':
+            result_np = result_np[:, 1]
+            if gold_np.ndim == 2:
+                gold_np = gold_np[:, 1]
+            try:
+                score = roc_auc_score(y_true=gold_np, y_score=result_np)
+            except Exception as e:
+                output['errors'].append(f'fails to calculate roc_auc_score, because {str(e)}')
+                return (0.0, output)
+            return score, output
+        elif task_type == 'multi':
+            if result_np.ndim != 2:
+                raise ValueError("The result array should be a 2D array.")
+            elif result_np.shape[-1] < 3:
+                raise ValueError('The result csv should contains 3 more columns')
+            row_sum = np.sum(result_np, axis=1)
+            if not np.allclose(row_sum, 1):
+                raise ValueError("At least one row has probabilities that don't sum to 1.")
+            try:
+                score = roc_auc_score(y_true=gold_np, y_score=result_np)
+            except Exception as e:
+                output['errors'].append(f'fails to calculate roc_auc_score, because {str(e)}')
+                return (0.0, output)
+            return score, output
+    
+    def calculate_logloss(result:pd.DataFrame, gold: pd.DataFrame, task_type: str):
+        output = {'errors': []}
+        try:
+            result_np = result.to_numpy()
+        except Exception as e:
+            output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
+            return (0.0, output)
+        gold_np = gold.to_numpy()
+        result_np = result_np / result_np.sum(axis=1, keepdims=True)
+        pass
+
         
 def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
     """ 
@@ -178,8 +223,6 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
     assert config, 'Machine Learning Evaluation needs a config.'
     task_type = config.get('type', '')
     assert task_type, f'Machine Learning Evaluation needs "type" in config, such as {TYPES}'
-    competition = config.get('competition', {'iscompetition': False})
-    assert not competition['iscompetition'], f"Competition task has not been finished"
 
     metric = config.get("metric", "")
     threshold = config.get("threshold", 0.9)
@@ -225,6 +268,11 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
         result_df, _, target_column_result \
             = PreprocessML.process_csv(result_df, task_type, **column_dict)
         
+        if not target_column_result:
+            output_ml['errors'].append(f'Could not find target column in result, which is {target_column_gold} in gold')
+            output_ml['score'] = 0.0
+            return (0.0, output_ml)
+
         output_ml['target_output'] = target_column_result
 
         if not target_column_result:
@@ -240,7 +288,6 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
         output_ml['errors'].extend(output['errors'])
         output_ml['score'] = score
         return output_ml
-
     else:
         result_df = pd.read_csv(result)
         result_df, _, target_column_result \
@@ -257,11 +304,75 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
         output_ml['score'] = score
         return output_ml
 
+def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> dict:
+    output_ml = {'errors': []}
+    config = kwargs.get('config', {})
+    assert config, 'Machine Learning Evaluation needs a config.'
+    task_type = config.get('type', '')
+    assert task_type, f'Machine Learning Evaluation needs "type" in config, such as {TYPES}'
+    metric = config.get("metric", "")
 
-        
+    best_type, ratio = process.extractOne(task_type, TYPES)
+    assert ratio > 90, f"please provide a right task type, such as {TYPES}"
+    task_type = best_type.split(' ')[0]
+    if not metric:
+        metric = METRICS[task_type]
+    
+    expected = expected if isinstance(expected, list) else [expected]
+    result = result if isinstance(result, list) else [result]
+    assert len(result) == 1, "Just need one result csv file"
+    leaderboard = [file for file in expected if 'leaderboard' in os.path.basename(file).lower()]
+    if len(leaderboard) != 1:
+        raise ValueError('Please provide one "leaderboard.csv"')
+    leaderboard = leaderboard[0]
+    expected = [file for file in expected if os.path.basename(file) == os.path.basename(result)]
+    if len(expected) != 1:
+        raise ValueError(f"Can't find gold csv file {os.path.basename(result)}")
+    expected = expected[0]
+
+    if not os.path.exists(expected):
+        raise FileNotFoundError(f"The gold file '{os.path.basename(expected)}' does not exist.")
+    if not os.path.exists(leaderboard):
+        raise FileNotFoundError(f"The leaderboard file '{os.path.basename(leaderboard)}' does not exist.")
+    if not os.path.exists(result):
+        output_ml['errors'].append(f'result file {os.path.basename(result)} does not exist')
+        output_ml['score'] = 0.0
+        return output_ml
+    
+    expected_df = pd.read_csv(expected)
+    result_df = pd.read_csv(result)
+    expected_columns = list(expected_df.columns)
+    result_columns = list(result_df.columns)
+
+    if len(result_df) != len(expected_df):
+        output_ml['errors'].append(f"Length mismatch: result CSV has {len(result_df)} rows, while expected CSV has {len(expected_df)} rows.")
+        output_ml['score'] = 0.0
+        return output_ml
+    if set(result_columns) != set(expected_columns):
+        output_ml['errors'].append(f'Unexpected Column: {list(set(result_df.columns) - set(expected_df.columns))}')
+        output_ml['score'] = 0.0
+        return output_ml
+    
+    id = next((col for col in expected_columns if 'id' in col.lower()), '')
+    if id:
+        expected_df = expected_df.sort_values(by=id)
+        result_df = result_df.sort_values(by=id)
+        expected_df.drop(id, inplace=True, axis=1)
+        result_df.drop(id, inplace=True, axis=1)
+    
+    expected_df.sort_index(axis=1, inplace=True)
+    result_df.sort_index(axis=1, inplace=True)
+
+    # metric_func =
+
+
+
 
     
 
+    
 
+    
+    
 
 
