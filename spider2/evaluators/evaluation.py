@@ -93,22 +93,23 @@ class Evaluator:
                if config:
                    config_copy = {"config": config}
                    metric_options[idx].update(config_copy)
-               metric: int = metric(output_result, gold_result,
+               result: int = metric(output_result, gold_result,
                 **metric_options[idx])
             except FileNotFoundError:
                 logging.error("File not found!")
                 results.append(0.0)
                 continue
-            if isinstance(metric, dict):
-                results.append(metric.get('score', 0.0))
+
+            if isinstance(result, dict):
+                results.append(result.get('score', 0.0))
                 for key in config.keys():
-                    if key not in metric.keys():
-                        metric[key] = config[key]
-                metric['file'] = os.path.basename(output_result)
-                metric['id'] = id
-                info.append(metric)
+                    if key not in result.keys():
+                        result[key] = config[key]
+                result['file'] = os.path.basename(output_result)
+                result['id'] = id
+                info.append(result)
             else:
-                results.append(metric)
+                results.append(result)
 
         if metric_conj == 'and':
             return sum(results) / len(results), info

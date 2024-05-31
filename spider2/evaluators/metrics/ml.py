@@ -20,6 +20,11 @@ METRICS = {
 
 class PreprocessML:
     
+    @classmethod
+    def is_incremental(cls, column_data):
+        sorted_data = column_data.sort_values().values
+        return all((sorted_data[i] - sorted_data[i-1] == 1) for i in range(1, len(sorted_data)))
+    
     @staticmethod
     def check_numeric_columns(df):
         """
@@ -47,7 +52,7 @@ class PreprocessML:
                 else:
                     unique_column = ''
             if target_column:
-                best_target_column, ratio = process.extractOne(target_column, columns)
+                best_target_column, ratio = process.extractOne(target_column.lower(), columns)
                 target_column = best_target_column if ratio > 90 else ''
 
             if target_column and unique_column:
@@ -69,6 +74,8 @@ class PreprocessML:
 
     @classmethod
     def identify_columns(cls, df, type, ref_column: str=None):
+        if len(df.columns) == 1:
+            return [], df.columns[0]
         target_column = None
         columns = list(df.columns)
         ref_column = ref_column if type != 'cluster' else 'Cluster'
@@ -90,6 +97,10 @@ class PreprocessML:
             elif type == 'cluster':
                 if len(df[column].unique()) >=1 and len(df[column].unique()) < 0.6 * len(df):
                     target_column= column if not target_column else target_column
+            elif type == 'regression':
+                if str(df[column].dtype) in ['int64', 'float64']:
+                    if not cls.is_incremental(df[column]) and len(df[column].unique()) > max(2, 0.1 *len(df)):
+                        target_column = column if not target_column else target_column
         return unique_id_columns, target_column
 
 class CalculateML:
@@ -219,7 +230,7 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
     """
     output_ml = {'errors': []}
     config = kwargs.get('config', {})
-    target_column = kwargs.get('target_column', '')
+    target_column = config.get('target_column', '')
     assert config, 'Machine Learning Evaluation needs a config.'
     task_type = config.get('type', '')
     assert task_type, f'Machine Learning Evaluation needs "type" in config, such as {TYPES}'
@@ -271,7 +282,7 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
         if not target_column_result:
             output_ml['errors'].append(f'Could not find target column in result, which is {target_column_gold} in gold')
             output_ml['score'] = 0.0
-            return (0.0, output_ml)
+            return output_ml
 
         output_ml['target_output'] = target_column_result
 
