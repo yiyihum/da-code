@@ -19,9 +19,7 @@ import google.generativeai as genai
 import openai
 import requests
 import tiktoken
-
-
-logger = logging.getLogger("spider2")
+import signal
 
 # TODO: 
 # add time limit for each action ⭕️
@@ -32,6 +30,28 @@ logger = logging.getLogger("spider2")
 # - edit line of file ❌
 
 MAX_OBSERVATION_LENGTH = 2000
+Time_OUT_ACTION = 10
+
+class TimeoutException(Exception):
+    pass
+
+def timeout_handler(signum, frame):
+    raise TimeoutException("Action execution time exceeded!")
+
+class StepTimeout:
+    def __init__(self, seconds):
+        self.seconds = seconds
+
+    def __enter__(self):
+        signal.signal(signal.SIGALRM, timeout_handler)
+        signal.alarm(self.seconds)
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        signal.alarm(0)  # 取消闹钟
+
+
+logger = logging.getLogger("spider2")
+
 
 class PromptAgent:
     def __init__(
@@ -237,6 +257,7 @@ class PromptAgent:
     #      InvalidArgument),
     #     max_tries=5
     # )
+
     def call_llm(self, payload):
 
         if self.model.startswith("gpt"):
@@ -591,19 +612,22 @@ class PromptAgent:
         
         
     def step(self, action: Action):
-        
-        done = False
-        if isinstance(action, ExecuteCode):
-            observation = self.execute_code_action(action)
-        elif isinstance(action, CreateFile):
-            observation = self.create_file_action(action)
-        elif isinstance(action, EditFile):
-            observation = self.edit_file_action(action)
-        elif isinstance(action, Terminate):
-            observation = "Terminate"
-            done = True
-        else:
-            raise ValueError(f"Unrecognized action type {action.action_type} !")
+        try:
+            with StepTimeout(Time_OUT_ACTION):  
+                done = False
+                if isinstance(action, ExecuteCode):
+                    observation = self.execute_code_action(action)
+                elif isinstance(action, CreateFile):
+                    observation = self.create_file_action(action)
+                elif isinstance(action, EditFile):
+                    observation = self.edit_file_action(action)
+                elif isinstance(action, Terminate):
+                    observation = "Terminate"
+                    done = True
+                else:
+                    raise ValueError(f"Unrecognized action type {action.action_type} !")
+        except TimeoutException as e:
+            observation = str(e)
         
         observation = self._handle_observation(observation)
         logger.info("Observation: %s", observation)
