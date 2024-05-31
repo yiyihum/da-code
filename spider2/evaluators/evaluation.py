@@ -71,7 +71,7 @@ class Evaluator:
             or (len(metric) == len(output_results) == len(gold_results) == len(
                 metric_options)))
         
-        return metric, metric_conj, metric_options, output_results, gold_results
+        return id, config, metric, metric_conj, metric_options, output_results, gold_results
     
     def evaluate(self, env_config: Dict|str):
         """
@@ -80,7 +80,7 @@ class Evaluator:
         if isinstance(env_config, str):
             with open(env_config, 'r') as f:
                 env_config = json.load(f)
-        metrics, metric_conj, metric_options, output_results, gold_results = \
+        id, config, metrics, metric_conj, metric_options, output_results, gold_results = \
             self._get_eval_config_info(env_config)
         if metrics == "infeasible":
            return 0
@@ -90,6 +90,9 @@ class Evaluator:
             try:
                output_result = output_results[idx]
                gold_result = gold_results[idx]
+               if config:
+                   config_copy = {"config": config}
+                   metric_options[idx].update(config_copy)
                metric: int = metric(output_result, gold_result,
                 **metric_options[idx])
             except FileNotFoundError:
@@ -97,7 +100,12 @@ class Evaluator:
                 results.append(0.0)
                 continue
             if isinstance(metric, dict):
-                results.append(metric.pop('score', 0.0))
+                results.append(metric.get('score', 0.0))
+                for key in config.keys():
+                    if key not in metric.keys():
+                        metric[key] = config[key]
+                metric['file'] = os.path.basename(output_result)
+                metric['id'] = id
                 info.append(metric)
             else:
                 results.append(metric)

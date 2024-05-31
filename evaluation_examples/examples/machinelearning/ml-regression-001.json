@@ -1,0 +1,23 @@
+{
+    "id": "ml-regression-001",
+    "config":{
+        "task": "machinelearning",
+        "type": "regression",
+        "competition": {
+          "iscompetition": false
+        },
+        "metric": "r2",
+        "threshold": 0.5,
+        "target_column": "price"
+    },
+    "func":[
+        "compare_ml"
+    ],
+    "result":[
+        {
+            "file": "result.csv"
+        }
+    ],
+    "options": [{}]
+  }
+  

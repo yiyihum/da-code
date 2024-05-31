@@ -1,0 +1,22 @@
+{
+    "id": "ml-cluster-001",
+    "config":{
+        "task": "machinelearning",
+        "type": "cluster",
+        "competition": {
+          "iscompetition": false
+        },
+        "metric": "silhouette score",
+        "threshold": 0.5
+    },
+    "func":[
+        "compare_ml"
+    ],
+    "result":[
+        {
+            "file": "cluster.csv"
+        }
+    ],
+    "options": [{}]
+  }
+  

@@ -3,7 +3,11 @@
   "config":{
       "task": "machinelearning",
       "type": "binary classification",
-      "competition": false
+      "competition": {
+        "iscompetition": false
+      },
+      "metric": "f1",
+      "threshold": 0.9
   },
   "func":[
       "compare_ml"

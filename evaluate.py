@@ -1,18 +1,25 @@
-import argparse
+import pandas as pd
 from tqdm import tqdm
 from spider2.evaluators.evaluation import Evaluator
 
-output_dir = './benchmark/results/azure-DV-test'
+output_dir = './benchmark/output/example'
 gold_dir = './benchmark/gold'
 
 evalutor = Evaluator(output_dir=output_dir, gold_dir=gold_dir)
 
-eval_json = 'benchmark/configs/evaluation000.json'
+eval_json = './evaluation_examples/examples/machinelearning/ml-cluster-001.json'
 
 score, info = evalutor.evaluate(env_config=eval_json)
 print(score) # 1.0
 if info:
     print(info)
 '''
-[{'img': False, 'data': True, 'type': True, 'color': True, 'figsize': True, 'labels': True, 'xtick_labels': True, 'ytick_labels': True}]
+[{'errors': ["result contains non numeric columns: ['Genre']"], 
+'metric': 'silhouette score', 
+'threshold': 0.5, 
+'score': 0.44637121804301805, 
+'task': 'machinelearning', 
+'type': 'cluster', 
+'competition': {'iscompetition': False}, 
+'file': 'cluster.csv', 'id': 'ml-cluster-001'}]
 '''
