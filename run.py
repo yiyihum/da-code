@@ -9,7 +9,7 @@ import sys
 from tqdm import tqdm
 
 from spider2.envs.spider2 import Spider2Env
-from llm_agents.agent import PromptAgent
+from spider2.agent.agents import PromptAgent
 
 
 #  Logger Configs {{{ #

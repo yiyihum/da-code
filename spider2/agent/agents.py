@@ -8,9 +8,9 @@ import uuid
 from http import HTTPStatus
 from io import BytesIO
 from typing import Dict, List
-from llm_agents.prompts import SYS_PROMPT_IN_OUR_CODE, SYS_PROMPT_OUTPUT_FORMAT
-from llm_agents.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
-from spider2.envs.spider2 import Spider2Env
+from agent.prompts import SYS_PROMPT_IN_OUR_CODE, SYS_PROMPT_OUTPUT_FORMAT
+from agent.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
+from envs.spider2 import Spider2Env
 from openai import AzureOpenAI
 from typing import Dict, List, Optional, Tuple, Any, TypedDict
 
@@ -30,24 +30,7 @@ import signal
 # - edit line of file ❌
 
 MAX_OBSERVATION_LENGTH = 2000
-Time_OUT_ACTION = 10
-
-class TimeoutException(Exception):
-    pass
-
-def timeout_handler(signum, frame):
-    raise TimeoutException("Action execution time exceeded!")
-
-class StepTimeout:
-    def __init__(self, seconds):
-        self.seconds = seconds
-
-    def __enter__(self):
-        signal.signal(signal.SIGALRM, timeout_handler)
-        signal.alarm(self.seconds)
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        signal.alarm(0)  # 取消闹钟
+TIME_OUT_ACTION = 10
 
 
 logger = logging.getLogger("spider2")
@@ -220,7 +203,7 @@ class PromptAgent:
 
             logger.info("Step %d: %s", step_idx + 1, action)
 
-            obs, done = self.step(action)
+            obs, done = self.env.step(action)
 
             if done:
                 logger.info("The task is done.")
@@ -610,63 +593,3 @@ class PromptAgent:
         else:
             raise ValueError("Invalid model: " + self.model)
         
-        
-    def step(self, action: Action):
-        try:
-            with StepTimeout(Time_OUT_ACTION):  
-                done = False
-                if isinstance(action, ExecuteCode):
-                    observation = self.execute_code_action(action)
-                elif isinstance(action, CreateFile):
-                    observation = self.create_file_action(action)
-                elif isinstance(action, EditFile):
-                    observation = self.edit_file_action(action)
-                elif isinstance(action, Terminate):
-                    observation = "Terminate"
-                    done = True
-                else:
-                    raise ValueError(f"Unrecognized action type {action.action_type} !")
-        except TimeoutException as e:
-            observation = str(e)
-        
-        observation = self._handle_observation(observation)
-        logger.info("Observation: %s", observation)
-        return observation, done
-    
-    def _handle_observation(self, observation):
-        max_length = MAX_OBSERVATION_LENGTH  
-        if len(observation) > max_length:
-            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated; Try other actions to get the left part.]"
-            return truncated_observation
-        return observation
-
-        
-    def create_file_action(self, action: CreateFile):
-        try:
-            self.env.controller.create_file(action.filepath, action.code)
-        except:
-            obs = f"Failed to create file in {action.filepath}",
-        else:
-            obs = f"File created successfully in {action.filepath}"
-        return obs
-
-
-    def execute_code_action(self, action: ExecuteCode):
-        """ Execute action in bash shell """
-        
-        obs = self.env.controller.execute_command(action.code)
-        if obs is None or obs == '':
-            obs = "code executed successfully."
-        
-        return obs
-    
-    
-    def edit_file_action(self, action: EditFile):
-        self.env.controller.execute_command(f"rm {action.filepath}")
-        try:
-            self.env.controller.create_file(action.filepath, action.code)
-        except:
-            obs = f"Failed to edit file in {action.filepath}",
-        else:
-            obs = f"File edit successfully in {action.filepath}"
-        return obs

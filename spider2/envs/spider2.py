@@ -13,9 +13,10 @@ import gymnasium as gym
 import shutil, pathlib, docker, time, copy
 from spider2.controllers.python import PythonController
 from spider2.controllers.setup import SetupController
-from spider2.evaluators import metrics, getters
+from spider2.envs.utils import *
 from spider2 import configs
-import hashlib
+from agent.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
+import signal
 
 logger = logging.getLogger("spider2.env")
 
@@ -25,7 +26,7 @@ Getter = Callable[[gym.Env, Dict[str, Any]], Any]
 
 # constants
 START_UP_DELAY = 2 # start up delay for docker container
-DEFAULT_TIME_OUT = 600 # default waiting time for each action
+DEFAULT_TIME_OUT = 20 # default waiting time for each action
 MAX_OBS_LENGTH = 3000
 EMPTY_DATA_PATH = 'benchmark/data/empty' # an empty data directory
 DEFAULT_IMAGE_DIR = 'benchmark/images' # default directory to store docker images
@@ -34,33 +35,6 @@ DEFAULT_MNT_DIR = 'benchmark/mnt' # default directory to copy and mount data pat
 TASK_FINISHED = "task_finished" # infos key
 ACTION_EXEC = "action_executed" # infos key
 
-
-def delete_files_in_folder(folder_path):
-    if os.path.exists(folder_path):
-        files = os.listdir(folder_path)
-        for file in files:
-            file_path = os.path.join(folder_path, file)
-            if os.path.isfile(file_path):
-                os.remove(file_path)
-            elif os.path.isdir(file_path):
-                shutil.rmtree(file_path)
-        
-def create_folder_if_not_exists(path):
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-def calculate_sha256(file_path):
-    with open(file_path, 'rb') as f:
-        file_data = f.read()
-        return hashlib.sha256(file_data).hexdigest()
-
-
-def find_diff_files(dict1, dict2)-> Dict:
-    added_files = set(dict2.keys()) - set(dict1.keys())
-    changed_files = {k: dict2[k] for k in set(dict1.keys()) & set(dict2.keys()) if dict1[k] != dict2[k]}
-    added_files_list = list(added_files)
-    changed_files_list = list(changed_files.keys())
-    return {"added_files": added_files_list, "changed_files": changed_files_list}
 
 class Spider2Env(gym.Env):
     """
@@ -298,31 +272,89 @@ class Spider2Env(gym.Env):
 
     #     return metric
     
+    def step(self, action: Action):
+        try:
+            with timeout(DEFAULT_TIME_OUT,"Action execution time exceeded!"):
+                done = False
+                if isinstance(action, ExecuteCode):
+                    observation = self.execute_code_action(action)
+                elif isinstance(action, CreateFile):
+                    observation = self.create_file_action(action)
+                elif isinstance(action, EditFile):
+                    observation = self.edit_file_action(action)
+                elif isinstance(action, Terminate):
+                    observation = "Terminate"
+                    done = True
+                else:
+                    raise ValueError(f"Unrecognized action type {action.action_type} !")
+        except TimeoutError as e:
+            observation = str(e)
+        
+        observation = self._handle_observation(observation)
+        logger.info("Observation: %s", observation)
+        return observation, done
+    
+    def _handle_observation(self, observation):
+        max_length = MAX_OBS_LENGTH  
+        if len(observation) > max_length:
+            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated; Try other actions to get the left part.]"
+            return truncated_observation
+        return observation
+
+        
+    def create_file_action(self, action: CreateFile):
+        try:
+            self.controller.create_file(action.filepath, action.code)
+        except:
+            obs = f"Failed to create file in {action.filepath}",
+        else:
+            obs = f"File created successfully in {action.filepath}"
+        return obs
+
+
+    def execute_code_action(self, action: ExecuteCode):
+        """ Execute action in bash shell """
+        
+        obs = self.controller.execute_command(action.code)
+        if obs is None or obs == '':
+            obs = "code executed successfully."
+        
+        return obs
     
     
-    def step(self, action) -> Tuple[str, float, bool, Dict]:
+    def edit_file_action(self, action: EditFile):
+        self.controller.execute_command(f"rm {action.filepath}")
+        try:
+            self.controller.create_file(action.filepath, action.code)
+        except:
+            obs = f"Failed to edit file in {action.filepath}",
+        else:
+            obs = f"File edit successfully in {action.filepath}"
+        return obs
+    
+    # def step(self, action) -> Tuple[str, float, bool, Dict]:
         
-        done = False
-        reward = 0 
+    #     done = False
+    #     reward = 0 
         
-        # handle the special actions
-        if action in ['WAIT', 'FAIL', 'DONE']:
-            if action == 'FAIL':
-                done = True
-                info = {"fail": True}
-            elif action == 'DONE':
-                done = True
-                info = {"done": True}
+    #     # handle the special actions
+    #     if action in ['WAIT', 'FAIL', 'DONE']:
+    #         if action == 'FAIL':
+    #             done = True
+    #             info = {"fail": True}
+    #         elif action == 'DONE':
+    #             done = True
+    #             info = {"done": True}
         
-        output = self.controller.execute_command(action)
+    #     output = self.controller.execute_command(action)
         
-        # observation = {
-        #     ""
-        #     "output": output,
-        #     "instruction": self.instruction,
-        # }
+    #     # observation = {
+    #     #     ""
+    #     #     "output": output,
+    #     #     "instruction": self.instruction,
+    #     # }
         
-        return output, reward, done, info
+    #     return output, reward, done, info
     
     
     
