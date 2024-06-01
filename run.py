@@ -66,7 +66,7 @@ def config() -> argparse.Namespace:
     # example config
     parser.add_argument("--domain", type=str, default="all")
     parser.add_argument("--test_all_meta_path","-t",type=str, default="benchmark/configs/ML.jsonl")
-    parser.add_argument("--exmple_range", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
+    parser.add_argument("--example_range", "-e", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--skip_existing", action="store_true", default=False)
     parser.add_argument("--retry_failed", action="store_true", default=False)
 
@@ -123,12 +123,12 @@ def test(
     assert os.path.exists(args.test_all_meta_path) and args.test_all_meta_path.endswith(".jsonl"), f"Invalid test_all_meta_path, must be a valid jsonl file: {args.test_all_meta_path}"
     with open(args.test_all_meta_path, "r") as f:
         task_configs = [json.loads(line) for line in f]
-    if args.exmple_range != "all":
-        if "-" in args.exmple_range:
-            start, end = map(int, args.exmple_range.split("-"))
+    if args.example_range != "all":
+        if "-" in args.example_range:
+            start, end = map(int, args.example_range.split("-"))
             task_configs = task_configs[start:end]
         else:
-            indices = list(map(int, args.exmple_range.split(",")))
+            indices = list(map(int, args.example_range.split(",")))
             task_configs = [task_configs[i] for i in indices]
     
 

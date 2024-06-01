@@ -1,0 +1,19 @@
+{
+    "id": "ml-competition-003",
+    "config":{
+        "task": "machinelearning competition",
+        "type": "binary classification",
+        "metric": "logloss_class",
+        "threshold": 0.9
+    },
+    "func":[
+        "compare_competition_ml"
+    ],
+    "result":[
+        {
+            "file": "submission.csv"
+        }
+    ],
+    "options": [{}]
+  }
+  

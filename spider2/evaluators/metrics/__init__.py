@@ -22,6 +22,7 @@ from .dbt import (
 )
 
 from .ml import (
-    compare_ml
+    compare_ml,
+    compare_competition_ml
 )
 

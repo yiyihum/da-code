@@ -1,17 +1,15 @@
 import pandas as pd
 
 
-id = 'ml-cluster-001'
-source = 'https://www.kaggle.com/datasets/sonalisingh1411/mallcustomersdataset'
+id = 'ml-competition-004'
+source = 'https://www.kaggle.com/code/lucamassaron/steel-plate-eda-xgboost-is-all-you-need'
 hints = """
-"1.Select the third and fourth columns of data to form a feature vector.
-2. Standardize the variables using StandardScaler.
-3. Choose the AgglomerativeClustering model.
-4. gold result: silhouette: 0.553"
+1. analysis target data
+2. use  feature engineering
+3. choose xgboost classifiser
 """
 instruction ="""
-This is a dataset of annual income and spending scores in a mall. You need to perform clustering analysis on the annual income and spending scores based on this dataset. Write the clustering results into cluster.csv, where result.csv consists of 'Feature_i' (the ith value of the processed feature vector) and 'Cluster' column (the clustering label results).
-"""
+This is a dataset for a Steel plates data for defect prediction competition, with the description available in README.md. You are now a contestant in this competition and need to design a method to predict the data in test.csv according to the competition requirements. Write the results into submission.csv according to the format of sample_submission.csv."""
 
 data_json =[{
     "id": id,
@@ -33,7 +31,7 @@ data_json =[{
 
 # 保存为jsonl
 import json
-with open("./benchmark/configs/Cluster.jsonl", "w") as f:
+with open("./benchmark/configs/Competition.jsonl", "a") as f:
     for item in data_json:
         json.dump(item, f)
         f.write("\n")
