@@ -15,7 +15,7 @@ from spider2.controllers.python import PythonController
 from spider2.controllers.setup import SetupController
 from spider2.envs.utils import *
 from spider2 import configs
-from agent.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
+from spider2.agent.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
 import signal
 
 logger = logging.getLogger("spider2.env")
@@ -210,8 +210,7 @@ class Spider2Env(gym.Env):
         """
         Evaluate whether the task is successfully completed.
         """
-        env_files_hash = self._get_env_files_hash()
-        diff_files = find_diff_files(self.init_files_hash, env_files_hash)
+        diff_files = self._find_diff_files_init(self.init_files_hash)
 
         post_process_files = []
         for post_process_f in self.post_process_func:
@@ -221,7 +220,20 @@ class Spider2Env(gym.Env):
             post_process_files.extend(process_function(self.mnt_dir, self.controller))
 
         return {**diff_files, "post_process_files": post_process_files}
-        
+
+    def _find_diff_files_init(self, init_file_dict)-> Dict:
+        init_file_paths = init_file_dict.keys()
+        added_files_list = []
+        changed_files_list = []
+        for root, dirs, files in os.walk(self.mnt_dir):
+            for f in files:
+                file_path = os.path.join(root, f)
+                if file_path not in init_file_paths:
+                    added_files_list.append(file_path)
+                else:
+                    if init_file_dict[file_path] != calculate_sha256(file_path):
+                        changed_files_list.append(file_path)
+        return {"added_files": added_files_list, "changed_files": changed_files_list}
         
     # def evaluate(self):
     #     """
@@ -303,12 +315,14 @@ class Spider2Env(gym.Env):
 
         
     def create_file_action(self, action: CreateFile):
-        try:
-            self.controller.create_file(action.filepath, action.code)
-        except:
-            obs = f"Failed to create file in {action.filepath}",
-        else:
-            obs = f"File created successfully in {action.filepath}"
+        obs = self.controller.create_file(action.filepath, action.code)
+        if obs is None or obs == '':
+            real_file_path = self.controller.get_real_file_path(action.filepath)
+            valid, error = is_file_valid(real_file_path)
+            if valid:
+                obs = f"File {action.filepath} created successfully."
+            else:
+                obs = f"Falied to validate file {action.filepath}, error: {error}"
         return obs
 
 
@@ -317,21 +331,23 @@ class Spider2Env(gym.Env):
         
         obs = self.controller.execute_command(action.code)
         if obs is None or obs == '':
-            obs = "code executed successfully."
+            obs = "Action executed successfully. No output."
         
         return obs
     
     
     def edit_file_action(self, action: EditFile):
-        self.controller.execute_command(f"rm {action.filepath}")
-        try:
-            self.controller.create_file(action.filepath, action.code)
-        except:
-            obs = f"Failed to edit file in {action.filepath}",
-        else:
-            obs = f"File edit successfully in {action.filepath}"
+        obs = self.controller.edit_file(action.filepath, action.code)
+        if obs is None or obs == '':
+            real_file_path = self.controller.get_real_file_path(action.filepath)
+            valid, error = is_file_valid(real_file_path)
+            if valid:
+                obs = f"File {action.filepath} edited successfully."
+            else:
+                obs = f"Falied to validate file {action.filepath}, error: {error}"
         return obs
     
+
     # def step(self, action) -> Tuple[str, float, bool, Dict]:
         
     #     done = False

@@ -3,10 +3,34 @@ import os
 import hashlib
 import shutil
 from typing import Dict
+import os
+import pandas as pd
+import json
+import xml.etree.ElementTree as ET
+import yaml
 
 
 TIMEOUT_DURATION = 25
 
+def is_file_valid(file_path):
+    ext = os.path.splitext(file_path)[1].lower()
+    try:
+        if ext == '.csv':
+            pd.read_csv(file_path)
+        elif ext == '.json':
+            with open(file_path, 'r') as f:
+                json.load(f)
+        elif ext == '.xml':
+            ET.parse(file_path)
+        elif ext == '.yaml' or ext == '.yml':
+            with open(file_path, 'r') as f:
+                yaml.safe_load(f)
+        else:
+            return True, None
+        return True, None
+    except Exception as e:
+        return False, str(e)
+        
 class timeout:
     def __init__(self, seconds=TIMEOUT_DURATION, error_message="Timeout"):
         self.seconds = seconds
@@ -43,9 +67,3 @@ def calculate_sha256(file_path):
         return hashlib.sha256(file_data).hexdigest()
 
 
-def find_diff_files(dict1, dict2)-> Dict:
-    added_files = set(dict2.keys()) - set(dict1.keys())
-    changed_files = {k: dict2[k] for k in set(dict1.keys()) & set(dict2.keys()) if dict1[k] != dict2[k]}
-    added_files_list = list(added_files)
-    changed_files_list = list(changed_files.keys())
-    return {"added_files": added_files_list, "changed_files": changed_files_list}
