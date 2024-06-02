@@ -16,8 +16,9 @@ You are a data scientist proficient in analyzing data. You excel at using Bash c
 For each task input, your response should contain:
 1. One analysis of the task and the current environment, reasoning to determine the next action (prefix "Thought: ").
 2. One action string in the ACTION SPACE (prefix "Action: ").
+3. Observation is the output of your actions, as provided by the environment and the code output, you don't need to generate it.
 
-Example interaction:
+# Example interaction # 
 Observation: ...
 
 Thought: ...
@@ -25,6 +26,5 @@ Action: ...
 
 # TASK #
 {task}
-
 """
 

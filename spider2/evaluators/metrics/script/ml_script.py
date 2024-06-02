@@ -11,7 +11,8 @@ from sklearn.metrics import (roc_auc_score,
                             mean_absolute_error, 
                             mean_squared_error,
                             root_mean_squared_error,
-                            median_absolute_error)
+                            median_absolute_error,
+                            accuracy_score)
 from sklearn.metrics import confusion_matrix
 
 class PreprocessML:
@@ -102,23 +103,53 @@ class PreprocessML:
 class CalculateML:
 
     @staticmethod
-    def calculate_r2(gold, result):
-        output = {'errors':[]}
-        if not str(gold.dtype) == str(result.dtype) :
-            try:
-                result.astype(str(gold.dtype))
-            except TypeError as e:
-                output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}. Error: {str(e)}")
-                return (0.0, output)
-            except ValueError as e:
-                output['errors'].append(f"ValueError: result target dtype {str(result.dtype)} cannot be converted to gold's {str(gold.dtype)}. Error: {str(e)}")
-                return (0.0, output)
-            except Exception as e:
-                output['errors'].append(f"Unexpected error: {str(e)}")
-                return (0.0, output)
+    def calculate_accuracy(gold, result, task_type: Optional[str]=None, **kwargs):
+        output = {'errors': []}
+        if not str(gold.dtype) == str(result.dtype):
             output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
         try:
-            score = r2_score(y_true=gold, y_pred=result)
+            label_encoder = LabelEncoder()
+            gold = label_encoder.fit_transform(gold)
+            result = label_encoder.fit_transform(result)
+        except Exception as e:
+            output['errors'].append(f'fall to encoder label, because {str(e)}')
+            return (0.0, output['errors'])
+        
+        if result.ndim > 2:
+            output['errors'].append(f'Expected 1D or 2D array, but got {result.ndim}')
+            return (0.0, output['errors'])
+        elif result.ndim == 2 and result.shape[-1] > 1:
+            output['errors'].append(f'Expected 1 column array, but got {result.shape[-1]}')
+            return (0.0, output['errors'])
+        
+        if gold.ndim > 2 :
+            raise ValueError(f'Expected Gold as a 1D or 2D array, but got {gold.ndim}')
+        elif gold.ndim == 2 and gold.shape[-1] > 1:
+            raise ValueError(f'Expected Gold as 1 column array, but got {gold.shape[-1]}')
+            
+        result = result.reshape(-1,) if result.ndim == 2 else result
+        gold = result.reshape(-1,) if gold.ndim == 2 else result
+
+        try:
+            score = accuracy_score(y_true=gold, y_pred=result)
+        except Exception as e:
+            output['errors'].append(f'fall to calculate f1 socre, because {str(e)}')
+            return (0.0, output['errors'])
+
+        return (score, output)
+
+    @staticmethod
+    def calculate_r2(gold, result, task_type: Optional[str]=None, **kwargs):
+        output = {'errors':[]}
+        try:
+            result_np = result.to_numpy()
+        except Exception as e:
+            output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
+            return (0.0, output)
+        gold_np = gold.to_numpy()
+
+        try:
+            score = r2_score(y_true=gold_np, y_pred=result_np)
         except Exception as e:
             output['errors'].append(f'fall to calculate r2 socre, because {str(e)}')
             return (0.0, output['errors'])
@@ -126,15 +157,22 @@ class CalculateML:
         return (max(score, 0.0), output)
     
     @staticmethod
-    def calculate_f1(gold, result):
+    def calculate_f1(gold, result, task_type: Optional[str]=None, **kwargs):
+        averaged = kwargs.pop('average', '')
         output = {'errors': []}
         if not str(gold.dtype) == str(result.dtype):
             output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
-        label_encoder = LabelEncoder()
-        gold = label_encoder.fit_transform(gold)
-        result = label_encoder.fit_transform(result)
         try:
-            score = f1_score(y_true=gold, y_pred=result, average='weighted')
+            label_encoder = LabelEncoder()
+            gold = label_encoder.fit_transform(gold)
+            result = label_encoder.fit_transform(result)
+        except Exception as e:
+            output['errors'].append(f'fall to encoder label, because {str(e)}')
+            return (0.0, output['errors'])
+            
+        try:
+            score = f1_score(y_true=gold, y_pred=result, average='weighted') if not averaged \
+                else f1_score(y_true=gold, y_pred=result, average=averaged)
         except Exception as e:
             output['errors'].append(f'fall to calculate f1 socre, because {str(e)}')
             return (0.0, output['errors'])
@@ -142,7 +180,7 @@ class CalculateML:
         return (score, output)
     
     @staticmethod
-    def calculate_silhouette(result,target_labels):
+    def calculate_silhouette(result,target_labels, task_type: Optional[str]=None,  **kwargs):
         target_labels = target_labels if isinstance(target_labels, np.ndarray) \
             else np.array(target_labels)
         output = {'errors': []}
@@ -169,7 +207,7 @@ class CalculateML:
         return (score, output)
     
     @staticmethod
-    def calculate_roc_auc_score(result: pd.DataFrame, gold: pd.DataFrame, task_type: str):
+    def calculate_roc_auc_score(result: pd.DataFrame, gold: pd.DataFrame, task_type: Optional[str]=None,  **kwargs):
         output = {'errors': []}
         try:
             result_np = result.to_numpy()
@@ -215,7 +253,7 @@ class CalculateML:
         
     
     def calculate_logloss_class(result:pd.DataFrame, gold: pd.DataFrame, 
-            task_type: str):        
+            task_type: str,  **kwargs):        
         output = {'errors': []}
         lower_bound = 1e-15
         upper_bound = 1 - 1e-15
@@ -251,7 +289,7 @@ class CalculateML:
     
     @staticmethod
     def calculate_logloss_total(result:pd.DataFrame, gold: pd.DataFrame, 
-            task_type: str):        
+            task_type: str,  **kwargs):        
         output = {'errors': []}
         lower_bound = 1e-15
         upper_bound = 1 - 1e-15
@@ -299,14 +337,16 @@ class CalculateML:
             if result_np.ndim != 1 else result_np
         gold_np = gold_np.flatten().reshape(-1,) \
             if gold_np.ndim != 1 else gold_np
-        N = N if N else len(np.unique(gold_np))
-        O = confusion_matrix(y_true=gold_np, y_pred=result_np, labels=np.arange(N))
-        # Weight matrix
-        w = np.zeros((N, N))
-        for i in range(1, N+1):
-            for j in range(1, N+1):
-                w[i-1, j-1] = ((i - j) ** 2) / ((N - 1) ** 2)
         try:
+            if gold_np.dtype != result_np.dtype:
+                result_np = result_np.astype(gold_np.dtype)
+            N = N if N else len(np.unique(gold_np))
+            O = confusion_matrix(y_true=gold_np, y_pred=result_np, labels=np.arange(N))
+            # Weight matrix
+            w = np.zeros((N, N))
+            for i in range(1, N+1):
+                for j in range(1, N+1):
+                    w[i-1, j-1] = ((i - j) ** 2) / ((N - 1) ** 2)
             min_gold = min(gold_np)
             gold_np = gold_np if not min_gold else (gold_np - min_gold)
             result_np = result_np if not min_gold else (result_np - min_gold)
@@ -339,7 +379,7 @@ class CalculateML:
         gold_np = gold.to_numpy()
 
         try:
-            score = root_mean_squared_log_error(y_true=gold_np, y_pred=result_np, squared=False)
+            score = root_mean_squared_log_error(y_true=gold_np, y_pred=result_np)
         except Exception as e:
             output['errors'].append(f"Failed to calculate rmsle: {str(e)}")
             return (0.0, output)

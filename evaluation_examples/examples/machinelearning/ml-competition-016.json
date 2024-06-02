@@ -1,0 +1,18 @@
+{
+    "id": "ml-competition-016",
+    "config":{
+        "task": "machinelearning competition",
+        "type": "binary classification",
+        "metric": "roc_auc_score",
+        "threshold": 0.96871
+    },
+    "func":[
+        "compare_competition_ml"
+    ],
+    "result":[
+        {
+            "file": "submission.csv"
+        }
+    ],
+    "options": [{}]
+}

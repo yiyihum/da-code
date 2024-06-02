@@ -1,15 +1,17 @@
 import pandas as pd
 
 
-id = 'ml-competition-004'
-source = 'https://www.kaggle.com/code/lucamassaron/steel-plate-eda-xgboost-is-all-you-need'
+id = 'ml-competition-009'
+source = 'https://www.kaggle.com/code/rohangulati14/leading-sol-regression-with-an-abalone-dataset'
 hints = """
-1. analysis target data
-2. use  feature engineering
-3. choose xgboost classifiser
+"1. Remove the id column from the training and testing data.
+2. Merge the original training data with the new training data.
+3. Remove duplicate values.
+4. Train a stacked regression model."
 """
 instruction ="""
-This is a dataset for a Steel plates data for defect prediction competition, with the description available in README.md. You are now a contestant in this competition and need to design a method to predict the data in test.csv according to the competition requirements. Write the results into submission.csv according to the format of sample_submission.csv."""
+This is a competition based on an abalone dataset, with the description available in README.md. As a participant, you need to design a solution to complete this competition. Write your prediction results into submission.csv following the format of sample_submission.csv.
+"""
 
 data_json =[{
     "id": id,

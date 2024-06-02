@@ -114,6 +114,7 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
 def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> dict:
     output_ml = {'errors': []}
     config = kwargs.get('config', {})
+    averaged = kwargs.get('average', 'micro')
     assert config, 'Machine Learning Evaluation needs a config.'
     task_type = config.get('type', '')
     assert task_type, f'Machine Learning Evaluation needs "type" in config, such as {TYPES}'
@@ -178,7 +179,7 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
 
     if not metric_func:
         raise ValueError(f"Evaluation Scripts don't have {metric_func}")
-    score, output = metric_func(result_df, expected_df, task_type)
+    score, output = metric_func(result_df, expected_df, task_type, **{'average': averaged})
 
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score

@@ -1,0 +1,18 @@
+{
+    "id": "ml-competition-015",
+    "config":{
+        "task": "machinelearning competition",
+        "type": "regression",
+        "metric": "medae",
+        "threshold": 0.53706
+    },
+    "func":[
+        "compare_competition_ml"
+    ],
+    "result":[
+        {
+            "file": "submission.csv"
+        }
+    ],
+    "options": [{}]
+}
