@@ -26,7 +26,6 @@ class Action(ABC):
     )
 
 
-    
     @classmethod
     def get_action_description(cls) -> str:
         return """
@@ -41,7 +40,7 @@ Observation: the observation space of this action type.
         raise NotImplementedError
 
 @dataclass
-class ExecuteCode(Action):
+class ExecuteBash(Action):
 
     action_type: str = field(
         default="exec_code",
@@ -57,15 +56,15 @@ class ExecuteCode(Action):
     @classmethod
     def get_action_description(cls) -> str:
         return """
-Action: ExecuteCode(code=\"shell_command\")
-Description: This action string will execute a valid shell command in the `code` field, such as `cat path/to/file.txt` and `python path/to/file.py`. Please pay attention to the current working directory. If you execute a `cd new_path` command, the working directory will be changed. If no further action is taken, the working directory will still be the changed new_path. Furthermore, for two special commands `cd new_path` and `export var=val`, they must occur as a single command and cannot use `&&` or `;` to chain together. If you want to, for example, set multiple environment variables, please use multiple ExecuteCode actions.
-Usage: ExecuteCode(code="ls -l")
-Observation: The observation space is the stdout or stderr of the executed command in the bash terminal.
+## ExecuteBash
+  Signature: ExecuteBash(code="shell_command")
+  Description: This action string will execute a valid shell command in the `code` field.
+  Example: ExecuteBash(code="ls -l")
 """
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'ExecuteCode\(code=(.*)\)', text, flags=re.DOTALL)
+        matches = re.findall(r'ExecuteBash\(code=(.*)\)', text, flags=re.DOTALL)
         if matches:
             code = matches[-1]
             return cls(code=remove_quote(code))
@@ -74,40 +73,9 @@ Observation: The observation space is the stdout or stderr of the executed comma
     def __repr__(self) -> str:
         return f'{self.__class__.__name__}(code="{self.code}")'
 
-# @dataclass
-# class PackageInstall(Action):
-
-#     action_type: str = field(
-#         default="package_install",
-#         init=False,
-#         repr=False,
-#         metadata={"help": 'type of action, c.f., "package_install"'}
-#     )
-
-#     package: str = field(
-#         metadata={"help": 'package to install'}
-#     )
-
-#     @classmethod
-#     def get_action_description(cls) -> str:
-#         return """
-# Action: PackageInstall(package=\"package_name\")
-# Description: This action string will install a python package in the `package` field for the environment. Notice that, you can only install a package that is available via the pip command. You can also specify the version of the package to install, such as package="numpy==1.19.5". If you want to install multiple packages, use whitespaces to separate them, such as package="numpy pandas".
-# Usage: PackageInstall(package="sklearn")
-# Observation: The observation space is a text message indicating whether this action is executed successfully or not.
-# """
-
-#     @classmethod
-#     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-#         matches = re.findall(r'PackageInstall\(package=(.*?)\)', text, flags=re.DOTALL)
-#         if matches:
-#             package = matches[-1]
-#             return cls(package=remove_quote(package))
-#         return None
-
 
 @dataclass
-class PythonSnippet(Action):
+class ExecutePython(Action):
 
     action_type: str = field(
         default="python_snippet",
@@ -121,17 +89,18 @@ class PythonSnippet(Action):
     )
 
     def __repr__(self) -> str:
-        return f"PythonSnippet:\n```\n{self.code.strip()}\n```"
+        return f"ExecutePython:\n```\n{self.code.strip()}\n```"
 
     @classmethod
     def get_action_description(cls) -> str:
         return """
-Action: PythonSnippet:
+## ExecutePython
+Signature: ExecutePython:
 ```
 executable_python_code
 ```
-Description: This action string will execute a valid python command or snippet wrapped by paired ``` symbols. If the code snippet contains multiple lines, pay attention to the indentation. And if you want to know the value of one variable, please use the print `function` explicitly. Notice that, the python code execution is continuous, which means that the variables, functions and classes defined in previous code snippets can be used in the following code snippet.
-Usage: PythonSnippet:
+Description: This action executes a valid Python command or snippet wrapped in paired ``` symbols. This action is intended for short code snippets. For longer code, please use other commands to write the code to a file and then execute it.
+Example: ExecutePython:
 ```
 class Foo():
     def __init__(self):
@@ -139,12 +108,11 @@ class Foo():
         
 Foo()
 ```
-Observation: The observation space is the output or error message of the executed python code.
 """
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'PythonSnippet.*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+        matches = re.findall(r'ExecutePython.*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
         if matches:
             code = matches[-1][1]
             return cls(code=code.strip())
@@ -211,16 +179,16 @@ class CreateFile(Action):
     @classmethod
     def get_action_description(cls) -> str:
         return """
-Action: CreateFile(filepath="path/to/file"):
+## CreateFile
+Signature: CreateFile(filepath="path/to/file"):
 ```
 file_content
 ```
-Description: This action will create a file in the field `filepath` with the content wrapped by paired ``` symbols. Notice that, the file content can be free form text, arbitrary programming langugage codes or configurations. For more structured format (e.g., .csv or .json files), you can use the CreateFile action to firstly create a writing-to-file program file (e.g., .py or .sh) and then use the ExecuteCode action to execute the program and generate the structured file. Remember to provide the field `filepath` besides the "file_content" in this action even if the created file is only temporary and will be deleted later.
-Usage: CreateFile(filepath="hello_world.py"):
+Description: This action will create a file in the field `filepath` with the content wrapped by paired ``` symbols. Make sure the file content is complete and correct. If the file already exists, you can only use EditFile to modify it.
+Example: CreateFile(filepath="hello_world.py"):
 ```
 print("Hello, world!")
 ```
-Observation: The observation space is a text message indicating whether this action is executed successfully or not.
 """
 
     @classmethod
@@ -259,16 +227,16 @@ class EditFile(Action):
     @classmethod
     def get_action_description(cls) -> str:
         return """
-Action: EditFile(filepath="path/to/file"):
+## EditFile
+Signature: EditFile(filepath="path/to/file"):
 ```
 file_content
 ```
-Description: This action will edit a file in the field `filepath` with the content wrapped by paired ``` symbols. Notice that, the file content can be free form text, arbitrary programming langugage codes or configurations. Normally, you need to read a file before deciding whether to use EditFile to modify it. You need to give the entire modified file content. 
-Usage: EditFile(filepath="hello_world.py"):
+Description: This action will overwrite the file specified in the filepath field with the content wrapped in paired ``` symbols. Normally, you need to read the file before deciding to use EditFile to modify it.
+Example: EditFile(filepath="hello_world.py"):
 ```
 print("Hello, world!")
 ```
-Observation: The observation space is a text message indicating whether this action is executed successfully or not.
 """
 
     @classmethod
@@ -280,6 +248,44 @@ Observation: The observation space is a text message indicating whether this act
             return cls(code=code, filepath=remove_quote(filepath))
         return None
 
+@dataclass
+class Terminate(Action):
+
+    action_type: str = field(
+        default="terminate",
+        init=False,
+        repr=False,
+        metadata={"help": "terminate action representing the task is finished, or you think it is impossible for you to complete the task"}
+    )
+
+    output: Optional[str] = field(
+        default=None,
+        metadata={"help": "answer to the task or output file path or 'FAIL', if exists"}
+    )
+
+    @classmethod
+    def get_action_description(cls) -> str:
+        return """
+## Terminate
+Signature: Terminate(output="literal_answer_or_output_path")
+Description: This action denotes the completion of the entire task and returns the final answer or the output file/folder path. Make sure the output file is located in the initial workspace directory.
+Example1: Terminate(output="New York")
+Example2: Terminate(output="result.txt")
+Example3: Terminate(output="FAIL")
+
+"""
+
+    def __repr__(self) -> str:
+        return f'{self.__class__.__name__}(output="{self.output}")'
+
+    @classmethod
+    def parse_action_from_text(cls, text: str) -> Optional[Action]:
+        matches = re.findall(r'Terminate\(output=(.*)\)', text, flags=re.DOTALL)
+        if matches:
+            output = matches[-1]
+            return cls(output=remove_quote(output))
+        return None
+    
 
 # @dataclass
 # class WebSearch(Action):
@@ -314,40 +320,34 @@ Observation: The observation space is a text message indicating whether this act
 #         return None
 
 
-@dataclass
-class Terminate(Action):
 
-    action_type: str = field(
-        default="terminate",
-        init=False,
-        repr=False,
-        metadata={"help": "terminate action representing the task is finished, or you think it is impossible for you to complete the task"}
-    )
+# @dataclass
+# class PackageInstall(Action):
 
-    output: Optional[str] = field(
-        default=None,
-        metadata={"help": "answer to the task or output file path or 'FAIL', if exists"}
-    )
+#     action_type: str = field(
+#         default="package_install",
+#         init=False,
+#         repr=False,
+#         metadata={"help": 'type of action, c.f., "package_install"'}
+#     )
 
-    @classmethod
-    def get_action_description(cls) -> str:
-        return """
-Action: Terminate(output=\"literal_answer_or_output_path\")
-Description: This action denotes the completion of the entire task and returns the final answer or the output file/folder path. If the output field is a directory or filepath, you can use the relative path of the current working directory or directly use the absolute path.
-Usage1: Terminate(output="New York")
-Usage2: Terminate(output="/workspace/result.txt")
-Usage3: Terminate(output="FAIL")
-Observation: The observation space is empty since the task is finished.
-"""
+#     package: str = field(
+#         metadata={"help": 'package to install'}
+#     )
 
-    def __repr__(self) -> str:
-        return f'{self.__class__.__name__}(output="{self.output}")'
+#     @classmethod
+#     def get_action_description(cls) -> str:
+#         return """
+# Action: PackageInstall(package=\"package_name\")
+# Description: This action string will install a python package in the `package` field for the environment. Notice that, you can only install a package that is available via the pip command. You can also specify the version of the package to install, such as package="numpy==1.19.5". If you want to install multiple packages, use whitespaces to separate them, such as package="numpy pandas".
+# Usage: PackageInstall(package="sklearn")
+# Observation: The observation space is a text message indicating whether this action is executed successfully or not.
+# """
 
-    @classmethod
-    def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'Terminate\(output=(.*)\)', text, flags=re.DOTALL)
-        if matches:
-            output = matches[-1]
-            return cls(output=remove_quote(output))
-        return None
-    
+#     @classmethod
+#     def parse_action_from_text(cls, text: str) -> Optional[Action]:
+#         matches = re.findall(r'PackageInstall\(package=(.*?)\)', text, flags=re.DOTALL)
+#         if matches:
+#             package = matches[-1]
+#             return cls(package=remove_quote(package))
+#         return None

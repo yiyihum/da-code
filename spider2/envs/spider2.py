@@ -15,7 +15,7 @@ from spider2.controllers.python import PythonController
 from spider2.controllers.setup import SetupController
 from spider2.envs.utils import *
 from spider2 import configs
-from spider2.agent.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
+from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecutePython
 import signal
 
 logger = logging.getLogger("spider2.env")
@@ -288,12 +288,14 @@ class Spider2Env(gym.Env):
         try:
             with timeout(DEFAULT_TIME_OUT,"Action execution time exceeded!"):
                 done = False
-                if isinstance(action, ExecuteCode):
+                if isinstance(action, ExecuteBash):
                     observation = self.execute_code_action(action)
                 elif isinstance(action, CreateFile):
                     observation = self.create_file_action(action)
                 elif isinstance(action, EditFile):
                     observation = self.edit_file_action(action)
+                elif isinstance(action, ExecutePython):
+                    observation = self.execute_python_action(action)
                 elif isinstance(action, Terminate):
                     observation = "Terminate"
                     done = True
@@ -326,10 +328,18 @@ class Spider2Env(gym.Env):
         return obs
 
 
-    def execute_code_action(self, action: ExecuteCode):
+    def execute_code_action(self, action: ExecuteBash):
         """ Execute action in bash shell """
         
         obs = self.controller.execute_command(action.code)
+        if obs is None or obs == '':
+            obs = "Action executed successfully. No output."
+        
+        return obs
+
+    def execute_python_action(self, action: ExecutePython):
+        """ Execute action in python shell """
+        obs = self.controller.execute_python_code(action.code)
         if obs is None or obs == '':
             obs = "Action executed successfully. No output."
         

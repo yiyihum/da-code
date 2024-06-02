@@ -8,8 +8,8 @@ import uuid
 from http import HTTPStatus
 from io import BytesIO
 from typing import Dict, List
-from spider2.agent.prompts import SYS_PROMPT_IN_OUR_CODE, SYS_PROMPT_OUTPUT_FORMAT
-from spider2.agent.action import ExecuteCode, CreateFile, Action, Terminate, EditFile
+from spider2.agent.prompts import SYS_PROMPT_IN_OUR_CODE
+from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecutePython
 from spider2.envs.spider2 import Spider2Env
 from openai import AzureOpenAI
 from typing import Dict, List, Optional, Tuple, Any, TypedDict
@@ -55,8 +55,8 @@ class PromptAgent:
         self.system_message = ""
         self.env = None
 
-        self._AVAILABLE_ACTION_CLASSES = [ExecuteCode, CreateFile, EditFile, Terminate]
-        # self._AVAILABLE_ACTION_CLASSES = [ExecuteCode, Terminate]
+        self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate, ExecutePython, CreateFile, EditFile]
+        # self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate]
         self.work_dir = "/workspace"
         
     def set_env_and_task(self, env: Spider2Env):
@@ -66,7 +66,7 @@ class PromptAgent:
         self.observations = []
         self.instruction = self.env.task_config['instruction']
         action_space = "".join([action_cls.get_action_description() for action_cls in self._AVAILABLE_ACTION_CLASSES])
-        self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space) + "\n" + SYS_PROMPT_OUTPUT_FORMAT + "\n  The user asked the following question: # TASK # \n {}".format(self.instruction)
+        self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space, task=self.instruction)
         
     def predict(self, obs: Dict=None) -> List:
         """
@@ -180,7 +180,7 @@ class PromptAgent:
                 output_action = action
         # TODO: add a default action if no action is parsed
         if output_action is None:
-            output_action = ExecuteCode(code=action_string)
+            output_action = ExecuteBash(code=action_string)
         
         self.actions.append(output_action)
         return output_action
