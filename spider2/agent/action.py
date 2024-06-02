@@ -57,9 +57,9 @@ class ExecuteBash(Action):
     def get_action_description(cls) -> str:
         return """
 ## ExecuteBash
-  Signature: ExecuteBash(code="shell_command")
-  Description: This action string will execute a valid shell command in the `code` field.
-  Example: ExecuteBash(code="ls -l")
+Signature: ExecuteBash(code="shell_command")
+Description: This action string will execute a valid shell command in the `code` field.
+Example: ExecuteBash(code="ls -l")
 """
 
     @classmethod
@@ -102,8 +102,7 @@ executable_python_code
 
 Description: This action executes a very simple Python command or snippet wrapped in paired ``` symbols. It is intended for short, exploratory code snippets. For longer or more complex code, please use CreateFile to write the code to a file and then execute it.
 
-Example:
-ExecuteSimplePython:
+Example: ExecuteSimplePython:
 ```
 print("Hello, world!")
 ```
