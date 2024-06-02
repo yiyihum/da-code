@@ -25,7 +25,7 @@ from agent.models import call_llm
 # - edit line of file ❌
 
 MAX_OBSERVATION_LENGTH = 2000
-TIME_OUT_ACTION = 10
+TIME_OUT_ACTION = 30
 
 
 logger = logging.getLogger("spider2")
@@ -66,7 +66,7 @@ class PromptAgent:
         self.observations = []
         self.instruction = self.env.task_config['instruction']
         action_space = "".join([action_cls.get_action_description() for action_cls in self._AVAILABLE_ACTION_CLASSES])
-        self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space) + "\n" + SYS_PROMPT_OUTPUT_FORMAT + "\nYou are asked to complete the following task: {}".format(self.instruction)
+        self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space) + "\n" + SYS_PROMPT_OUTPUT_FORMAT + "\n  The user asked the following question: # TASK # \n {}".format(self.instruction)
         
     def predict(self, obs: Dict=None) -> List:
         """
@@ -110,7 +110,7 @@ class PromptAgent:
                 "content": [
                     {
                         "type": "text",
-                        "text": "Given the environment and info as below:\n{}\nWhat's the next step that you will do to help with the task?".format(
+                        "text": """Given the observation as below:\n{}\nWhat's the next step that you will do to help with the task?""".format(
                             previous_obs)
                     }
                 ]
@@ -121,7 +121,7 @@ class PromptAgent:
                 "content": [
                     {
                         "type": "text",
-                        "text": previous_thought.strip() if len(previous_thought) > 0 else "No valid action"
+                        "text": "thought and action: {}".format(previous_thought.strip() if len(previous_thought) > 0 else "No valid thought")
                     },
                 ]
             })
@@ -162,7 +162,8 @@ class PromptAgent:
     def parse_action(self, output: str) -> Action:
         """ Parse action from text """
         action_string = ""
-        patterns = [r'Action: (.*?)Observation', r'Action: (.*?)$', r'^(.*?)Observation']
+        patterns = [r'["\']?Action["\']?:? (.*?)Observation', r'["\']?Action["\']?:? (.*?)$', r'^(.*?)Observation']
+
         for p in patterns:
             match = re.search(p, output, flags=re.DOTALL)
             if match:
@@ -178,6 +179,7 @@ class PromptAgent:
         # TODO: add a default action if no action is parsed
         if output_action is None:
             output_action = ExecuteCode(code=action_string)
+        
         self.actions.append(output_action)
         return output_action
     

@@ -2,7 +2,7 @@
 import re
 from dataclasses import dataclass, field
 from typing import Optional, Any, Union, List, Dict
-
+from abc import ABC
 
 def remove_quote(text: str) -> str:
     """ 
@@ -18,13 +18,15 @@ def remove_quote(text: str) -> str:
 
 
 @dataclass
-class Action():
+class Action(ABC):
     
     action_type: str = field(
         repr=False,
         metadata={"help": 'type of action, e.g. "exec_code", "create_file", "terminate"'}
     )
 
+
+    
     @classmethod
     def get_action_description(cls) -> str:
         return """
@@ -37,8 +39,6 @@ Observation: the observation space of this action type.
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Any]:
         raise NotImplementedError
-
-
 
 @dataclass
 class ExecuteCode(Action):
@@ -70,6 +70,9 @@ Observation: The observation space is the stdout or stderr of the executed comma
             code = matches[-1]
             return cls(code=remove_quote(code))
         return None
+    
+    def __repr__(self) -> str:
+        return f'{self.__class__.__name__}(code="{self.code}")'
 
 # @dataclass
 # class PackageInstall(Action):
@@ -146,6 +149,9 @@ Observation: The observation space is the output or error message of the execute
             code = matches[-1][1]
             return cls(code=code.strip())
         return None
+    
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}\n '''\n{self.code}\n'''"
 
 
 # @dataclass
@@ -226,12 +232,9 @@ Observation: The observation space is a text message indicating whether this act
             return cls(code=code, filepath=remove_quote(filepath))
         return None
     
-    
-    
-    
-    
-    
-    
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}(filepath='{self.filepath}':\n'''\n{self.code}\n''')"
+       
 @dataclass
 class EditFile(Action):
     action_type: str = field(
@@ -337,6 +340,9 @@ Usage3: Terminate(output="FAIL")
 Observation: The observation space is empty since the task is finished.
 """
 
+    def __repr__(self) -> str:
+        return f'{self.__class__.__name__}(output="{self.output}")'
+
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
         matches = re.findall(r'Terminate\(output=(.*)\)', text, flags=re.DOTALL)
@@ -344,3 +350,4 @@ Observation: The observation space is empty since the task is finished.
             output = matches[-1]
             return cls(output=remove_quote(output))
         return None
+    
