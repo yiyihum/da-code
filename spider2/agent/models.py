@@ -33,28 +33,40 @@ def call_llm(payload):
             headers=headers,
             json=payload
         )
-        if response.status_code != 200:
-            if response.json()['error']['code'] == "context_length_exceeded":
-                logger.error("Context length exceeded. Retrying with a smaller context.")
-                payload["messages"] = [payload["messages"][0]] + payload["messages"][-1:]
-                retry_response = requests.post(
+        for i in range(3):
+            if response.status_code == 429 or response.status_code == 503:
+                logger.error("Rate limit exceeded or service unavailable. Retrying in 10 seconds.")
+                time.sleep(i*10+10)
+                response = requests.post(
                     "https://api.openai.com/v1/chat/completions",
                     headers=headers,
                     json=payload
                 )
-                if retry_response.status_code != 200:
-                    logger.error(
-                        "Failed to call LLM even after attempt on shortening the history: " + retry_response.text)
-                    return ""
+            else:
+                break
+        
+        if response.status_code != 200:
+            # if response.json()['error']['code'] == "context_length_exceeded":
+            #     logger.error("Context length exceeded. Retrying with a smaller context.")
+            #     for i in range(3,len(payload["messages"])-1,2):
+            #         payload["messages"] = [payload["messages"][0]] + payload["messages"][i:]
+            #         retry_response = requests.post(
+            #             "https://api.openai.com/v1/chat/completions",
+            #             headers=headers,
+            #             json=payload
+            #         )
+            #         if retry_response.status_code == 200:
+            #             response = retry_response
+            #             break
 
             logger.error("Failed to call LLM: " + response.text)
             time.sleep(5)
             # logger.info(f"Input: \n{payload['messages']}\nOutput:{response.text}")
-            return ""
+            return False, response.json()['error']['code']
         else:
             output_message = response.json()['choices'][0]['message']['content']
             # logger.info(f"Input: \n{payload['messages']}\nOutput:{output_message}")
-            return output_message
+            return True, output_message
 
     elif model.startswith("azure"):
         
@@ -68,18 +80,19 @@ def call_llm(payload):
                 response = client.chat.completions.create(model='gpt4turbo',messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'])
                 response = response.choices[0].message.content
                 # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
-                break
+                return True, response
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
                 error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
                 code_value = error_info['error']['code']
+                response = error_info['error']['message']
                 if code_value == "content_filter":
-                    response = error_info['error']['message']
+                    break
                 else:
                     logger.error("Retrying ...")
                     time.sleep(10 * (2 ** (i + 1)))
-                    response = ""
-        return response
+        return False, response
+        
 
     elif model.startswith("claude"):
         messages = payload["messages"]

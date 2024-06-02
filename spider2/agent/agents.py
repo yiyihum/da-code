@@ -20,9 +20,8 @@ from agent.models import call_llm
 # add time limit for each action ✅
 # add length limit for each ovbservation  ✅
 # process contant policy violation ⭕️
-# process massage too long ⭕️
+# process massage too long ✅
 # create file & edit 加一个检查 比如符合csv的格式 ✅
-# - edit line of file ❌
 
 MAX_OBSERVATION_LENGTH = 2000
 TIME_OUT_ACTION = 30
@@ -53,8 +52,9 @@ class PromptAgent:
         self.actions = []
         self.observations = []
         self.system_message = ""
+        self.history_messages = []
         self.env = None
-
+        self.codes = []
         self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate, ExecuteSimplePython, CreateFile, EditFile]
         # self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate]
         self.work_dir = "/workspace"
@@ -64,19 +64,12 @@ class PromptAgent:
         self.thoughts = []
         self.actions = []
         self.observations = []
+        self.codes = []
+        self.history_messages = []
         self.instruction = self.env.task_config['instruction']
         action_space = "".join([action_cls.get_action_description() for action_cls in self._AVAILABLE_ACTION_CLASSES])
         self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space, task=self.instruction)
-        
-    def predict(self, obs: Dict=None) -> List:
-        """
-        Predict the next action(s) based on the current observation.
-        """    
-        
-        messages = []
-        masks = None
-        
-        messages.append({
+        self.history_messages.append({
             "role": "system",
             "content": [
                 {
@@ -86,48 +79,17 @@ class PromptAgent:
             ]
         })
         
+    def predict(self, obs: Dict=None) -> List:
+        """
+        Predict the next action(s) based on the current observation.
+        """    
+        
         assert len(self.observations) == len(self.actions) and len(self.actions) == len(self.thoughts) \
             , "The number of observations and actions should be the same."
-            
-        if len(self.observations) > self.max_memory_length:
-            if self.max_memory_length == 0:
-                _observations = []
-                _actions = []
-                _thoughts = []
-            else:
-                _observations = self.observations[-self.max_memory_length:]
-                _actions = self.actions[-self.max_memory_length:]
-                _thoughts = self.thoughts[-self.max_memory_length:]
-        else:
-            _observations = self.observations
-            _actions = self.actions
-            _thoughts = self.thoughts
-            
-        for previous_obs, previous_action, previous_thought in zip(_observations, _actions, _thoughts):
-            
-            messages.append({
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": """Given the observation as below:\n{}\nWhat's the next step that you will do to help with the task?""".format(
-                            previous_obs)
-                    }
-                ]
-            })
-            
-            messages.append({
-                "role": "assistant",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": "thought and action: {}".format(previous_thought.strip() if len(previous_thought) > 0 else "No valid thought")
-                    },
-                ]
-            })
-            
-        if obs is not None:
-            self.observations.append(obs)            
+
+        status = False
+        while not status:
+            messages = self.history_messages.copy()
             messages.append({
                 "role": "user",
                 "content": [
@@ -136,28 +98,59 @@ class PromptAgent:
                         "text": "Observation: {}\n".format(str(obs))
                     }
                 ]
-            })            
-
-        response = call_llm({
-            "model": self.model,
-            "messages": messages,
-            "max_tokens": self.max_tokens,
-            "top_p": self.top_p,
-            "temperature": self.temperature
-        })
-        
-        logger.info("RESPONSE: %s", response)
+            })  
+            status, response = call_llm({
+                "model": self.model,
+                "messages": messages,
+                "max_tokens": self.max_tokens,
+                "top_p": self.top_p,
+                "temperature": self.temperature
+            })
+            if not status:
+                if response == "context_length_exceeded":
+                    self.history_messages = [self.history_messages[0]] + self.history_messages[3:]
+                else:
+                    raise Exception("Failed to call LLM")
 
         try:
             action = self.parse_action(response)
-            self.thoughts.append(response)
         except ValueError as e:
             print("Failed to parse action from response", e)
             action = None
-            self.thoughts.append("")
         
+        self._add_message(obs, response)
+        self.observations.append(obs)
+        self.thoughts.append(response)
+        self.actions.append(action)
+        if action is not None:
+            self.codes.append(action.code)
+        else:
+            self.codes.append(None)
+
         return response, action
+        
     
+    def _add_message(self, observations: str, response: str):
+        self.history_messages.append({
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Observation: {}".format(observations)
+                }
+            ]
+        })
+        self.history_messages.append({
+            "role": "assistant",
+            "content": [
+                {
+                    "type": "text",
+                    "text": response
+                }
+            ]
+        })
+        if len(self.history_messages) > self.max_memory_length*2+1:
+            self.history_messages = [self.history_messages[0]] + self.history_messages[-self.max_memory_length*2:]
     
     def parse_action(self, output: str) -> Action:
         """ Parse action from text """
@@ -178,11 +171,7 @@ class PromptAgent:
             action = action_cls.parse_action_from_text(action_string)
             if action is not None:
                 output_action = action
-        # TODO: add a default action if no action is parsed
-        if output_action is None:
-            output_action = ExecuteBash(code=action_string)
         
-        self.actions.append(output_action)
         return output_action
     
 
@@ -193,16 +182,23 @@ class PromptAgent:
         done = False
         step_idx = 0
         obs = "You are in the folder now."
-
+        retry_count = 0
         while not done and step_idx < self.max_steps:
 
-            response, action = self.predict(
+            _, action = self.predict(
                 obs
             )
+            if action is None:
+                logger.info("Failed to parse action from response, try again.")
+                retry_count += 1
+                if retry_count > 3:
+                    logger.info("Failed to parse action from response, stop.")
+                    break
+                obs += "Failed to parse action from your response, make sure you provide a valid action."
+            else:
+                logger.info("Step %d: %s", step_idx + 1, action)
 
-            logger.info("Step %d: %s", step_idx + 1, action)
-
-            obs, done = self.env.step(action)
+                obs, done = self.env.step(action)
 
             if done:
                 logger.info("The task is done.")
@@ -216,8 +212,9 @@ class PromptAgent:
         for i in range(len(self.observations)):
             trajectory.append({
                 "observation": self.observations[i],
+                "thought": self.thoughts[i],
                 "action": str(self.actions[i]),
-                "thought": self.thoughts[i]
+                "code": self.codes[i]
             })
         trajectory_log = {
             "Task": self.instruction,

@@ -311,7 +311,7 @@ class Spider2Env(gym.Env):
     def _handle_observation(self, observation):
         max_length = MAX_OBS_LENGTH  
         if len(observation) > max_length:
-            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated; Try other actions to get the left part.]"
+            truncated_observation = observation[:max_length] + "\n[Observation too long, truncated; Try other commands to get the left part.]"
             return truncated_observation
         return observation
 
