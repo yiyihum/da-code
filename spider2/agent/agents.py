@@ -161,6 +161,8 @@ class PromptAgent:
     
     def parse_action(self, output: str) -> Action:
         """ Parse action from text """
+        if output is None or len(output) == 0:
+            pass
         action_string = ""
         patterns = [r'["\']?Action["\']?:? (.*?)Observation', r'["\']?Action["\']?:? (.*?)$', r'^(.*?)Observation']
 
