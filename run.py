@@ -51,9 +51,9 @@ def config() -> argparse.Namespace:
         description="Run end-to-end evaluation on the benchmark"
     )
     
-    parser.add_argument("--max_steps", type=int, default=15)
+    parser.add_argument("--max_steps", type=int, default=30)
     
-    parser.add_argument("--max_memory_length", type=int, default=8)
+    parser.add_argument("--max_memory_length", type=int, default=15)
     parser.add_argument("--suffix", '-s', type=str, default="test")
     parser.add_argument("--test_config_base_dir", type=str, default="evaluation_examples")
     
