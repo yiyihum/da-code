@@ -134,7 +134,7 @@ class Evaluator:
             except Exception as e:
                 logging.error(f"Error in task {id}: {e}")
                 scores.append(0.0)
-                info=({"errors": str(e)})
+                info=({"errors": [str(e)]})
     
             if metric_conj == 'and':
                 eval_results.append({"id": id, "total_score": sum(scores) / len(scores), **info})
