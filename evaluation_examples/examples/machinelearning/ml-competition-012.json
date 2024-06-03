@@ -4,7 +4,7 @@
         "task": "machinelearning competition",
         "type": "regression",
         "metric": "rmse",
-        "threshold": 15.5
+        "threshold": 20.73909
     },
     "func":[
         "compare_competition_ml"

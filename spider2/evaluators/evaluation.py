@@ -3,7 +3,7 @@ import os, json
 from typing import Callable, Any
 from typing import List, Dict, Union
 from pathlib import Path
-import sys
+import sys, jsonlines
 here=Path(__file__).absolute()
 sys.path.append(str(here.parent))
 import metrics
@@ -78,44 +78,63 @@ class Evaluator:
         Evaluate task
         """
         if isinstance(env_config, str):
-            with open(env_config, 'r') as f:
-                env_config = json.load(f)
-        id, config, metrics, metric_conj, metric_options, output_results, gold_results = \
-            self._get_eval_config_info(env_config)
-        if metrics == "infeasible":
-           return 0
-        results = []
-        info = []
-        for idx, metric in enumerate(metrics):
-            try:
-               output_result = output_results[idx]
-               gold_result = gold_results[idx]
-               if config:
-                   config_copy = {"config": config}
-                   metric_options[idx].update(config_copy)
-               result: int = metric(output_result, gold_result,
-                **metric_options[idx])
-            except FileNotFoundError:
-                logging.error("File not found!")
-                results.append(0.0)
-                continue
-
-            if isinstance(result, dict):
-                results.append(result.get('score', 0.0))
-                for key in config.keys():
-                    if key not in result.keys():
-                        result[key] = config[key]
-                result['file'] = os.path.basename(output_result)
-                result['id'] = id
-                info.append(result)
+            if not os.path.exists(env_config) or not os.path.isfile(env_config):
+                raise ValueError('File Path Error: Please provide a right file path')
+            if env_config.endswith('.json'):
+                with open(env_config, 'r') as f:
+                    env_configs = json.load(f)
+            elif env_config.endswith('.jsonl'):
+                with jsonlines.open(env_config, 'r') as js:
+                    env_configs = [config_eval for config_eval in js]
             else:
-                results.append(result)
+                raise ValueError('File Type Error: Please Upload json or jsonl file')
+            env_configs = env_configs if isinstance(env_configs, list) else [env_configs]
+        elif isinstance(eval_config, dict):
+            env_configs = [env_config] 
+       
+        eval_results = []
+        eval_info = []
+        for eval_config in env_configs:
+            id, config, metrics, metric_conj, metric_options, output_results, gold_results = \
+                self._get_eval_config_info(eval_config)
+            if metrics == "infeasible":
+                return 0
+            results = []
+            info = []
+            for idx, metric in enumerate(metrics):
+                try:
+                    output_result = output_results[idx]
+                    gold_result = gold_results[idx]
+                    if config:
+                        config_copy = {"config": config}
+                        metric_options[idx].update(config_copy)
+                    result: int = metric(output_result, gold_result,
+                        **metric_options[idx])
+                except FileNotFoundError:
+                    logging.error("File not found!")
+                    results.append(0.0)
+                    continue
 
-        if metric_conj == 'and':
-            return sum(results) / len(results), info
-        elif metric_conj == 'or':
-            return max(results), info
-        
-      
+                if isinstance(result, dict):
+                    results.append(result.get('score', 0.0))
+                    for key in config.keys():
+                        if key not in result.keys():
+                            result[key] = config[key]
+                    result['file'] = os.path.basename(output_result)
+                    result['id'] = id
+                    info.append(result)
+                else:
+                    results.append(result)
     
- 
+            if metric_conj == 'and':
+                eval_results.append({"id": id, "total_score": sum(results) / len(results)})
+            elif metric_conj == 'or':
+                eval_results.append({"id": id, "total_score": max(results)})
+            
+            info = [] if info is None else info
+            eval_info.append(info)
+        return eval_results, eval_info
+                
+            
+            
+        

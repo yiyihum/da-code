@@ -373,6 +373,7 @@ class CalculateML:
         output = {'errors': []}
         try:
             result_np = result.to_numpy()
+            result_np = np.clip(result_np, a_min=0, a_max=None)
         except Exception as e:
             output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
             return (0.0, output)

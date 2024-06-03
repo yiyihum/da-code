@@ -7,7 +7,7 @@ gold_dir = './benchmark/gold'
 
 evalutor = Evaluator(output_dir=output_dir, gold_dir=gold_dir)
 
-eval_json = './evaluation_examples/examples/machinelearning/ml-competition-008.json'
+eval_json = './evaluation_examples/examples/machinelearning/ml-competition-015.json'
 
 score, info = evalutor.evaluate(env_config=eval_json)
 print(score) # 1.0

@@ -3,8 +3,8 @@
     "config":{
         "task": "machinelearning competition",
         "type": "regression",
-        "metric": "rmlse",
-        "threshold": 0.9
+        "metric": "rmsle",
+        "threshold": 0.14695
     },
     "func":[
         "compare_competition_ml"

@@ -261,6 +261,10 @@ class Terminate(Action):
         metadata={"help": "answer to the task or output file path or 'FAIL', if exists"}
     )
 
+    code : str = field(
+        default=''
+    )
+
     @classmethod
     def get_action_description(cls) -> str:
         return """

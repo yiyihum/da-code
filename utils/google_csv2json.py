@@ -4,7 +4,7 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/ML.csv"
+file_path = "./benchmark/configs/ML.csv"
 data = load_csv(file_path)
 
 # 保存为json
@@ -27,9 +27,13 @@ data = load_csv(file_path)
 
 data_json = []
 for index, row in data.iterrows():
-    id = str(row["id_name"])
+    id = str(row["id."])
+    if 'ml-competition' in id:
+        continue
     if id == "nan":
         break
+    if not row["Refined Instruction"] or not row["Context details"]:
+        continue
     data_json.append({
         "id": id,
         "source": row["Source"],
@@ -50,6 +54,6 @@ for index, row in data.iterrows():
 
 # 保存为jsonl
 import json
-with open("./benchmark/ML.jsonl", "w") as f:
+with open("./benchmark/configs/ML.jsonl", "w") as f:
     for line in data_json:
         f.write(json.dumps(line) + "\n")

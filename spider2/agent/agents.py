@@ -24,7 +24,7 @@ from agent.models import call_llm
 # create file & edit 加一个检查 比如符合csv的格式 ✅
 
 MAX_OBSERVATION_LENGTH = 2000
-TIME_OUT_ACTION = 30
+TIME_OUT_ACTION = 60
 
 
 logger = logging.getLogger("spider2")
