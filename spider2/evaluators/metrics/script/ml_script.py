@@ -63,6 +63,7 @@ class PreprocessML:
                 df = df.sort_values(by=unique_column)
         else:
             unique_id_columns, target_column = cls.identify_columns(df, type)
+            unique_column = ''
             for unique_column in unique_id_columns:
                 if 'feature' not in unique_column.lower() or 'pca' not in unique_column.lower():
                     df.drop(unique_column, axis=1, inplace=True)
