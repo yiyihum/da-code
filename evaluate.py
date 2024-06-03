@@ -1,25 +1,25 @@
 import pandas as pd
 from tqdm import tqdm
 from spider2.evaluators.evaluation import Evaluator
+import json
 
-output_dir = './benchmark/output/example'
+def run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout=10):
+    # Initialize the Evaluator with the provided directories
+    evaluator = Evaluator(output_dir=output_dir, gold_dir=gold_dir, timeout_second=timeout)
+
+    # Perform the evaluation
+    results_infos = evaluator.evaluate(env_config=eval_json)
+
+    with open(result_json, 'w') as json_file:
+        json.dump(results_infos, json_file, indent=4)
+
+# Parameters
+experiments = "azure-ML_0603"
+output_dir = f'./benchmark/output/{experiments}'
 gold_dir = './benchmark/gold'
+eval_json = './benchmark/configs/evaluation_ML.jsonl'
+result_json = f'./benchmark/results/{experiments}_result.json'
 
-evalutor = Evaluator(output_dir=output_dir, gold_dir=gold_dir)
+# Run the evaluation with the specified parameters
+run_evaluation(output_dir, gold_dir, eval_json, result_json, 10)
 
-eval_json = './evaluation_examples/examples/machinelearning/ml-competition-015.json'
-
-score, info = evalutor.evaluate(env_config=eval_json)
-print(score) # 1.0
-if info:
-    print(info)
-'''
-[{'errors': ["result contains non numeric columns: ['Genre']"], 
-'metric': 'silhouette score', 
-'threshold': 0.5, 
-'score': 0.44637121804301805, 
-'task': 'machinelearning', 
-'type': 'cluster', 
-'competition': {'iscompetition': False}, 
-'file': 'cluster.csv', 'id': 'ml-cluster-001'}]
-'''

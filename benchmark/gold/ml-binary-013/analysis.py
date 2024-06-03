@@ -16,6 +16,7 @@ from imblearn.under_sampling import RandomUnderSampler
 # Pipeline and transformation libraries
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
+from sklearn.compose import ColumnTransformer
 
 # Model building libraries
 from sklearn.linear_model import LogisticRegression

@@ -12,6 +12,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 #Models
 from sklearn.ensemble import RandomForestClassifier
 
+
 map = {'B': 0, 'M': 1}
 id2label = {0: 'B', 1: 'M'}
 train_data = pd.read_csv('../train.csv')

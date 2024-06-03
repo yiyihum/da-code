@@ -1,1 +1,0 @@
-This is a dataset of annual income and spending scores in a mall. You need to perform clustering analysis on the annual income and spending scores based on this dataset. Write the clustering results into cluster.csv, where result.csv consists of 'Feature_i' (the ith value of the processed feature vector) and 'Cluster' column (the clustering label results).

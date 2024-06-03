@@ -190,7 +190,6 @@ class CalculateML:
             output['errors'].append(f'result contains non numeric columns: {list(non_numeric_columns)}')
             for col in non_numeric_columns:
                 try:
-                
                     le = LabelEncoder()
                     result[col] = le.fit_transform(result[col])
                 except Exception as e:
@@ -204,7 +203,8 @@ class CalculateML:
         try:
             score = silhouette_score(result, target_labels)
         except Exception as e:
-            output['errors'].apppend(f"fail to calculate silhouette_score: {str(e)}")
+            output['errors'].append(f"fail to calculate silhouette_score: {str(e)}")
+            return (0.0, output)
         return (score, output)
     
     @staticmethod

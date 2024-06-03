@@ -1,8 +1,7 @@
 # Byte-compiled / optimized / DLL files
 **/__pycache__/
-benchmark/output/*
-benchmark/source/*
-benchmark/results/
+benchmark/output/
+benchmark/source/
 logs/*
 
 !benchmark/output/example

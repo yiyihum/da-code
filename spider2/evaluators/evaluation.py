@@ -7,14 +7,17 @@ import sys, jsonlines
 here=Path(__file__).absolute()
 sys.path.append(str(here.parent))
 import metrics
+from tqdm import tqdm
+from spider2.envs.utils import timeout
 
 Metric = Callable[[Any, Any], float]
 
 class Evaluator:
 
-    def __init__(self, output_dir: str, gold_dir: str):
+    def __init__(self, output_dir: str, gold_dir: str, timeout_second: int = 10):
         self.output_dir = output_dir
         self.gold_dir = gold_dir
+        self.timeout_second = timeout_second
 
     def get_result_file(self, results: List, dir: str, isgold: bool):
         results = results if isinstance(results, list)\
@@ -93,48 +96,49 @@ class Evaluator:
             env_configs = [env_config] 
        
         eval_results = []
-        eval_info = []
-        for eval_config in env_configs:
-            id, config, metrics, metric_conj, metric_options, output_results, gold_results = \
-                self._get_eval_config_info(eval_config)
-            if metrics == "infeasible":
-                return 0
-            results = []
-            info = []
-            for idx, metric in enumerate(metrics):
-                try:
-                    output_result = output_results[idx]
-                    gold_result = gold_results[idx]
-                    if config:
-                        config_copy = {"config": config}
-                        metric_options[idx].update(config_copy)
-                    result: int = metric(output_result, gold_result,
-                        **metric_options[idx])
-                except FileNotFoundError:
-                    logging.error("File not found!")
-                    results.append(0.0)
-                    continue
+        pbar = tqdm(total=len(env_configs))
 
-                if isinstance(result, dict):
-                    results.append(result.get('score', 0.0))
-                    for key in config.keys():
-                        if key not in result.keys():
-                            result[key] = config[key]
-                    result['file'] = os.path.basename(output_result)
-                    result['id'] = id
-                    info.append(result)
-                else:
-                    results.append(result)
+        for eval_config in env_configs:
+            try:
+                with timeout(self.timeout_second,"Action execution time exceeded!"):
+                    id, config, metrics, metric_conj, metric_options, output_results, gold_results = \
+                        self._get_eval_config_info(eval_config)
+                    pbar.set_description(f"Processing Task id: {id}")
+                    pbar.update(1)
+                    if metrics == "infeasible":
+                        return 0
+                    scores = []
+                    for idx, metric in enumerate(metrics):
+                        try:
+                            output_result = output_results[idx]
+                            gold_result = gold_results[idx]
+                            if config:
+                                config_copy = {"config": config}
+                                metric_options[idx].update(config_copy)
+                            result = metric(output_result, gold_result,**metric_options[idx])
+                        except FileNotFoundError:
+                            logging.error("File not found!")
+                            scores.append(0.0)
+                            continue
+
+                        if isinstance(result, dict):
+                            scores.append(result.get('score', 0.0))
+                            for key in config.keys():
+                                if key not in result.keys():
+                                    result[key] = config[key]
+                            result['file'] = os.path.basename(output_result)
+                            info=(result)
+                        else:
+                            scores.append(result)
+                            info=None
+            except Exception as e:
+                logging.error(f"Error in task {id}: {e}")
+                scores.append(0.0)
+                info=({"errors": str(e)})
     
             if metric_conj == 'and':
-                eval_results.append({"id": id, "total_score": sum(results) / len(results)})
+                eval_results.append({"id": id, "total_score": sum(scores) / len(scores), **info})
             elif metric_conj == 'or':
-                eval_results.append({"id": id, "total_score": max(results)})
+                eval_results.append({"id": id, "total_score": max(scores), **info})
             
-            info = [] if info is None else info
-            eval_info.append(info)
-        return eval_results, eval_info
-                
-            
-            
-        
+        return eval_results
