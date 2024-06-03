@@ -1,1 +1,0 @@
-{"type": "bar", "color": ["#45cea2", "#fdd470"], "figsize": [15.0, 8.0],  "labels": ["free", "paid"], "xtick_labels": ["Education", "Entertainment", "Games", "Others", "Photo & Video"], "ytick_labels": ["0", "20", "40", "60", "80", "100", "120"]}
