@@ -3,9 +3,9 @@ from tqdm import tqdm
 from spider2.evaluators.evaluation import Evaluator
 import json
 
-def run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout=10):
+def run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout_seconds=10):
     # Initialize the Evaluator with the provided directories
-    evaluator = Evaluator(output_dir=output_dir, gold_dir=gold_dir, timeout_second=timeout)
+    evaluator = Evaluator(output_dir=output_dir, gold_dir=gold_dir, timeout_second=timeout_seconds)
 
     # Perform the evaluation
     results_infos = evaluator.evaluate(env_config=eval_json)
@@ -19,7 +19,8 @@ output_dir = f'./benchmark/output/{experiments}'
 gold_dir = './benchmark/gold'
 eval_json = './benchmark/configs/evaluation_ML.jsonl'
 result_json = f'./benchmark/results/{experiments}_result.json'
+timeout_seconds = 10
 
 # Run the evaluation with the specified parameters
-run_evaluation(output_dir, gold_dir, eval_json, result_json, 10)
+run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout_seconds)
 
