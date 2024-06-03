@@ -2,21 +2,16 @@
 **/__pycache__/
 benchmark/output/*
 benchmark/source/*
+benchmark/results/
 logs/*
 
 !benchmark/output/example
 
 !benchmark/source/ml-binary-001
-!benchmark/source/ml-binary-002
-!benchmark/source/ml-binary-003
-!benchmark/source/ml-binary-004
-!benchmark/source/ml-binary-005
 !benchmark/source/ml-cluster-001
 !benchmark/soucre/ml-regression-001
 !benchmark/source/ml-competition-001
-!benchmark/source/ml-competition-002
-!benchmark/source/ml-competition-003
-!benchmark/source/ml-competition-004
+
 
 *.DS_Store
 *.pyc
