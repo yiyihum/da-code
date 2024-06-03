@@ -28,7 +28,7 @@
         "id": "ml-binary-003",
         "total_score": 0.0,
         "errors": [
-            "result csv columns are different from gold csv: ['company', 'index', 'text', 'label']",
+            "result csv columns are different from gold csv: ['index', 'label', 'company', 'text']",
             "Could not find target column in result, which is result in gold"
         ],
         "metric": "f1",
@@ -515,7 +515,9 @@
     {
         "id": "ml-cluster-019",
         "total_score": 0.38933711782802644,
-        "errors": "./benchmark/output/azure-ML_0603/ml-cluster-20 does not exist"
+        "errors": [
+            "./benchmark/output/azure-ML_0603/ml-cluster-20 does not exist"
+        ]
     },
     {
         "id": "ml-multi-001",
@@ -583,7 +585,9 @@
     {
         "id": "ml-multi-006",
         "total_score": 0.0,
-        "errors": "gold file path ./benchmark/gold/ml-multi-006/score.csv does not exist"
+        "errors": [
+            "gold file path ./benchmark/gold/ml-multi-006/score.csv does not exist"
+        ]
     },
     {
         "id": "ml-multi-007",
@@ -675,7 +679,9 @@
     {
         "id": "ml-regression-003",
         "total_score": 0.0,
-        "errors": "gold file path ./benchmark/gold/ml-regression-003/submission.csv does not exist"
+        "errors": [
+            "gold file path ./benchmark/gold/ml-regression-003/submission.csv does not exist"
+        ]
     },
     {
         "id": "ml-regression-004",
@@ -745,7 +751,9 @@
     {
         "id": "ml-regression-009",
         "total_score": 0.0,
-        "errors": "list indices must be integers or slices, not str"
+        "errors": [
+            "list indices must be integers or slices, not str"
+        ]
     },
     {
         "id": "ml-regression-010",
@@ -774,7 +782,9 @@
     {
         "id": "ml-regression-012",
         "total_score": 0.0,
-        "errors": "list indices must be integers or slices, not str"
+        "errors": [
+            "list indices must be integers or slices, not str"
+        ]
     },
     {
         "id": "ml-regression-013",
@@ -1010,7 +1020,7 @@
         "id": "ml-competition-005",
         "total_score": 0.0,
         "errors": [
-            "Unexpected Column: ['CL', 'C', 'D']"
+            "Unexpected Column: ['C', 'CL', 'D']"
         ],
         "score": 0.0,
         "task": "machinelearning competition",
