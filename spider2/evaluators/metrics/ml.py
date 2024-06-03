@@ -103,7 +103,7 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
             output_ml['score'] = 0.0
             return output_ml
         target_labels = result_df[target_column_result].tolist()
-        if not 'silhouette' not in metric.lower():
+        if 'silhouette' not in metric.lower():
             logging.error('Cluster task only support silhouette score to evaluate')
         score, output = CalculateML.calculate_silhouette(result=result_df, target_labels=target_labels)
         output_ml['errors'].extend(output['errors'])
