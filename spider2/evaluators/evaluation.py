@@ -56,7 +56,7 @@ class Evaluator:
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\
             else [getattr(metrics, eval_config["func"])]
-        metric_conj: str = eval_config.get("conj", "and")  # take conjunction of multiple metrics
+        metric_conj: str = eval_config.get("conj", "avg")  # take conjunction of multiple metrics
         result = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
         output_results = self.get_result_file(result, dir=output_id_dir, isgold=False)
@@ -108,6 +108,7 @@ class Evaluator:
                     if metrics == "infeasible":
                         return 0
                     scores = []
+                    info = []
                     for idx, metric in enumerate(metrics):
                         try:
                             output_result = output_results[idx]
@@ -120,25 +121,26 @@ class Evaluator:
                             logging.error("File not found!")
                             scores.append(0.0)
                             continue
-
                         if isinstance(result, dict):
                             scores.append(result.get('score', 0.0))
-                            for key in config.keys():
-                                if key not in result.keys():
-                                    result[key] = config[key]
                             result['file'] = os.path.basename(output_result)
-                            info=(result)
+                            info.append(result)
                         else:
                             scores.append(result)
-                            info=None
             except Exception as e:
                 logging.error(f"Error in task {id}: {e}")
                 scores.append(0.0)
-                info=({"errors": [str(e)]})
-    
-            if metric_conj == 'and':
-                eval_results.append({"id": id, "total_score": sum(scores) / len(scores), **info})
+                info.append({"score": 0.0, "errors": [str(e)], 'file': os.path.basename(output_result)})
+
+            if metric_conj == 'avg':
+                eval_results.append({"id": id, "total_score": sum(scores) / len(scores), 'info': info})
+            elif metric_conj == 'max':
+                eval_results.append({"id": id, "total_score": max(scores),'info': info})
+            elif metric_conj == 'min':
+                eval_results.append({"id": id, "total_score": min(scores),'info': info})
+            elif metric_conj == 'and':
+                eval_results.append({"id": id, "total_score": float(all(score!= 0 for score in scores)),'info': info})
             elif metric_conj == 'or':
-                eval_results.append({"id": id, "total_score": max(scores), **info})
-            
+                eval_results.append({"id": id, "total_score": float(any(score!= 0 for score in scores)),'info': info})
+
         return eval_results

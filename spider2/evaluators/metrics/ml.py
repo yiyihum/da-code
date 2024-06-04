@@ -25,6 +25,7 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
     """
     output_ml = {'errors': []}
     config = kwargs.get('config', {})
+    n_jobs = kwargs.get('n_jobs', os.cpu_count())
     target_column = config.get('target_column', '')
     assert config, 'Machine Learning Evaluation needs a config.'
     task_type = config.get('type', '')
@@ -105,7 +106,7 @@ def compare_ml(result: str, expected: str|List[str], **kwargs) -> dict:
         target_labels = result_df[target_column_result].tolist()
         if 'silhouette' not in metric.lower():
             logging.error('Cluster task only support silhouette score to evaluate')
-        score, output = CalculateML.calculate_silhouette(result=result_df, target_labels=target_labels)
+        score, output = CalculateML.calculate_silhouette(result=result_df, target_labels=target_labels, n_jobs=n_jobs)
         output_ml['errors'].extend(output['errors'])
         output_ml['score'] = score
         

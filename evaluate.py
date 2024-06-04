@@ -18,7 +18,7 @@ experiments = "azure-ML_0603"
 output_dir = f'./benchmark/output/{experiments}'
 gold_dir = './benchmark/gold'
 eval_json = './benchmark/configs/evaluation_ML.jsonl'
-result_json = f'./benchmark/results/{experiments}_result.json'
+result_json = f'./benchmark/results/{experiments}_result_ML.json'
 timeout_seconds = 10
 
 # Run the evaluation with the specified parameters

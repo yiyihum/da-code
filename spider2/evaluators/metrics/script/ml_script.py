@@ -1,20 +1,24 @@
 # import operator
 from typing import List, Type, Optional
 import pandas as pd
-from sklearn.metrics import f1_score, r2_score, silhouette_score
 from sklearn.preprocessing import LabelEncoder
 from fuzzywuzzy import process
 import numpy as np
 import difflib
+from sklearn.metrics.pairwise import pairwise_distances
+from joblib import Parallel, delayed
+import numpy as np
+import tempfile, os
+from sklearn.utils import resample
 from sklearn.metrics import (roc_auc_score, 
                             root_mean_squared_log_error, 
                             mean_absolute_error, 
                             mean_squared_error,
                             root_mean_squared_error,
                             median_absolute_error,
-                            accuracy_score)
-from sklearn.metrics import confusion_matrix
-
+                            accuracy_score, f1_score, 
+                            r2_score, silhouette_score,
+                             confusion_matrix)
 class PreprocessML:
     
     @classmethod
@@ -113,15 +117,15 @@ class CalculateML:
             gold = label_encoder.fit_transform(gold)
             result = label_encoder.fit_transform(result)
         except Exception as e:
-            output['errors'].append(f'fall to encoder label, because {str(e)}')
-            return (0.0, output['errors'])
+            output['errors'].append(f'fail to encoder label, because {str(e)}')
+            return (0.0, output)
         
         if result.ndim > 2:
             output['errors'].append(f'Expected 1D or 2D array, but got {result.ndim}')
-            return (0.0, output['errors'])
+            return (0.0, output)
         elif result.ndim == 2 and result.shape[-1] > 1:
             output['errors'].append(f'Expected 1 column array, but got {result.shape[-1]}')
-            return (0.0, output['errors'])
+            return (0.0, output)
         
         if gold.ndim > 2 :
             raise ValueError(f'Expected Gold as a 1D or 2D array, but got {gold.ndim}')
@@ -134,8 +138,8 @@ class CalculateML:
         try:
             score = accuracy_score(y_true=gold, y_pred=result)
         except Exception as e:
-            output['errors'].append(f'fall to calculate f1 socre, because {str(e)}')
-            return (0.0, output['errors'])
+            output['errors'].append(f'fail to calculate f1 socre, because {str(e)}')
+            return (0.0, output)
 
         return (score, output)
 
@@ -148,12 +152,15 @@ class CalculateML:
             output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
             return (0.0, output)
         gold_np = gold.to_numpy()
+        if not np.issubdtype(result_np.dtype, np.number):
+            output['errors'].append(f'result target contains non-numeric element')
+            return (0.0, output)
 
         try:
             score = r2_score(y_true=gold_np, y_pred=result_np)
         except Exception as e:
-            output['errors'].append(f'fall to calculate r2 socre, because {str(e)}')
-            return (0.0, output['errors'])
+            output['errors'].append(f'fail to calculate r2 socre, because {str(e)}')
+            return (0.0, output)
         
         return (max(score, 0.0), output)
     
@@ -168,20 +175,21 @@ class CalculateML:
             gold = label_encoder.fit_transform(gold)
             result = label_encoder.fit_transform(result)
         except Exception as e:
-            output['errors'].append(f'fall to encoder label, because {str(e)}')
-            return (0.0, output['errors'])
+            output['errors'].append(f'fail to encoder label, because {str(e)}')
+            return (0.0, output)
             
         try:
             score = f1_score(y_true=gold, y_pred=result, average='weighted') if not averaged \
                 else f1_score(y_true=gold, y_pred=result, average=averaged)
         except Exception as e:
-            output['errors'].append(f'fall to calculate f1 socre, because {str(e)}')
-            return (0.0, output['errors'])
+            output['errors'].append(f'fail to calculate f1 socre, because {str(e)}')
+            return (0.0, output)
 
         return (score, output)
     
     @staticmethod
     def calculate_silhouette(result,target_labels, task_type: Optional[str]=None,  **kwargs):
+        n_jobs = kwargs.get('n_jobs', os.cpu_count())
         target_labels = target_labels if isinstance(target_labels, np.ndarray) \
             else np.array(target_labels)
         output = {'errors': []}
@@ -200,8 +208,27 @@ class CalculateML:
             output['errors'].append(f'"target labels only contain 1 clusters, which must needs 2 or more clusters')
             return (0.0, output)
         
+        def parallel_silhouette_samples(X: Type[np.ndarray], labels, metric: str='euclidean', n_jobs: int=4):
+            distances = pairwise_distances(X, metric=metric)
+            unique_labels = np.unique(labels)
+            n_samples = X.shape[0]
+            
+            def compute_sample_score(i):
+                own_cluster = labels[i]
+                mask = labels == own_cluster
+                a = np.mean(distances[i][mask])
+                b = np.min([np.mean(distances[i][labels == label]) for label in unique_labels if label != own_cluster])
+                return (b - a) / max(a, b)
+            with tempfile.TemporaryDirectory() as temp_folder:
+                scores = Parallel(n_jobs=n_jobs, temp_folder=temp_folder)(delayed(compute_sample_score)(i) for i in range(int(n_samples)))
+            scores = np.mean(scores)
+            return float(scores)
+
         try:
-            score = silhouette_score(result, target_labels)
+            if len(target_labels) > 5000:
+                result, target_labels = resample(result, target_labels, n_samples=5000, random_state=42,stratify=target_labels)
+            score = parallel_silhouette_samples(result, target_labels, n_jobs=n_jobs)
+            score = 0.0 if score < 0 else score
         except Exception as e:
             output['errors'].append(f"fail to calculate silhouette_score: {str(e)}")
             return (0.0, output)
@@ -229,7 +256,7 @@ class CalculateML:
                     y_true = gold_np[:, col].copy()
                     roc_score += roc_auc_score(y_true=y_true, y_score=y_pred)
             except Exception as e:
-                output['errors'].append(f'fails to calculate roc_auc_score, because {str(e)}')
+                output['errors'].append(f'fail to calculate roc_auc_score, because {str(e)}')
                 return (0.0, output)
             return float(roc_score / gold_np.shape[1]) , output
         
@@ -248,7 +275,7 @@ class CalculateML:
             try:
                 score = roc_auc_score(y_true=gold_class, y_score=result_np)
             except Exception as e:
-                output['errors'].append(f'fails to calculate roc_auc_score, because {str(e)}')
+                output['errors'].append(f'fail to calculate roc_auc_score, because {str(e)}')
                 return (0.0, output)
             return score, output
         
@@ -283,7 +310,7 @@ class CalculateML:
             score = np.sum(sum_result / num_class)
             score = float((-1) * score / 2)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate logloss: {str(e)}")
+            output['errors'].append(f"fail to calculate logloss: {str(e)}")
             return (0.0, output)
         
         return score, output
@@ -318,7 +345,7 @@ class CalculateML:
             score = np.sum(sum_result / gold_np.shape[0])
             score = float((-1) * score / 2)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate logloss: {str(e)}")
+            output['errors'].append(f"fail to calculate logloss: {str(e)}")
             return (0.0, output)
         
         return score, output
@@ -364,7 +391,7 @@ class CalculateML:
             den = np.sum(w * E)
             score = 1 - (num / den)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate quadratic_weighted_kappa: {str(e)}")
+            output['errors'].append(f"fail to calculate quadratic_weighted_kappa: {str(e)}")
             return (0.0, output)
         return (score, output)
 
@@ -383,7 +410,7 @@ class CalculateML:
         try:
             score = root_mean_squared_log_error(y_true=gold_np, y_pred=result_np)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate rmsle: {str(e)}")
+            output['errors'].append(f"fail to calculate rmsle: {str(e)}")
             return (0.0, output)
         return (score, output)
     
@@ -401,7 +428,7 @@ class CalculateML:
         try:
             score = root_mean_squared_error(y_true=gold_np, y_pred=result_np)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate rmse: {str(e)}")
+            output['errors'].append(f"fail to calculate rmse: {str(e)}")
             return (0.0, output)
         return (score, output)
     
@@ -419,7 +446,7 @@ class CalculateML:
         try:
             score = mean_absolute_error(y_true=gold_np, y_pred=result_np)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate mae: {str(e)}")
+            output['errors'].append(f"fail to calculate mae: {str(e)}")
             return (0.0, output)
         return (score, output)
 
@@ -437,7 +464,7 @@ class CalculateML:
         try:
             score = mean_squared_error(y_true=gold_np, y_pred=result_np)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate mse: {str(e)}")
+            output['errors'].append(f"fail to calculate mse: {str(e)}")
             return (0.0, output)
         return (score, output)
     
@@ -469,7 +496,7 @@ class CalculateML:
             # Calculate mean SMAPE across rows
             score = float(np.nanmean(smape)) * 100
         except Exception as e:
-            output['errors'].append(f"Failed to calculate SMAPE: {str(e)}")
+            output['errors'].append(f"fail to calculate SMAPE: {str(e)}")
             return (0.0, output)
         return (score, output)
 
@@ -491,7 +518,7 @@ class CalculateML:
         try:
             score = median_absolute_error(y_true=gold_np, y_pred=result_np)
         except Exception as e:
-            output['errors'].append(f"Failed to calculate MedAE: {str(e)}")
+            output['errors'].append(f"fail to calculate MedAE: {str(e)}")
             return (0.0, output)
         return (score, output)
     
@@ -553,7 +580,7 @@ class CalculateML:
             
             score = float(CRPS / gold_np.shape[1])
         except Exception as e:
-            output['errors'].append(f"Failed to calculate CRPS: {str(e)}")
+            output['errors'].append(f"fail to calculate CRPS: {str(e)}")
             return (0.0, output)
         return (score, output)
 
