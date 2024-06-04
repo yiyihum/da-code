@@ -5,7 +5,9 @@ benchmark/source/
 logs/*
 
 !benchmark/output/example
-
+!benchmark/source/ml-binary-002
+!benchmark/source/ml-cluster-010
+!benchmark/source/ml-multi-012
 !benchmark/source/ml-binary-001
 !benchmark/source/ml-cluster-001
 !benchmark/soucre/ml-regression-001
