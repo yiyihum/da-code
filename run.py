@@ -55,7 +55,6 @@ def config() -> argparse.Namespace:
     
     parser.add_argument("--max_memory_length", type=int, default=15)
     parser.add_argument("--suffix", '-s', type=str, default="test")
-    parser.add_argument("--test_config_base_dir", type=str, default="evaluation_examples")
     
     parser.add_argument("--model", type=str, default="azure")
     parser.add_argument("--temperature", type=float, default=0.0)
