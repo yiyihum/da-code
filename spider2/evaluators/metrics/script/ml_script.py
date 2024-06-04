@@ -236,8 +236,8 @@ class CalculateML:
             return float(scores)
 
         try:
-            if len(target_labels) > 5000:
-                result, target_labels = resample(result, target_labels, n_samples=5000, random_state=42,stratify=target_labels)
+            if len(target_labels) > 6000:
+                result, target_labels = resample(result, target_labels, n_samples=6000, random_state=42,stratify=target_labels)
             score = parallel_silhouette_samples(result, target_labels, n_jobs=n_jobs)
             score = 0.0 if score < 0 else score
         except Exception as e:

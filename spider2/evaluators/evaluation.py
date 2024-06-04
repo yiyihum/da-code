@@ -50,8 +50,6 @@ class Evaluator:
         id = eval_config['id']
         output_id_dir = os.path.join(self.output_dir, id)
         gold_id_dir = os.path.join(self.gold_dir, id)
-        assert os.path.exists(output_id_dir), f'{output_id_dir} does not exist'
-        assert os.path.exists(gold_id_dir), f'{gold_id_dir} does not exist'
         config = eval_config.get('config', {})
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\

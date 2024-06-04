@@ -34,7 +34,7 @@
         "info": [
             {
                 "errors": [
-                    "result csv columns are different from gold csv: ['text', 'index', 'label', 'company']",
+                    "result csv columns are different from gold csv: ['index', 'label', 'company', 'text']",
                     "Could not find target column in result, which is result in gold"
                 ],
                 "metric": "f1",
@@ -376,13 +376,13 @@
     },
     {
         "id": "ml-cluster-004",
-        "total_score": 0.677671437289898,
+        "total_score": 0.6943097817362883,
         "info": [
             {
                 "errors": [],
                 "metric": "silhouette",
                 "threshold": 0.0,
-                "score": 0.677671437289898,
+                "score": 0.6943097817362883,
                 "file": "cluster.csv"
             }
         ]
@@ -456,13 +456,13 @@
     },
     {
         "id": "ml-cluster-010",
-        "total_score": 0.10296419225931963,
+        "total_score": 0.10179352679365601,
         "info": [
             {
                 "errors": [],
                 "metric": "silhouette",
                 "threshold": 0.0,
-                "score": 0.10296419225931963,
+                "score": 0.10179352679365601,
                 "file": "cluster.csv"
             }
         ]
@@ -525,26 +525,26 @@
     },
     {
         "id": "ml-cluster-015",
-        "total_score": 0.006301980219667057,
+        "total_score": 0.02459471597436054,
         "info": [
             {
                 "errors": [],
                 "metric": "silhouette",
                 "threshold": 0.0,
-                "score": 0.006301980219667057,
+                "score": 0.02459471597436054,
                 "file": "cluster.csv"
             }
         ]
     },
     {
         "id": "ml-cluster-016",
-        "total_score": 0.9460063638381034,
+        "total_score": 0.9339791844374951,
         "info": [
             {
                 "errors": [],
                 "metric": "silhouette",
                 "threshold": 0.0,
-                "score": 0.9460063638381034,
+                "score": 0.9339791844374951,
                 "file": "cluster.csv"
             }
         ]
@@ -763,34 +763,21 @@
                 "target_output": "Sentiment",
                 "score": 0.6250547806407669,
                 "file": "sentiment.csv"
-            },
-            {
-                "score": 0.0,
-                "errors": [
-                    "./benchmark/output/azure-ML_0603/ml-multi-012 does not exist"
-                ],
-                "file": "sentiment.csv"
             }
         ]
     },
     {
-        "id": "ml-multi-011",
-        "total_score": 0.31252739032038346,
+        "id": "ml-multi-012",
+        "total_score": 0.0,
         "info": [
             {
-                "errors": [],
+                "errors": [
+                    "result file ./benchmark/output/azure-ML_0603/ml-multi-012/prediction.csv does not exists"
+                ],
                 "metric": "f1",
                 "threshold": 0.0,
-                "target_output": "Sentiment",
-                "score": 0.6250547806407669,
-                "file": "sentiment.csv"
-            },
-            {
                 "score": 0.0,
-                "errors": [
-                    "./benchmark/output/azure-ML_0603/ml-multi-012 does not exist"
-                ],
-                "file": "sentiment.csv"
+                "file": "prediction.csv"
             }
         ]
     },
@@ -828,7 +815,7 @@
         "info": [
             {
                 "errors": [
-                    "result csv columns are different from gold csv: ['Store', 'Year', 'WeekOfYear', 'Dept', 'Month']"
+                    "result csv columns are different from gold csv: ['Dept', 'WeekOfYear', 'Store', 'Month', 'Year']"
                 ],
                 "metric": "r2",
                 "threshold": 0.0,

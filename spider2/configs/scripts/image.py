@@ -24,7 +24,7 @@ def identify_plot_type(ax):
     # Check for pie plots
     if ax.patches:
         for patch in ax.patches:
-            if isinstance(patch, plt.Wedge):
+            if isinstance(patch, Wedge):
                 return 'pie'
     return plot_types
 
@@ -78,7 +78,7 @@ else:
 colors = [str(mcolors.to_hex(rgb_tuple)) for rgb_tuple in colors]
 figsize = fig.get_size_inches()
 legend = ax.get_legend()
-title = ax.get_title().get_text() if ax.get_title() else ''
+title = ax.get_title() if ax.get_title() else ''
 labels = [text.get_text() for text in legend.get_texts()] if legend else []
 x_label = ax.get_xlabel().get_text() if ax.get_xlabel() else ''
 y_label = ax.get_ylabel().get_text() if ax.get_ylabel() else ''

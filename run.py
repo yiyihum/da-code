@@ -51,14 +51,14 @@ def config() -> argparse.Namespace:
         description="Run end-to-end evaluation on the benchmark"
     )
     
-    parser.add_argument("--max_steps", type=int, default=30)
+    parser.add_argument("--max_steps", type=int, default=20)
     
     parser.add_argument("--max_memory_length", type=int, default=15)
     parser.add_argument("--suffix", '-s', type=str, default="test")
     parser.add_argument("--test_config_base_dir", type=str, default="evaluation_examples")
     
     parser.add_argument("--model", type=str, default="azure")
-    parser.add_argument("--temperature", type=float, default=1.0)
+    parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--top_p", type=float, default=0.9)
     parser.add_argument("--max_tokens", type=int, default=1500)
     parser.add_argument("--stop_token", type=str, default=None)

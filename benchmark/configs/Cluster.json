@@ -1,0 +1,1 @@
+{"id": "ml-cluster-006", "config": {"task": "machinelearning", "type": "cluster", "metric": "silhouette", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "cluster.csv"}], "options": [{}]}
