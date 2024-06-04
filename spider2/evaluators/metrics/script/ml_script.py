@@ -17,8 +17,11 @@ from sklearn.metrics import (roc_auc_score,
                             root_mean_squared_error,
                             median_absolute_error,
                             accuracy_score, f1_score, 
-                            r2_score, silhouette_score,
+                            r2_score,
                              confusion_matrix)
+
+LABELS = ['label', 'labels', 'class', 'classes']
+
 class PreprocessML:
     
     @classmethod
@@ -75,34 +78,42 @@ class PreprocessML:
         return df, unique_column, target_column
 
     @classmethod
-    def identify_columns(cls, df, type, ref_column: str=None):
+    def identify_columns(cls, df, type, ref_column: str=""):
         if len(df.columns) == 1:
             return [], df.columns[0]
-        target_column = None
         columns = list(df.columns)
         ref_column = ref_column if type != 'cluster' else 'Cluster'
-        if ref_column:
-            columns = sorted(columns, key=lambda x: difflib.SequenceMatcher(None, x.lower(), ref_column.lower()).ratio(), reverse=True)
-            columns = [item for item in columns if difflib.SequenceMatcher(None, item.lower(), ref_column.lower()).ratio() >= 0.5]
+        target_column = ref_column if ref_column and ref_column in columns else ''
+
         unique_id_columns = []
+        target_columns = []
         for column in columns:
             if ('id' in column.lower() or 'unnamed' in column.lower()) and df[column].nunique() > 0.6 * len(df):
                 unique_id_columns.append(column)
             if type =='binary':
                 if len(df[column].unique()) == 2: 
-                    target_column = column if not target_column \
-                        else target_column
+                    target_columns.append(column)
             elif type == 'multi':
                 if len(df[column].unique()) > 2 and len(df[column].unique()) < 10:
-                    target_column = column if not target_column \
-                        else target_column
+                    target_columns.append(column)
             elif type == 'cluster':
-                if len(df[column].unique()) >=1 and len(df[column].unique()) < 0.6 * len(df):
-                    target_column= column if not target_column else target_column
+                if len(df[column].unique()) >=1 and len(df[column].unique()) < 0.3 * len(df):
+                    target_columns.append(column)
             elif type == 'regression':
                 if str(df[column].dtype) in ['int64', 'float64']:
                     if not cls.is_incremental(df[column]) and len(df[column].unique()) > max(2, 0.1 *len(df)):
-                        target_column = column if not target_column else target_column
+                        target_columns.append(column)
+
+        if not target_column:
+            if len(target_columns) == 1:
+                target_column = target_columns[0]
+                return unique_id_columns, target_column
+            else:
+                for column in target_columns:
+                    if column.lower() in LABELS:
+                        target_column = column
+                        break            
+        
         return unique_id_columns, target_column
 
 class CalculateML:

@@ -19,12 +19,12 @@
         "info": [
             {
                 "errors": [
-                    "Could not find target column in result, which is None in gold"
+                    "result file ./benchmark/output/azure-ML_0603/ml-binary-002/submission.csv does not exists"
                 ],
                 "metric": "f1",
                 "threshold": 0.0,
                 "score": 0.0,
-                "file": "prediction.csv"
+                "file": "submission.csv"
             }
         ]
     },
@@ -34,7 +34,7 @@
         "info": [
             {
                 "errors": [
-                    "result csv columns are different from gold csv: ['label', 'company', 'text', 'index']",
+                    "result csv columns are different from gold csv: ['text', 'index', 'label', 'company']",
                     "Could not find target column in result, which is result in gold"
                 ],
                 "metric": "f1",
@@ -196,7 +196,7 @@
     },
     {
         "id": "ml-binary-014",
-        "total_score": 0.7638623121964627,
+        "total_score": 0.7378416303448332,
         "info": [
             {
                 "errors": [
@@ -205,7 +205,7 @@
                 "metric": "f1",
                 "threshold": 0.0,
                 "target_output": "Churn",
-                "score": 0.7638623121964627,
+                "score": 0.7378416303448332,
                 "file": "churn.csv"
             }
         ]
@@ -227,7 +227,7 @@
     },
     {
         "id": "ml-binary-016",
-        "total_score": 0.7964496990338625,
+        "total_score": 0.6739637501378847,
         "info": [
             {
                 "errors": [
@@ -236,7 +236,7 @@
                 "metric": "f1",
                 "threshold": 0.0,
                 "target_output": "IsDefaulter",
-                "score": 0.7964496990338625,
+                "score": 0.6739637501378847,
                 "file": "defaulter.csv"
             }
         ]
@@ -347,13 +347,13 @@
     },
     {
         "id": "ml-cluster-002",
-        "total_score": 0.20500175072558863,
+        "total_score": 0.2049385604199492,
         "info": [
             {
                 "errors": [],
                 "metric": "silhouette",
                 "threshold": 0.0,
-                "score": 0.20500175072558863,
+                "score": 0.2049385604199492,
                 "file": "result.csv"
             }
         ]
@@ -587,32 +587,20 @@
                 "threshold": 0.0,
                 "score": 0.7791872377361496,
                 "file": "cluster.csv"
-            },
-            {
-                "score": 0.0,
-                "errors": [
-                    "./benchmark/output/azure-ML_0603/ml-cluster-20 does not exist"
-                ],
-                "file": "cluster.csv"
             }
         ]
     },
     {
-        "id": "ml-cluster-019",
-        "total_score": 0.3895936188680748,
+        "id": "ml-cluster-020",
+        "total_score": 0.0,
         "info": [
             {
-                "errors": [],
+                "errors": [
+                    "result file ./benchmark/output/azure-ML_0603/ml-cluster-020/cluster.csv does not exists"
+                ],
                 "metric": "silhouette",
                 "threshold": 0.0,
-                "score": 0.7791872377361496,
-                "file": "cluster.csv"
-            },
-            {
                 "score": 0.0,
-                "errors": [
-                    "./benchmark/output/azure-ML_0603/ml-cluster-20 does not exist"
-                ],
                 "file": "cluster.csv"
             }
         ]
@@ -695,10 +683,12 @@
         "total_score": 0.0,
         "info": [
             {
-                "score": 0.0,
                 "errors": [
-                    "gold file path ./benchmark/gold/ml-multi-006/score.csv does not exist"
+                    "The length of the result content is not equal to the length of the true value."
                 ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
                 "file": "score.csv"
             }
         ]
@@ -719,7 +709,7 @@
     },
     {
         "id": "ml-multi-008",
-        "total_score": 0.25354706428239837,
+        "total_score": 0.1694915375880357,
         "info": [
             {
                 "errors": [
@@ -728,7 +718,7 @@
                 "metric": "f1",
                 "threshold": 0.0,
                 "target_output": "CATEGORY",
-                "score": 0.25354706428239837,
+                "score": 0.1694915375880357,
                 "file": "category.csv"
             }
         ]
@@ -773,6 +763,34 @@
                 "target_output": "Sentiment",
                 "score": 0.6250547806407669,
                 "file": "sentiment.csv"
+            },
+            {
+                "score": 0.0,
+                "errors": [
+                    "./benchmark/output/azure-ML_0603/ml-multi-012 does not exist"
+                ],
+                "file": "sentiment.csv"
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-011",
+        "total_score": 0.31252739032038346,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Sentiment",
+                "score": 0.6250547806407669,
+                "file": "sentiment.csv"
+            },
+            {
+                "score": 0.0,
+                "errors": [
+                    "./benchmark/output/azure-ML_0603/ml-multi-012 does not exist"
+                ],
+                "file": "sentiment.csv"
             }
         ]
     },
@@ -806,13 +824,16 @@
     },
     {
         "id": "ml-regression-003",
-        "total_score": 0.0,
+        "total_score": 0.7469948201530305,
         "info": [
             {
-                "score": 0.0,
                 "errors": [
-                    "gold file path ./benchmark/gold/ml-regression-003/submission.csv does not exist"
+                    "result csv columns are different from gold csv: ['Store', 'Year', 'WeekOfYear', 'Dept', 'Month']"
                 ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Weekly_Sales",
+                "score": 0.7469948201530305,
                 "file": "submission.csv"
             }
         ]
@@ -878,7 +899,7 @@
     },
     {
         "id": "ml-regression-008",
-        "total_score": 0.03283215152842234,
+        "total_score": 0.0,
         "info": [
             {
                 "errors": [
@@ -887,7 +908,7 @@
                 "metric": "r2",
                 "threshold": 0.0,
                 "target_output": "quantity_sold",
-                "score": 0.03283215152842234,
+                "score": 0.0,
                 "file": "quantity.csv"
             }
         ]
@@ -899,7 +920,7 @@
             {
                 "errors": [
                     "result csv columns are different from gold csv: ['id']",
-                    "fail to calculate r2 socre, because could not convert string to float: '$79.00'"
+                    "fail to calculate r2 socre, because could not convert string to float: '5,000.00'"
                 ],
                 "metric": "r2",
                 "threshold": 0.0,
@@ -1080,244 +1101,6 @@
                 "threshold": 0.0,
                 "score": 0.0,
                 "file": "price.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-002",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "ID does not match, result has extra id: set()"
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-014",
-        "total_score": 41.70028065131831,
-        "info": [
-            {
-                "errors": [],
-                "score": 41.70028065131831,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-018",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Length mismatch: result CSV has 207 rows, while expected CSV has 1976 rows."
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-018",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Length mismatch: result CSV has 207 rows, while expected CSV has 1976 rows."
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-015",
-        "total_score": 0.6779999999999982,
-        "info": [
-            {
-                "errors": [],
-                "score": 0.6779999999999982,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-003",
-        "total_score": 1.3596472839922704,
-        "info": [
-            {
-                "errors": [],
-                "score": 1.3596472839922704,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-008",
-        "total_score": 0.036661068253663776,
-        "info": [
-            {
-                "errors": [],
-                "score": 0.036661068253663776,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-004",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Length mismatch: result CSV has 4 rows, while expected CSV has 2883 rows."
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-012",
-        "total_score": 23.07249576163845,
-        "info": [
-            {
-                "errors": [],
-                "score": 23.07249576163845,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-013",
-        "total_score": 8.056720882260606,
-        "info": [
-            {
-                "errors": [],
-                "score": 8.056720882260606,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-005",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Unexpected Column: ['CL', 'D', 'C']"
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-009",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Length mismatch: result CSV has 13593 rows, while expected CSV has 60411 rows."
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-010",
-        "total_score": 1.5332730164446042,
-        "info": [
-            {
-                "errors": [],
-                "score": 1.5332730164446042,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-006",
-        "total_score": 0.8256481028873869,
-        "info": [
-            {
-                "errors": [],
-                "score": 0.8256481028873869,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-007",
-        "total_score": 0.15293227635213144,
-        "info": [
-            {
-                "errors": [],
-                "score": 0.15293227635213144,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-011",
-        "total_score": 362.4947524279032,
-        "info": [
-            {
-                "errors": [],
-                "score": 362.4947524279032,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-016",
-        "total_score": 0.9595609197158353,
-        "info": [
-            {
-                "errors": [],
-                "score": 0.9595609197158353,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-018",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Length mismatch: result CSV has 207 rows, while expected CSV has 1976 rows."
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-001",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "ID does not match, result has extra id: set()"
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
-            }
-        ]
-    },
-    {
-        "id": "ml-competition-017",
-        "total_score": 0.0,
-        "info": [
-            {
-                "errors": [
-                    "Length mismatch: result CSV has 9648 rows, while expected CSV has 2597 rows."
-                ],
-                "score": 0.0,
-                "file": "submission.csv"
             }
         ]
     }
