@@ -7,7 +7,7 @@ import requests
 import os
 import ast
 import tempfile
-
+import platform
 logger = logging.getLogger("spider.pycontroller")
 
 
@@ -103,7 +103,10 @@ class PythonController:
 
         # 组合文件路径，确保它是容器内的绝对路径
         if not file_path.startswith('/'):
-            file_path = os.path.join(self.work_dir, file_path)
+            if platform.system() == 'Windows':
+                file_path = self.work_dir + '/' + file_path
+            else:
+                file_path = os.path.join(self.work_dir, file_path)
 
         # 确保文件不存在
         if self._file_exists(file_path):
@@ -142,7 +145,11 @@ class PythonController:
         if not file_path.startswith(self.work_dir): # if the filepath is not absolute path, then it is a relative path
             if file_path.startswith("./"): file_path = file_path[2:]
             file_path = os.path.join(self.work_dir.rstrip('/'), file_path)
-        real_file_path = os.path.join(self.mnt_dir, file_path.replace("/workspace/",""))
+
+        if platform.system() == 'Windows':
+            real_file_path = os.path.join(self.mnt_dir, file_path.replace('/workspace\\',""))
+        else:
+            real_file_path = os.path.join(self.mnt_dir, file_path.replace("/workspace/",""))     
         return real_file_path
     
     # def create_file(self, file_path: str, content: str):
