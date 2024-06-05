@@ -1,0 +1,22 @@
+{
+    "id": "plot-bar-010",
+    "config":{
+        "task": "data visualization",
+        "type": "bar",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_image"
+    ],
+    "result":[
+        {   
+            "multi": true,
+            "file": ["result.png","dabench/plot.json","dabench/result.npy"]
+        }
+    ],
+    "options": [{
+        "keys": ["xtick_labels", "figsize"]
+    }]
+  }
+  

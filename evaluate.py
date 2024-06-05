@@ -9,16 +9,16 @@ def run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout_seconds
 
     # Perform the evaluation
     results_infos = evaluator.evaluate(env_config=eval_json)
-
     with open(result_json, 'w') as json_file:
         json.dump(results_infos, json_file, indent=4)
 
+
 # Parameters
-experiments = "azure-ML_0603"
-output_dir = f'./benchmark/output/{experiments}'
+experiments = "example"
+output_dir = f'./benchmark/output/example'
 gold_dir = './benchmark/gold'
-eval_json = './benchmark/configs/evaluation_ML.jsonl'
-result_json = f'./benchmark/results/{experiments}_result_ML.json'
+eval_json = './evaluation_examples/examples/datavisualization/plot-scatter-001.json'
+result_json = f'./benchmark/results/{experiments}_result_plot.json'
 timeout_seconds = 10
 
 # Run the evaluation with the specified parameters
