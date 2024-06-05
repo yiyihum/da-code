@@ -1,0 +1,22 @@
+{
+    "id": "plot-pie-003",
+    "config":{
+        "task": "data visualization",
+        "type": "pie",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_image"
+    ],
+    "result":[
+        {   
+            "multi": true,
+            "file": ["result.jpg","dabench/plot.json","dabench/result.npy"]
+        }
+    ],
+    "options": [{
+        "keys": ["graph_title", "figsize"]
+    }]
+}
+  

@@ -1,0 +1,22 @@
+{
+    "id": "plot-line-001",
+    "config":{
+        "task": "data visualization",
+        "type": "line",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_image"
+    ],
+    "result":[
+        {   
+            "multi": true,
+            "file": ["point.png","dabench/plot.json","dabench/result.npy"]
+        }
+    ],
+    "options": [{
+        "keys": []
+    }]
+}
+  
