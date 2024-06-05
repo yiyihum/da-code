@@ -8,33 +8,31 @@ from pathlib import Path
 here = Path(__file__).absolute().parent
 sys.path.append(str(here.parent))
 from controllers.python import PythonController
+import pdb
 
 # from envs.spider2 import DEFAULT_WORK_DIR    
 class PlotPy:
-    script_path = str(Path(__file__).absolute().parent / 'scripts/image.py')
+    _script_path = str(Path(__file__).absolute().parent / 'scripts/image.py')
+
 
     @classmethod
     def preprocess_py(cls, py_path: str):
 
-        with open(cls.script_path, 'r') as f:
+        with open(cls._script_path, 'r') as f:
             script_content = f.readlines()
         
         with open(py_path, 'r', encoding='utf-8') as f:
             py_content = f.readlines()
-        py_content = [line for line in py_content if 'plt.close()' not in line and \
-                    'matplotlib.pyplot.close()' not in line]
-        py_content = [line for line in py_content if 'plt.show()' not in line and \
-                    'matplotlib.pyplot.show()' not in line]
-        find_main = None
-        for idx, line in enumerate(py_content):
-            if 'if __name__ == "__main__"' in line or "if __name__ == '__main__'" in line:
-                find_main = idx
-                break
+        exclude_keywords = ['plt.close', 'matplotlib.pyplot.close', 'plt.show',
+                'matplotlib.pyplot.show', 'plt.savefig', 'matplotlib.pyplot.savefig']
+        py_content = [line for line in py_content if not any(keyword in line for keyword in exclude_keywords)]
+        main_keywords = ['if __name__ == "__main__', "if __name__ == '__main__'"]
+        find_main = next((line for line in py_content if any(keyword in line for keyword in main_keywords)), None)
         if find_main is not None:
             py_content = py_content[:find_main] + \
                 [re.sub(r'^ {4}', '', line) for line in py_content[find_main+1:]]
         
-        py_content = script_content[:30] + py_content + script_content[32:]
+        py_content = py_content + script_content
 
         return py_content
 

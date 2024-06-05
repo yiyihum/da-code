@@ -1,0 +1,22 @@
+{
+    "id": "plot-scatter-001",
+    "config":{
+        "task": "data visualization",
+        "type": "scatter",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_image"
+    ],
+    "result":[
+        {   
+            "multi": true,
+            "file": ["result.png","dabench/plot.json","dabench/result.npy"]
+        }
+    ],
+    "options": [{
+        "keys": ["graph_title", "x_label", "y_label"]
+    }]
+  }
+  

@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-import json
-import random, string
+import sys, os, json
+from datetime import datetime
 import numpy as np
 import matplotlib.colors as mcolors
 from matplotlib.patches import Wedge, Rectangle
@@ -28,11 +28,73 @@ def identify_plot_type(ax):
         if len(line.get_xdata()) > 1 and len(line.get_ydata()) > 1:
             return 'line'
         
-    return ''
+import pandas as pd
+import sqlite3
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-def generate_random_string(length=4):
-    letters = string.ascii_letters
-    return ''.join(random.choice(letters) for _ in range(length))
+df = pd.read_csv('/Users/stewiepeter/Desktop/VsProjects/VaftBench/Datasets/DataVisualization/plot-scatter-001/netflix.csv')
+# Create an in-memory SQLite database
+conn = sqlite3.connect(':memory:')
+
+# Convert the DataFrame to an SQLite table
+df.to_sql('netflix', conn, index=False)
+
+# Create a cursor object
+cursor = conn.cursor()
+
+query = """
+SELECT
+    genre,
+    language,
+    COUNT(*) AS title_count
+FROM netflix
+GROUP BY genre, language
+ORDER BY genre, title_count DESC;
+"""
+
+cursor.execute(query)
+
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+query = """
+SELECT 
+    genre,
+    title,
+    imdb_score
+FROM netflix AS n1
+WHERE imdb_score = (
+    SELECT MAX(imdb_score)
+    FROM netflix AS n2
+    WHERE n1.genre = n2.genre
+);
+"""
+
+cursor.execute(query)
+
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+df = pd.DataFrame(rows, columns=['Genre', 'Title', 'IMDb_Score'])
+
+
+plt.figure(figsize=(30, 20))
+sns.scatterplot(data=df, x='Title', y='IMDb_Score', hue='Genre', palette='viridis')
+
+plt.title('IMDb Score vs Genre')
+plt.xlabel('Title')
+plt.ylabel('IMDb Score')
+plt.xticks(rotation=90)
+
+handles, labels = plt.gca().get_legend_handles_labels()
+plt.legend(handles, labels, title='Genre', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+plt.tight_layout()
 
 
 image_parameters = {}
@@ -96,14 +158,14 @@ except Exception as e:
     max_length = max(len(x) for x in results)
     results = [np.pad(x, (0, max_length - len(x)), 'constant') for x in results]
 
-random_string = generate_random_string()
+
 if len(results) > 0:
-    npy_path = f'./_data_result_{random_string}.npy'
+    npy_path = f'./_data_result_{str(datetime.now())}.npy'
     np.save(npy_path, results)
 else:
     npy_path = ''
 
-
+print(results)
 colors = [str(mcolors.to_hex(rgb_tuple)) for rgb_tuple in colors]
 figsize = fig.get_size_inches()
 legend = ax.get_legend()
@@ -126,7 +188,8 @@ image_parameters['y_label'] = y_label
 image_parameters['xtick_labels'] = xtick_labels
 image_parameters['ytick_labels'] = ytick_labels
 
-output_path = f'./_result_image_parameters_{random_string}.json'
+output_path = f'./_result_image_parameters_{str(datetime.now())}.json'
 with open(output_path, 'w') as js:
     json.dump(image_parameters, js)
+
 

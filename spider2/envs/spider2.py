@@ -217,7 +217,7 @@ class Spider2Env(gym.Env):
             process_function = getattr(configs, post_process_f, None)
             post_files = process_function(self.mnt_dir, self.controller)
             post_files = post_files if isinstance(post_files, list) else list(post_files)
-            post_process_files.extend(process_function(self.mnt_dir, self.controller))
+            post_process_files.extend(post_files)
 
         return {**diff_files, "post_process_files": post_process_files}
 
