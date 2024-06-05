@@ -15,7 +15,7 @@ from spider2.controllers.python import PythonController
 from spider2.controllers.setup import SetupController
 from spider2.envs.utils import *
 from spider2 import configs
-from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecuteSimplePython
+from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecutePythonSnippet
 import signal
 
 logger = logging.getLogger("spider2.env")
@@ -294,7 +294,7 @@ class Spider2Env(gym.Env):
                     observation = self.create_file_action(action)
                 elif isinstance(action, EditFile):
                     observation = self.edit_file_action(action)
-                elif isinstance(action, ExecuteSimplePython):
+                elif isinstance(action, ExecutePythonSnippet):
                     observation = self.execute_python_action(action)
                 elif isinstance(action, Terminate):
                     observation = "Terminate"
@@ -337,7 +337,7 @@ class Spider2Env(gym.Env):
         
         return obs
 
-    def execute_python_action(self, action: ExecuteSimplePython):
+    def execute_python_action(self, action: ExecutePythonSnippet):
         """ Execute action in python shell """
         obs = self.controller.execute_python_code(action.code)
         if obs is None or obs == '':

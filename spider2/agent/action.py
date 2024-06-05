@@ -75,7 +75,7 @@ Example: ExecuteBash(code="ls -l")
 
 
 @dataclass
-class ExecuteSimplePython(Action):
+class ExecutePythonSnippet(Action):
 
     action_type: str = field(
         default="python_snippet",
@@ -89,20 +89,20 @@ class ExecuteSimplePython(Action):
     )
 
     def __repr__(self) -> str:
-        return f"ExecuteSimplePython:\n```\n{self.code.strip()}\n```"
+        return f"ExecutePythonSnippet:\n```\n{self.code.strip()}\n```"
 
     @classmethod
     def get_action_description(cls) -> str:
         return """
-## ExecuteSimplePython
-Signature: `ExecuteSimplePython`
+## ExecutePythonSnippet
+Signature: `ExecutePythonSnippet`
 ```
 executable_python_code
 ```
 
-Description: This action executes a very simple Python command or snippet wrapped in paired ``` symbols. It is intended for short, exploratory code snippets. For longer or more complex code, please use CreateFile to write the code to a file and then execute it.
+Description: This action executes a very simple Python snippet command or snippet wrapped in paired ``` symbols. It is intended for short, exploratory code snippets. For longer or more complex code, please use CreateFile to write the code to a file and then execute it.
 
-Example: ExecuteSimplePython:
+Example: ExecutePythonSnippet:
 ```
 print("Hello, world!")
 ```
@@ -110,7 +110,7 @@ print("Hello, world!")
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'ExecuteSimplePython.*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+        matches = re.findall(r'ExecutePythonSnippet.*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
         if matches:
             code = matches[-1][1]
             return cls(code=code.strip())

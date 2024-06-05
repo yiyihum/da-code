@@ -9,7 +9,7 @@ from http import HTTPStatus
 from io import BytesIO
 from typing import Dict, List
 from spider2.agent.prompts import SYS_PROMPT_IN_OUR_CODE
-from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecuteSimplePython
+from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecutePythonSnippet
 from spider2.envs.spider2 import Spider2Env
 from openai import AzureOpenAI
 from typing import Dict, List, Optional, Tuple, Any, TypedDict
@@ -55,7 +55,7 @@ class PromptAgent:
         self.history_messages = []
         self.env = None
         self.codes = []
-        self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate, ExecuteSimplePython, CreateFile, EditFile]
+        self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate, ExecutePythonSnippet, CreateFile, EditFile]
         # self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate]
         self.work_dir = "/workspace"
         
