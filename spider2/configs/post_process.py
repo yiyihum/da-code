@@ -84,13 +84,13 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     plot_find = False
     npy_file, json_file = '', ''
     for py_file in plt_files:
-        pdb.set_trace()
         py_content = PlotPy.preprocess_py(py_file)
-        # with open(py_file, 'w') as py:
-        #     py.writelines(py_content)
-        create_command = f'echo "{py_content}" > {py_file}'
-        controller.container.exec_run(create_command)
-        controller.container.exec_run(f'python {os.path.basename(py_file)}')
+        process_py_file = py_file.replace('.py', '_process.py')
+        with open(process_py_file, 'w') as py:
+            py.writelines(py_content)
+        # create_command = f'echo """{py_content}""" > {py_file}'
+        # controller.container.exec_run(create_command)
+        controller.container.exec_run(f'python {os.path.basename(process_py_file)}')
         mnt_files = os.listdir(mnt_dir)
         npy_files = [os.path.join(mnt_dir, file) for file in mnt_files if file.endswith('.npy') and '_data_result_' in file]
         json_files = [os.path.join(mnt_dir, file) for file in mnt_files if file.endswith('.json') and '_result_image_parameters_' in file]
