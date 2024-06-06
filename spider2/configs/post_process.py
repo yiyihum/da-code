@@ -5,10 +5,10 @@ import os, shutil
 import sys
 from typing import Type
 from pathlib import Path
+import pdb
 here = Path(__file__).absolute().parent
 sys.path.append(str(here.parent))
 from controllers.python import PythonController
-import pdb
 
 # from envs.spider2 import DEFAULT_WORK_DIR    
 class PlotPy:
@@ -84,6 +84,7 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     plot_find = False
     npy_file, json_file = '', ''
     for py_file in plt_files:
+        pdb.set_trace()
         py_content = PlotPy.preprocess_py(py_file)
         # with open(py_file, 'w') as py:
         #     py.writelines(py_content)
@@ -98,8 +99,7 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
             npy_file, json_file = npy_files[0], json_files[0]
             break
         else:
-            unused_files = npy_files + json_files
-            for file in unused_files:
+            for file in npy_files + json_files:
                 os.remove(file)
 
     if plot_find:
@@ -110,8 +110,9 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     else:
         plot_json, npy_path = '', ''
 
-    
-    assert plot_json or npy_path, f'fails to generate plot json result'
+    print(plot_json, npy_path)
+    if not plot_json or not npy_path:
+        raise ValueError(f'fails to generate plot json result')
 
     return [plot_json, npy_path]
 

@@ -85,7 +85,10 @@ elif gt_graph == 'scatter':
     scatters = [child for child in ax.get_children() if isinstance(child, PathCollection) and len(child.get_offsets()) > 0]
     if scatters:
         for scatter in scatters:
-            results.append(scatter.get_offsets().data)
+            scatter_data = scatter.get_offsets()
+            scatter_data = scatter_data.reshape(-1, 1) if scatter_data.ndim == 1 else scatter_data
+            for data in scatter_data:
+                results.append(data)
             scatter_colors = scatter.get_facecolor()
             for color in scatter_colors:
                 colors.add(tuple(color))
