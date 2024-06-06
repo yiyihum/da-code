@@ -1,0 +1,1 @@
+{"type": "bar", "color": ["#2020df", "#df2020"], "figsize": [15.0, 10.0], "graph_title": "Where do children between 15 and 22 live", "legend_title": "", "labels": ["Living together", "Living apart"], "x_label": "Living Together Sum and Living Part Sum ", "y_label": "Age", "xtick_labels": ["teenager", "adult"], "ytick_labels": ["0", "50", "100", "150", "200", "250", "300"]}

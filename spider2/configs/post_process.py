@@ -85,8 +85,10 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     npy_file, json_file = '', ''
     for py_file in plt_files:
         py_content = PlotPy.preprocess_py(py_file)
-        with open(py_file, 'w') as py:
-            py.writelines(py_content)
+        # with open(py_file, 'w') as py:
+        #     py.writelines(py_content)
+        create_command = f'echo "{py_content}" > {py_file}'
+        controller.container.exec_run(create_command)
         controller.container.exec_run(f'python {os.path.basename(py_file)}')
         mnt_files = os.listdir(mnt_dir)
         npy_files = [os.path.join(mnt_dir, file) for file in mnt_files if file.endswith('.npy') and '_data_result_' in file]

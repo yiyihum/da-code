@@ -1,18 +1,26 @@
-import argparse
+import pandas as pd
 from tqdm import tqdm
 from spider2.evaluators.evaluation import Evaluator
+import json
 
-output_dir = './benchmark/results/azure-visual-test'
+def run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout_seconds=10):
+    # Initialize the Evaluator with the provided directories
+    evaluator = Evaluator(output_dir=output_dir, gold_dir=gold_dir, timeout_second=timeout_seconds)
+
+    # Perform the evaluation
+    results_infos = evaluator.evaluate(env_config=eval_json)
+    with open(result_json, 'w') as json_file:
+        json.dump(results_infos, json_file, indent=4)
+
+
+# Parameters
+experiments = "azure-ML0605"
+output_dir = f'./benchmark/output/{experiments}'
 gold_dir = './benchmark/gold'
+eval_json = 'benchmark/configs/evaluation_ML.jsonl'
+result_json = f'./benchmark/results/{experiments}_result.json'
+timeout_seconds = 10
 
-evalutor = Evaluator(output_dir=output_dir, gold_dir=gold_dir)
+# Run the evaluation with the specified parameters
+run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout_seconds)
 
-eval_json = 'benchmark/configs/evaluation000.json'
-
-score, info = evalutor.evaluate(env_config=eval_json)
-print(score) # 1.0
-if info:
-    print(info)
-'''
-[{'img': False, 'data': True, 'type': True, 'color': True, 'figsize': True, 'labels': True, 'xtick_labels': True, 'ytick_labels': True}]
-'''

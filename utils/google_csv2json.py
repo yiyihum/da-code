@@ -4,7 +4,7 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/configs/Visual.csv"
+file_path = "./benchmark/configs/ML.csv"
 data = load_csv(file_path)
 
 # 保存为json
@@ -47,11 +47,12 @@ for index, row in data.iterrows():
                 }
             }
         ],
-        "post_process": ["plot_process"]
+        "post_process": []
+        # "post_process": ["plot_process"]
     })
 
 # 保存为jsonl
 import json
-with open("./benchmark/configs/Visual.jsonl", "w") as f:
+with open("./benchmark/configs/ML.jsonl", "w") as f:
     for line in data_json:
         f.write(json.dumps(line) + "\n")

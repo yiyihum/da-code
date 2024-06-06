@@ -1,0 +1,1236 @@
+[
+    {
+        "id": "ml-binary-001",
+        "total_score": 0.84,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "result",
+                "score": 0.84,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-002",
+        "total_score": 0.8160127202549265,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Response",
+                "score": 0.8160127202549265,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-003",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "prediction.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-004",
+        "total_score": 0.7988851635742439,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Transported",
+                "score": 0.7988851635742439,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-005",
+        "total_score": 0.973621425014614,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "result",
+                "score": 0.973621425014614,
+                "file": [
+                    "label.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-006",
+        "total_score": 0.938971760820224,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "result",
+                "score": 0.938971760820224,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-007",
+        "total_score": 0.3680603536132483,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "result",
+                "score": 0.3680603536132483,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-008",
+        "total_score": 0.5843412177253641,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['Loan_ID']",
+                    "TypeError: result target dtype int64 is not compatible with gold's object."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Loan_Status",
+                "score": 0.5843412177253641,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-009",
+        "total_score": 0.9622004767398744,
+        "info": [
+            {
+                "errors": [
+                    "TypeError: result target dtype int64 is not compatible with gold's object."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "satisfaction",
+                "score": 0.9622004767398744,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-010",
+        "total_score": 1.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "output",
+                "score": 1.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-011",
+        "total_score": 0.01579001992042031,
+        "info": [
+            {
+                "errors": [
+                    "TypeError: result target dtype object is not compatible with gold's int64."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "income_above_limit",
+                "score": 0.01579001992042031,
+                "file": [
+                    "results.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-012",
+        "total_score": 0.33177389428300047,
+        "info": [
+            {
+                "errors": [
+                    "TypeError: result target dtype object is not compatible with gold's int64."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "emotion",
+                "score": 0.33177389428300047,
+                "file": [
+                    "sentiment.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-013",
+        "total_score": 0.9833176026350082,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Target",
+                "score": 0.9833176026350082,
+                "file": [
+                    "target.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-014",
+        "total_score": 0.7379272846670066,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['CustomerID']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Churn",
+                "score": 0.7379272846670066,
+                "file": [
+                    "churn.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-015",
+        "total_score": 0.6414531274100308,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "CLASS",
+                "score": 0.6414531274100308,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-016",
+        "total_score": 0.6820750919564161,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['ID']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "IsDefaulter",
+                "score": 0.6820750919564161,
+                "file": [
+                    "defaulter.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-017",
+        "total_score": 0.7339118715181967,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "RainTomorrow",
+                "score": 0.7339118715181967,
+                "file": [
+                    "tomorrow.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-018",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-binary-018/stroke.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "stroke.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-019",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-binary-019/class.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-020",
+        "total_score": 0.8796638900469171,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Heart_Disease",
+                "score": 0.8796638900469171,
+                "file": [
+                    "disease.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-021",
+        "total_score": 0.9679709730389249,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "diabetes",
+                "score": 0.9679709730389249,
+                "file": [
+                    "diabetes.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-022",
+        "total_score": 0.9528714117330574,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Bankrupt?",
+                "score": 0.9528714117330574,
+                "file": [
+                    "bankrupt.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-001",
+        "total_score": 0.702518993816405,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.702518993816405,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-002",
+        "total_score": 0.5785583902120139,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.5785583902120139,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-003",
+        "total_score": 0.2801132248308263,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.2801132248308263,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-004",
+        "total_score": 0.7905805675222256,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.7905805675222256,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-005",
+        "total_score": 0.6130641548246057,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.6130641548246057,
+                "file": [
+                    "cluster_blob.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-006",
+        "total_score": 0.15950006472546624,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.15950006472546624,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-007",
+        "total_score": 0.5561676390047086,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.5561676390047086,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "fail to calculate silhouette_score: Input contains NaN."
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-009",
+        "total_score": 0.8888351075932878,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.8888351075932878,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-cluster-010/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-011",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "fail to calculate silhouette_score: zero-size array to reduction operation minimum which has no identity"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-012",
+        "total_score": 0.04634332712225627,
+        "info": [
+            {
+                "errors": [
+                    "result contains non numeric columns: ['Dt_Customer']"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.04634332712225627,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-013",
+        "total_score": 0.25532428331937085,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.25532428331937085,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-014",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "fail to calculate silhouette_score: Input contains NaN."
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result contains non numeric columns: ['Feature_i']"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-016",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-017",
+        "total_score": 0.4298725000944044,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.4298725000944044,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-018",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-cluster-018/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-019",
+        "total_score": 0.40770106764632025,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.40770106764632025,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-020",
+        "total_score": 0.6911917614636717,
+        "info": [
+            {
+                "errors": [],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.6911917614636717,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-001",
+        "total_score": 0.9266025333374504,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Activity",
+                "score": 0.9266025333374504,
+                "file": [
+                    "activity.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-002",
+        "total_score": 7.013751673380251e-05,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "new&used",
+                "score": 7.013751673380251e-05,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-003",
+        "total_score": 0.36324484576267185,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['job_id']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "formatted_experience_level",
+                "score": 0.36324484576267185,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-004",
+        "total_score": 0.2793014574977068,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Adaptivity Level",
+                "score": 0.2793014574977068,
+                "file": [
+                    "level.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-005",
+        "total_score": 0.561080737227677,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "emotion",
+                "score": 0.561080737227677,
+                "file": [
+                    "emotions.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-006",
+        "total_score": 0.7094463862417019,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Credit_Score",
+                "score": 0.7094463862417019,
+                "file": [
+                    "score.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-007",
+        "total_score": 0.8910710621792123,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Class",
+                "score": 0.8910710621792123,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-008",
+        "total_score": 0.08725452343914386,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['ID']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "CATEGORY",
+                "score": 0.08725452343914386,
+                "file": [
+                    "category.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "type.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-011",
+        "total_score": 0.1945313522302583,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Sentiment",
+                "score": 0.1945313522302583,
+                "file": [
+                    "sentiment.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-012",
+        "total_score": 0.6680744324799985,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "damage_grade",
+                "score": 0.6680744324799985,
+                "file": [
+                    "prediction.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-001",
+        "total_score": 0.9195207093116183,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "price",
+                "score": 0.9195207093116183,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-regression-002/result.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-003",
+        "total_score": 0.7096221486083574,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Weekly_Sales",
+                "score": 0.7096221486083574,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Popularity",
+                "score": 0.0,
+                "file": [
+                    "popularity.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-regression-005/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['GEO']"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "AVG_JOB_SATISFACTION",
+                "score": 0.0,
+                "file": [
+                    "job_satisfaction.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "quantity_sold",
+                "score": 0.0,
+                "file": [
+                    "quantity.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "fail to calculate r2 socre, because could not convert string to float: '5,000.00'"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "price",
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-regression-010/Usefulness.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "Usefulness.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-011",
+        "total_score": 0.5703740099566093,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['Project Name', 'biogas_generation_estimate_cuftday']"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "biogas_generation_estimate_cuftday",
+                "score": 0.5703740099566093,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "fail to calculate r2 socre, because Input contains NaN."
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Mileage",
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-013",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Selling_Price",
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-014",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-ML0605/ml-regression-014/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "appliance.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-016",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Fare",
+                "score": 0.0,
+                "file": [
+                    "fare.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-017",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "fail to calculate r2 socre, because Input contains NaN."
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "rating",
+                "score": 0.0,
+                "file": [
+                    "rating.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-018",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result target contains non-numeric element"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "id",
+                "score": 0.0,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-019",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "pm.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-020",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "''"
+                ],
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-021",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "price",
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    }
+]

@@ -97,15 +97,17 @@ def test(
         "max_tokens": args.max_tokens,
     }
 
+    if args.suffix == "":
+        experiment_id = args.model + "-" +datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    else:
+        experiment_id = args.model + "-" + args.suffix
+
     env_config = \
     {
         "image_name": "dabench-image",
         "init_args": {
-            "name": "spider2",
+            "name": experiment_id,
             "work_dir": "/workspace",
-            "ports": {
-                "5432": "12001"
-            }
         }
     }
     
@@ -129,13 +131,6 @@ def test(
         else:
             indices = list(map(int, args.example_range.split(",")))
             task_configs = [task_configs[i] for i in indices]
-    
-
-
-    if args.suffix == "":
-        experiment_id = args.model + "-" +datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    else:
-        experiment_id = args.model + "-" + args.suffix
     
     # TODO: record the task state
     # save all setting to output_dir
