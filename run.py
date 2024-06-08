@@ -166,13 +166,13 @@ def test(
         agent.set_env_and_task(env)
     
         logger.info('Task input:' + task_config['instruction'])
-        done = agent.run()
+        done, result_output = agent.run()
         trajectory = agent.get_trajectory()
 
         os.makedirs(os.path.join(output_dir, "dabench"), exist_ok=True)
         result_files = env.post_process()
-        dabench_result = {"finished": done, "steps": len(trajectory["trajectory"]),
-                           **trajectory, "result_files": result_files}
+        dabench_result = {"finished": done, "steps": len(trajectory["trajectory"]), "result": result_output,
+                           "result_files": result_files, **trajectory}
         with open(os.path.join(output_dir, "dabench/result.json"), "w") as f:
             json.dump(dabench_result, f, indent=2)
         

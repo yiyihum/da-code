@@ -15,7 +15,7 @@ from spider2.controllers.python import PythonController
 from spider2.controllers.setup import SetupController
 from spider2.envs.utils import *
 from spider2 import configs
-from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecutePythonSnippet
+from spider2.agent.action import Bash, Action, Terminate, Python, SQL
 import signal
 
 logger = logging.getLogger("spider2.env")
@@ -288,13 +288,15 @@ class Spider2Env(gym.Env):
         try:
             with timeout(DEFAULT_TIME_OUT,"Action execution time exceeded!"):
                 done = False
-                if isinstance(action, ExecuteBash):
+                if isinstance(action, Bash):
                     observation = self.execute_code_action(action)
-                elif isinstance(action, CreateFile):
-                    observation = self.create_file_action(action)
-                elif isinstance(action, EditFile):
-                    observation = self.edit_file_action(action)
-                elif isinstance(action, ExecutePythonSnippet):
+                elif isinstance(action, SQL):
+                    observation = self.execute_sql_action(action)
+                # elif isinstance(action, CreateFile):
+                #     observation = self.create_file_action(action)
+                # elif isinstance(action, EditFile):
+                #     observation = self.edit_file_action(action)
+                elif isinstance(action, Python):
                     observation = self.execute_python_action(action)
                 elif isinstance(action, Terminate):
                     observation = "Terminate"
@@ -305,7 +307,7 @@ class Spider2Env(gym.Env):
             observation = str(e)
         
         observation = self._handle_observation(observation)
-        logger.info("Observation: %s", observation)
+        # logger.info("Observation: %s", observation)
         return observation, done
     
     def _handle_observation(self, observation):
@@ -315,47 +317,53 @@ class Spider2Env(gym.Env):
             return truncated_observation
         return observation
 
-        
-    def create_file_action(self, action: CreateFile):
-        obs = self.controller.create_file(action.filepath, action.code)
-        if obs is None or obs == '':
-            real_file_path = self.controller.get_real_file_path(action.filepath)
-            valid, error = is_file_valid(real_file_path)
-            if valid:
-                obs = f"File {action.filepath} created and written successfully."
-            else:
-                obs = f"Falied to validate file {action.filepath}, error: {error}"
-        return obs
 
-
-    def execute_code_action(self, action: ExecuteBash):
+    def execute_code_action(self, action: Bash):
         """ Execute action in bash shell """
         
         obs = self.controller.execute_command(action.code)
         if obs is None or obs == '':
-            obs = "Action executed successfully. No output."
+            obs = "Command executed successfully. No output."
         
         return obs
 
-    def execute_python_action(self, action: ExecutePythonSnippet):
-        """ Execute action in python shell """
-        obs = self.controller.execute_python_code(action.code)
+    def execute_python_action(self, action: Python):
+        """ Execute action in python """
+        obs = self.controller.execute_python_file(action.filepath, action.code)
         if obs is None or obs == '':
-            obs = "Action executed successfully. No output."
+            obs = f"{action.filepath} executed successfully. No output."
         
         return obs
     
-    
-    def edit_file_action(self, action: EditFile):
-        obs = self.controller.edit_file(action.filepath, action.code)
+    def execute_sql_action(self, action: Python):
+        """ Execute action in sql"""
+        obs = self.controller.execute_sql_code(action.file_path, action.code, action.output)
         if obs is None or obs == '':
-            real_file_path = self.controller.get_real_file_path(action.filepath)
-            valid, error = is_file_valid(real_file_path)
-            if valid:
-                obs = f"File {action.filepath} edited successfully."
-            else:
-                obs = f"Falied to validate file {action.filepath}, error: {error}"
+            obs = f"SQL command executed successfully. No output."
+        
         return obs
+    
+    # def create_file_action(self, action: CreateFile):
+    #     obs = self.controller.create_file(action.filepath, action.code)
+    #     if obs is None or obs == '':
+    #         real_file_path = self.controller.get_real_file_path(action.filepath)
+    #         valid, error = is_file_valid(real_file_path)
+    #         if valid:
+    #             obs = f"File {action.filepath} created and written successfully."
+    #         else:
+    #             obs = f"Falied to validate file {action.filepath}, error: {error}"
+    #     return obs
+    
+    # def edit_file_action(self, action: EditFile):
+    #     obs = self.controller.edit_file(action.filepath, action.code)
+    #     if obs is None or obs == '':
+    #         real_file_path = self.controller.get_real_file_path(action.filepath)
+    #         valid, error = is_file_valid(real_file_path)
+    #         if valid:
+    #             obs = f"File {action.filepath} edited successfully."
+    #         else:
+    #             obs = f"Falied to validate file {action.filepath}, error: {error}"
+    #     return obs
     
 
     # def step(self, action) -> Tuple[str, float, bool, Dict]:

@@ -9,7 +9,7 @@ from http import HTTPStatus
 from io import BytesIO
 from typing import Dict, List
 from spider2.agent.prompts import SYS_PROMPT_IN_OUR_CODE
-from spider2.agent.action import ExecuteBash, CreateFile, Action, Terminate, EditFile, ExecutePythonSnippet
+from spider2.agent.action import Bash, Action, Terminate, Python, SQL
 from spider2.envs.spider2 import Spider2Env
 from openai import AzureOpenAI
 from typing import Dict, List, Optional, Tuple, Any, TypedDict
@@ -55,8 +55,8 @@ class PromptAgent:
         self.history_messages = []
         self.env = None
         self.codes = []
-        self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate, ExecutePythonSnippet, CreateFile, EditFile]
-        # self._AVAILABLE_ACTION_CLASSES = [ExecuteBash, Terminate]
+        self._AVAILABLE_ACTION_CLASSES = [Bash, Python, SQL, Terminate]
+        # self._AVAILABLE_ACTION_CLASSES = [Bash, Terminate]
         self.work_dir = "/workspace"
         
     def set_env_and_task(self, env: Spider2Env):
@@ -117,6 +117,10 @@ class PromptAgent:
         except ValueError as e:
             print("Failed to parse action from response", e)
             action = None
+        
+        logger.info("Observation: %s", obs)
+        logger.info("Response: %s", response)
+
         
         self._add_message(obs, response)
         self.observations.append(obs)
@@ -201,11 +205,15 @@ class PromptAgent:
                 obs, done = self.env.step(action)
 
             if done:
+                if isinstance(action, Terminate):
+                    result = action.output
+                else:
+                    result = ""
                 logger.info("The task is done.")
                 break
             step_idx += 1
 
-        return done
+        return done, result
 
     def get_trajectory(self):
         trajectory = []

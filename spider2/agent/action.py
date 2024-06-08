@@ -40,7 +40,7 @@ Observation: the observation space of this action type.
         raise NotImplementedError
 
 @dataclass
-class ExecuteBash(Action):
+class Bash(Action):
 
     action_type: str = field(
         default="exec_code",
@@ -56,15 +56,15 @@ class ExecuteBash(Action):
     @classmethod
     def get_action_description(cls) -> str:
         return """
-## ExecuteBash
-Signature: ExecuteBash(code="shell_command")
-Description: This action string will execute a valid shell command in the `code` field.
-Example: ExecuteBash(code="ls -l")
+## Bash Action
+* Signature: Bash(code="shell_command")
+* Description: This action string will execute a valid shell command in the `code` field.
+* Example: Bash(code="ls -l")
 """
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'ExecuteBash\(code=(.*)\)', text, flags=re.DOTALL)
+        matches = re.findall(r'Bash\(code=(.*)\)', text, flags=re.DOTALL)
         if matches:
             code = matches[-1]
             return cls(code=remove_quote(code))
@@ -73,9 +73,8 @@ Example: ExecuteBash(code="ls -l")
     def __repr__(self) -> str:
         return f'{self.__class__.__name__}(code="{self.code}")'
 
-
 @dataclass
-class ExecutePythonSnippet(Action):
+class Python(Action):
 
     action_type: str = field(
         default="python_snippet",
@@ -88,110 +87,32 @@ class ExecutePythonSnippet(Action):
         metadata={"help": 'executable python commands or snippets'}
     )
 
-    def __repr__(self) -> str:
-        return f"ExecutePythonSnippet:\n```\n{self.code.strip()}\n```"
-
-    @classmethod
-    def get_action_description(cls) -> str:
-        return """
-## ExecutePythonSnippet
-Signature: `ExecutePythonSnippet`
-```
-executable_python_code
-```
-
-Description: This action executes a very simple Python snippet command or snippet wrapped in paired ``` symbols. It is intended for short, exploratory code snippets. For longer or more complex code, please use CreateFile to write the code to a file and then execute it.
-
-Example: ExecutePythonSnippet:
-```
-print("Hello, world!")
-```
-"""
-
-    @classmethod
-    def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'ExecutePythonSnippet.*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
-        if matches:
-            code = matches[-1][1]
-            return cls(code=code.strip())
-        return None
-    
-    def __repr__(self) -> str:
-        return f"{self.__class__.__name__}\n '''\n{self.code}\n'''"
-
-
-# @dataclass
-# class SQLCommand(Action):
-
-#     action_type: str = field(
-#         default="sql_command",
-#         init=False,
-#         repr=False,
-#         metadata={"help": 'type of action, c.f., "sql_command"'}
-#     )
-
-#     command: str = field(
-#         metadata={"help": 'SQL command to execute'}
-#     )
-
-#     @classmethod
-#     def get_action_description(cls) -> str:
-#         return """
-# Action: SQLCommand(command=\"sql_command\")
-# Description: This action string will execute a valid SQL command in the `command` field, such as `SELECT * FROM table_name` and `INSERT INTO table_name VALUES (value1, value2, value3)`.
-# Usage: SQLCommand(command="SELECT * FROM table_name")
-# Observation: The observation space is the execution results or errors in the corresponding database server.
-# """
-
-#     @classmethod
-#     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-#         matches = re.findall(r'SQLCommand\(command=(.*)\)', text, flags=re.DOTALL)
-#         if matches:
-#             command = matches[-1]
-#             return cls(command=remove_quote(command))
-#         return None
-
-
-@dataclass
-class CreateFile(Action):
-
-    action_type: str = field(
-        default="create_file",
-        init=False,
-        repr=False,
-        metadata={"help": 'type of action, c.f., "create_file"'}
-    )
-
-    code: str = field(
-        metadata={"help": 'code to write into file'}
-    )
-
     filepath: Optional[str] = field(
         default=None,
         metadata={"help": 'name of file to create'}
     )
 
     def __repr__(self) -> str:
-        return f"CreateFile(filepath=\"{self.filepath}\"):\n```\n{self.code.strip()}\n```"
+        return f"Python:\n```\n{self.code.strip()}\n```"
 
     @classmethod
     def get_action_description(cls) -> str:
         return """
-## CreateFile
-Signature: CreateFile(filepath="path/to/file"):
+## Python Action
+* Signature: Python(filepath="path/to/python_file"):
+```python
+executable_python_code
 ```
-file_content
-```
-Description: This action will create a file in the field `filepath` with the content wrapped by paired ``` symbols. Make sure the file content is complete and correct. If the file already exists, you can only use EditFile to modify it.
-Example: CreateFile(filepath="hello_world.py"):
-```
+* Description: This action will create a python file in the field `filepath` with the content wrapped by paired ``` symbols. If the file already exists, it will be overwritten. After creating the file, the python file will be executed. 
+* Example: Python(file_name="./hello_world.py"):
+```python
 print("Hello, world!")
 ```
 """
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'CreateFile\(filepath=(.*?)\).*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+        matches = re.findall(r'Python\(filepath=(.*?)\).*?```python[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
         if matches:
             filepath = matches[-1][0].strip()
             code = matches[-1][2].strip()
@@ -199,52 +120,58 @@ print("Hello, world!")
         return None
     
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}(filepath='{self.filepath}':\n'''\n{self.code}\n''')"
-       
+        return f"{self.__class__.__name__}(filepath='{self.filepath}'):\n'''python\n{self.code}\n'''"
+
 @dataclass
-class EditFile(Action):
+class SQL(Action):
+
     action_type: str = field(
-        default="edit_file",
+        default="sql_command",
         init=False,
         repr=False,
-        metadata={"help": 'type of action, c.f., "edit_file"'}
+        metadata={"help": 'type of action, c.f., "sql_command"'}
     )
 
     code: str = field(
-        metadata={"help": 'code to write into file'}
+        metadata={"help": 'SQL command to execute'}
     )
 
-    filepath: Optional[str] = field(
+    file_path: str = field(
         default=None,
-        metadata={"help": 'name of file to edit'}
+        metadata={"help": 'path to the database file'}
     )
 
-    def __repr__(self) -> str:
-        return f"EditFile(filepath=\"{self.filepath}\"):\n```\n{self.code.strip()}\n```"
+    output: str = field(
+        default=None,
+        metadata={"help": 'output file path or "direct"'}
+    )
 
     @classmethod
     def get_action_description(cls) -> str:
         return """
-## EditFile
-Signature: EditFile(filepath="path/to/file"):
-```
-file_content
-```
-Description: This action will overwrite the file specified in the filepath field with the content wrapped in paired ``` symbols. Normally, you need to read the file before deciding to use EditFile to modify it.
-Example: EditFile(filepath="hello_world.py"):
-```
-print("Hello, world!")
-```
+## SQL Action
+* Signature: SQL(file_path="path/to/database_file", command="sql_command", output="path/to/output_file.csv" or "direct")
+* Description: Executes an SQL command on the specified database file. If `output` is set to a file path, the results are saved to this CSV file; if set to 'direct', results are displayed directly.
+* Constraints:
+  - The database file must be accessible and in a format compatible with SQLite (e.g., .sqlite, .db).
+  - SQL commands must be valid and safely formatted to prevent security issues such as SQL injection.
+* Examples:
+  - Example1: SQL(file_path="data.sqlite", command="SELECT name FROM sqlite_master WHERE type='table'", output="directly")
+  - Example2: SQL(file_path="data.db", command="SELECT * FROM users", output="users_output.csv")
+
 """
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'EditFile\(filepath=(.*?)\).*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+        matches = re.findall(r'SQL\(file_path=(.*?), command=(.*?), output=(.*?)\)', text, flags=re.DOTALL)
         if matches:
-            filepath = matches[-1][0].strip()
-            code = matches[-1][2].strip()
-            return cls(code=code, filepath=remove_quote(filepath))
+            file_path, command, output = (item.strip() for item in matches[-1])
+            return cls(file_path=remove_quote(file_path), code=remove_quote(command), output=remove_quote(output))
         return None
+
+    def __repr__(self) -> str:
+        return f'{self.__class__.__name__}(file_path="{self.file_path}", command="{self.code}", output="{self.output}")'
+
 
 @dataclass
 class Terminate(Action):
@@ -268,12 +195,13 @@ class Terminate(Action):
     @classmethod
     def get_action_description(cls) -> str:
         return """
-## Terminate
-Signature: Terminate(output="literal_answer_or_output_path")
-Description: This action denotes the completion of the entire task and returns the final answer or the output file/folder path. Make sure the output file is located in the initial workspace directory.
-Example1: Terminate(output="New York")
-Example2: Terminate(output="result.txt")
-Example3: Terminate(output="FAIL")
+## Terminate Action
+* Signature: Terminate(output="literal_answer_or_output_path")
+* Description: This action denotes the completion of the entire task and returns the final answer or the output file/folder path. Make sure the output file is located in the initial workspace directory.
+* Examples:
+  - Example1: Terminate(output="New York")
+  - Example2: Terminate(output="result.csv")
+  - Example3: Terminate(output="FAIL")
 
 """
 
@@ -288,6 +216,148 @@ Example3: Terminate(output="FAIL")
             return cls(output=remove_quote(output))
         return None
     
+
+
+# @dataclass
+# class ExecutePythonSnippet(Action):
+
+#     action_type: str = field(
+#         default="python_snippet",
+#         init=False,
+#         repr=False,
+#         metadata={"help": 'type of action, c.f., "python_snippet"'}
+#     )
+
+#     code: str = field(
+#         metadata={"help": 'executable python commands or snippets'}
+#     )
+
+#     def __repr__(self) -> str:
+#         return f"ExecutePythonSnippet:\n```\n{self.code.strip()}\n```"
+
+#     @classmethod
+#     def get_action_description(cls) -> str:
+#         return """
+# ## ExecutePythonSnippet
+# Signature: `ExecutePythonSnippet`
+# ```
+# executable_python_code
+# ```
+
+# Description: This action executes a very simple Python snippet command or snippet wrapped in paired ``` symbols. It is intended for short, exploratory code snippets. For longer or more complex code, please use CreateFile to write the code to a file and then execute it.
+
+# Example: ExecutePythonSnippet:
+# ```
+# print("Hello, world!")
+# ```
+# """
+
+#     @classmethod
+#     def parse_action_from_text(cls, text: str) -> Optional[Action]:
+#         matches = re.findall(r'ExecutePythonSnippet.*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+#         if matches:
+#             code = matches[-1][1]
+#             return cls(code=code.strip())
+#         return None
+    
+#     def __repr__(self) -> str:
+#         return f"{self.__class__.__name__}\n '''\n{self.code}\n'''"
+
+
+# @dataclass
+# class CreateFile(Action):
+
+#     action_type: str = field(
+#         default="create_file",
+#         init=False,
+#         repr=False,
+#         metadata={"help": 'type of action, c.f., "create_file"'}
+#     )
+
+#     code: str = field(
+#         metadata={"help": 'code to write into file'}
+#     )
+
+#     filepath: Optional[str] = field(
+#         default=None,
+#         metadata={"help": 'name of file to create'}
+#     )
+
+#     def __repr__(self) -> str:
+#         return f"CreateFile(filepath=\"{self.filepath}\"):\n```\n{self.code.strip()}\n```"
+
+#     @classmethod
+#     def get_action_description(cls) -> str:
+#         return """
+# ## CreateFile
+# Signature: CreateFile(filepath="path/to/file"):
+# ```
+# file_content
+# ```
+# Description: This action will create a file in the field `filepath` with the content wrapped by paired ``` symbols. Make sure the file content is complete and correct. If the file already exists, you can only use EditFile to modify it.
+# Example: CreateFile(filepath="hello_world.py"):
+# ```
+# print("Hello, world!")
+# ```
+# """
+
+#     @classmethod
+#     def parse_action_from_text(cls, text: str) -> Optional[Action]:
+#         matches = re.findall(r'CreateFile\(filepath=(.*?)\).*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+#         if matches:
+#             filepath = matches[-1][0].strip()
+#             code = matches[-1][2].strip()
+#             return cls(code=code, filepath=remove_quote(filepath))
+#         return None
+    
+#     def __repr__(self) -> str:
+#         return f"{self.__class__.__name__}(filepath='{self.filepath}':\n'''\n{self.code}\n''')"
+       
+# @dataclass
+# class EditFile(Action):
+#     action_type: str = field(
+#         default="edit_file",
+#         init=False,
+#         repr=False,
+#         metadata={"help": 'type of action, c.f., "edit_file"'}
+#     )
+
+#     code: str = field(
+#         metadata={"help": 'code to write into file'}
+#     )
+
+#     filepath: Optional[str] = field(
+#         default=None,
+#         metadata={"help": 'name of file to edit'}
+#     )
+
+#     def __repr__(self) -> str:
+#         return f"EditFile(filepath=\"{self.filepath}\"):\n```\n{self.code.strip()}\n```"
+
+#     @classmethod
+#     def get_action_description(cls) -> str:
+#         return """
+# ## EditFile
+# Signature: EditFile(filepath="path/to/file"):
+# ```
+# file_content
+# ```
+# Description: This action will overwrite the file specified in the filepath field with the content wrapped in paired ``` symbols. Normally, you need to read the file before deciding to use EditFile to modify it.
+# Example: EditFile(filepath="hello_world.py"):
+# ```
+# print("Hello, world!")
+# ```
+# """
+
+#     @classmethod
+#     def parse_action_from_text(cls, text: str) -> Optional[Action]:
+#         matches = re.findall(r'EditFile\(filepath=(.*?)\).*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+#         if matches:
+#             filepath = matches[-1][0].strip()
+#             code = matches[-1][2].strip()
+#             return cls(code=code, filepath=remove_quote(filepath))
+#         return None
+  
 
 # @dataclass
 # class WebSearch(Action):

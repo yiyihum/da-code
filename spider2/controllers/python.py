@@ -8,6 +8,7 @@ import os
 import ast
 import tempfile
 import platform
+from spider2.configs.sql_template import SQL_TEMPLATE
 logger = logging.getLogger("spider.pycontroller")
 
 
@@ -90,12 +91,39 @@ class PythonController:
             self.work_dir = self.update_working_directory(self.work_dir, changed)
             return f"The command to change directory to {self.work_dir} is executed successfully."
         
-        return output.decode("utf-8").strip()
+        return output.decode("utf-8", errors="ignore").strip()
 
     def _file_exists(self, file_path: str) -> bool:
         check_command = f"test -f {file_path} && echo 'exists' || echo 'not exists'"
         result = self.execute_command(check_command)
         return result.strip() == 'exists'
+    
+    def execute_python_file(self, file_path: str, content: str):
+        escaped_content = content.replace('"', '\\"').replace('`', '\\`').replace('$', '\\$')
+        # 组合文件路径，确保它是容器内的绝对路径
+        if not file_path.startswith('/'):
+            if platform.system() == 'Windows':
+                file_path = self.work_dir + '/' + file_path
+            else:
+                file_path = os.path.join(self.work_dir, file_path)
+        # 确保目录存在
+        dir_path = os.path.dirname(file_path)
+        mkdir_command = f"mkdir -p {dir_path}"
+        self.execute_command(mkdir_command)
+
+        # 写入内容到文件
+        create_command = f'echo "{escaped_content}" > {file_path} && python3 {file_path}'
+        return self.execute_command(create_command)
+    
+    def execute_sql_code(self,file_path, code, output: str) -> str:
+        script_content = SQL_TEMPLATE.format(file_path=file_path, code=code, output=output)
+        temp_file_path = "/tmp/temp_sql_script.py"
+        script_content = script_content.replace('"', '\\"').replace('`', '\\`').replace('$', '\\$')
+        command = f'echo """{script_content}""" > {temp_file_path} && python3 {temp_file_path}'
+        observation = self.execute_command(command)
+        if observation.startswith('File "/tmp/temp_sql_script.py"'):
+            observation = observation.split("\n", 1)[1]
+        return observation
     
     def create_file(self, file_path: str, content: str):
         # 将内容转义以避免命令注入问题

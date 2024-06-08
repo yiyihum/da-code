@@ -9,6 +9,8 @@ import pdb
 here = Path(__file__).absolute().parent
 sys.path.append(str(here.parent))
 from controllers.python import PythonController
+import logging
+logger = logging.getLogger("spider2.env")
 
 # from envs.spider2 import DEFAULT_WORK_DIR    
 class PlotPy:
@@ -72,17 +74,22 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     '''
     mnt_files = os.listdir(mnt_dir)
     png_files = [file for file in mnt_files if file.endswith('.png') or file.endswith('.jpg')]
-    assert len(png_files) > 0, 'Agent fails to plot image'
+    if not png_files:
+        logger.error(f"no png files found in {mnt_dir}")
+        return []
+    # assert len(png_files) > 0, 'Agent fails to plot image'
 
     controller.container.exec_run('basch -c cd /workspace')
     plot_path = os.path.join(mnt_dir, 'dabench')
     os.makedirs(plot_path, exist_ok=True)
 
     plt_files = PlotPy.find_plt_py(mnt_dir)
-    assert len(plt_files) > 0, f"Agent fails to generate code to plot image, please check again."
+    if not plt_files:
+        logger.error(f"no plt files found in {mnt_dir}")
+        return []
+    # assert len(plt_files) > 0, f"Agent fails to generate code to plot image, please check again."
 
     plot_find = False
-    npy_file, json_file = '', ''
     for py_file in plt_files:
         py_content = PlotPy.preprocess_py(py_file)
         process_py_file = py_file.replace('.py', '_process.py')
@@ -107,12 +114,14 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
         npy_path = os.path.join(plot_path, 'result.npy')
         shutil.move(json_file, plot_json)
         shutil.move(npy_file, npy_path)
+        return [plot_json, npy_path]
     else:
-        plot_json, npy_path = '', ''
+        logger.error(f"fails to generate plot json result")
+        return []
 
-    print(plot_json, npy_path)
-    if not plot_json or not npy_path:
-        raise ValueError(f'fails to generate plot json result')
+    # print(plot_json, npy_path)
+    # if not plot_json or not npy_path:
+    #     raise ValueError(f'fails to generate plot json result')
 
-    return [plot_json, npy_path]
+    # return [plot_json, npy_path]
 
