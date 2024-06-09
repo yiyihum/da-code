@@ -182,7 +182,7 @@ class PromptAgent:
     
     def run(self):
         assert self.env is not None, "Environment is not set."
-
+        result = ""
         done = False
         step_idx = 0
         obs = "You are in the folder now."
@@ -207,8 +207,6 @@ class PromptAgent:
             if done:
                 if isinstance(action, Terminate):
                     result = action.output
-                else:
-                    result = ""
                 logger.info("The task is done.")
                 break
             step_idx += 1

@@ -89,7 +89,7 @@ def call_llm(payload):
                 response = error_info['error']['message']
                 if code_value == "content_filter" and not add_filter_content:
                     add_filter_content = True
-                    messages[-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                    payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
                 else:
                     logger.error("Retrying ...")
                     time.sleep(10 * (2 ** (i + 1)))
