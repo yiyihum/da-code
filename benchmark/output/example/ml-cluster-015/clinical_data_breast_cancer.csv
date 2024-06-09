@@ -1,0 +1,106 @@
+Complete TCGA ID,Gender,Age at Initial Pathologic Diagnosis,ER Status,PR Status,HER2 Final Status,Tumor,Tumor--T1 Coded,Node,Node-Coded,Metastasis,Metastasis-Coded,AJCC Stage,Converted Stage,Survival Data Form,Vital Status,Days to Date of Last Contact,Days to date of Death,OS event,OS Time,PAM50 mRNA,SigClust Unsupervised mRNA,SigClust Intrinsic mRNA,miRNA Clusters,methylation Clusters,RPPA Clusters,CN Clusters,Integrated Clusters (with PAM50),Integrated Clusters (no exp),Integrated Clusters (unsup exp)
+TCGA-A2-A0T2,FEMALE,66,Negative,Negative,Negative,T3,T_Other,N3,Positive,M1,Positive,Stage IV,No_Conversion,followup,DECEASED,240,240,1,240,Basal-like,0,-13,3,5,Basal,3,2,2,2
+TCGA-A2-A0CM,FEMALE,40,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,DECEASED,754,754,1,754,Basal-like,-12,-13,4,4,Basal,4,2,1,1
+TCGA-BH-A18V,FEMALE,48,Negative,Negative,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,enrollment,DECEASED,1555,1555,1,1555,Basal-like,-12,-13,5,5,Basal,1,2,2,2
+TCGA-BH-A18Q,FEMALE,56,Negative,Negative,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,enrollment,DECEASED,1692,1692,1,1692,Basal-like,-12,-13,5,5,Basal,1,2,2,2
+TCGA-BH-A0E0,FEMALE,38,Negative,Negative,Negative,T3,T_Other,N3,Positive,M0,Negative,Stage IIIC,No_Conversion,followup,LIVING,133,NA,0,133,Basal-like,0,-13,5,5,Basal,1,2,2,2
+TCGA-A7-A0CE,FEMALE,57,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,309,NA,0,309,Basal-like,0,-13,5,5,Basal,1,2,2,2
+TCGA-D8-A142,FEMALE,74,Negative,Negative,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,followup,LIVING,425,NA,0,425,Basal-like,0,-13,3,5,X,1,2,2,2
+TCGA-A2-A0D0,FEMALE,60,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,643,NA,0,643,Basal-like,-12,-13,5,5,Basal,1,2,2,2
+TCGA-AO-A0J6,FEMALE,61,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,775,NA,0,775,Basal-like,-12,-13,2,5,Basal,1,2,2,2
+TCGA-A2-A0YM,FEMALE,67,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,964,NA,0,964,Basal-like,-12,-13,5,5,Basal,3,2,2,2
+TCGA-A2-A0D2,FEMALE,45,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIA,followup,LIVING,1027,NA,0,1027,Basal-like,-12,-13,4,5,Basal,3,2,2,2
+TCGA-A2-A0SX,FEMALE,48,Negative,Negative,Negative,T1,T1,N0,Negative,M0,Negative,Stage IA,Stage I,followup,LIVING,1288,NA,0,1288,Basal-like,-12,-13,4,5,Basal,1,2,2,2
+TCGA-AO-A0JL,FEMALE,59,Negative,Negative,Negative,T2,T_Other,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,followup,LIVING,1319,NA,0,1319,Basal-like,0,-13,5,5,Basal,3,2,2,2
+TCGA-AO-A12F,FEMALE,36,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,1471,NA,0,1471,Basal-like,0,-13,5,5,Basal,1,2,2,2
+TCGA-AN-A0AL,FEMALE,41,Negative,Negative,Negative,T4,T_Other,N0,Negative,M0,Negative,Stage IIIB,No_Conversion,enrollment,LIVING,197,NA,0,197,Basal-like,0,-13,3,5,Basal,1,2,2,2
+TCGA-AN-A0FL,FEMALE,62,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,No_Conversion,enrollment,LIVING,230,NA,0,230,Basal-like,0,-13,5,5,Basal,1,2,2,2
+TCGA-AR-A0U4,FEMALE,54,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage II,No_Conversion,enrollment,LIVING,1627,NA,0,1627,Basal-like,-12,-13,5,5,ReacII,1,2,2,2
+TCGA-AR-A1AQ,FEMALE,49,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage II,Stage IIA,enrollment,LIVING,1309,NA,0,1309,Basal-like,-12,-13,3,5,Basal,1,2,2,2
+TCGA-BH-A0AV,FEMALE,52,Negative,Negative,Negative,T1,T1,N0,Negative,M0,Negative,Stage I,Stage I,enrollment,LIVING,1180,NA,0,1180,Basal-like,0,-13,4,5,ReacII,1,2,2,2
+TCGA-C8-A12V,FEMALE,55,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,0,NA,0,0,Basal-like,-12,-13,3,5,Basal,1,2,2,2
+TCGA-C8-A131,FEMALE,82,Negative,Negative,Negative,T2,T_Other,N2,Positive,M0,Negative,Stage III,Stage IIIA,enrollment,LIVING,0,NA,0,0,Basal-like,0,-13,5,1,ReacII,1,2,2,2
+TCGA-C8-A134,FEMALE,52,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,No_Conversion,enrollment,LIVING,0,NA,0,0,Basal-like,-12,-13,6,4,Basal,1,2,2,2
+TCGA-E2-A150,FEMALE,48,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,591,NA,0,591,Basal-like,-12,-13,3,5,X,1,2,2,2
+TCGA-E2-A158,FEMALE,43,Negative,Negative,Negative,T1,T1,N1,Positive,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,450,NA,0,450,Basal-like,0,-13,5,5,Basal,1,2,2,2
+TCGA-E2-A159,FEMALE,50,Negative,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,515,NA,0,515,Basal-like,-10,-13,3,5,Basal,1,2,2,2
+TCGA-BH-A18R,FEMALE,50,Indeterminate,Negative,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage IB,No_Conversion,enrollment,DECEASED,1099,1141,1,1141,HER2-enriched,0,-2,4,4,Her2,3,1,1,1
+TCGA-A2-A0T1,FEMALE,55,Negative,Negative,Positive,T3,T_Other,N3,Positive,M0,Negative,Stage IIIC,No_Conversion,followup,LIVING,520,NA,0,520,HER2-enriched,-5,-11,4,5,Her2,4,1,1,1
+TCGA-BH-A0EE,FEMALE,68,Negative,Negative,Positive,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,followup,LIVING,943,NA,0,943,HER2-enriched,-9,-11,7,1,Basal,5,1,2,3
+TCGA-A2-A0D1,FEMALE,76,Negative,Negative,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,1051,NA,0,1051,HER2-enriched,-6,-2,1,3,Basal,1,1,2,2
+TCGA-AO-A12D,FEMALE,43,Negative,Negative,Positive,T1,T1,N1,Positive,M0,Negative,Stage IIA,No_Conversion,followup,LIVING,1948,NA,0,1948,HER2-enriched,-10,-11,3,5,Her2,3,1,2,2
+TCGA-AO-A0JE,FEMALE,53,Negative,Negative,Positive,T2,T_Other,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,followup,LIVING,1965,NA,0,1965,HER2-enriched,-5,-11,4,4,Her2,5,1,1,1
+TCGA-A2-A0EQ,FEMALE,64,Negative,Negative,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,2426,NA,0,2426,HER2-enriched,-5,-2,5,4,Basal,4,4,1,1
+TCGA-A8-A076,FEMALE,66,Positive,Positive,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,1641,NA,0,1641,HER2-enriched,-5,-2,4,3,Her2,4,1,1,1
+TCGA-A8-A09G,FEMALE,79,Positive,Negative,Positive,T3,T_Other,N3,Positive,M0,Negative,Stage IIIC,Stage IIIC,enrollment,LIVING,0,NA,0,0,HER2-enriched,-5,-11,3,1,Her2,2,1,3,2
+TCGA-AR-A0TX,FEMALE,64,Positive,Positive,Positive,T1,T1,N1,Positive,M0,Negative,Stage II,No_Conversion,enrollment,LIVING,15,NA,0,15,HER2-enriched,-5,-11,1,1,ReacII,1,1,2,2
+TCGA-C8-A12L,FEMALE,67,Negative,Negative,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,0,NA,0,0,HER2-enriched,-9,-11,4,4,Her2,1,1,1,1
+TCGA-C8-A12P,FEMALE,55,Negative,Negative,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,enrollment,LIVING,0,NA,0,0,HER2-enriched,-10,-11,4,1,Her2,3,1,1,1
+TCGA-C8-A12Q,FEMALE,78,Negative,Negative,Positive,T1,T1,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,enrollment,LIVING,0,NA,0,0,HER2-enriched,-5,-11,4,2,Her2,5,1,1,1
+TCGA-C8-A12T,FEMALE,43,Positive,Positive,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,0,NA,0,0,HER2-enriched,-1,-2,4,4,ReacII,4,1,1,1
+TCGA-C8-A12Z,FEMALE,45,Negative,Negative,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage II,Stage IIB,enrollment,LIVING,0,NA,0,0,HER2-enriched,-5,-11,4,4,Her2,2,1,1,1
+TCGA-C8-A130,FEMALE,52,Positive,Positive,Equivocal,T3,T_Other,N2,Positive,M0,Negative,Stage IIIA,Stage IIIA,enrollment,LIVING,0,NA,0,0,HER2-enriched,0,-2,4,2,Her2,1,1,1,1
+TCGA-C8-A135,FEMALE,64,Negative,Negative,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage II,Stage IIB,enrollment,LIVING,0,NA,0,0,HER2-enriched,-5,-11,7,1,Her2,1,1,2,2
+TCGA-C8-A138,FEMALE,54,Positive,Negative,Positive,T2,T_Other,N2,Positive,M0,Negative,Stage III,Stage IIIA,enrollment,LIVING,7,NA,0,7,HER2-enriched,-5,-2,1,2,Basal,2,1,3,2
+TCGA-AR-A0TR,FEMALE,68,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage II,No_Conversion,enrollment,DECEASED,21,160,1,160,Luminal A,-3,-12,7,2,LumA/B,1,3,3,3
+TCGA-BH-A18N,FEMALE,88,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIA,No_Conversion,enrollment,DECEASED,1148,1148,1,1148,Luminal A,-3,-12,6,2,LumA,3,3,3,3
+TCGA-BH-A0HK,FEMALE,81,Positive,Negative,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,followup,LIVING,178,NA,0,178,Luminal A,0,0,7,3,LumA/B,2,3,3,3
+TCGA-A7-A0CD,FEMALE,66,Positive,Positive,Negative,T1,T1,N0,Negative,M0,Negative,Stage IA,Stage I,followup,LIVING,372,NA,0,372,Luminal A,-3,-10,2,3,LumA,3,3,4,3
+TCGA-BH-A0HP,FEMALE,65,Positive,Negative,Negative,T3,T_Other,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,followup,LIVING,414,NA,0,414,Luminal A,-7,-5,6,1,ReacI,2,3,3,4
+TCGA-A2-A0YI,FEMALE,62,Positive,Positive,Negative,T1,T1,N0,Negative,M0,Negative,Stage IA,Stage I,followup,LIVING,441,NA,0,441,Luminal A,-4,-12,4,1,ReacI,3,3,1,4
+TCGA-A2-A0YL,FEMALE,48,Positive,Positive,Negative,T3,T_Other,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,followup,LIVING,445,NA,0,445,Luminal A,-7,-5,6,1,ReacI,2,3,3,4
+TCGA-A2-A0YF,FEMALE,67,Positive,Negative,Negative,T1,T1,N0,Negative,M0,Negative,Stage IA,Stage I,followup,LIVING,469,NA,0,469,Luminal A,-3,-12,1,2,ReacII,2,3,3,3
+TCGA-BH-A0E1,FEMALE,52,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,followup,LIVING,477,NA,0,477,Luminal A,-3,-12,6,2,ReacII,2,3,3,3
+TCGA-A2-A0T6,FEMALE,50,Positive,Positive,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,followup,LIVING,575,NA,0,575,Luminal A,-7,-5,2,4,ReacI,2,3,1,4
+TCGA-A2-A0T7,FEMALE,51,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,631,NA,0,631,Luminal A,0,-3,4,1,ReacI,2,3,3,4
+TCGA-A2-A0YD,FEMALE,63,Positive,Positive,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,followup,LIVING,769,NA,0,769,Luminal A,-7,-5,4,1,LumA,2,3,3,3
+TCGA-A2-A0EV,FEMALE,80,Positive,Positive,Negative,T1,T1,N0,Negative,M0,Negative,Stage IA,Stage I,followup,LIVING,968,NA,0,968,Luminal A,-4,0,4,2,ReacI,3,3,3,4
+TCGA-A2-A0YC,FEMALE,59,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,followup,LIVING,989,NA,0,989,Luminal A,-3,-12,4,4,ReacII,2,3,1,3
+TCGA-AO-A0J9,FEMALE,61,Positive,Positive,Negative,T2,T_Other,N3,Positive,M0,Negative,Stage IIIC,No_Conversion,followup,LIVING,1255,NA,0,1255,Luminal A,-3,-2,2,4,ReacI,2,3,1,4
+TCGA-BH-A0BV,FEMALE,78,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,followup,LIVING,1519,NA,0,1519,Luminal A,-4,0,7,4,LumA/B,5,3,1,3
+TCGA-AO-A12E,FEMALE,51,Positive,Positive,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,followup,LIVING,1742,NA,0,1742,Luminal A,-7,-5,1,3,LumA/B,3,3,4,3
+TCGA-AO-A126,FEMALE,39,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,2850,NA,0,2850,Luminal A,-3,0,6,4,Her2,5,3,1,3
+TCGA-A2-A0EX,FEMALE,46,Positive,Positive,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,enrollment,LIVING,549,NA,0,549,Luminal A,-7,-5,4,4,ReacI,4,3,1,4
+TCGA-AO-A0JJ,FEMALE,54,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,enrollment,LIVING,1512,NA,0,1512,Luminal A,-7,-5,7,1,LumA/B,2,3,3,4
+TCGA-A8-A08Z,FEMALE,76,Positive,Positive,Negative,T4,T_Other,N3,Positive,M0,Negative,Stage IIIB,Stage IIIC,enrollment,LIVING,1217,NA,0,1217,Luminal A,-3,-5,4,2,LumA,2,3,3,3
+TCGA-AN-A04A,FEMALE,36,Positive,Positive,Negative,T2,T_Other,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,enrollment,LIVING,89,NA,0,89,Luminal A,-3,-5,4,2,LumA/B,5,3,3,3
+TCGA-AR-A1AP,FEMALE,80,Positive,Positive,Negative,T1,T1,N0,Negative,M0,Negative,Stage I,Stage I,enrollment,LIVING,1215,NA,0,1215,Luminal A,0,0,4,4,LumA/B,2,3,1,3
+TCGA-AR-A1AS,FEMALE,54,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage II,Stage IIB,enrollment,LIVING,1242,NA,0,1242,Luminal A,-3,-7,4,2,LumA,3,3,3,3
+TCGA-AR-A1AW,FEMALE,65,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage II,Stage IIA,enrollment,LIVING,1072,NA,0,1072,Luminal A,-3,-12,3,1,ReacII,3,3,2,2
+TCGA-BH-A0C1,FEMALE,61,Positive,Positive,Negative,T3,T_Other,N2,Positive,M0,Negative,Stage IIIA,Stage IIIA,enrollment,LIVING,1338,NA,0,1338,Luminal A,-1,-1,5,4,ReacII,2,3,1,3
+TCGA-BH-A0DG,FEMALE,30,Positive,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,713,NA,0,713,Luminal A,-4,-4,4,1,ReacI,3,3,1,4
+TCGA-BH-A0E9,FEMALE,53,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,Stage IIB,enrollment,LIVING,1405,NA,0,1405,Luminal A,-7,-5,6,1,ReacI,3,3,3,4
+TCGA-E2-A154,FEMALE,68,Positive,Positive,Negative,T1,T1,N0,Negative,M0,Negative,Stage I,Stage I,enrollment,LIVING,325,NA,0,325,Luminal A,-3,-12,6,4,LumA,2,3,3,3
+TCGA-AO-A03O,FEMALE,69,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,DECEASED,993,2483,1,2483,Luminal B,-5,-2,1,4,LumA/B,3,4,1,1
+TCGA-A2-A0SW,FEMALE,82,Positive,Negative,Negative,T2,T_Other,N2,Positive,M1,Positive,Stage IV,No_Conversion,followup,DECEASED,1364,1364,1,1364,Luminal B,-5,-2,3,4,Basal,4,4,1,1
+TCGA-BH-A18U,FEMALE,72,Positive,Positive,Positive,T2,T_Other,N2,Positive,M0,Negative,Stage IIIA,Stage IIIA,enrollment,DECEASED,1317,1563,1,1563,Luminal B,-5,-2,5,3,ReacI,3,4,4,5
+TCGA-AR-A0TY,FEMALE,54,Positive,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage II,No_Conversion,enrollment,DECEASED,544,1699,1,1699,Luminal B,-5,-2,4,4,LumA/B,1,4,1,1
+TCGA-D8-A13Y,FEMALE,52,Positive,Positive,Negative,T1,T1,N0,Negative,M0,Negative,Stage IA,No_Conversion,followup,LIVING,362,NA,0,362,Luminal B,-6,-2,1,2,Basal,5,4,3,2
+TCGA-A7-A13F,FEMALE,44,Positive,Positive,Negative,T3,T_Other,N1,Positive,M0,Negative,Stage IIIA,No_Conversion,followup,LIVING,387,NA,0,387,Luminal B,-3,0,4,4,LumA/B,3,4,1,3
+TCGA-A7-A0CJ,FEMALE,57,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,409,NA,0,409,Luminal B,-3,-6,2,3,LumA/B,1,4,4,3
+TCGA-A2-A0T3,FEMALE,37,Positive,Positive,Negative,T1,T1,N1,Positive,M0,Negative,Stage IA,Stage IIA,followup,LIVING,569,NA,0,569,Luminal B,-3,0,7,3,ReacII,3,4,4,5
+TCGA-A2-A0YG,FEMALE,63,Positive,Positive,Positive,T2,T_Other,N3,Positive,M0,Negative,Stage IIIC,No_Conversion,followup,LIVING,665,NA,0,665,Luminal B,-5,-2,4,4,Her2,5,4,1,1
+TCGA-A2-A0EY,FEMALE,62,Positive,Negative,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,followup,LIVING,735,NA,0,735,Luminal B,-5,-2,1,4,Her2,3,4,1,1
+TCGA-E2-A10A,FEMALE,41,Positive,Positive,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,followup,LIVING,1229,NA,0,1229,Luminal B,-3,0,1,2,LumA/B,2,4,3,3
+TCGA-BH-A0C0,FEMALE,62,Positive,Positive,Positive,T1,T1,N1,Positive,M0,Negative,Stage IIA,No_Conversion,followup,LIVING,1270,NA,0,1270,Luminal B,-5,-2,4,4,Basal,3,4,1,1
+TCGA-AO-A0JC,FEMALE,64,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,1547,NA,0,1547,Luminal B,-5,-2,2,5,LumA,1,2,2,2
+TCGA-AO-A0JM,FEMALE,40,Positive,Positive,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,No_Conversion,followup,LIVING,1826,NA,0,1826,Luminal B,-5,-2,5,3,ReacII,3,4,4,5
+TCGA-AO-A12B,FEMALE,63,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,followup,LIVING,2359,NA,0,2359,Luminal B,-3,-12,3,2,LumA/B,3,4,3,3
+TCGA-A8-A06N,FEMALE,66,Positive,Negative,Negative,T4,T_Other,N0,Negative,M0,Negative,Stage IIIB,Stage IIIB,enrollment,LIVING,0,NA,0,0,Luminal B,-3,-10,2,4,LumA/B,3,4,1,3
+TCGA-A8-A06Z,FEMALE,84,Positive,Positive,Negative,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,Stage IIB,enrollment,LIVING,31,NA,0,31,Luminal B,-3,-10,1,5,Her2,5,4,1,3
+TCGA-A8-A079,FEMALE,69,Positive,Positive,Negative,T4,T_Other,N3,Positive,M0,Negative,Stage IIIB,Stage IIIC,enrollment,LIVING,274,NA,0,274,Luminal B,-3,-6,5,3,LumA/B,5,4,4,3
+TCGA-A8-A08G,FEMALE,41,Positive,Positive,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,606,NA,0,606,Luminal B,-3,-10,4,2,LumA/B,3,4,3,3
+TCGA-A8-A09I,FEMALE,84,Positive,Positive,Positive,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,Stage IIA,enrollment,LIVING,1006,NA,0,1006,Luminal B,-5,-2,4,3,Her2,5,4,1,1
+TCGA-AN-A0AJ,FEMALE,79,Positive,Positive,Positive,T3,T_Other,N0,Negative,M0,Negative,Stage IIB,No_Conversion,enrollment,LIVING,243,NA,0,243,Luminal B,-5,-2,4,3,LumA,5,4,1,1
+TCGA-AN-A0AM,FEMALE,56,Positive,Negative,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage IIA,No_Conversion,enrollment,LIVING,5,NA,0,5,Luminal B,-5,-2,4,4,LumA/B,3,4,1,1
+TCGA-AN-A0AS,FEMALE,70,Positive,Negative,Negative,T2,T_Other,N2,Positive,M0,Negative,Stage IIIA,No_Conversion,enrollment,LIVING,9,NA,0,9,Luminal B,-3,-1,2,2,Basal,3,4,3,3
+TCGA-AN-A0FK,FEMALE,88,Positive,Positive,Negative,T4,T_Other,N0,Negative,M0,Negative,Stage IIIB,No_Conversion,enrollment,LIVING,212,NA,0,212,Luminal B,-3,-12,4,2,LumA,2,4,3,3
+TCGA-AR-A0TT,FEMALE,53,Positive,Negative,Negative,T2,T_Other,N2,Positive,M0,Negative,Stage III,No_Conversion,enrollment,LIVING,1679,NA,0,1679,Luminal B,-5,-2,4,1,LumA/B,3,4,1,1
+TCGA-AR-A0TV,FEMALE,66,Positive,Positive,Negative,T2,T_Other,N0,Negative,M0,Negative,Stage II,No_Conversion,enrollment,LIVING,904,NA,0,904,Luminal B,-5,-10,2,4,LumA/B,1,4,1,1
+TCGA-AR-A1AV,MALE,68,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage II,Stage IIB,enrollment,LIVING,1295,NA,0,1295,Luminal B,-5,-2,7,3,LumA/B,3,4,4,5
+TCGA-BH-A0BZ,FEMALE,59,Positive,Positive,Negative,T3,T_Other,N1,Positive,M0,Negative,Stage IIIA,Stage IIIA,enrollment,LIVING,1492,NA,0,1492,Luminal B,-5,-2,6,4,X,4,4,1,1
+TCGA-BH-A0C7,FEMALE,48,Positive,Negative,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,Stage IIB,enrollment,LIVING,1305,NA,0,1305,Luminal B,-3,0,4,4,LumA/B,5,4,1,3
+TCGA-BH-A0DD,MALE,58,Positive,Positive,Positive,T2,T_Other,N1,Positive,M0,Negative,Stage IIB,Stage IIB,enrollment,LIVING,1393,NA,0,1393,Luminal B,-3,-6,4,4,LumA/B,3,4,1,3
+TCGA-C8-A12U,FEMALE,46,Positive,Positive,Negative,T2,T_Other,N1,Positive,M0,Negative,Stage IB,Stage IIB,enrollment,LIVING,0,NA,0,0,Luminal B,-5,-2,5,4,Basal,5,4,1,1
+TCGA-C8-A12W,FEMALE,49,Positive,Positive,Negative,T4,T_Other,N1,Positive,M0,Negative,Stage IIIB,Stage IIIB,enrollment,LIVING,0,NA,0,0,Luminal B,-5,-2,4,4,ReacII,3,4,1,1
+TCGA-E2-A15A,FEMALE,45,Positive,Positive,Negative,T2,T_Other,N3,Positive,M0,Negative,Stage IIIC,Stage IIIC,enrollment,LIVING,502,NA,0,502,Luminal B,-5,-2,4,4,Her2,4,4,1,1

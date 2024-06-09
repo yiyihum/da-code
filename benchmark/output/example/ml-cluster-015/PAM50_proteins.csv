@@ -1,0 +1,101 @@
+GeneSymbol,RefSeqProteinID,Species,Gene Name
+MIA,NP_006524,Homo sapiens,melanoma inhibitory activity
+FGFR4,NP_002002,Homo sapiens,fibroblast growth factor receptor 4
+FGFR4,NP_998812,Homo sapiens,fibroblast growth factor receptor 4
+FGFR4,NP_075252,Homo sapiens,fibroblast growth factor receptor 4
+GPR160,NP_055188,Homo sapiens,G protein-coupled receptor 160
+ACTR3B,NP_065178,Homo sapiens,ARP3 actin-related protein 3 homolog B (yeast)
+ACTR3B,NP_001035225,Homo sapiens,ARP3 actin-related protein 3 homolog B (yeast)
+MLPH,NP_001035932,Homo sapiens,melanophilin
+MLPH,NP_077006,Homo sapiens,melanophilin
+ERBB2,NP_001005862,Homo sapiens,v-erb-b2 erythroblastic leukemia viral oncogene homolog 2
+ERBB2,NP_004439,Homo sapiens,v-erb-b2 erythroblastic leukemia viral oncogene homolog 2
+ANLN,NP_061155,Homo sapiens,anillin
+PTTG1,NP_004210,Homo sapiens,pituitary tumor-transforming 1; pituitary tumor-transforming 2
+PTTG1,NP_006598,Homo sapiens,pituitary tumor-transforming 1; pituitary tumor-transforming 2
+CEP55,NP_060601,Homo sapiens,centrosomal protein 55kDa
+CEP55,NP_001120654,Homo sapiens,centrosomal protein 55kDa
+CXXC5,NP_057547,Homo sapiens,CXXC finger 5
+MYBL2,NP_002457,Homo sapiens,v-myb myeloblastosis viral oncogene homolog (avian)-like 2
+CDH3,NP_001784,Homo sapiens,cadherin 3
+PGR,NP_000917,Homo sapiens,progesterone receptor
+CCNE1,NP_001229,Homo sapiens,cyclin E1
+CCNE1,NP_476530,Homo sapiens,cyclin E1
+KIF2C,NP_006836,Homo sapiens,kinesin family member 2C
+TYMS,NP_001062,Homo sapiens,thymidylate synthetase
+KRT5,NP_000415,Homo sapiens,keratin 5
+BAG1,NP_004314,Homo sapiens,BCL2-associated athanogene
+MAPT,NP_058525,Homo sapiens,microtubule-associated protein tau
+MAPT,NP_001116538,Homo sapiens,microtubule-associated protein tau
+MAPT,NP_001116539,Homo sapiens,microtubule-associated protein tau
+MAPT,NP_005901,Homo sapiens,microtubule-associated protein tau
+MAPT,NP_058518,Homo sapiens,microtubule-associated protein tau
+MAPT,NP_058519,Homo sapiens,microtubule-associated protein tau
+BCL2,NP_000648,Homo sapiens,B-cell CLL/lymphoma 2
+BCL2,NP_000624,Homo sapiens,B-cell CLL/lymphoma 2
+ORC6L,NP_055136,Homo sapiens,origin recognition complex
+SLC39A6,NP_001092876,Homo sapiens,solute carrier family 39 (zinc transporter)
+SLC39A6,NP_036451,Homo sapiens,solute carrier family 39 (zinc transporter)
+MYC,NP_002458,Homo sapiens,v-myc myelocytomatosis viral oncogene homolog (avian)
+EXO1,NP_006018,Homo sapiens,exonuclease 1
+EXO1,NP_569082,Homo sapiens,exonuclease 1
+EXO1,NP_003677,Homo sapiens,exonuclease 1
+EGFR,NP_005219,Homo sapiens,epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog
+EGFR,NP_958439,Homo sapiens,epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog
+EGFR,NP_958440,Homo sapiens,epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog
+EGFR,NP_958441,Homo sapiens,epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog
+CDC6,NP_001245,Homo sapiens,cell division cycle 6 homolog (S. cerevisiae)
+TMEM45B,NP_620143,Homo sapiens,transmembrane protein 45B
+MKI67,NP_001139438,Homo sapiens,antigen identified by monoclonal antibody Ki-67
+MKI67,NP_002408,Homo sapiens,antigen identified by monoclonal antibody Ki-67
+NAT1,NP_000653,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153647,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153648,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153645,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153646,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153643,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153644,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153651,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+NAT1,NP_001153642,Homo sapiens,N-acetyltransferase 1 (arylamine N-acetyltransferase)
+FOXA1,NP_004487,Homo sapiens,forkhead box A1
+ESR1,NP_001116213,Homo sapiens,estrogen receptor 1
+ESR1,NP_001116214,Homo sapiens,estrogen receptor 1
+ESR1,NP_001116212,Homo sapiens,estrogen receptor 1
+ESR1,NP_000116,Homo sapiens,estrogen receptor 1
+NUF2,NP_113611,Homo sapiens,NUF2
+NUF2,NP_663735,Homo sapiens,NUF2
+CENPF,NP_057427,Homo sapiens,centromere protein F
+CDC20,NP_001246,Homo sapiens,cell division cycle 20 homolog (S. cerevisiae)
+BIRC5,NP_001012270,Homo sapiens,baculoviral IAP repeat-containing 5
+BIRC5,NP_001159,Homo sapiens,baculoviral IAP repeat-containing 5
+BIRC5,NP_001012271,Homo sapiens,baculoviral IAP repeat-containing 5
+NDC80,NP_006092,Homo sapiens,NDC80 homolog
+UBE2C,NP_861515,Homo sapiens,ubiquitin-conjugating enzyme E2C
+UBE2C,NP_861518,Homo sapiens,ubiquitin-conjugating enzyme E2C
+UBE2C,NP_008950,Homo sapiens,ubiquitin-conjugating enzyme E2C
+UBE2C,NP_861519,Homo sapiens,ubiquitin-conjugating enzyme E2C
+UBE2C,NP_861516,Homo sapiens,ubiquitin-conjugating enzyme E2C
+UBE2C,NP_861517,Homo sapiens,ubiquitin-conjugating enzyme E2C
+MMP11,NP_005931,Homo sapiens,matrix metallopeptidase 11 (stromelysin 3)
+CCNB1,NP_114172,Homo sapiens,cyclin B1
+BLVRA,NP_000703,Homo sapiens,biliverdin reductase A
+KRT17,NP_000413,Homo sapiens,keratin 17; keratin 17 pseudogene 3
+SFRP1,NP_003003,Homo sapiens,secreted frizzled-related protein 1
+RRM2,NP_001025,Homo sapiens,ribonucleotide reductase M2 polypeptide
+RRM2,NP_001159403,Homo sapiens,ribonucleotide reductase M2 polypeptide
+KRT14,NP_000517,Homo sapiens,keratin 14
+PHGDH,NP_006614,Homo sapiens,phosphoglycerate dehydrogenase
+MDM2,NP_001138811,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_001138812,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_006872,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_006873,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_006870,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_001138808,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_001138809,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_006869,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+MDM2,NP_002383,Homo sapiens,Mdm2 p53 binding protein homolog (mouse)
+FOXC1,NP_001444,Homo sapiens,forkhead box C1
+GRB7,NP_001025173,Homo sapiens,growth factor receptor-bound protein 7
+GRB7,NP_005301,Homo sapiens,growth factor receptor-bound protein 7
+MELK,NP_055606,Homo sapiens,maternal embryonic leucine zipper kinase
+UBE2T,NP_054895,Homo sapiens,ubiquitin-conjugating enzyme E2T (putative)
