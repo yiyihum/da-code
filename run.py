@@ -176,8 +176,8 @@ def test(
 
         os.makedirs(os.path.join(output_dir, "dabench"), exist_ok=True)
         result_files = env.post_process()
-        dabench_result = {"finished": done, "steps": len(trajectory["trajectory"]), "result": result_output,
-                           "result_files": result_files, **trajectory}
+        dabench_result = {"finished": done, "steps": len(trajectory["trajectory"]),
+                           "result": result_output,"result_files": result_files, **trajectory}
         with open(os.path.join(output_dir, "dabench/result.json"), "w") as f:
             json.dump(dabench_result, f, indent=2)
         

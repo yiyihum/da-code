@@ -1,0 +1,1 @@
+{"type": "pie", "color": ["#00ff00", "#e9967a", "#00ffff", "#ffa500", "#a52a2a", "#808080", "#ff0000", "#0000ff", "#800080"], "figsize": [10.0, 8.0], "graph_title": "Final Grade", "legend_title": "", "labels": [], "x_label": "Students grade distribution according to weekly alcohol consumption", "y_label": "", "xtick_labels": [], "ytick_labels": []}

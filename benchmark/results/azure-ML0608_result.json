@@ -35,14 +35,11 @@
     },
     {
         "id": "ml-binary-003",
-        "total_score": 0.0,
+        "total_score": 0.846691608526917,
         "info": [
             {
-                "errors": [
-                    "fail to encoder label, because y contains previously unseen labels: 'Irrelevant'",
-                    "fail to calculate f1 socre, because The 'y_pred' parameter of f1_score must be an array-like or a sparse matrix. Got None instead."
-                ],
-                "score": 0.0,
+                "errors": [],
+                "score": 0.846691608526917,
                 "threshold": 0.0,
                 "metric": "f1",
                 "target_output": "result",
@@ -1000,11 +997,13 @@
     },
     {
         "id": "ml-regression-008",
-        "total_score": 0.0,
+        "total_score": 0.6431599362100568,
         "info": [
             {
-                "errors": [],
-                "score": 0.0,
+                "errors": [
+                    "result csv columns are different from gold csv: ['id']"
+                ],
+                "score": 0.6431599362100568,
                 "threshold": 0.0,
                 "metric": "r2",
                 "target_output": "quantity_sold",
@@ -1238,6 +1237,7 @@
                 ],
                 "score": 0.0,
                 "threshold": 0.9,
+                "metric": "roc_auc_score",
                 "file": [
                     "submission.csv"
                 ]
@@ -1252,6 +1252,7 @@
                 "errors": [],
                 "score": 41.154806663418704,
                 "threshold": 5.98,
+                "metric": "smape",
                 "file": [
                     "submission.csv"
                 ]
@@ -1268,6 +1269,7 @@
                 ],
                 "score": 0.0,
                 "threshold": 0.866777,
+                "metric": "roc_auc_score",
                 "file": [
                     "submission.csv"
                 ]
@@ -1297,6 +1299,7 @@
                 "errors": [],
                 "score": 0.6660000000000004,
                 "threshold": 0.53706,
+                "metric": "medae",
                 "file": [
                     "submission.csv"
                 ]
@@ -1309,10 +1312,11 @@
         "info": [
             {
                 "errors": [
-                    "Unexpected Column: ['Other_Faults', 'Z_Scratch', 'Dirtiness', 'K_Scatch', 'Pastry', 'Bumps', 'Stains']"
+                    "Unexpected Column: ['Bumps', 'Z_Scratch', 'Dirtiness', 'K_Scatch', 'Other_Faults', 'Stains', 'Pastry']"
                 ],
                 "score": 0.0,
                 "threshold": 0.9,
+                "metric": "logloss_class",
                 "file": [
                     "submission.csv"
                 ]
@@ -1327,6 +1331,7 @@
                 "errors": [],
                 "score": 0.8162024319293985,
                 "threshold": 0.9,
+                "metric": "r2",
                 "file": [
                     "submission.csv"
                 ]
@@ -1341,6 +1346,7 @@
                 "errors": [],
                 "score": 0.8704885884299404,
                 "threshold": 0.9,
+                "metric": "roc_auc_score",
                 "file": [
                     "submission.csv"
                 ]
@@ -1355,6 +1361,7 @@
                 "errors": [],
                 "score": 128.19347369772865,
                 "threshold": 20.73909,
+                "metric": "rmse",
                 "file": [
                     "submission.csv"
                 ]
@@ -1369,6 +1376,7 @@
                 "errors": [],
                 "score": 14.4619926666259,
                 "threshold": 43.3,
+                "metric": "smape",
                 "file": [
                     "submission.csv"
                 ]
@@ -1381,10 +1389,11 @@
         "info": [
             {
                 "errors": [
-                    "Unexpected Column: ['C', 'CL', 'D']"
+                    "Unexpected Column: ['CL', 'C', 'D']"
                 ],
                 "score": 0.0,
                 "threshold": 0.9,
+                "metric": "logloss_total",
                 "file": [
                     "submission.csv"
                 ]
@@ -1399,6 +1408,7 @@
                 "errors": [],
                 "score": 0.15761865004285527,
                 "threshold": 0.14695,
+                "metric": "rmsle",
                 "file": [
                     "submission.csv"
                 ]
@@ -1413,6 +1423,7 @@
                 "errors": [],
                 "score": 1.4594625495138638,
                 "threshold": 1.36,
+                "metric": "mae",
                 "file": [
                     "submission.csv"
                 ]
@@ -1427,6 +1438,7 @@
                 "errors": [],
                 "score": 0.8306858322339022,
                 "threshold": 90,
+                "metric": "quadratic_weighted_kappa",
                 "file": [
                     "submission.csv"
                 ]
@@ -1441,6 +1453,7 @@
                 "errors": [],
                 "score": 0.15960315829062963,
                 "threshold": 0.9,
+                "metric": "rmsle",
                 "file": [
                     "submission.csv"
                 ]
@@ -1455,6 +1468,7 @@
                 "errors": [],
                 "score": 357.92214872230244,
                 "threshold": 330,
+                "metric": "mae",
                 "file": [
                     "submission.csv"
                 ]
@@ -1469,6 +1483,7 @@
                 "errors": [],
                 "score": 0.9481406309678405,
                 "threshold": 0.96871,
+                "metric": "roc_auc_score",
                 "file": [
                     "submission.csv"
                 ]
@@ -1500,6 +1515,7 @@
                 ],
                 "score": 0.0,
                 "threshold": 0.9,
+                "metric": "roc_auc_score",
                 "file": [
                     "submission.csv"
                 ]
@@ -1516,6 +1532,7 @@
                 ],
                 "score": 0.0,
                 "threshold": 0.806,
+                "metric": "quadratic_weighted_kappa",
                 "file": [
                     "submission.csv"
                 ]
