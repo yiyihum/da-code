@@ -28,12 +28,12 @@ for metric in metrics:
     top_ten = df.groupby('artist')[metric].agg('mean' if metric == 'rating' else 'sum').nlargest(10).reset_index()
     
     # Plot the top ten artists with vertical bars
-    sns.barplot(x='artist', y=metric, data=top_ten, ax=ax, palette='viridis' if metric == 'sales' else 'magma')
+    sns.barplot(y='artist', x=metric, data=top_ten, ax=ax, palette='viridis' if metric == 'sales' else 'magma')
     ax.set_title(f'Top Ten Artists Based on {metric.capitalize()}')
-    ax.set_xlabel('Artist')
-    ax.set_ylabel(f'Total {metric.capitalize()}' if metric == 'sales' else f'Average {metric.capitalize()}')
+    ax.set_ylabel('Artist')
+    ax.set_xlabel(f'Total {metric.capitalize()}' if metric == 'sales' else f'Average {metric.capitalize()}')
 
-    plt.xticks(rotation=90)  # Rotate x-axis labels for better visibility
+    plt.xticks(rotation=0)  # Adjust x-axis labels to be horizontal
     plt.tight_layout()
     
     # Save the figure

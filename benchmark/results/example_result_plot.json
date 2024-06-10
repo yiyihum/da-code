@@ -1,13 +1,18 @@
 [
     {
-        "id": "plot-bar-005",
-        "total_score": 0.0,
+        "id": "plot-bar-001",
+        "total_score": 1.0,
         "info": [
             {
-                "score": 0.0,
-                "errors": [
-                    "gold path ./benchmark/gold/plot-bar-005/sales.jpg do not exist"
-                ],
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "figsize": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "ytick_labels": true,
+                "score": 1.0,
                 "file": [
                     "sales.jpg",
                     "plot.json",
@@ -44,10 +49,10 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
-                "graph_title": true,
+                "figsize": true,
                 "x_label": true,
                 "y_label": true,
-                "figsize": true,
+                "graph_title": true,
                 "ytick_labels": true,
                 "score": 1.0,
                 "file": [
@@ -102,11 +107,11 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
+                "figsize": true,
                 "graph_title": true,
                 "x_label": true,
                 "y_label": true,
                 "xtick_labels": true,
-                "figsize": true,
                 "score": 1.0,
                 "file": [
                     "team.png",
@@ -141,12 +146,11 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
+                "figsize": true,
                 "graph_title": true,
                 "x_label": true,
                 "y_label": true,
                 "xtick_labels": true,
-                "figsize": true,
-                "labels": true,
                 "score": 1.0,
                 "file": [
                     "distribution.png",
@@ -164,11 +168,11 @@
                 "img": false,
                 "data": false,
                 "scale_data": false,
+                "figsize": true,
                 "graph_title": true,
                 "x_label": true,
                 "y_label": true,
                 "xtick_labels": false,
-                "figsize": true,
                 "score": 0.0,
                 "file": [
                     "result.png",
@@ -186,8 +190,10 @@
                 "img": false,
                 "data": false,
                 "scale_data": false,
-                "xtick_labels": true,
                 "figsize": true,
+                "graph_title": true,
+                "x_label": false,
+                "xtick_labels": true,
                 "score": 0.0,
                 "file": [
                     "result.png",
@@ -220,11 +226,11 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
-                "xtick_labels": false,
+                "figsize": true,
                 "graph_title": true,
                 "x_label": true,
                 "y_label": true,
-                "figsize": true,
+                "xtick_labels": false,
                 "score": 0.0,
                 "file": [
                     "result.png",
@@ -242,9 +248,10 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
-                "xtick_labels": true,
                 "x_label": true,
                 "y_label": true,
+                "figsize": true,
+                "xtick_labels": true,
                 "score": 1.0,
                 "file": [
                     "result.png",
@@ -256,15 +263,20 @@
     },
     {
         "id": "plot-bar-014",
-        "total_score": 0.0,
+        "total_score": 1.0,
         "info": [
             {
-                "score": 0.0,
-                "errors": [
-                    "gold path ./benchmark/gold/plot-bar-014/result.png do not exist"
-                ],
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "figsize": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "xtick_labels": true,
+                "score": 1.0,
                 "file": [
-                    "result.png",
+                    "output.png",
                     "plot.json",
                     "result.npy"
                 ]
@@ -279,11 +291,11 @@
                 "img": false,
                 "data": false,
                 "scale_data": false,
-                "xtick_labels": true,
+                "figsize": true,
+                "graph_title": true,
                 "x_label": true,
                 "y_label": true,
-                "graph_title": true,
-                "figsize": true,
+                "xtick_labels": true,
                 "score": 0.0,
                 "file": [
                     "result.png",
@@ -301,11 +313,11 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
-                "xtick_labels": true,
+                "figsize": true,
+                "graph_title": true,
                 "x_label": true,
                 "y_label": true,
-                "graph_title": true,
-                "figsize": true,
+                "xtick_labels": true,
                 "score": 1.0,
                 "file": [
                     "result.png",
@@ -323,11 +335,11 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
-                "xtick_labels": true,
+                "figsize": true,
+                "graph_title": true,
                 "x_label": true,
                 "y_label": true,
-                "graph_title": true,
-                "figsize": true,
+                "ytick_labels": true,
                 "score": 1.0,
                 "file": [
                     "party_sums_plot.png",
@@ -338,13 +350,28 @@
         ]
     },
     {
-        "id": "plot-bar-017",
+        "id": "plot-bar-018",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": true,
+                "score": 1.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-019",
         "total_score": 0.0,
         "info": [
             {
                 "score": 0.0,
                 "errors": [
-                    "gold path ./benchmark/gold/plot-bar-017/result.png do not exist"
+                    "gold path ./benchmark/gold/plot-bar-019/result.png do not exist"
                 ],
                 "file": [
                     "result.png",
@@ -362,9 +389,10 @@
                 "img": false,
                 "data": false,
                 "scale_data": false,
+                "color": true,
                 "graph_title": false,
                 "x_label": false,
-                "color": true,
+                "y_label": false,
                 "score": 0.0,
                 "file": [
                     "point.png",
@@ -402,9 +430,9 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
+                "figsize": true,
                 "x_label": true,
                 "y_label": true,
-                "figsize": true,
                 "score": 1.0,
                 "file": [
                     "output.png",
@@ -422,12 +450,216 @@
                 "img": false,
                 "data": false,
                 "scale_data": false,
-                "x_label": true,
-                "y_label": true,
                 "figsize": true,
                 "graph_title": true,
+                "x_label": true,
+                "y_label": true,
                 "legend_title": true,
                 "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-005/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-006/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-007/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-008/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-009/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-010/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-011",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-011/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-012/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-013",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-013/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-014",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-014/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-015/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-016",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-line-016/result.png do not exist"
+                ],
                 "file": [
                     "result.png",
                     "plot.json",
@@ -463,7 +695,6 @@
                 "data": false,
                 "scale_data": false,
                 "graph_title": true,
-                "labels": true,
                 "legend_title": true,
                 "score": 0.0,
                 "file": [
@@ -482,9 +713,94 @@
                 "img": false,
                 "data": true,
                 "scale_data": true,
-                "graph_title": true,
                 "figsize": true,
+                "graph_title": true,
                 "score": 1.0,
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-pie-004/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-pie-005/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-pie-006/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-pie-007/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-pie-008/result.jpg do not exist"
+                ],
                 "file": [
                     "result.jpg",
                     "plot.json",
@@ -524,6 +840,74 @@
                 "score": 0.0,
                 "file": [
                     "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-scatter-003",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-scatter-003/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-scatter-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-scatter-004/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-scatter-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-scatter-005/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-scatter-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-scatter-006/result.jpg do not exist"
+                ],
+                "file": [
+                    "result.jpg",
                     "plot.json",
                     "result.npy"
                 ]
