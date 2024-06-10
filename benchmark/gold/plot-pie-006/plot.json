@@ -1,0 +1,1 @@
+{"type": "pie", "color": ["#f08080", "#ffa500", "#9acd32", "#add8e6", "#ffd700"], "figsize": [8.0, 8.0], "graph_title": "UFO Sightings by Country", "legend_title": "", "labels": ["USA", "Canada", "United Kingdom", "Australia", "Germany"], "x_label": "", "y_label": "count", "xtick_labels": [], "ytick_labels": []}

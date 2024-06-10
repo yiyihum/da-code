@@ -1,0 +1,1 @@
+{"type": "line", "color": ["#17408b"], "figsize": [16.0, 8.0], "graph_title": "Average BMI Each Season", "legend_title": "", "labels": [], "x_label": "Season", "y_label": "BMI", "xtick_labels": ["1992", "1996", "2000", "2004", "2008", "2012", "2016", "2020", "2024"], "ytick_labels": ["24.4", "24.5", "24.6", "24.7", "24.8", "24.9", "25.0", "25.1"]}

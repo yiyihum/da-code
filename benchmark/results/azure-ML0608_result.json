@@ -756,14 +756,11 @@
     },
     {
         "id": "ml-multi-005",
-        "total_score": 0.0,
+        "total_score": 0.7108259354591748,
         "info": [
             {
-                "errors": [
-                    "fail to encoder label, because y contains previously unseen labels: 'disgust'",
-                    "fail to calculate f1 socre, because The 'y_pred' parameter of f1_score must be an array-like or a sparse matrix. Got None instead."
-                ],
-                "score": 0.0,
+                "errors": [],
+                "score": 0.7108259354591748,
                 "threshold": 0.0,
                 "metric": "f1",
                 "target_output": "emotion",
@@ -791,14 +788,11 @@
     },
     {
         "id": "ml-multi-007",
-        "total_score": 0.0,
+        "total_score": 0.9154453942638394,
         "info": [
             {
-                "errors": [
-                    "fail to encoder label, because y contains previously unseen labels: 'Class_A'",
-                    "fail to calculate f1 socre, because The 'y_pred' parameter of f1_score must be an array-like or a sparse matrix. Got None instead."
-                ],
-                "score": 0.0,
+                "errors": [],
+                "score": 0.9154453942638394,
                 "threshold": 0.0,
                 "metric": "f1",
                 "target_output": "Class",
@@ -1315,7 +1309,7 @@
         "info": [
             {
                 "errors": [
-                    "Unexpected Column: ['K_Scatch', 'Z_Scratch', 'Other_Faults', 'Stains', 'Dirtiness', 'Bumps', 'Pastry']"
+                    "Unexpected Column: ['Other_Faults', 'Z_Scratch', 'Dirtiness', 'K_Scatch', 'Pastry', 'Bumps', 'Stains']"
                 ],
                 "score": 0.0,
                 "threshold": 0.9,
@@ -1387,7 +1381,7 @@
         "info": [
             {
                 "errors": [
-                    "Unexpected Column: ['C', 'D', 'CL']"
+                    "Unexpected Column: ['C', 'CL', 'D']"
                 ],
                 "score": 0.0,
                 "threshold": 0.9,
