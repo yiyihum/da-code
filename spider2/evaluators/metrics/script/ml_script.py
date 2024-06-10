@@ -61,7 +61,7 @@ class PreprocessML:
                 gold_id = set(gold_df[id])
                 result_id = set(result_df[id])
                 if not result_id == gold_id:
-                    output['errors'].append(f"ID does not match, result has extra id: {set(result_id)- set(result_id)}")
+                    output['errors'].append(f"ID does not match, result has extra id: {set(result_id)- set(gold_id)}")
                     flag = False
                     return result_df, gold_df, output, flag
                 gold_df = gold_df.sort_values(by=id)
