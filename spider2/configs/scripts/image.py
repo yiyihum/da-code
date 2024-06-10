@@ -94,6 +94,7 @@ elif gt_graph == 'scatter':
                 colors.add(tuple(color))
 
 try:
+    results = [[np.nan if v is None else v for v in result] for result in results]
     results = np.array(results) if results else np.array([])
 except Exception as e:
     max_length = max(len(x) for x in results)

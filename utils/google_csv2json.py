@@ -4,7 +4,7 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/configs/Visual.csv"
+file_path = "./benchmark/configs/DM.csv"
 data = load_csv(file_path)
 
 # 保存为json
@@ -53,6 +53,6 @@ for index, row in data.iterrows():
 # 保存为jsonl
 import json, jsonlines
 data_json = sorted(data_json, key=lambda x: x["id"])
-with jsonlines.open('./benchmark/configs/Visual.jsonl', mode='w') as writer:
+with jsonlines.open('./benchmark/configs/DM.jsonl', mode='w') as writer:
     for item in data_json:
         writer.write(item)
