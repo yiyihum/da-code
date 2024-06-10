@@ -476,13 +476,10 @@
             "total_score": 0.0,
             "info": [
                 {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "figsize": true,
-                    "graph_title": true,
-                    "legend_title": true,
                     "score": 0.0,
+                    "errors": [
+                        "Object arrays cannot be loaded when allow_pickle=False"
+                    ],
                     "file": [
                         "result.png",
                         "plot.json",

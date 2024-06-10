@@ -2,7 +2,7 @@ import os
 import json
 import glob
 
-experiment_name = "azure-visual0605"
+experiment_name = "azure-ML0608"
 output_path = f"./benchmark/_result/{experiment_name}/"
 result_path = f"./benchmark/output/{experiment_name}/"
 os.makedirs(output_path, exist_ok=True)
