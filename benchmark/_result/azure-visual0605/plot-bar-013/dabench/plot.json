@@ -1,0 +1,1 @@
+{"type": "bar", "color": ["#1f77b4"], "figsize": [12.0, 6.0], "graph_title": "Count of ICC Hall of Fame Inductees by Player Role", "legend_title": "", "labels": [], "x_label": "Player Role", "y_label": "Count", "xtick_labels": ["Batter", "Bowler", "All-rounder", "Wicket-keeper", "Right-hand"], "ytick_labels": ["0", "10", "20", "30", "40", "50"]}

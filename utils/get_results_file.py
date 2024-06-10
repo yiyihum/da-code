@@ -22,7 +22,7 @@ for result_json_file in result_json_files:
         result_files_dict = json.load(f)["result_files"]
         result_files = result_files_dict["added_files"]+result_files_dict["changed_files"]+result_files_dict["post_process_files"]
         for result_file in result_files:
-            new_result_file = result_file.replace("output", "results")
+            new_result_file = result_file.replace(result_path, output_path)
             os.makedirs(os.path.dirname(new_result_file), exist_ok=True)
             os.system(f"cp {result_file} {new_result_file}")
 

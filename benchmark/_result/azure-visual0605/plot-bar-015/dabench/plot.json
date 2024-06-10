@@ -1,0 +1,1 @@
+{"type": "bar", "color": ["#87ceeb"], "figsize": [12.0, 6.0], "graph_title": "Sales by Product Size", "legend_title": "", "labels": [], "x_label": "Product Size", "y_label": "Net Revenue in 10,000 dollars", "xtick_labels": ["3XL", "4XL", "5XL", "6XL", "Free", "L", "M", "S", "XL", "XS", "XXL"], "ytick_labels": ["0", "2", "4", "6", "8", "10", "12", "14", "16", "18"]}

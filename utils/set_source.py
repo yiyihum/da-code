@@ -18,6 +18,7 @@ for name in names:
     if not os.path.exists(src_dir):
         continue
     dest_dir = os.path.join(base_dest_dir, name)
-    move_files(src_dir, dest_dir)
+    if not os.path.exists(dest_dir):
+        move_files(src_dir, dest_dir)
     os.removedirs(src_dir)
     

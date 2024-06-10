@@ -1,0 +1,1 @@
+{"type": "bar", "color": ["#87ceeb"], "figsize": [12.0, 6.0], "graph_title": "Average Days to Issue by Weekday", "legend_title": "", "labels": [], "x_label": "Weekday", "y_label": "Average Days to Issue", "xtick_labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "ytick_labels": ["0", "5", "10", "15", "20", "25", "30"]}
