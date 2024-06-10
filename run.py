@@ -128,12 +128,12 @@ def test(
     if args.example_name != "":
         task_configs = [task for task in task_configs if args.example_name in task["id"]]
     else:
-        if args.example_range != "all":
-            if "-" in args.example_range:
-                start, end = map(int, args.example_range.split("-"))
+        if args.example_index != "all":
+            if "-" in args.example_index:
+                start, end = map(int, args.example_index.split("-"))
                 task_configs = task_configs[start:end]
             else:
-                indices = list(map(int, args.example_range.split(",")))
+                indices = list(map(int, args.example_index.split(",")))
                 task_configs = [task_configs[i] for i in indices]
     
     # TODO: record the task state
