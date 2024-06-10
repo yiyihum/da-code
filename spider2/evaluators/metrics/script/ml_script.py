@@ -61,7 +61,12 @@ class PreprocessML:
                 gold_id = set(gold_df[id])
                 result_id = set(result_df[id])
                 if not result_id == gold_id:
-                    output['errors'].append(f"ID does not match, result has extra id: {set(result_id)- set(gold_id)}")
+                    extra_id = list(set(result_id)- set(gold_id))
+                    if len(extra_id) > 10:
+                        extra_id = ','.join(extra_id[:5]) + '...' + extra_id[-1]
+                    else:
+                        extra_id = ','.join(extra_id)
+                    output['errors'].append(f"ID does not match, result has extra id: {extra_id}")
                     flag = False
                     return result_df, gold_df, output, flag
                 gold_df = gold_df.sort_values(by=id)
@@ -177,13 +182,19 @@ class CalculateML:
           
         def convert_to_numeric(input, isgold: bool=False):
             if 'float' in str(input.dtype):
-                return input.astype(int)
+                return list(input.astype(int))
             elif 'int' in str(input.dtype):
-                return input
+                return list(input)
+            elif 'bool' in str(input.dtype).lower():
+                return list(input.astype(int))
             else:
                 try:
-                    input = label_encoder.fit_transform(input) if isgold \
-                        else label_encoder.transform(input)
+                    input = list(input)
+                    input = list(map(lambda x: x.lower().strip(), input))
+                    if isgold:
+                        input = label_encoder.fit_transform(input)
+                    else:
+                        input =  label_encoder.transform(input)
                 except Exception as e:
                     output['errors'].append(f'fail to encoder label, because {str(e)}')
                     return None       
@@ -243,17 +254,22 @@ class CalculateML:
     def calculate_f1(gold, result, task_type: Optional[str]=None, **kwargs):
         averaged = kwargs.pop('average', '')
         output = {'errors': []}
-    
         label_encoder = LabelEncoder()
         def convert_to_numeric(input, isgold: bool=False):
             if 'float' in str(input.dtype):
-                return input.astype(int)
+                return list(input.astype(int))
             elif 'int' in str(input.dtype):
-                return input
+                return list(input)
+            elif 'bool' in str(input.dtype).lower():
+                return list(input.astype(int))
             else:
                 try:
-                    input = label_encoder.fit_transform(input) if isgold \
-                        else label_encoder.transform(input)
+                    input = list(input)
+                    input = list(map(lambda x: x.lower().strip(), input))
+                    if isgold:
+                        input = label_encoder.fit_transform(input)
+                    else:
+                        input =  label_encoder.transform(input)
                 except Exception as e:
                     output['errors'].append(f'fail to encoder label, because {str(e)}')
                     return None       

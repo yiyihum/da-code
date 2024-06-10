@@ -1,1 +1,1 @@
-{"id": "plot-line-011", "config": {"task": "data visualization", "type": "line", "metric": "", "threshold": 0.0}, "func": ["compare_image"], "result": [{"multi": true, "file": ["result.jpg", "dabench/plot.json", "dabench/result.npy"]}], "options": [{"keys": ["figsize", "graph_title", "x_label", "y_label", "legend_title"]}]}
+{"id": "ml-binary-017", "config": {"task": "machinelearning", "type": "binary classification", "metric": "f1", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "tomorrow.csv"}], "options": [{}]}

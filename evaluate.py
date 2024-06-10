@@ -18,14 +18,13 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
     with open(output_file, 'w') as json_file:
         json.dump(results_json, json_file, indent=4)
 
-
 # Parameters
-experiments = "azure-ML0610"
-output_dir = f'./benchmark/output/{experiments}'
+experiments = "azure-ML0608"
+output_dir = f'./benchmark/_result/{experiments}'
 gold_dir = './benchmark/gold'
 eval_json = './benchmark/configs/evaluation_ML.jsonl'
-output_file = f'./benchmark/results/{experiments}_result.json'
-timeout_seconds = 6000
+output_file = f'./benchmark/results/{experiments}_result2.json'
+timeout_seconds = 60
 
 # Run the evaluation with the specified parameters
 run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds)

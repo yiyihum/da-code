@@ -5,10 +5,10 @@ benchmark/source/
 logs/*
 
 !benchmark/output/example
-!benchmark/source/ml-binary-001
-!benchmark/source/ml-cluster-010
-!benchmark/source/ml-multi-012
-
+!benchmark/source/ml-competition-002
+!benchmark/source/ml-competition-019
+!benchmark/source/ml-regression-009
+!benchmark/source/ml-binary-017
 
 
 *.DS_Store
