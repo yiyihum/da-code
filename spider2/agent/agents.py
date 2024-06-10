@@ -24,7 +24,7 @@ from agent.models import call_llm
 # create file & edit 加一个检查 比如符合csv的格式 ✅
 
 MAX_OBSERVATION_LENGTH = 2000
-TIME_OUT_ACTION = 60
+TIME_OUT_ACTION = 300
 
 
 logger = logging.getLogger("spider2")
@@ -68,7 +68,7 @@ class PromptAgent:
         self.history_messages = []
         self.instruction = self.env.task_config['instruction']
         action_space = "".join([action_cls.get_action_description() for action_cls in self._AVAILABLE_ACTION_CLASSES])
-        self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space, task=self.instruction)
+        self.system_message = SYS_PROMPT_IN_OUR_CODE.format(work_dir=self.work_dir, action_space=action_space, task=self.instruction, max_steps=self.max_steps)
         self.history_messages.append({
             "role": "system",
             "content": [

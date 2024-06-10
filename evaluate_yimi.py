@@ -18,6 +18,7 @@ experiments = "azure-ML0608"
 output_dir = f'./benchmark/output/{experiments}'
 gold_dir = './benchmark/gold'
 eval_json = 'benchmark/configs/evaluation_ML.jsonl'
+# eval_json = 'benchmark/configs/Evaluation_Visual.jsonl'
 result_json = f'./benchmark/results/{experiments}_result.json'
 timeout_seconds = 30
 

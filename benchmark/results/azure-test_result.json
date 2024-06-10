@@ -1,0 +1,1274 @@
+[
+    {
+        "id": "ml-binary-001",
+        "total_score": 0.46,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['Index', 'Label']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Label",
+                "score": 0.46,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-002/submission.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-003",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "The length of the result content is not equal to the length of the true value."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "prediction.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-004/submission.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-005",
+        "total_score": 0.9647382344750765,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "result",
+                "score": 0.9647382344750765,
+                "file": [
+                    "label.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "Error tokenizing data. C error: Expected 5 fields in line 3, saw 10\n"
+                ],
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-007/result.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-008",
+        "total_score": 0.5903543344566935,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['Loan_ID']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Loan_Status",
+                "score": 0.5903543344566935,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-009",
+        "total_score": 0.40325104502149334,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "satisfaction",
+                "score": 0.40325104502149334,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-010",
+        "total_score": 0.24845070422535212,
+        "info": [
+            {
+                "errors": [
+                    "TypeError: result target dtype float64 is not compatible with gold's int64."
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "output",
+                "score": 0.24845070422535212,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-011",
+        "total_score": 0.9774053864258981,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "income_above_limit",
+                "score": 0.9774053864258981,
+                "file": [
+                    "results.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-012/sentiment.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "sentiment.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-013",
+        "total_score": 0.983086106055813,
+        "info": [
+            {
+                "errors": [],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Target",
+                "score": 0.983086106055813,
+                "file": [
+                    "target.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-014",
+        "total_score": 0.7351165975701031,
+        "info": [
+            {
+                "errors": [
+                    "result csv columns are different from gold csv: ['CustomerID']"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "target_output": "Churn",
+                "score": 0.7351165975701031,
+                "file": [
+                    "churn.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-015/class.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-016",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-016/defaulter.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "defaulter.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-017",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-017/tomorrow.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "tomorrow.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-018",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-018/stroke.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "stroke.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-019",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-019/class.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-020",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-020/disease.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "disease.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-021",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-021/diabetes.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "diabetes.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-binary-022",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-binary-022/bankrupt.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "bankrupt.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-001",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-001/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-002/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-003",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-003/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-004/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-005/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-006/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-007/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-008/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-009/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-010/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-011",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-011/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-012/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-013",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-013/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-014",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-014/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-015/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-016",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-016/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-017",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-017/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-018",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-018/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-019",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-019/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-cluster-020",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-cluster-020/cluster.csv does not exists"
+                ],
+                "metric": "silhouette",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "cluster.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-001",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-001/activity.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "activity.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-002/result.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-003",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-003/result.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-004/level.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "level.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-005/emotions.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "emotions.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-006",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-006/score.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "score.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-007/class.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-008/category.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "category.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-009/type.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "type.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-010/class.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "class.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-011",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-011/sentiment.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "sentiment.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-multi-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-multi-012/prediction.csv does not exists"
+                ],
+                "metric": "f1",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "prediction.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-001",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-001/result.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-002/result.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-003",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-003/submission.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-004/popularity.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "popularity.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-005",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-005/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-006",
+        "total_score": 0.011934614299585533,
+        "info": [
+            {
+                "errors": [],
+                "metric": "r2",
+                "threshold": 0.0,
+                "target_output": "Star rating",
+                "score": 0.011934614299585533,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-007/job_satisfaction.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "job_satisfaction.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-008",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-008/quantity.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "quantity.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-009/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-010/Usefulness.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "Usefulness.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-011",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-011/result.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-012/result.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "result.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-013",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-013/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-014",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-014/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-015/appliance.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "appliance.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-016",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-016/fare.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "fare.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-017",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-017/rating.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "rating.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-018",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-018/submission.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-019",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-019/pm.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "pm.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-020",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-020/submission.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "submission.csv"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ml-regression-021",
+        "total_score": 0.0,
+        "info": [
+            {
+                "errors": [
+                    "result file ./benchmark/output/azure-test/ml-regression-021/price.csv does not exists"
+                ],
+                "metric": "r2",
+                "threshold": 0.0,
+                "score": 0.0,
+                "file": [
+                    "price.csv"
+                ]
+            }
+        ]
+    }
+]

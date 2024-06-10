@@ -139,6 +139,10 @@ class Spider2Env(gym.Env):
         #         or (len(self.metric) == len(self.result_getter) == len(self.expected_getter) == len(
         #             self.metric_options)))
         
+    def close(self):
+        self.container.stop()
+        self.container.remove()
+        logger.info(f"Container {self.container_name} stopped and removed.")
         
     def _construct_container(self):
         

@@ -126,7 +126,7 @@ def test(
     with open(args.test_all_meta_path, "r") as f:
         task_configs = [json.loads(line) for line in f]
     if args.example_name != "":
-        task_configs = [task for task in task_configs if task["id"] == args.example_name]
+        task_configs = [task for task in task_configs if args.example_name in task["id"]]
     else:
         if args.example_range != "all":
             if "-" in args.example_range:
@@ -160,6 +160,7 @@ def test(
 
         os.makedirs(output_dir, exist_ok=True)
 
+        env_config["init_args"]["name"] = experiment_id +"-"+ task_config["id"]
         env = Spider2Env(
             env_config=env_config,
             task_config=task_config,
@@ -181,6 +182,7 @@ def test(
             json.dump(dabench_result, f, indent=2)
         
         logger.info("Finished %s", instance_id)
+        env.close()
 
 
 
