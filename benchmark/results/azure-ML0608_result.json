@@ -1,6 +1,6 @@
 {
     "num_results": 95,
-    "average_score": 6.218026764375261,
+    "average_score": 6.1969741327963135,
     "results": [
         {
             "id": "ml-binary-001",
@@ -1281,15 +1281,14 @@
             ]
         },
         {
-            "id": "ml-competition-018",
-            "total_score": 1.0,
+            "id": "ml-competition-019",
+            "total_score": 0.0,
             "info": [
                 {
                     "errors": [
-                        "TypeError: result target dtype int64 is not compatible with gold's float64.",
-                        "TypeError: result target dtype int64 is not compatible with gold's float64."
+                        "ID does not match, result has extra id: set()"
                     ],
-                    "score": 1.0,
+                    "score": 0.0,
                     "threshold": 0.90417,
                     "metric": "accuracy",
                     "file": [
@@ -1319,7 +1318,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Stains', 'Bumps', 'Dirtiness', 'Z_Scratch', 'K_Scatch', 'Other_Faults', 'Pastry']"
+                        "Unexpected Column: ['Other_Faults', 'Dirtiness', 'Z_Scratch', 'K_Scatch', 'Bumps', 'Pastry', 'Stains']"
                     ],
                     "score": 0.0,
                     "threshold": 0.9,
@@ -1396,7 +1395,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['C', 'D', 'CL']"
+                        "Unexpected Column: ['D', 'C', 'CL']"
                     ],
                     "score": 0.0,
                     "threshold": 0.9,
@@ -1500,14 +1499,14 @@
             ]
         },
         {
-            "id": "ml-competition-018",
-            "total_score": 1.0,
+            "id": "ml-competition-020",
+            "total_score": 0.0,
             "info": [
                 {
                     "errors": [
-                        "TypeError: result target dtype int64 is not compatible with gold's float64."
+                        "result file submission.csv does not exist"
                     ],
-                    "score": 1.0,
+                    "score": 0.0,
                     "threshold": 0.7335,
                     "metric": "f1",
                     "file": [
