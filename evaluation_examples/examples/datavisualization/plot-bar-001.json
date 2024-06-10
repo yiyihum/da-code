@@ -1,5 +1,5 @@
 {
-    "id": "plot-bar-005",
+    "id": "plot-bar-001",
     "config":{
         "task": "data visualization",
         "type": "bar",
@@ -18,5 +18,5 @@
     "options": [{
         "keys": ["figsize","graph_title", "x_label", "y_label","ytick_labels"]
     }]
-  }
+}
   

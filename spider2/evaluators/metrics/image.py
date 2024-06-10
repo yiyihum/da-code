@@ -39,8 +39,8 @@ class ImageTest:
                 else list(result_fig)
             gold_fig = gold_fig if isinstance(gold_fig, list)\
                 else list(gold_fig)
-            result_fig = map(hex_to_rgb, result_fig)
-            gold_fig = map(hex_to_rgb, gold_fig)
+            result_fig = list(map(hex_to_rgb, result_fig))
+            gold_fig = list(map(hex_to_rgb, gold_fig))
             return (1.0, {key: True}) if all(is_color_similar(c1, gold_fig) for c1 in result_fig) \
                 else (0.0, {key: False})
         elif key == 'type':
