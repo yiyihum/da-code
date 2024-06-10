@@ -27,10 +27,9 @@ author_stats = books_df.groupby('Author')['Price'].mean().reset_index()
 # Sort authors by average price in descending order and get the top author
 most_expensive_author = author_stats.sort_values(by='Price', ascending=False).head(10)
 
-plt.figure(figsize=(12, 18)) # Adjusted for displaying a single bar
-sns.barplot(x='Author', y='Price', data=most_expensive_author, palette='autumn')
+plt.figure(figsize=(18, 12))
+sns.barplot(y='Author', x='Price', data=most_expensive_author, palette='autumn', orient='h')
 plt.title('Most Expensive Author')
-plt.xlabel('Author')
-plt.ylabel('Average Price')
-plt.xticks(rotation=45)
+plt.xlabel('Average Price')
+plt.ylabel('Author')
 plt.savefig('./result.jpg')

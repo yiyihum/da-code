@@ -102,11 +102,13 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
     if not config or not task_type or not metric:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type" and a "metric"')
     
+    
     best_type, ratio = process.extractOne(task_type, TYPES)
     if not ratio > 90:
         raise ValueError(f"please provide a right task type, such as {TYPES}")
     task_type = best_type.split(' ')[0]
     task_type = task_type.split(' ')[0]
+    output_ml.update({'metric': metric})
     expected = expected if isinstance(expected, list) else [expected]
     result = result if isinstance(result, list) else [result]
     if not len(result) == 1:

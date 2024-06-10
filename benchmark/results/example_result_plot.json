@@ -1,13 +1,527 @@
 [
     {
-        "id": "plot-scatter-001",
+        "id": "plot-bar-005",
         "total_score": 0.0,
         "info": [
             {
                 "score": 0.0,
                 "errors": [
-                    "cannot unpack non-iterable float object"
+                    "gold path ./benchmark/gold/plot-bar-005/sales.jpg do not exist"
                 ],
+                "file": [
+                    "sales.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-002",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "score": 1.0,
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-003",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "figsize": true,
+                "ytick_labels": true,
+                "score": 1.0,
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-004",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": true,
+                "score": 1.0,
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-005",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "xtick_labels": true,
+                "score": 1.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-006",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "xtick_labels": true,
+                "figsize": true,
+                "score": 1.0,
+                "file": [
+                    "team.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-007",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-bar-007/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-008",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "xtick_labels": true,
+                "figsize": true,
+                "labels": true,
+                "score": 1.0,
+                "file": [
+                    "distribution.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-009",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "xtick_labels": false,
+                "figsize": true,
+                "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-010",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "xtick_labels": true,
+                "figsize": true,
+                "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-011",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": true,
+                "score": 1.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-012",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "xtick_labels": false,
+                "graph_title": true,
+                "x_label": true,
+                "y_label": true,
+                "figsize": true,
+                "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-013",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "xtick_labels": true,
+                "x_label": true,
+                "y_label": true,
+                "score": 1.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-014",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-bar-014/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-015",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "xtick_labels": true,
+                "x_label": true,
+                "y_label": true,
+                "graph_title": true,
+                "figsize": true,
+                "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-016",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "xtick_labels": true,
+                "x_label": true,
+                "y_label": true,
+                "graph_title": true,
+                "figsize": true,
+                "score": 1.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-017",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "xtick_labels": true,
+                "x_label": true,
+                "y_label": true,
+                "graph_title": true,
+                "figsize": true,
+                "score": 1.0,
+                "file": [
+                    "party_sums_plot.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-bar-017",
+        "total_score": 0.0,
+        "info": [
+            {
+                "score": 0.0,
+                "errors": [
+                    "gold path ./benchmark/gold/plot-bar-017/result.png do not exist"
+                ],
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-001",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "graph_title": false,
+                "x_label": false,
+                "color": true,
+                "score": 0.0,
+                "file": [
+                    "point.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-002",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "x_label": true,
+                "y_label": true,
+                "labels": true,
+                "score": 1.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-003",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "x_label": true,
+                "y_label": true,
+                "figsize": true,
+                "score": 1.0,
+                "file": [
+                    "output.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-line-004",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "x_label": true,
+                "y_label": true,
+                "figsize": true,
+                "graph_title": true,
+                "legend_title": true,
+                "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-001",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "figsize": true,
+                "score": 1.0,
+                "file": [
+                    "answer.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "graph_title": true,
+                "labels": true,
+                "legend_title": true,
+                "score": 0.0,
+                "file": [
+                    "distribution.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-pie-003",
+        "total_score": 1.0,
+        "info": [
+            {
+                "img": false,
+                "data": true,
+                "scale_data": true,
+                "graph_title": true,
+                "figsize": true,
+                "score": 1.0,
+                "file": [
+                    "result.jpg",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-scatter-001",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "score": 0.0,
+                "file": [
+                    "result.png",
+                    "plot.json",
+                    "result.npy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "plot-scatter-002",
+        "total_score": 0.0,
+        "info": [
+            {
+                "img": false,
+                "data": false,
+                "scale_data": false,
+                "x_label": true,
+                "y_label": true,
+                "labels": true,
+                "score": 0.0,
                 "file": [
                     "result.png",
                     "plot.json",
