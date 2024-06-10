@@ -1,6 +1,6 @@
 {
     "num_results": 95,
-    "average_score": 6.206638919537988,
+    "average_score": 6.218026764375261,
     "results": [
         {
             "id": "ml-binary-001",
@@ -366,11 +366,11 @@
         },
         {
             "id": "ml-cluster-001",
-            "total_score": 0.702518993816405,
+            "total_score": 0.7025189938398866,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.702518993816405,
+                    "score": 0.7025189938398866,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -382,11 +382,11 @@
         },
         {
             "id": "ml-cluster-002",
-            "total_score": 0.3318008778552377,
+            "total_score": 0.3318008778848452,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.3318008778552377,
+                    "score": 0.3318008778848452,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -398,11 +398,11 @@
         },
         {
             "id": "ml-cluster-003",
-            "total_score": 0.2777004452299661,
+            "total_score": 0.27770044523074183,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.2777004452299661,
+                    "score": 0.27770044523074183,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -414,11 +414,11 @@
         },
         {
             "id": "ml-cluster-004",
-            "total_score": 0.7279442801033658,
+            "total_score": 0.7279442801075656,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7279442801033658,
+                    "score": 0.7279442801075656,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -430,11 +430,11 @@
         },
         {
             "id": "ml-cluster-005",
-            "total_score": 0.6130641548246057,
+            "total_score": 0.6130641548359933,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.6130641548246057,
+                    "score": 0.6130641548359933,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -446,11 +446,11 @@
         },
         {
             "id": "ml-cluster-006",
-            "total_score": 0.08326413407453813,
+            "total_score": 0.08326413407531184,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.08326413407453813,
+                    "score": 0.08326413407531184,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -462,13 +462,13 @@
         },
         {
             "id": "ml-cluster-007",
-            "total_score": 0.10688437771308609,
+            "total_score": 0.10688437771462675,
             "info": [
                 {
                     "errors": [
                         "result contains non numeric columns: ['gender']"
                     ],
-                    "score": 0.10688437771308609,
+                    "score": 0.10688437771462675,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -480,11 +480,11 @@
         },
         {
             "id": "ml-cluster-008",
-            "total_score": 0.304780194636088,
+            "total_score": 0.30478019463717804,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.304780194636088,
+                    "score": 0.30478019463717804,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -496,11 +496,11 @@
         },
         {
             "id": "ml-cluster-009",
-            "total_score": 0.4631941433410071,
+            "total_score": 0.46319414337174514,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.4631941433410071,
+                    "score": 0.46319414337174514,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -512,11 +512,11 @@
         },
         {
             "id": "ml-cluster-010",
-            "total_score": 0.18960689968624275,
+            "total_score": 0.1896068996894809,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.18960689968624275,
+                    "score": 0.1896068996894809,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -528,11 +528,11 @@
         },
         {
             "id": "ml-cluster-011",
-            "total_score": 0.8361563223107454,
+            "total_score": 0.8361563223108863,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8361563223107454,
+                    "score": 0.8361563223108863,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -544,11 +544,11 @@
         },
         {
             "id": "ml-cluster-012",
-            "total_score": 0.25502055293262144,
+            "total_score": 0.2550205529347037,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.25502055293262144,
+                    "score": 0.2550205529347037,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -560,11 +560,11 @@
         },
         {
             "id": "ml-cluster-013",
-            "total_score": 0.3585999426929903,
+            "total_score": 0.35859994272857676,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.3585999426929903,
+                    "score": 0.35859994272857676,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -592,11 +592,11 @@
         },
         {
             "id": "ml-cluster-015",
-            "total_score": 0.19484663582087527,
+            "total_score": 0.19484663582248568,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.19484663582087527,
+                    "score": 0.19484663582248568,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -640,11 +640,11 @@
         },
         {
             "id": "ml-cluster-018",
-            "total_score": 0.7743053086479794,
+            "total_score": 0.7743053086494448,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7743053086479794,
+                    "score": 0.7743053086494448,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -656,11 +656,11 @@
         },
         {
             "id": "ml-cluster-019",
-            "total_score": 0.6545860804866603,
+            "total_score": 0.654586080486701,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.6545860804866603,
+                    "score": 0.654586080486701,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -672,11 +672,11 @@
         },
         {
             "id": "ml-cluster-020",
-            "total_score": 0.5658998360727632,
+            "total_score": 0.5658998360959553,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.5658998360727632,
+                    "score": 0.5658998360959553,
                     "threshold": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -1040,7 +1040,7 @@
             "info": [
                 {
                     "errors": [
-                        "result file ./benchmark/output/azure-ML0608/ml-regression-010/Usefulness.csv does not exists"
+                        "result file ./benchmark/_result/azure-ML0608/ml-regression-010/Usefulness.csv does not exists"
                     ],
                     "score": 0.0,
                     "threshold": 0.0,
@@ -1204,10 +1204,11 @@
             "total_score": 0.0,
             "info": [
                 {
+                    "errors": [],
                     "score": 0.0,
-                    "errors": [
-                        "''"
-                    ],
+                    "threshold": 0.0,
+                    "metric": "r2",
+                    "target_output": "Time_taken (min)",
                     "file": [
                         "submission.csv"
                     ]
@@ -1281,13 +1282,16 @@
         },
         {
             "id": "ml-competition-018",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": [
                 {
-                    "score": 0.0,
                     "errors": [
-                        "'DataFrame' object has no attribute 'dtype'"
+                        "TypeError: result target dtype int64 is not compatible with gold's float64.",
+                        "TypeError: result target dtype int64 is not compatible with gold's float64."
                     ],
+                    "score": 1.0,
+                    "threshold": 0.90417,
+                    "metric": "accuracy",
                     "file": [
                         "submission.csv"
                     ]
@@ -1315,7 +1319,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['K_Scatch', 'Other_Faults', 'Dirtiness', 'Bumps', 'Z_Scratch', 'Stains', 'Pastry']"
+                        "Unexpected Column: ['Stains', 'Bumps', 'Dirtiness', 'Z_Scratch', 'K_Scatch', 'Other_Faults', 'Pastry']"
                     ],
                     "score": 0.0,
                     "threshold": 0.9,
@@ -1343,11 +1347,11 @@
         },
         {
             "id": "ml-competition-004",
-            "total_score": 0.8704885884299404,
+            "total_score": 0.7830196800339035,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8704885884299404,
+                    "score": 0.7830196800339035,
                     "threshold": 0.9,
                     "metric": "roc_auc_score",
                     "file": [
@@ -1392,7 +1396,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['CL', 'D', 'C']"
+                        "Unexpected Column: ['C', 'D', 'CL']"
                     ],
                     "score": 0.0,
                     "threshold": 0.9,
@@ -1435,11 +1439,13 @@
         },
         {
             "id": "ml-competition-006",
-            "total_score": 0.8306858322339022,
+            "total_score": 0.0,
             "info": [
                 {
-                    "errors": [],
-                    "score": 0.8306858322339022,
+                    "errors": [
+                        "quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent."
+                    ],
+                    "score": 0.0,
                     "threshold": 90,
                     "metric": "quadratic_weighted_kappa",
                     "file": [
@@ -1450,11 +1456,11 @@
         },
         {
             "id": "ml-competition-007",
-            "total_score": 0.15960315829062963,
+            "total_score": 0.1596031582906296,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.15960315829062963,
+                    "score": 0.1596031582906296,
                     "threshold": 0.9,
                     "metric": "rmsle",
                     "file": [
@@ -1495,13 +1501,15 @@
         },
         {
             "id": "ml-competition-018",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": [
                 {
-                    "score": 0.0,
                     "errors": [
-                        "'DataFrame' object has no attribute 'dtype'"
+                        "TypeError: result target dtype int64 is not compatible with gold's float64."
                     ],
+                    "score": 1.0,
+                    "threshold": 0.7335,
+                    "metric": "f1",
                     "file": [
                         "submission.csv"
                     ]
@@ -1531,7 +1539,7 @@
             "info": [
                 {
                     "errors": [
-                        "fail to calculate quadratic_weighted_kappa: 'list' argument must have no negative elements"
+                        "quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent."
                     ],
                     "score": 0.0,
                     "threshold": 0.806,

@@ -26,7 +26,7 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     output_ml = {'errors': [], 'score': 0.0}
     config = kwargs.get('config', {})
     n_jobs = kwargs.get('n_jobs', os.cpu_count())
-    target_column = config.get('target_column', '')
+    target_column = kwargs.get('target_column', '')
     task_type = config.get('type', '')
     metric = config.get("metric", "")
     threshold = config.get("threshold", 0.9)
@@ -141,7 +141,9 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
 
     if not metric_func:
         raise ValueError(f"Evaluation Scripts don't have {metric_func}")
-    score, output = metric_func(result_df, expected_df, task_type, **{'average': 'averaged'})
+    result_df = result_df.iloc[:, 0]
+    expected_df = expected_df.iloc[:, 0]
+    score, output = metric_func(result_df, expected_df, task_type, **{'average': ''})
 
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score

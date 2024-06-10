@@ -243,10 +243,8 @@ class CalculateML:
     def calculate_f1(gold, result, task_type: Optional[str]=None, **kwargs):
         averaged = kwargs.pop('average', '')
         output = {'errors': []}
-        
-        
+    
         label_encoder = LabelEncoder()
-            
         def convert_to_numeric(input, isgold: bool=False):
             if 'float' in str(input.dtype):
                 return input.astype(int)
@@ -464,6 +462,9 @@ class CalculateML:
             for i in range(1, N+1):
                 for j in range(1, N+1):
                     w[i-1, j-1] = ((i - j) ** 2) / ((N - 1) ** 2)
+            if  min(gold_np) != min(result_np) or max(gold_np) != max(result_np):
+                output['errors'].append(f"quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent.")
+                return (0.0, output)
             min_gold = min(gold_np)
             gold_np = gold_np if not min_gold else (gold_np - min_gold)
             result_np = result_np if not min_gold else (result_np - min_gold)

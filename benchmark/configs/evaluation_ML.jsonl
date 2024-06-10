@@ -71,7 +71,7 @@
 {"id": "ml-regression-017", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "rating.csv"}], "options": [{}]}
 {"id": "ml-regression-018", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "submission.csv"}], "options": [{}]}
 {"id": "ml-regression-019", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "pm.csv"}], "options": [{}]}
-{"id": "ml-regression-020", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "submission.csv"}], "options": [{}]}
+{"id": "ml-regression-020", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "submission.csv"}], "options": [{"target_column": "Time_taken(min)"}]}
 {"id": "ml-regression-021", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "price.csv"}], "options": [{}]}
 {"id": "ml-competition-002", "config": {"task": "machinelearning competition", "type": "binary classification", "metric": "roc_auc_score", "threshold": 0.9}, "func": ["compare_competition_ml"], "result": [{"file": "submission.csv"}], "options": [{}]}
 {"id": "ml-competition-014", "config": {"task": "machinelearning competition", "type": "regression", "metric": "smape", "threshold": 5.98}, "func": ["compare_competition_ml"], "result": [{"file": "submission.csv"}], "options": [{}]}
