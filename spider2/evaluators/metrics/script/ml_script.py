@@ -4,7 +4,6 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from fuzzywuzzy import process
 import numpy as np
-import difflib
 from sklearn.metrics.pairwise import pairwise_distances
 from joblib import Parallel, delayed
 import numpy as np
@@ -20,10 +19,8 @@ from sklearn.metrics import (roc_auc_score,
                             r2_score,
                              confusion_matrix)
 
-LABELS = ['label', 'labels', 'class', 'classes']
-
 class PreprocessML:
-    
+    _LABELS = ['label', 'labels', 'class', 'classes']
     @classmethod
     def is_incremental(cls, column_data):
         sorted_data = column_data.sort_values().values
@@ -43,40 +40,81 @@ class PreprocessML:
         return non_numeric_columns
 
     @classmethod
-    def process_csv(cls, df: pd.DataFrame, type, **kwargs):
-        if type != 'cluster':
-            unique_column = kwargs.get('unique_column', '')
-            target_column = kwargs.get('target_column', '')
-            columns = list(df.columns)
-            if unique_column:
-                best_unique_column, ratio = process.extractOne(unique_column, columns)
-                if ratio > 90:
-                    unique_column = best_unique_column
-                    df = df.sort_values(by=unique_column)
-                else:
-                    unique_column = ''
-            if target_column:
-                best_target_column, ratio = process.extractOne(target_column.lower(), columns)
-                target_column = best_target_column if ratio > 90 else ''
+    def process_competition_csv(cls, result_df:pd.DataFrame, gold_df: pd.DataFrame):
+        flag = False
+        output = {'errors': []}
+        gold_columns = gold_df.columns
+        result_columns = result_df.columns
 
-            if target_column and unique_column:
-                return df, unique_column, target_column
-
-            unique_id_columns, target_column2 = cls.identify_columns(df, type, target_column)
-            unique_column2 = unique_id_columns[0] if unique_id_columns else ""   
-            target_column = target_column2 if not target_column else target_column
-            unique_column = unique_column2 if not unique_column else unique_column
-            if unique_column:
-                df = df.sort_values(by=unique_column)
-        else:
-            unique_id_columns, target_column = cls.identify_columns(df, type)
-            unique_column = ''
-            for unique_column in unique_id_columns:
-                if 'feature' not in unique_column.lower() or 'pca' not in unique_column.lower():
-                    df.drop(unique_column, axis=1, inplace=True)
+        if len(result_df) != len(gold_df):
+            output['errors'].append(f"Length mismatch: result CSV has {len(result_df)} rows, while expected CSV has {len(gold_df)} rows.")
+            flag = False
+            return result_df, gold_df, output, flag
+        if set(result_columns) != set(gold_columns):
+            output['errors'].append(f'Unexpected Column: {list(set(result_df.columns) - set(gold_df.columns))}')
+            flag = False
+            return result_df, gold_df, output, flag
         
-        return df, unique_column, target_column
+        id = next((col for col in gold_columns if 'id' in col.lower()), '')
+        if id:
+            if gold_df[id].nunique() > max(0.6 * len(gold_df), 2):
+                gold_id = set(gold_df[id])
+                result_id = set(result_df[id])
+                if not result_id == gold_id:
+                    output['errors'].append(f"ID does not match, result has extra id: {set(result_id)- set(result_id)}")
+                    flag = False
+                    return result_df, gold_df, output, flag
+                gold_df = gold_df.sort_values(by=id)
+                result_df = result_df.sort_values(by=id)
+                gold_df.drop(id, inplace=True, axis=1)
+                result_df.drop(id, inplace=True, axis=1)
+        
+        gold_df.sort_index(axis=1, inplace=True)
+        result_df.sort_index(axis=1, inplace=True)
+        flag = True
+        return result_df, gold_df, output, flag
 
+
+    @classmethod
+    def process_csv(cls, df: pd.DataFrame, task_type, **kwargs):
+        id_columns = kwargs.get('id_columns', [])
+        target_column = kwargs.get('target_column', '')
+        target_column = target_column if task_type.lower() != 'cluster' else 'Cluster'
+        target_column_df, id_columns_df = "", []
+        columns = list(df.columns)
+
+        def sort_df(df_input: pd.DataFrame, id_columns_input: list):
+            if not id_columns_input:
+                return df
+            df_input.sort_values(by=id_columns_input[0])
+            for id_column in id_columns_input:
+                df_input.drop(id_column, axis=1, inplace=True)
+            return df_input
+        
+        if id_columns:
+            id_columns_df = [
+                col for col in columns 
+                if process.extractOne(col, id_columns)[1] > 90 
+                and all(feature not in col.lower() for feature in ['pca', 'feature'])
+            ]
+        if target_column:
+            best_match, ratio = process.extractOne(target_column, columns)
+            target_column_df = best_match if ratio > 90 else ''
+
+        if target_column_df and id_columns_df:
+            df = sort_df(df_input=df, id_columns_input=id_columns_df)
+            return df, id_columns_df, target_column_df
+        
+        # Identify unique and target columns
+        id_columns_found, target_column_found = cls.identify_columns(df, task_type, target_column)
+        target_column_df = target_column_found if not target_column_df else target_column_df
+        id_columns_df = id_columns_found if not id_columns_df else id_columns_df
+        id_columns_df = list(filter(lambda x: all(feature not in x.lower() for feature in ['pca', 'feature']), id_columns_df)) \
+            if id_columns_df else []
+        df = sort_df(df_input=df, id_columns_input=id_columns_df)
+        return df, id_columns_df, target_column_df
+        
+        
     @classmethod
     def identify_columns(cls, df, type, ref_column: str=""):
         if len(df.columns) == 1:
@@ -87,33 +125,44 @@ class PreprocessML:
 
         unique_id_columns = []
         target_columns = []
+
+        def is_unique_id_column(column):
+            return ('id' in column.lower() or 'unnamed' in column.lower()) and df[column].nunique() > 0.8 * len(df)
+        def is_binary_target_column(column):
+            return len(df[column].unique()) == 2
+        def is_multi_target_column(column):
+            return 2 < len(df[column].unique()) < 10
+        def is_cluster_target_column(column):
+            return 1 <= len(df[column].unique()) < max(0.01 * len(df), 10)
+        def is_regression_target_column(column):
+            return str(df[column].dtype) in ['int64', 'float64']  \
+                and not PreprocessML.is_incremental(df[column]) \
+                and len(df[column].unique()) > max(3, 0.1 * len(df))
+
         for column in columns:
-            if ('id' in column.lower() or 'unnamed' in column.lower()) and df[column].nunique() > 0.6 * len(df):
+            if is_unique_id_column(column):
                 unique_id_columns.append(column)
-            if type =='binary':
-                if len(df[column].unique()) == 2: 
-                    target_columns.append(column)
-            elif type == 'multi':
-                if len(df[column].unique()) > 2 and len(df[column].unique()) < 10:
-                    target_columns.append(column)
-            elif type == 'cluster':
-                if len(df[column].unique()) >=1 and len(df[column].unique()) < 0.3 * len(df):
-                    target_columns.append(column)
-            elif type == 'regression':
-                if str(df[column].dtype) in ['int64', 'float64']:
-                    if not cls.is_incremental(df[column]) and len(df[column].unique()) > max(2, 0.1 *len(df)):
-                        target_columns.append(column)
+                continue
+            if target_column:
+                continue
+            if type == 'binary' and is_binary_target_column(column):
+                target_columns.append(column)
+            elif type == 'multi' and is_multi_target_column(column):
+                target_columns.append(column)
+            elif type == 'cluster' and is_cluster_target_column(column):
+                target_columns.append(column)
+            elif type == 'regression' and is_regression_target_column(column):
+                target_columns.append(column)
 
         if not target_column:
             if len(target_columns) == 1:
                 target_column = target_columns[0]
-                return unique_id_columns, target_column
             else:
                 for column in target_columns:
-                    if column.lower() in LABELS:
+                    if column.lower() in cls._LABELS:
                         target_column = column
-                        break            
-        
+                        break
+    
         return unique_id_columns, target_column
 
 class CalculateML:
@@ -123,13 +172,28 @@ class CalculateML:
         output = {'errors': []}
         if not str(gold.dtype) == str(result.dtype):
             output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
-        try:
-            label_encoder = LabelEncoder()
-            gold = label_encoder.fit_transform(gold)
-            result = label_encoder.fit_transform(result)
-        except Exception as e:
-            output['errors'].append(f'fail to encoder label, because {str(e)}')
-            return (0.0, output)
+ 
+        label_encoder = LabelEncoder()
+          
+        def convert_to_numeric(input, isgold: bool=False):
+            if 'float' in str(input.dtype):
+                return input.astype(int)
+            elif 'int' in str(input.dtype):
+                return input
+            else:
+                try:
+                    input = label_encoder.fit_transform(input) if isgold \
+                        else label_encoder.transform(input)
+                except Exception as e:
+                    output['errors'].append(f'fail to encoder label, because {str(e)}')
+                    return None       
+                return input
+        
+        if str(gold.dtype) != str(result.dtype):
+            output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
+
+        gold = convert_to_numeric(gold, True)
+        result = convert_to_numeric(result, False)
         
         if result.ndim > 2:
             output['errors'].append(f'Expected 1D or 2D array, but got {result.ndim}')
@@ -179,16 +243,30 @@ class CalculateML:
     def calculate_f1(gold, result, task_type: Optional[str]=None, **kwargs):
         averaged = kwargs.pop('average', '')
         output = {'errors': []}
-        if not str(gold.dtype) == str(result.dtype):
-            output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
-        try:
-            label_encoder = LabelEncoder()
-            gold = label_encoder.fit_transform(gold)
-            result = label_encoder.fit_transform(result)
-        except Exception as e:
-            output['errors'].append(f'fail to encoder label, because {str(e)}')
-            return (0.0, output)
+        
+        
+        label_encoder = LabelEncoder()
             
+        def convert_to_numeric(input, isgold: bool=False):
+            if 'float' in str(input.dtype):
+                return input.astype(int)
+            elif 'int' in str(input.dtype):
+                return input
+            else:
+                try:
+                    input = label_encoder.fit_transform(input) if isgold \
+                        else label_encoder.transform(input)
+                except Exception as e:
+                    output['errors'].append(f'fail to encoder label, because {str(e)}')
+                    return None       
+                return input
+        
+        if str(gold.dtype) != str(result.dtype):
+            output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
+
+        gold = convert_to_numeric(gold, True)
+        result = convert_to_numeric(result, False)
+        
         try:
             score = f1_score(y_true=gold, y_pred=result, average='weighted') if not averaged \
                 else f1_score(y_true=gold, y_pred=result, average=averaged)
@@ -199,7 +277,7 @@ class CalculateML:
         return (score, output)
     
     @staticmethod
-    def calculate_silhouette(result,target_labels, task_type: Optional[str]=None,  **kwargs):
+    def calculate_silhouette(target_labels,result, task_type: Optional[str]=None,  **kwargs):
         n_jobs = kwargs.get('n_jobs', os.cpu_count())
         target_labels = target_labels if isinstance(target_labels, np.ndarray) \
             else np.array(target_labels)

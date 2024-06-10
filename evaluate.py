@@ -17,8 +17,8 @@ def run_evaluation(output_dir, gold_dir, eval_json, result_json, timeout_seconds
 experiments = "example"
 output_dir = f'./benchmark/output/example'
 gold_dir = './benchmark/gold'
-eval_json = './evaluation_examples/examples/datavisualization/plot-scatter-001.json'
-result_json = f'./benchmark/results/{experiments}_result_plot.json'
+eval_json = './benchmark/configs/evaluation_ML.jsonl'
+result_json = f'./benchmark/results/{experiments}_result_cluster.json'
 timeout_seconds = 10
 
 # Run the evaluation with the specified parameters

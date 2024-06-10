@@ -1,0 +1,12 @@
+{
+    "id": "ml-regression-001", 
+    "config": {
+        "task": "machinelearning", 
+        "type": "regression", 
+        "metric": "r2", 
+        "threshold": 0.0
+    }, 
+    "func": ["compare_ml"], 
+    "result": [{"file": "result.csv"}], 
+    "options": [{}]
+}

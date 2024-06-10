@@ -9,8 +9,6 @@ import pdb
 here = Path(__file__).absolute().parent
 sys.path.append(str(here.parent))
 from controllers.python import PythonController
-import logging
-logger = logging.getLogger("spider2.env")
 
 # from envs.spider2 import DEFAULT_WORK_DIR    
 class PlotPy:
@@ -54,7 +52,7 @@ class PlotPy:
                 file_content = f.readlines()
             plt_find, image_find = False, False
             for line in file_content:
-                if 'matplotlib' in line:
+                if 'matplotlib' or 'seaborn' in line:
                     plt_find = True
                 if 'plt.savefig' in line or 'matplotlib.pyplot.savefig' in line:
                     image_find = True
@@ -74,30 +72,23 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     '''
     mnt_files = os.listdir(mnt_dir)
     png_files = [file for file in mnt_files if file.endswith('.png') or file.endswith('.jpg')]
-    if not png_files:
-        logger.error(f"no png files found in {mnt_dir}")
-        return []
-    # assert len(png_files) > 0, 'Agent fails to plot image'
+    assert len(png_files) > 0, 'Agent fails to plot image'
 
     controller.container.exec_run('basch -c cd /workspace')
     plot_path = os.path.join(mnt_dir, 'dabench')
     os.makedirs(plot_path, exist_ok=True)
 
     plt_files = PlotPy.find_plt_py(mnt_dir)
-    if not plt_files:
-        logger.error(f"no plt files found in {mnt_dir}")
-        return []
-    # assert len(plt_files) > 0, f"Agent fails to generate code to plot image, please check again."
+    assert len(plt_files) > 0, f"Agent fails to generate code to plot image, please check again."
 
     plot_find = False
+    npy_file, json_file = '', ''
     for py_file in plt_files:
+        pdb.set_trace()
         py_content = PlotPy.preprocess_py(py_file)
-        process_py_file = py_file.replace('.py', '_process.py')
-        with open(process_py_file, 'w') as py:
+        with open(py_file, 'w') as py:
             py.writelines(py_content)
-        # create_command = f'echo """{py_content}""" > {py_file}'
-        # controller.container.exec_run(create_command)
-        controller.container.exec_run(f'python {os.path.basename(process_py_file)}')
+        controller.container.exec_run(f'python {os.path.basename(py_file)}')
         mnt_files = os.listdir(mnt_dir)
         npy_files = [os.path.join(mnt_dir, file) for file in mnt_files if file.endswith('.npy') and '_data_result_' in file]
         json_files = [os.path.join(mnt_dir, file) for file in mnt_files if file.endswith('.json') and '_result_image_parameters_' in file]
@@ -114,14 +105,12 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
         npy_path = os.path.join(plot_path, 'result.npy')
         shutil.move(json_file, plot_json)
         shutil.move(npy_file, npy_path)
-        return [plot_json, npy_path]
     else:
-        logger.error(f"fails to generate plot json result")
-        return []
+        plot_json, npy_path = '', ''
 
-    # print(plot_json, npy_path)
-    # if not plot_json or not npy_path:
-    #     raise ValueError(f'fails to generate plot json result')
+    print(plot_json, npy_path)
+    if not plot_json or not npy_path:
+        raise ValueError(f'fails to generate plot json result, please check the code in {plt_files}')
 
-    # return [plot_json, npy_path]
+    return [plot_json, npy_path]
 
