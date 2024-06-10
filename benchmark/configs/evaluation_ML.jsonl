@@ -52,7 +52,7 @@
 {"id": "ml-multi-010", "config": {"task": "machinelearning", "type": "multi classification", "metric": "f1", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "class.csv"}], "options": [{}]}
 {"id": "ml-multi-011", "config": {"task": "machinelearning", "type": "multi classification", "metric": "f1", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "sentiment.csv"}], "options": [{}]}
 {"id": "ml-multi-012", "config": {"task": "machinelearning", "type": "multi classification", "metric": "f1", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "prediction.csv"}], "options": [{}]}
-{"id": "ml-regression-001", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "result.csv"}], "options": [{"target_column": "price"}]}
+{"id": "ml-regression-001", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "result.csv"}], "options": [{}]}
 {"id": "ml-regression-002", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "result.csv"}], "options": [{}]}
 {"id": "ml-regression-003", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "submission.csv"}], "options": [{}]}
 {"id": "ml-regression-004", "config": {"task": "machinelearning", "type": "regression", "metric": "r2", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "popularity.csv"}], "options": [{}]}

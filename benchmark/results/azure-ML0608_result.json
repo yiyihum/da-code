@@ -1039,12 +1039,11 @@
             "total_score": 0.0,
             "info": [
                 {
-                    "errors": [
-                        "result file ./benchmark/output/azure-ML0608/ml-regression-010/Usefulness.csv does not exists"
-                    ],
+                    "errors": [],
                     "score": 0.0,
                     "threshold": 0.0,
                     "metric": "r2",
+                    "target_output": "usefulness",
                     "file": [
                         "Usefulness.csv"
                     ]
@@ -1318,7 +1317,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Pastry', 'Bumps', 'Z_Scratch', 'Other_Faults', 'Stains', 'Dirtiness', 'K_Scatch']"
+                        "Unexpected Column: ['Other_Faults', 'Stains', 'Z_Scratch', 'K_Scatch', 'Bumps', 'Pastry', 'Dirtiness']"
                     ],
                     "score": 0.0,
                     "threshold": 0.9,
@@ -1395,7 +1394,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['C', 'CL', 'D']"
+                        "Unexpected Column: ['C', 'D', 'CL']"
                     ],
                     "score": 0.0,
                     "threshold": 0.9,
