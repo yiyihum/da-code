@@ -476,10 +476,13 @@
             "total_score": 0.0,
             "info": [
                 {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "legend_title": true,
                     "score": 0.0,
-                    "errors": [
-                        "Object arrays cannot be loaded when allow_pickle=False"
-                    ],
                     "file": [
                         "result.png",
                         "plot.json",
@@ -574,10 +577,15 @@
             "total_score": 0.0,
             "info": [
                 {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "legend_title": true,
                     "score": 0.0,
-                    "errors": [
-                        "Object arrays cannot be loaded when allow_pickle=False"
-                    ],
                     "file": [
                         "result.jpg",
                         "plot.json",
@@ -885,10 +893,14 @@
             "total_score": 0.0,
             "info": [
                 {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
                     "score": 0.0,
-                    "errors": [
-                        "Action execution time exceeded!"
-                    ],
                     "file": [
                         "result.png",
                         "plot.json",
