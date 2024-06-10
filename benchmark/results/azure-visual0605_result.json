@@ -377,6 +377,11 @@
                 "img": false,
                 "data": false,
                 "scale_data": false,
+                "figsize": true,
+                "graph_title": false,
+                "x_label": true,
+                "y_label": true,
+                "ytick_labels": false,
                 "score": 0.0,
                 "file": [
                     "result.png",
@@ -536,10 +541,10 @@
         "total_score": 0.0,
         "info": [
             {
+                "img": false,
+                "data": false,
+                "scale_data": false,
                 "score": 0.0,
-                "errors": [
-                    "gold path ./benchmark/gold/plot-line-009/result.png do not exist"
-                ],
                 "file": [
                     "result.png",
                     "plot.json",
@@ -853,10 +858,10 @@
         "total_score": 0.0,
         "info": [
             {
+                "img": false,
+                "data": false,
+                "scale_data": false,
                 "score": 0.0,
-                "errors": [
-                    "gold path ./benchmark/gold/plot-scatter-003/result.png do not exist"
-                ],
                 "file": [
                     "result.png",
                     "plot.json",
