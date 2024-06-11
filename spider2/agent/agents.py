@@ -187,6 +187,7 @@ class PromptAgent:
         step_idx = 0
         obs = "You are in the folder now."
         retry_count = 0
+        last_action = None
         while not done and step_idx < self.max_steps:
 
             _, action = self.predict(
@@ -198,11 +199,14 @@ class PromptAgent:
                 if retry_count > 3:
                     logger.info("Failed to parse action from response, stop.")
                     break
-                obs += "Failed to parse action from your response, make sure you provide a valid action."
+                obs = "Failed to parse action from your response, make sure you provide a valid action."
             else:
                 logger.info("Step %d: %s", step_idx + 1, action)
-
-                obs, done = self.env.step(action)
+                if last_action is not None and last_action == action:
+                    obs = "The action is the same as the last one, please provide a different action."
+                else:
+                    obs, done = self.env.step(action)
+                    last_action = action
 
             if done:
                 if isinstance(action, Terminate):
