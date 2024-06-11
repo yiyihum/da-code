@@ -1,6 +1,6 @@
 {
     "num_results": 95,
-    "average_score": 6.1167954901465755,
+    "average_score": 6.126574096619817,
     "results": [
         {
             "id": "ml-binary-001",
@@ -1259,13 +1259,11 @@
         },
         {
             "id": "ml-competition-018",
-            "total_score": 0.0,
+            "total_score": 0.928967614957953,
             "info": [
                 {
-                    "errors": [
-                        "fail to calculate roc_auc_score, because Only one class present in y_true. ROC AUC score is not defined in that case."
-                    ],
-                    "score": 0.0,
+                    "errors": [],
+                    "score": 0.928967614957953,
                     "metric": "roc_auc_score",
                     "threshold": 0.866777,
                     "file": [
@@ -1510,10 +1508,12 @@
             "total_score": 0.0,
             "info": [
                 {
-                    "score": 0.0,
                     "errors": [
-                        "sequence item 0: expected str instance, int found"
+                        "ID does not match, result has extra id: 15695872,15794178,15695874,15630349,15695888...15695865"
                     ],
+                    "score": 0.0,
+                    "metric": "roc_auc_score",
+                    "threshold": 0.9,
                     "file": [
                         "submission.csv"
                     ]
