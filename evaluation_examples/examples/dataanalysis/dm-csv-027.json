@@ -1,5 +1,5 @@
 {
-    "id": "dm-csv-003",
+    "id": "dm-csv-027",
     "config":{
         "task": "eda",
         "type": "csv",
@@ -11,13 +11,11 @@
     ],
     "result":[
         {   
-            "file": ["result.csv"]
+            "file": ["Top_10_countries.csv"]
+        },
+        {   
+            "file": ["Top_10_Movies.csv"]
         }
     ],
-    "options": [{
-        "condition_cols": [0,1],
-        "score_rule": "all",
-        "ignore_order": true
-    }]
+    "options": [{}]
 }
-  

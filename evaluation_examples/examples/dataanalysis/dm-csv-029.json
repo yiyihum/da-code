@@ -1,5 +1,5 @@
 {
-    "id": "dm-csv-003",
+    "id": "dm-csv-029",
     "config":{
         "task": "eda",
         "type": "csv",
@@ -11,13 +11,8 @@
     ],
     "result":[
         {   
-            "file": ["result.csv"]
+            "file": ["top3_pull_requests.csv"]
         }
     ],
-    "options": [{
-        "condition_cols": [0,1],
-        "score_rule": "all",
-        "ignore_order": true
-    }]
+    "options": [{}]
 }
-  

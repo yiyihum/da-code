@@ -1,1 +1,0 @@
-{"id": "ml-binary-017", "config": {"task": "machinelearning", "type": "binary classification", "metric": "f1", "threshold": 0.0}, "func": ["compare_ml"], "result": [{"file": "tomorrow.csv"}], "options": [{}]}
