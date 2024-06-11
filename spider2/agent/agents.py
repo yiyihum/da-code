@@ -110,7 +110,7 @@ class PromptAgent:
                 if response == "context_length_exceeded":
                     self.history_messages = [self.history_messages[0]] + self.history_messages[3:]
                 else:
-                    raise Exception("Failed to call LLM")
+                    raise Exception(f"Failed to call LLM, response: {response}")
 
         try:
             action = self.parse_action(response)
@@ -167,6 +167,7 @@ class PromptAgent:
             match = re.search(p, output, flags=re.DOTALL)
             if match:
                 action_string = match.group(1).strip()
+                break
         if action_string == "":
             action_string = output.strip()
         
@@ -175,6 +176,14 @@ class PromptAgent:
             action = action_cls.parse_action_from_text(action_string)
             if action is not None:
                 output_action = action
+                break
+        if output_action is None:
+            action_string = action_string.replace("\_", "_")
+            for action_cls in self._AVAILABLE_ACTION_CLASSES:
+                action = action_cls.parse_action_from_text(action_string)
+                if action is not None:
+                    output_action = action
+                    break
         
         return output_action
     
@@ -246,3 +255,11 @@ class PromptAgent:
     #      InvalidArgument),
     #     max_tries=5
     # )
+
+if __name__ == "__main__":
+    agent = PromptAgent()
+    response = """Thought: The task is to perform a clustering task on the Bank Customer Segmentation dataset to segment the bank customers into an appropriate number of clusters. The dataset is available in the current workspace, and we need to write the clustering results into a file named cluster.csv. \n\nAction: Python(file_name=\"./clustering.py\"):\n```python\nimport pandas as pd\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.cluster import KMeans\nimport numpy as np\n\n# Load the dataset\ndata = pd.read_csv('bank_customer_segmentation.csv')\n\n# Preprocess the data\nscaler = StandardScaler()\nprocessed_data = scaler.fit_transform(data)\n\n# Perform K-Means clustering\nkmeans = KMeans(n_clusters=3)  # Assuming 3 clusters for now\nkmeans.fit(processed_data)\n\n# Get the cluster labels\nlabels = kmeans.labels_\n\n# Create a new dataframe with the processed features and cluster labels\ncluster_data = pd.DataFrame(processed_data, columns=[f\"Processed_Feature_{i}\" for i in range(processed_data.shape[1])])\ncluster_data['Cluster'] = labels\n\n# Save the clustering results to a CSV file\ncluster_data.to_csv('cluster.csv', index=False)\n```
+"""
+    import pdb; pdb.set_trace()
+    action = agent.parse_action(response)
+    print(action)

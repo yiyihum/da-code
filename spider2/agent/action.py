@@ -99,12 +99,12 @@ class Python(Action):
     def get_action_description(cls) -> str:
         return """
 ## Python Action
-* Signature: Python(filepath="path/to/python_file"):
+* Signature: Python(file_path="path/to/python_file"):
 ```python
 executable_python_code
 ```
-* Description: This action will create a python file in the field `filepath` with the content wrapped by paired ``` symbols. If the file already exists, it will be overwritten. After creating the file, the python file will be executed. 
-* Example: Python(file_name="./hello_world.py"):
+* Description: This action will create a python file in the field `file_path` with the content wrapped by paired ``` symbols. If the file already exists, it will be overwritten. After creating the file, the python file will be executed. 
+* Example: Python(file_path="./hello_world.py"):
 ```python
 print("Hello, world!")
 ```
@@ -112,7 +112,7 @@ print("Hello, world!")
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'Python\(filepath=(.*?)\).*?```python[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
+        matches = re.findall(r'Python\(file_path=(.*?)\).*?```python[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
         if matches:
             filepath = matches[-1][0].strip()
             code = matches[-1][2].strip()
@@ -120,7 +120,7 @@ print("Hello, world!")
         return None
     
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}(filepath='{self.filepath}'):\n'''python\n{self.code}\n'''"
+        return f"{self.__class__.__name__}(file_path='{self.filepath}'):\n'''python\n{self.code}\n'''"
 
 @dataclass
 class SQL(Action):

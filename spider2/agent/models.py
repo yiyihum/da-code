@@ -22,6 +22,7 @@ logger = logging.getLogger("api-llms")
 
 def call_llm(payload):
     model = payload["model"]
+    stop = ["Observation:","\n\n\n\n"]
     if model.startswith("gpt"):
         headers = {
             "Content-Type": "application/json",
@@ -78,7 +79,7 @@ def call_llm(payload):
         add_filter_content = False
         for i in range(5):
             try:
-                response = client.chat.completions.create(model='gpt4turbo',messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'])
+                response = client.chat.completions.create(model='gpt4turbo',messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'], stop=stop)
                 response = response.choices[0].message.content
                 # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
                 return True, response
@@ -179,8 +180,6 @@ def call_llm(payload):
 
             mistral_messages.append(mistral_message)
 
-        from openai import OpenAI
-
         client = Groq(
             api_key=os.environ.get("GROQ_API_KEY"),
         )
@@ -196,7 +195,8 @@ def call_llm(payload):
                     model=model,
                     max_tokens=max_tokens,
                     top_p=top_p,
-                    temperature=temperature
+                    temperature=temperature,
+                    stop = stop
                 )
                 break
             except:
@@ -247,7 +247,8 @@ def call_llm(payload):
                     model="llama3-70b-8192",
                     max_tokens=max_tokens,
                     top_p=top_p,
-                    temperature=temperature
+                    temperature=temperature,
+                    stop = stop
                 )
                 break
             except:
@@ -296,7 +297,8 @@ def call_llm(payload):
                         result_format="message",
                         max_length=max_tokens,
                         top_p=top_p,
-                        temperature=temperature
+                        temperature=temperature,
+                        stop = stop
                     )
 
                 elif model in ["qwen-turbo", "qwen-plus", "qwen-max", "qwen-max-0428", "qwen-max-0403",
@@ -307,7 +309,8 @@ def call_llm(payload):
                         result_format="message",
                         max_length=max_tokens,
                         top_p=top_p,
-                        temperature=temperature
+                        temperature=temperature,
+                        stop = stop
                     )
 
                 else:

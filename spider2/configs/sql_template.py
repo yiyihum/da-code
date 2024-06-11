@@ -1,8 +1,14 @@
 SQL_TEMPLATE = """
 import sqlite3
 import pandas as pd
+import os
 
 def execute_sql(file_path, command, output_path):
+    # make sure the file path is correct
+    if not os.path.exists(file_path):
+        print(f"ERROR: File not found: {{file_path}}")
+        return
+
     # Connect to the SQLite database
     conn = sqlite3.connect(file_path)
     
