@@ -62,6 +62,7 @@ class PreprocessML:
                 result_id = set(result_df[id])
                 if not result_id == gold_id:
                     extra_id = list(set(result_id)- set(gold_id))
+                    extra_id = list(map(lambda x: str(x), extra_id))
                     if len(extra_id) > 10:
                         extra_id = ','.join(extra_id[:5]) + '...' + extra_id[-1]
                     else:
