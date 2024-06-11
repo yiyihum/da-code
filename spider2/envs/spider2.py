@@ -217,15 +217,15 @@ class Spider2Env(gym.Env):
         diff_files = self._find_diff_files_init(self.init_files_hash)
 
         post_process_files = []
-        error = []
+        errors = []
         for post_process_f in self.post_process_func:
             process_function = getattr(configs, post_process_f, None)
             post_files, error = process_function(self.mnt_dir, self.controller)
             post_files = post_files if isinstance(post_files, list) else list(post_files)
             post_process_files.extend(post_files)
-            error.append(error)
+            errors.append(error)
 
-        return {**diff_files, "post_process_files": post_process_files, "error": error}
+        return {**diff_files, "post_process_files": post_process_files, "error": errors}
 
     def _find_diff_files_init(self, init_file_dict)-> Dict:
         init_file_paths = init_file_dict.keys()
