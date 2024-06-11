@@ -106,6 +106,7 @@ class PromptAgent:
                 "top_p": self.top_p,
                 "temperature": self.temperature
             })
+            response = response.strip()
             if not status:
                 if response == "context_length_exceeded":
                     self.history_messages = [self.history_messages[0]] + self.history_messages[3:]
@@ -114,6 +115,11 @@ class PromptAgent:
 
         try:
             action = self.parse_action(response)
+            thought = re.search(r'Thought:(.*?)Action', response, flags=re.DOTALL)
+            if thought:
+                thought = thought.group(1).strip()
+            else:
+                thought = response
         except ValueError as e:
             print("Failed to parse action from response", e)
             action = None
@@ -121,10 +127,9 @@ class PromptAgent:
         logger.info("Observation: %s", obs)
         logger.info("Response: %s", response)
 
-        
-        self._add_message(obs, response)
+        self._add_message(obs, thought, action)
         self.observations.append(obs)
-        self.thoughts.append(response)
+        self.thoughts.append(thought)
         self.actions.append(action)
         if action is not None:
             self.codes.append(action.code)
@@ -134,7 +139,7 @@ class PromptAgent:
         return response, action
         
     
-    def _add_message(self, observations: str, response: str):
+    def _add_message(self, observations: str, thought: str, action: Action):
         self.history_messages.append({
             "role": "user",
             "content": [
@@ -149,7 +154,7 @@ class PromptAgent:
             "content": [
                 {
                     "type": "text",
-                    "text": response
+                    "text": "Thought: {}\n\nAction: {}".format(thought, str(action))
                 }
             ]
         })
@@ -161,7 +166,7 @@ class PromptAgent:
         if output is None or len(output) == 0:
             pass
         action_string = ""
-        patterns = [r'["\']?Action["\']?:? (.*?)Observation', r'["\']?Action["\']?:? (.*?)$', r'^(.*?)Observation']
+        patterns = [r'["\']?Action["\']?:? (.*?)Observation',r'["\']?Action["\']?:? (.*?)Thought', r'["\']?Action["\']?:? (.*?)Action', r'["\']?Action["\']?:? (.*?)$', r'^(.*?)Observation']
 
         for p in patterns:
             match = re.search(p, output, flags=re.DOTALL)
@@ -178,7 +183,7 @@ class PromptAgent:
                 output_action = action
                 break
         if output_action is None:
-            action_string = action_string.replace("\_", "_")
+            action_string = action_string.replace("\_", "_").replace("'''","```")
             for action_cls in self._AVAILABLE_ACTION_CLASSES:
                 action = action_cls.parse_action_from_text(action_string)
                 if action is not None:
@@ -258,8 +263,23 @@ class PromptAgent:
 
 if __name__ == "__main__":
     agent = PromptAgent()
-    response = """Thought: The task is to perform a clustering task on the Bank Customer Segmentation dataset to segment the bank customers into an appropriate number of clusters. The dataset is available in the current workspace, and we need to write the clustering results into a file named cluster.csv. \n\nAction: Python(file_name=\"./clustering.py\"):\n```python\nimport pandas as pd\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.cluster import KMeans\nimport numpy as np\n\n# Load the dataset\ndata = pd.read_csv('bank_customer_segmentation.csv')\n\n# Preprocess the data\nscaler = StandardScaler()\nprocessed_data = scaler.fit_transform(data)\n\n# Perform K-Means clustering\nkmeans = KMeans(n_clusters=3)  # Assuming 3 clusters for now\nkmeans.fit(processed_data)\n\n# Get the cluster labels\nlabels = kmeans.labels_\n\n# Create a new dataframe with the processed features and cluster labels\ncluster_data = pd.DataFrame(processed_data, columns=[f\"Processed_Feature_{i}\" for i in range(processed_data.shape[1])])\ncluster_data['Cluster'] = labels\n\n# Save the clustering results to a CSV file\ncluster_data.to_csv('cluster.csv', index=False)\n```
-"""
+    response = """Thought: I did not provide a valid action in my previous response. I need to provide an action that creates a bar chart using the data from 'top\_artists.csv'.                                                                                                  
+Action: Python(file\_path='create\_bar\_chart.py'):                                                        
+'''python                                                                                                  
+import matplotlib.pyplot as plt                                                                            
+import pandas as pd                                                                                        
+                                                                                                           
+# Read the data                                                                                            
+data = pd.read_csv("top_artists.csv")                                                                      
+                                                                                                           
+# Create a bar chart                                                                                       
+plt.figure(figsize=(6, 6))                                                                                 
+plt.bar(data["Artist"], data["Sales"])                                                                     
+plt.title("Top Ten Artists Based on Sales")
+plt.xlabel("Artist")
+plt.ylabel("Total Sales")
+plt.savefig("sales.jpg")
+'''"""
     import pdb; pdb.set_trace()
     action = agent.parse_action(response)
     print(action)

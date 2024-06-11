@@ -22,7 +22,7 @@ logger = logging.getLogger("api-llms")
 
 def call_llm(payload):
     model = payload["model"]
-    stop = ["Observation:","\n\n\n\n"]
+    stop = ["Observation:","\n\n\n\n","\n \n \n"]
     if model.startswith("gpt"):
         headers = {
             "Content-Type": "application/json",

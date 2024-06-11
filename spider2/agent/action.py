@@ -58,13 +58,13 @@ class Bash(Action):
         return """
 ## Bash Action
 * Signature: Bash(code="shell_command")
-* Description: This action string will execute a valid shell command in the `code` field.
+* Description: This action string will execute a valid shell command in the `code` field. Only non-interactive commands are supported. Commands like "vim" and viewing images directly (e.g., using "display") are not allowed.
 * Example: Bash(code="ls -l")
 """
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'Bash\(code=(.*)\)', text, flags=re.DOTALL)
+        matches = re.findall(r'Bash\(code=(.*?)\)', text, flags=re.DOTALL)
         if matches:
             code = matches[-1]
             return cls(code=remove_quote(code))
@@ -92,9 +92,6 @@ class Python(Action):
         metadata={"help": 'name of file to create'}
     )
 
-    def __repr__(self) -> str:
-        return f"Python:\n```\n{self.code.strip()}\n```"
-
     @classmethod
     def get_action_description(cls) -> str:
         return """
@@ -112,15 +109,17 @@ print("Hello, world!")
 
     @classmethod
     def parse_action_from_text(cls, text: str) -> Optional[Action]:
-        matches = re.findall(r'Python\(file_path=(.*?)\).*?```python[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```', text, flags=re.DOTALL)
-        if matches:
-            filepath = matches[-1][0].strip()
-            code = matches[-1][2].strip()
-            return cls(code=code, filepath=remove_quote(filepath))
+        pattern=[r'Python\(file_path=(.*?)\).*?```python[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```',r'Python\(file_path=(.*?)\).*?```[ \t]*(\w+)?[ \t]*\r?\n(.*)[\r\n \t]*```']
+        for p in pattern:
+            matches = re.findall(p, text, flags=re.DOTALL)
+            if matches:
+                filepath = matches[-1][0].strip()
+                code = matches[-1][2].strip()
+                return cls(code=code, filepath=remove_quote(filepath))
         return None
     
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}(file_path='{self.filepath}'):\n'''python\n{self.code}\n'''"
+        return f'{self.__class__.__name__}(file_path="{self.filepath}"):\n```python\n{self.code}\n```'
 
 @dataclass
 class SQL(Action):
