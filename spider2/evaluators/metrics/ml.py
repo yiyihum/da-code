@@ -84,9 +84,9 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     target_gold = gold_df[target_column_gold] if gold_df is not None else pd.Series(dtype='float64')
     target_result = result_df[target_column_result]
     if metric == 'silhouette':
-        score, output = metric_func(target_result, result_df,task_type, **{'n_jobs': n_jobs})
+        score, output = metric_func(result_df, target_result, task_type, **{'n_jobs': n_jobs})
     else:
-        score, output = metric_func(target_gold, target_result, task_type, **{'n_jobs': n_jobs})
+        score, output = metric_func(target_result, target_gold, task_type, **{'n_jobs': n_jobs})
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
     return output_ml
@@ -95,7 +95,7 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
     output_ml = {'errors': [], 'score': 0.0}
     config = kwargs.get('config', {})
     task_type = config.get('type', '')
-    
+    averaged = kwargs.get('average', '')
     metric = config.get("metric", "")
     output_ml.update({'metric': metric})
     threshold = config.get("threshold", 0.9)
@@ -140,9 +140,7 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
 
     if not metric_func:
         raise ValueError(f"Evaluation Scripts don't have {metric_func}")
-    result_df = result_df.iloc[:, 0]
-    expected_df = expected_df.iloc[:, 0]
-    score, output = metric_func(result_df, expected_df, task_type, **{'average': ''})
+    score, output = metric_func(result_df, expected_df, task_type, **{'average': averaged})
 
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score

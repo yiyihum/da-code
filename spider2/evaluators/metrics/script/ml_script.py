@@ -174,14 +174,22 @@ class PreprocessML:
 class CalculateML:
 
     @staticmethod
-    def calculate_accuracy(gold, result, task_type: Optional[str]=None, **kwargs):
+    def calculate_accuracy(result, gold, task_type: Optional[str]=None, **kwargs):
         output = {'errors': []}
+        
+        if isinstance(gold, pd.DataFrame):
+            gold = gold.iloc[:, 0]
+        if isinstance(result, pd.DataFrame):
+            result = result.iloc[:, 0]
+        
         if not str(gold.dtype) == str(result.dtype):
             output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
  
         label_encoder = LabelEncoder()
-          
-        def convert_to_numeric(input, isgold: bool=False):
+        
+        def is_label_encoder_fitted(le):
+            return hasattr(le, 'classes_')
+        def convert_to_numeric(input):
             if 'float' in str(input.dtype):
                 return list(input.astype(int))
             elif 'int' in str(input.dtype):
@@ -192,7 +200,7 @@ class CalculateML:
                 try:
                     input = list(input)
                     input = list(map(lambda x: x.lower().strip(), input))
-                    if isgold:
+                    if not is_label_encoder_fitted(label_encoder):
                         input = label_encoder.fit_transform(input)
                     else:
                         input =  label_encoder.transform(input)
@@ -204,8 +212,8 @@ class CalculateML:
         if str(gold.dtype) != str(result.dtype):
             output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
 
-        gold = convert_to_numeric(gold, True)
-        result = convert_to_numeric(result, False)
+        gold = convert_to_numeric(gold)
+        result = convert_to_numeric(result)
         
         if result.ndim > 2:
             output['errors'].append(f'Expected 1D or 2D array, but got {result.ndim}')
@@ -231,7 +239,7 @@ class CalculateML:
         return (score, output)
 
     @staticmethod
-    def calculate_r2(gold, result, task_type: Optional[str]=None, **kwargs):
+    def calculate_r2(result,gold, task_type: Optional[str]=None, **kwargs):
         output = {'errors':[]}
         try:
             result_np = result.to_numpy()
@@ -252,11 +260,18 @@ class CalculateML:
         return (max(score, 0.0), output)
     
     @staticmethod
-    def calculate_f1(gold, result, task_type: Optional[str]=None, **kwargs):
+    def calculate_f1(result, gold, task_type: Optional[str]=None, **kwargs):
         averaged = kwargs.pop('average', '')
         output = {'errors': []}
+        if isinstance(gold, pd.DataFrame):
+            gold = gold.iloc[:, 0]
+        if isinstance(result, pd.DataFrame):
+            result = result.iloc[:, 0]
+            
         label_encoder = LabelEncoder()
-        def convert_to_numeric(input, isgold: bool=False):
+        def is_label_encoder_fitted(le):
+            return hasattr(le, 'classes_')
+        def convert_to_numeric(input):
             if 'float' in str(input.dtype):
                 return list(input.astype(int))
             elif 'int' in str(input.dtype):
@@ -267,7 +282,7 @@ class CalculateML:
                 try:
                     input = list(input)
                     input = list(map(lambda x: x.lower().strip(), input))
-                    if isgold:
+                    if not is_label_encoder_fitted(label_encoder):
                         input = label_encoder.fit_transform(input)
                     else:
                         input =  label_encoder.transform(input)
@@ -279,8 +294,8 @@ class CalculateML:
         if str(gold.dtype) != str(result.dtype):
             output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
 
-        gold = convert_to_numeric(gold, True)
-        result = convert_to_numeric(result, False)
+        gold = convert_to_numeric(gold)
+        result = convert_to_numeric(result)
         
         try:
             score = f1_score(y_true=gold, y_pred=result, average='weighted') if not averaged \
@@ -292,7 +307,7 @@ class CalculateML:
         return (score, output)
     
     @staticmethod
-    def calculate_silhouette(target_labels,result, task_type: Optional[str]=None,  **kwargs):
+    def calculate_silhouette(result, target_labels,task_type: Optional[str]=None,  **kwargs):
         n_jobs = kwargs.get('n_jobs', os.cpu_count())
         target_labels = target_labels if isinstance(target_labels, np.ndarray) \
             else np.array(target_labels)
@@ -309,7 +324,7 @@ class CalculateML:
                     return (0.0, output)
         
         if len(np.unique(target_labels)) == 1:
-            output['errors'].append(f'"target labels only contain 1 clusters, which must needs 2 or more clusters')
+            output['errors'].append(f'target labels only contain 1 clusters, which must needs 2 or more clusters')
             return (0.0, output)
         
         def parallel_silhouette_samples(X: Type[np.ndarray], labels, metric: str='euclidean', n_jobs: int=4):
@@ -396,7 +411,9 @@ class CalculateML:
             output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
             return (0.0, output)
         gold_np = gold.to_numpy()
-        result_np = result_np / result_np.sum(axis=1, keepdims=True)
+        
+        result_np = result_np / result_np.sum(axis=0, keepdims=True) if result_np.ndim == 1 \
+            else result_np / result_np.sum(axis=1, keepdims=True)
 
         result_np = np.clip(result_np, lower_bound, upper_bound)
 
