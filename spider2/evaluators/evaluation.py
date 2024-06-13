@@ -94,7 +94,7 @@ class Evaluator:
             # 使用findall找到所有匹配的文件名
             filenames = re.findall(pattern, result_file)
             if not filenames:
-                print(f"File not found : {result_file}; dir: {output_id_dir}")
+                # print(f"File not found : {result_file}; dir: {output_id_dir}")
                 return []
             # findall返回的是元组列表，我们只需要文件名部分
             filenames = [filename[0] for filename in filenames]
