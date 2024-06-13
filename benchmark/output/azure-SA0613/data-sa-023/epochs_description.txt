@@ -1,0 +1,29 @@
+# Investment Portfolio Analysis: Time Periods and Covariance Matrices
+
+## Epoch Definitions:
+
+1. **Before (1-1-2005 to 31-12-2006)**:
+   This period covers the two years leading up to the global financial crisis. It is marked by significant economic growth and expansion in the financial markets. 
+   *Note: Analysts observed increased market volatility during this time.*
+
+2. **During (1-1-2007 to 31-12-2008)**:
+   This epoch spans the height of the global financial crisis. The markets experienced extreme volatility, and many financial institutions faced unprecedented challenges.
+   *Note: This period saw a dramatic increase in risk and correlation among assets.*
+
+3. **After (1-1-2009 to 31-12-2010)**:
+   This period covers the initial recovery phase following the financial crisis. Markets began to stabilize, and economic policies aimed at recovery were implemented.
+   *Note: The recovery phase was characterized by gradual improvement in market conditions.*
+
+## Additional Observations:
+
+- **Market Trends**: Throughout these epochs, various market trends and external factors influenced asset performance and correlation.
+- **Economic Policies**: Different economic policies enacted during and after the crisis had significant impacts on market behavior.
+- **Global Events**: Events such as political changes, natural disasters, and technological advancements also played roles in shaping the market dynamics.
+
+*For a detailed analysis, please refer to the individual covariance matrices saved as CSV files for each epoch.*
+
+## Additional Notes:
+- Data integrity checks were performed to ensure accuracy.
+- Unexpected outliers were identified and addressed accordingly.
+- Comprehensive risk assessments were conducted for each period.
+- Further analysis recommended for portfolio optimization strategies.
