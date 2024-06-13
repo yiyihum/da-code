@@ -146,19 +146,33 @@ def call_llm(payload):
             "top_p": top_p
         }
 
-        response = requests.post(
-            "https://api.anthropic.com/v1/messages",
-            headers=headers,
-            json=payload
-        )
+        for i in range(5):
+            try:
+                response = requests.post(
+                    "https://api.anthropic.com/v1/messages",
+                    headers=headers,
+                    json=payload
+                )
+                return True, response.json()['content'][0]['text']
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                time.sleep(10 * (2 ** (i + 1)))
+                error_info = e.response.json()
+                code_value = error_info['error']['code']
+                response = error_info['error']['message']
+                if code_value == "content_filter":
+                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                logger.error("Retrying ...")
+        return False, code_value
 
-        if response.status_code != 200:
+        # if response.status_code != 200:
 
-            logger.error("Failed to call LLM: " + response.text)
-            time.sleep(5)
-            return ""
-        else:
-            return response.json()['content'][0]['text']
+        #     logger.error("Failed to call LLM: " + response.text)
+        #     time.sleep(5)
+        #     return ""
+        # else:
+        #     return response.json()['content'][0]['text']
 
     elif model.startswith("mixtral"):
         messages = payload["messages"]
@@ -204,8 +218,7 @@ def call_llm(payload):
                 if code_value == "content_filter":
                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
                         payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
-                else:
-                    logger.error("Retrying ...")
+                logger.error("Retrying ...")
                 if code_value == "rate_limit_exceeded":
                     code_value = "context_length_exceeded" 
 
@@ -256,8 +269,7 @@ def call_llm(payload):
                 if code_value == "content_filter":
                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
                         payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
-                else:
-                    logger.error("Retrying ...")
+                logger.error("Retrying ...")
                 if code_value == "rate_limit_exceeded":
                     code_value = "context_length_exceeded" 
 
@@ -282,11 +294,8 @@ def call_llm(payload):
 
             qwen_messages.append(qwen_message)
 
-        flag = 0
-        while True:
+        for i in range(5):
             try:
-                if flag > 20:
-                    break
                 logger.info("Generating content with model: %s", model)
 
                 if model in ["qwen-vl-plus", "qwen-vl-max"]:
@@ -314,39 +323,50 @@ def call_llm(payload):
 
                 else:
                     raise ValueError("Invalid model: " + model)
-
-                if response.status_code == HTTPStatus.OK:
-                    break
+                
+                if model in ["qwen-vl-plus", "qwen-vl-max"]:
+                    return True, response['output']['choices'][0]['message']['content'][0]['text']
                 else:
-                    logger.error('Request id: %s, Status code: %s, error code: %s, error message: %s' % (
-                        response.request_id, response.status_code,
-                        response.code, response.message
-                    ))
-                    raise Exception("Failed to call LLM: " + response.message)
-            except:
-                if flag == 0:
-                    qwen_messages = [qwen_messages[0]] + qwen_messages[-1:]
-                else:
-                    for i in range(len(qwen_messages[-1]["content"])):
-                        if "text" in qwen_messages[-1]["content"][i]:
-                            qwen_messages[-1]["content"][i]["text"] = ' '.join(
-                                qwen_messages[-1]["content"][i]["text"].split()[:-500])
-                flag = flag + 1
+                    return True, response['output']['choices'][0]['message']['content']
 
-        try:
-            if model in ["qwen-vl-plus", "qwen-vl-max"]:
-                return True, response['output']['choices'][0]['message']['content'][0]['text']
-            else:
-                return True, response['output']['choices'][0]['message']['content']
-
-        except Exception as e:
-            logger.error("Failed to call LLM: " + str(e))
-            time.sleep(10 * (2 ** (i + 1)))
-            error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
-            code_value = error_info['error']['code']
-            response = error_info['error']['message']
-
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                time.sleep(10 * (2 ** (i + 1)))
+                error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                code_value = error_info['error']['code']
+                if code_value == "content_filter":
+                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                logger.error("Retrying ...")
         return False, code_value
+
+        #         if response.status_code == HTTPStatus.OK:
+        #             break
+        #         else:
+        #             logger.error('Request id: %s, Status code: %s, error code: %s, error message: %s' % (
+        #                 response.request_id, response.status_code,
+        #                 response.code, response.message
+        #             ))
+        #             raise Exception("Failed to call LLM: " + response.message)
+        #     except:
+        #         if flag == 0:
+        #             qwen_messages = [qwen_messages[0]] + qwen_messages[-1:]
+        #         else:
+        #             for i in range(len(qwen_messages[-1]["content"])):
+        #                 if "text" in qwen_messages[-1]["content"][i]:
+        #                     qwen_messages[-1]["content"][i]["text"] = ' '.join(
+        #                         qwen_messages[-1]["content"][i]["text"].split()[:-500])
+        #         flag = flag + 1
+
+        # try:
+            
+        # except Exception as e:
+        #     logger.error("Failed to call LLM: " + str(e))
+        #     time.sleep(10 * (2 ** (i + 1)))
+        #     error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+        #     code_value = error_info['error']['code']
+        #     response = error_info['error']['message']
+
 
     elif model.startswith("THUDM"):
         # THUDM/cogagent-chat-hf
@@ -478,6 +498,7 @@ def call_llm(payload):
             logger.error(f"count_tokens: {gemini_model.count_tokens(gemini_messages)}")
             logger.error(f"generation_config: {max_tokens}, {top_p}, {temperature}")
             return ""
+        
     elif model.startswith("qwen"):
         messages = payload["messages"]
         max_tokens = payload["max_tokens"]
