@@ -1,0 +1,22 @@
+{
+    "id": "data-sa-046",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["result.csv"]
+        }
+    ],
+    "options": [{
+        "condition_cols": [1,2],
+        "ignore_order": true
+    }]
+}
+  

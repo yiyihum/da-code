@@ -1,0 +1,19 @@
+{
+    "id": "data-sa-020",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["optimal_cylinder_dimensions.csv"]
+        }
+    ],
+    "options": [{}]
+}
+  

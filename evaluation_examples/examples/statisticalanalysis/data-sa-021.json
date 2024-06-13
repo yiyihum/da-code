@@ -1,0 +1,21 @@
+{
+    "id": "data-sa-021",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["inverting_amplifier_output.csv"]
+        }
+    ],
+    "options": [{
+        "condition_cols": [1,2]
+    }]
+}
+  

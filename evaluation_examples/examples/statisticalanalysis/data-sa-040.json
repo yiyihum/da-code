@@ -1,0 +1,19 @@
+{
+    "id": "data-sa-040",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["z_test_results.csv"]
+        }
+    ],
+    "options": [{}]
+}
+  

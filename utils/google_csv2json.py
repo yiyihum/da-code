@@ -4,7 +4,7 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/configs/DM.csv"
+file_path = "./benchmark/configs/SA.csv"
 data = load_csv(file_path)
 
 # 保存为json
@@ -26,11 +26,10 @@ data = load_csv(file_path)
 # }
 
 data_json = []
+print(data.columns)
 for index, row in data.iterrows():
     id = str(row["id."])
-    if id == "nan":
-        break
-    if not row["Refined Instruction"] or not row["Context details"]:
+    if 'data-sa' not in id:
         continue
     data_json.append({
         "id": id,
@@ -47,12 +46,12 @@ for index, row in data.iterrows():
                 }
             }
         ],
-        "post_process": ["plot_process"]
+        "post_process": []
     })
 
 # 保存为jsonl
 import json, jsonlines
 data_json = sorted(data_json, key=lambda x: x["id"])
-with jsonlines.open('./benchmark/configs/DM.jsonl', mode='w') as writer:
+with jsonlines.open('./benchmark/configs/SA.jsonl', mode='w') as writer:
     for item in data_json:
         writer.write(item)

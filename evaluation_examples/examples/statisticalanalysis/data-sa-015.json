@@ -1,0 +1,31 @@
+{
+    "id": "data-sa-015",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["rpolynomial_degree_10.csv"]
+        },
+        {   
+            "file": ["rpolynomial_degree_15.csv"]
+        },
+        {   
+            "file": ["rpolynomial_degree_20.csv"]
+        },
+        {   
+            "file": ["rpolynomial_degree_25.csv"]
+        },
+        {   
+            "file": ["rpolynomial_degree_30.csv"]
+        }
+    ],
+    "options": [{}]
+}
+  

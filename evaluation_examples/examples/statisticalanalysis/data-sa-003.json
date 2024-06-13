@@ -1,0 +1,19 @@
+{
+    "id": "data-sa-003",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["kruskal_wallis_results.csv"]
+        }
+    ],
+    "options": [{}]
+}
+  

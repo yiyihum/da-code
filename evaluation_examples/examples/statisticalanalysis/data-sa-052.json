@@ -1,0 +1,22 @@
+{
+    "id": "data-sa-052",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["bonferroni_corrected_p_values.csv"]
+        }
+    ],
+    "options": [{
+        "condition_cols": [1],
+        "ignore_order": true
+    }]
+}
+  

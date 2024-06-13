@@ -1,0 +1,24 @@
+{
+    "id": "data-sa-024",
+    "config":{
+        "task": "sa",
+        "type": "csv",
+        "metric": "",
+        "threshold": 0.0
+    },
+    "func":[
+        "compare_csv"
+    ],
+    "result":[
+        {   
+            "file": ["efficient_covariance_matrix.csv"]
+        },
+        {   
+            "file": ["sample_covariance_matrix.csv"]
+        }
+    ],
+    "options": [{
+        "condition_cols": [1,2,3,4]
+    }]
+}
+  
