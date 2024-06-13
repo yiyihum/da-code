@@ -1,26 +1,33 @@
 import pandas as pd
-import duckdb
 
-df_books=pd.read_csv("../Books.csv")
-df_ratings=pd.read_csv("../Ratings.csv")
-df_users=pd.read_csv("../Users.csv")
+# Load the Users.csv file
+users_df = pd.read_csv('../Users.csv')
+users_df["Age"] = users_df["Age"].fillna(30)
+# Define the age groups based on age.txt
+age_groups = {
+    'child': (0, 13),
+    'teenager': (14, 19),
+    'young': (20, 25),
+    'adult': (26, 65),
+    'old': (66, 300)
+}
 
-# 重命名列
-df_ratings=df_ratings.rename(columns={"User-ID": "ID", "Book-Rating":"Rating"})
-df_users=df_users.rename(columns={"User-ID": "ID"})
-df_books=df_books.rename(columns={"Book-Title":"Title","Book-Author":"Author", "Year-Of-Publication":"Publication"})
+# Initialize a dictionary to hold the count for each age group
+age_group_counts = {age_group: 0 for age_group in age_groups}
 
-#rating in books 
-df1=duckdb.query("SELECT a.ID,a.Rating,b.* FROM df_ratings as a left join df_books as b on a.ISBN=b.ISBN ").df()
-#users in df1
-df=duckdb.query("SELECT a.*,b.Location, b.Age FROM df1 as a left join df_users as b on a.ID=b.ID ").df()
+# Function to categorize age into age groups
+def categorize_age(age):
+    for group, (start, end) in age_groups.items():
+        if start <= age <= end:
+            return group
+    return None
 
-df.isna().sum()
+# Count the number of users in each age group
+for age in users_df['Age'].dropna():
+    group = categorize_age(age)
+    if group:
+        age_group_counts[group] += 1
 
-df=df.drop(['Image-URL-S', 'Image-URL-M','Image-URL-L'], axis=1)
-df['Age']=df.Age.fillna(30)
-df['Age'] = pd.cut(x=df['Age'], bins=[0, 13, 19, 25, 65, 300], labels=['child', 'teenager', 'young','adult', 'old'])
-
-query_result = duckdb.query("SELECT Age,count(*) AS total FROM df group by age ").df()
-
-query_result.to_csv('./result.csv')
+# Save the results to a CSV file
+result_df = pd.DataFrame(list(age_group_counts.items()), columns=['Age', 'total'])
+result_df.to_csv('./result.csv', index=False)
