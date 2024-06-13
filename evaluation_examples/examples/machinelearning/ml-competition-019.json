@@ -1,18 +1,21 @@
 {
     "id": "ml-competition-019",
-    "config":{
+    "config": {
         "task": "machinelearning competition",
         "type": "multi classification",
         "metric": "accuracy",
-        "threshold": 0.90417
+        "upper_bound": 0.8204,
+        "lower_bound": 0.79871
     },
-    "func":[
+    "func": [
         "compare_competition_ml"
     ],
-    "result":[
+    "result": [
         {
             "file": "submission.csv"
         }
     ],
-    "options": [{}]
+    "options": [
+        {}
+    ]
 }

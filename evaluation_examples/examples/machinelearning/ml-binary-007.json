@@ -1,0 +1,23 @@
+{
+    "id": "ml-binary-007",
+    "config": {
+        "task": "machinelearning",
+        "type": "binary classification",
+        "metric": "f1",
+        "upper_bound": 0.889189,
+        "lower_bound": 0.5
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "result.csv"
+        }
+    ],
+    "options": [
+        {
+            "target_column": "result"
+        }
+    ]
+}

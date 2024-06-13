@@ -1,0 +1,23 @@
+{
+    "id": "ml-binary-004",
+    "config": {
+        "task": "machinelearning",
+        "type": "binary classification",
+        "metric": "accuracy",
+        "upper_bound": 0.70191,
+        "lower_bound": 0.5
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "submission.csv"
+        }
+    ],
+    "options": [
+        {
+            "target_column": "Transported"
+        }
+    ]
+}

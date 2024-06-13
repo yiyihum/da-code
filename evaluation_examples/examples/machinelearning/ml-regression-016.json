@@ -1,0 +1,21 @@
+{
+    "id": "ml-regression-016",
+    "config": {
+        "task": "machinelearning",
+        "type": "regression",
+        "metric": "r2",
+        "upper_bound": 0.9,
+        "lower_bound": -1.0
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "fare.csv"
+        }
+    ],
+    "options": [
+        {}
+    ]
+}
