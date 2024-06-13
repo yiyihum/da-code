@@ -1,6 +1,6 @@
 {
     "num_results": 63,
-    "average_score": 0.14285714285714285,
+    "average_score": 0.2222222222222222,
     "results": [
         {
             "id": "dm-csv-001",
@@ -54,7 +54,7 @@
         },
         {
             "id": "dm-csv-007",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": []
         },
         {
@@ -119,7 +119,7 @@
         },
         {
             "id": "dm-csv-019",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": []
         },
         {
@@ -144,7 +144,7 @@
         },
         {
             "id": "dm-csv-024",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": []
         },
         {
@@ -219,7 +219,7 @@
         },
         {
             "id": "dm-csv-035",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": []
         },
         {
@@ -264,7 +264,7 @@
         },
         {
             "id": "dm-csv-044",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "info": []
         },
         {
