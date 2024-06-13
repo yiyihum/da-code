@@ -1,0 +1,13 @@
+Comparison,Bonferroni_Corrected_P_Value
+North: Natural_Gas vs Biofuel,0.0029784230305816527
+North: Natural_Gas vs Coal,1.6040584843091543e-05
+North: Biofuel vs Coal,0.001513810887203986
+South: Natural_Gas vs Biofuel,0.0195958890488578
+South: Natural_Gas vs Coal,0.01042064116126544
+South: Biofuel vs Coal,0.3715062934859533
+East: Natural_Gas vs Biofuel,0.0011799862710214354
+East: Natural_Gas vs Coal,6.312454425277318e-05
+East: Biofuel vs Coal,0.0006412645465450272
+West: Natural_Gas vs Biofuel,0.0269611995953309
+West: Natural_Gas vs Coal,0.004308840192792353
+West: Biofuel vs Coal,1.0
