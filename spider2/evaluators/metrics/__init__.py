@@ -6,7 +6,8 @@ from .general import (
 from .table import (
     compare_csv,
     compare_csv_files,
-    compare_csv_details
+    compare_csv_details,
+    compare_sqlite
 )
 
 from .text import (
