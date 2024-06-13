@@ -499,47 +499,47 @@ def call_llm(payload):
             logger.error(f"generation_config: {max_tokens}, {top_p}, {temperature}")
             return ""
         
-    elif model.startswith("qwen"):
-        messages = payload["messages"]
-        max_tokens = payload["max_tokens"]
-        top_p = payload["top_p"]
-        if payload["temperature"]:
-            logger.warning("Qwen model does not support temperature parameter, it will be ignored.")
+    # elif model.startswith("qwen"):
+    #     messages = payload["messages"]
+    #     max_tokens = payload["max_tokens"]
+    #     top_p = payload["top_p"]
+    #     if payload["temperature"]:
+    #         logger.warning("Qwen model does not support temperature parameter, it will be ignored.")
 
-        qwen_messages = []
+    #     qwen_messages = []
 
-        for i, message in enumerate(messages):
-            qwen_message = {
-                "role": message["role"],
-                "content": []
-            }
-            assert len(message["content"]) in [1, 2], "One text, or one text with one image"
-            for part in message["content"]:
-                qwen_message['content'].append({"image": part['image_url']['url']}) if part[
-                                                                                            'type'] == "image_url" else None
-                qwen_message['content'].append({"text": part['text']}) if part['type'] == "text" else None
+    #     for i, message in enumerate(messages):
+    #         qwen_message = {
+    #             "role": message["role"],
+    #             "content": []
+    #         }
+    #         assert len(message["content"]) in [1, 2], "One text, or one text with one image"
+    #         for part in message["content"]:
+    #             qwen_message['content'].append({"image": part['image_url']['url']}) if part[
+    #                                                                                         'type'] == "image_url" else None
+    #             qwen_message['content'].append({"text": part['text']}) if part['type'] == "text" else None
 
-            qwen_messages.append(qwen_message)
+    #         qwen_messages.append(qwen_message)
 
-        response = dashscope.MultiModalConversation.call(
-            model='qwen-vl-plus',
-            messages=messages,
-            max_length=max_tokens,
-            top_p=top_p,
-        )
-        # The response status_code is HTTPStatus.OK indicate success,
-        # otherwise indicate request is failed, you can get error code
-        # and message from code and message.
-        if response.status_code == HTTPStatus.OK:
-            try:
-                return response.json()['output']['choices'][0]['message']['content']
-            except Exception:
-                return ""
-        else:
-            print(response.code)  # The error code.
-            print(response.message)  # The error message.
-            return ""
+    #     response = dashscope.MultiModalConversation.call(
+    #         model='qwen-vl-plus',
+    #         messages=messages,
+    #         max_length=max_tokens,
+    #         top_p=top_p,
+    #     )
+    #     # The response status_code is HTTPStatus.OK indicate success,
+    #     # otherwise indicate request is failed, you can get error code
+    #     # and message from code and message.
+    #     if response.status_code == HTTPStatus.OK:
+    #         try:
+    #             return response.json()['output']['choices'][0]['message']['content']
+    #         except Exception:
+    #             return ""
+    #     else:
+    #         print(response.code)  # The error code.
+    #         print(response.message)  # The error message.
+    #         return ""
 
-    else:
-        raise ValueError("Invalid model: " + model)
+    # else:
+    #     raise ValueError("Invalid model: " + model)
     
