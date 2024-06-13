@@ -24,7 +24,7 @@ from agent.models import call_llm
 # create file & edit 加一个检查 比如符合csv的格式 ✅
 
 MAX_OBSERVATION_LENGTH = 2000
-TIME_OUT_ACTION = 300
+TIME_OUT_ACTION = 600
 
 
 logger = logging.getLogger("spider2")
@@ -49,6 +49,7 @@ class PromptAgent:
         self.max_steps = max_steps
         
         self.thoughts = []
+        self.responses = []
         self.actions = []
         self.observations = []
         self.system_message = ""
@@ -62,6 +63,7 @@ class PromptAgent:
     def set_env_and_task(self, env: Spider2Env):
         self.env = env
         self.thoughts = []
+        self.responses = []
         self.actions = []
         self.observations = []
         self.codes = []
@@ -131,6 +133,7 @@ class PromptAgent:
         self._add_message(obs, thought, action)
         self.observations.append(obs)
         self.thoughts.append(thought)
+        self.responses.append(response)
         self.actions.append(action)
         if action is not None:
             self.codes.append(action.code)
@@ -239,7 +242,8 @@ class PromptAgent:
                 "observation": self.observations[i],
                 "thought": self.thoughts[i],
                 "action": str(self.actions[i]),
-                "code": self.codes[i]
+                "code": self.codes[i],
+                "response": self.responses[i]
             })
         trajectory_log = {
             "Task": self.instruction,
@@ -264,23 +268,7 @@ class PromptAgent:
 
 if __name__ == "__main__":
     agent = PromptAgent()
-    response = """Thought: I did not provide a valid action in my previous response. I need to provide an action that creates a bar chart using the data from 'top\_artists.csv'.                                                                                                  
-Action: Python(file\_path='create\_bar\_chart.py'):                                                        
-'''python                                                                                                  
-import matplotlib.pyplot as plt                                                                            
-import pandas as pd                                                                                        
-                                                                                                           
-# Read the data                                                                                            
-data = pd.read_csv("top_artists.csv")                                                                      
-                                                                                                           
-# Create a bar chart                                                                                       
-plt.figure(figsize=(6, 6))                                                                                 
-plt.bar(data["Artist"], data["Sales"])                                                                     
-plt.title("Top Ten Artists Based on Sales")
-plt.xlabel("Artist")
-plt.ylabel("Total Sales")
-plt.savefig("sales.jpg")
-'''"""
+    response = """Thought: The `analysis.py` file has been partially completed, and it has imported the necessary packages for data analysis and visualization. The data from `train.csv` has been loaded into the `data_raw` variable. Now, I need to implement the code to plot a bar chart showing the number of male and female survivors in each passenger class.\n\nAction: Python(file_path=\"./analysis.py\"):\n```\n# Group data by sex and class, and count the number of survivors\nsurvivors = data_raw.groupby(['Sex', 'Pclass', 'Survived']).size().reset_index(name='count')\n\n# Pivot the data to create a table with sex as columns and class as index\npivoted = survivors.pivot(index='Pclass', columns='Sex', values='count')\n\n# Plot the bar chart\nfig, ax = plt.subplots(figsize=(14, 12))\npivoted.plot(kind='bar', ax=ax, rot=0, color=['#e9d4d0', '#a16f8d', '#2d223a'])\nax.set_title('Sex vs Pclass Survival Comparison')\nax.set_xlabel('Sex')\nax.set_ylabel('Survived')\nplt.savefig('result.jpg')\n```"""
     import pdb; pdb.set_trace()
     action = agent.parse_action(response)
     print(action)
