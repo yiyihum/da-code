@@ -76,7 +76,6 @@ def call_llm(payload):
             api_version = "2024-02-15-preview",
             azure_endpoint = "https://gpt4caxu.openai.azure.com/"
         )
-        add_filter_content = False
         for i in range(5):
             try:
                 response = client.chat.completions.create(model='gpt4turbo',messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'], stop=stop)
@@ -88,13 +87,13 @@ def call_llm(payload):
                 error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
                 code_value = error_info['error']['code']
                 response = error_info['error']['message']
-                if code_value == "content_filter" and not add_filter_content:
-                    add_filter_content = True
-                    payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                if code_value == "content_filter":
+                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
                 else:
                     logger.error("Retrying ...")
                     time.sleep(10 * (2 ** (i + 1)))
-        return False, response
+        return False, code_value
         
 
     elif model.startswith("claude"):
@@ -184,11 +183,8 @@ def call_llm(payload):
             api_key=os.environ.get("GROQ_API_KEY"),
         )
 
-        flag = 0
-        while True:
+        for i in range(5):
             try:
-                if flag > 20:
-                    break
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
                     messages=mistral_messages,
@@ -198,19 +194,22 @@ def call_llm(payload):
                     temperature=temperature,
                     stop = stop
                 )
-                break
-            except:
-                if flag == 0:
-                    mistral_messages = [mistral_messages[0]] + mistral_messages[-1:]
+                return True, response.choices[0].message.content
+                
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                time.sleep(10 * (2 ** (i + 1)))
+                error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                code_value = error_info['error']['code']
+                if code_value == "content_filter":
+                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
                 else:
-                    mistral_messages[-1]["content"] = ' '.join(mistral_messages[-1]["content"].split()[:-500])
-                flag = flag + 1
+                    logger.error("Retrying ...")
+                if code_value == "rate_limit_exceeded":
+                    code_value = "context_length_exceeded" 
 
-        try:
-            return True, response.choices[0].message.content
-        except Exception as e:
-            print("Failed to call LLM: " + str(e))
-            return False, "Failed to call LLM: " + str(e)
+        return False, code_value
         
     elif model == "llama3-70b":
         messages = payload["messages"]
@@ -236,11 +235,8 @@ def call_llm(payload):
             api_key=os.environ.get("GROQ_API_KEY"),
         )
 
-        flag = 0
-        while True:
+        for i in range(5):
             try:
-                if flag > 20:
-                    break
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
                     messages=groq_messages,
@@ -250,19 +246,22 @@ def call_llm(payload):
                     temperature=temperature,
                     stop = stop
                 )
-                break
-            except:
-                if flag == 0:
-                    groq_messages = [groq_messages[0]] + groq_messages[-1:]
+                return True, response.choices[0].message.content
+                
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                time.sleep(10 * (2 ** (i + 1)))
+                error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                code_value = error_info['error']['code']
+                if code_value == "content_filter":
+                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
                 else:
-                    groq_messages[-1]["content"] = ' '.join(groq_messages[-1]["content"].split()[:-500])
-                flag = flag + 1
+                    logger.error("Retrying ...")
+                if code_value == "rate_limit_exceeded":
+                    code_value = "context_length_exceeded" 
 
-        try:
-            return True, response.choices[0].message.content
-        except Exception as e:
-            print("Failed to call LLM: " + str(e))
-            return False, "Failed to call LLM: " + str(e)
+        return False, code_value
         
     elif model.startswith("qwen"):
         messages = payload["messages"]
@@ -341,8 +340,13 @@ def call_llm(payload):
                 return True, response['output']['choices'][0]['message']['content']
 
         except Exception as e:
-            print("Failed to call LLM: " + str(e))
-            return False, "Failed to call LLM: " + str(e)
+            logger.error("Failed to call LLM: " + str(e))
+            time.sleep(10 * (2 ** (i + 1)))
+            error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+            code_value = error_info['error']['code']
+            response = error_info['error']['message']
+
+        return False, code_value
 
     elif model.startswith("THUDM"):
         # THUDM/cogagent-chat-hf

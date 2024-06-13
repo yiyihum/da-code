@@ -112,6 +112,7 @@ class PromptAgent:
                     self.history_messages = [self.history_messages[0]] + self.history_messages[3:]
                 else:
                     raise Exception(f"Failed to call LLM, response: {response}")
+            
 
         try:
             action = self.parse_action(response)
