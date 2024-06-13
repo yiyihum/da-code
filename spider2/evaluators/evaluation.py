@@ -9,6 +9,7 @@ sys.path.append(str(here.parent))
 import metrics
 from tqdm import tqdm
 from spider2.envs.utils import timeout
+import re
 
 Metric = Callable[[Any, Any], float]
 
@@ -55,13 +56,15 @@ class Evaluator:
             if isinstance(eval_config["func"], list)\
             else [getattr(metrics, eval_config["func"])]
         metric_conj: str = eval_config.get("conj", "avg")  # take conjunction of multiple metrics
-        result = eval_config['result'] if isinstance(eval_config['result'], list) \
+        expected = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
-        expected = eval_config.get('expected', [])
-        if expected == []:
-            expected = result    
+        # expected = eval_config.get('expected', [])
+        # if expected == []:
+        # expected = result    
         
-        output_results = self.get_result_file(result, dir=output_id_dir, isgold=False)
+        output_results = self._get_result_file_from_json(output_id_dir, is_plot=("dabench/plot.json" in expected))
+        if not output_results:
+            output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
         metric_options: Union[List[Dict[str, Any]], Dict[str, Any]] = \
             [opt if opt else {} for opt in eval_config["options"]] \
@@ -77,6 +80,28 @@ class Evaluator:
                 metric_options)))
         
         return id, config, metric, metric_conj, metric_options, output_results, gold_results
+
+    def _get_result_file_from_json(self, output_id_dir, is_plot=False):
+        result_file = os.path.join(output_id_dir, 'dabench', 'result.json')
+        if not os.path.exists(result_file):
+            print(f"File {result_file} not found")
+            return []
+        with open(result_file, 'r') as f:
+            result = json.load(f)
+            result_file = result['result']
+                # 正则表达式匹配文件路径和文件名，路径和文件名可以包含字母、数字、下划线、破折号和点
+            pattern = r'\b(?:[\w/\-_]+/)?([\w\-_]+(\.\w+)+)\b'
+            # 使用findall找到所有匹配的文件名
+            filenames = re.findall(pattern, result_file)
+            if not filenames:
+                print(f"File not found : {result_file}; dir: {output_id_dir}")
+                return []
+            # findall返回的是元组列表，我们只需要文件名部分
+            filenames = [filename[0] for filename in filenames]
+            result_file = [os.path.join(output_id_dir, file) for file in filenames]
+        if is_plot:
+            result_file += [os.path.join(output_id_dir,"dabench/plot.json"), os.path.join(output_id_dir,"dabench/result.npy")]
+        return result_file
     
     def evaluate(self, env_config: Dict|str):
         """
