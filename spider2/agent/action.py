@@ -158,7 +158,6 @@ class SQL(Action):
 * Examples:
   - Example1: SQL(file_path="data.sqlite", command="SELECT name FROM sqlite_master WHERE type='table'", output="directly")
   - Example2: SQL(file_path="data.db", command="SELECT * FROM users", output="users_output.csv")
-
 """
 
     @classmethod
@@ -202,7 +201,6 @@ class Terminate(Action):
   - Example1: Terminate(output="New York")
   - Example2: Terminate(output="result.csv")
   - Example3: Terminate(output="FAIL")
-
 """
 
     def __repr__(self) -> str:
