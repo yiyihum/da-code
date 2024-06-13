@@ -57,8 +57,12 @@ class Evaluator:
         metric_conj: str = eval_config.get("conj", "avg")  # take conjunction of multiple metrics
         result = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
+        expected = eval_config.get('expected', [])
+        if expected == []:
+            expected = result    
+        
         output_results = self.get_result_file(result, dir=output_id_dir, isgold=False)
-        gold_results = self.get_result_file(result, dir=gold_id_dir, isgold=True)
+        gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
         metric_options: Union[List[Dict[str, Any]], Dict[str, Any]] = \
             [opt if opt else {} for opt in eval_config["options"]] \
             if isinstance(eval_config.get("options", {}), list) \
@@ -67,7 +71,7 @@ class Evaluator:
             else [{}] * len(metric) \
             if isinstance(metric, list) \
             else {}
-
+  
         assert (not isinstance(eval_config["func"], list)
             or (len(metric) == len(output_results) == len(gold_results) == len(
                 metric_options)))
@@ -142,5 +146,4 @@ class Evaluator:
                 eval_results.append({"id": id, "total_score": float(all(score!= 0 for score in scores)),'info': info})
             elif metric_conj == 'or':
                 eval_results.append({"id": id, "total_score": float(any(score!= 0 for score in scores)),'info': info})
-
         return eval_results
