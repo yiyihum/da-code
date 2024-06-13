@@ -133,9 +133,10 @@ def call_llm(payload):
         logger.debug("CLAUDE MESSAGE: %s", repr(claude_messages))
 
         headers = {
-            "x-api-key": os.environ["ANTHROPIC_API_KEY"],
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json"
+            'Accept': 'application/json',
+            'Authorization': f'Bearer {os.environ["ANTHROPIC_API_KEY"]}',
+            'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+            'Content-Type': 'application/json'
         }
 
         payload = {
@@ -149,11 +150,11 @@ def call_llm(payload):
         for i in range(5):
             try:
                 response = requests.post(
-                    "https://api.anthropic.com/v1/messages",
+                    "https://api.claude-Plus.top/v1/chat/completions",
                     headers=headers,
                     json=payload
                 )
-                return True, response.json()['content'][0]['text']
+                return True, response.json()['choices'][0]['message']['content']
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
                 time.sleep(10 * (2 ** (i + 1)))
@@ -418,87 +419,68 @@ def call_llm(payload):
             print("Failed to call LLM: ", response.status_code)
             return ""
 
-    elif model.startswith("gemini"):
-        def encoded_img_to_pil_img(data_str):
-            base64_str = data_str.replace("data:image/png;base64,", "")
-            image_data = base64.b64decode(base64_str)
-            image = Image.open(BytesIO(image_data))
-
-            return image
-
+    elif model == "gemini-1.5-pro-latest":
         messages = payload["messages"]
         max_tokens = payload["max_tokens"]
         top_p = payload["top_p"]
         temperature = payload["temperature"]
 
         gemini_messages = []
+
         for i, message in enumerate(messages):
-            role_mapping = {
-                "assistant": "model",
-                "user": "user",
-                "system": "system"
-            }
             gemini_message = {
-                "role": role_mapping[message["role"]],
-                "parts": []
+                "role": message["role"],
+                "content": []
             }
             assert len(message["content"]) in [1, 2], "One text, or one text with one image"
+            for part in message["content"]:
 
-            # The gemini only support the last image as single image input
-            if i == len(messages) - 1:
-                for part in message["content"]:
-                    gemini_message['parts'].append(part['text']) if part['type'] == "text" \
-                        else gemini_message['parts'].append(encoded_img_to_pil_img(part['image_url']['url']))
-            else:
-                for part in message["content"]:
-                    gemini_message['parts'].append(part['text']) if part['type'] == "text" else None
+                if part['type'] == "image_url":
+                    image_source = {}
+                    image_source["type"] = "base64"
+                    image_source["media_type"] = "image/png"
+                    image_source["data"] = part['image_url']['url'].replace("data:image/png;base64,", "")
+                    gemini_message['content'].append({"type": "image", "source": image_source})
+
+                if part['type'] == "text":
+                    gemini_message['content'].append({"type": "text", "text": part['text']})
 
             gemini_messages.append(gemini_message)
 
-        # the mistral not support system message in our endpoint, so we concatenate it at the first user message
-        if gemini_messages[0]['role'] == "system":
-            gemini_messages[1]['parts'][0] = gemini_messages[0]['parts'][0] + "\n" + gemini_messages[1]['parts'][0]
-            gemini_messages.pop(0)
-
-        # since the gemini-pro-vision donnot support multi-turn message
-        if model == "gemini-pro-vision":
-            message_history_str = ""
-            for message in gemini_messages:
-                message_history_str += "<|" + message['role'] + "|>\n" + message['parts'][0] + "\n"
-            gemini_messages = [{"role": "user", "parts": [message_history_str, gemini_messages[-1]['parts'][1]]}]
-            # gemini_messages[-1]['parts'][1].save("output.png", "PNG")
-
-        # print(gemini_messages)
-        api_key = os.environ.get("GENAI_API_KEY")
-        assert api_key is not None, "Please set the GENAI_API_KEY environment variable"
-        genai.configure(api_key=api_key)
-        logger.info("Generating content with Gemini model: %s", model)
-        request_options = {"timeout": 120}
-        gemini_model = genai.GenerativeModel(model)
-        try:
-            response = gemini_model.generate_content(
-                gemini_messages,
-                generation_config={
-                    "candidate_count": 1,
-                    "max_output_tokens": max_tokens,
-                    "top_p": top_p,
-                    "temperature": temperature
-                },
-                safety_settings={
-                    "harassment": "block_none",
-                    "hate": "block_none",
-                    "sex": "block_none",
-                    "danger": "block_none"
-                },
-                request_options=request_options
-            )
-            return response.text
-        except Exception as e:
-            logger.error("Meet exception when calling Gemini API, " + str(e.__class__.__name__) + str(e))
-            logger.error(f"count_tokens: {gemini_model.count_tokens(gemini_messages)}")
-            logger.error(f"generation_config: {max_tokens}, {top_p}, {temperature}")
-            return ""
+        headers = {
+            'Accept': 'application/json',
+            'Authorization': f'Bearer {os.environ["GEMINI_API_KEY"]}',
+            'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+            'Content-Type': 'application/json'
+        }  
         
+        payload = json.dumps({"model": model,"messages": gemini_messages,"max_tokens": max_tokens,"temperature": temperature,"top_p": top_p})
+
+
+        
+        max_attempts = 20
+        attempt = 0
+        while attempt < max_attempts:
+            try:
+                response = requests.request("POST", "https://api2.aigcbest.top/v1/chat/completions", headers=headers, data=payload)
+                logger.info(f"response_code {response.status_code}")
+            except:
+                time.sleep(5)
+                continue
+            if response.status_code == 200:
+                result = response.json()['choices'][0]['message']['content']
+                break
+            else:
+                logger.error(f"Failed to call LLM")
+                time.sleep(5)
+                attempt += 1
+        else:
+            print("Exceeded maximum attempts to call LLM.")
+            result = ""
+            
+        return result
+
+
     # elif model.startswith("qwen"):
     #     messages = payload["messages"]
     #     max_tokens = payload["max_tokens"]
