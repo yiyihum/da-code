@@ -89,7 +89,7 @@ class Evaluator:
         metric_options = metric_options * len(output_results) if len(output_results) > len(metric_options) \
             and len(metric_options) == 1  \
             else metric_options
-  
+
         assert (not isinstance(eval_config["func"], list)
             or (len(metric) == len(output_results) == len(gold_results) == len(
                 metric_options))), "Evaluation configs need to be consistent: lengths of 'metric', 'output_results', 'gold_results', " \

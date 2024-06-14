@@ -99,9 +99,9 @@ def test(
     }
 
     if args.suffix == "":
-        experiment_id = args.model + "-" +datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        experiment_id = args.model.split("/")[-1] + "-" +datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     else:
-        experiment_id = args.model + "-" + args.suffix
+        experiment_id = args.model.split("/")[-1] + "-" + args.suffix
 
     env_config = \
     {
@@ -138,7 +138,7 @@ def test(
     
     # TODO: record the task state
     # save all setting to output_dir
-    # delete container after finish
+    # delete container after finish ✅
     for task_config in task_configs:
         instance_id = experiment_id +"/"+ task_config["id"]
         output_dir = os.path.join(args.output_dir, instance_id)
@@ -160,7 +160,7 @@ def test(
 
         os.makedirs(output_dir, exist_ok=True)
 
-        env_config["init_args"]["name"] = experiment_id.split('/')[-1] +"-"+ task_config["id"]
+        env_config["init_args"]["name"] = experiment_id +"-"+ task_config["id"]
         env = Spider2Env(
             env_config=env_config,
             task_config=task_config,

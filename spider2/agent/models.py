@@ -202,7 +202,7 @@ def call_llm(payload):
             api_key=os.environ.get("GROQ_API_KEY"),
         )
 
-        for i in range(3):
+        for i in range(2):
             try:
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
@@ -406,7 +406,7 @@ def call_llm(payload):
                         base_url='https://api.together.xyz',
                         )
 
-        for i in range(3):
+        for i in range(2):
             try:
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
