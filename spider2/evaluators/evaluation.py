@@ -50,6 +50,14 @@ class Evaluator:
         # self.evaluator = task_config["evaluator"]
         id = eval_config['id']
         output_id_dir = os.path.join(self.output_dir, id)
+
+        result_file = os.path.join(output_id_dir, 'dabench', 'result.json')
+        if not os.path.exists(result_file):
+            # print(f"File {result_file} not found")
+            return id, False, None, None
+        trajectory_info = self._get_trajectory_info_from_json(result_file)
+
+
         gold_id_dir = os.path.join(self.gold_dir, id)
         config = eval_config.get('config', {})
         metric_conj: str = eval_config.get("conj", "avg")  # take conjunction of multiple metrics
@@ -59,8 +67,9 @@ class Evaluator:
         # if expected == []:
         # expected = result    
         # import pdb; pdb.set_trace()
-            
-        output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
+        output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
+        if not output_results:
+            output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
         
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
@@ -86,26 +95,45 @@ class Evaluator:
                 metric_options))), "Evaluation configs need to be consistent: lengths of 'metric', 'output_results', 'gold_results', " \
             "and 'metric_options' must be the same when 'func' is a list."
         
-        return id, config, metric, metric_conj, metric_options, output_results, gold_results
-
-    def _get_result_file_from_json(self, output_id_dir, is_plot=False):
-        result_file = os.path.join(output_id_dir, 'dabench', 'result.json')
-        if not os.path.exists(result_file):
-            print(f"File {result_file} not found")
-            return []
+        return id, True, trajectory_info, (config, metric, metric_conj, metric_options, output_results, gold_results)
+    
+    def _get_trajectory_info_from_json(self,result_file):
         with open(result_file, 'r') as f:
             result = json.load(f)
-            result_file = result['result']
-                # 正则表达式匹配文件路径和文件名，路径和文件名可以包含字母、数字、下划线、破折号和点
-            pattern = r'\b(?:[\w/\-_]+/)?([\w\-_]+(\.\w+)+)\b'
-            # 使用findall找到所有匹配的文件名
-            filenames = re.findall(pattern, result_file)
-            if not filenames:
-                # print(f"File not found : {result_file}; dir: {output_id_dir}")
-                return []
-            # findall返回的是元组列表，我们只需要文件名部分
-            filenames = [filename[0] for filename in filenames]
-            result_file = [os.path.join(output_id_dir, file) for file in filenames]
+        trajectory = result["trajectory"]
+        actions = []
+        for step in trajectory:
+            if step["action"].startswith("Bash"):
+                actions.append(("Bash", step["code"]))
+            elif step["action"].startswith("Python"):
+                # 保存有多少行代码，即有多少个\n
+                actions.append(("Python", len(step["code"].split("\n"))))
+            elif step["action"].startswith("SQL"):
+                actions.append(("SQL", step["code"]))
+            elif step["action"].startswith("Terminate"):
+                actions.append(("Terminate", ""))
+            else:
+                actions.append(("Other", ""))
+
+        info = {"finished": result["finished"], "steps": result["steps"], 
+                "result": result["result"],
+                "len_added_files": len(result["result_files"]["added_files"]),
+                "len_changed_files": len(result["result_files"]["changed_files"]),
+                "actions": actions}
+        return info
+
+
+    def _get_result_file_from_json(self, output_id_dir, result_file, is_plot=False):
+            # 正则表达式匹配文件路径和文件名，路径和文件名可以包含字母、数字、下划线、破折号和点
+        pattern = r'\b(?:[\w/\-_]+/)?([\w\-_]+(\.\w+)+)\b'
+        # 使用findall找到所有匹配的文件名
+        filenames = re.findall(pattern, result_file)
+        if not filenames:
+            # print(f"File not found : {result_file}; dir: {output_id_dir}")
+            return []
+        # findall返回的是元组列表，我们只需要文件名部分
+        filenames = [filename[0] for filename in filenames]
+        result_file = [os.path.join(output_id_dir, file) for file in filenames]
             # print(f"result_file: {result_file}")
         if is_plot:
             result_file += [os.path.join(output_id_dir,"dabench/plot.json"), os.path.join(output_id_dir,"dabench/result.npy")]
@@ -135,17 +163,22 @@ class Evaluator:
         pbar = tqdm(total=len(env_configs))
 
         for eval_config in env_configs:
+            id, exist, trajectory_info, eval_info = self._get_eval_config_info(eval_config)
+            pbar.set_description(f"Processing Task id: {id}")
+            pbar.update(1)
+            if not exist:
+                print(f"Result of Task {id} does not exist!")
+                continue
+            (config, metric_list, metric_conj, metric_options, output_results, gold_results) = eval_info
+
+            if metric_list == "infeasible":
+                return 0
+            
             try:
                 with timeout(self.timeout_second,"Action execution time exceeded!"):
-                    id, config, metrics, metric_conj, metric_options, output_results, gold_results = \
-                        self._get_eval_config_info(eval_config)
-                    pbar.set_description(f"Processing Task id: {id}")
-                    pbar.update(1)
-                    if metrics == "infeasible":
-                        return 0
                     scores = []
                     info = []
-                    for idx, metric in enumerate(metrics):
+                    for idx, metric in enumerate(metric_list):
                         try:
                             output_result = output_results[idx]
                             gold_result = gold_results[idx]
@@ -165,19 +198,22 @@ class Evaluator:
                         else:
                             scores.append(result)
             except Exception as e:
-                output_result = output_result if isinstance(output_result, list) else [output_result]
+                # output_result = output_result if isinstance(output_result, list) else [output_result]
                 logging.error(f"Error in task {id}: {e}")
-                scores.append(0.0)
-                info.append({"score": 0.0, "errors": [str(e)], 'file': [os.path.basename(file) for file in output_result]})
+                continue
+                # scores.append(0.0)
+                # info.append({"score": 0.0, "errors": [str(e)], 'file': [os.path.basename(file) for file in output_result]})
 
             if metric_conj == 'avg':
-                eval_results.append({"id": id, "total_score": sum(scores) / len(scores), 'info': info})
+                total_score = sum(scores) / len(scores)
             elif metric_conj == 'max':
-                eval_results.append({"id": id, "total_score": max(scores),'info': info})
+                total_score = max(scores)
             elif metric_conj == 'min':
-                eval_results.append({"id": id, "total_score": min(scores),'info': info})
+                total_score = min(scores)
             elif metric_conj == 'and':
-                eval_results.append({"id": id, "total_score": float(all(score!= 0 for score in scores)),'info': info})
+                total_score = float(all(score!= 0 for score in scores))
             elif metric_conj == 'or':
-                eval_results.append({"id": id, "total_score": float(any(score!= 0 for score in scores)),'info': info})
+                total_score = float(any(score!= 0 for score in scores))
+            eval_results.append({"id": id, "total_score": total_score, **trajectory_info,
+                                  'info': info})
         return eval_results

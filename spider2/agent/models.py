@@ -76,7 +76,7 @@ def call_llm(payload):
             api_version = "2024-02-15-preview",
             azure_endpoint = "https://gpt4caxu.openai.azure.com/"
         )
-        for i in range(5):
+        for i in range(3):
             try:
                 response = client.chat.completions.create(model='gpt4turbo',messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'], stop=stop)
                 response = response.choices[0].message.content
@@ -147,7 +147,7 @@ def call_llm(payload):
             "top_p": top_p
         }
 
-        for i in range(5):
+        for i in range(3):
             try:
                 response = requests.post(
                     "https://api.claude-Plus.top/v1/chat/completions",
@@ -202,7 +202,7 @@ def call_llm(payload):
             api_key=os.environ.get("GROQ_API_KEY"),
         )
 
-        for i in range(5):
+        for i in range(3):
             try:
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
@@ -256,7 +256,7 @@ def call_llm(payload):
             api_key=os.environ.get("GROQ_API_KEY"),
         )
 
-        for i in range(5):
+        for i in range(3):
             try:
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
@@ -305,7 +305,7 @@ def call_llm(payload):
 
             qwen_messages.append(qwen_message)
 
-        for i in range(5):
+        for i in range(3):
             try:
                 logger.info("Generating content with model: %s", model)
 
@@ -471,7 +471,7 @@ def call_llm(payload):
 
 
         
-        for i in range(5):
+        for i in range(3):
             try:
                 response = requests.request("POST", "https://api2.aigcbest.top/v1/chat/completions", headers=headers, data=payload)
                 logger.info(f"response_code {response.status_code}")

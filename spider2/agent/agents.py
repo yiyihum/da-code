@@ -110,7 +110,7 @@ class PromptAgent:
             })
             response = response.strip()
             if not status:
-                if response == "context_length_exceeded":
+                if response in ["context_length_exceeded","rate_limit_exceeded"]:
                     self.history_messages = [self.history_messages[0]] + self.history_messages[3:]
                 else:
                     raise Exception(f"Failed to call LLM, response: {response}")
@@ -170,7 +170,7 @@ class PromptAgent:
         if output is None or len(output) == 0:
             pass
         action_string = ""
-        patterns = [r'["\']?Action["\']?:? (.*?)Observation',r'["\']?Action["\']?:? (.*?)Thought', r'["\']?Action["\']?:? (.*?)Action', r'["\']?Action["\']?:? (.*?)$', r'^(.*?)Observation']
+        patterns = [r'["\']?Action["\']?:? (.*?)Observation',r'["\']?Action["\']?:? (.*?)Thought', r'["\']?Action["\']?:? (.*?)$', r'^(.*?)Observation']
 
         for p in patterns:
             match = re.search(p, output, flags=re.DOTALL)
@@ -268,7 +268,7 @@ class PromptAgent:
 
 if __name__ == "__main__":
     agent = PromptAgent()
-    response = """Thought: The `analysis.py` file has been partially completed, and it has imported the necessary packages for data analysis and visualization. The data from `train.csv` has been loaded into the `data_raw` variable. Now, I need to implement the code to plot a bar chart showing the number of male and female survivors in each passenger class.\n\nAction: Python(file_path=\"./analysis.py\"):\n```\n# Group data by sex and class, and count the number of survivors\nsurvivors = data_raw.groupby(['Sex', 'Pclass', 'Survived']).size().reset_index(name='count')\n\n# Pivot the data to create a table with sex as columns and class as index\npivoted = survivors.pivot(index='Pclass', columns='Sex', values='count')\n\n# Plot the bar chart\nfig, ax = plt.subplots(figsize=(14, 12))\npivoted.plot(kind='bar', ax=ax, rot=0, color=['#e9d4d0', '#a16f8d', '#2d223a'])\nax.set_title('Sex vs Pclass Survival Comparison')\nax.set_xlabel('Sex')\nax.set_ylabel('Survived')\nplt.savefig('result.jpg')\n```"""
+    response = """Thought: The dataset contains relevant columns like Name, Average User Rating, User Rating Count, Size, Primary Genre, Genres, and Current Version Release Date. I should filter the data based on the guidance rules and create a DataFrame with the required columns.\n\nAction: Python(file_path=\"process_data.py\"):\n```python\nimport pandas as pd\n\n# Read the CSV file\ndf = pd.read_csv('appstore_games.csv')\n\n# Filter games with user ratings >= 200 and update time <= 6 months\ndf = df[(df['User Rating Count'] >= 200) & (pd.to_datetime(df['Current Version Release Date']) >= '2019-04-30')]\n\n# Convert game size from bytes to MB\ndf['Size_MB'] = df['Size'] / (1024 * 1024)\n\n# Extract the year from the 'Current Version Release Date'\ndf['Year'] = pd.to_datetime(df['Current Version Release Date']).dt.year\n\n# Categorize games into four main types based on the guidance rules\ndef categorize_game(row):\n    genres = row['Genres'].lower()\n    if 'puzzle' in genres or 'board' in genres:\n        return 'Puzzle'\n    elif 'action' in genres:\n        return 'Action'\n    elif 'adventure' in genres or 'role' in genres:\n        return 'Adventure'\n    elif 'family' in genres or 'education' in genres:\n        return 'Family'\n    else:\n        return 'Other'\n\ndf['Game_Type'] = df.apply(categorize_game, axis=1)\n\n# Group by Year and Game_Type, calculate the average size, and pivot the data\nresult = df.groupby(['Year', 'Game_Type'])['Size_MB'].mean().reset_index()\nresult_pivot = result.pivot(index='Year', columns='Game_Type', values='Size_MB')\n\n# Save the processed data to a new CSV file\nresult_pivot.to_csv('processed_data.csv')\nprint(\"Data processing completed. Saved to 'processed_data.csv'.\")\n```"""
     import pdb; pdb.set_trace()
     action = agent.parse_action(response)
     print(action)

@@ -97,7 +97,7 @@ class ImageTest:
             image_name = os.path.basename(gold)
             result = next((file for file in results if image_name in file), '')
             if not result or not os.path.exists(result):
-                logging.error(f"could not find {image_name} in agent's results")
+                # logging.error(f"could not find {image_name} in agent's results")
                 return (0.0, {'img': False})
             result_img = np.array(Image.open(result).convert('L')) if not iscolor \
                 else np.array(Image.open(result))
