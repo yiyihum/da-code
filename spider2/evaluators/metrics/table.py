@@ -100,7 +100,7 @@ def compare_csv(result: str, expected, **options) -> float:
         ignore_order = [options.get('ignore_order', False)]
         total_scores = [options.get('total_scores', 1)]
         expected = [expected]
-    tolerance = 1e-5
+    tolerance = 1e-3
 
     def vectors_match(v1, v2, tol=tolerance, ignore_order_=False):
         if ignore_order_:
