@@ -1,29 +1,29 @@
-{"id": "dw-clean-001", "func": ["compare_csv"], "result": [{"file": ["parking_violation.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
-{"id": "dw-clean-002", "func": ["compare_sqlite"], "result": [{"file": ["parking_violation.db"]}], "options": [{"condition_cols": [[1]], "ignore_order": [true]}]}
-{"id": "dw-clean-003", "func": ["compare_csv"], "result": [{"file": ["parking_violation.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
-{"id": "dw-clean-004", "func": ["compare_csv"], "result": [{"file": ["data.csv"]}], "options": [{}]}
-{"id": "dw-clean-005", "func": ["compare_csv"], "result": [{"file": ["data.csv"]}], "options": [{"condition_cols":[11,12], "ignore_order": true}]}
-{"id": "dw-clean-006", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-007", "func": ["compare_csv"], "result": [{"file": ["airports_data.csv"]}], "options": [{}]}
-{"id": "dw-clean-008", "func": ["compare_csv"], "result": [{"file": ["cycle.csv"]}, {"file": ["run.csv"]}, {"file": ["walk.csv"]}], "options": [{}, {}, {}]}
-{"id": "dw-clean-010", "func": ["compare_csv"], "result": [{"file": ["disney_movies_total_gross_cleaned.csv"]}], "options": [{}]}
-{"id": "dw-clean-011", "func": ["compare_csv"], "result": [{"file": ["2020Q4.csv"]}], "options": [{}]}
-{"id": "dw-clean-012", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-013", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-014", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-015", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-016", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-017", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-018", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-019", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-020", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-021", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-022", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-023", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-024", "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
-{"id": "dw-clean-026", "func": ["compare_csv"], "result": [{"file": ["ebola.csv"]}],  "options": [{}]}
-{"id": "dw-clean-027", "func": ["compare_csv"], "result": [{"file": ["weather.csv"]}], "options": [{}]}
-{"id": "dw-clean-028", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-029", "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
-{"id": "dw-clean-030", "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{}]}
-{"id": "dw-clean-031", "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{}]}
+{"id": "dw-clean-001", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["parking_violation.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
+{"id": "dw-clean-002", "config": {"task": "data wangling"}, "func": ["compare_sqlite"], "result": [{"file": ["parking_violation.db"]}], "options": [{"condition_cols": [[1]], "ignore_order": [true]}]}
+{"id": "dw-clean-003", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["parking_violation.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
+{"id": "dw-clean-004", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["data.csv"]}], "options": [{}]}
+{"id": "dw-clean-005", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["data.csv"]}], "options": [{"condition_cols":[11,12], "ignore_order": true}]}
+{"id": "dw-clean-006", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-007", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["airports_data.csv"]}], "options": [{}]}
+{"id": "dw-clean-008", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cycle.csv"]}], "options": [{}]}
+{"id": "dw-clean-010", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["disney_movies_total_gross_cleaned.csv"]}], "options": [{}]}
+{"id": "dw-clean-011", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["2020Q4.csv"]}], "options": [{}]}
+{"id": "dw-clean-012", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-013", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-014", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-015", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-016", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-017", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-018", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-019", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-020", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-021", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-022", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-023", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-024", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{}]}
+{"id": "dw-clean-026", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["ebola.csv"]}],  "options": [{}]}
+{"id": "dw-clean-027", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["weather.csv"]}], "options": [{}]}
+{"id": "dw-clean-028", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-029", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "dw-clean-030", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{}]}
+{"id": "dw-clean-031", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{}]}
