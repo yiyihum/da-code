@@ -61,8 +61,9 @@ class Evaluator:
         # expected = eval_config.get('expected', [])
         # if expected == []:
         # expected = result    
-        
-        output_results = self._get_result_file_from_json(output_id_dir, is_plot=("dabench/plot.json" in expected))
+        # import pdb; pdb.set_trace()
+            
+        output_results = self._get_result_file_from_json(output_id_dir, is_plot=(config["task"] == "data visualization"))
         if not output_results:
             output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
@@ -99,8 +100,10 @@ class Evaluator:
             # findall返回的是元组列表，我们只需要文件名部分
             filenames = [filename[0] for filename in filenames]
             result_file = [os.path.join(output_id_dir, file) for file in filenames]
+            # print(f"result_file: {result_file}")
         if is_plot:
             result_file += [os.path.join(output_id_dir,"dabench/plot.json"), os.path.join(output_id_dir,"dabench/result.npy")]
+            result_file = [result_file]
         return result_file
     
     def evaluate(self, env_config: Dict|str):
