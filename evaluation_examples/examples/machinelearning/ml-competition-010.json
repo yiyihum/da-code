@@ -1,18 +1,21 @@
 {
     "id": "ml-competition-010",
-    "config":{
+    "config": {
         "task": "machinelearning competition",
         "type": "regression",
         "metric": "mae",
-        "threshold": 1.36
+        "upper_bound": 1.6038,
+        "lower_bound": 1.48254
     },
-    "func":[
+    "func": [
         "compare_competition_ml"
     ],
-    "result":[
+    "result": [
         {
             "file": "submission.csv"
         }
     ],
-    "options": [{}]
+    "options": [
+        {}
+    ]
 }

@@ -1,7 +1,7 @@
 import json
 import jsonlines, os
 
-dir_path = 'evaluation_examples/examples/statisticalanalysis'
+dir_path = 'evaluation_examples/examples/machinelearning'
 files = [os.path.join(dir_path, file) for file in os.listdir(dir_path)]
 files = sorted(files)
 evals = []
@@ -10,6 +10,6 @@ for file in files:
         eval_dict = json.load(f)
     evals.append(eval_dict)
 
-with jsonlines.open('evaluation_examples/examples/machinelearning/Evaluation_SA.jsonl', 'w') as f:
+with jsonlines.open('evaluation_examples/examples/machinelearning/Evaluation_ML2.jsonl', 'w') as f:
     for item in evals:
         f.write(item)

@@ -1,0 +1,21 @@
+{
+    "id": "ml-multi-002",
+    "config": {
+        "task": "machinelearning",
+        "type": "multi classification",
+        "metric": "accuracy",
+        "upper_bound": 0.9,
+        "lower_bound": 0.2
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "result.csv"
+        }
+    ],
+    "options": [
+        {}
+    ]
+}

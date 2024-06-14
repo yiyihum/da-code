@@ -215,20 +215,20 @@ class CalculateML:
         gold = convert_to_numeric(gold)
         result = convert_to_numeric(result)
         
-        if result.ndim > 2:
-            output['errors'].append(f'Expected 1D or 2D array, but got {result.ndim}')
-            return (0.0, output)
-        elif result.ndim == 2 and result.shape[-1] > 1:
-            output['errors'].append(f'Expected 1 column array, but got {result.shape[-1]}')
-            return (0.0, output)
-        
-        if gold.ndim > 2 :
-            raise ValueError(f'Expected Gold as a 1D or 2D array, but got {gold.ndim}')
-        elif gold.ndim == 2 and gold.shape[-1] > 1:
-            raise ValueError(f'Expected Gold as 1 column array, but got {gold.shape[-1]}')
-            
-        result = result.reshape(-1,) if result.ndim == 2 else result
-        gold = result.reshape(-1,) if gold.ndim == 2 else result
+        if isinstance(result, np.ndarray):
+            if result.ndim > 2:
+                output['errors'].append(f'Expected 1D or 2D array, but got {result.ndim}')
+                return (0.0, output)
+            elif result.ndim == 2 and result.shape[-1] > 1:
+                output['errors'].append(f'Expected 1 column array, but got {result.shape[-1]}')
+                return (0.0, output)
+            result = result.reshape(-1,) if result.ndim == 2 else result
+        if isinstance(gold, np.ndarray):
+            if gold.ndim > 2 :
+                raise ValueError(f'Expected Gold as a 1D or 2D array, but got {gold.ndim}')
+            elif gold.ndim == 2 and gold.shape[-1] > 1:
+                raise ValueError(f'Expected Gold as 1 column array, but got {gold.shape[-1]}') 
+            gold = result.reshape(-1,) if gold.ndim == 2 else result
 
         try:
             score = accuracy_score(y_true=gold, y_pred=result)
@@ -257,7 +257,7 @@ class CalculateML:
             output['errors'].append(f'fail to calculate r2 socre, because {str(e)}')
             return (0.0, output)
         
-        return (max(score, 0.0), output)
+        return (score, output)
     
     @staticmethod
     def calculate_f1(result, gold, task_type: Optional[str]=None, **kwargs):

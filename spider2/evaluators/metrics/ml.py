@@ -6,12 +6,7 @@ from fuzzywuzzy import process
 from .script.ml_script import PreprocessML, CalculateML
 
 TYPES = ['binary classification', 'multi classification', 'cluster', 'regression']
-METRICS = {
-    "binary": 'f1', 
-    "multi": 'f1', 
-    "regression": "r2",
-    "cluster": 'silhouette score'
-}
+LOWER_METRICS = ["logloss_class", "logloss_total", "rmsle", "mae", "mse", "smape", "medae", "crps"]
 
 def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     """ 
@@ -29,8 +24,9 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     target_column = kwargs.get('target_column', '')
     task_type = config.get('type', '')
     metric = config.get("metric", "")
-    threshold = config.get("threshold", 0.9)
-    output_ml.update({'threshold': threshold})
+    upper_bound = config.get("upper_bound", 0.9)
+    lower_bound = config.get("lower_bound", 0.0)
+    output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
 
     if not config or not task_type:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type", such as {TYPES}')
@@ -39,7 +35,6 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     if not ratio > 90:
         raise ValueError(f"please provide a right task type, such as {TYPES}")
     task_type = best_type.split(' ')[0]
-    metric = METRICS[task_type] if not metric else metric
 
     output_ml.update({'metric': metric})
 
@@ -87,8 +82,24 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
         score, output = metric_func(result_df, target_result, task_type, **{'n_jobs': n_jobs})
     else:
         score, output = metric_func(target_result, target_gold, task_type, **{'n_jobs': n_jobs})
+    
+    if len(output['errors']) != 0 and score == 0.0:
+        output_ml['errors'].extend(output['errors'])
+        output_ml['score'] = 0.0
+        return output_ml
+    
+    is_lower_metric = metric.lower() in LOWER_METRICS
+    if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
+        score = 1.0
+    elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
+        score = 0.0
+    else:
+        score = (score - lower_bound) / (upper_bound - lower_bound)
+
+            
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
+    
     return output_ml
 
 def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> dict:
@@ -97,9 +108,10 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
     task_type = config.get('type', '')
     averaged = kwargs.get('average', '')
     metric = config.get("metric", "")
-    output_ml.update({'metric': metric})
-    threshold = config.get("threshold", 0.9)
-    output_ml.update({'threshold': threshold})
+    upper_bound = config.get("upper_bound", 0.9)
+    lower_bound = config.get("lower_bound", 0.0)
+    output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
+
     if not config or not task_type or not metric:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type" and a "metric"')
     
@@ -142,9 +154,22 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
         raise ValueError(f"Evaluation Scripts don't have {metric_func}")
     score, output = metric_func(result_df, expected_df, task_type, **{'average': averaged})
 
+    if len(output['errors']) != 0 and score == 0.0:
+            output_ml['errors'].extend(output['errors'])
+            output_ml['score'] = 0.0
+            return output_ml
+    
+    is_lower_metric = metric.lower() in LOWER_METRICS
+    if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
+        score = 1.0
+    elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
+        score = 0.0
+    else:
+        score = (score - lower_bound) / (upper_bound - lower_bound)
+
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
-
+    
     return output_ml
    
 

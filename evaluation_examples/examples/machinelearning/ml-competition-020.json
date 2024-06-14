@@ -1,20 +1,23 @@
 {
     "id": "ml-competition-020",
-    "config":{
+    "config": {
         "task": "machinelearning competition",
         "type": "multi classification",
         "metric": "f1",
-        "threshold": 0.7335
+        "upper_bound": 0.70363,
+        "lower_bound": 0.62591
     },
-    "func":[
+    "func": [
         "compare_competition_ml"
     ],
-    "result":[
+    "result": [
         {
             "file": "submission.csv"
         }
     ],
-    "options": [{
-        "average": "micro"
-    }]
+    "options": [
+        {
+            "average": "micro"
+        }
+    ]
 }

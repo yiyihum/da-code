@@ -1,0 +1,23 @@
+{
+    "id": "ml-binary-014",
+    "config": {
+        "task": "machinelearning",
+        "type": "binary classification",
+        "metric": "roc_auc_score",
+        "upper_bound": 0.66516,
+        "lower_bound": 0.5
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "churn.csv"
+        }
+    ],
+    "options": [
+        {
+            "target_column": "Churn"
+        }
+    ]
+}

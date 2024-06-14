@@ -1,0 +1,23 @@
+{
+    "id": "ml-binary-013",
+    "config": {
+        "task": "machinelearning",
+        "type": "binary classification",
+        "metric": "accuracy",
+        "upper_bound": 0.882,
+        "lower_bound": 0.5
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "target.csv"
+        }
+    ],
+    "options": [
+        {
+            "target_column": "Target"
+        }
+    ]
+}

@@ -20,11 +20,11 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
 
 # Parameters
 experiments = "azure-ML0611"
-output_dir = f'./benchmark/_result/{experiments}'
+output_dir = f'./benchmark/_result/azure-ML0611'
 gold_dir = './benchmark/gold'
-eval_json = './benchmark/configs/evaluation_ML.jsonl'
-output_file = f'./benchmark/results/{experiments}_result2.json'
-timeout_seconds = 60
+eval_json = './benchmark/configs/Evaluation_ML2.jsonl'
+output_file = f'./benchmark/results/{experiments}_result22.json'
+timeout_seconds = 6000
 
 # Run the evaluation with the specified parameters
 run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds)

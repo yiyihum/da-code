@@ -1,0 +1,23 @@
+{
+    "id": "ml-binary-011",
+    "config": {
+        "task": "machinelearning",
+        "type": "binary classification",
+        "metric": "f1",
+        "upper_bound": 0.8715843,
+        "lower_bound": 0.5
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "results.csv"
+        }
+    ],
+    "options": [
+        {
+            "target_column": "income_above_limit"
+        }
+    ]
+}

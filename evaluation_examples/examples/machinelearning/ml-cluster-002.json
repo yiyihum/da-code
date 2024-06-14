@@ -1,0 +1,23 @@
+{
+    "id": "ml-cluster-002",
+    "config": {
+        "task": "machinelearning",
+        "type": "cluster",
+        "metric": "silhouette",
+        "upper_bound": 0.5328,
+        "lower_bound": -1.0
+    },
+    "func": [
+        "compare_ml"
+    ],
+    "result": [
+        {
+            "file": "cluster.csv"
+        }
+    ],
+    "options": [
+        {
+            "target_column": "Cluster"
+        }
+    ]
+}
