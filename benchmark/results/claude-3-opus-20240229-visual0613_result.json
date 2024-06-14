@@ -1,10 +1,65 @@
 {
-    "num_results": 49,
-    "average_score": 0.4897959183673469,
+    "num_results": 47,
+    "average_score": 0.5106382978723404,
     "results": [
         {
             "id": "plot-bar-001",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 12,
+            "result": "sales.jpg",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "head Song.csv"
+                ],
+                [
+                    "SQL",
+                    "CREATE TABLE songs (artist TEXT, title TEXT, year INTEGER, sales REAL, streams REAL, downloads REAL, radio_plays REAL, rating REAL)"
+                ],
+                [
+                    "SQL",
+                    ""
+                ],
+                [
+                    "SQL",
+                    "CREATE TABLE songs (artist TEXT, title TEXT, year INTEGER, sales REAL, streams REAL, downloads REAL, radio_plays REAL, rating REAL)"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "SQL",
+                    "CREATE TABLE songs (artist TEXT, title TEXT, year INTEGER, sales REAL, streams REAL, downloads REAL, radio_plays REAL, rating REAL)"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "SQL",
+                    "SELECT artist, SUM(sales) AS total_sales FROM songs GROUP BY artist ORDER BY total_sales DESC LIMIT 10"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -27,6 +82,49 @@
         {
             "id": "plot-bar-002",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 9,
+            "result": "result.jpg",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "unzip zomato_rawdata.sqlite.zip"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(Users)"
+                ],
+                [
+                    "SQL",
+                    "SELECT rate, online_order, COUNT(*) as count FROM Users GROUP BY rate, online_order"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -47,6 +145,37 @@
         {
             "id": "plot-bar-003",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -69,6 +198,37 @@
         {
             "id": "plot-bar-004",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "len_added_files": 1,
+            "len_changed_files": 1,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "cat analysis.py"
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -84,6 +244,61 @@
         {
             "id": "plot-bar-005",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 12,
+            "result": "result.png",
+            "len_added_files": 8,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat AgeGroup.md"
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Bash",
+                    "cat SurveySchema.csv | grep -i age"
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    51
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -105,6 +320,41 @@
         {
             "id": "plot-bar-006",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 7,
+            "result": "team.png",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "cat overall_score.txt"
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -l team.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -127,6 +377,37 @@
         {
             "id": "plot-bar-007",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -lh"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "cat NeighborhoodCalculate.txt"
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Bash",
+                    "ls -lh result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -149,6 +430,49 @@
         {
             "id": "plot-bar-008",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 9,
+            "result": "distribution.png",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat Tips.txt"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 SurveySchema.csv"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -171,6 +495,49 @@
         {
             "id": "plot-bar-009",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "cat Readme.md"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -193,6 +560,53 @@
         {
             "id": "plot-bar-010",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "cat ReadMe.md"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    14
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    8
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -214,6 +628,65 @@
         {
             "id": "plot-bar-011",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 13,
+            "result": "result.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "cat region.txt"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Bash",
+                    "cat state.json"
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -229,6 +702,33 @@
         {
             "id": "plot-bar-012",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -251,6 +751,29 @@
         {
             "id": "plot-bar-013",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 4,
+            "result": "result.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    11
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -272,6 +795,29 @@
         {
             "id": "plot-bar-014",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 4,
+            "result": "output.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "ls output.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -294,6 +840,41 @@
         {
             "id": "plot-bar-015",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "ls result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -316,6 +897,45 @@
         {
             "id": "plot-bar-016",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "unzip olist.sqlite.zip"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Bash",
+                    "ls result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -338,6 +958,41 @@
         {
             "id": "plot-bar-017",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 7,
+            "result": "party_sums_plot.png",
+            "len_added_files": 4,
+            "len_changed_files": 1,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    11
+                ],
+                [
+                    "Python",
+                    14
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Bash",
+                    "ls -l party_sums_plot.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -360,6 +1015,33 @@
         {
             "id": "plot-bar-018",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "FAIL",
+            "len_added_files": 0,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head Building_Permits.csv"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "ls *.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -377,6 +1059,33 @@
         {
             "id": "plot-bar-019",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    49
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -399,6 +1108,33 @@
         {
             "id": "plot-line-001",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 5,
+            "result": "points_graph.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -lh"
+                ],
+                [
+                    "Bash",
+                    "head -n 3 game.csv"
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Bash",
+                    "ls -lh points_graph.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -414,6 +1150,37 @@
         {
             "id": "plot-line-002",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "len_added_files": 5,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat teamabbreviations.md"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -434,6 +1201,45 @@
         {
             "id": "plot-line-003",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 8,
+            "result": "output.png",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -lh"
+                ],
+                [
+                    "Bash",
+                    "head -n 2 fake.csv"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "ls -lh output.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -454,6 +1260,37 @@
         {
             "id": "plot-line-004",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT strftime('%Y-%m', order_purchase_timestamp) as purchase_month, order_status, COUNT(*) as order_count FROM orders JOIN order_items ON orders.order_id = order_items.order_id GROUP BY order_status, purchase_month ORDER BY purchase_month"
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "unzip olist.sqlite.zip"
+                ],
+                [
+                    "SQL",
+                    "SELECT strftime('%Y-%m', order_purchase_timestamp) as purchase_month, order_status, COUNT(*) as order_count FROM orders JOIN order_items ON orders.order_id = order_items.order_id GROUP BY order_status, purchase_month ORDER BY purchase_month"
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -476,6 +1313,65 @@
         {
             "id": "plot-line-005",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 13,
+            "result": "The average happiness scores for the specified regions from 2015 to 2019 have been calculated and plotted in the 'result.png' file. The line graph shows the trends in happiness scores over the years for each region. The task is now complete.",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    41
+                ],
+                [
+                    "Bash",
+                    "cat Region.md"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    11
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Python",
+                    61
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    67
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -496,6 +1392,41 @@
         {
             "id": "plot-line-006",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt"
+                ],
+                [
+                    "Bash",
+                    "head GlobalTemperatures.csv"
+                ],
+                [
+                    "Python",
+                    41
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Bash",
+                    "file result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -509,25 +1440,35 @@
             ]
         },
         {
-            "id": "plot-line-007",
-            "total_score": 0.0,
-            "info": [
-                {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "score": 0.0,
-                    "file": [
-                        "result.png",
-                        "plot.json",
-                        "result.npy"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "plot-line-008",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "cat BMI.txt"
+                ],
+                [
+                    "Bash",
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -543,6 +1484,37 @@
         {
             "id": "plot-line-009",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "cat tips.txt; ls -l"
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -558,6 +1530,41 @@
         {
             "id": "plot-line-010",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 7,
+            "result": "result.jpg",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "cat result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -575,6 +1582,37 @@
         {
             "id": "plot-line-011",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "file result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -597,6 +1635,41 @@
         {
             "id": "plot-line-012",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 7,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -618,6 +1691,41 @@
         {
             "id": "plot-line-013",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 7,
+            "result": "result.jpg",
+            "len_added_files": 5,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "SQL",
+                    "\"\"\nSELECT \n    s.store_id,\n    s.store_name,\n    o.order_date,\n    AVG(o.order_count) OVER (\n        PARTITION BY s.store_id \n        ORDER BY o.order_date\n        ROWS BETWEEN 29 PRECEDING AND CURRENT ROW\n    ) AS moving_avg_orders\nFROM (\n    SELECT \n        store_id,\n        DATE(order_date) AS order_date,\n        COUNT(*) AS order_count\n    FROM orders\n    GROUP BY store_id, DATE(order_date)\n) o\nJOIN stores s ON o.store_id = s.store_id\nORDER BY s.store_id, o.order_date;\n\"\""
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -638,6 +1746,45 @@
         {
             "id": "plot-line-014",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 8,
+            "result": "result.jpg",
+            "len_added_files": 4,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -653,6 +1800,57 @@
         {
             "id": "plot-line-015",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 11,
+            "result": "result.jpg",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    51
+                ],
+                [
+                    "Python",
+                    54
+                ],
+                [
+                    "Python",
+                    51
+                ],
+                [
+                    "Python",
+                    51
+                ],
+                [
+                    "Python",
+                    53
+                ],
+                [
+                    "Python",
+                    53
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -675,6 +1873,33 @@
         {
             "id": "plot-line-016",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head museum_visitors.csv"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -690,6 +1915,29 @@
         {
             "id": "plot-pie-001",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 4,
+            "result": "answer.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls -l answer.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -708,6 +1956,33 @@
         {
             "id": "plot-pie-002",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "distribution.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Bash",
+                    "ls distribution.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -727,6 +2002,33 @@
         {
             "id": "plot-pie-003",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -746,6 +2048,33 @@
         {
             "id": "plot-pie-004",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "head student-mat.csv"
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -759,25 +2088,35 @@
             ]
         },
         {
-            "id": "plot-pie-005",
-            "total_score": 0.0,
-            "info": [
-                {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "score": 0.0,
-                    "file": [
-                        "result.png",
-                        "plot.json",
-                        "result.npy"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "plot-pie-006",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    4
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -793,6 +2132,29 @@
         {
             "id": "plot-pie-007",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 4,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -808,6 +2170,73 @@
         {
             "id": "plot-pie-008",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 15,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -823,6 +2252,33 @@
         {
             "id": "plot-scatter-001",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "head netflix.csv"
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -843,6 +2299,57 @@
         {
             "id": "plot-scatter-002",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 11,
+            "result": "result.png",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -863,6 +2370,29 @@
         {
             "id": "plot-scatter-003",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 4,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -878,6 +2408,41 @@
         {
             "id": "plot-scatter-004",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,
@@ -893,6 +2458,33 @@
         {
             "id": "plot-scatter-005",
             "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "head -1 steam.csv"
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls result.png"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": false,
@@ -910,6 +2502,29 @@
         {
             "id": "plot-scatter-006",
             "total_score": 1.0,
+            "finished": true,
+            "steps": 4,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
             "info": [
                 {
                     "img": true,

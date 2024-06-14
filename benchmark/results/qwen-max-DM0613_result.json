@@ -1,12 +1,12 @@
 {
     "num_results": 58,
-    "average_score": 0.27586206896551724,
+    "average_score": 0.1206896551724138,
     "results": [
         {
             "id": "dm-csv-001",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
+            "steps": 7,
             "result": "undefeated.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
@@ -17,23 +17,19 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head ufc-fighters-statistics.csv"
+                ],
+                [
+                    "Python",
+                    17
                 ],
                 [
                     "Bash",
                     "cat weight_class.md"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 ufc-fighters-statistics.csv"
-                ],
-                [
                     "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    40
+                    35
                 ],
                 [
                     "Bash",
@@ -48,28 +44,48 @@
         },
         {
             "id": "dm-csv-002",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 8,
+            "steps": 14,
             "result": "result.csv",
-            "len_added_files": 4,
+            "len_added_files": 7,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
+                    "ls *.csv"
                 ],
                 [
                     "Python",
-                    19
+                    17
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv | tr ';' '\\n'"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv | cut -d';' -f1"
+                ],
+                [
+                    "Python",
+                    8
                 ],
                 [
                     "Python",
@@ -77,11 +93,15 @@
                 ],
                 [
                     "Python",
-                    19
+                    15
                 ],
                 [
-                    "Bash",
-                    "cat result.csv"
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    20
                 ],
                 [
                     "Terminate",
@@ -94,54 +114,42 @@
             "id": "dm-csv-003",
             "total_score": 0.0,
             "finished": true,
-            "steps": 12,
+            "steps": 9,
             "result": "top_qualifications.csv",
-            "len_added_files": 4,
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "tail README.md"
-                ],
-                [
-                    "Bash",
-                    "grep -i 'mother\\|father' README.md"
-                ],
-                [
-                    "Bash",
-                    "grep -i -A 10 'qualification' README.md"
+                    "head student_data.csv"
                 ],
                 [
                     "Python",
-                    32
+                    33
                 ],
                 [
                     "Python",
-                    7
+                    33
                 ],
                 [
                     "Python",
-                    32
+                    33
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    37
                 ],
                 [
                     "Bash",
-                    "ls -l top_qualifications.csv"
-                ],
-                [
-                    "Bash",
-                    "head top_qualifications.csv"
+                    "ls top_qualifications.csv"
                 ],
                 [
                     "Terminate",
@@ -155,21 +163,13 @@
             "total_score": 0.5,
             "finished": true,
             "steps": 6,
-            "result": "allGames.csv and allEvents.csv have been created and verified.",
-            "len_added_files": 3,
+            "result": "allGames.csv and allEvents.csv have been successfully created with the required information.",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md && ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat sample_allGames.csv && cat sample_allEvents.csv"
-                ],
-                [
-                    "Bash",
-                    "head Athletes_summer_games.csv && head Athletes_winter_games.csv"
+                    "ls -l"
                 ],
                 [
                     "Python",
@@ -177,7 +177,15 @@
                 ],
                 [
                     "Bash",
-                    "head allGames.csv && head allEvents.csv"
+                    "cat allGames.csv"
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "head allEvents.csv"
                 ],
                 [
                     "Terminate",
@@ -190,30 +198,38 @@
             "id": "dm-csv-005",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 8,
             "result": "result.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat age.txt && echo '---' && cat README.md && echo '---' && cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
+                    "cat age.txt"
                 ],
                 [
                     "Python",
-                    26
+                    36
                 ],
                 [
                     "Bash",
-                    "cat result.csv"
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Bash",
+                    "head Users.csv"
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    36
                 ],
                 [
                     "Terminate",
@@ -226,34 +242,26 @@
             "id": "dm-csv-006",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
+            "steps": 6,
             "result": "result.csv",
-            "len_added_files": 3,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls *.sqlite *.db"
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "ls *.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 order_items.csv"
+                    "head order_items.csv"
                 ],
                 [
                     "Python",
-                    31
-                ],
-                [
-                    "Bash",
-                    "cat result.csv"
-                ],
-                [
-                    "Python",
-                    10
+                    28
                 ],
                 [
                     "Bash",
@@ -277,27 +285,27 @@
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
                     "cat wrFormula.tex"
                 ],
                 [
-                    "Bash",
-                    "head tmdb_5000_movies.csv"
+                    "Python",
+                    24
                 ],
                 [
                     "Python",
-                    35
+                    24
                 ],
                 [
                     "Python",
-                    35
+                    24
                 ],
                 [
                     "Bash",
-                    "cat result.csv"
+                    "ls result.csv"
                 ],
                 [
                     "Terminate",
@@ -310,9 +318,9 @@
             "id": "dm-csv-009",
             "total_score": 0.0,
             "finished": true,
-            "steps": 10,
+            "steps": 7,
             "result": "author.csv",
-            "len_added_files": 3,
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -320,16 +328,8 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md guidance.txt"
-                ],
-                [
-                    "Bash",
-                    "cat guidance.txt"
-                ],
-                [
                     "Python",
-                    33
+                    7
                 ],
                 [
                     "Python",
@@ -337,19 +337,15 @@
                 ],
                 [
                     "Python",
-                    33
+                    25
                 ],
                 [
                     "Python",
-                    36
+                    28
                 ],
                 [
-                    "Bash",
-                    "ls -l author.csv"
-                ],
-                [
-                    "Bash",
-                    "cat author.csv"
+                    "Python",
+                    28
                 ],
                 [
                     "Terminate",
@@ -362,46 +358,34 @@
             "id": "dm-csv-010",
             "total_score": 0.0,
             "finished": true,
-            "steps": 10,
-            "result": "/workspace/avg_units_sold.csv",
-            "len_added_files": 2,
+            "steps": 7,
+            "result": "avg_units_sold.csv",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls *.sqlite *.db"
                 ],
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "cat categories.csv"
-                ],
-                [
-                    "Bash",
-                    "cat products.csv"
-                ],
-                [
-                    "Bash",
-                    "cat orders.csv"
-                ],
-                [
-                    "Bash",
-                    "cat order_items.csv"
+                    "ls *.csv *.txt"
                 ],
                 [
                     "Python",
-                    34
+                    22
                 ],
                 [
                     "Bash",
-                    "cat /workspace/avg_units_sold.csv"
+                    "head -n 1 products.csv"
+                ],
+                [
+                    "Python",
+                    30
+                ],
+                [
+                    "Bash",
+                    "head -n 5 avg_units_sold.csv"
                 ],
                 [
                     "Terminate",
@@ -414,62 +398,14 @@
             "id": "dm-csv-011",
             "total_score": 0.0,
             "finished": true,
-            "steps": 14,
-            "result": "result.csv",
-            "len_added_files": 3,
+            "steps": 2,
+            "result": "Please provide the correct path to the Bike Store Relational Database file.",
+            "len_added_files": 0,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "SQL",
-                    "SELECT name FROM sqlite_master WHERE type='table'"
-                ],
-                [
-                    "Bash",
-                    "ls -l *.db *.sqlite"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 categories.csv products.csv orders.csv order_items.csv"
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    35
-                ],
-                [
-                    "Python",
-                    26
-                ],
-                [
-                    "Python",
-                    35
-                ],
-                [
-                    "Bash",
-                    "cat result.csv"
+                    "ls *.sqlite *.db"
                 ],
                 [
                     "Terminate",
@@ -482,9 +418,9 @@
             "id": "dm-csv-012",
             "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 8,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -492,20 +428,24 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 orders.csv order_items.csv"
+                    "Python",
+                    19
                 ],
                 [
                     "Python",
-                    32
+                    5
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    25
                 ],
                 [
                     "Bash",
@@ -520,68 +460,56 @@
         },
         {
             "id": "dm-csv-013",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 15,
-            "result": "/workspace/result.csv",
-            "len_added_files": 9,
+            "steps": 12,
+            "result": "result.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    12
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "cat BMI.txt"
+                    "head -n 1 players_20.csv"
                 ],
                 [
                     "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    22
-                ],
-                [
-                    "Python",
-                    25
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/teams_and_leagues.csv"
-                ],
-                [
-                    "Python",
-                    22
-                ],
-                [
-                    "Python",
-                    22
+                    12
                 ],
                 [
                     "Python",
                     13
                 ],
                 [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
                     "Bash",
-                    "cat /workspace/result.csv"
+                    "ls result.csv"
                 ],
                 [
                     "Terminate",
@@ -594,54 +522,90 @@
             "id": "dm-csv-015",
             "total_score": 0.0,
             "finished": true,
-            "steps": 13,
+            "steps": 14,
             "result": "result.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls *.csv"
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "head batting.csv"
                 ],
                 [
                     "SQL",
-                    "SELECT name FROM sqlite_master WHERE type='table'"
-                ],
-                [
-                    "SQL",
-                    "SELECT playerID, SUM(G) as total_games, SUM(R) as total_runs, SUM(H) as total_hits, SUM(HR) as total_home_runs FROM batting GROUP BY playerID ORDER BY total_games DESC, total_runs DESC, total_hits DESC, total_home_runs DESC LIMIT 1"
-                ],
-                [
-                    "SQL",
-                    "PRAGMA table_info(batting)"
-                ],
-                [
-                    "SQL",
-                    "SELECT player_id, SUM(g_all) as total_games FROM appearances GROUP BY player_id ORDER BY total_games DESC LIMIT 1"
-                ],
-                [
-                    "SQL",
-                    "SELECT player_id, SUM(r) as total_runs FROM batting GROUP BY player_id ORDER BY total_runs DESC LIMIT 1"
-                ],
-                [
-                    "SQL",
-                    "SELECT player_id, SUM(h) as total_hits FROM batting GROUP BY player_id ORDER BY total_hits DESC LIMIT 1"
-                ],
-                [
-                    "SQL",
-                    "SELECT player_id, SUM(hr) as total_home_runs FROM batting GROUP BY player_id ORDER BY total_home_runs DESC LIMIT 1"
+                    "SELECT player_id, MAX(hr) AS home_runs FROM batting GROUP BY player_id ORDER BY home_runs DESC LIMIT 1"
                 ],
                 [
                     "Bash",
-                    "cat sample_result.csv"
+                    "\"sqlite3 baseball.db <(echo .mode csv; echo .import batting.csv batting; echo SELECT player_id, MAX(g"
+                ],
+                [
+                    "Bash",
+                    "\"echo '.mode csv\\n.import batting.csv batting\\nSELECT player_id, MAX(g"
+                ],
+                [
+                    "Bash",
+                    "\"echo '.mode csv\\n.import batting.csv batting\\nSELECT player_id, MAX(g"
+                ],
+                [
+                    "Bash",
+                    "sqlite3 baseball.db '.mode csv\\n.import batting.csv batting'"
+                ],
+                [
+                    "Bash",
+                    "pip install sqlite3"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 baseball.db <(echo .mode csv\\n.import batting.csv batting\\nSELECT player_id, MAX(games_played"
+                ],
+                [
+                    "Bash",
+                    "\"echo '.mode csv\\n.import batting.csv batting\\nSELECT player_id, MAX(g"
+                ],
+                [
+                    "Bash",
+                    "sqlite3 baseball.db '.mode csv\\n.import batting.csv batting'"
                 ],
                 [
                     "Python",
-                    16
+                    26
+                ],
+                [
+                    "Bash",
+                    "ls result.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-016",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls *.csv"
+                ],
+                [
+                    "Bash",
+                    "head games.csv"
+                ],
+                [
+                    "Python",
+                    20
                 ],
                 [
                     "Bash",
@@ -655,12 +619,12 @@
             "info": []
         },
         {
-            "id": "dm-csv-016",
+            "id": "dm-csv-018",
             "total_score": 0.0,
             "finished": true,
-            "steps": 11,
+            "steps": 10,
             "result": "result.csv",
-            "len_added_files": 5,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -668,112 +632,36 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
+                    "SQL",
+                    "SELECT University, Tuition FROM datascience_programs_list ORDER BY Tuition LIMIT 10"
                 ],
                 [
                     "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "head competitions.csv"
-                ],
-                [
-                    "Bash",
-                    "head games.csv"
+                    "sqlite3 ds_programs.db < create_table.sql"
                 ],
                 [
                     "Python",
                     12
                 ],
                 [
-                    "Python",
-                    11
-                ],
-                [
-                    "Python",
-                    32
-                ],
-                [
-                    "Python",
-                    32
-                ],
-                [
                     "Bash",
-                    "head result.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": []
-        },
-        {
-            "id": "dm-csv-018",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 15,
-            "result": "result.csv",
-            "len_added_files": 8,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
+                    "echo '.mode csv\\n.import datascience_programs_list.csv datascience_programs' | sqlite3 ds_programs.db"
                 ],
                 [
                     "Python",
-                    7
+                    12
                 ],
                 [
-                    "Python",
-                    28
+                    "SQL",
+                    "SELECT University, Tuition FROM datascience_programs ORDER BY Tuition LIMIT 10"
                 ],
                 [
-                    "Bash",
-                    "head result.csv"
+                    "SQL",
+                    "PRAGMA table_info(datascience_programs)"
                 ],
                 [
-                    "Python",
-                    31
-                ],
-                [
-                    "Bash",
-                    "head result.csv"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Bash",
-                    "head result.csv"
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Bash",
-                    "head result.csv"
-                ],
-                [
-                    "Python",
-                    10
+                    "SQL",
+                    "SELECT `University Name`, `Per Year Fees` FROM datascience_programs ORDER BY `Per Year Fees` LIMIT 10"
                 ],
                 [
                     "Terminate",
@@ -784,11 +672,11 @@
         },
         {
             "id": "dm-csv-019",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
             "steps": 6,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -796,20 +684,20 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
+                    "Python",
+                    18
                 ],
                 [
                     "Bash",
-                    "head -n 5 LaLiga_Matches.csv"
+                    "head -n 20 result.csv"
                 ],
                 [
                     "Python",
-                    38
+                    11
                 ],
                 [
                     "Bash",
-                    "head -n 3 result.csv"
+                    "head -n 20 result.csv"
                 ],
                 [
                     "Terminate",
@@ -822,9 +710,9 @@
             "id": "dm-csv-020",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
+            "steps": 7,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -832,28 +720,24 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md guidance.txt sample_result.txt"
-                ],
-                [
-                    "Bash",
-                    "tail -n +20 README.md && cat sample_result.txt"
-                ],
-                [
-                    "Bash",
-                    "tail -n +40 README.md && cat sample_result.txt"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.txt"
+                    "Python",
+                    17
                 ],
                 [
                     "Python",
-                    18
+                    7
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    16
                 ],
                 [
                     "Bash",
-                    "head result.csv"
+                    "ls -l result.csv"
                 ],
                 [
                     "Terminate",
@@ -866,7 +750,7 @@
             "id": "dm-csv-021",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 12,
             "result": "result.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
@@ -877,15 +761,39 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
+                    "head marketing_data.csv"
                 ],
                 [
                     "Python",
-                    39
+                    19
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Bash",
+                    "cat result.csv"
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
                 ],
                 [
                     "Bash",
@@ -901,91 +809,47 @@
         {
             "id": "dm-csv-022",
             "total_score": 0.0,
-            "finished": false,
-            "steps": 20,
-            "result": "",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
             "len_added_files": 7,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "head result.csv && ls *.csv"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 1 marketing_data.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "head marketing_data.csv"
                 ],
                 [
                     "Python",
-                    7
+                    27
                 ],
                 [
                     "Python",
-                    33
-                ],
-                [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    29
                 ],
                 [
                     "Python",
-                    38
+                    28
+                ],
+                [
+                    "SQL",
+                    "SELECT Country, Age_Group, AVG(Acceptance_Rate) AS MeanAcceptanceRate FROM preprocessed_data GROUP BY Country, Age_Group"
                 ],
                 [
                     "Python",
-                    38
+                    10
                 ],
                 [
                     "Python",
-                    37
+                    13
                 ],
                 [
-                    "Python",
-                    43
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Python",
-                    43
-                ],
-                [
-                    "Bash",
-                    "head -n 5 result.csv"
-                ],
-                [
-                    "Python",
-                    14
-                ],
-                [
-                    "Bash",
-                    "head -n 5 result.csv"
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "Terminate",
+                    ""
                 ]
             ],
             "info": []
@@ -994,9 +858,9 @@
             "id": "dm-csv-023",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
+            "steps": 13,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -1004,12 +868,8 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
+                    "Python",
+                    21
                 ],
                 [
                     "Bash",
@@ -1017,11 +877,35 @@
                 ],
                 [
                     "Python",
-                    26
+                    21
+                ],
+                [
+                    "Python",
+                    24
                 ],
                 [
                     "Bash",
-                    "ls -l result.csv"
+                    "cat result.csv"
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Bash",
+                    "cat result.csv"
+                ],
+                [
+                    "Python",
+                    26
                 ],
                 [
                     "Bash",
@@ -1036,36 +920,52 @@
         },
         {
             "id": "dm-csv-024",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 7,
-            "result": "purchase_by_income.csv",
-            "len_added_files": 2,
-            "len_changed_files": 1,
+            "steps": 11,
+            "result": "FAIL - Insufficient valid income data to proceed with the task.",
+            "len_added_files": 8,
+            "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "cat tips.txt"
                 ],
                 [
-                    "Python",
-                    18
-                ],
-                [
-                    "Python",
-                    24
-                ],
-                [
                     "Bash",
-                    "cat purchase_by_income.csv"
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    23
                 ],
                 [
                     "Terminate",
@@ -1076,52 +976,92 @@
         },
         {
             "id": "dm-csv-025",
-            "total_score": 1.0,
-            "finished": true,
-            "steps": 10,
-            "result": "highest_team_probabilities.csv",
-            "len_added_files": 3,
-            "len_changed_files": 1,
+            "total_score": 0.0,
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "len_added_files": 2,
+            "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "cat tips.txt"
                 ],
                 [
-                    "Bash",
-                    "cat sample_result.csv"
+                    "Python",
+                    11
                 ],
                 [
                     "Bash",
-                    "cat analysis.py"
+                    "ls -l matches.csv"
+                ],
+                [
+                    "Bash",
+                    "find /workspace -name 'matches*.csv'"
+                ],
+                [
+                    "Bash",
+                    "find /workspace -name '*.csv'"
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    33
                 ],
                 [
                     "Python",
                     36
                 ],
                 [
-                    "Bash",
-                    "cat team_probabilities.csv"
+                    "Python",
+                    40
                 ],
                 [
                     "Python",
-                    22
+                    43
                 ],
                 [
-                    "Bash",
-                    "cat highest_team_probabilities.csv"
+                    "Python",
+                    43
                 ],
                 [
-                    "Terminate",
-                    ""
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    44
                 ]
             ],
             "info": []
@@ -1130,10 +1070,10 @@
             "id": "dm-csv-026",
             "total_score": 0.0,
             "finished": true,
-            "steps": 13,
+            "steps": 18,
             "result": "result.csv",
-            "len_added_files": 1,
-            "len_changed_files": 1,
+            "len_added_files": 5,
+            "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
@@ -1141,47 +1081,67 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
                     "cat playerposition.txt"
                 ],
                 [
-                    "Bash",
-                    "tail -n +10 playerposition.txt"
-                ],
-                [
-                    "Bash",
-                    "cat workflow.md"
-                ],
-                [
-                    "Bash",
-                    "cat playerposition.txt"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
+                    "Python",
+                    7
                 ],
                 [
                     "Python",
-                    47
-                ],
-                [
-                    "Bash",
-                    "head -n 1 players_15.csv"
+                    19
                 ],
                 [
                     "Python",
-                    43
+                    5
                 ],
                 [
-                    "Bash",
-                    "ls -l"
+                    "Python",
+                    26
                 ],
                 [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Other",
+                    ""
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    39
                 ],
                 [
                     "Terminate",
@@ -1194,38 +1154,26 @@
             "id": "dm-csv-027",
             "total_score": 0.5,
             "finished": true,
-            "steps": 8,
-            "result": "Top_10_countries.csv and Top_10_Movies.csv",
+            "steps": 5,
+            "result": "[\"Top_10_countries.csv\", \"Top_10_Movies.csv\"]",
             "len_added_files": 1,
             "len_changed_files": 2,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head -n 5 netflix1.csv"
+                    "head netflix1.csv"
                 ],
                 [
                     "Python",
-                    14
-                ],
-                [
-                    "Python",
-                    16
+                    22
                 ],
                 [
                     "Bash",
-                    "ls -l Top_10_countries.csv Top_10_Movies.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 11 Top_10_countries.csv && echo && head -n 11 Top_10_Movies.csv"
+                    "ls -l Top_10_*"
                 ],
                 [
                     "Terminate",
@@ -1245,15 +1193,7 @@
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 data.csv"
+                    "ls *.csv"
                 ],
                 [
                     "Python",
@@ -1261,7 +1201,15 @@
                 ],
                 [
                     "Bash",
-                    "head -n 5 state_profit.csv"
+                    "head -n 1 data.csv"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Bash",
+                    "cat state_profit.csv"
                 ],
                 [
                     "Terminate",
@@ -1274,26 +1222,22 @@
             "id": "dm-csv-029",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 5,
             "result": "top3_pull_requests.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls *.csv"
                 ],
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 pulls.csv"
+                    "head pulls.csv"
                 ],
                 [
                     "Python",
-                    14
+                    16
                 ],
                 [
                     "Bash",
@@ -1312,7 +1256,7 @@
             "finished": true,
             "steps": 9,
             "result": "unique_files.csv",
-            "len_added_files": 3,
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -1320,32 +1264,32 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
+                    "Python",
+                    12
                 ],
                 [
                     "Bash",
-                    "head pulls.csv"
-                ],
-                [
-                    "Bash",
-                    "sort -t',' -k3 -r pulls.csv | head -n 11"
-                ],
-                [
-                    "Bash",
-                    "sort -t',' -k3 -r pulls.csv | head -n 11 | cut -d',' -f1 > latest_pulls_ids.txt"
+                    "head -n 1 /workspace/pulls.csv"
                 ],
                 [
                     "Python",
-                    22
+                    12
                 ],
                 [
                     "Python",
-                    23
+                    16
                 ],
                 [
                     "Bash",
-                    "head unique_files.csv"
+                    "head -n 1 /workspace/pull_files.csv"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Bash",
+                    "head -n 1 /workspace/sample_result.csv && head -n 1 /workspace/unique_files.csv"
                 ],
                 [
                     "Terminate",
@@ -1358,30 +1302,38 @@
             "id": "dm-csv-031",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 8,
             "result": "users_last_6.csv",
-            "len_added_files": 1,
+            "len_added_files": 2,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -R"
                 ],
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head pull_files.csv pulls.csv"
+                    "head pulls.csv"
                 ],
                 [
                     "Python",
-                    20
+                    17
                 ],
                 [
                     "Bash",
-                    "cat users_last_6.csv"
+                    "head -n 1 pulls.csv"
+                ],
+                [
+                    "Bash",
+                    "head pull_files.csv"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls users_last_6.csv"
                 ],
                 [
                     "Terminate",
@@ -1392,32 +1344,16 @@
         },
         {
             "id": "dm-csv-032",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 6,
-            "result": "retention_by_version.csv",
-            "len_added_files": 1,
-            "len_changed_files": 1,
+            "steps": 2,
+            "result": "FAIL",
+            "len_added_files": 0,
+            "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 cookie_cats.csv"
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Bash",
-                    "cat retention_by_version.csv"
+                    "ls -l Mobile-Games-Testing-with-Cookie-Cats.csv"
                 ],
                 [
                     "Terminate",
@@ -1430,22 +1366,18 @@
             "id": "dm-csv-033",
             "total_score": 0.0,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/probability_greater_retention.csv",
-            "len_added_files": 3,
+            "steps": 10,
+            "result": "probability_greater_retention.csv",
+            "len_added_files": 6,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
                     "cat guidance.txt"
+                ],
+                [
+                    "Bash",
+                    "ls *.csv"
                 ],
                 [
                     "Python",
@@ -1453,11 +1385,27 @@
                 ],
                 [
                     "Python",
-                    25
+                    13
                 ],
                 [
                     "Python",
-                    10
+                    7
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Bash",
+                    "head probability_greater_retention.csv"
                 ],
                 [
                     "Terminate",
@@ -1468,32 +1416,16 @@
         },
         {
             "id": "dm-csv-034",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 6,
-            "result": "retention_7_by_version.csv",
-            "len_added_files": 1,
-            "len_changed_files": 1,
+            "steps": 2,
+            "result": "FAIL",
+            "len_added_files": 0,
+            "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 cookie_cats.csv"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Bash",
-                    "cat retention_7_by_version.csv"
+                    "ls -l Mobile-Games-Testing-with-Cookie-Cats.csv"
                 ],
                 [
                     "Terminate",
@@ -1504,10 +1436,10 @@
         },
         {
             "id": "dm-csv-035",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
             "steps": 7,
-            "result": "/workspace/output.csv",
+            "result": "output.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
@@ -1517,23 +1449,23 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head pulls.csv"
                 ],
                 [
                     "Bash",
-                    "cat sample_output.csv"
-                ],
-                [
-                    "Bash",
-                    "head pulls.csv && echo '---' && head pull_files.csv"
+                    "head pull_files.csv"
                 ],
                 [
                     "Python",
-                    14
+                    19
+                ],
+                [
+                    "Python",
+                    19
                 ],
                 [
                     "Bash",
-                    "head -n 5 output.csv"
+                    "cat output.csv"
                 ],
                 [
                     "Terminate",
@@ -1548,32 +1480,32 @@
             "finished": true,
             "steps": 8,
             "result": "users_last_6.csv",
-            "len_added_files": 1,
+            "len_added_files": 5,
             "len_changed_files": 1,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 pulls.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 pull_files.csv"
-                ],
-                [
-                    "Bash",
-                    "grep 'src/compiler/scala/reflect/reify/phases/Calculate.scala' pull_files.csv"
+                    "Python",
+                    15
                 ],
                 [
                     "Python",
-                    22
+                    5
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    16
                 ],
                 [
                     "Bash",
@@ -1588,52 +1520,32 @@
         },
         {
             "id": "dm-csv-037",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 11,
+            "steps": 6,
             "result": "top_3_developers.csv",
-            "len_added_files": 7,
+            "len_added_files": 1,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls *.csv"
+                    "head -n 5 pulls.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 pull_files.csv && head -n 5 pulls.csv"
-                ],
-                [
-                    "Bash",
-                    "grep 'src/compiler/scala/reflect/reify/phases/Calculate.scala' pull_files.csv > filtered_pull_files.csv"
+                    "head -n 5 pull_files.csv"
                 ],
                 [
                     "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    9
+                    24
                 ],
                 [
                     "Bash",
-                    "grep -m 1 'pid' pull_files.csv && grep 'src/compiler/scala/reflect/reify/phases/Calculate.scala' pull_files.csv > filtered_pull_files_with_headers.csv"
-                ],
-                [
-                    "Bash",
-                    "echo 'pid,file' > filtered_pull_files_with_headers.csv && grep 'src/compiler/scala/reflect/reify/phases/Calculate.scala' pull_files.csv >> filtered_pull_files_with_headers.csv"
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    13
+                    "cat top_3_developers.csv"
                 ],
                 [
                     "Terminate",
@@ -1646,15 +1558,11 @@
             "id": "dm-csv-038",
             "total_score": 1.0,
             "finished": true,
-            "steps": 11,
+            "steps": 7,
             "result": "pull_requests_by_year_and_author.csv",
-            "len_added_files": 2,
+            "len_added_files": 3,
             "len_changed_files": 1,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
@@ -1665,31 +1573,19 @@
                 ],
                 [
                     "Python",
-                    23
+                    14
                 ],
                 [
                     "Bash",
-                    "cat pull_requests_by_year_and_author.csv"
+                    "head filtered_pull_requests.csv"
                 ],
                 [
                     "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    34
+                    16
                 ],
                 [
                     "Bash",
-                    "cat pull_requests_by_year_and_author.csv"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Bash",
-                    "cat pull_requests_by_year_and_author.csv"
+                    "head pull_requests_by_year_and_author.csv"
                 ],
                 [
                     "Terminate",
@@ -1702,86 +1598,42 @@
             "id": "dm-csv-039",
             "total_score": 0.0,
             "finished": true,
-            "steps": 20,
-            "result": "/workspace/ingredient_origins.csv",
-            "len_added_files": 14,
-            "len_changed_files": 1,
+            "steps": 9,
+            "result": "FAILED - Unable to automatically parse CSV files due to persistent formatting issues. Manual inspection and correction or use of specialized preprocessing tools outside this environment is recommended.",
+            "len_added_files": 2,
+            "len_changed_files": 3,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat tips.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l data/"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "cat ingredient_origins.csv"
+                    "head avocado.csv"
                 ],
                 [
                     "Bash",
-                    "cat relevant_avocado_categories.txt"
+                    "head olive_oil.csv && head sourdough.csv"
                 ],
                 [
                     "Python",
-                    24
-                ],
-                [
-                    "Python",
-                    26
-                ],
-                [
-                    "Python",
-                    16
+                    21
                 ],
                 [
                     "Bash",
-                    "cat relevant_olive_oil_categories.txt"
+                    "sed -i 's/,,/,/g' avocado.csv olive_oil.csv sourdough.csv"
                 ],
                 [
                     "Python",
-                    24
+                    21
+                ],
+                [
+                    "Other",
+                    ""
                 ],
                 [
                     "Python",
-                    23
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    19
-                ],
-                [
-                    "Bash",
-                    "cat relevant_sourdough_categories.txt"
-                ],
-                [
-                    "Python",
-                    24
-                ],
-                [
-                    "Python",
-                    23
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    19
+                    35
                 ],
                 [
                     "Terminate",
@@ -1792,32 +1644,48 @@
         },
         {
             "id": "dm-csv-040",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 10,
             "result": "result.csv",
-            "len_added_files": 5,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Python",
-                    7
+                    16
+                ],
+                [
+                    "Bash",
+                    "head ds_salaries_clean.csv"
                 ],
                 [
                     "Python",
-                    29
+                    16
                 ],
                 [
                     "Python",
-                    21
+                    16
+                ],
+                [
+                    "Bash",
+                    "head -n 1 ds_salaries_clean.csv | tr ',' '\\n'"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Bash",
+                    "cat result.csv"
+                ],
+                [
+                    "Python",
+                    16
                 ],
                 [
                     "Terminate",
@@ -1830,9 +1698,9 @@
             "id": "dm-csv-041",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 16,
             "result": "stop_outcomes_by_gender.csv",
-            "len_added_files": 1,
+            "len_added_files": 2,
             "len_changed_files": 1,
             "actions": [
                 [
@@ -1840,20 +1708,60 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
+                    "SQL",
+                    "SELECT gender, stop_outcome, COUNT(*) AS count FROM police WHERE violation = 'Speeding' GROUP BY gender, stop_outcome"
                 ],
                 [
                     "Bash",
-                    "head -n 5 police.csv"
+                    "\"sqlite3 police.db <(echo .mode csv; echo .import police.csv police; echo SELECT gender, stop_outcome, COUNT(*"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <(echo '.mode csv'; echo '.import police.csv police'; echo 'SELECT gender, stop_outcome, COUNT(*"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <(echo '.mode csv'; echo '.import police.csv police'; echo 'SELECT gender, stop_outcome, COUNT(*"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <(echo '.mode csv'; echo '.import police.csv police'; echo 'SELECT gender, stop_outcome, COUNT(*"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <(echo '.mode csv'; echo '.import police.csv police'"
+                ],
+                [
+                    "Bash",
+                    "sqlite3 police.db <(echo \".mode csv\"; echo \".import police.csv police\\"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <(echo .mode csv; echo .import police.csv police"
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <<EOF\n.mode csv\n.import police.csv police\nEOF\"\""
+                ],
+                [
+                    "Bash",
+                    "\"sqlite3 police.db <<'EOF'\n.mode csv\n.import police.csv police\nEOF\n\"\""
+                ],
+                [
+                    "Bash",
+                    "sqlite3 police.db '.mode csv; .import police.csv police;'"
                 ],
                 [
                     "Python",
-                    13
+                    11
                 ],
                 [
                     "Bash",
-                    "cat stop_outcomes_by_gender.csv"
+                    "head -n 1 police.csv"
+                ],
+                [
+                    "Python",
+                    11
                 ],
                 [
                     "Terminate",
@@ -1866,34 +1774,26 @@
             "id": "dm-csv-042",
             "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 5,
             "result": "result.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 online.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 cohort_counts.csv"
+                    "head online.csv"
                 ],
                 [
                     "Python",
-                    19
+                    17
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "ls result.csv"
                 ],
                 [
                     "Terminate",
@@ -1906,34 +1806,30 @@
             "id": "dm-csv-043",
             "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 6,
             "result": "retention.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
                     "cat tips.txt"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 online.csv"
-                ],
-                [
                     "Python",
-                    36
+                    13
                 ],
                 [
                     "Bash",
                     "ls -l"
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    33
                 ],
                 [
                     "Terminate",
@@ -1944,9 +1840,9 @@
         },
         {
             "id": "dm-csv-044",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 6,
             "result": "average_price.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
@@ -1956,24 +1852,20 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
+                    "Python",
+                    17
                 ],
                 [
                     "Bash",
-                    "head -n 5 online.csv"
+                    "head -n 1 online.csv"
+                ],
+                [
+                    "Python",
+                    17
                 ],
                 [
                     "Bash",
                     "cat average_price.csv"
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Bash",
-                    "head -n 5 average_price.csv"
                 ],
                 [
                     "Terminate",
@@ -1986,38 +1878,22 @@
             "id": "dm-csv-045",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
-            "result": "datasmart.csv",
-            "len_added_files": 2,
+            "steps": 4,
+            "result": "The required file 'datasmart.csv' is missing. Please upload the correct file and restart the task.",
+            "len_added_files": 1,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "cat tips.txt"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 online12M.csv"
-                ],
-                [
                     "Python",
-                    30
-                ],
-                [
-                    "Python",
-                    27
+                    18
                 ],
                 [
                     "Bash",
-                    "head -n 5 datasmart.csv"
+                    "ls -l datasmart.csv"
                 ],
                 [
                     "Terminate",
@@ -2032,24 +1908,24 @@
             "finished": true,
             "steps": 6,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head MSFTPrices.csv"
+                    "ls *.csv"
                 ],
                 [
                     "Python",
-                    28
+                    25
+                ],
+                [
+                    "Bash",
+                    "cat sample_result.csv"
+                ],
+                [
+                    "Python",
+                    14
                 ],
                 [
                     "Bash",
@@ -2066,9 +1942,9 @@
             "id": "dm-csv-047",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
-            "result": "result.csv",
-            "len_added_files": 2,
+            "steps": 14,
+            "result": "FAIL",
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -2076,8 +1952,12 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
+                    "Python",
+                    30
+                ],
+                [
+                    "Python",
+                    32
                 ],
                 [
                     "Bash",
@@ -2085,11 +1965,39 @@
                 ],
                 [
                     "Python",
-                    19
+                    32
                 ],
                 [
-                    "Bash",
-                    "cat result.csv"
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    44
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    35
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    52
                 ],
                 [
                     "Terminate",
@@ -2109,15 +2017,7 @@
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 USO.csv"
+                    "ls *.csv"
                 ],
                 [
                     "Python",
@@ -2125,275 +2025,11 @@
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": []
-        },
-        {
-            "id": "dm-csv-050",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 8,
-            "result": "result.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "head Big9Returns2017.csv"
+                    "head -n 1 USO.csv"
                 ],
                 [
                     "Python",
-                    35
-                ],
-                [
-                    "Python",
-                    39
-                ],
-                [
-                    "Bash",
-                    "head result.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": []
-        },
-        {
-            "id": "dm-csv-051",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 6,
-            "result": "output.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat tips.md"
-                ],
-                [
-                    "Bash",
-                    "cat Big9Returns2017.csv"
-                ],
-                [
-                    "Python",
-                    21
-                ],
-                [
-                    "Bash",
-                    "cat output.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": []
-        },
-        {
-            "id": "dm-csv-052",
-            "total_score": 0.0,
-            "finished": false,
-            "steps": 20,
-            "result": "",
-            "len_added_files": 1,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat tips.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 online12M.csv"
-                ],
-                [
-                    "Python",
-                    45
-                ],
-                [
-                    "Python",
-                    46
-                ],
-                [
-                    "Python",
-                    47
-                ],
-                [
-                    "Python",
-                    52
-                ],
-                [
-                    "Python",
-                    57
-                ],
-                [
-                    "Python",
-                    57
-                ],
-                [
-                    "Python",
-                    57
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    49
-                ],
-                [
-                    "Python",
-                    49
-                ],
-                [
-                    "Python",
-                    62
-                ]
-            ],
-            "info": []
-        },
-        {
-            "id": "dm-csv-053",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 12,
-            "result": "RFM_Score.csv",
-            "len_added_files": 1,
-            "len_changed_files": 1,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat tips.txt"
-                ],
-                [
-                    "Bash",
-                    "cat RFM_Score.csv"
-                ],
-                [
-                    "Bash",
-                    "head datamart_rfm.csv"
-                ],
-                [
-                    "Python",
-                    31
-                ],
-                [
-                    "Python",
-                    31
-                ],
-                [
-                    "Python",
-                    35
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Bash",
-                    "head RFM_Score.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": []
-        },
-        {
-            "id": "dm-csv-054",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 7,
-            "result": "result.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat tips.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 EfficientFrontierPortfoliosSlim.csv"
-                ],
-                [
-                    "Python",
-                    21
+                    19
                 ],
                 [
                     "Bash",
@@ -2407,73 +2043,213 @@
             "info": []
         },
         {
-            "id": "dm-csv-055",
+            "id": "dm-csv-050",
             "total_score": 0.0,
             "finished": true,
-            "steps": 16,
+            "steps": 10,
             "result": "result.csv",
-            "len_added_files": 7,
-            "len_changed_files": 1,
+            "len_added_files": 8,
+            "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 FamaFrenchFactors.csv"
+                    "ls *.csv"
                 ],
                 [
                     "Python",
-                    14
+                    25
                 ],
                 [
-                    "Bash",
-                    "head -n 5 calculated_returns.csv"
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    9
                 ],
                 [
                     "Python",
                     11
                 ],
                 [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "Python",
+                    25
                 ],
                 [
                     "Python",
-                    14
+                    28
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "cat result.csv"
+                ],
+                [
+                    "Bash",
+                    "head result.csv && head sample_result.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-051",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 11,
+            "result": "output.csv",
+            "len_added_files": 3,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Bash",
+                    "pip install pandas_datareader"
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
                 ],
                 [
                     "Python",
                     23
                 ],
                 [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-052",
+            "total_score": 1.0,
+            "finished": true,
+            "steps": 4,
+            "result": "result.csv",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "ls *.csv"
+                ],
+                [
+                    "Bash",
+                    "head datamart_rfm_scores_named_segment.csv"
                 ],
                 [
                     "Python",
-                    23
+                    10
                 ],
                 [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-053",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 4,
+            "result": "FAIL: The provided RFM_Score.csv file does not contain the necessary columns 'Recency', 'Frequency', and 'MonetaryValue' to calculate the RFM scores. Please provide the correct dataset.",
+            "len_added_files": 1,
+            "len_changed_files": 0,
+            "actions": [
+                [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "ls -l RFM_Score.csv"
                 ],
                 [
                     "Python",
-                    24
+                    16
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "head -n 1 RFM_Score.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-054",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 2,
+            "result": "FAIL",
+            "len_added_files": 0,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l portfolio_risk_management_dataset.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-055",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "len_added_files": 3,
+            "len_changed_files": 1,
+            "actions": [
+                [
+                    "Bash",
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    21
                 ],
                 [
                     "Terminate",
@@ -2486,18 +2262,14 @@
             "id": "dm-csv-056",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
+            "steps": 10,
             "result": "result.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
+                    "ls FamaFrenchData.csv tips.md"
                 ],
                 [
                     "Bash",
@@ -2505,7 +2277,19 @@
                 ],
                 [
                     "Bash",
-                    "head Big9Returns2017.csv"
+                    "ls *.csv"
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "head MSFTPrices.csv"
+                ],
+                [
+                    "Python",
+                    28
                 ],
                 [
                     "Bash",
@@ -2513,7 +2297,7 @@
                 ],
                 [
                     "Python",
-                    30
+                    28
                 ],
                 [
                     "Bash",
@@ -2528,48 +2312,56 @@
         },
         {
             "id": "dm-csv-057",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 10,
+            "steps": 12,
             "result": "purchase_summary.csv",
-            "len_added_files": 3,
+            "len_added_files": 9,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 purchase_data.csv user_demographics_v1.csv"
-                ],
-                [
-                    "Bash",
-                    "cat purchase_summary.csv"
+                    "ls *.csv"
                 ],
                 [
                     "Python",
-                    20
-                ],
-                [
-                    "Bash",
-                    "cat purchase_summary_calculated.csv"
+                    34
                 ],
                 [
                     "Python",
-                    24
+                    8
                 ],
                 [
                     "Python",
-                    19
+                    35
                 ],
                 [
-                    "Bash",
-                    "cat purchase_summary.csv"
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    44
+                ],
+                [
+                    "Python",
+                    44
+                ],
+                [
+                    "Python",
+                    41
                 ],
                 [
                     "Terminate",
@@ -2584,13 +2376,9 @@
             "finished": true,
             "steps": 14,
             "result": "result.csv",
-            "len_added_files": 5,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
@@ -2598,6 +2386,34 @@
                 [
                     "Bash",
                     "cat sample_result.csv"
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Bash",
+                    "pip install --upgrade scipy"
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Bash",
+                    "head -n 1 AB_testing_exercise.csv"
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    14
                 ],
                 [
                     "Bash",
@@ -2609,31 +2425,7 @@
                 ],
                 [
                     "Python",
-                    39
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    11
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    36
-                ],
-                [
-                    "Bash",
-                    "cat result.csv"
+                    40
                 ],
                 [
                     "Python",
@@ -2657,27 +2449,27 @@
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "head result.csv"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls *.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 purchase_data.csv user_demographics_v1.csv"
+                    "head purchase_data.csv"
                 ],
                 [
                     "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    29
+                    31
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "tail result.csv"
+                ],
+                [
+                    "Bash",
+                    "head result.csv && echo '----' && tail result.csv && echo '----' && shuf -n 5 result.csv"
                 ],
                 [
                     "Terminate",
@@ -2690,50 +2482,26 @@
             "id": "dm-csv-060",
             "total_score": 0.0,
             "finished": true,
-            "steps": 11,
+            "steps": 5,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "cat sample_result.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 purchase_data.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 user_demographics_paywall.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 AB_testing_exercise.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 daily_revenue.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 user_demographics_v1.csv"
+                    "head purchase_data.csv && head user_demographics_paywall.csv"
                 ],
                 [
                     "Python",
-                    25
+                    16
                 ],
                 [
-                    "Bash",
-                    "cat result.csv"
+                    "Python",
+                    16
                 ],
                 [
                     "Terminate",
@@ -2746,8 +2514,8 @@
             "id": "dm-csv-061",
             "total_score": 0.0,
             "finished": true,
-            "steps": 12,
-            "result": "/workspace/result.csv",
+            "steps": 6,
+            "result": "result.csv",
             "len_added_files": 4,
             "len_changed_files": 1,
             "actions": [
@@ -2756,44 +2524,20 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head airbnb_last_review.tsv"
+                    "Python",
+                    12
                 ],
                 [
                     "Bash",
-                    "head airbnb_price.csv"
-                ],
-                [
-                    "Bash",
-                    "head airbnb_room_type.xlsx"
+                    "cat dates.txt"
                 ],
                 [
                     "Python",
-                    15
+                    14
                 ],
                 [
                     "Python",
-                    13
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    22
-                ],
-                [
-                    "Bash",
-                    "cat result.csv"
-                ],
-                [
-                    "Python",
-                    18
+                    20
                 ],
                 [
                     "Terminate",
@@ -2806,7 +2550,7 @@
             "id": "dm-csv-064",
             "total_score": 0.0,
             "finished": true,
-            "steps": 9,
+            "steps": 5,
             "result": "result.csv",
             "len_added_files": 1,
             "len_changed_files": 1,
@@ -2817,31 +2561,15 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head businesses.csv"
                 ],
                 [
                     "Bash",
-                    "cat categories.csv"
-                ],
-                [
-                    "Bash",
-                    "cat businesses.csv"
-                ],
-                [
-                    "Bash",
-                    "grep 'CAT4' businesses.csv | awk -F ',' '$2 < 1800 {print $0}'"
-                ],
-                [
-                    "Bash",
-                    "cat countries.csv"
+                    "head categories.csv"
                 ],
                 [
                     "Python",
-                    18
-                ],
-                [
-                    "Bash",
-                    "cat result.csv"
+                    15
                 ],
                 [
                     "Terminate",

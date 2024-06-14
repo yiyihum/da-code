@@ -1,31 +1,35 @@
 {
     "num_results": 49,
-    "average_score": 0.4897959183673469,
+    "average_score": 0.6326530612244898,
     "results": [
         {
             "id": "plot-bar-001",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 5,
-            "result": "sales.jpg",
-            "len_added_files": 2,
+            "steps": 6,
+            "result": "/workspace/sales.jpg",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -R"
-                ],
-                [
-                    "Bash",
-                    "head Song.csv"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    19
+                    7
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -35,14 +39,14 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "figsize": true,
                     "graph_title": true,
-                    "x_label": false,
-                    "y_label": false,
-                    "ytick_labels": false,
-                    "score": 0.0,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": true,
+                    "score": 1.0,
                     "file": [
                         "sales.jpg",
                         "plot.json",
@@ -53,16 +57,16 @@
         },
         {
             "id": "plot-bar-002",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 12,
+            "steps": 9,
             "result": "result.jpg",
-            "len_added_files": 6,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -la"
+                    "ls -l"
                 ],
                 [
                     "Bash",
@@ -70,39 +74,27 @@
                 ],
                 [
                     "SQL",
-                    "SELECT rating, SUM(CASE WHEN has_online_delivery = 1 THEN 1 ELSE 0 END) AS online_orders, SUM(CASE WHEN has_online_delivery = 0 THEN 1 ELSE 0 END) AS no_online_orders FROM zomato GROUP BY rating"
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(Users);"
+                ],
+                [
+                    "SQL",
+                    "SELECT rate, online_order, COUNT(*) as count FROM Users GROUP BY rate, online_order;"
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    28
                 ],
                 [
                     "Bash",
-                    "echo '.schema' | sqlite3 zomato_rawdata.sqlite"
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "SQL",
-                    "SELECT rating, SUM(CASE WHEN has_online_delivery = 1 THEN 1 ELSE 0 END) AS online_orders, SUM(CASE WHEN has_online_delivery = 0 THEN 1 ELSE 0 END) AS no_online_orders FROM Users GROUP BY rating"
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "SQL",
-                    "SELECT CAST(SUBSTR(rate, 1, INSTR(rate, '.') - 1) AS INTEGER) AS rating, SUM(CASE WHEN online_order = 'Yes' THEN 1 ELSE 0 END) AS online_orders, SUM(CASE WHEN online_order = 'No' THEN 1 ELSE 0 END) AS no_online_orders FROM Users GROUP BY rating"
-                ],
-                [
-                    "Python",
-                    25
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -112,12 +104,12 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "score": 0.0,
+                    "score": 1.0,
                     "file": [
                         "result.jpg",
                         "plot.json",
@@ -130,22 +122,26 @@
             "id": "plot-bar-003",
             "total_score": 1.0,
             "finished": true,
-            "steps": 4,
+            "steps": 5,
             "result": "result.jpg",
-            "len_added_files": 2,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    22
+                    17
                 ],
                 [
                     "Python",
-                    26
+                    20
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace/result.jpg"
                 ],
                 [
                     "Terminate",
@@ -182,19 +178,19 @@
             "actions": [
                 [
                     "Bash",
-                    "ls"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    24
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls"
+                    "cat analysis.py"
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -215,11 +211,11 @@
         },
         {
             "id": "plot-bar-005",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 9,
+            "steps": 14,
             "result": "result.png",
-            "len_added_files": 2,
+            "len_added_files": 11,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -227,32 +223,52 @@
                     "cat AgeGroup.md"
                 ],
                 [
-                    "Python",
-                    30
-                ],
-                [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Python",
-                    7
+                    5
                 ],
                 [
                     "Python",
-                    7
-                ],
-                [
-                    "Bash",
-                    "ls -l result.png"
+                    5
                 ],
                 [
                     "Python",
-                    11
+                    5
+                ],
+                [
+                    "Python",
+                    52
+                ],
+                [
+                    "Python",
+                    5
+                ],
+                [
+                    "Python",
+                    55
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Python",
+                    24
                 ],
                 [
                     "Bash",
-                    "ls -l result.png"
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -262,9 +278,13 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "score": 0.0,
+                    "data": true,
+                    "scale_data": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -275,40 +295,28 @@
         },
         {
             "id": "plot-bar-006",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 8,
-            "result": "team_scores.png",
-            "len_added_files": 5,
+            "steps": 5,
+            "result": "team.png",
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
                 [
                     "Bash",
                     "cat overall_score.txt"
                 ],
                 [
                     "Python",
-                    20
+                    34
                 ],
                 [
                     "Bash",
                     "ls -l"
-                ],
-                [
-                    "Python",
-                    20
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    23
-                ],
-                [
-                    "Python",
-                    19
                 ],
                 [
                     "Terminate",
@@ -318,16 +326,16 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "figsize": true,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "xtick_labels": false,
-                    "score": 0.0,
+                    "xtick_labels": true,
+                    "score": 1.0,
                     "file": [
-                        "team_scores.png",
+                        "team.png",
                         "plot.json",
                         "result.npy"
                     ]
@@ -338,26 +346,34 @@
             "id": "plot-bar-007",
             "total_score": 0.0,
             "finished": true,
-            "steps": 5,
+            "steps": 7,
             "result": "result.png",
-            "len_added_files": 2,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
                 [
                     "Bash",
                     "cat NeighborhoodCalculate.txt"
                 ],
                 [
                     "Python",
-                    22
+                    7
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    23
                 ],
                 [
                     "Bash",
                     "ls -l"
-                ],
-                [
-                    "Python",
-                    22
                 ],
                 [
                     "Terminate",
@@ -387,46 +403,30 @@
             "id": "plot-bar-008",
             "total_score": 0.0,
             "finished": true,
-            "steps": 10,
+            "steps": 6,
             "result": "distribution.png",
-            "len_added_files": 1,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -R"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    8
-                ],
-                [
-                    "Python",
-                    8
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "head SurveySchema.csv"
+                    "cat Tips.txt"
                 ],
                 [
                     "Python",
-                    8
-                ],
-                [
-                    "Bash",
-                    "grep -A1 'In which country do you currently reside?' SurveySchema.csv"
-                ],
-                [
-                    "Bash",
-                    "grep -n 'In which country do you currently reside?' SurveySchema.csv | cut -d ':' -f1"
+                    43
                 ],
                 [
                     "Python",
-                    8
+                    43
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -436,8 +436,13 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
                     "score": 0.0,
                     "file": [
                         "distribution.png",
@@ -451,54 +456,34 @@
             "id": "plot-bar-009",
             "total_score": 0.0,
             "finished": true,
-            "steps": 12,
-            "result": "result.png",
+            "steps": 7,
+            "result": "/workspace/result.png",
             "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Python",
-                    9
+                    13
                 ],
                 [
                     "Python",
-                    5
+                    10
                 ],
                 [
                     "Python",
-                    9
+                    7
                 ],
                 [
                     "Python",
-                    15
+                    13
                 ],
                 [
                     "Python",
-                    5
-                ],
-                [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    32
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Bash",
-                    "ls -l result.png"
+                    28
                 ],
                 [
                     "Terminate",
@@ -530,32 +515,32 @@
             "finished": true,
             "steps": 7,
             "result": "result.png",
-            "len_added_files": 4,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
                 [
                     "Bash",
                     "cat guidance.txt"
                 ],
                 [
                     "Python",
-                    10
+                    26
+                ],
+                [
+                    "Python",
+                    30
+                ],
+                [
+                    "Python",
+                    30
                 ],
                 [
                     "Bash",
                     "ls -l"
-                ],
-                [
-                    "Python",
-                    11
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Bash",
-                    "ls -l result.png"
                 ],
                 [
                     "Terminate",
@@ -570,7 +555,7 @@
                     "figsize": true,
                     "graph_title": true,
                     "x_label": false,
-                    "xtick_labels": false,
+                    "xtick_labels": true,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -584,30 +569,26 @@
             "id": "plot-bar-011",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 5,
             "result": "result.png",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
                     "cat region.txt"
                 ],
                 [
                     "Python",
-                    33
+                    44
                 ],
                 [
                     "Bash",
                     "ls -l"
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Python",
-                    33
                 ],
                 [
                     "Terminate",
@@ -630,26 +611,30 @@
             "id": "plot-bar-012",
             "total_score": 0.0,
             "finished": true,
-            "steps": 5,
+            "steps": 6,
             "result": "result.png",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
                     "cat guidance.txt"
                 ],
                 [
                     "Bash",
-                    "ls *.csv"
+                    "head -n 5 student-mat.csv"
                 ],
                 [
                     "Python",
-                    21
+                    25
                 ],
                 [
                     "Bash",
-                    "ls result.png"
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -659,9 +644,9 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "figsize": true,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": false,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
@@ -679,9 +664,9 @@
             "id": "plot-bar-013",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 5,
             "result": "result.png",
-            "len_added_files": 5,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -689,20 +674,16 @@
                     "ls -l"
                 ],
                 [
-                    "Python",
-                    7
+                    "Bash",
+                    "head -n 5 'icc hall of fame.csv'"
                 ],
                 [
                     "Python",
-                    19
+                    18
                 ],
                 [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    19
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -729,20 +710,24 @@
         },
         {
             "id": "plot-bar-014",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 3,
-            "result": "output.png",
+            "steps": 4,
+            "result": "/workspace/output.png",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    19
+                    26
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -752,14 +737,14 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "figsize": true,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "xtick_labels": false,
-                    "score": 0.0,
+                    "xtick_labels": true,
+                    "score": 1.0,
                     "file": [
                         "output.png",
                         "plot.json",
@@ -772,9 +757,9 @@
             "id": "plot-bar-015",
             "total_score": 0.0,
             "finished": true,
-            "steps": 9,
+            "steps": 6,
             "result": "result.png",
-            "len_added_files": 7,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -783,7 +768,7 @@
                 ],
                 [
                     "Python",
-                    7
+                    22
                 ],
                 [
                     "Python",
@@ -791,23 +776,11 @@
                 ],
                 [
                     "Python",
-                    31
+                    22
                 ],
                 [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    30
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    30
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -837,9 +810,9 @@
             "id": "plot-bar-016",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
+            "steps": 6,
             "result": "result.png",
-            "len_added_files": 4,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -852,19 +825,15 @@
                 ],
                 [
                     "SQL",
-                    "SELECT category_name, COUNT(*) as count FROM products GROUP BY category_name ORDER BY count DESC LIMIT 10;"
-                ],
-                [
-                    "SQL",
-                    "PRAGMA table_info(products)"
-                ],
-                [
-                    "SQL",
-                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10;"
+                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10"
                 ],
                 [
                     "Python",
-                    17
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -894,22 +863,34 @@
             "id": "plot-bar-017",
             "total_score": 1.0,
             "finished": true,
-            "steps": 4,
+            "steps": 7,
             "result": "party_sums_plot.png",
-            "len_added_files": 2,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls"
-                ],
-                [
-                    "Bash",
-                    "head party_sums.csv"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    16
+                    19
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -939,42 +920,26 @@
             "id": "plot-bar-018",
             "total_score": 1.0,
             "finished": true,
-            "steps": 9,
-            "result": "result.png",
-            "len_added_files": 4,
+            "steps": 5,
+            "result": "/workspace/result.png",
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Python",
-                    14
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Python",
-                    14
+                    "Bash",
+                    "head -n 5 Building_Permits.csv"
                 ],
                 [
                     "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    14
-                ],
-                [
-                    "Python",
-                    24
+                    22
                 ],
                 [
                     "Bash",
-                    "ls -l result.png"
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -997,14 +962,34 @@
             "id": "plot-bar-019",
             "total_score": 0.0,
             "finished": true,
-            "steps": 2,
+            "steps": 7,
             "result": "result.png",
-            "len_added_files": 0,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
                     "cat guidance.txt"
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1016,6 +1001,11 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "figsize": true,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": false,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -1029,26 +1019,34 @@
             "id": "plot-line-001",
             "total_score": 1.0,
             "finished": true,
-            "steps": 5,
+            "steps": 7,
             "result": "points_graph.png",
-            "len_added_files": 2,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "head game.csv"
+                    "Python",
+                    18
                 ],
                 [
                     "Python",
-                    22
+                    8
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1071,30 +1069,34 @@
             "id": "plot-line-002",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/result.png",
-            "len_added_files": 3,
+            "steps": 7,
+            "result": "result.png",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md && echo --- && cat teamabbreviations.md"
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat teamabbreviations.md"
                 ],
                 [
                     "Python",
-                    20
+                    13
                 ],
                 [
                     "Python",
-                    26
+                    35
                 ],
                 [
                     "Python",
-                    28
+                    46
                 ],
                 [
                     "Python",
-                    51
+                    24
                 ],
                 [
                     "Terminate",
@@ -1122,9 +1124,9 @@
             "id": "plot-line-003",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
+            "steps": 5,
             "result": "output.png",
-            "len_added_files": 5,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -1133,23 +1135,15 @@
                 ],
                 [
                     "Python",
-                    24
+                    38
                 ],
                 [
                     "Python",
-                    5
-                ],
-                [
-                    "Python",
-                    24
-                ],
-                [
-                    "Python",
-                    24
+                    42
                 ],
                 [
                     "Bash",
-                    "ls -l output.png"
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1177,14 +1171,18 @@
             "id": "plot-line-004",
             "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 9,
             "result": "result.png",
             "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ],
+                [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
@@ -1192,19 +1190,23 @@
                 ],
                 [
                     "SQL",
-                    "SELECT name FROM sqlite_master WHERE type='table';"
+                    "SELECT name FROM sqlite_master WHERE type='table'"
                 ],
                 [
                     "SQL",
-                    "PRAGMA table_info(orders);"
+                    "PRAGMA table_info(orders)"
                 ],
                 [
                     "SQL",
-                    "SELECT order_status, substr(order_purchase_timestamp, 1, 7) as Month FROM orders;"
+                    "SELECT order_status, strftime('%Y-%m', order_purchase_timestamp) AS month, COUNT(*) AS order_count FROM orders GROUP BY order_status, month"
                 ],
                 [
                     "Python",
-                    22
+                    27
+                ],
+                [
+                    "Bash",
+                    "ls"
                 ],
                 [
                     "Terminate",
@@ -1216,7 +1218,7 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
-                    "figsize": false,
+                    "figsize": true,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
@@ -1234,38 +1236,42 @@
             "id": "plot-line-005",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
-            "result": "result.png",
+            "steps": 9,
+            "result": "/workspace/result.png",
             "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md && echo --- && cat Region.md"
+                    "ls -l"
                 ],
                 [
                     "Bash",
                     "cat Region.md"
                 ],
                 [
+                    "Python",
+                    42
+                ],
+                [
                     "Bash",
-                    "ls *.csv *.xlsx"
+                    "head -n 5 2017.csv"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 2015.csv && head -n 1 2016.csv && head -n 1 2018.csv && head -n 1 2019.csv"
                 ],
                 [
                     "Python",
-                    15
+                    48
                 ],
                 [
                     "Python",
-                    13
+                    48
                 ],
                 [
                     "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    17
+                    23
                 ],
                 [
                     "Terminate",
@@ -1277,9 +1283,9 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
-                    "figsize": false,
+                    "figsize": true,
                     "graph_title": true,
-                    "legend_title": false,
+                    "legend_title": true,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -1293,30 +1299,18 @@
             "id": "plot-line-006",
             "total_score": 1.0,
             "finished": true,
-            "steps": 16,
+            "steps": 6,
             "result": "result.png",
-            "len_added_files": 13,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat tips.txt"
-                ],
-                [
-                    "Python",
-                    15
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    32
+                    "Bash",
+                    "cat tips.txt"
                 ],
                 [
                     "Python",
@@ -1324,39 +1318,11 @@
                 ],
                 [
                     "Python",
-                    19
+                    43
                 ],
                 [
                     "Python",
-                    32
-                ],
-                [
-                    "Python",
-                    35
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat tips.txt"
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    39
+                    31
                 ],
                 [
                     "Terminate",
@@ -1379,7 +1345,7 @@
             "id": "plot-line-007",
             "total_score": 1.0,
             "finished": true,
-            "steps": 9,
+            "steps": 8,
             "result": "result.png",
             "len_added_files": 2,
             "len_changed_files": 0,
@@ -1390,31 +1356,27 @@
                 ],
                 [
                     "Bash",
-                    "head -n 5 data.csv"
-                ],
-                [
-                    "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head -n 5 appstore_games.csv"
+                    "cat guidance.txt"
                 ],
                 [
                     "Python",
-                    29
+                    44
                 ],
                 [
                     "Python",
-                    29
+                    45
                 ],
                 [
                     "Python",
-                    32
+                    45
                 ],
                 [
-                    "Python",
-                    33
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1435,11 +1397,11 @@
         },
         {
             "id": "plot-line-008",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 5,
-            "result": "FAIL - Missing weight and height data columns. Please provide the correct column names for calculating BMI.",
-            "len_added_files": 2,
+            "steps": 7,
+            "result": "/workspace/result.png",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -1448,7 +1410,7 @@
                 ],
                 [
                     "Bash",
-                    "ls"
+                    "ls -l"
                 ],
                 [
                     "Python",
@@ -1456,7 +1418,15 @@
                 ],
                 [
                     "Python",
-                    21
+                    7
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -1465,10 +1435,8 @@
             ],
             "info": [
                 {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "score": 0.0,
+                    "img": true,
+                    "score": 1.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -1482,25 +1450,25 @@
             "total_score": 1.0,
             "finished": true,
             "steps": 5,
-            "result": "result.png",
+            "result": "/workspace/result.png",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "cat tips.txt"
+                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Python",
-                    21
-                ],
-                [
-                    "Python",
-                    21
+                    29
                 ],
                 [
                     "Bash",
-                    "ls -l result.png"
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -1521,32 +1489,68 @@
         },
         {
             "id": "plot-line-010",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 4,
             "result": "result.jpg",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls"
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-011",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 4,
+            "result": "result.jpg",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Python",
                     31
                 ],
                 [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    36
-                ],
-                [
                     "Bash",
-                    "ls result.jpg"
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1562,95 +1566,7 @@
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "score": 0.0,
-                    "file": [
-                        "result.jpg",
-                        "plot.json",
-                        "result.npy"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "plot-line-011",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 15,
-            "result": "/workspace/result.jpg",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls *.csv *.tsv *.txt"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    8
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    38
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    30
-                ],
-                [
-                    "Python",
-                    30
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    30
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "figsize": true,
-                    "graph_title": true,
-                    "x_label": true,
-                    "y_label": false,
-                    "legend_title": false,
+                    "legend_title": true,
                     "score": 0.0,
                     "file": [
                         "result.jpg",
@@ -1666,40 +1582,40 @@
             "finished": true,
             "steps": 9,
             "result": "/workspace/result.jpg",
-            "len_added_files": 2,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Python",
-                    26
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Python",
-                    26
+                    7
                 ],
                 [
                     "Python",
-                    26
+                    36
                 ],
                 [
                     "Python",
-                    26
+                    36
                 ],
                 [
                     "Python",
-                    30
+                    36
                 ],
                 [
                     "Python",
-                    30
+                    36
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -1728,26 +1644,22 @@
             "id": "plot-line-013",
             "total_score": 0.0,
             "finished": true,
-            "steps": 5,
+            "steps": 4,
             "result": "result.jpg",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md && ls -l"
-                ],
-                [
-                    "Bash",
-                    "head orders.csv"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    25
+                    28
                 ],
                 [
                     "Bash",
-                    "ls -l result.jpg"
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1776,29 +1688,29 @@
             "total_score": 1.0,
             "finished": true,
             "steps": 6,
-            "result": "result.jpg",
-            "len_added_files": 3,
+            "result": "/workspace/result.jpg",
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls *.csv"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    7
+                    34
                 ],
                 [
                     "Python",
-                    52
+                    36
+                ],
+                [
+                    "Python",
+                    37
                 ],
                 [
                     "Bash",
-                    "ls -l result.jpg"
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -1821,22 +1733,46 @@
             "id": "plot-line-015",
             "total_score": 0.0,
             "finished": true,
-            "steps": 4,
-            "result": "result.jpg",
-            "len_added_files": 1,
+            "steps": 10,
+            "result": "/workspace/result.jpg",
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls *.csv"
+                    "head Big9Returns2017.csv"
+                ],
+                [
+                    "Bash",
+                    "head EfficientFrontierPortfoliosSlim.csv"
                 ],
                 [
                     "Python",
-                    7
+                    29
+                ],
+                [
+                    "Bash",
+                    "cat EfficientFrontierPortfoliosSlim.csv"
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    44
+                ],
+                [
+                    "Python",
+                    44
                 ],
                 [
                     "Terminate",
@@ -1848,6 +1784,11 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "x_label": true,
+                    "y_label": true,
                     "score": 0.0,
                     "file": [
                         "result.jpg",
@@ -1863,24 +1804,24 @@
             "finished": true,
             "steps": 5,
             "result": "result.png",
-            "len_added_files": 3,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md && ls -l"
-                ],
-                [
-                    "Python",
-                    5
-                ],
-                [
-                    "Python",
-                    18
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls -l result.png"
+                    "head museum_visitors.csv"
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -1903,9 +1844,9 @@
             "id": "plot-pie-001",
             "total_score": 1.0,
             "finished": true,
-            "steps": 8,
-            "result": "answer.png",
-            "len_added_files": 4,
+            "steps": 6,
+            "result": "/workspace/answer.png",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -1913,28 +1854,20 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "head MyTransaction.csv"
+                    "Python",
+                    20
                 ],
                 [
                     "Python",
-                    12
+                    7
                 ],
                 [
                     "Python",
-                    11
+                    20
                 ],
                 [
                     "Bash",
-                    "cat top_categories.csv"
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Bash",
-                    "ls -l answer.png"
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -1960,42 +1893,30 @@
             "id": "plot-pie-002",
             "total_score": 0.0,
             "finished": true,
-            "steps": 9,
-            "result": "distribution.png",
-            "len_added_files": 4,
+            "steps": 6,
+            "result": "/workspace/distribution.png",
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -R"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    13
+                    21
                 ],
                 [
                     "Bash",
-                    "head -n 1 deliveries.csv"
+                    "head -n 5 /workspace/deliveries.csv"
                 ],
                 [
                     "Python",
-                    13
+                    21
                 ],
                 [
-                    "Python",
-                    12
-                ],
-                [
-                    "Python",
-                    12
-                ],
-                [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    12
+                    "Bash",
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -2022,19 +1943,11 @@
             "id": "plot-pie-003",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 4,
             "result": "result.jpg",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Python",
-                    20
-                ],
                 [
                     "Bash",
                     "ls -l"
@@ -2045,7 +1958,7 @@
                 ],
                 [
                     "Bash",
-                    "ls -l result.jpg"
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -2072,22 +1985,26 @@
             "id": "plot-pie-004",
             "total_score": 1.0,
             "finished": true,
-            "steps": 4,
-            "result": "result.png",
-            "len_added_files": 4,
+            "steps": 5,
+            "result": "/workspace/result.png",
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "head student-mat.csv"
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 student-mat.csv"
                 ],
                 [
                     "Python",
-                    13
+                    28
                 ],
                 [
-                    "Python",
-                    22
+                    "Bash",
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -2110,9 +2027,9 @@
             "id": "plot-pie-005",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 11,
             "result": "result.png",
-            "len_added_files": 3,
+            "len_added_files": 1,
             "len_changed_files": 1,
             "actions": [
                 [
@@ -2121,19 +2038,39 @@
                 ],
                 [
                     "Bash",
-                    "head -n 5 data.csv"
-                ],
-                [
-                    "Python",
-                    14
-                ],
-                [
-                    "Python",
-                    19
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls -l result.png"
+                    "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    43
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    43
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -2157,29 +2094,29 @@
             "total_score": 1.0,
             "finished": true,
             "steps": 6,
-            "result": "result.png",
-            "len_added_files": 2,
+            "result": "/workspace/result.png",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls *.csv"
+                    "head -n 5 complete.csv scrubbed.csv"
                 ],
                 [
                     "Python",
-                    17
-                ],
-                [
-                    "Python",
-                    17
+                    11
                 ],
                 [
                     "Bash",
-                    "ls result.png"
+                    "cat /workspace/sightings_count.csv"
+                ],
+                [
+                    "Python",
+                    26
                 ],
                 [
                     "Terminate",
@@ -2202,34 +2139,26 @@
             "id": "plot-pie-007",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
+            "steps": 5,
             "result": "result.png",
-            "len_added_files": 5,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls *.csv"
+                    "ls -l"
                 ],
                 [
-                    "SQL",
-                    "SELECT DISTINCT Diabetes FROM diabetes_012_health_indicators_BRFSS2015.csv"
-                ],
-                [
-                    "Python",
-                    8
+                    "Bash",
+                    "head -n 5 *.csv"
                 ],
                 [
                     "Python",
-                    7
+                    18
                 ],
                 [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    14
+                    "Bash",
+                    "ls -l result.png"
                 ],
                 [
                     "Terminate",
@@ -2251,63 +2180,91 @@
         {
             "id": "plot-pie-008",
             "total_score": 0.0,
-            "finished": true,
-            "steps": 13,
-            "result": "FAIL",
-            "len_added_files": 8,
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "len_added_files": 11,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -l"
                 ],
                 [
                     "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    10
+                    20
                 ],
                 [
                     "Bash",
-                    "head -n 1 hubs.csv"
-                ],
-                [
-                    "Python",
-                    12
+                    "head -n 5 deliveries.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 1 deliveries.csv"
+                    "head -n 5 drivers.csv"
                 ],
                 [
                     "Python",
-                    16
+                    30
+                ],
+                [
+                    "Python",
+                    33
                 ],
                 [
                     "Bash",
-                    "head -n 1 drivers.csv"
+                    "head -n 5 hubs.csv"
                 ],
                 [
                     "Python",
-                    17
+                    32
                 ],
                 [
                     "Python",
-                    18
+                    39
                 ],
                 [
                     "Python",
-                    13
+                    33
                 ],
                 [
                     "Python",
-                    18
+                    30
                 ],
                 [
-                    "Terminate",
-                    ""
+                    "Bash",
+                    "head -n 5 drivers.csv"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 deliveries.csv"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 orders.csv"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 stores.csv"
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Bash",
+                    "head -n 5 stores.csv"
                 ]
             ],
             "info": [
@@ -2328,9 +2285,9 @@
             "id": "plot-scatter-001",
             "total_score": 0.0,
             "finished": true,
-            "steps": 11,
+            "steps": 5,
             "result": "result.png",
-            "len_added_files": 6,
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -2343,35 +2300,11 @@
                 ],
                 [
                     "Python",
-                    15
+                    21
                 ],
                 [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    30
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Python",
-                    34
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -2383,6 +2316,9 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": true,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -2395,91 +2331,31 @@
         {
             "id": "plot-scatter-002",
             "total_score": 0.0,
-            "finished": false,
-            "steps": 20,
-            "result": "",
-            "len_added_files": 13,
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat guidance.txt"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Bash",
-                    "ls *.gz"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/data/odds.csv.gz | zcat"
-                ],
-                [
-                    "Bash",
-                    "zcat /workspace/odds_series_matches.csv.gz | head -n 5"
-                ],
-                [
-                    "Python",
-                    45
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    27
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    11
-                ],
-                [
-                    "Python",
-                    7
+                    "ls -l"
                 ],
                 [
                     "Bash",
                     "cat guidance.txt"
+                ],
+                [
+                    "Python",
+                    35
+                ],
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Terminate",
+                    ""
                 ]
             ],
             "info": [
@@ -2487,6 +2363,9 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "labels": false,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -2501,7 +2380,7 @@
             "total_score": 1.0,
             "finished": true,
             "steps": 4,
-            "result": "result.png",
+            "result": "/workspace/result.png",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
@@ -2510,12 +2389,12 @@
                     "ls -l"
                 ],
                 [
-                    "Bash",
-                    "head athlete_events.csv"
+                    "Python",
+                    19
                 ],
                 [
-                    "Python",
-                    18
+                    "Bash",
+                    "ls -l /workspace"
                 ],
                 [
                     "Terminate",
@@ -2540,36 +2419,36 @@
             "finished": true,
             "steps": 8,
             "result": "result.png",
-            "len_added_files": 3,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat tips.txt"
-                ],
-                [
-                    "Python",
-                    18
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Python",
-                    18
+                    "Bash",
+                    "cat guidance.txt"
                 ],
                 [
                     "Python",
-                    5
+                    25
                 ],
                 [
                     "Python",
-                    19
+                    7
                 ],
                 [
                     "Python",
-                    22
+                    25
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",
@@ -2592,14 +2471,14 @@
             "id": "plot-scatter-005",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 5,
             "result": "result.png",
-            "len_added_files": 4,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "head steam_store_games.csv"
+                    "cat standard.txt"
                 ],
                 [
                     "Bash",
@@ -2607,15 +2486,11 @@
                 ],
                 [
                     "Python",
-                    29
+                    25
                 ],
                 [
-                    "Python",
-                    5
-                ],
-                [
-                    "Python",
-                    29
+                    "Bash",
+                    "ls -l result.png"
                 ],
                 [
                     "Terminate",
@@ -2644,30 +2519,26 @@
             "id": "plot-scatter-006",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 5,
             "result": "result.jpg",
-            "len_added_files": 4,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    16
+                    "ls -l"
                 ],
                 [
                     "Bash",
-                    "ls result.jpg"
+                    "head -n 5 Books_df.csv"
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Bash",
+                    "ls -l"
                 ],
                 [
                     "Terminate",

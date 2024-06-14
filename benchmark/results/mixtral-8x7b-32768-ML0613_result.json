@@ -1,0 +1,185 @@
+{
+    "num_results": 3,
+    "average_score": 0.0,
+    "results": [
+        {
+            "id": "ml-binary-001",
+            "total_score": 0.0,
+            "finished": false,
+            "steps": 7,
+            "result": "",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Python",
+                    3
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "pip install nltk"
+                ],
+                [
+                    "Other",
+                    ""
+                ],
+                [
+                    "Other",
+                    ""
+                ],
+                [
+                    "Other",
+                    ""
+                ],
+                [
+                    "Other",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "The length of the result content is not equal to the length of the true value."
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.9253666666666666,
+                    "lower_bound": 0.6,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-002",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 11,
+            "result": "submission.csv",
+            "len_added_files": 5,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Python",
+                    4
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Python",
+                    8
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    54
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/mixtral-8x7b-32768-ML0613/ml-binary-002/submission.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.95,
+                    "lower_bound": 0.6,
+                    "metric": "f1",
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-003",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 8,
+            "result": "prediction.csv",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Python",
+                    4
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Bash",
+                    "pip install nltk"
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    4
+                ],
+                [
+                    "Python",
+                    62
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "The length of the result content is not equal to the length of the true value."
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.9199999999999999,
+                    "lower_bound": 0.6,
+                    "metric": "f1",
+                    "file": [
+                        "prediction.csv"
+                    ]
+                }
+            ]
+        }
+    ]
+}

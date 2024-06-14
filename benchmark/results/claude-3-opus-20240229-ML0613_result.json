@@ -1,35 +1,39 @@
 {
-    "num_results": 95,
-    "average_score": 0.5381849401176275,
+    "num_results": 74,
+    "average_score": 0.5339362681802711,
     "results": [
         {
-            "id": "ml-binary-001",
-            "total_score": 0.860567564798689,
+            "id": "ml-binary-002",
+            "total_score": 0.6666633992350971,
             "finished": true,
-            "steps": 6,
-            "result": "result.csv",
-            "len_added_files": 2,
-            "len_changed_files": 1,
+            "steps": 7,
+            "result": "submission.csv",
+            "len_added_files": 5,
+            "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "head onlinefoods.csv && echo '---' && head test.csv"
+                    "cat README.md"
                 ],
                 [
                     "Python",
-                    17
+                    16
                 ],
                 [
                     "Python",
-                    33
+                    16
                 ],
                 [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    14
                 ],
                 [
                     "Terminate",
@@ -39,65 +43,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.860567564798689,
-                    "upper_bound": 0.9253666666666666,
-                    "lower_bound": 0.6,
-                    "metric": "f1",
-                    "target_output": "Feedback",
-                    "file": [
-                        "result.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-binary-002",
-            "total_score": 0.6631928264773733,
-            "finished": true,
-            "steps": 8,
-            "result": "submission.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md && head -n 5 sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    47
-                ],
-                [
-                    "Python",
-                    48
-                ],
-                [
-                    "Bash",
-                    "ls -l submission.csv && head -n 5 submission.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "TypeError: result target dtype float64 is not compatible with gold's int64."
-                    ],
-                    "score": 0.6631928264773733,
+                    "score": 0.6666633992350971,
                     "upper_bound": 0.95,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -112,22 +58,22 @@
             "id": "ml-binary-003",
             "total_score": 0.770911276646616,
             "finished": true,
-            "steps": 8,
+            "steps": 10,
             "result": "prediction.csv",
             "len_added_files": 2,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
                     "cat README.md"
                 ],
                 [
                     "Bash",
-                    "head -n 5 twitter_training.csv && head -n 5 twitter_validation.csv"
-                ],
-                [
-                    "Python",
-                    14
+                    "pip install pandas scikit-learn"
                 ],
                 [
                     "Python",
@@ -135,11 +81,19 @@
                 ],
                 [
                     "Python",
-                    33
+                    5
                 ],
                 [
                     "Python",
-                    32
+                    29
+                ],
+                [
+                    "Python",
+                    35
+                ],
+                [
+                    "Bash",
+                    "ls"
                 ],
                 [
                     "Bash",
@@ -168,26 +122,74 @@
             "id": "ml-binary-004",
             "total_score": 1.0,
             "finished": true,
-            "steps": 5,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
+            "steps": 17,
+            "result": "submission.csv",
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head test.csv && echo && head sample_submission.csv"
+                    "Python",
+                    12
                 ],
                 [
                     "Python",
-                    56
+                    9
                 ],
                 [
-                    "Bash",
-                    "head -n 5 submission.csv"
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    62
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Python",
+                    65
+                ],
+                [
+                    "Python",
+                    65
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    10
                 ],
                 [
                     "Terminate",
@@ -212,14 +214,42 @@
             "id": "ml-binary-005",
             "total_score": 0.9118455861876912,
             "finished": true,
-            "steps": 7,
+            "steps": 11,
             "result": "label.csv",
-            "len_added_files": 2,
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
                     "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "head train.csv"
+                ],
+                [
+                    "Python",
+                    11
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Python",
+                    35
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    39
                 ],
                 [
                     "Bash",
@@ -227,19 +257,7 @@
                 ],
                 [
                     "Bash",
-                    "head -n 5 train.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    36
-                ],
-                [
-                    "Bash",
-                    "head -n 5 label.csv"
+                    "head label.csv"
                 ],
                 [
                     "Terminate",
@@ -262,54 +280,103 @@
         },
         {
             "id": "ml-binary-006",
-            "total_score": 0.9782615887178607,
-            "finished": true,
-            "steps": 8,
-            "result": "result.csv",
-            "len_added_files": 2,
+            "total_score": 0.0,
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "len_added_files": 7,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -lh"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 validation.csv"
-                ],
-                [
-                    "Bash",
-                    "head validation.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 True.csv && echo '---' && head -n 5 Fake.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Fake.csv"
+                    "Python",
+                    17
                 ],
                 [
                     "Python",
-                    44
+                    24
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "pip install nltk"
                 ],
                 [
-                    "Terminate",
-                    ""
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    2
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    2
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    30
                 ]
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 0.9782615887178607,
+                    "errors": [
+                        "result file ./benchmark/output/claude-3-opus-20240229-ML0613/ml-binary-006/result.csv does not exists"
+                    ],
+                    "score": 0.0,
                     "upper_bound": 0.9909555555555555,
                     "lower_bound": 0.6,
                     "metric": "f1",
-                    "target_output": "result",
                     "file": [
                         "result.csv"
                     ]
@@ -320,9 +387,9 @@
             "id": "ml-binary-007",
             "total_score": 0.0,
             "finished": true,
-            "steps": 9,
-            "result": "result.csv",
-            "len_added_files": 2,
+            "steps": 6,
+            "result": "FAIL: Training set not found. Unable to train the model and make predictions.",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -334,28 +401,16 @@
                     "head -n 5 customer_churn_dataset-testing-master.csv"
                 ],
                 [
-                    "Bash",
-                    "ls -l"
+                    "Python",
+                    7
                 ],
                 [
                     "Python",
-                    38
+                    7
                 ],
                 [
                     "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Bash",
-                    "ls -l result.csv"
+                    16
                 ],
                 [
                     "Terminate",
@@ -365,13 +420,12 @@
             "info": [
                 {
                     "errors": [
-                        "TypeError: result target dtype float64 is not compatible with gold's int64."
+                        "result file ./benchmark/output/claude-3-opus-20240229-ML0613/ml-binary-007/result.csv does not exists"
                     ],
                     "score": 0.0,
                     "upper_bound": 0.9879877777777778,
                     "lower_bound": 0.6,
                     "metric": "f1",
-                    "target_output": "result",
                     "file": [
                         "result.csv"
                     ]
@@ -380,36 +434,68 @@
         },
         {
             "id": "ml-binary-008",
-            "total_score": 0.7860115590951832,
+            "total_score": 0.7690048048547011,
             "finished": true,
-            "steps": 7,
+            "steps": 15,
             "result": "result.csv",
-            "len_added_files": 3,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "head -n 5 train_u6lujuX_CVtuZ9i.csv"
+                    "head train_u6lujuX_CVtuZ9i.csv"
                 ],
                 [
                     "Python",
-                    13
+                    7
                 ],
                 [
                     "Python",
-                    45
+                    7
                 ],
                 [
                     "Python",
-                    45
+                    18
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    56
                 ],
                 [
                     "Bash",
-                    "head -n 5 result.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head result.csv"
+                ],
+                [
+                    "Python",
+                    60
+                ],
+                [
+                    "Python",
+                    60
+                ],
+                [
+                    "Python",
+                    63
+                ],
+                [
+                    "Bash",
+                    "head result.csv"
                 ],
                 [
                     "Terminate",
@@ -421,7 +507,7 @@
                     "errors": [
                         "result csv columns are different from gold csv: ['Loan_ID']"
                     ],
-                    "score": 0.7860115590951832,
+                    "score": 0.7690048048547011,
                     "upper_bound": 0.8099999999999999,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -433,93 +519,45 @@
             ]
         },
         {
-            "id": "ml-binary-009",
-            "total_score": 0.9974165059218596,
-            "finished": true,
-            "steps": 8,
-            "result": "/workspace/result.csv",
-            "len_added_files": 9,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Bash",
-                    "head -n 5 train.csv"
-                ],
-                [
-                    "Python",
-                    35
-                ],
-                [
-                    "Python",
-                    28
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.9974165059218596,
-                    "upper_bound": 0.9637600000000001,
-                    "lower_bound": 0.6,
-                    "metric": "f1",
-                    "target_output": "satisfaction",
-                    "file": [
-                        "result.csv"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ml-binary-010",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
+            "steps": 9,
             "result": "result.csv",
-            "len_added_files": 1,
+            "len_added_files": 2,
             "len_changed_files": 1,
             "actions": [
                 [
                     "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head heart.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv && echo '---' && head result.csv"
+                    "Python",
+                    24
                 ],
                 [
                     "Python",
-                    33
+                    7
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Bash",
+                    "ls"
                 ],
                 [
                     "Bash",
                     "head result.csv"
+                ],
+                [
+                    "Bash",
+                    "wc -l test.csv result.csv"
                 ],
                 [
                     "Terminate",
@@ -533,7 +571,7 @@
                     "upper_bound": 0.9180333333333334,
                     "lower_bound": 0.6,
                     "metric": "accuracy",
-                    "target_output": "output",
+                    "target_output": "target",
                     "file": [
                         "result.csv"
                     ]
@@ -544,46 +582,58 @@
             "id": "ml-binary-011",
             "total_score": 1.0,
             "finished": true,
-            "steps": 10,
-            "result": "/workspace/results.csv",
-            "len_added_files": 6,
+            "steps": 13,
+            "result": "results.csv",
+            "len_added_files": 9,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head -n 5 Train.csv"
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    50
+                ],
+                [
+                    "Python",
+                    51
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    25
                 ],
                 [
                     "Bash",
-                    "cat VariableDefinitions.csv"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Python",
-                    58
-                ],
-                [
-                    "Python",
-                    58
-                ],
-                [
-                    "Python",
-                    58
-                ],
-                [
-                    "Python",
-                    23
+                    "head results.csv"
                 ],
                 [
                     "Terminate",
@@ -606,7 +656,7 @@
         },
         {
             "id": "ml-binary-012",
-            "total_score": 0.5791626625228244,
+            "total_score": 0.5639612840914875,
             "finished": true,
             "steps": 7,
             "result": "sentiment.csv",
@@ -615,27 +665,27 @@
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
                 ],
                 [
                     "Bash",
-                    "ls"
+                    "cat README.md"
                 ],
                 [
                     "Bash",
                     "head -n 5 training.1600000.processed.noemoticon.csv"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 testdata.manual.2009.06.14.csv"
-                ],
-                [
                     "Python",
-                    40
+                    39
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "ls -lh sentiment.csv"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 sentiment.csv"
                 ],
                 [
                     "Terminate",
@@ -645,7 +695,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.5791626625228244,
+                    "score": 0.5639612840914875,
                     "upper_bound": 0.9684269999999999,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -660,8 +710,8 @@
             "id": "ml-binary-013",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/target.csv",
+            "steps": 10,
+            "result": "target.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
@@ -670,20 +720,36 @@
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 Train.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Test.csv"
+                    "Python",
+                    19
                 ],
                 [
                     "Python",
-                    25
+                    23
+                ],
+                [
+                    "Python",
+                    19
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/target.csv"
+                    "head target.csv"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    35
+                ],
+                [
+                    "Bash",
+                    "head target.csv"
                 ],
                 [
                     "Terminate",
@@ -692,7 +758,9 @@
             ],
             "info": [
                 {
-                    "errors": [],
+                    "errors": [
+                        "result csv columns are different from gold csv: ['Turbine_ID']"
+                    ],
                     "score": 1.0,
                     "upper_bound": 0.98,
                     "lower_bound": 0.6,
@@ -706,7 +774,7 @@
         },
         {
             "id": "ml-binary-014",
-            "total_score": 0.851461599039374,
+            "total_score": 0.8223606257387079,
             "finished": true,
             "steps": 7,
             "result": "churn.csv",
@@ -715,27 +783,27 @@
             "actions": [
                 [
                     "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
                     "cat README.md"
                 ],
                 [
                     "Bash",
-                    "head -n 5 train.csv"
+                    "head train.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 test.csv"
+                    "head -1 train.csv > churn.csv"
                 ],
                 [
                     "Python",
-                    46
-                ],
-                [
-                    "Python",
-                    46
+                    43
                 ],
                 [
                     "Bash",
-                    "head -n 5 churn.csv"
+                    "head churn.csv"
                 ],
                 [
                     "Terminate",
@@ -747,7 +815,7 @@
                     "errors": [
                         "result csv columns are different from gold csv: ['CustomerID']"
                     ],
-                    "score": 0.851461599039374,
+                    "score": 0.8223606257387079,
                     "upper_bound": 0.7946222222222222,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -760,11 +828,11 @@
         },
         {
             "id": "ml-binary-015",
-            "total_score": 0.1942001876658229,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/class.csv",
-            "len_added_files": 2,
+            "steps": 3,
+            "result": "FAIL",
+            "len_added_files": 0,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -774,22 +842,6 @@
                 [
                     "Bash",
                     "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "tail -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/class.csv"
                 ],
                 [
                     "Terminate",
@@ -798,12 +850,13 @@
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 0.1942001876658229,
+                    "errors": [
+                        "result file ./benchmark/output/claude-3-opus-20240229-ML0613/ml-binary-015/class.csv does not exists"
+                    ],
+                    "score": 0.0,
                     "upper_bound": 0.8119999999999999,
                     "lower_bound": 0.6,
                     "metric": "f1",
-                    "target_output": "CLASS",
                     "file": [
                         "class.csv"
                     ]
@@ -812,36 +865,28 @@
         },
         {
             "id": "ml-binary-016",
-            "total_score": 0.42967343409909486,
+            "total_score": 0.48231036413033473,
             "finished": true,
-            "steps": 7,
+            "steps": 5,
             "result": "defaulter.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
                 ],
                 [
                     "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 UCI_Credit_Card.csv"
+                    "head UCI_Credit_Card.csv test.csv"
                 ],
                 [
                     "Python",
-                    35
+                    34
                 ],
                 [
                     "Bash",
-                    "ls -l defaulter.csv"
+                    "head defaulter.csv"
                 ],
                 [
                     "Terminate",
@@ -853,7 +898,7 @@
                     "errors": [
                         "result csv columns are different from gold csv: ['ID']"
                     ],
-                    "score": 0.42967343409909486,
+                    "score": 0.48231036413033473,
                     "upper_bound": 1.0,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -865,80 +910,21 @@
             ]
         },
         {
-            "id": "ml-binary-017",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 7,
-            "result": "tomorrow.csv",
-            "len_added_files": 3,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Bash",
-                    "head -n 5 tomorrow.csv"
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Bash",
-                    "head -n 5 tomorrow.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "fail to encoder label, because 'float' object has no attribute 'lower'",
-                        "fail to calculate f1 socre, because The 'y_pred' parameter of f1_score must be an array-like or a sparse matrix. Got None instead."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.8507,
-                    "lower_bound": 0.6,
-                    "metric": "f1",
-                    "target_output": "RainTomorrow",
-                    "file": [
-                        "tomorrow.csv"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ml-binary-018",
             "total_score": 0.883005292155783,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/stroke.csv",
-            "len_added_files": 4,
+            "steps": 9,
+            "result": "stroke.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
                 ],
                 [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
+                    "Python",
+                    12
                 ],
                 [
                     "Python",
@@ -946,7 +932,23 @@
                 ],
                 [
                     "Python",
-                    72
+                    35
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head stroke.csv"
                 ],
                 [
                     "Terminate",
@@ -971,46 +973,26 @@
             "id": "ml-binary-019",
             "total_score": 1.0,
             "finished": true,
-            "steps": 10,
+            "steps": 5,
             "result": "class.csv",
             "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 mushrooms.csv"
+                    "ls -lh"
                 ],
                 [
                     "Python",
-                    40
+                    10
                 ],
                 [
-                    "Bash",
-                    "head -n 5 class.csv"
+                    "Python",
+                    35
                 ],
                 [
                     "Python",
                     15
-                ],
-                [
-                    "Python",
-                    43
-                ],
-                [
-                    "Bash",
-                    "head -n 5 class.csv"
                 ],
                 [
                     "Terminate",
@@ -1033,36 +1015,64 @@
         },
         {
             "id": "ml-binary-020",
-            "total_score": 0.8665162046600954,
+            "total_score": 0.8668775574048778,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/disease.csv",
-            "len_added_files": 2,
+            "steps": 14,
+            "result": "disease.csv",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head -n 5 CVD_cleaned.csv"
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    43
+                ],
+                [
+                    "Python",
+                    56
+                ],
+                [
+                    "Python",
+                    60
                 ],
                 [
                     "Python",
                     58
                 ],
                 [
+                    "Python",
+                    69
+                ],
+                [
+                    "Python",
+                    77
+                ],
+                [
+                    "Python",
+                    84
+                ],
+                [
+                    "Python",
+                    90
+                ],
+                [
                     "Bash",
-                    "head -n 5 /workspace/disease.csv"
+                    "ls -l disease.csv"
+                ],
+                [
+                    "Python",
+                    17
                 ],
                 [
                     "Terminate",
@@ -1072,7 +1082,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8665162046600954,
+                    "score": 0.8668775574048778,
                     "upper_bound": 0.9299999999999999,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -1085,46 +1095,98 @@
         },
         {
             "id": "ml-binary-021",
-            "total_score": 1.0,
-            "finished": true,
-            "steps": 7,
-            "result": "diabetes.csv",
-            "len_added_files": 2,
+            "total_score": 0.9824994063292742,
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "len_added_files": 11,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head diabetes_prediction_dataset.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    44
+                    16
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    74
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Bash",
+                    "python preprocess_data.py"
+                ],
+                [
+                    "Bash",
+                    "python predict_diabetes.py"
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Bash",
+                    "python predict_diabetes.py"
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Bash",
+                    "ls"
                 ],
                 [
                     "Bash",
                     "head diabetes.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
                 ]
             ],
             "info": [
                 {
                     "errors": [],
-                    "score": 1.0,
+                    "score": 0.9824994063292742,
                     "upper_bound": 0.96,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -1137,36 +1199,52 @@
         },
         {
             "id": "ml-binary-022",
-            "total_score": 0.9537065181974527,
+            "total_score": 0.9444527058307507,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/bankrupt.csv",
-            "len_added_files": 2,
+            "steps": 11,
+            "result": "bankrupt.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "head data.csv"
+                    "Python",
+                    13
                 ],
                 [
                     "Python",
-                    33
+                    26
+                ],
+                [
+                    "Python",
+                    34
                 ],
                 [
                     "Bash",
-                    "ls -l /workspace && head /workspace/bankrupt.csv"
+                    "pip install imbalanced-learn"
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Python",
+                    30
+                ],
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head bankrupt.csv"
                 ],
                 [
                     "Terminate",
@@ -1176,7 +1254,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.9537065181974527,
+                    "score": 0.9444527058307507,
                     "upper_bound": 0.97,
                     "lower_bound": 0.6,
                     "metric": "f1",
@@ -1189,7 +1267,7 @@
         },
         {
             "id": "ml-cluster-001",
-            "total_score": 1.0,
+            "total_score": 0.9872957152550685,
             "finished": true,
             "steps": 5,
             "result": "cluster.csv",
@@ -1198,19 +1276,19 @@
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Mall_Customers.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    25
+                    19
                 ],
                 [
                     "Bash",
-                    "head -n 5 cluster.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1220,7 +1298,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 1.0,
+                    "score": 0.9872957152550685,
                     "upper_bound": 0.574,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -1242,19 +1320,19 @@
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 wine-clustering.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    22
+                    24
                 ],
                 [
                     "Bash",
-                    "head -n 5 cluster.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1279,54 +1357,34 @@
             "id": "ml-cluster-003",
             "total_score": 1.0,
             "finished": true,
-            "steps": 12,
+            "steps": 7,
             "result": "cluster.csv",
             "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
+                ],
+                [
+                    "Python",
+                    8
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    33
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "head -n 5 New_York_cars.csv"
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    49
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Python",
-                    55
-                ],
-                [
-                    "Python",
-                    56
-                ],
-                [
-                    "Bash",
-                    "head -n 5 cluster.csv"
-                ],
-                [
-                    "Python",
-                    11
-                ],
-                [
-                    "Bash",
-                    "head -n 1 cluster.csv"
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1349,80 +1407,24 @@
         },
         {
             "id": "ml-cluster-004",
-            "total_score": 0.8728348682294552,
+            "total_score": 0.8325057334967485,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 3,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Python",
-                    24
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/cluster.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.8728348682294552,
-                    "upper_bound": 0.8340000000000001,
-                    "lower_bound": 0.0,
-                    "metric": "silhouette",
-                    "target_output": "Cluster",
-                    "file": [
-                        "cluster.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-cluster-005",
-            "total_score": 0.8598375242981847,
-            "finished": true,
-            "steps": 7,
+            "steps": 5,
             "result": "cluster.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
                 ],
                 [
                     "Bash",
-                    "head blob_dataset"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head blob_dataset.csv"
+                    "head Facebook_Live.csv"
                 ],
                 [
                     "Python",
-                    18
+                    31
                 ],
                 [
                     "Bash",
@@ -1436,7 +1438,51 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8598375242981847,
+                    "score": 0.8325057334967485,
+                    "upper_bound": 0.8340000000000001,
+                    "lower_bound": 0.0,
+                    "metric": "silhouette",
+                    "target_output": "Cluster",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-005",
+            "total_score": 0.8752316122948112,
+            "finished": true,
+            "steps": 5,
+            "result": "cluster.csv",
+            "len_added_files": 2,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.8752316122948112,
                     "upper_bound": 0.7130000000000001,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -1449,36 +1495,36 @@
         },
         {
             "id": "ml-cluster-006",
-            "total_score": 0.1805345388618421,
+            "total_score": 0.5423990546900526,
             "finished": true,
             "steps": 7,
             "result": "cluster.csv",
-            "len_added_files": 2,
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 patient_dataset.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    49
+                    10
                 ],
                 [
                     "Python",
-                    49
+                    36
                 ],
                 [
-                    "Bash",
-                    "head -n 5 cluster.csv"
+                    "Python",
+                    35
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    20
                 ],
                 [
                     "Terminate",
@@ -1488,7 +1534,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.1805345388618421,
+                    "score": 0.5423990546900526,
                     "upper_bound": 0.4612088888888889,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -1501,32 +1547,36 @@
         },
         {
             "id": "ml-cluster-007",
-            "total_score": 0.20415097610733762,
+            "total_score": 0.7820295563791716,
             "finished": true,
-            "steps": 6,
+            "steps": 7,
             "result": "cluster.csv",
-            "len_added_files": 2,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 03_Clustering_Marketing.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    30
+                    13
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Python",
+                    33
                 ],
                 [
                     "Bash",
-                    "head -n 5 cluster.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1535,10 +1585,8 @@
             ],
             "info": [
                 {
-                    "errors": [
-                        "result contains non numeric columns: ['gender']"
-                    ],
-                    "score": 0.20415097610733762,
+                    "errors": [],
+                    "score": 0.7820295563791716,
                     "upper_bound": 0.5235555555555556,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -1553,34 +1601,38 @@
             "id": "ml-cluster-008",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 2,
+            "steps": 8,
+            "result": "cluster.csv",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    38
                 ],
                 [
                     "Bash",
-                    "head -n 5 property.csv"
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Python",
-                    51
+                    "ls -lh cluster.csv"
                 ],
                 [
                     "Bash",
-                    "ls -l /workspace"
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1603,100 +1655,32 @@
         },
         {
             "id": "ml-cluster-009",
-            "total_score": 0.5117042773987134,
-            "finished": true,
-            "steps": 11,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 5,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    36
-                ],
-                [
-                    "Python",
-                    38
-                ],
-                [
-                    "Python",
-                    21
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Bash",
-                    "ls -l /workspace/cluster.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/cluster.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.5117042773987134,
-                    "upper_bound": 0.9051988888888889,
-                    "lower_bound": 0.0,
-                    "metric": "silhouette",
-                    "target_output": "Cluster",
-                    "file": [
-                        "cluster.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-cluster-010",
-            "total_score": 0.2157673342546277,
+            "total_score": 0.3858087605566029,
             "finished": true,
             "steps": 6,
             "result": "cluster.csv",
-            "len_added_files": 3,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 covtype.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    11
+                    32
                 ],
                 [
                     "Python",
-                    44
+                    32
                 ],
                 [
                     "Bash",
-                    "head -n 5 cluster.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1706,8 +1690,8 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.2157673342546277,
-                    "upper_bound": 0.7999999999999999,
+                    "score": 0.3858087605566029,
+                    "upper_bound": 0.9051988888888889,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -1721,34 +1705,26 @@
             "id": "ml-cluster-011",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/cluster.csv",
+            "steps": 5,
+            "result": "cluster.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 OnlineRetail.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    47
-                ],
-                [
-                    "Python",
-                    47
+                    25
                 ],
                 [
                     "Bash",
-                    "ls -l /workspace/cluster.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1771,36 +1747,44 @@
         },
         {
             "id": "ml-cluster-012",
-            "total_score": 1.0,
+            "total_score": 0.18835368420092466,
             "finished": true,
-            "steps": 7,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 3,
+            "steps": 9,
+            "result": "cluster.csv",
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls -lh"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    28
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    46
                 ],
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Python",
-                    72
-                ],
-                [
-                    "Python",
-                    72
-                ],
-                [
-                    "Bash",
-                    "ls -l /workspace"
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1810,7 +1794,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 1.0,
+                    "score": 0.18835368420092466,
                     "upper_bound": 0.22618333333333332,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -1826,8 +1810,8 @@
             "total_score": 0.7162544295389891,
             "finished": true,
             "steps": 8,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 6,
+            "result": "cluster.csv",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -1836,27 +1820,27 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head Country-data.csv"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    28
                 ],
                 [
                     "Bash",
-                    "cat data-dictionary.csv"
+                    "head cluster.csv"
                 ],
                 [
                     "Python",
-                    13
+                    28
                 ],
                 [
-                    "Python",
-                    18
-                ],
-                [
-                    "Python",
-                    22
-                ],
-                [
-                    "Python",
-                    39
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1879,40 +1863,52 @@
         },
         {
             "id": "ml-cluster-014",
-            "total_score": 0.15259925281105619,
+            "total_score": 0.8750430179014019,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 5,
+            "steps": 11,
+            "result": "cluster.csv",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls -lh"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head -n 5 marketing_campaign.csv"
                 ],
                 [
                     "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    58
-                ],
-                [
-                    "Python",
-                    58
+                    36
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/cluster.csv"
+                    "head -n 1 marketing_campaign.csv"
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Bash",
+                    "ls -lh cluster.csv"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1922,7 +1918,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.15259925281105619,
+                    "score": 0.8750430179014019,
                     "upper_bound": 0.37554444444444446,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -1937,30 +1933,50 @@
             "id": "ml-cluster-015",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 2,
+            "steps": 11,
+            "result": "cluster.csv",
+            "len_added_files": 7,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 77_cancer_proteomes_CPTAC_itraq.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    30
+                    12
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    22
                 ],
                 [
                     "Bash",
-                    "ls -l /workspace"
+                    "ls elbow_plot.png"
+                ],
+                [
+                    "Python",
+                    20
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/cluster.csv"
+                    "ls cluster.csv"
+                ],
+                [
+                    "Bash",
+                    "head cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -1983,40 +1999,44 @@
         },
         {
             "id": "ml-cluster-016",
-            "total_score": 0.0,
+            "total_score": 0.4950009477378859,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/cluster.csv",
+            "steps": 9,
+            "result": "cluster.csv",
             "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    41
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "ls -l cluster.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 online_retail_II.csv"
-                ],
-                [
-                    "Python",
-                    8
-                ],
-                [
-                    "Python",
-                    38
-                ],
-                [
-                    "Python",
-                    24
-                ],
-                [
-                    "Python",
-                    55
+                    "head -n 3 cluster.csv"
                 ],
                 [
                     "Terminate",
@@ -2026,7 +2046,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.0,
+                    "score": 0.4950009477378859,
                     "upper_bound": 0.9557899999999999,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -2041,26 +2061,18 @@
             "id": "ml-cluster-017",
             "total_score": 1.0,
             "finished": true,
-            "steps": 12,
-            "result": "/workspace/cluster.csv",
-            "len_added_files": 8,
+            "steps": 7,
+            "result": "cluster.csv",
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 bank_transactions.csv"
+                    "ls -lh"
                 ],
                 [
                     "Python",
-                    10
+                    16
                 ],
                 [
                     "Python",
@@ -2068,27 +2080,15 @@
                 ],
                 [
                     "Python",
-                    36
+                    22
+                ],
+                [
+                    "Bash",
+                    "ls -lh cluster.csv"
                 ],
                 [
                     "Python",
-                    42
-                ],
-                [
-                    "Python",
-                    35
-                ],
-                [
-                    "Python",
-                    39
-                ],
-                [
-                    "Python",
-                    34
-                ],
-                [
-                    "Python",
-                    39
+                    11
                 ],
                 [
                     "Terminate",
@@ -2113,38 +2113,42 @@
             "id": "ml-cluster-018",
             "total_score": 1.0,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/cluster.csv",
+            "steps": 9,
+            "result": "cluster.csv",
             "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    34
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "ls -lh cluster.csv"
                 ],
                 [
                     "Python",
-                    9
-                ],
-                [
-                    "Python",
-                    25
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Python",
-                    27
-                ],
-                [
-                    "Python",
-                    31
+                    7
                 ],
                 [
                     "Terminate",
@@ -2167,36 +2171,64 @@
         },
         {
             "id": "ml-cluster-019",
-            "total_score": 1.0,
+            "total_score": 0.3986160640898441,
             "finished": true,
-            "steps": 7,
+            "steps": 14,
             "result": "cluster.csv",
-            "len_added_files": 2,
+            "len_added_files": 6,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -lh"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 'Year 2009-2010.csv'"
+                    "Python",
+                    13
                 ],
                 [
                     "Python",
-                    66
+                    13
                 ],
                 [
                     "Python",
-                    66
+                    20
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    76
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    36
                 ],
                 [
                     "Bash",
                     "ls -l cluster.csv"
+                ],
+                [
+                    "Python",
+                    15
                 ],
                 [
                     "Terminate",
@@ -2205,8 +2237,10 @@
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 1.0,
+                    "errors": [
+                        "result contains non numeric columns: ['Last Order Date']"
+                    ],
+                    "score": 0.3986160640898441,
                     "upper_bound": 0.5847,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
@@ -2221,26 +2255,22 @@
             "id": "ml-cluster-020",
             "total_score": 1.0,
             "finished": true,
-            "steps": 6,
+            "steps": 5,
             "result": "cluster.csv",
-            "len_added_files": 3,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
+                ],
+                [
+                    "Python",
+                    41
                 ],
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    24
+                    "ls"
                 ],
                 [
                     "Bash",
@@ -2269,82 +2299,46 @@
             "id": "ml-competition-001",
             "total_score": 0.0,
             "finished": true,
-            "steps": 19,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
+            "steps": 10,
+            "result": "submission.csv",
+            "len_added_files": 9,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Python",
-                    47
+                    "Bash",
+                    "cat README.md"
                 ],
                 [
                     "Python",
-                    53
+                    20
                 ],
                 [
                     "Python",
-                    56
+                    27
                 ],
                 [
                     "Python",
-                    59
+                    30
                 ],
                 [
                     "Python",
-                    60
+                    37
                 ],
                 [
                     "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    59
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    62
-                ],
-                [
-                    "Python",
-                    61
-                ],
-                [
-                    "Python",
-                    59
-                ],
-                [
-                    "Python",
-                    62
-                ],
-                [
-                    "Python",
-                    59
+                    19
                 ],
                 [
                     "Bash",
-                    "head /workspace/submission.csv"
+                    "ls -l submission.csv sample_submission.csv"
+                ],
+                [
+                    "Python",
+                    15
                 ],
                 [
                     "Terminate",
@@ -2354,7 +2348,7 @@
             "info": [
                 {
                     "errors": [
-                        "ID does not match, result has extra id: 15695872,15794178,15695874,15630349,15695888...15695865"
+                        "ID does not match, result has extra id: 1,2,3,4,5...24755"
                     ],
                     "score": 0.0,
                     "upper_bound": 0.9058888888888889,
@@ -2366,79 +2360,21 @@
             ]
         },
         {
-            "id": "ml-competition-002",
-            "total_score": 0.7266026224485987,
-            "finished": true,
-            "steps": 7,
-            "result": "submission.csv",
-            "len_added_files": 4,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head train.csv test.csv sample_submission.csv"
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Python",
-                    36
-                ],
-                [
-                    "Python",
-                    38
-                ],
-                [
-                    "Bash",
-                    "head submission.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.7266026224485987,
-                    "upper_bound": 0.8794444444444444,
-                    "lower_bound": 0.7858888888888889,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ml-competition-003",
             "total_score": 0.0,
             "finished": true,
-            "steps": 13,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 3,
+            "steps": 18,
+            "result": "FAIL",
+            "len_added_files": 10,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
                     "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head greeks.csv test.csv sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
                 ],
                 [
                     "Bash",
@@ -2446,31 +2382,59 @@
                 ],
                 [
                     "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    46
-                ],
-                [
-                    "Python",
-                    56
-                ],
-                [
-                    "Python",
-                    60
+                    4
                 ],
                 [
                     "Bash",
-                    "head /workspace/submission.csv"
+                    "head test.csv"
+                ],
+                [
+                    "Python",
+                    4
+                ],
+                [
+                    "Bash",
+                    "head sample_submission.csv"
+                ],
+                [
+                    "Bash",
+                    "head greeks.csv"
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    4
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    19
                 ],
                 [
                     "Terminate",
@@ -2480,7 +2444,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Other_Faults', 'Bumps', 'Stains', 'Dirtiness', 'Z_Scratch', 'Pastry', 'K_Scatch']"
+                        "result file submission.csv does not exist"
                     ],
                     "score": 0.0,
                     "upper_bound": 4.7274192,
@@ -2493,44 +2457,60 @@
         },
         {
             "id": "ml-competition-004",
-            "total_score": 0.7207062016396569,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 9,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
+            "steps": 13,
+            "result": "submission.csv",
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
                     "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "head train.csv"
+                    "head train.csv && echo '' && head test.csv"
                 ],
                 [
                     "Python",
-                    51
+                    7
                 ],
                 [
                     "Python",
-                    54
+                    10
                 ],
                 [
                     "Python",
-                    55
+                    19
                 ],
                 [
-                    "Bash",
-                    "ls -l /workspace"
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    10
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    7
                 ],
                 [
                     "Terminate",
@@ -2540,7 +2520,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7207062016396569,
+                    "score": 0.0,
                     "upper_bound": 0.888977,
                     "lower_bound": 0.82278,
                     "file": [
@@ -2551,44 +2531,48 @@
         },
         {
             "id": "ml-competition-005",
-            "total_score": 0.0,
+            "total_score": 0.24074645691074445,
             "finished": true,
-            "steps": 9,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 3,
+            "steps": 10,
+            "result": "submission.csv",
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head train.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
+                    "cat README.md"
                 ],
                 [
                     "Python",
-                    19
+                    7
                 ],
                 [
                     "Python",
-                    58
+                    18
                 ],
                 [
-                    "Bash",
-                    "ls -l /workspace"
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    37
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Python",
+                    13
                 ],
                 [
                     "Terminate",
@@ -2597,10 +2581,8 @@
             ],
             "info": [
                 {
-                    "errors": [
-                        "Unexpected Column: ['C', 'CL', 'D']"
-                    ],
-                    "score": 0.0,
+                    "errors": [],
+                    "score": 0.24074645691074445,
                     "upper_bound": 0.4057209,
                     "lower_bound": 0.31671,
                     "file": [
@@ -2613,38 +2595,50 @@
             "id": "ml-competition-006",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
+            "steps": 11,
+            "result": "submission.csv",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
                     "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls"
-                ],
-                [
-                    "Bash",
-                    "head train.csv"
+                    "head -n 5 train.csv"
                 ],
                 [
                     "Python",
-                    41
+                    16
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Python",
+                    39
                 ],
                 [
                     "Bash",
-                    "head submission.csv"
+                    "head -n 5 submission.csv && echo '\\n' && head -n 5 sample_submission.csv"
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
+                    "Bash",
+                    "head -n 5 submission.csv"
                 ],
                 [
                     "Terminate",
@@ -2667,40 +2661,60 @@
         },
         {
             "id": "ml-competition-007",
-            "total_score": 0.8376008055221237,
+            "total_score": 0.8173431764075604,
             "finished": true,
-            "steps": 8,
+            "steps": 13,
             "result": "submission.csv",
-            "len_added_files": 2,
+            "len_added_files": 10,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head train.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
+                    "cat data_description.txt"
                 ],
                 [
                     "Python",
-                    40
+                    17
                 ],
                 [
                     "Python",
-                    44
+                    16
                 ],
                 [
-                    "Bash",
-                    "ls -l"
+                    "Python",
+                    35
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    48
+                ],
+                [
+                    "Python",
+                    52
+                ],
+                [
+                    "Python",
+                    52
+                ],
+                [
+                    "Python",
+                    52
+                ],
+                [
+                    "Python",
+                    48
+                ],
+                [
+                    "Python",
+                    60
                 ],
                 [
                     "Terminate",
@@ -2710,7 +2724,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8376008055221237,
+                    "score": 0.8173431764075604,
                     "upper_bound": 0.190548,
                     "lower_bound": 0.0,
                     "file": [
@@ -2721,78 +2735,32 @@
         },
         {
             "id": "ml-competition-008",
-            "total_score": 0.027373687142056236,
-            "finished": true,
-            "steps": 9,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head train.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Python",
-                    51
-                ],
-                [
-                    "Python",
-                    39
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Bash",
-                    "head /workspace/submission.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.027373687142056236,
-                    "upper_bound": 0.86905,
-                    "lower_bound": 0.84417,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-009",
             "total_score": 0.0,
             "finished": true,
-            "steps": 6,
+            "steps": 9,
             "result": "submission.csv",
             "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
                 ],
                 [
                     "Bash",
-                    "head train.csv test.csv sample_submission.csv"
+                    "head -n 5 train.csv"
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Bash",
+                    "head -n 2 test.csv && echo '\\n' && head -n 2 sample_submission.csv"
+                ],
+                [
+                    "Python",
+                    23
                 ],
                 [
                     "Python",
@@ -2800,11 +2768,11 @@
                 ],
                 [
                     "Python",
-                    37
+                    33
                 ],
                 [
                     "Bash",
-                    "head submission.csv"
+                    "head submission.csv && echo '\\n' && wc -l submission.csv test.csv"
                 ],
                 [
                     "Terminate",
@@ -2815,6 +2783,68 @@
                 {
                     "errors": [],
                     "score": 0.0,
+                    "upper_bound": 0.86905,
+                    "lower_bound": 0.84417,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-009",
+            "total_score": 0.6956475065074418,
+            "finished": true,
+            "steps": 10,
+            "result": "submission.csv",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    30
+                ],
+                [
+                    "Python",
+                    43
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.6956475065074418,
                     "upper_bound": 0.155808,
                     "lower_bound": 0.143739,
                     "file": [
@@ -2827,14 +2857,14 @@
             "id": "ml-competition-010",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 3,
+            "steps": 10,
+            "result": "submission.csv",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
@@ -2842,23 +2872,31 @@
                 ],
                 [
                     "Bash",
-                    "head train.csv test.csv sample_submission.csv"
-                ],
-                [
-                    "Python",
-                    21
-                ],
-                [
-                    "Python",
-                    55
-                ],
-                [
-                    "Python",
-                    59
+                    "head train.csv"
                 ],
                 [
                     "Bash",
-                    "ls -l /workspace"
+                    "head test.csv"
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Bash",
+                    "head submission.csv && echo && head sample_submission.csv && echo && wc -l submission.csv sample_submission.csv"
+                ],
+                [
+                    "Python",
+                    30
                 ],
                 [
                     "Terminate",
@@ -2879,11 +2917,11 @@
         },
         {
             "id": "ml-competition-011",
-            "total_score": 0.6857574041655986,
+            "total_score": 0.8136817945913294,
             "finished": true,
-            "steps": 11,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 4,
+            "steps": 17,
+            "result": "submission.csv",
+            "len_added_files": 18,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -2895,36 +2933,60 @@
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head train.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "head ffs.csv"
+                    "Python",
+                    13
                 ],
                 [
                     "Python",
-                    24
+                    10
                 ],
                 [
-                    "Bash",
-                    "cat /workspace/eda_results.txt"
+                    "Python",
+                    6
+                ],
+                [
+                    "Python",
+                    15
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    23
                 ],
                 [
                     "Python",
                     25
                 ],
                 [
-                    "Bash",
-                    "head /workspace/submission.csv"
+                    "Python",
+                    9
+                ],
+                [
+                    "Python",
+                    7
+                ],
+                [
+                    "Python",
+                    11
+                ],
+                [
+                    "Python",
+                    26
                 ],
                 [
                     "Terminate",
@@ -2934,7 +2996,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.6857574041655986,
+                    "score": 0.8136817945913294,
                     "upper_bound": 371.916,
                     "lower_bound": 327.384,
                     "file": [
@@ -2945,24 +3007,20 @@
         },
         {
             "id": "ml-competition-012",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 9,
+            "steps": 11,
             "result": "submission.csv",
-            "len_added_files": 2,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
                     "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
                 ],
                 [
                     "Bash",
@@ -2970,19 +3028,31 @@
                 ],
                 [
                     "Python",
-                    44
+                    11
                 ],
                 [
                     "Python",
-                    43
+                    16
                 ],
                 [
                     "Python",
-                    49
+                    13
                 ],
                 [
-                    "Bash",
-                    "head -n 5 submission.csv"
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    30
+                ],
+                [
+                    "Python",
+                    35
                 ],
                 [
                     "Terminate",
@@ -2991,8 +3061,10 @@
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 1.0,
+                    "errors": [
+                        "Length mismatch: result CSV has 71 rows, while expected CSV has 11854 rows."
+                    ],
+                    "score": 0.0,
                     "upper_bound": 51.87777777777777,
                     "lower_bound": 11.52231111111111,
                     "file": [
@@ -3003,44 +3075,48 @@
         },
         {
             "id": "ml-competition-013",
-            "total_score": 0.19871348548049553,
+            "total_score": 0.13256987279714602,
             "finished": true,
-            "steps": 9,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
+            "steps": 10,
+            "result": "submission.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls"
-                ],
-                [
-                    "Bash",
-                    "head train.csv"
+                    "Python",
+                    15
                 ],
                 [
                     "Python",
-                    46
+                    21
                 ],
                 [
                     "Python",
-                    49
+                    34
                 ],
                 [
-                    "Bash",
-                    "head /workspace/submission.csv"
+                    "Python",
+                    41
+                ],
+                [
+                    "Python",
+                    62
+                ],
+                [
+                    "Python",
+                    63
+                ],
+                [
+                    "Python",
+                    63
                 ],
                 [
                     "Terminate",
@@ -3050,7 +3126,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.19871348548049553,
+                    "score": 0.13256987279714602,
                     "upper_bound": 52.893,
                     "lower_bound": 4.93137,
                     "file": [
@@ -3061,136 +3137,20 @@
         },
         {
             "id": "ml-competition-014",
-            "total_score": 0.7741944216211893,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 10,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 6,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l && head -n 5 test.csv && head -n 5 sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 train.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 census_starter.csv && head -n 5 revealed_test.csv"
-                ],
-                [
-                    "Python",
-                    23
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    63
-                ],
-                [
-                    "Python",
-                    70
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/submission.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.7741944216211893,
-                    "upper_bound": 52.05348,
-                    "lower_bound": 3.78774,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-015",
-            "total_score": 0.9788225328250749,
-            "finished": true,
-            "steps": 7,
+            "steps": 11,
             "result": "submission.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
                 ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Bash",
-                    "head -n 5 submission.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.9788225328250749,
-                    "upper_bound": 0.675,
-                    "lower_bound": 0.25002,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-016",
-            "total_score": 0.538130138677179,
-            "finished": true,
-            "steps": 9,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 3,
-            "len_changed_files": 0,
-            "actions": [
                 [
                     "Bash",
                     "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
                 ],
                 [
                     "Bash",
@@ -3201,16 +3161,28 @@
                     "head test.csv"
                 ],
                 [
-                    "Python",
-                    15
+                    "Bash",
+                    "head sample_submission.csv"
                 ],
                 [
                     "Python",
-                    34
+                    20
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Python",
+                    47
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/submission.csv"
+                    "head submission.csv"
+                ],
+                [
+                    "Bash",
+                    "wc -l submission.csv test.csv"
                 ],
                 [
                     "Terminate",
@@ -3220,7 +3192,151 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.538130138677179,
+                    "score": 1.0,
+                    "upper_bound": 52.05348,
+                    "lower_bound": 3.78774,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-015",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 15,
+            "result": "submission.csv",
+            "len_added_files": 10,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "cat README.md"
+                ],
+                [
+                    "Bash",
+                    "head train.csv"
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    50
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    18
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Bash",
+                    "head submission.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.0,
+                    "upper_bound": 0.675,
+                    "lower_bound": 0.25002,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-016",
+            "total_score": 0.0,
+            "finished": true,
+            "steps": 10,
+            "result": "submission.csv",
+            "len_added_files": 5,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head train.csv"
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Bash",
+                    "head submission.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.0,
                     "upper_bound": 0.988,
                     "lower_bound": 0.9017,
                     "file": [
@@ -3233,46 +3349,30 @@
             "id": "ml-competition-017",
             "total_score": 0.0,
             "finished": true,
-            "steps": 10,
+            "steps": 6,
             "result": "submission.csv",
-            "len_added_files": 3,
+            "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    33
+                    "Bash",
+                    "cat sample_submission.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 submission.csv"
+                    "head -n 5 train.csv"
                 ],
                 [
                     "Python",
-                    10
+                    17
                 ],
                 [
                     "Bash",
-                    "head -n 5 submission.csv"
+                    "head submission.csv"
                 ],
                 [
                     "Terminate",
@@ -3297,38 +3397,30 @@
             "id": "ml-competition-018",
             "total_score": 0.0,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
+            "steps": 6,
+            "result": "submission.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head sample_submission.csv && head test_essays.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head train_essays.csv && head train_prompts.csv"
+                    "ls"
                 ],
                 [
                     "Python",
-                    45
+                    14
                 ],
                 [
                     "Python",
-                    45
+                    16
                 ],
                 [
-                    "Bash",
-                    "ls -l /workspace"
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    39
                 ],
                 [
                     "Terminate",
@@ -3337,9 +3429,7 @@
             ],
             "info": [
                 {
-                    "errors": [
-                        "Length mismatch: result CSV has 207 rows, while expected CSV has 381 rows."
-                    ],
+                    "errors": [],
                     "score": 0.0,
                     "upper_bound": 0.9878222222222223,
                     "lower_bound": 0.6301444444444445,
@@ -3350,131 +3440,33 @@
             ]
         },
         {
-            "id": "ml-competition-019",
-            "total_score": 1.0,
-            "finished": true,
-            "steps": 8,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 13,
+            "id": "ml-multi-002",
+            "total_score": 0.0,
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
                     "ls -l"
                 ],
-                [
-                    "Bash",
-                    "head sample_submission.csv"
-                ],
-                [
-                    "Python",
-                    8
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    28
-                ],
-                [
-                    "Python",
-                    33
-                ],
-                [
-                    "Python",
-                    43
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9115555555555556,
-                    "lower_bound": 0.8874555555555556,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-020",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 7,
-            "result": "The 'outcome' column is missing from the training data, which is necessary for training a model. Unable to proceed with the task.",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
                     "Bash",
-                    "head test.csv && echo && head sample_submission.csv"
+                    "head -n 5 New_York_cars.csv"
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "head -n 5 test.csv"
                 ],
                 [
                     "Python",
-                    53
-                ],
-                [
-                    "Python",
-                    8
-                ],
-                [
-                    "Bash",
-                    "grep -i 'outcome' /workspace/train.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "result file submission.csv does not exist"
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.781811111111111,
-                    "lower_bound": 0.6954555555555555,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-multi-001",
-            "total_score": 1.0,
-            "finished": true,
-            "steps": 6,
-            "result": "activity.csv",
-            "len_added_files": 6,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md zzzread.txt"
-                ],
-                [
-                    "Python",
-                    17
+                    18
                 ],
                 [
                     "Python",
@@ -3482,75 +3474,70 @@
                 ],
                 [
                     "Python",
-                    22
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.375,
-                    "metric": "f1",
-                    "target_output": "Activity",
-                    "file": [
-                        "activity.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-multi-002",
-            "total_score": 1.0,
-            "finished": true,
-            "steps": 7,
-            "result": "result.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Car_Rates.csv"
+                    31
                 ],
                 [
                     "Python",
-                    23
+                    36
                 ],
                 [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "Python",
+                    37
                 ],
                 [
-                    "Terminate",
-                    ""
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    42
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Python",
+                    51
+                ],
+                [
+                    "Python",
+                    52
+                ],
+                [
+                    "Python",
+                    57
+                ],
+                [
+                    "Python",
+                    58
+                ],
+                [
+                    "Python",
+                    58
+                ],
+                [
+                    "Python",
+                    58
                 ]
             ],
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['name']"
+                        "result file ./benchmark/output/claude-3-opus-20240229-ML0613/ml-multi-002/result.csv does not exists"
                     ],
-                    "score": 1.0,
+                    "score": 0.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "accuracy",
-                    "target_output": "new&used",
                     "file": [
                         "result.csv"
                     ]
@@ -3559,56 +3546,44 @@
         },
         {
             "id": "ml-multi-003",
-            "total_score": 0.6265158179087122,
+            "total_score": 0.46668757711196296,
             "finished": true,
-            "steps": 12,
-            "result": "/workspace/result.csv",
-            "len_added_files": 11,
+            "steps": 9,
+            "result": "FAIL - Unable to complete experience level prediction task within execution time constraints. The dataset is too large to process and train on within the allowed time limit, even with simplification attempts. Suggest either extending time budget, reducing scope to a smaller dataset, or exploring more advanced compute options. Please advise on next steps.",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head postings.csv test.csv"
+                    "head postings.csv"
                 ],
                 [
                     "Python",
-                    20
+                    14
                 ],
                 [
                     "Python",
-                    50
+                    36
                 ],
                 [
                     "Python",
-                    51
+                    42
                 ],
                 [
                     "Python",
-                    51
+                    68
                 ],
                 [
                     "Python",
-                    38
+                    70
                 ],
                 [
                     "Python",
-                    25
-                ],
-                [
-                    "Python",
-                    25
-                ],
-                [
-                    "Python",
-                    18
+                    54
                 ],
                 [
                     "Terminate",
@@ -3620,7 +3595,7 @@
                     "errors": [
                         "result csv columns are different from gold csv: ['job_id']"
                     ],
-                    "score": 0.6265158179087122,
+                    "score": 0.46668757711196296,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
@@ -3635,30 +3610,54 @@
             "id": "ml-multi-004",
             "total_score": 0.9882594901027757,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/level.csv",
-            "len_added_files": 2,
+            "steps": 12,
+            "result": "level.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
+                [
+                    "Bash",
+                    "ls"
+                ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head students_adaptability_level_online_education.csv"
+                    "Python",
+                    13
                 ],
                 [
                     "Python",
-                    46
+                    28
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Bash",
+                    "ls level.csv"
+                ],
+                [
+                    "Bash",
+                    "head level.csv"
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Bash",
+                    "head level.csv"
                 ],
                 [
                     "Terminate",
@@ -3681,40 +3680,44 @@
         },
         {
             "id": "ml-multi-005",
-            "total_score": 0.6396684484936663,
+            "total_score": 0.6766318772282452,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/emotions.csv",
+            "steps": 9,
+            "result": "emotions.csv",
             "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
                     "cat README.md"
                 ],
                 [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    22
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    24
+                ],
+                [
                     "Bash",
-                    "head -n 5 train.txt"
-                ],
-                [
-                    "Python",
-                    26
-                ],
-                [
-                    "Python",
-                    14
-                ],
-                [
-                    "Python",
-                    16
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "head -n 5 emotions.csv"
+                    "head -n 3 emotions.csv"
                 ],
                 [
                     "Terminate",
@@ -3724,7 +3727,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.6396684484936663,
+                    "score": 0.6766318772282452,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
@@ -3737,24 +3740,28 @@
         },
         {
             "id": "ml-multi-006",
-            "total_score": 0.7430265728790683,
-            "finished": true,
-            "steps": 16,
-            "result": "/workspace/score.csv",
-            "len_added_files": 12,
+            "total_score": 0.0,
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "len_added_files": 18,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head train.csv"
                 ],
                 [
-                    "Bash",
-                    "head -n 5 train.csv"
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    23
                 ],
                 [
                     "Python",
@@ -3762,61 +3769,74 @@
                 ],
                 [
                     "Python",
-                    64
+                    39
                 ],
                 [
                     "Python",
-                    64
+                    41
                 ],
                 [
                     "Python",
-                    64
+                    27
                 ],
                 [
                     "Python",
-                    34
+                    57
                 ],
                 [
                     "Python",
-                    64
+                    27
                 ],
                 [
                     "Python",
-                    34
+                    59
                 ],
                 [
                     "Python",
-                    34
+                    63
                 ],
                 [
                     "Python",
-                    34
+                    60
                 ],
                 [
                     "Python",
-                    42
+                    60
                 ],
                 [
                     "Python",
-                    46
+                    27
                 ],
                 [
-                    "Bash",
-                    "head -n 5 /workspace/score.csv"
+                    "Python",
+                    60
                 ],
                 [
-                    "Terminate",
-                    ""
+                    "Python",
+                    31
+                ],
+                [
+                    "Python",
+                    63
+                ],
+                [
+                    "Python",
+                    60
+                ],
+                [
+                    "Python",
+                    27
                 ]
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 0.7430265728790683,
+                    "errors": [
+                        "result file ./benchmark/output/claude-3-opus-20240229-ML0613/ml-multi-006/score.csv does not exists"
+                    ],
+                    "score": 0.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
-                    "target_output": "Credit_Score",
                     "file": [
                         "score.csv"
                     ]
@@ -3827,34 +3847,30 @@
             "id": "ml-multi-007",
             "total_score": 1.0,
             "finished": true,
-            "steps": 7,
+            "steps": 6,
             "result": "class.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Date_Fruit_Datasets.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
+                    "head Date_Fruit_Datasets.csv test.csv"
                 ],
                 [
                     "Python",
-                    26
+                    14
+                ],
+                [
+                    "Python",
+                    23
                 ],
                 [
                     "Bash",
-                    "head -n 5 class.csv && ls -l class.csv"
+                    "ls class.csv && wc -l class.csv"
                 ],
                 [
                     "Terminate",
@@ -3877,32 +3893,52 @@
         },
         {
             "id": "ml-multi-008",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/category.csv",
-            "len_added_files": 2,
+            "steps": 11,
+            "result": "category.csv",
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "pip install scikit-learn pandas"
+                    "ls -lh"
                 ],
                 [
                     "Python",
-                    25
+                    13
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    38
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/category.csv"
+                    "pip install nltk"
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    46
+                ],
+                [
+                    "Python",
+                    41
+                ],
+                [
+                    "Python",
+                    41
+                ],
+                [
+                    "Bash",
+                    "head category.csv"
                 ],
                 [
                     "Terminate",
@@ -3911,8 +3947,10 @@
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 0.0,
+                    "errors": [
+                        "result csv columns are different from gold csv: ['ID']"
+                    ],
+                    "score": 1.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
@@ -3925,60 +3963,11 @@
         },
         {
             "id": "ml-multi-009",
-            "total_score": 0.0,
+            "total_score": 0.8617936004573323,
             "finished": true,
-            "steps": 6,
-            "result": "/workspace/type.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    21
-                ],
-                [
-                    "Bash",
-                    "head -n 5 type.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "The length of the result content is not equal to the length of the true value."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.375,
-                    "metric": "f1",
-                    "file": [
-                        "type.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-multi-010",
-            "total_score": 0.730442608594831,
-            "finished": true,
-            "steps": 7,
-            "result": "/workspace/class.csv",
-            "len_added_files": 3,
+            "steps": 17,
+            "result": "type.csv",
+            "len_added_files": 4,
             "len_changed_files": 0,
             "actions": [
                 [
@@ -3987,7 +3976,7 @@
                 ],
                 [
                     "Bash",
-                    "cat README.md"
+                    "head malicious_phish.csv"
                 ],
                 [
                     "Bash",
@@ -3995,15 +3984,55 @@
                 ],
                 [
                     "Python",
-                    11
+                    7
                 ],
                 [
                     "Python",
-                    41
+                    18
+                ],
+                [
+                    "Python",
+                    20
+                ],
+                [
+                    "Python",
+                    21
+                ],
+                [
+                    "Python",
+                    29
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    48
+                ],
+                [
+                    "Python",
+                    48
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/class.csv"
+                    "head type.csv"
                 ],
                 [
                     "Terminate",
@@ -4013,7 +4042,63 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.730442608594831,
+                    "score": 0.8617936004573323,
+                    "upper_bound": 0.9,
+                    "lower_bound": 0.375,
+                    "metric": "f1",
+                    "target_output": "type",
+                    "file": [
+                        "type.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-010",
+            "total_score": 0.7145876672240008,
+            "finished": true,
+            "steps": 8,
+            "result": "class.csv",
+            "len_added_files": 5,
+            "len_changed_files": 0,
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l"
+                ],
+                [
+                    "Python",
+                    13
+                ],
+                [
+                    "Python",
+                    26
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    34
+                ],
+                [
+                    "Bash",
+                    "ls -l class.csv"
+                ],
+                [
+                    "Bash",
+                    "head class.csv"
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.7145876672240008,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
@@ -4026,36 +4111,40 @@
         },
         {
             "id": "ml-multi-011",
-            "total_score": 0.32022405685365424,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 8,
             "result": "sentiment.csv",
             "len_added_files": 2,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
                 ],
                 [
                     "Bash",
-                    "head -n 5 Corona_NLP_test.csv"
+                    "head -n 2 Corona_NLP_test.csv"
                 ],
                 [
                     "Bash",
-                    "pip list | grep -E 'nltk|textblob'"
-                ],
-                [
-                    "Bash",
-                    "pip install textblob"
+                    "head -n 2 Corona_NLP_train.csv"
                 ],
                 [
                     "Python",
-                    26
+                    24
+                ],
+                [
+                    "Python",
+                    24
                 ],
                 [
                     "Bash",
-                    "head -n 5 sentiment.csv"
+                    "head -n 3 sentiment.csv"
+                ],
+                [
+                    "Bash",
+                    "wc -l sentiment.csv Corona_NLP_test.csv"
                 ],
                 [
                     "Terminate",
@@ -4064,8 +4153,11 @@
             ],
             "info": [
                 {
-                    "errors": [],
-                    "score": 0.32022405685365424,
+                    "errors": [
+                        "fail to encoder label, because y contains previously unseen labels: 'extremel'",
+                        "fail to calculate f1 socre, because The 'y_pred' parameter of f1_score must be an array-like or a sparse matrix. Got None instead."
+                    ],
+                    "score": 0.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
@@ -4078,44 +4170,44 @@
         },
         {
             "id": "ml-multi-012",
-            "total_score": 0.5597796642306173,
+            "total_score": 0.5725241870395505,
             "finished": true,
             "steps": 9,
-            "result": "/workspace/prediction.csv",
-            "len_added_files": 2,
+            "result": "prediction.csv",
+            "len_added_files": 7,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    23
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    47
+                ],
+                [
+                    "Python",
+                    33
                 ],
                 [
                     "Bash",
-                    "head -n 5 complete_info.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 incomplete_info.csv"
+                    "ls -lh"
                 ],
                 [
                     "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    61
-                ],
-                [
-                    "Bash",
-                    "ls -l /workspace"
+                    12
                 ],
                 [
                     "Terminate",
@@ -4125,7 +4217,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.5597796642306173,
+                    "score": 0.5725241870395505,
                     "upper_bound": 0.9,
                     "lower_bound": 0.375,
                     "metric": "f1",
@@ -4138,36 +4230,128 @@
         },
         {
             "id": "ml-regression-001",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 7,
+            "steps": 11,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 9,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls -lh"
+                ],
+                [
+                    "Python",
+                    14
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    17
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    41
+                ],
+                [
+                    "Python",
+                    52
                 ],
                 [
                     "Bash",
-                    "tail -n +17 README.md"
+                    "ls -l result.csv"
                 ],
+                [
+                    "Python",
+                    14
+                ],
+                [
+                    "Terminate",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.0,
+                    "upper_bound": 0.9,
+                    "lower_bound": 0.5,
+                    "metric": "r2",
+                    "target_output": "price",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-002",
+            "total_score": 1.0,
+            "finished": true,
+            "steps": 13,
+            "result": "result.csv",
+            "len_added_files": 6,
+            "len_changed_files": 0,
+            "actions": [
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head -n 5 Clean_Dataset.csv && echo '---' && head -n 5 test.csv"
+                    "cat README.md"
                 ],
                 [
                     "Python",
-                    54
+                    9
                 ],
                 [
-                    "Bash",
-                    "head -n 5 result.csv"
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    36
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    39
+                ],
+                [
+                    "Python",
+                    32
+                ],
+                [
+                    "Python",
+                    45
+                ],
+                [
+                    "Python",
+                    55
                 ],
                 [
                     "Terminate",
@@ -4181,96 +4365,7 @@
                     "upper_bound": 0.9,
                     "lower_bound": 0.5,
                     "metric": "r2",
-                    "target_output": "price",
-                    "file": [
-                        "result.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-002",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 16,
-            "result": "/workspace/result.csv",
-            "len_added_files": 13,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 energy_dataset.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 weather_features.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    46
-                ],
-                [
-                    "Python",
-                    52
-                ],
-                [
-                    "Python",
-                    21
-                ],
-                [
-                    "Python",
-                    26
-                ],
-                [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    20
-                ],
-                [
-                    "Python",
-                    22
-                ],
-                [
-                    "Python",
-                    17
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "The length of the result content is not equal to the length of the true value."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
+                    "target_output": "price actual",
                     "file": [
                         "result.csv"
                     ]
@@ -4279,24 +4374,28 @@
         },
         {
             "id": "ml-regression-003",
-            "total_score": 0.5427436951188471,
+            "total_score": 0.0,
             "finished": true,
-            "steps": 8,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 7,
+            "steps": 9,
+            "result": "submission.csv",
+            "len_added_files": 3,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "ls -l"
+                    "head train.csv test.csv"
                 ],
                 [
                     "Bash",
-                    "head train.csv test.csv features.csv stores.csv"
+                    "cat features.csv"
+                ],
+                [
+                    "Python",
+                    13
                 ],
                 [
                     "Python",
@@ -4304,15 +4403,15 @@
                 ],
                 [
                     "Python",
-                    40
+                    42
                 ],
                 [
                     "Python",
-                    37
+                    42
                 ],
                 [
-                    "Python",
-                    37
+                    "Bash",
+                    "ls -l submission.csv && head submission.csv"
                 ],
                 [
                     "Terminate",
@@ -4322,7 +4421,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.5427436951188471,
+                    "score": 0.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.5,
                     "metric": "r2",
@@ -4337,46 +4436,54 @@
             "id": "ml-regression-004",
             "total_score": 0.0,
             "finished": true,
-            "steps": 10,
+            "steps": 12,
             "result": "popularity.csv",
-            "len_added_files": 3,
+            "len_added_files": 8,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
+                    "Python",
+                    8
+                ],
+                [
+                    "Python",
+                    8
+                ],
+                [
+                    "Python",
+                    25
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    43
+                ],
+                [
+                    "Python",
+                    33
+                ],
+                [
+                    "Python",
+                    40
+                ],
+                [
                     "Bash",
-                    "head -n 5 top_10000_1960-now.csv"
+                    "ls -l popularity.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    15
-                ],
-                [
-                    "Python",
-                    56
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Python",
-                    61
-                ],
-                [
-                    "Python",
-                    63
+                    "head popularity.csv"
                 ],
                 [
                     "Terminate",
@@ -4385,9 +4492,7 @@
             ],
             "info": [
                 {
-                    "errors": [
-                        "result csv columns are different from gold csv: ['Track URI']"
-                    ],
+                    "errors": [],
                     "score": 0.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.5,
@@ -4403,58 +4508,22 @@
             "id": "ml-regression-005",
             "total_score": 0.0,
             "finished": true,
-            "steps": 13,
-            "result": "/workspace/price.csv",
-            "len_added_files": 2,
+            "steps": 4,
+            "result": "FAIL",
+            "len_added_files": 0,
             "len_changed_files": 0,
             "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
                 [
                     "Bash",
                     "ls -l"
                 ],
                 [
                     "Bash",
-                    "head -n 5 train.csv"
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Python",
-                    43
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    44
-                ],
-                [
-                    "Python",
-                    40
+                    "cat README.md"
                 ],
                 [
                     "Bash",
-                    "ls -l /workspace/price.csv"
+                    "head train.csv"
                 ],
                 [
                     "Terminate",
@@ -4463,12 +4532,13 @@
             ],
             "info": [
                 {
-                    "errors": [],
+                    "errors": [
+                        "result file ./benchmark/output/claude-3-opus-20240229-ML0613/ml-regression-005/price.csv does not exists"
+                    ],
                     "score": 0.0,
                     "upper_bound": 0.9,
                     "lower_bound": 0.5,
                     "metric": "r2",
-                    "target_output": "price",
                     "file": [
                         "price.csv"
                     ]
@@ -4479,18 +4549,18 @@
             "id": "ml-regression-006",
             "total_score": 0.0,
             "finished": true,
-            "steps": 14,
+            "steps": 15,
             "result": "result.csv",
-            "len_added_files": 2,
+            "len_added_files": 5,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "cat README.md && head -n 5 test.csv"
+                    "ls -l"
                 ],
                 [
-                    "Bash",
-                    "ls -l"
+                    "Python",
+                    13
                 ],
                 [
                     "Bash",
@@ -4498,11 +4568,31 @@
                 ],
                 [
                     "Python",
-                    34
+                    13
                 ],
                 [
                     "Python",
-                    34
+                    12
+                ],
+                [
+                    "Python",
+                    11
+                ],
+                [
+                    "Python",
+                    12
+                ],
+                [
+                    "Python",
+                    16
+                ],
+                [
+                    "Python",
+                    19
+                ],
+                [
+                    "Python",
+                    39
                 ],
                 [
                     "Python",
@@ -4513,28 +4603,12 @@
                     38
                 ],
                 [
-                    "Python",
-                    36
-                ],
-                [
-                    "Python",
-                    39
-                ],
-                [
-                    "Python",
-                    43
-                ],
-                [
-                    "Python",
-                    46
-                ],
-                [
-                    "Python",
-                    34
+                    "Bash",
+                    "ls -l result.csv"
                 ],
                 [
                     "Bash",
-                    "head -n 5 /workspace/result.csv"
+                    "head -n 5 result.csv"
                 ],
                 [
                     "Terminate",
@@ -4557,7 +4631,7 @@
         },
         {
             "id": "ml-regression-007",
-            "total_score": 0.0,
+            "total_score": 0.11835723278928734,
             "finished": true,
             "steps": 8,
             "result": "job_satisfaction.csv",
@@ -4566,31 +4640,31 @@
             "actions": [
                 [
                     "Bash",
-                    "cat README.md"
+                    "ls"
                 ],
                 [
                     "Bash",
-                    "head -n 5 test.csv"
+                    "head data.csv test.csv"
                 ],
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 data.csv"
+                    "pip install pandas scikit-learn"
                 ],
                 [
                     "Python",
-                    48
+                    24
                 ],
                 [
                     "Python",
-                    59
+                    32
                 ],
                 [
                     "Bash",
-                    "head -n 5 job_satisfaction.csv"
+                    "ls"
+                ],
+                [
+                    "Bash",
+                    "head job_satisfaction.csv"
                 ],
                 [
                     "Terminate",
@@ -4600,7 +4674,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.0,
+                    "score": 0.11835723278928734,
                     "upper_bound": 0.9,
                     "lower_bound": 0.5,
                     "metric": "r2",
@@ -4613,48 +4687,36 @@
         },
         {
             "id": "ml-regression-008",
-            "total_score": 0.3578998405251421,
+            "total_score": 0.10954807158930768,
             "finished": true,
-            "steps": 10,
+            "steps": 7,
             "result": "quantity.csv",
-            "len_added_files": 2,
+            "len_added_files": 7,
             "len_changed_files": 0,
             "actions": [
                 [
                     "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 vietnamese_tiki_products_men_shoes.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 vietnamese_tiki_products_women_shoes.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 vietnamese_tiki_products_women_shoes.csv"
-                ],
-                [
-                    "Bash",
-                    "pip install pandas scikit-learn"
+                    "ls -lh"
                 ],
                 [
                     "Python",
-                    43
+                    20
+                ],
+                [
+                    "Python",
+                    38
+                ],
+                [
+                    "Python",
+                    27
+                ],
+                [
+                    "Python",
+                    38
                 ],
                 [
                     "Bash",
-                    "ls -l quantity.csv"
+                    "ls -lh quantity.csv"
                 ],
                 [
                     "Terminate",
@@ -4663,834 +4725,14 @@
             ],
             "info": [
                 {
-                    "errors": [
-                        "result csv columns are different from gold csv: ['id']"
-                    ],
-                    "score": 0.3578998405251421,
+                    "errors": [],
+                    "score": 0.10954807158930768,
                     "upper_bound": 0.9,
                     "lower_bound": 0.5,
                     "metric": "r2",
                     "target_output": "quantity_sold",
                     "file": [
                         "quantity.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-009",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 7,
-            "result": "price.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Cleaned_airbnb_barcelona.csv && echo '---' && head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Bash",
-                    "head -n 5 price.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "fail to calculate r2 socre, because could not convert string to float: '5,000.00'"
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "price",
-                    "file": [
-                        "price.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-010",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 15,
-            "result": "/workspace/Usefulness.csv",
-            "len_added_files": 8,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 drugsComTest_raw.csv"
-                ],
-                [
-                    "Bash",
-                    "ls"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 drugsComTrain_raw.csv"
-                ],
-                [
-                    "Python",
-                    10
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    48
-                ],
-                [
-                    "Python",
-                    48
-                ],
-                [
-                    "Python",
-                    48
-                ],
-                [
-                    "Python",
-                    32
-                ],
-                [
-                    "Python",
-                    29
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    53
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "usefulness",
-                    "file": [
-                        "Usefulness.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-011",
-            "total_score": 0.1837620978855159,
-            "finished": true,
-            "steps": 9,
-            "result": "result.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 veri_seti_son_2.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Python",
-                    40
-                ],
-                [
-                    "Bash",
-                    "ls -l result.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 result.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.1837620978855159,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "biogas_generation_estimate_cuftday",
-                    "file": [
-                        "result.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-012",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 8,
-            "result": "/workspace/result.csv",
-            "len_added_files": 3,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 New_York_cars.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    17
-                ],
-                [
-                    "Python",
-                    60
-                ],
-                [
-                    "Bash",
-                    "ls -l /workspace"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "fail to calculate r2 socre, because Input contains NaN."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "Mileage",
-                    "file": [
-                        "result.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-013",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 17,
-            "result": "price.csv",
-            "len_added_files": 3,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Bash",
-                    "head Car details v3.csv"
-                ],
-                [
-                    "Bash",
-                    "head 'Car details v3.csv'"
-                ],
-                [
-                    "Python",
-                    51
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    7
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    61
-                ],
-                [
-                    "Python",
-                    68
-                ],
-                [
-                    "Bash",
-                    "ls -l price.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "Selling_Price",
-                    "file": [
-                        "price.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-014",
-            "total_score": 1.0,
-            "finished": true,
-            "steps": 7,
-            "result": "price.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md && head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Car_Prices_Poland_Kaggle.csv"
-                ],
-                [
-                    "Python",
-                    36
-                ],
-                [
-                    "Python",
-                    38
-                ],
-                [
-                    "Bash",
-                    "head -n 5 price.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "price",
-                    "file": [
-                        "price.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-015",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 6,
-            "result": "/workspace/appliance.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    42
-                ],
-                [
-                    "Bash",
-                    "ls -l /workspace"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "Appliances",
-                    "file": [
-                        "appliance.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-016",
-            "total_score": 0.9501874543106498,
-            "finished": true,
-            "steps": 12,
-            "result": "/workspace/fare.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 Cleaned_dataset.csv"
-                ],
-                [
-                    "Python",
-                    48
-                ],
-                [
-                    "Python",
-                    38
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Python",
-                    45
-                ],
-                [
-                    "Python",
-                    41
-                ],
-                [
-                    "Bash",
-                    "ls -l /workspace"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/fare.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.9501874543106498,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "Fare",
-                    "file": [
-                        "fare.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-017",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 6,
-            "result": "/workspace/rating.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head test.csv"
-                ],
-                [
-                    "Python",
-                    17
-                ],
-                [
-                    "Python",
-                    17
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/rating.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "rating",
-                    "file": [
-                        "rating.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-018",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 6,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md && echo '---' && head test.csv && echo '---' && head sample_submission.csv"
-                ],
-                [
-                    "Python",
-                    15
-                ],
-                [
-                    "Bash",
-                    "head -n 1 test.csv"
-                ],
-                [
-                    "Python",
-                    18
-                ],
-                [
-                    "Bash",
-                    "head submission.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "num_orders",
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-019",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 6,
-            "result": "pm.csv",
-            "len_added_files": 3,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test.csv"
-                ],
-                [
-                    "Python",
-                    11
-                ],
-                [
-                    "Python",
-                    24
-                ],
-                [
-                    "Bash",
-                    "head -n 5 pm.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "The length of the result content is not equal to the length of the true value."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "file": [
-                        "pm.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-020",
-            "total_score": 0.0,
-            "finished": true,
-            "steps": 11,
-            "result": "/workspace/submission.csv",
-            "len_added_files": 11,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Bash",
-                    "head test.csv Sample_Submission.csv"
-                ],
-                [
-                    "Python",
-                    18
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    16
-                ],
-                [
-                    "Python",
-                    25
-                ],
-                [
-                    "Python",
-                    32
-                ],
-                [
-                    "Python",
-                    37
-                ],
-                [
-                    "Python",
-                    17
-                ],
-                [
-                    "Python",
-                    13
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "The length of the result content is not equal to the length of the true value."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-regression-021",
-            "total_score": 0.997067801226687,
-            "finished": true,
-            "steps": 15,
-            "result": "/workspace/price.csv",
-            "len_added_files": 2,
-            "len_changed_files": 0,
-            "actions": [
-                [
-                    "Bash",
-                    "cat README.md"
-                ],
-                [
-                    "Bash",
-                    "head -n 5 test-data.csv"
-                ],
-                [
-                    "Bash",
-                    "ls -l"
-                ],
-                [
-                    "Python",
-                    54
-                ],
-                [
-                    "Python",
-                    69
-                ],
-                [
-                    "Python",
-                    72
-                ],
-                [
-                    "Python",
-                    77
-                ],
-                [
-                    "Python",
-                    77
-                ],
-                [
-                    "Python",
-                    84
-                ],
-                [
-                    "Python",
-                    90
-                ],
-                [
-                    "Python",
-                    90
-                ],
-                [
-                    "Python",
-                    93
-                ],
-                [
-                    "Python",
-                    86
-                ],
-                [
-                    "Bash",
-                    "head -n 5 /workspace/price.csv"
-                ],
-                [
-                    "Terminate",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.997067801226687,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.5,
-                    "metric": "r2",
-                    "target_output": "Price",
-                    "file": [
-                        "price.csv"
                     ]
                 }
             ]
