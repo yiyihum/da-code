@@ -380,6 +380,60 @@ def call_llm(payload):
         #     error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
         #     code_value = error_info['error']['code']
         #     response = error_info['error']['message']
+        
+    elif model.startswith("deepseek") or model.startswith("codellama") or model.startswith("mistral"):
+        messages = payload["messages"]
+        max_tokens = payload["max_tokens"]
+        top_p = payload["top_p"]
+        temperature = payload["temperature"]
+
+        mistral_messages = []
+
+        for i, message in enumerate(messages):
+            mistral_message = {
+                "role": message["role"],
+                "content": ""
+            }
+
+            for part in message["content"]:
+                mistral_message['content'] = part['text'] if part['type'] == "text" else ""
+
+            mistral_messages.append(mistral_message)
+
+        from openai import OpenAI
+
+        client = OpenAI(api_key=os.environ["TOGETHER_API_KEY"],
+                        base_url='https://api.together.xyz',
+                        )
+
+        for i in range(3):
+            try:
+                logger.info("Generating content with model: %s", model)
+                response = client.chat.completions.create(
+                    messages=mistral_messages,
+                    model=model,
+                    max_tokens=max_tokens,
+                    top_p=top_p,
+                    temperature=temperature
+                )
+                return True, response.choices[0].message.content
+                
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                time.sleep(10 * (2 ** (i + 1)))
+                if hasattr(e, 'response'):
+                    error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                    code_value = error_info['error']['code']
+                    if code_value == "content_filter":
+                        if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                            payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                    if code_value == "context_length_exceeded":
+                        return False, code_value        
+                else:
+                    code_value = "context_length_exceeded"
+                logger.error("Retrying ...")
+
+        return False, code_value
 
 
     elif model.startswith("THUDM"):

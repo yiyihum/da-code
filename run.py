@@ -160,7 +160,7 @@ def test(
 
         os.makedirs(output_dir, exist_ok=True)
 
-        env_config["init_args"]["name"] = experiment_id +"-"+ task_config["id"]
+        env_config["init_args"]["name"] = experiment_id.split('/')[-1] +"-"+ task_config["id"]
         env = Spider2Env(
             env_config=env_config,
             task_config=task_config,
