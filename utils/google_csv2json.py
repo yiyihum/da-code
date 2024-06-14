@@ -4,9 +4,9 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/configs/ML.csv"
+file_path = "./benchmark/configs/DM.csv"
 
-is_verbose = True
+is_verbose = False
 
 data = load_csv(file_path)
 
@@ -32,7 +32,7 @@ data_json = []
 print(data.columns)
 for index, row in data.iterrows():
     id = str(row["id."])
-    if 'ml' not in id:
+    if 'dm-csv' not in id:
         continue
     
     if not is_verbose:
@@ -78,6 +78,6 @@ for index, row in data.iterrows():
 # 保存为jsonl
 import json, jsonlines
 data_json = sorted(data_json, key=lambda x: x["id"])
-with jsonlines.open('./benchmark/configs/Verbose_ML.jsonl', mode='w') as writer:
+with jsonlines.open('./benchmark/configs/DM.jsonl', mode='w') as writer:
     for item in data_json:
         writer.write(item)
