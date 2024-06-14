@@ -6,12 +6,7 @@ from fuzzywuzzy import process
 from .script.ml_script import PreprocessML, CalculateML
 
 TYPES = ['binary classification', 'multi classification', 'cluster', 'regression']
-METRICS = {
-    "binary": 'f1', 
-    "multi": 'f1', 
-    "regression": "r2",
-    "cluster": 'silhouette score'
-}
+LOWER_METRICS = ["logloss_class", "logloss_total", "rmsle", "mae", "mse", "smape", "medae", "crps"]
 
 def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     """ 
@@ -40,7 +35,6 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     if not ratio > 90:
         raise ValueError(f"please provide a right task type, such as {TYPES}")
     task_type = best_type.split(' ')[0]
-    metric = METRICS[task_type] if not metric else metric
 
     output_ml.update({'metric': metric})
 
@@ -93,14 +87,16 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
         output_ml['errors'].extend(output['errors'])
         output_ml['score'] = 0.0
         return output_ml
-        
-    if score >= upper_bound:
+    
+    is_lower_metric = metric.lower() in LOWER_METRICS
+    if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
         score = 1.0
-    elif score <= lower_bound:
+    elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
         score = 0.0
     else:
         score = (score - lower_bound) / (upper_bound - lower_bound)
-    
+
+            
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
     
@@ -163,13 +159,14 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
             output_ml['score'] = 0.0
             return output_ml
     
-    if score >= upper_bound:
+    is_lower_metric = metric.lower() in LOWER_METRICS
+    if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
         score = 1.0
-    elif score <= lower_bound:
+    elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
         score = 0.0
     else:
         score = (score - lower_bound) / (upper_bound - lower_bound)
-    
+
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
     

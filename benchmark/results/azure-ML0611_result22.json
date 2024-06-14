@@ -1,16 +1,16 @@
 {
     "num_results": 95,
-    "average_score": 0.6248870261941144,
+    "average_score": 0.6318739082521434,
     "results": [
         {
             "id": "ml-binary-001",
-            "total_score": 0.9333333333333332,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.9333333333333332,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 1.0,
+                    "upper_bound": 0.83283,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "result",
                     "file": [
@@ -21,13 +21,13 @@
         },
         {
             "id": "ml-binary-002",
-            "total_score": 0.9250686030597988,
+            "total_score": 0.9120068343287016,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.9250686030597988,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 0.9120068343287016,
+                    "upper_bound": 0.855,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "Response",
                     "file": [
@@ -43,8 +43,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.828,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "result",
                     "file": [
@@ -55,14 +55,14 @@
         },
         {
             "id": "ml-binary-004",
-            "total_score": 0.8901270042457113,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8901270042457113,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "metric": "f1",
+                    "score": 1.0,
+                    "upper_bound": 0.70191,
+                    "lower_bound": 0.6,
+                    "metric": "accuracy",
                     "target_output": "Transported",
                     "file": [
                         "submission.csv"
@@ -78,7 +78,7 @@
                     "errors": [],
                     "score": 1.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "result",
                     "file": [
@@ -94,8 +94,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.89186,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "result",
                     "file": [
@@ -106,15 +106,15 @@
         },
         {
             "id": "ml-binary-007",
-            "total_score": 0.4097781070483359,
+            "total_score": 0.0,
             "info": [
                 {
                     "errors": [
                         "result csv columns are different from gold csv: ['CustomerID']"
                     ],
-                    "score": 0.4097781070483359,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 0.0,
+                    "upper_bound": 0.889189,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "result",
                     "file": [
@@ -125,13 +125,13 @@
         },
         {
             "id": "ml-binary-008",
-            "total_score": 0.8461011211327635,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8461011211327635,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 1.0,
+                    "upper_bound": 0.729,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "Loan_Status",
                     "file": [
@@ -147,8 +147,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.867384,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "satisfaction",
                     "file": [
@@ -164,9 +164,9 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "metric": "f1",
+                    "upper_bound": 0.82623,
+                    "lower_bound": 0.6,
+                    "metric": "accuracy",
                     "target_output": "output",
                     "file": [
                         "result.csv"
@@ -181,8 +181,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.8715843,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "income_above_limit",
                     "file": [
@@ -193,13 +193,13 @@
         },
         {
             "id": "ml-binary-012",
-            "total_score": 0.8660338499772178,
+            "total_score": 0.6606805510461982,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8660338499772178,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 0.6606805510461982,
+                    "upper_bound": 0.8715843,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "emotion",
                     "file": [
@@ -215,9 +215,9 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "metric": "f1",
+                    "upper_bound": 0.882,
+                    "lower_bound": 0.6,
+                    "metric": "accuracy",
                     "target_output": "Target",
                     "file": [
                         "target.csv"
@@ -227,15 +227,15 @@
         },
         {
             "id": "ml-binary-014",
-            "total_score": 0.8456962241094926,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [
                         "result csv columns are different from gold csv: ['CustomerID']"
                     ],
-                    "score": 0.8456962241094926,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 1.0,
+                    "upper_bound": 0.71516,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "Churn",
                     "file": [
@@ -246,13 +246,13 @@
         },
         {
             "id": "ml-binary-015",
-            "total_score": 0.7124115997612827,
+            "total_score": 0.3147587139537801,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7124115997612827,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 0.3147587139537801,
+                    "upper_bound": 0.7308,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "CLASS",
                     "file": [
@@ -263,15 +263,15 @@
         },
         {
             "id": "ml-binary-016",
-            "total_score": 0.8810268285023709,
+            "total_score": 0.6430804855071128,
             "info": [
                 {
                     "errors": [
                         "result csv columns are different from gold csv: ['ID']"
                     ],
-                    "score": 0.8810268285023709,
+                    "score": 0.6430804855071128,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "IsDefaulter",
                     "file": [
@@ -282,15 +282,15 @@
         },
         {
             "id": "ml-binary-017",
-            "total_score": 0.8439352738849647,
+            "total_score": 0.9632418432437855,
             "info": [
                 {
                     "errors": [
                         "TypeError: result target dtype int64 is not compatible with gold's object."
                     ],
-                    "score": 0.8439352738849647,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 0.9632418432437855,
+                    "upper_bound": 0.76563,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "RainTomorrow",
                     "file": [
@@ -306,8 +306,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.855,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "stroke",
                     "file": [
@@ -324,7 +324,7 @@
                     "errors": [],
                     "score": 1.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "class",
                     "file": [
@@ -335,15 +335,15 @@
         },
         {
             "id": "ml-binary-020",
-            "total_score": 0.9816544545806081,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [
                         "TypeError: result target dtype int64 is not compatible with gold's object."
                     ],
-                    "score": 0.9816544545806081,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "score": 1.0,
+                    "upper_bound": 0.837,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "Heart_Disease",
                     "file": [
@@ -359,8 +359,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.864,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "diabetes",
                     "file": [
@@ -376,8 +376,8 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "upper_bound": 0.873,
+                    "lower_bound": 0.6,
                     "metric": "f1",
                     "target_output": "Bankrupt?",
                     "file": [
@@ -388,12 +388,12 @@
         },
         {
             "id": "ml-cluster-001",
-            "total_score": 0.541038979524885,
+            "total_score": 0.9425766193813329,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.541038979524885,
-                    "upper_bound": 0.9,
+                    "score": 0.9425766193813329,
+                    "upper_bound": 0.5166,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -405,12 +405,12 @@
         },
         {
             "id": "ml-cluster-002",
-            "total_score": 0.36866764209427244,
+            "total_score": 0.6227493954295142,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.36866764209427244,
-                    "upper_bound": 0.9,
+                    "score": 0.6227493954295142,
+                    "upper_bound": 0.5328,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -422,12 +422,12 @@
         },
         {
             "id": "ml-cluster-003",
-            "total_score": 0.5887003178968877,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.5887003178968877,
-                    "upper_bound": 0.9,
+                    "score": 1.0,
+                    "upper_bound": 0.2328,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -439,12 +439,12 @@
         },
         {
             "id": "ml-cluster-004",
-            "total_score": 0.8088269778972951,
+            "total_score": 0.9698165202605457,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8088269778972951,
-                    "upper_bound": 0.9,
+                    "score": 0.9698165202605457,
+                    "upper_bound": 0.7506,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -456,12 +456,12 @@
         },
         {
             "id": "ml-cluster-005",
-            "total_score": 0.7074485878753958,
+            "total_score": 0.9922140082403867,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7074485878753958,
-                    "upper_bound": 0.9,
+                    "score": 0.9922140082403867,
+                    "upper_bound": 0.6417,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -473,12 +473,12 @@
         },
         {
             "id": "ml-cluster-006",
-            "total_score": 0.18980970244795073,
+            "total_score": 0.41154823122604284,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.18980970244795073,
-                    "upper_bound": 0.9,
+                    "score": 0.41154823122604284,
+                    "upper_bound": 0.415088,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -490,12 +490,12 @@
         },
         {
             "id": "ml-cluster-007",
-            "total_score": 0.3322886303228839,
+            "total_score": 0.6346769254893793,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.3322886303228839,
-                    "upper_bound": 0.9,
+                    "score": 0.6346769254893793,
+                    "upper_bound": 0.4712,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -507,12 +507,12 @@
         },
         {
             "id": "ml-cluster-008",
-            "total_score": 0.48643395067665773,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.48643395067665773,
-                    "upper_bound": 0.9,
+                    "score": 1.0,
+                    "upper_bound": 0.1952,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -524,12 +524,12 @@
         },
         {
             "id": "ml-cluster-009",
-            "total_score": 0.2960275163217765,
+            "total_score": 0.32703035758820204,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.2960275163217765,
-                    "upper_bound": 0.9,
+                    "score": 0.32703035758820204,
+                    "upper_bound": 0.814679,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -541,12 +541,12 @@
         },
         {
             "id": "ml-cluster-010",
-            "total_score": 0.1742962491768834,
+            "total_score": 0.21787031147110428,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.1742962491768834,
-                    "upper_bound": 0.9,
+                    "score": 0.21787031147110428,
+                    "upper_bound": 0.72,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -563,7 +563,7 @@
                 {
                     "errors": [],
                     "score": 1.0,
-                    "upper_bound": 0.9,
+                    "upper_bound": 0.5144265,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -575,12 +575,12 @@
         },
         {
             "id": "ml-cluster-012",
-            "total_score": 0.20376571928103665,
+            "total_score": 0.9008874185293788,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.20376571928103665,
-                    "upper_bound": 0.9,
+                    "score": 0.9008874185293788,
+                    "upper_bound": 0.203565,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -599,7 +599,7 @@
                         "target labels only contain 1 clusters, which must needs 2 or more clusters"
                     ],
                     "score": 0.0,
-                    "upper_bound": 0.9,
+                    "upper_bound": 0.450594,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -611,12 +611,12 @@
         },
         {
             "id": "ml-cluster-014",
-            "total_score": 0.22679208061561526,
+            "total_score": 0.6039021052517937,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.22679208061561526,
-                    "upper_bound": 0.9,
+                    "score": 0.6039021052517937,
+                    "upper_bound": 0.33799,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -628,12 +628,12 @@
         },
         {
             "id": "ml-cluster-015",
-            "total_score": 0.2313764018217379,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.2313764018217379,
-                    "upper_bound": 0.9,
+                    "score": 1.0,
+                    "upper_bound": 0.126426,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -650,7 +650,7 @@
                 {
                     "errors": [],
                     "score": 0.0,
-                    "upper_bound": 0.9,
+                    "upper_bound": 0.860211,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -662,12 +662,12 @@
         },
         {
             "id": "ml-cluster-017",
-            "total_score": 0.700185509215625,
+            "total_score": 0.921296722652138,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.700185509215625,
-                    "upper_bound": 0.9,
+                    "score": 0.921296722652138,
+                    "upper_bound": 0.684,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -679,12 +679,12 @@
         },
         {
             "id": "ml-cluster-018",
-            "total_score": 0.8795404964128705,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8795404964128705,
-                    "upper_bound": 0.9,
+                    "score": 1.0,
+                    "upper_bound": 0.30058,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -696,12 +696,12 @@
         },
         {
             "id": "ml-cluster-019",
-            "total_score": 0.007810568655734044,
+            "total_score": 0.013358249796021968,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.007810568655734044,
-                    "upper_bound": 0.9,
+                    "score": 0.013358249796021968,
+                    "upper_bound": 0.52623,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
@@ -713,17 +713,325 @@
         },
         {
             "id": "ml-cluster-020",
-            "total_score": 0.6689816096073377,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.6689816096073377,
-                    "upper_bound": 0.9,
+                    "score": 1.0,
+                    "upper_bound": 0.41797,
                     "lower_bound": 0.0,
                     "metric": "silhouette",
                     "target_output": "Cluster",
                     "file": [
                         "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-001",
+            "total_score": 0.0,
+            "info": [
+                {
+                    "errors": [
+                        "ID does not match, result has extra id: 15695872,15794178,15695874,15630349,15695888...15695865"
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.8153,
+                    "lower_bound": 0.7355,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-002",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 0.7915,
+                    "lower_bound": 0.7073,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-003",
+            "total_score": 0.1637872111310815,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.1637872111310815,
+                    "upper_bound": 5.252688,
+                    "lower_bound": 0.2756,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-004",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 0.8000793,
+                    "lower_bound": 0.740502,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-005",
+            "total_score": 0.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.0,
+                    "upper_bound": 0.450801,
+                    "lower_bound": 0.3519,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-006",
+            "total_score": 0.0,
+            "info": [
+                {
+                    "errors": [
+                        "quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent."
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.537066,
+                    "lower_bound": 0.445653,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-007",
+            "total_score": 0.6649215201461659,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.6649215201461659,
+                    "upper_bound": 0.21172,
+                    "lower_bound": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-008",
+            "total_score": 0.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.0,
+                    "upper_bound": 0.782145,
+                    "lower_bound": 0.759753,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-009",
+            "total_score": 0.306422077682079,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.306422077682079,
+                    "upper_bound": 0.17312,
+                    "lower_bound": 0.15971,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-010",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 1.6038,
+                    "lower_bound": 1.48254,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-011",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 413.24,
+                    "lower_bound": 363.76,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-012",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 46.69,
+                    "lower_bound": 10.37008,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-013",
+            "total_score": 0.04836530355691717,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.04836530355691717,
+                    "upper_bound": 58.77,
+                    "lower_bound": 5.4793,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-014",
+            "total_score": 0.6354912413510672,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.6354912413510672,
+                    "upper_bound": 57.8372,
+                    "lower_bound": 4.2086,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-015",
+            "total_score": 0.8221092757306234,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.8221092757306234,
+                    "upper_bound": 0.75,
+                    "lower_bound": 0.2778,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-016",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 0.8892,
+                    "lower_bound": 0.81153,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-017",
+            "total_score": 0.0,
+            "info": [
+                {
+                    "errors": [
+                        "quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent."
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.7461,
+                    "lower_bound": 0.6732,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-018",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 0.88904,
+                    "lower_bound": 0.56713,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-019",
+            "total_score": 1.0,
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "upper_bound": 0.8204,
+                    "lower_bound": 0.79871,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-020",
+            "total_score": 0.0,
+            "info": [
+                {
+                    "errors": [
+                        "TypeError: result target dtype int64 is not compatible with gold's object."
+                    ],
+                    "score": 0.0,
+                    "upper_bound": 0.70363,
+                    "lower_bound": 0.62591,
+                    "file": [
+                        "submission.csv"
                     ]
                 }
             ]
@@ -736,7 +1044,7 @@
                     "errors": [],
                     "score": 1.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "Activity",
                     "file": [
@@ -747,16 +1055,16 @@
         },
         {
             "id": "ml-multi-002",
-            "total_score": 0.7306914298924747,
+            "total_score": 1.0,
             "info": [
                 {
                     "errors": [
                         "result csv columns are different from gold csv: ['name']"
                     ],
-                    "score": 0.7306914298924747,
+                    "score": 1.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "metric": "f1",
+                    "lower_bound": 0.375,
+                    "metric": "accuracy",
                     "target_output": "new&used",
                     "file": [
                         "result.csv"
@@ -766,15 +1074,15 @@
         },
         {
             "id": "ml-multi-003",
-            "total_score": 0.5994688664919673,
+            "total_score": 0.31337519970051547,
             "info": [
                 {
                     "errors": [
                         "result csv columns are different from gold csv: ['job_id']"
                     ],
-                    "score": 0.5994688664919673,
+                    "score": 0.31337519970051547,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "formatted_experience_level",
                     "file": [
@@ -785,13 +1093,13 @@
         },
         {
             "id": "ml-multi-004",
-            "total_score": 0.9931513692266192,
+            "total_score": 0.9882594901027757,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.9931513692266192,
+                    "score": 0.9882594901027757,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "Adaptivity Level",
                     "file": [
@@ -802,13 +1110,13 @@
         },
         {
             "id": "ml-multi-005",
-            "total_score": 0.7898065949546387,
+            "total_score": 0.6396684484936663,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7898065949546387,
+                    "score": 0.6396684484936663,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "emotion",
                     "file": [
@@ -819,15 +1127,15 @@
         },
         {
             "id": "ml-multi-006",
-            "total_score": 0.8000669091678606,
+            "total_score": 0.6572575585734753,
             "info": [
                 {
                     "errors": [
                         "result csv columns are different from gold csv: ['ID']"
                     ],
-                    "score": 0.8000669091678606,
+                    "score": 0.6572575585734753,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "Credit_Score",
                     "file": [
@@ -844,7 +1152,7 @@
                     "errors": [],
                     "score": 1.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "Class",
                     "file": [
@@ -855,13 +1163,13 @@
         },
         {
             "id": "ml-multi-008",
-            "total_score": 0.13245912856584716,
+            "total_score": 0.0,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.13245912856584716,
+                    "score": 0.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "CATEGORY",
                     "file": [
@@ -880,7 +1188,7 @@
                     ],
                     "score": 0.0,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "file": [
                         "type.csv"
@@ -890,13 +1198,13 @@
         },
         {
             "id": "ml-multi-010",
-            "total_score": 0.8214036043351226,
+            "total_score": 0.6938347502887816,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.8214036043351226,
+                    "score": 0.6938347502887816,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "class",
                     "file": [
@@ -907,13 +1215,13 @@
         },
         {
             "id": "ml-multi-011",
-            "total_score": 0.7073200691089546,
+            "total_score": 0.4982629756153508,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7073200691089546,
+                    "score": 0.4982629756153508,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "Sentiment",
                     "file": [
@@ -924,13 +1232,13 @@
         },
         {
             "id": "ml-multi-012",
-            "total_score": 0.7432048041345267,
+            "total_score": 0.5597796642306173,
             "info": [
                 {
                     "errors": [],
-                    "score": 0.7432048041345267,
+                    "score": 0.5597796642306173,
                     "upper_bound": 0.9,
-                    "lower_bound": 0.0,
+                    "lower_bound": 0.375,
                     "metric": "f1",
                     "target_output": "damage_grade",
                     "file": [
@@ -1298,314 +1606,6 @@
                     "target_output": "Price",
                     "file": [
                         "price.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-002",
-            "total_score": 0.9235883365931759,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.9235883365931759,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-014",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-018",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-019",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-015",
-            "total_score": 0.7400000000000004,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.7400000000000004,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-003",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-008",
-            "total_score": 0.8413396330168845,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.8413396330168845,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-004",
-            "total_score": 0.9722070183107492,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.9722070183107492,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-012",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-013",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-005",
-            "total_score": 0.5199593035532456,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.5199593035532456,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-009",
-            "total_score": 0.18202124451301852,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.18202124451301852,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-010",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-006",
-            "total_score": 0.0,
-            "info": [
-                {
-                    "errors": [
-                        "quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-007",
-            "total_score": 0.15641909360594028,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 0.15641909360594028,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-011",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-016",
-            "total_score": 1.0,
-            "info": [
-                {
-                    "errors": [],
-                    "score": 1.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-020",
-            "total_score": 0.17921146953405018,
-            "info": [
-                {
-                    "errors": [
-                        "TypeError: result target dtype int64 is not compatible with gold's object."
-                    ],
-                    "score": 0.17921146953405018,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-001",
-            "total_score": 0.0,
-            "info": [
-                {
-                    "errors": [
-                        "ID does not match, result has extra id: 15695872,15794178,15695874,15630349,15695888...15695865"
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ml-competition-017",
-            "total_score": 0.0,
-            "info": [
-                {
-                    "errors": [
-                        "quadratic_weighted_kappa calculation needs the label ranges of predictions and actual observations are consistent."
-                    ],
-                    "score": 0.0,
-                    "upper_bound": 0.9,
-                    "lower_bound": 0.0,
-                    "file": [
-                        "submission.csv"
                     ]
                 }
             ]
