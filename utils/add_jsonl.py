@@ -1,40 +1,33 @@
-import pandas as pd
+import jsonlines, json
 
 
-id = 'ml-competition-009'
-source = 'https://www.kaggle.com/code/rohangulati14/leading-sol-regression-with-an-abalone-dataset'
-hints = """
-"1. Remove the id column from the training and testing data.
-2. Merge the original training data with the new training data.
-3. Remove duplicate values.
-4. Train a stacked regression model."
-"""
-instruction ="""
-This is a competition based on an abalone dataset, with the description available in README.md. As a participant, you need to design a solution to complete this competition. Write your prediction results into submission.csv following the format of sample_submission.csv.
-"""
+LOWER_METRICS = ["logloss_class", "logloss_total", "rmsle", "mae", "mse", "smape", "medae", "crps"]
+with jsonlines.open('./benchmark/configs/Evaluation_ML.jsonl', 'r') as js:
+    lines = [line for line in js]
 
-data_json =[{
-    "id": id,
-    "source":  source,
-    "instruction": instruction,
-    "hints": hints,
-    "hardness": "level1",
-    "config": [
-        {
-            "type": "copy_all_subfiles",
-            "parameters": {
-                "dirs": ["./benchmark/source/" + id
-                            ]
-            }
-        }
-    ],
-    "post_process": []
-}]
+configs = []    
+for line in lines:
+    id = line['id']
+    if 'regression' in id or 'multi' in 'id':
+        configs.append(line)
+        continue
+    metric = line['config']['metric']
+    if metric in LOWER_METRICS:
+        line['config']['upper_bound'] = line['config']['upper_bound'] * 0.9
+    else:
+        line['config']['upper_bound'] = line['config']['upper_bound'] / 0.9
 
-# 保存为jsonl
-import json
-with open("./benchmark/configs/Competition.jsonl", "a") as f:
-    for item in data_json:
-        json.dump(item, f)
-        f.write("\n")
+    
+    if "competition" in id:
+        if metric in LOWER_METRICS:
+            line['config']['lower_bound'] = line['config']['lower_bound'] * 0.9
+        else:
+            line['config']['lower_bound'] = line['config']['lower_bound'] / 0.9
+            
+    configs.append(line)
+
+with jsonlines.open('./benchmark/configs/Evaluation_ML2.jsonl', 'w') as js:
+    js.write_all(configs)
+        
+    
 
