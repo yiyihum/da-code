@@ -4,7 +4,10 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/configs/SA.csv"
+file_path = "./benchmark/configs/ML.csv"
+
+is_verbose = True
+
 data = load_csv(file_path)
 
 # 保存为json
@@ -29,29 +32,52 @@ data_json = []
 print(data.columns)
 for index, row in data.iterrows():
     id = str(row["id."])
-    if 'data-sa' not in id:
+    if 'ml' not in id:
         continue
-    data_json.append({
-        "id": id,
-        "source": row["Source"],
-        "instruction": row["Refined Instruction"],
-        "hints": None,
-        "hardness": "level1",
-        "config": [
-            {
-                "type": "copy_all_subfiles",
-                "parameters": {
-                    "dirs": ["./benchmark/source/" + id
-                             ]
+    
+    if not is_verbose:
+        data_json.append({
+            "id": id,
+            "source": row["Source"],
+            "instruction": row["Refined Instruction"],
+            "hints": None,
+            "hardness": row["Level"],
+            "config": [
+                {
+                    "type": "copy_all_subfiles",
+                    "parameters": {
+                        "dirs": ["./benchmark/source/" + id
+                                ]
+                    }
                 }
-            }
-        ],
-        "post_process": []
-    })
-
+            ],
+            "post_process": []
+        })
+    if is_verbose and row["Level"].lower() == "hard":
+        verbose = row["Verbose"]
+        ins_verbose = "\n\n[Verbose]\n" + verbose
+        
+        data_json.append({
+            "id": id,
+            "source": row["Source"],
+            "instruction": row["Refined Instruction"] + ins_verbose,
+            "hints": None,
+            "hardness": "Hard",
+            "config": [
+                {
+                    "type": "copy_all_subfiles",
+                    "parameters": {
+                        "dirs": ["./benchmark/source/" + id
+                                ]
+                    }
+                }
+            ],
+            "post_process": []
+        })
+    
 # 保存为jsonl
 import json, jsonlines
 data_json = sorted(data_json, key=lambda x: x["id"])
-with jsonlines.open('./benchmark/configs/SA.jsonl', mode='w') as writer:
+with jsonlines.open('./benchmark/configs/Verbose_ML.jsonl', mode='w') as writer:
     for item in data_json:
         writer.write(item)
