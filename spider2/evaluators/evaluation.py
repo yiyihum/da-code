@@ -52,9 +52,6 @@ class Evaluator:
         output_id_dir = os.path.join(self.output_dir, id)
         gold_id_dir = os.path.join(self.gold_dir, id)
         config = eval_config.get('config', {})
-        metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
-            if isinstance(eval_config["func"], list)\
-            else [getattr(metrics, eval_config["func"])]
         metric_conj: str = eval_config.get("conj", "avg")  # take conjunction of multiple metrics
         expected = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
@@ -63,10 +60,12 @@ class Evaluator:
         # expected = result    
         # import pdb; pdb.set_trace()
             
-        output_results = self._get_result_file_from_json(output_id_dir, is_plot=(config["task"] == "data visualization"))
-        if not output_results:
-            output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
+        output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
+        
+        metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
+            if isinstance(eval_config["func"], list)\
+            else [getattr(metrics, eval_config["func"])]
         metric_options: Union[List[Dict[str, Any]], Dict[str, Any]] = \
             [opt if opt else {} for opt in eval_config["options"]] \
             if isinstance(eval_config.get("options", {}), list) \
@@ -75,10 +74,17 @@ class Evaluator:
             else [{}] * len(metric) \
             if isinstance(metric, list) \
             else {}
+        
+        metric = metric * len(output_results) if len(output_results) > len(metric) and len(metric) == 1  \
+            else metric
+        metric_options = metric_options * len(output_results) if len(output_results) > len(metric_options) \
+            and len(metric_options) == 1  \
+            else metric_options
   
         assert (not isinstance(eval_config["func"], list)
             or (len(metric) == len(output_results) == len(gold_results) == len(
-                metric_options)))
+                metric_options))), "Evaluation configs need to be consistent: lengths of 'metric', 'output_results', 'gold_results', " \
+            "and 'metric_options' must be the same when 'func' is a list."
         
         return id, config, metric, metric_conj, metric_options, output_results, gold_results
 
