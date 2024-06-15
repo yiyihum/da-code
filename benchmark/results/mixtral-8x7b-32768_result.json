@@ -4313,7 +4313,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['CLNDISDBINCL', 'LoFtool', 'EXON', 'AF_ESP', 'DISTANCE', 'ALT', 'INTRON', 'MOTIF_NAME', 'SIFT', 'CLNSIGINCL', 'ORIGIN', 'CLNDNINCL', 'Protein_position', 'Amino_acids', 'CHROM', 'CLNDISDB', 'CLNVI', 'MC', 'Codons', 'BAM_EDIT', 'HIGH_INF_POS', 'CLNVC', 'Feature_type', 'CADD_RAW', 'AF_EXAC', 'SSR', 'BIOTYPE', 'CDS_position', 'IMPACT', 'MOTIF_SCORE_CHANGE', 'CLNDN', 'CLNHGVS', 'cDNA_position', 'STRAND', 'AF_TGP', 'REF', 'POS', 'BLOSUM62', 'MOTIF_POS', 'Allele', 'PolyPhen', 'SYMBOL', 'CADD_PHRED', 'Feature', 'Consequence']",
+                        "result csv columns are different from gold csv: ['CDS_position', 'cDNA_position', 'Codons', 'EXON', 'MOTIF_POS', 'Consequence', 'CLNDN', 'CLNDNINCL', 'PolyPhen', 'CHROM', 'CLNDISDBINCL', 'MOTIF_SCORE_CHANGE', 'POS', 'CADD_RAW', 'Protein_position', 'SIFT', 'AF_ESP', 'BAM_EDIT', 'CADD_PHRED', 'ALT', 'Allele', 'MC', 'STRAND', 'HIGH_INF_POS', 'CLNSIGINCL', 'DISTANCE', 'Amino_acids', 'CLNVC', 'CLNVI', 'AF_EXAC', 'AF_TGP', 'SSR', 'IMPACT', 'REF', 'CLNDISDB', 'ORIGIN', 'BLOSUM62', 'BIOTYPE', 'Feature_type', 'SYMBOL', 'Feature', 'LoFtool', 'INTRON', 'CLNHGVS', 'MOTIF_NAME']",
                         "Could not find target column in result, which is CLASS in gold"
                     ],
                     "score": 0.0,

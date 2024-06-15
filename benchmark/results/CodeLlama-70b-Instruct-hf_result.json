@@ -1,7 +1,2452 @@
 {
-    "num_results": 109,
-    "average_score": 0.01834862385321101,
+    "num_results": 207,
+    "average_score": 0.014492753623188406,
     "results": [
+        {
+            "id": "dm-csv-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-005",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-007",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-008",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-009",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-010",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-011",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player_name, COUNT(game_id) AS games_played FROM baseball_games GROUP BY player_name ORDER BY games_played DESC LIMIT 1",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-016",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-017",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-018",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-019",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-020",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-021",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-022",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-023",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-024",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-025",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-026",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-027",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-028",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-029",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-030",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-031",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-032",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-033",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 9,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "SQL",
+                    "SELECT gate, COUNT(DISTINCT user_id) FROM data WHERE day = 1 GROUP BY gate",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT gate, COUNT(DISTINCT user_id) FROM data WHERE day = 1 GROUP BY gate",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT gate, COUNT(DISTINCT user_id) FROM data WHERE day = 1 GROUP BY gate",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT gate, COUNT(DISTINCT user_id) FROM data WHERE day = 1 GROUP BY gate",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT gate, COUNT(DISTINCT user_id) FROM data WHERE day = 1 GROUP BY gate",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-034",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-035",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-036",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 9,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT author FROM pull_requests WHERE file='src/compiler/scala/reflect/reify/phases/Calculate.scala' ORDER BY created_at DESC LIMIT 6",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT author FROM pull_requests WHERE file='src/compiler/scala/reflect/reify/phases/Calculate.scala' ORDER BY created_at DESC LIMIT 6",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT author FROM pull_requests WHERE file='src/compiler/scala/reflect/reify/phases/Calculate.scala' ORDER BY created_at DESC LIMIT 6",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT author FROM pull_requests WHERE file='src/compiler/scala/reflect/reify/phases/Calculate.scala' ORDER BY created_at DESC LIMIT 6",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT author FROM pull_requests WHERE file='src/compiler/scala/reflect/reify/phases/Calculate.scala' ORDER BY created_at DESC LIMIT 6",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-037",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-038",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 15,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf/dm-csv-038/count_pull_requests.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd .. && ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd / && ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace && ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data && ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data/scala && ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data/scala/github-history-of-the-scala-language && ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data/scala/github-history-of-the-scala-language",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data/scala/github-history-of-the-scala-language",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-039",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-040",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-041",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-042",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "date -d '2021-01-01' +%s",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-043",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-044",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-045",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-046",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-047",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-048",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-050",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-051",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-052",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-053",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-054",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-055",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-056",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-057",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-058",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-059",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-060",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-061",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-062",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-064",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-001",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-004",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
         {
             "id": "plot-bar-001",
             "total_score": 0.0,
@@ -761,6 +3206,1482 @@
                     "score": 0.0,
                     "file": [
                         "party_sums_plot.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-018",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-019",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "points_graph.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-002",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "output.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-006",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-008",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 8,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf/plot-line-008/plot_bmi.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-009",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-011",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-014",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-016",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-001",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "answer.png",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf/plot-pie-001/analyze_data.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf/plot-pie-001/answer.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head -n 5 UPI_Transactions_Dataset.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "score": 1.0,
+                    "file": [
+                        "answer.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-005",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-004",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
                         "plot.json",
                         "result.npy"
                     ]

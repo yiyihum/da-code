@@ -1,6 +1,6 @@
 {
-    "num_results": 102,
-    "average_score": 0.1134233475782532,
+    "num_results": 132,
+    "average_score": 0.1558271322195593,
     "results": [
         {
             "id": "plot-bar-001",
@@ -770,6 +770,2685 @@
                     "score": 0.0,
                     "file": [
                         "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-009",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 6,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-009/analyze.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 6,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-010/calculate_mutual_information.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-011",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 11,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/plot_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/correct_columns.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/data.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/check_columns.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/counts.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-011/filter_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    12,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-012/analyze_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-012/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat student-mat.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "display result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-013",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-013/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-013/analyze_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-013/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-013/icc_hall_of_fame_data.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "output.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-014/plot_missing_values.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-014/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-014/check_missing_values.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-014/output.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    3,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "output.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-015/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-015/amazon_data.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-015/amazon_sales_data.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv Amazon\\ Sale\\ Report.csv amazon_sales_data.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-016",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 11,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "export PWD=/workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls /workspace",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-017",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 6,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-017/plot_party_sums.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    18,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "party_sums_plot.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-018",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-018/calculate_average_days.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    38,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-019",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-019/top_10_sub_categories.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-019/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-019/create_db.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-019/amazon_sales.db",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-bar-019/create_chart.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_sub_category, COUNT(*) as count FROM products GROUP BY product_sub_category ORDER BY count DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_sub_category, COUNT(*) as count FROM products GROUP BY product_sub_category ORDER BY count DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(products)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category as product_sub_category, COUNT(*) as count FROM products GROUP BY category ORDER BY count DESC LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-001/nba_graph.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-001/games_info.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-001/nba.sqlite",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-001/tables.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(games)",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat games_info.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(games)",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat games_info.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(games)",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat games_info.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(games)",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat games_info.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(games)",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat games_info.csv",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "points_graph.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-002",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-002/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-002/plot_runs.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-002/filter_teams.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-002/filtered_matches.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "output.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-003/spam_scores.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-003/plot_spam_scores.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-003/fake_news_dataset_copy.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-003/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-003/output.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-003/calculate_spam_scores.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT crawled, AVG(spam_score) FROM fake_news_dataset_copy GROUP BY crawled",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install sqlite3",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "output.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT order_purchase_timestamp, order_status FROM orders ORDER BY order_purchase_timestamp",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd data",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT order_purchase_timestamp, order_status FROM orders ORDER BY order_purchase_timestamp",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-005/read_region.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-005/regions.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-005/average_scores.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-005/plot_graph.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-005/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-005/calculate_average.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    48,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    8,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    15,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-006",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 2,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-006/plot_graph.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-006/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-007",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-007/process_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-007/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd .. && cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-008",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-008/calculate_bmi.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-008/players_stats.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv all_seasons.csv players_stats.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "mv all_seasons.csv players_stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv all_seasons.csv players_stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv all_seasons.csv players_stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv all_seasons.csv players_stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv all_seases.csv players_stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv all_seasons.csv players_stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv ../all_seasons.csv . && mv players_stats.csv all_seasons.csv",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-009",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-009/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-009/plot_temp.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-010/nobel_data.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-010/read_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM nobel_data LIMIT 10",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-011",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-011/check_categories.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-011/result.jpg",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-011/plot_graph.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-011/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-011/calculate_percentage.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-012/df.pkl",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-012/analyze_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-012/load_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-013/readme.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    2,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/bikestore",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT store_id, order_date, COUNT(*) as order_count FROM orders GROUP BY store_id, order_date",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-014",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-014/result.jpg",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-014/calculate_returns.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-014/load_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-014/__pycache__/load_data.cpython-39.pyc"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    32,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 12,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-015/portfolio_analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    45,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls stock_returns_2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls dataset/stock_returns_2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls dataset",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-016",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-016/readme.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-016/visualize.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-line-016/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    2,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-001",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "answer.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-001/analyze_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-001/answer.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-001/load_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "score": 1.0,
+                    "file": [
+                        "answer.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 7,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-002/plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    18,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-003/result.jpg",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-003/data.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-003/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-003/analyze_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
                         "plot.json",
                         "result.npy"
                     ]

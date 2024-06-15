@@ -1,7 +1,1650 @@
 {
-    "num_results": 114,
-    "average_score": 0.2207118215626311,
+    "num_results": 163,
+    "average_score": 0.23104998563276036,
     "results": [
+        {
+            "id": "dm-csv-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "undefeated.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-001/filter_fighters.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-001/undefeated.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat undefeated.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-002/count_students.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-003/process_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 student_data.csv",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-004",
+            "total_score": 0.5,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "allGames.csv, allEvents.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-004/allGames.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-004/allEvents.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-004/allEvents.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-004/allGames.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-005",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-005/process_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat age.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat process_data.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat process_data.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat process_data.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "diff result.csv sample_result.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat process_data.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-006/result.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-006/temp_db.sqlite",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-006/create_temp_db.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH order_product_pairs AS (\n  SELECT\n    oi1.order_id,\n    oi1.product_id AS product_id_1,\n    oi2.product_id AS product_id_2\n  FROM order_items oi1\n  JOIN order_items oi2\n    ON oi1.order_id = oi2.order_id\n    AND oi1.product_id < oi2.product_id\n),\nproduct_pairs AS (\n  SELECT\n    op.order_id,\n    p1.product_name AS product_a,\n    p2.product_name AS product_b\n  FROM order_product_pairs op\n  JOIN products p1\n    ON op.product_id_1 = p1.product_id\n  JOIN products p2\n    ON op.product_id_2 = p2.product_id\n),\nco_purchase_counts AS (\n  SELECT\n    product_a,\n    product_b,\n    COUNT(*) AS co_purchase_count\n  FROM product_pairs\n  GROUP BY product_a, product_b\n  ORDER BY co_purchase_count DESC\n  LIMIT 2\n)\nSELECT * FROM co_purchase_counts;\n\"\"",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH order_product_pairs AS (\n  SELECT\n    oi1.order_id,\n    oi1.product_id AS product_id_1,\n    oi2.product_id AS product_id_2\n  FROM order_items oi1\n  JOIN order_items oi2\n    ON oi1.order_id = oi2.order_id\n    AND oi1.product_id < oi2.product_id\n),\nproduct_pairs AS (\n  SELECT\n    op.order_id,\n    p1.product_name AS product_a,\n    p2.product_name AS product_b\n  FROM order_product_pairs op\n  JOIN products p1\n    ON op.product_id_1 = p1.product_id\n  JOIN products p2\n    ON op.product_id_2 = p2.product_id\n),\nco_purchase_counts AS (\n  SELECT\n    product_a,\n    product_b,\n    COUNT(*) AS co_purchase_count\n  FROM product_pairs\n  GROUP BY product_a, product_b\n  ORDER BY co_purchase_count DESC\n  LIMIT 2\n)\nSELECT * FROM co_purchase_counts;\n\"\"",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH order_product_pairs AS (\n  SELECT\n    oi1.order_id,\n    oi1.product_id AS product_id_1,\n    oi2.product_id AS product_id_2\n  FROM order_items oi1\n  JOIN order_items oi2\n    ON oi1.order_id = oi2.order_id\n    AND oi1.product_id < oi2.product_id\n),\nproduct_pairs AS (\n  SELECT\n    op.order_id,\n    p1.product_name AS product_a,\n    p2.product_name AS product_b\n  FROM order_product_pairs op\n  JOIN products p1\n    ON op.product_id_1 = p1.product_id\n  JOIN products p2\n    ON op.product_id_2 = p2.product_id\n),\nco_purchase_counts AS (\n  SELECT\n    product_a,\n    product_b,\n    COUNT(*) AS co_purchase_count\n  FROM product_pairs\n  GROUP BY product_a, product_b\n  ORDER BY co_purchase_count DESC\n  LIMIT 2\n)\nSELECT * FROM co_purchase_counts;\n\"\"",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-007",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-007/result.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-007/popular_movies.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-008",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "correlation_results.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-008/calculate_correlation.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-008/list_columns.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-008/correlation_results.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.d",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-009",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-009/author_analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-010",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nSELECT\n    strftime('%Y-%m', orders.order_date) AS month,\n    categories.category_name,\n    AVG(order_items.quantity) AS avg_units_sold\nFROM\n    orders\nJOIN\n    order_items ON orders.order_id = order_items.order_id\nJOIN\n    products ON order_items.product_id = products.product_id\nJOIN\n    categories ON products.category_id = categories.category_id\nWHERE\n    categories.category_name LIKE 'Bikes%'\nGROUP BY\n    month,\n    categories.category_name\nORDER BY\n    month,\n    categories.category_name;\n\"\"",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sqlite3 data.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install sqlite3",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sudo apt-get install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "yum install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "apk add sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "dnf install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "zypper install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pacman -S sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "brew install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pkg install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "emerge sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "port install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pkg_add sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pkgutil --install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pkg_info -i sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pkg_search sqlite3",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-011",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-011/calculate_sales.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT products.product_name, SUM(order_items.quantity) as total_quantity_sold, SUM(order_items.price * order_items.quantity) as total_sales_revenue FROM order_items JOIN products ON order_items.product_id = products.product_id WHERE order_items.order_date BETWEEN '2016-01-01' AND '2018-12-31' GROUP BY products.product_name",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls *.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls *.db",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls *.csv",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_name, SUM(quantity) as total_quantity_sold, SUM(price * quantity) as total_sales_revenue FROM order_items JOIN products ON order_items.product_id = products.product_id WHERE order_date BETWEEN '2016-01-01' AND '2018-12-31' GROUP BY product_name",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 order_items.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 result.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 result.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 merged_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 merged_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 15,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-012/create_database.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-012/result.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-012/BikeStore.sqlite"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls *.db *.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH user_expenditure AS (\n  SELECT\n    o.customer_id,\n    SUM(oi.quantity * p.price) AS total_expenditure\n  FROM\n    orders o\n    JOIN order_items oi ON o.id = oi.order_id\n    JOIN products p ON oi.product_id = p.id\n  GROUP BY\n    o.customer_id\n)\nSELECT\n  c.first_name || ' ' || c.last_name AS user_name,\n  ue.total_expenditure\nFROM\n  user_expenditure ue\n  JOIN customers c ON ue.customer_id = c.id\nORDER BY\n  ue.total_expenditure DESC\nLIMIT 5\n\"\"",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(products)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH user_expenditure AS (\n  SELECT\n    o.customer_id,\n    SUM(oi.quantity * p.list_price) AS total_expenditure\n  FROM\n    orders o\n    JOIN order_items oi ON o.id = oi.order_id\n    JOIN products p ON oi.product_id = p.id\n  GROUP BY\n    o.customer_id\n)\nSELECT\n  c.first_name || ' ' || c.last_name AS user_name,\n  ue.total_expenditure\nFROM\n  user_expenditure ue\n  JOIN customers c ON ue.customer_id = c.id\nORDER BY\n  ue.total_expenditure DESC\nLIMIT 5\n\"\"",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(orders)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH user_expenditure AS (\n  SELECT\n    o.customer_id,\n    SUM(oi.quantity * p.list_price) AS total_expenditure\n  FROM\n    orders o\n    JOIN order_items oi ON o.order_id = oi.order_id\n    JOIN products p ON oi.product_id = p.id\n  GROUP BY\n    o.customer_id\n)\nSELECT\n  c.first_name || ' ' || c.last_name AS user_name,\n  ue.total_expenditure\nFROM\n  user_expenditure ue\n  JOIN customers c ON ue.customer_id = c.id\nORDER BY\n  ue.total_expenditure DESC\nLIMIT 5\n\"\"",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(products)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH user_expenditure AS (\n  SELECT\n    o.customer_id,\n    SUM(oi.quantity * p.list_price) AS total_expenditure\n  FROM\n    orders o\n    JOIN order_items oi ON o.order_id = oi.order_id\n    JOIN products p ON oi.product_id = p.product_id\n  GROUP BY\n    o.customer_id\n)\nSELECT\n  c.first_name || ' ' || c.last_name AS user_name,\n  ue.total_expenditure\nFROM\n  user_expenditure ue\n  JOIN customers c ON ue.customer_id = c.id\nORDER BY\n  ue.total_expenditure DESC\nLIMIT 5\n\"\"",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(customers)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "\"\"\nWITH user_expenditure AS (\n  SELECT\n    o.customer_id,\n    SUM(oi.quantity * p.list_price) AS total_expenditure\n  FROM\n    orders o\n    JOIN order_items oi ON o.order_id = oi.order_id\n    JOIN products p ON oi.product_id = p.product_id\n  GROUP BY\n    o.customer_id\n)\nSELECT\n  c.first_name || ' ' || c.last_name AS user_name,\n  ue.total_expenditure\nFROM\n  user_expenditure ue\n  JOIN customers c ON ue.customer_id = c.customer_id\nORDER BY\n  ue.total_expenditure DESC\nLIMIT 5\n\"\"",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-013/top_20_clubs.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-013/result.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-013/top_scorer.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-013/average_scores.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-013/average_physicality.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 players_20.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT long_name FROM players_20 WHERE club = (SELECT club FROM result.csv) ORDER BY overall DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 10,
+            "result": "result.csv",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT name, SUM(G) as games_played FROM batting GROUP BY name ORDER BY games_played DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(batting)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player.name, SUM(batting.g) as games_played FROM batting JOIN player ON batting.player_id = player.player_id GROUP BY player.name ORDER BY games_played DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(player)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player.name_first || ' ' || player.name_last as name, SUM(batting.g) as games_played FROM batting JOIN player ON batting.player_id = player.player_id GROUP BY player.name_first, player.name_last ORDER BY games_played DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player.name_first || ' ' || player.name_last as name, SUM(batting.r) as runs_scored FROM batting JOIN player ON batting.player_id = player.player_id GROUP BY player.name_first, player.name_last ORDER BY runs_scored DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player.name_first || ' ' || player.name_last as name, SUM(batting.h) as hits FROM batting JOIN player ON batting.player_id = player.player_id GROUP BY player.name_first, player.name_last ORDER BY hits DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT player.name_first || ' ' || player.name_last as name, SUM(batting.hr) as home_runs FROM batting JOIN player ON batting.player_id = player.player_id GROUP BY player.name_first, player.name_last ORDER BY home_runs DESC LIMIT 1",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-016",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-016/compile_statistics.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head competitions.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head club_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head competitions.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head club_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head competitions.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head club_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head competitions.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head club_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head competitions.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-017",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_shape.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/calculate_nps.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_first_rows.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_data_types.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_nps.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_columns.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_result.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/print_counts.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-017/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat data_standard.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 2020Q4_nps_email.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 2020Q4_nps_email.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 2020Q4_nps_mobile.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 2020Q4_nps_web.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 2020Q4_nps_web.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-018",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 10,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-018/write_results.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-018/result.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head datascience_programs_list.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cut -d',' -f2,3 datascience_programs_list.csv | sort -t',' -k2 -n | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cut -d',' -f2,3 datascience_programs_list.csv | sort -t',' -k2 -n | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cut -d',' -f2,3 datascience_programs_list.csv | sort -t',' -k2 -n | head -n 10 | awk -F',' '{print $1\",\"$2}'",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "python write_results.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-019",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 7,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-019/create_database.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-019/result.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-019/LaLiga_Matches.db"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT team_name, AVG(score) as average_score, COUNT(*) as draws FROM LaLiga_Matches WHERE score = opponent_score GROUP BY team_name ORDER BY draws DESC LIMIT 20",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT team_name, AVG(score) as average_score, COUNT(*) as draws FROM LaLiga_Matches WHERE score = opponent_score GROUP BY team_name ORDER BY draws DESC LIMIT 20",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-020",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-020/analyze_churn.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-020/result.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head telco.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-021",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 14,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-021/analyze_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/dm-csv-021/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT Children, Category FROM marketing_data",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head marketing_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head marketing_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "diff sample_result.csv result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "diff sample_result.csv result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
         {
             "id": "plot-bar-001",
             "total_score": 0.0,
@@ -1389,6 +3032,2273 @@
             ]
         },
         {
+            "id": "plot-line-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "point.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-001/check_columns.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-001/point.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-001/create_graph.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT game_year, AVG(total_points) as average_points FROM games GROUP BY game_year",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 game.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 game_info.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": false,
+                    "score": 0.0,
+                    "file": [
+                        "point.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-003/output.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-003/calculate_spam_scores.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wc -l fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "output.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-004",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-004/plot_orders.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-004/olist.sqlite",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-004/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT order_status, order_purchase_timestamp FROM orders",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "unzip olist.sqlite.zip",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT order_status, order_purchase_timestamp FROM orders",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    30,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "legend_title": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-005/calculate_average_happiness.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat Region.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-006",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-006/plot_seasonal_temperature.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-006/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 GlobalTemperatures.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 GlobalTemperatures.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-007",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-007/process_data.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-007/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 appstore_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-008",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-008/result.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-008/plot_bmi.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat BMI.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-009",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-009/plot_temperatures.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-009/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "python plot_temperatures.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head city_temperature.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "warning message"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-010/result.jpg",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-010/analyze_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-011",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-011/analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls result.jpg",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-012/result.jpg",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-012/process_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 MyTransaction.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sqlite3 BikeStore.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install pysqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sqlite3 BikeStore.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "apt-get install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "yum install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "apk add sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "conda install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install sqlite3",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "apt-get install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "yum install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "apk add sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "conda install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install sqlite3",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "apt-get install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "yum install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "apk add sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "conda install sqlite3",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install sqlite3",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-014",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-014/read_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    33,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install matplotlib",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-015/result.jpg",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-015/portfolio_risk_management.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    49,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    49,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    49,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-016",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-016/result.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-line-016/create_chart.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "pip install matplotlib",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-001",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 4,
+            "result": "answer.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-001/analyze_data.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-001/answer.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "score": 1.0,
+                    "file": [
+                        "answer.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "distribution.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-002/plot_runs_distribution.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-002/check_columns.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-002/distribution.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "score": 0.0,
+                    "file": [
+                        "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-003/result.jpg",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-003/analyze_transactions.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result_2.png, result_3.png, result_4.png, result_5.png, result_6.png, result_7.png, result_8.png, result_9.png, result_10.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_8.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_5.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_7.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_6.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_3.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_10.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/create_pie_chart.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_2.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_9.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-004/result_4.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result_2.png",
+                        "result_3.png",
+                        "result_4.png",
+                        "result_5.png",
+                        "result_6.png",
+                        "result_7.png",
+                        "result_8.png",
+                        "result_9.png",
+                        "result_10.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-005",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-005/result.png"
+            ],
+            "changed_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-005/analysis.py"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 appstore_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 appstore_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "warning message"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-006/count_sightings.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-006/plot_chart.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-006/check_columns.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-006/check_countries.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-006/counts.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT COUNTRY, COUNT(*) as COUNT FROM scrubbed GROUP BY COUNTRY",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    5,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    12,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    12,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "FAIL",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-007/count_proportions.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 diabetes_012_health_indicators_BRFSS2015.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 diabetes_binary_5050split_health_indicators_BRFSS2015.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 diabetes_binary_health_indicators_BRFSS2015.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-008/convert_deliveries_to_db.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-pie-008/install_csvkit.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT h.city, AVG(d.distance) as avg_distance FROM deliveries d JOIN hubs h ON d.hub_id = h.id WHERE d.driver_type = 'biker' GROUP BY h.city ORDER BY avg_distance DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT h.city, AVG(d.distance) as avg_distance FROM deliveries d JOIN hubs h ON d.hub_id = h.id WHERE d.driver_type = 'biker' GROUP BY h.city ORDER BY avg_distance DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT h.city, AVG(d.distance) as avg_distance FROM deliveries d JOIN hubs h ON d.hub_id = h.id WHERE d.driver_type = 'biker' GROUP BY h.city ORDER BY avg_distance DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT h.city, AVG(d.distance) as avg_distance FROM deliveries d JOIN hubs h ON d.hub_id = h.id WHERE d.driver_type = 'biker' GROUP BY h.city ORDER BY avg_distance DESC LIMIT 1",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT h.city, AVG(d.distance) as avg_distance FROM deliveries d JOIN hubs h ON d.hub_id = h.id WHERE d.driver_type = 'biker' GROUP BY h.city ORDER BY avg_distance DESC LIMIT 1",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "FAIL",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-001/genre_count.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT genre, country, COUNT(*) as title_count FROM netflix GROUP BY genre, country ORDER BY title_count DESC",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 netflix.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-002/closing_odds.csv",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-002/result.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-002/plot_scatter.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "gunzip closing_odds.csv.gz",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 closing_odds.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-003/plot_athletes.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-003/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install matplotlib",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-004",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-004/result.png",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-004/scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 appstore_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-005/calculate_correlation.py",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-005/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-006",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-006/result.jpg",
+                "./benchmark/output/Mixtral-8x22B-Instruct-v0.1/plot-scatter-006/analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "ml-binary-001",
             "total_score": 0.0,
             "hardness": "Medium",
@@ -1593,7 +5503,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['index', 'sentiment']",
+                        "result csv columns are different from gold csv: ['sentiment', 'index']",
                         "Could not find target column in result, which is result in gold"
                     ],
                     "score": 0.0,
@@ -2270,7 +6180,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['id', 'target']"
+                        "result csv columns are different from gold csv: ['target', 'id']"
                     ],
                     "score": 0.8804108584005869,
                     "metric": "accuracy",
