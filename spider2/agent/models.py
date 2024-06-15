@@ -95,17 +95,16 @@ def call_llm(payload):
                 time.sleep(10 * (2 ** (i + 1)))
         return False, code_value
         
-
     elif model.startswith("claude"):
         messages = payload["messages"]
         max_tokens = payload["max_tokens"]
         top_p = payload["top_p"]
         temperature = payload["temperature"]
 
-        claude_messages = []
+        gemini_messages = []
 
         for i, message in enumerate(messages):
-            claude_message = {
+            gemini_message = {
                 "role": message["role"],
                 "content": []
             }
@@ -117,59 +116,126 @@ def call_llm(payload):
                     image_source["type"] = "base64"
                     image_source["media_type"] = "image/png"
                     image_source["data"] = part['image_url']['url'].replace("data:image/png;base64,", "")
-                    claude_message['content'].append({"type": "image", "source": image_source})
+                    gemini_message['content'].append({"type": "image", "source": image_source})
 
                 if part['type'] == "text":
-                    claude_message['content'].append({"type": "text", "text": part['text']})
+                    gemini_message['content'].append({"type": "text", "text": part['text']})
 
-            claude_messages.append(claude_message)
+            gemini_messages.append(gemini_message)
+        
+        if gemini_messages[0]['role'] == "system":
+            gemini_system_message_item = gemini_messages[0]['content'][0]
+            gemini_messages[1]['content'].insert(0, gemini_system_message_item)
+            gemini_messages.pop(0)
 
-        # the claude not support system message in our endpoint, so we concatenate it at the first user message
-        if claude_messages[0]['role'] == "system":
-            claude_system_message_item = claude_messages[0]['content'][0]
-            claude_messages[1]['content'].insert(0, claude_system_message_item)
-            claude_messages.pop(0)
-
-        logger.debug("CLAUDE MESSAGE: %s", repr(claude_messages))
 
         headers = {
             'Accept': 'application/json',
-            'Authorization': f'Bearer {os.environ["ANTHROPIC_API_KEY"]}',
+            'Authorization': f'Bearer {os.environ["GEMINI_API_KEY"]}',
             'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
             'Content-Type': 'application/json'
-        }
+        }  
+        
+        payload = json.dumps({"model": model,"messages": gemini_messages,"max_tokens": max_tokens,"temperature": temperature,"top_p": top_p})
 
-        payload = {
-            "model": model,
-            "max_tokens": max_tokens,
-            "messages": claude_messages,
-            "temperature": temperature,
-            "top_p": top_p
-        }
 
+        
         for i in range(3):
             try:
-                response = requests.post(
-                    "https://api.claude-Plus.top/v1/chat/completions",
-                    headers=headers,
-                    json=payload
-                )
-                return True, response.json()['choices'][0]['message']['content']
-            except Exception as e:
-                logger.error("Failed to call LLM: " + str(e))
-                time.sleep(10 * (2 ** (i + 1)))
-                if hasattr(e, 'response'):
-                    error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                response = requests.request("POST", "https://api2.aigcbest.top/v1/chat/completions", headers=headers, data=payload)
+                logger.info(f"response_code {response.status_code}")
+                if response.status_code == 200:
+                    return True, response.json()['choices'][0]['message']['content']
+                else:
+                    error_info = response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
                     code_value = error_info['error']['code']
                     if code_value == "content_filter":
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
                             payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
                     if code_value == "context_length_exceeded":
-                        return False, code_value        
-                else:
-                    code_value = "context_length_exceeded"
-                logger.error("Retrying ...")
+                        return False, code_value
+                    logger.error("Retrying ...")
+                    time.sleep(10 * (2 ** (i + 1)))
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                time.sleep(10 * (2 ** (i + 1)))
+                code_value = "context_length_exceeded"
         return False, code_value
+                           
+    # elif model.startswith("claude"):
+    #     messages = payload["messages"]
+    #     max_tokens = payload["max_tokens"]
+    #     top_p = payload["top_p"]
+    #     temperature = payload["temperature"]
+
+    #     claude_messages = []
+
+    #     for i, message in enumerate(messages):
+    #         claude_message = {
+    #             "role": message["role"],
+    #             "content": []
+    #         }
+    #         assert len(message["content"]) in [1, 2], "One text, or one text with one image"
+    #         for part in message["content"]:
+
+    #             if part['type'] == "image_url":
+    #                 image_source = {}
+    #                 image_source["type"] = "base64"
+    #                 image_source["media_type"] = "image/png"
+    #                 image_source["data"] = part['image_url']['url'].replace("data:image/png;base64,", "")
+    #                 claude_message['content'].append({"type": "image", "source": image_source})
+
+    #             if part['type'] == "text":
+    #                 claude_message['content'].append({"type": "text", "text": part['text']})
+
+    #         claude_messages.append(claude_message)
+
+    #     # the claude not support system message in our endpoint, so we concatenate it at the first user message
+    #     if claude_messages[0]['role'] == "system":
+    #         claude_system_message_item = claude_messages[0]['content'][0]
+    #         claude_messages[1]['content'].insert(0, claude_system_message_item)
+    #         claude_messages.pop(0)
+
+    #     logger.debug("CLAUDE MESSAGE: %s", repr(claude_messages))
+
+    #     headers = {
+    #         'Accept': 'application/json',
+    #         'Authorization': f'Bearer {os.environ["ANTHROPIC_API_KEY"]}',
+    #         'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+    #         'Content-Type': 'application/json'
+    #     }
+
+    #     payload = {
+    #         "model": model,
+    #         "max_tokens": max_tokens,
+    #         "messages": claude_messages,
+    #         "temperature": temperature,
+    #         "top_p": top_p
+    #     }
+
+    #     for i in range(3):
+    #         try:
+    #             response = requests.post(
+    #                 "https://api.claude-Plus.top/v1/chat/completions",
+    #                 headers=headers,
+    #                 json=payload
+    #             )
+    #             return True, response.json()['choices'][0]['message']['content']
+    #         except Exception as e:
+    #             logger.error("Failed to call LLM: " + str(e))
+    #             time.sleep(10 * (2 ** (i + 1)))
+    #             if hasattr(e, 'response'):
+    #                 error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+    #                 code_value = error_info['error']['code']
+    #                 if code_value == "content_filter":
+    #                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+    #                         payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+    #                 if code_value == "context_length_exceeded":
+    #                     return False, code_value        
+    #             else:
+    #                 code_value = "context_length_exceeded"
+    #             logger.error("Retrying ...")
+    #     return False, code_value
 
         # if response.status_code != 200:
 
