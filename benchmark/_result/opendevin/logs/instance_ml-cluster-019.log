@@ -1,0 +1,610 @@
+2024-06-15 19:32:12,164 - INFO - SSHBox is running as opendevin user with USER_ID=501 in the sandbox
+2024-06-15 19:32:12,179 - INFO - Detected initial session.
+2024-06-15 19:32:12,179 - INFO - Creating new Docker container
+2024-06-15 19:32:12,180 - WARNING - Using port forwarding for Mac OS. Server started by OpenDevin will not be accessible from the host machine at the moment. See https://github.com/OpenDevin/OpenDevin/issues/897 for more information.
+2024-06-15 19:32:12,180 - INFO - Mounting workspace directory: /Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/workspace
+2024-06-15 19:32:12,180 - INFO - Mounting volumes: {'/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/workspace': {'bind': '/workspace', 'mode': 'rw'}, '/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/cache': {'bind': '/home/opendevin/.cache', 'mode': 'rw'}}
+2024-06-15 19:32:12,180 - INFO - Mounting workspace directory: /Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/workspace
+2024-06-15 19:32:12,297 - INFO - Container started
+2024-06-15 19:32:13,302 - INFO - waiting for container to start: 1, container status: running
+2024-06-15 19:32:13,541 - INFO - Connecting to SSH session...
+2024-06-15 19:32:13,541 - INFO - You can debug the SSH connection by running: `ssh -v -p 59312 opendevin@localhost` using the password '36e939a5-72af-488f-81aa-504afda4206d'
+2024-06-15 19:32:14,766 - INFO - Connected to SSH session
+2024-06-15 19:32:15,741 - INFO - Loading llm config from gpt4-eval
+2024-06-15 19:32:15,742 - INFO - Running agent CodeActAgent (model: gpt-4-32k, llm_config: ./config.toml) with task: "Please fix the following issue.
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+Please encapsulate your final answer (answer ONLY) within <solution> and </solution>.
+files in the environment are sufficient to support completion of the task, and you must not and are not allowed to search the internet.The README.md or task description may not be accurate regarding the dataset. You need to check the file contents before proceeding.Please encapsulate your final answer (answer ONLY) within <solution> and </solution>. For example: The result file path to the question is <solution> result.csv </solution>.# Problem 
+This is an Online Retail II Data Set dataset, with relevant descriptions provided in the README.md file. Based on this dataset, you need to perform a clustering task to segment different types of customer groups into an appropriate number of clusters. Write the clustering results into a file named cluster.csv, with the column names "Feature_i" (where i represents the ith value of the feature vector) and "Cluster" (the label of the cluster obtained from the clustering).
+
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+When you think you have solved the question, please first send your answer to user through message and then exit.
+"
+2024-06-15 19:32:15,742 - INFO - Initializing LLM with model: gpt-4-32k
+2024-06-15 19:32:15,744 - INFO - Initializing plugins in the sandbox
+2024-06-15 19:32:15,950 - INFO - Copied files from [/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/opendevin/runtime/plugins/agent_skills] to [/opendevin/plugins/agent_skills] inside sandbox.
+2024-06-15 19:32:15,950 - INFO - Initializing plugin [agent_skills] by executing [/opendevin/plugins/agent_skills/setup.sh] in the sandbox.
+2024-06-15 19:32:22,014 - INFO - Plugin agent_skills initialized successfully
+2024-06-15 19:32:22,048 - INFO - Copied files from [/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/opendevin/runtime/plugins/jupyter] to [/opendevin/plugins/jupyter] inside sandbox.
+2024-06-15 19:32:22,048 - INFO - Initializing plugin [jupyter] by executing [/opendevin/plugins/jupyter/setup.sh] in the sandbox.
+2024-06-15 19:32:35,941 - INFO - Plugin jupyter initialized successfully
+2024-06-15 19:32:36,107 - INFO - Sourced ~/.bashrc successfully
+2024-06-15 19:32:36,107 - INFO - Starting browser env...
+2024-06-15 19:33:36,116 - WARNING - Failed to start browser environment, web browsing functionality will not work
+2024-06-15 19:33:36,117 - INFO - **MessageAction** (source=EventSource.USER)
+CONTENT: Please fix the following issue.
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+Please encapsulate your final answer (answer ONLY) within <solution> and </solution>.
+files in the environment are sufficient to support completion of the task, and you must not and are not allowed to search the internet.The README.md or task description may not be accurate regarding the dataset. You need to check the file contents before proceeding.Please encapsulate your final answer (answer ONLY) within <solution> and </solution>. For example: The result file path to the question is <solution> result.csv </solution>.# Problem 
+This is an Online Retail II Data Set dataset, with relevant descriptions provided in the README.md file. Based on this dataset, you need to perform a clustering task to segment different types of customer groups into an appropriate number of clusters. Write the clustering results into a file named cluster.csv, with the column names "Feature_i" (where i represents the ith value of the feature vector) and "Cluster" (the label of the cluster obtained from the clustering).
+
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+When you think you have solved the question, please first send your answer to user through message and then exit.
+
+2024-06-15 19:33:36,118 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+2024-06-15 19:33:36,118 - INFO - [Agent Controller default] Starting step loop...
+2024-06-15 19:33:36,118 - INFO - CodeActAgent LEVEL 0 STEP 0
+2024-06-15 19:33:38,556 - INFO - Cost: 0.21 USD | Accumulated Cost: 0.21 USD
+2024-06-15 19:33:38,557 - INFO - **CmdRunAction**
+THOUGHT: First, let's check the contents of the current directory to see what files are available. We are looking for the Online Retail II Data Set.
+COMMAND:
+ls
+2024-06-15 19:33:38,741 - INFO - **CmdOutputObservation (exit code=0)**
+ README.md  'Year 2009-2010.csv'  'Year 2010-2011.csv'	 online_retail_II.xlsx
+2024-06-15 19:33:38,843 - INFO - CodeActAgent LEVEL 0 STEP 1
+2024-06-15 19:33:43,327 - INFO - Cost: 0.23 USD | Accumulated Cost: 0.44 USD
+2024-06-15 19:33:43,327 - INFO - **IPythonRunCellAction**
+THOUGHT: The Online Retail II Data Set seems to be split into two CSV files: 'Year 2009-2010.csv' and 'Year 2010-2011.csv'. Let's load these files into pandas dataframes to examine their structure.
+CODE:
+import pandas as pd
+
+# Load the data
+df1 = pd.read_csv('Year 2009-2010.csv')
+df2 = pd.read_csv('Year 2010-2011.csv')
+
+# Display the first few rows of each dataframe
+df1.head(), df2.head()
+2024-06-15 19:33:43,877 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 import pandas as pd
+      3 # Load the data
+      4 df1 = pd.read_csv('Year 2009-2010.csv')
+
+ModuleNotFoundError: No module named 'pandas'
+2024-06-15 19:33:43,979 - INFO - CodeActAgent LEVEL 0 STEP 2
+2024-06-15 19:33:45,823 - INFO - Cost: 0.23 USD | Accumulated Cost: 0.67 USD
+2024-06-15 19:33:45,823 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems that the pandas library is not installed in this environment. Let's install it.
+CODE:
+%pip install pandas
+2024-06-15 19:33:51,606 - INFO - **IPythonRunCellObservation**
+[Package installed successfully]
+[Kernel restarted successfully to load the package]
+2024-06-15 19:33:51,708 - INFO - CodeActAgent LEVEL 0 STEP 3
+2024-06-15 19:33:56,896 - INFO - Cost: 0.24 USD | Accumulated Cost: 0.91 USD
+2024-06-15 19:33:56,896 - INFO - **IPythonRunCellAction**
+THOUGHT: Now that pandas is installed, let's try loading the data again.
+CODE:
+import pandas as pd
+
+# Load the data
+df1 = pd.read_csv('Year 2009-2010.csv')
+df2 = pd.read_csv('Year 2010-2011.csv')
+
+# Display the first few rows of each dataframe
+df1.head(), df2.head()
+2024-06-15 19:33:57,730 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+UnicodeDecodeError                        Traceback (most recent call last)
+Cell In[1], line 4
+      1 [38;5;28;01mimport [38;5;21;01mpandas [38;5;28;01mas [38;5;21;01mpd
+      3 [38;5;66;03m# Load the data
+----> 4 df1 = pd[38;5;241;43m.read_csv([38;5;124;43m'[38;5;124;43mYear 2009-2010.csv[38;5;124;43m')
+      5 df2 = pd.read_csv('Year 2010-2011.csv')
+      7 [38;5;66;03m# Display the first few rows of each dataframe
+
+File ~/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py:1026, in read_csv(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)
+   1013 kwds_defaults = _refine_defaults_read(
+   1014     dialect,
+   1015     delimiter,
+   (...)
+   1022     dtype_backend=dtype_backend,
+   1023 )
+   1024 kwds.update(kwds_defaults)
+-> 1026 [38;5;28;01mreturn _read(filepath_or_buffer, kwds)
+
+File ~/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py:626, in _read(filepath_or_buffer, kwds)
+    623     [38;5;28;01mreturn parser
+    625 [38;5;28;01mwith parser:
+--> 626     [38;5;28;01mreturn parser[38;5;241;43m.read(nrows)
+
+File ~/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py:1923, in TextFileReader.read(self, nrows)
+   1916 nrows = validate_integer("nrows", nrows)
+   1917 [38;5;28;01mtry:
+   1918     [38;5;66;03m# error: "ParserBase" has no attribute "read"
+   1919     (
+   1920         index,
+   1921         columns,
+   1922         col_dict,
+-> 1923     ) = [38;5;28;43mself[38;5;241;43m._engine[38;5;241;43m.read(  [38;5;66;43;03m# type: ignore[attr-defined]
+   1924         nrows
+   1925     )
+   1926 [38;5;28;01mexcept [38;5;167;01mException:
+   1927     self.close()
+
+File ~/.local/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py:234, in CParserWrapper.read(self, nrows)
+    232 [38;5;28;01mtry:
+    233     [38;5;28;01mif self.low_memory:
+--> 234         chunks = [38;5;28;43mself[38;5;241;43m._reader[38;5;241;43m.read_low_memory(nrows)
+    235         [38;5;66;03m# destructive to chunks
+    236         data = _concatenate_chunks(chunks)
+
+File parsers.pyx:838, in pandas._libs.parsers.TextReader.read_low_memory()
+
+File parsers.pyx:905, in pandas._libs.parsers.TextReader._read_rows()
+
+File parsers.pyx:874, in pandas._libs.parsers.TextReader._tokenize_rows()
+
+File parsers.pyx:891, in pandas._libs.parsers.TextReader._check_tokenize_status()
+
+File parsers.pyx:2053, in pandas._libs.parsers.raise_parser_error()
+
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 27254: invalid start byte
+2024-06-15 19:33:57,831 - INFO - CodeActAgent LEVEL 0 STEP 4
+2024-06-15 19:34:03,025 - INFO - Cost: 0.31 USD | Accumulated Cost: 1.22 USD
+2024-06-15 19:34:03,026 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems like the CSV files are not in the 'utf-8' encoding. Let's try to load the data with 'ISO-8859-1' encoding.
+CODE:
+# Load the data with 'ISO-8859-1' encoding
+df1 = pd.read_csv('Year 2009-2010.csv', encoding='ISO-8859-1')
+df2 = pd.read_csv('Year 2010-2011.csv', encoding='ISO-8859-1')
+
+# Display the first few rows of each dataframe
+df1.head(), df2.head()
+2024-06-15 19:34:03,977 - INFO - **IPythonRunCellObservation**
+(  Invoice StockCode                          Description  Quantity  \
+ 0  489434     85048  15CM CHRISTMAS GLASS BALL 20 LIGHTS        12   
+ 1  489434    79323P                   PINK CHERRY LIGHTS        12   
+ 2  489434    79323W                  WHITE CHERRY LIGHTS        12   
+ 3  489434     22041         RECORD FRAME 7" SINGLE SIZE         48   
+ 4  489434     21232       STRAWBERRY CERAMIC TRINKET BOX        24   
+ 
+       InvoiceDate  Price  Customer ID         Country  
+ 0  12/1/2009 7:45   6.95      13085.0  United Kingdom  
+ 1  12/1/2009 7:45   6.75      13085.0  United Kingdom  
+ 2  12/1/2009 7:45   6.75      13085.0  United Kingdom  
+ 3  12/1/2009 7:45   2.10      13085.0  United Kingdom  
+ 4  12/1/2009 7:45   1.25      13085.0  United Kingdom  ,
+   Invoice StockCode                          Description  Quantity  \
+ 0  536365    85123A   WHITE HANGING HEART T-LIGHT HOLDER         6   
+ 1  536365     71053                  WHITE METAL LANTERN         6   
+ 2  536365    84406B       CREAM CUPID HEARTS COAT HANGER         8   
+ 3  536365    84029G  KNITTED UNION FLAG HOT WATER BOTTLE         6   
+ 4  536365    84029E       RED WOOLLY HOTTIE WHITE HEART.         6   
+ 
+       InvoiceDate  Price  Customer ID         Country  
+ 0  12/1/2010 8:26   2.55      17850.0  United Kingdom  
+ 1  12/1/2010 8:26   3.39      17850.0  United Kingdom  
+ 2  12/1/2010 8:26   2.75      17850.0  United Kingdom  
+ 3  12/1/2010 8:26   3.39      17850.0  United Kingdom  
+ 4  12/1/2010 8:26   3.39      17850.0  United Kingdom  )
+2024-06-15 19:34:04,080 - INFO - CodeActAgent LEVEL 0 STEP 5
+2024-06-15 19:34:17,054 - INFO - Cost: 0.38 USD | Accumulated Cost: 1.60 USD
+2024-06-15 19:34:17,055 - INFO - **IPythonRunCellAction**
+THOUGHT: The data has been successfully loaded. Both dataframes have the same structure with the following columns: 'Invoice', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'Price', 'Customer ID', and 'Country'. 
+
+For the clustering task, we need to create a feature vector for each customer. A common approach in customer segmentation is RFM analysis, where RFM stands for Recency, Frequency, and Monetary value. 
+
+- Recency: How recently a customer has made a purchase
+- Frequency: How often a customer makes a purchase
+- Monetary Value: How much money a customer spends on purchases
+
+Let's combine the two dataframes and calculate these features for each customer. We'll also need to preprocess the 'InvoiceDate' column to convert it into a datetime object.
+CODE:
+# Combine the two dataframes
+df = pd.concat([df1, df2])
+
+# Convert 'InvoiceDate' to datetime
+df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+
+# Calculate Recency, Frequency and Monetary value for each customer
+snapshot_date = df['InvoiceDate'].max() + pd.Timedelta(days=1)  # latest date in the data set plus one day
+df_rfm = df.groupby('Customer ID').agg({
+    'InvoiceDate': lambda x: (snapshot_date - x.max()).days,  # Recency
+    'Invoice': 'count',  # Frequency
+    'Price': 'sum'  # Monetary Value
+})
+
+# Rename the columns
+df_rfm.rename(columns={'InvoiceDate': 'Recency',
+                       'Invoice': 'Frequency',
+                       'Price': 'MonetaryValue'}, inplace=True)
+
+df_rfm.head()
+2024-06-15 19:34:17,784 - INFO - **IPythonRunCellObservation**
+             Recency  Frequency  MonetaryValue
+Customer ID                                   
+12346.0          326         48         580.44
+12347.0            2        253         644.16
+12348.0           75         51         193.10
+12349.0           19        180        1504.59
+12350.0          310         17          65.30
+2024-06-15 19:34:17,887 - INFO - CodeActAgent LEVEL 0 STEP 6
+2024-06-15 19:34:23,608 - INFO - Cost: 0.38 USD | Accumulated Cost: 1.98 USD
+2024-06-15 19:34:23,608 - INFO - **IPythonRunCellAction**
+THOUGHT: The RFM features have been successfully calculated. Now, we need to normalize these features because they have different scales. This is important because many machine learning algorithms are sensitive to the scale of the features. We'll use the StandardScaler from sklearn to do this.
+CODE:
+from sklearn.preprocessing import StandardScaler
+
+# Initialize a scaler
+scaler = StandardScaler()
+
+# Fit and transform the data
+df_rfm_normalized = scaler.fit_transform(df_rfm)
+
+# Convert the numpy array back into a pandas dataframe
+df_rfm_normalized = pd.DataFrame(df_rfm_normalized, index=df_rfm.index, columns=df_rfm.columns)
+
+df_rfm_normalized.head()
+2024-06-15 19:34:24,139 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 [38;5;28;01mfrom [38;5;21;01msklearn[38;5;21;01m.[38;5;21;01mpreprocessing [38;5;28;01mimport StandardScaler
+      3 [38;5;66;03m# Initialize a scaler
+      4 scaler = StandardScaler()
+
+ModuleNotFoundError: No module named 'sklearn'
+2024-06-15 19:34:24,242 - INFO - CodeActAgent LEVEL 0 STEP 7
+2024-06-15 19:34:26,269 - INFO - Cost: 0.39 USD | Accumulated Cost: 2.37 USD
+2024-06-15 19:34:26,269 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems that the sklearn library is not installed in this environment. Let's install it.
+CODE:
+%pip install sklearn
+2024-06-15 19:34:27,431 - INFO - **IPythonRunCellObservation**
+Defaulting to user installation because normal site-packages is not writeable
+Collecting sklearn
+  Using cached sklearn-0.0.post12.tar.gz (2.6 kB)
+  Preparing metadata (setup.py) ... [?25l- error
+  error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [15 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+      
+      Here is how to fix this error in the main use cases:
+      - use 'pip install scikit-learn' rather than 'pip install sklearn'
+      - replace 'sklearn' by 'scikit-learn' in your pip requirements files
+        (requirements.txt, setup.py, setup.cfg, Pipfile, etc ...)
+      - if the 'sklearn' package is used by one of your dependencies,
+        it would be great if you take some time to track which package uses
+        'sklearn' instead of 'scikit-learn' and report it to their issue tracker
+      - as a last resort, set the environment variable
+        SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True to avoid this error
+      
+      More information is available at
+      https://github.com/scikit-learn/sklearn-pypi-package
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+[?25hNote: you may need to restart the kernel to use updated packages.
+
+2024-06-15 19:34:27,534 - INFO - CodeActAgent LEVEL 0 STEP 8
+2024-06-15 19:34:29,972 - INFO - Cost: 0.42 USD | Accumulated Cost: 2.78 USD
+2024-06-15 19:34:29,972 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems that the correct package name is 'scikit-learn', not 'sklearn'. Let's install 'scikit-learn'.
+CODE:
+%pip install scikit-learn
+2024-06-15 19:34:36,716 - INFO - **IPythonRunCellObservation**
+[Package installed successfully]
+[Kernel restarted successfully to load the package]
+2024-06-15 19:34:36,819 - INFO - CodeActAgent LEVEL 0 STEP 9
+2024-06-15 19:34:41,735 - INFO - Cost: 0.43 USD | Accumulated Cost: 3.21 USD
+2024-06-15 19:34:41,735 - INFO - **IPythonRunCellAction**
+THOUGHT: Now that scikit-learn is installed, let's try normalizing the RFM features again.
+CODE:
+from sklearn.preprocessing import StandardScaler
+
+# Initialize a scaler
+scaler = StandardScaler()
+
+# Fit and transform the data
+df_rfm_normalized = scaler.fit_transform(df_rfm)
+
+# Convert the numpy array back into a pandas dataframe
+df_rfm_normalized = pd.DataFrame(df_rfm_normalized, index=df_rfm.index, columns=df_rfm.columns)
+
+df_rfm_normalized.head()
+2024-06-15 19:34:42,527 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[1], line 7
+      4 scaler = StandardScaler()
+      6 [38;5;66;03m# Fit and transform the data
+----> 7 df_rfm_normalized = scaler.fit_transform(df_rfm)
+      9 [38;5;66;03m# Convert the numpy array back into a pandas dataframe
+     10 df_rfm_normalized = pd.DataFrame(df_rfm_normalized, index=df_rfm.index, columns=df_rfm.columns)
+
+NameError: name 'df_rfm' is not defined
+2024-06-15 19:34:42,629 - INFO - CodeActAgent LEVEL 0 STEP 10
+2024-06-15 19:34:55,924 - INFO - Cost: 0.47 USD | Accumulated Cost: 3.68 USD
+2024-06-15 19:34:55,925 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems like the kernel was restarted after installing the scikit-learn package, and we lost the data in the process. Let's load the data and calculate the RFM features again.
+CODE:
+# Load the data with 'ISO-8859-1' encoding
+df1 = pd.read_csv('Year 2009-2010.csv', encoding='ISO-8859-1')
+df2 = pd.read_csv('Year 2010-2011.csv', encoding='ISO-8859-1')
+
+# Combine the two dataframes
+df = pd.concat([df1, df2])
+
+# Convert 'InvoiceDate' to datetime
+df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+
+# Calculate Recency, Frequency and Monetary value for each customer
+snapshot_date = df['InvoiceDate'].max() + pd.Timedelta(days=1)  # latest date in the data set plus one day
+df_rfm = df.groupby('Customer ID').agg({
+    'InvoiceDate': lambda x: (snapshot_date - x.max()).days,  # Recency
+    'Invoice': 'count',  # Frequency
+    'Price': 'sum'  # Monetary Value
+})
+
+# Rename the columns
+df_rfm.rename(columns={'InvoiceDate': 'Recency',
+                       'Invoice': 'Frequency',
+                       'Price': 'MonetaryValue'}, inplace=True)
+
+# Initialize a scaler
+scaler = StandardScaler()
+
+# Fit and transform the data
+df_rfm_normalized = scaler.fit_transform(df_rfm)
+
+# Convert the numpy array back into a pandas dataframe
+df_rfm_normalized = pd.DataFrame(df_rfm_normalized, index=df_rfm.index, columns=df_rfm.columns)
+
+df_rfm_normalized.head()
+2024-06-15 19:34:56,388 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[1], line 2
+      1 [38;5;66;03m# Load the data with 'ISO-8859-1' encoding
+----> 2 df1 = pd.read_csv('Year 2009-2010.csv', encoding='ISO-8859-1')
+      3 df2 = pd.read_csv('Year 2010-2011.csv', encoding='ISO-8859-1')
+      5 [38;5;66;03m# Combine the two dataframes
+
+NameError: name 'pd' is not defined
+2024-06-15 19:34:56,490 - INFO - CodeActAgent LEVEL 0 STEP 11
+2024-06-15 19:35:10,343 - INFO - Cost: 0.50 USD | Accumulated Cost: 4.19 USD
+2024-06-15 19:35:10,343 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems like the pandas library is not imported after the kernel restart. Let's import it and try again.
+CODE:
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+# Load the data with 'ISO-8859-1' encoding
+df1 = pd.read_csv('Year 2009-2010.csv', encoding='ISO-8859-1')
+df2 = pd.read_csv('Year 2010-2011.csv', encoding='ISO-8859-1')
+
+# Combine the two dataframes
+df = pd.concat([df1, df2])
+
+# Convert 'InvoiceDate' to datetime
+df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+
+# Calculate Recency, Frequency and Monetary value for each customer
+snapshot_date = df['InvoiceDate'].max() + pd.Timedelta(days=1)  # latest date in the data set plus one day
+df_rfm = df.groupby('Customer ID').agg({
+    'InvoiceDate': lambda x: (snapshot_date - x.max()).days,  # Recency
+    'Invoice': 'count',  # Frequency
+    'Price': 'sum'  # Monetary Value
+})
+
+# Rename the columns
+df_rfm.rename(columns={'InvoiceDate': 'Recency',
+                       'Invoice': 'Frequency',
+                       'Price': 'MonetaryValue'}, inplace=True)
+
+# Initialize a scaler
+scaler = StandardScaler()
+
+# Fit and transform the data
+df_rfm_normalized = scaler.fit_transform(df_rfm)
+
+# Convert the numpy array back into a pandas dataframe
+df_rfm_normalized = pd.DataFrame(df_rfm_normalized, index=df_rfm.index, columns=df_rfm.columns)
+
+df_rfm_normalized.head()
+2024-06-15 19:35:11,992 - INFO - **IPythonRunCellObservation**
+              Recency  Frequency  MonetaryValue
+Customer ID                                    
+12346.0      0.581058  -0.252281       0.036716
+12347.0     -0.948397   0.317703       0.069977
+12348.0     -0.603798  -0.243939      -0.165470
+12349.0     -0.868148   0.114733       0.519110
+12350.0      0.505529  -0.338473      -0.232180
+2024-06-15 19:35:12,094 - INFO - CodeActAgent LEVEL 0 STEP 12
+2024-06-15 19:35:20,137 - INFO - Cost: 0.51 USD | Accumulated Cost: 4.70 USD
+2024-06-15 19:35:20,137 - INFO - **IPythonRunCellAction**
+THOUGHT: The RFM features have been successfully normalized. Now, we can perform the clustering task. We'll use the KMeans algorithm from sklearn for this. But first, we need to determine the appropriate number of clusters. A common method for this is the elbow method, where we plot the sum of squared distances for different numbers of clusters and look for the "elbow" point.
+CODE:
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Calculate sum of squared distances
+ssd = []
+K = range(1,15)
+for k in K:
+    km = KMeans(n_clusters=k)
+    km = km.fit(df_rfm_normalized)
+    ssd.append(km.inertia_)
+
+# Plot sum of squared distances / Inertia
+plt.plot(K, ssd, 'bx-')
+plt.xlabel('k')
+plt.ylabel('Sum_of_squared_distances')
+plt.title('Elbow Method For Optimal k')
+plt.show()
+2024-06-15 19:35:20,672 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[1], line 2
+      1 [38;5;28;01mfrom [38;5;21;01msklearn[38;5;21;01m.[38;5;21;01mcluster [38;5;28;01mimport KMeans
+----> 2 [38;5;28;01mimport [38;5;21;01mmatplotlib[38;5;21;01m.[38;5;21;01mpyplot [38;5;28;01mas [38;5;21;01mplt
+      4 [38;5;66;03m# Calculate sum of squared distances
+      5 ssd = []
+
+ModuleNotFoundError: No module named 'matplotlib'
+2024-06-15 19:35:20,773 - INFO - CodeActAgent LEVEL 0 STEP 13
+2024-06-15 19:35:22,898 - INFO - Cost: 0.52 USD | Accumulated Cost: 5.22 USD
+2024-06-15 19:35:22,898 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems that the matplotlib library is not installed in this environment. Let's install it.
+CODE:
+%pip install matplotlib
+2024-06-15 19:35:27,644 - INFO - **IPythonRunCellObservation**
+[Package installed successfully]
+[Kernel restarted successfully to load the package]
+2024-06-15 19:35:27,745 - INFO - CodeActAgent LEVEL 0 STEP 14
+2024-06-15 19:35:33,644 - INFO - Cost: 0.53 USD | Accumulated Cost: 5.75 USD
+2024-06-15 19:35:33,645 - INFO - **IPythonRunCellAction**
+THOUGHT: Now that matplotlib is installed, let's try plotting the elbow curve again.
+CODE:
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Calculate sum of squared distances
+ssd = []
+K = range(1,15)
+for k in K:
+    km = KMeans(n_clusters=k)
+    km = km.fit(df_rfm_normalized)
+    ssd.append(km.inertia_)
+
+# Plot sum of squared distances / Inertia
+plt.plot(K, ssd, 'bx-')
+plt.xlabel('k')
+plt.ylabel('Sum_of_squared_distances')
+plt.title('Elbow Method For Optimal k')
+plt.show()
+2024-06-15 19:35:34,600 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[1], line 9
+      7 [38;5;28;01mfor k [38;5;129;01min K:
+      8     km = KMeans(n_clusters=k)
+----> 9     km = km.fit(df_rfm_normalized)
+     10     ssd.append(km.inertia_)
+     12 [38;5;66;03m# Plot sum of squared distances / Inertia
+
+NameError: name 'df_rfm_normalized' is not defined
+2024-06-15 19:35:34,702 - INFO - CodeActAgent LEVEL 0 STEP 15
+2024-06-15 19:35:53,506 - INFO - Cost: 0.59 USD | Accumulated Cost: 6.35 USD
+2024-06-15 19:35:53,506 - INFO - **IPythonRunCellAction**
+THOUGHT: It seems like the kernel was restarted after installing the matplotlib package, and we lost the data in the process. Let's load the data, calculate the RFM features, normalize them, and then plot the elbow curve again.
+CODE:
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Load the data with 'ISO-8859-1' encoding
+df1 = pd.read_csv('Year 2009-2010.csv', encoding='ISO-8859-1')
+df2 = pd.read_csv('Year 2010-2011.csv', encoding='ISO-8859-1')
+
+# Combine the two dataframes
+df = pd.concat([df1, df2])
+
+# Convert 'InvoiceDate' to datetime
+df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+
+# Calculate Recency, Frequency and Monetary value for each customer
+snapshot_date = df['InvoiceDate'].max() + pd.Timedelta(days=1)  # latest date in the data set plus one day
+df_rfm = df.groupby('Customer ID').agg({
+    'InvoiceDate': lambda x: (snapshot_date - x.max()).days,  # Recency
+    'Invoice': 'count',  # Frequency
+    'Price': 'sum'  # Monetary Value
+})
+
+# Rename the columns
+df_rfm.rename(columns={'InvoiceDate': 'Recency',
+                       'Invoice': 'Frequency',
+                       'Price': 'MonetaryValue'}, inplace=True)
+
+# Initialize a scaler
+scaler = StandardScaler()
+
+# Fit and transform the data
+df_rfm_normalized = scaler.fit_transform(df_rfm)
+
+# Convert the numpy array back into a pandas dataframe
+df_rfm_normalized = pd.DataFrame(df_rfm_normalized, index=df_rfm.index, columns=df_rfm.columns)
+
+# Calculate sum of squared distances
+ssd = []
+K = range(1,15)
+for k in K:
+    km = KMeans(n_clusters=k)
+    km = km.fit(df_rfm_normalized)
+    ssd.append(km.inertia_)
+
+# Plot sum of squared distances / Inertia
+plt.plot(K, ssd, 'bx-')
+plt.xlabel('k')
+plt.ylabel('Sum_of_squared_distances')
+plt.title('Elbow Method For Optimal k')
+plt.show()
+2024-06-15 19:35:55,548 - INFO - **IPythonRunCellObservation**
+<Figure size 640x480 with 1 Axes>
+![image](data:image/png;base64,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)
+
+2024-06-15 19:35:55,651 - INFO - CodeActAgent LEVEL 0 STEP 16
+2024-06-15 19:36:01,388 - INFO - Cost: 0.58 USD | Accumulated Cost: 6.93 USD
+2024-06-15 19:36:01,388 - INFO - **IPythonRunCellAction**
+THOUGHT: The elbow point seems to be around k=3. This means that the optimal number of clusters is 3. Let's perform KMeans clustering with k=3 and write the clustering results into a file named cluster.csv.
+CODE:
+# Perform KMeans clustering with k=3
+kmeans = KMeans(n_clusters=3)
+kmeans.fit(df_rfm_normalized)
+
+# Add the cluster labels to the original RFM dataframe
+df_rfm['Cluster'] = kmeans.labels_
+
+# Write the clustering results into a file named cluster.csv
+df_rfm.to_csv('cluster.csv')
+2024-06-15 19:36:01,936 - INFO - **IPythonRunCellObservation**
+[Code executed successfully with no output]
+2024-06-15 19:36:02,038 - INFO - CodeActAgent LEVEL 0 STEP 17
+2024-06-15 19:36:03,950 - INFO - Cost: 0.58 USD | Accumulated Cost: 7.51 USD
+2024-06-15 19:36:03,950 - INFO - **CmdRunAction**
+THOUGHT: Let's check if the 'cluster.csv' file has been created successfully.
+COMMAND:
+ls
+2024-06-15 19:36:04,120 - INFO - **CmdOutputObservation (exit code=0)**
+ README.md	      'Year 2010-2011.csv'   online_retail_II.xlsx
+'Year 2009-2010.csv'   cluster.csv
+2024-06-15 19:36:04,221 - INFO - CodeActAgent LEVEL 0 STEP 18
+2024-06-15 19:36:07,734 - INFO - Cost: 0.59 USD | Accumulated Cost: 8.10 USD
+2024-06-15 19:36:07,734 - INFO - **MessageAction** (source=None)
+CONTENT: The 'cluster.csv' file has been created successfully. The clustering results have been written into this file with the column names "Recency", "Frequency", "MonetaryValue" and "Cluster". The "Cluster" column contains the label of the cluster obtained from the clustering. The path to the result file is <solution> cluster.csv </solution>.
+2024-06-15 19:36:07,734 - INFO - **MessageAction** (source=EventSource.AGENT)
+CONTENT: The 'cluster.csv' file has been created successfully. The clustering results have been written into this file with the column names "Recency", "Frequency", "MonetaryValue" and "Cluster". The "Cluster" column contains the label of the cluster obtained from the clustering. The path to the result file is <solution> cluster.csv </solution>.
+2024-06-15 19:36:07,735 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.AWAITING_USER_INPUT
+2024-06-15 19:36:07,735 - INFO - **MessageAction** (source=EventSource.USER)
+CONTENT: /exit
+2024-06-15 19:36:07,735 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.AWAITING_USER_INPUT to AgentState.RUNNING
+2024-06-15 19:36:07,838 - INFO - CodeActAgent LEVEL 0 STEP 19
+2024-06-15 19:36:07,838 - INFO - AgentFinishAction(outputs={}, thought='', action='finish')
+2024-06-15 19:36:07,839 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.FINISHED
+2024-06-15 19:36:08,738 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.FINISHED to AgentState.STOPPED
+2024-06-15 19:36:08,738 - INFO - AgentController task was cancelled
