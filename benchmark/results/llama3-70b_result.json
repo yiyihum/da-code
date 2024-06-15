@@ -1,6 +1,6 @@
 {
-    "num_results": 183,
-    "average_score": 0.2677437733708656,
+    "num_results": 265,
+    "average_score": 0.21508343595044677,
     "results": [
         {
             "id": "dm-csv-001",
@@ -2281,6 +2281,4872 @@
                 [
                     "Python",
                     24,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-041",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "stop_outcomes_by_gender.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-041/save_results.py",
+                "./benchmark/output/llama3-70b/dm-csv-041/police_data_analysis.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-041/stop_outcomes_by_gender.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-042",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-042/merge_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-042/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head online.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head cohort_counts.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-043",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 10,
+            "result": "retention.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-043/calculate_retention.py",
+                "./benchmark/output/llama3-70b/dm-csv-043/check_columns.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-043/retention.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-044",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "average_price.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-044/script.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-044/average_price.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head online.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head average_price.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-045",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 12,
+            "result": "datasmart.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-045/rfm_calculation.py",
+                "./benchmark/output/llama3-70b/dm-csv-045/datasmart.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head datasmart.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "find . -name datasmart.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "find .. -name datasmart.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "find / -name datasmart.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -R",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-046",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-046/write_results.py",
+                "./benchmark/output/llama3-70b/dm-csv-046/result.csv",
+                "./benchmark/output/llama3-70b/dm-csv-046/calculate_volatility.py",
+                "./benchmark/output/llama3-70b/dm-csv-046/load_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-047",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-047/result.csv",
+                "./benchmark/output/llama3-70b/dm-csv-047/beta_calculator.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-048",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-048/calculate_drawdown.py",
+                "./benchmark/output/llama3-70b/dm-csv-048/read_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-048/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-050",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-050/result.csv",
+                "./benchmark/output/llama3-70b/dm-csv-050/portfolio_strategies.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Big9Returns2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-051",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "output.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-051/output.csv",
+                "./benchmark/output/llama3-70b/dm-csv-051/write_output.py",
+                "./benchmark/output/llama3-70b/dm-csv-051/read_data.py",
+                "./benchmark/output/llama3-70b/dm-csv-051/calculate_volatility.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Big9Returns2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-052",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 13,
+            "result": "The dataframe is empty. No data to process.",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-052/rfm_score.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head datamart.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    41,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    39,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-053",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "RFM_Score.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-053/rfm_score_calculator.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-053/RFM_Score.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l RFM_Score.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head datamart_rfm.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-054",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-054/result.csv",
+                "./benchmark/output/llama3-70b/dm-csv-054/read_data.py",
+                "./benchmark/output/llama3-70b/dm-csv-054/calculate_sharpe.py",
+                "./benchmark/output/llama3-70b/dm-csv-054/write_result.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-055",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-055/calculate_returns.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-055/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head FamaFrenchFactors.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-056",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 7,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-056/calculate_beta.py",
+                "./benchmark/output/llama3-70b/dm-csv-056/result.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head FamaFrenchFactors.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-057",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "purchase_summary.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-057/merge_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-057/purchase_summary.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head purchase_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head user_demographics_v1.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head purchase_summary.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-058",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-058/result.csv",
+                "./benchmark/output/llama3-70b/dm-csv-058/calculate_confidence_interval.py",
+                "./benchmark/output/llama3-70b/dm-csv-058/explore_data.py",
+                "./benchmark/output/llama3-70b/dm-csv-058/write_result.py",
+                "./benchmark/output/llama3-70b/dm-csv-058/calculate_conversion_rates.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    12,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    2,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-059",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-059/analyze_purchases.py",
+                "./benchmark/output/llama3-70b/dm-csv-059/merged_data.csv",
+                "./benchmark/output/llama3-70b/dm-csv-059/merge_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-059/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l; head result.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head purchase_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-060",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-060/result.csv",
+                "./benchmark/output/llama3-70b/dm-csv-060/script.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 purchase_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 user_demographics_paywall.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 daily_revenue.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-061",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-061/write_results.py",
+                "./benchmark/output/llama3-70b/dm-csv-061/count_private_rooms.py",
+                "./benchmark/output/llama3-70b/dm-csv-061/average_listing_price.py",
+                "./benchmark/output/llama3-70b/dm-csv-061/read_review_dates.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-061/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-062",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-062/save_result.py",
+                "./benchmark/output/llama3-70b/dm-csv-062/calculate_reduction.py",
+                "./benchmark/output/llama3-70b/dm-csv-062/load_data.py",
+                "./benchmark/output/llama3-70b/dm-csv-062/filter_data.py",
+                "./benchmark/output/llama3-70b/dm-csv-062/__pycache__/load_data.cpython-39.pyc",
+                "./benchmark/output/llama3-70b/dm-csv-062/__pycache__/filter_data.cpython-39.pyc",
+                "./benchmark/output/llama3-70b/dm-csv-062/__pycache__/calculate_reduction.cpython-39.pyc"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-062/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    5,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-064",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/dm-csv-064/filter_restaurants.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/dm-csv-064/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head businesses.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-001",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-001/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-001/check_columns.py",
+                "./benchmark/output/llama3-70b/data-sa-001/write_result.py",
+                "./benchmark/output/llama3-70b/data-sa-001/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-001/mann_whitney_test.py",
+                "./benchmark/output/llama3-70b/data-sa-001/__pycache__/mann_whitney_test.cpython-39.pyc"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    3,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "ab_test_results.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-002/write_results.py",
+                "./benchmark/output/llama3-70b/data-sa-002/eda.py",
+                "./benchmark/output/llama3-70b/data-sa-002/prepare_data.py",
+                "./benchmark/output/llama3-70b/data-sa-002/t_test.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-002/ab_test_results.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "kruskal_wallis_results.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-003/write_results.py",
+                "./benchmark/output/llama3-70b/data-sa-003/kruskal_wallis_test.py",
+                "./benchmark/output/llama3-70b/data-sa-003/load_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-003/kruskal_wallis_results.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-004",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "weather.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-004/write_results.py",
+                "./benchmark/output/llama3-70b/data-sa-004/prepare_data.py",
+                "./benchmark/output/llama3-70b/data-sa-004/check_columns.py",
+                "./benchmark/output/llama3-70b/data-sa-004/hypothesis_test.py",
+                "./benchmark/output/llama3-70b/data-sa-004/load_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-004/weather.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-005/solver.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-005/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir temp",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "find . -type f -exec grep -H '229ee8' {} \\;",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "echo '229ee8,2.0' >> result.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-006",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-006/lagrange_multiplier.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-006/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 430b63 input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    33,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "echo '430b63,0.0' >> result.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-007/solve_problem.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-007/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 739bc9 input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-008",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-008/solution.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-008/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 82e2a0 input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-009",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-009/solution.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-009/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 8ee6f3 input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "echo '8ee6f3,424.84' >> result.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-010",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-010/problem_bedda4.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-010/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 'bedda4' input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-011",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-011/solve_problem.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-011/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 246d26 input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "28",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-012/sparkle_operation.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-013",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-013/geometric_sequence_solver.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-013/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep 5277ed input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "echo '5277ed,999' >> result.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-014/solution.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-014/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "head input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "grep d7e9c9 input_without_answer.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "echo 'd7e9c9,31' >> result.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-015",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 14,
+            "result": "Task completed successfully.",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-015/analysis.py",
+                "./benchmark/output/llama3-70b/data-sa-015/fitted_polynomial_degree_10.csv",
+                "./benchmark/output/llama3-70b/data-sa-015/analysis_degree_30.py",
+                "./benchmark/output/llama3-70b/data-sa-015/histogram_polynomial_degree_10.png",
+                "./benchmark/output/llama3-70b/data-sa-015/analysis_degree_25.py",
+                "./benchmark/output/llama3-70b/data-sa-015/analysis_degree_20.py",
+                "./benchmark/output/llama3-70b/data-sa-015/analysis_degree_15.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head polynomial_values.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cp analysis.py analysis_degree_15.py; sed -i 's/degree_10/degree_15/g' analysis_degree_15.py",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    1,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cp analysis.py analysis_degree_20.py; sed -i 's/degree_10/degree_20/g' analysis_degree_20.py",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    1,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cp analysis.py analysis_degree_25.py; sed -i 's/degree_10/degree_25/g' analysis_degree_25.py",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    1,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cp analysis.py analysis_degree_30.py; sed -i 's/degree_10/degree_30/g' analysis_degree_30.py",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    1,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-016",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "polynomial_degree_10.csv, polynomial_degree_15.csv, polynomial_degree_20.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-016/analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-017",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 7,
+            "result": "Task completed successfully.",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-017/read_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-017/polynomial_degree_15.csv",
+                "./benchmark/output/llama3-70b/data-sa-017/polynomial_degree_10.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-018",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 10,
+            "result": "polynomial_degree_10.csv, polynomial_degree_15.csv, polynomial_degree_20.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-018/polynomial_analysis.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-018/polynomial_degree_20.csv",
+                "./benchmark/output/llama3-70b/data-sa-018/polynomial_degree_15.csv",
+                "./benchmark/output/llama3-70b/data-sa-018/polynomial_degree_10.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install sympy",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-019",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "turning_points.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-019/calculus_task.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-019/turning_points.csv"
+            ],
+            "actions": [
+                [
+                    "Python",
+                    33,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install sympy",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    33,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat turning_points.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-020",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "optimal_cylinder_dimensions.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-020/write_cylinder_dimensions.py",
+                "./benchmark/output/llama3-70b/data-sa-020/read_surface_area.py",
+                "./benchmark/output/llama3-70b/data-sa-020/calculate_cylinder_dimensions.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-020/optimal_cylinder_dimensions.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-021",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "inverting_amplifier_output.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-021/inverting_amplifier.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-021/inverting_amplifier_output.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l inverting_amplifier_output.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-022",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 10,
+            "result": "Task completed successfully.",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-022/read_and_calculate.py",
+                "./benchmark/output/llama3-70b/data-sa-022/write_result.py",
+                "./benchmark/output/llama3-70b/data-sa-022/read_csv.py",
+                "./benchmark/output/llama3-70b/data-sa-022/calculate_probability.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-022/probability_density_function_result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "csvkit -c 'Number_A,Number_B' probability_density_function_result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat probability_density_function_result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-023",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "Covariance matrices saved to before_covariance.csv, during_covariance.csv, and after_covariance.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-023/during_covariance.csv",
+                "./benchmark/output/llama3-70b/data-sa-023/after_covariance.csv",
+                "./benchmark/output/llama3-70b/data-sa-023/calculate_covariance.py",
+                "./benchmark/output/llama3-70b/data-sa-023/before_covariance.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat epochs_description.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "warning message"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-024",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "Successful execution. Covariance matrices saved to sample_covariance_matrix.csv and efficient_covariance_matrix.csv.",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-024/efficient_covariance_matrix.csv",
+                "./benchmark/output/llama3-70b/data-sa-024/sample_covariance_matrix.csv",
+                "./benchmark/output/llama3-70b/data-sa-024/covariance_matrices.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-025",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-025/calculate_losses.py",
+                "./benchmark/output/llama3-70b/data-sa-025/portfolio_losses.csv",
+                "./benchmark/output/llama3-70b/data-sa-025/calculate_risk_metrics.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-025/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head portfolio.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-026",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 18,
+            "result": "9.493058200572309",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-026/calculate_cvar.py",
+                "./benchmark/output/llama3-70b/data-sa-026/portfolio_losses.csv",
+                "./benchmark/output/llama3-70b/data-sa-026/daily_returns.csv",
+                "./benchmark/output/llama3-70b/data-sa-026/calculate_portfolio_losses.py",
+                "./benchmark/output/llama3-70b/data-sa-026/fit_distribution.py",
+                "./benchmark/output/llama3-70b/data-sa-026/convert_to_numeric.py",
+                "./benchmark/output/llama3-70b/data-sa-026/calculate_returns.py",
+                "./benchmark/output/llama3-70b/data-sa-026/save_daily_returns.py",
+                "./benchmark/output/llama3-70b/data-sa-026/save_portfolio_losses.py",
+                "./benchmark/output/llama3-70b/data-sa-026/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-026/load_and_save_daily_returns.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    5,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    6,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    5,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    5,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    8,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    8,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-027",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-027/calculate_cvar.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-027/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head portfolio.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    37,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    37,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-028",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-028/write_results.py",
+                "./benchmark/output/llama3-70b/data-sa-028/volatility_calculator.py",
+                "./benchmark/output/llama3-70b/data-sa-028/black_scholes_calculator.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-028/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head IBM - HistoricalQuotes.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head 'IBM - HistoricalQuotes.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-029",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 13,
+            "result": "Delta Hedge Result: 1.0707305670557734",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-029/calculate_delta_hedge_result.py",
+                "./benchmark/output/llama3-70b/data-sa-029/ibm_stock_price.csv",
+                "./benchmark/output/llama3-70b/data-sa-029/calculate_change_in_option_value.py",
+                "./benchmark/output/llama3-70b/data-sa-029/calculate_returns.py",
+                "./benchmark/output/llama3-70b/data-sa-029/calculate_volatility.py",
+                "./benchmark/output/llama3-70b/data-sa-029/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-029/calculate_delta.py",
+                "./benchmark/output/llama3-70b/data-sa-029/black_scholes.py",
+                "./benchmark/output/llama3-70b/data-sa-029/ibm_stock_returns.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat step.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install yfinance",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-030",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-030/calculate_returns.py",
+                "./benchmark/output/llama3-70b/data-sa-030/portfolio_returns.csv",
+                "./benchmark/output/llama3-70b/data-sa-030/calculate_var.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-030/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head portfolio.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-031",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-031/prepare_data.py",
+                "./benchmark/output/llama3-70b/data-sa-031/chow_test.py",
+                "./benchmark/output/llama3-70b/data-sa-031/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-031/__pycache__/load_data.cpython-39.pyc",
+                "./benchmark/output/llama3-70b/data-sa-031/__pycache__/prepare_data.cpython-39.pyc"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    36,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    40,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head mortgage_delinquency.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    44,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-032",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-032/returns.csv",
+                "./benchmark/output/llama3-70b/data-sa-032/calculate_returns.py",
+                "./benchmark/output/llama3-70b/data-sa-032/calculate_volatility.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-032/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head crisis_portfolio.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-033",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-033/data_processing.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-033/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head GE - Historical.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head 'GE - Historical.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-034",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-034/correlation.py",
+                "./benchmark/output/llama3-70b/data-sa-034/read_data.py",
+                "./benchmark/output/llama3-70b/data-sa-034/write_result.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-034/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md tips.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-035",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 10,
+            "result": "FAIL",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-035/portfolio_excess_calculator.py",
+                "./benchmark/output/llama3-70b/data-sa-035/Portfolio_Excess.csv",
+                "./benchmark/output/llama3-70b/data-sa-035/fama_french_regression.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head FamaFrenchFactors.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Big9Returns2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Portfolio_Excess.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-036",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-036/fill_results.py",
+                "./benchmark/output/llama3-70b/data-sa-036/skewness_fourth_moment.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-036/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Big9Returns2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-037",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-037/write_results.py",
+                "./benchmark/output/llama3-70b/data-sa-037/conversion_rate_calculator.py",
+                "./benchmark/output/llama3-70b/data-sa-037/z_test_calculator.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-037/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head testdata.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-038",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-038/write_result.py",
+                "./benchmark/output/llama3-70b/data-sa-038/hypothesis_test.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-038/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head men_results.csv && head women_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-039",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 11,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-039/mann_whitney_u_test.py",
+                "./benchmark/output/llama3-70b/data-sa-039/prepare_data.py",
+                "./benchmark/output/llama3-70b/data-sa-039/read_data.py",
+                "./benchmark/output/llama3-70b/data-sa-039/write_result.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-039/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    2,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-040",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "z_test_results.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-040/data_loader.py",
+                "./benchmark/output/llama3-70b/data-sa-040/write_results.py",
+                "./benchmark/output/llama3-70b/data-sa-040/z_test.py",
+                "./benchmark/output/llama3-70b/data-sa-040/data_preparation.py",
+                "./benchmark/output/llama3-70b/data-sa-040/__pycache__/data_preparation.cpython-39.pyc",
+                "./benchmark/output/llama3-70b/data-sa-040/__pycache__/data_loader.cpython-39.pyc"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-040/z_test_results.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head drug_safety.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    3,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-041",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "age_group_effects_p_value.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-041/data_loader.py",
+                "./benchmark/output/llama3-70b/data-sa-041/mann_whitney_u_test.py",
+                "./benchmark/output/llama3-70b/data-sa-041/write_p_value.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-041/age_group_effects_p_value.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pingouin",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-042",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-042/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-042/outlier_detection.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Books_df.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-043",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 3,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-043/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-043/script.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-044",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 12,
+            "result": "No correlation found",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-044/correlation.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-044/result.csv"
+            ],
+            "actions": [
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat correlation.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-045",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-045/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-045/bootstrap_sampling.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    32,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-046",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-046/calculate_mean.py",
+                "./benchmark/output/llama3-70b/data-sa-046/check_columns.py",
+                "./benchmark/output/llama3-70b/data-sa-046/read_and_calculate.py",
+                "./benchmark/output/llama3-70b/data-sa-046/read_data.py",
+                "./benchmark/output/llama3-70b/data-sa-046/confidence_interval.py",
+                "./benchmark/output/llama3-70b/data-sa-046/write_result.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-046/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    12,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-047",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-047/calculate_cvar.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-047/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head GE - Historical.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head 'GE - Historical.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-048",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-048/bootstrap_analysis.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-048/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head monthly_deaths.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-049",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-049/sharpe_ratio.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-049/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head stock_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-050",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 7,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-050/script.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-050/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l && cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    34,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-051",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 6,
+            "result": "anova_results.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-051/data_analysis.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-051/anova_results.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-052",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "bonferroni_corrected_p_values.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-052/analysis.py",
+                "./benchmark/output/llama3-70b/data-sa-052/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-052/bonferroni_correction.py",
+                "./benchmark/output/llama3-70b/data-sa-052/__pycache__/load_data.cpython-39.pyc",
+                "./benchmark/output/llama3-70b/data-sa-052/__pycache__/analysis.cpython-39.pyc"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-052/bonferroni_corrected_p_values.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    8,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-053",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-053/heritability.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-053/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    10,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    53,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-054",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-054/bootstrap.py",
+                "./benchmark/output/llama3-70b/data-sa-054/read_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 sheffield_weather_station.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    39,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    37,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-055",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-055/permutation_test.py",
+                "./benchmark/output/llama3-70b/data-sa-055/frog_tongue_fixed.csv",
+                "./benchmark/output/llama3-70b/data-sa-055/explore_frog_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-055/frog_tongue.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    4,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 15 frog_tongue.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat frog_tongue.csv | sed 's/,,/,/g' > frog_tongue_fixed.csv && python permutation_test.py",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat frog_tongue.csv | sed 's/,,/,/g' > frog_tongue_fixed.csv && python permutation_test.py",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i '15d' frog_tongue.csv && python permutation_test.py",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i '15d' frog_tongue.csv && sed -i 's/,,/,/g' frog_tongue.csv && python permutation_test.py",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i '15d' frog_tongue.csv && sed -i 's/,,/,/g' frog_tongue.csv && sed -i '/^$/d' frog_tongue.csv && python permutation_test.py",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-056",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-056/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-056/bootstrap_test.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-056/frog_tongue.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 15 frog_tongue.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat frog_tongue.csv | awk -F, 'NR==15{print NF}'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 15 frog_tongue.csv > temp.csv; cat temp.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i 's/#//' frog_tongue.csv; sed -i '1d' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat frog_tongue.csv | awk -F, 'NR==14{print NF}'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i 's/,/;/g' frog_tongue.csv; sed -i 's/;/,/g' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat frog_tongue.csv | awk -F, 'NR==14{print $0}' > temp.csv; mv temp.csv frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    32,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    36,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-057",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-057/read_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/llama3-70b/data-sa-057/frog_tongue.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head frog_tongue.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i '15d' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i '15s/,/ /g' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i '16s/,/ /g' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i '17s/,/ /g' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i '18s/,/ /g' frog_tongue.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    11,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-058",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-058/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-058/hypothesis_testing.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    34,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-059",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 11,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-059/save_result.py",
+                "./benchmark/output/llama3-70b/data-sa-059/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-059/check_columns.py",
+                "./benchmark/output/llama3-70b/data-sa-059/confidence_interval.py",
+                "./benchmark/output/llama3-70b/data-sa-059/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-059/bootstrap_resampling.py",
+                "./benchmark/output/llama3-70b/data-sa-059/__pycache__/load_data.cpython-39.pyc",
+                "./benchmark/output/llama3-70b/data-sa-059/__pycache__/bootstrap_resampling.cpython-39.pyc"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    4,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "data-sa-060",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/llama3-70b/data-sa-060/regression_analysis.py",
+                "./benchmark/output/llama3-70b/data-sa-060/result.csv",
+                "./benchmark/output/llama3-70b/data-sa-060/data.csv",
+                "./benchmark/output/llama3-70b/data-sa-060/load_data.py",
+                "./benchmark/output/llama3-70b/data-sa-060/save_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    27,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    27,
                     "execution succeeded"
                 ],
                 [

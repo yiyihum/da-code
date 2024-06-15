@@ -1,7 +1,1562 @@
 {
-    "num_results": 132,
-    "average_score": 0.1558271322195593,
+    "num_results": 163,
+    "average_score": 0.1568661438833241,
     "results": [
+        {
+            "id": "dm-csv-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "undefeated.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-001/best_fighters.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-001/undefeated.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-001/load_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-001/undefeated.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-002/result.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-002/check_column_names.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-002/count_students.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "The top five most common educational qualifications for both mothers and fathers are 1, 22, 13, 23, and 3.",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-003/top_qualifications.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-003/analyze.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat top_qualifications.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 16,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-004/allGames.db",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-004/create_database.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-004/allGames.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-004/check_column_names.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-004/count_games.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-004/combine_datasets.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT City, Edition, COUNT(DISTINCT Event) AS Total_Events FROM allGames GROUP BY City, Edition",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    12,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT City, Edition, COUNT(DISTINCT Event) AS Total_Events FROM allGames GROUP BY City, Edition",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT City, Edition, COUNT(DISTINCT Event) AS Total_Events FROM allGames GROUP BY City, Edition",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT City, Edition, COUNT(DISTINCT Event) AS Total_Events FROM allGames GROUP BY City, Edition",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT City, Edition, COUNT(DISTINCT Event) AS Total_Events FROM allGames GROUP BY City, Edition",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT City, Edition, COUNT(DISTINCT Event) AS Total_Events FROM allGames GROUP BY City, Edition",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-005",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-005/result.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-005/count_age.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat age.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "FAIL",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "find / -name BikeStore.sqlite 2>/dev/null",
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-007",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 3,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-007/result.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-007/get_popular_movies.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-008",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-008/calculate_correlation.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.d",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 correlation_results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-009",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 11,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat books_df.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat books_df.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat books_df.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-010",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT category, AVG(units_sold) FROM sales GROUP BY category",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-011",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mv sql.png bike_store.db",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM orders",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "file bike_store.db",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "rm bike_store.db",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "wget https://raw.githubusercontent.com/JeffSackmann/ten-thousand-bikes/master/bike_store.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/blob/master/bike_store.sqlite?raw=true",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/raw/master/bike_store.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/blob/master/bike_store.sqlite?raw=true",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/raw/master/bike_store.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/blob/master/bike_store.sqlite?raw=true",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/raw/master/bike_store.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/blob/master/bike_store.sqlite?raw=true",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.githubassets.com/images/icons/footer/github-mark.png",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/raw/master/bike_store.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/blob/master/bike_store.sqlite?raw=true",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/raw/master/bike_store.sqlite",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/blob/master/bike_store.sqlite?raw=true",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://github.com/JeffSackmann/ten-thousand-bikes/raw/master/bike_store.sqlite",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-013",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-013/analysis.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-013/result.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat BMI.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-015/write_results.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-015/result.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-015/analyze_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-015/analyze_csv.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls *.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-016",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "No games hosted by 'IT1' and 'BESC' in the dataset.",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-016/result.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-016/analyze_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    1,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    6,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-017",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 7,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-017/calculate_nps.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat data_standard.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-018",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir -p /workspace/data && cd /workspace/data",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-019",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-019/result.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-019/calculate_stats.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-020",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-020/data.db",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-020/data.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-020/read_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-020/convert_to_sqlite.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(Churn) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "execution succeeded"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(Churn) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(data)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT city, AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) as churn_rate FROM data GROUP BY city ORDER BY churn_rate DESC LIMIT 10",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM data LIMIT 10",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-021",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-021/analyze.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-021/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    23,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-022",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-022/read_data.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/dm-csv-022/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
         {
             "id": "plot-bar-001",
             "total_score": 0.0,
@@ -3446,6 +5001,802 @@
                     "scale_data": true,
                     "figsize": true,
                     "graph_title": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-005",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-005/analysis.py"
+            ],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    5,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-006",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 9,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-006/count_sightings.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-006/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 6,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 6,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-008/brazilian-delivery-center?select=orders.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-pie-008/readme.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    2,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "wget https://www.kaggle.com/nosbielcs/brazilian-delivery-center?select=orders.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-001/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-001/analyze.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    7,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": false,
+                    "x_label": false,
+                    "y_label": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 19,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-002/odds_series.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-002/calculate_match_results.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-002/check_column_names.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-002/read_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 3,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-003/plot.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-003/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l | grep result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-004",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 17,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-004/plot_data.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-004/result.png",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-004/filtered_data.csv",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-004/filter_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cd ../",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    12,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-005/check_columns.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-005/calculate_correlation.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-005/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat standard.txt",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-006",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.jpg",
+            "added_files": [
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-006/result.jpg",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-006/analysis.py",
+                "./benchmark/output/deepseek-coder-33b-instruct/plot-scatter-006/data/amazon_books.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "mkdir data && mv Books_df.csv data/amazon_books.csv",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
                     "score": 1.0,
                     "file": [
                         "result.jpg",

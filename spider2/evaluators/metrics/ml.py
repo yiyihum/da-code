@@ -126,7 +126,7 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
     if not len(result) == 1:
         raise ValueError("Just need one result csv file")
     result = result[0]
-    expected = [file for file in expected if os.path.basename(file) == os.path.basename(result)]
+    # expected = [file for file in expected if os.path.basename(file) == os.path.basename(result)]
     if len(expected) != 1:
         raise ValueError(f"Can't find gold csv file {os.path.basename(result)}")
     expected = expected[0]

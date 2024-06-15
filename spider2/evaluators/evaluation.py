@@ -70,9 +70,9 @@ class Evaluator:
         # expected = result    
         # import pdb; pdb.set_trace()
         output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
-        if not output_results:
-            output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
+        if len(output_results) != len(gold_results):
+            output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\

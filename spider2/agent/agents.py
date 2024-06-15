@@ -206,6 +206,7 @@ class PromptAgent:
         obs = "You are in the folder now."
         retry_count = 0
         last_action = None
+        repeat_action = False
         while not done and step_idx < self.max_steps:
 
             _, action = self.predict(
@@ -221,10 +222,15 @@ class PromptAgent:
             else:
                 logger.info("Step %d: %s", step_idx + 1, action)
                 if last_action is not None and last_action == action:
-                    obs = "The action is the same as the last one, please provide a different action."
+                    if repeat_action:
+                        return False, "ERROR: Repeated action"
+                    else:
+                        obs = "The action is the same as the last one, please provide a different action."
+                        repeat_action = True
                 else:
                     obs, done = self.env.step(action)
                     last_action = action
+                    repeat_action = False
 
             if done:
                 if isinstance(action, Terminate):

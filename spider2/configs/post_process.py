@@ -43,7 +43,10 @@ class PlotPy:
     def find_plt_py(mnt_dir: str):
         py_files = [os.path.join(mnt_dir, py_path) for py_path in os.listdir(mnt_dir) \
                 if os.path.isfile(os.path.join(mnt_dir, py_path)) and py_path.endswith('.py')]
-        assert len(py_files) > 0, f"{mnt_dir} contains no py files"
+        # assert len(py_files) > 0, f"{mnt_dir} contains no py files"
+        if len(py_files) == 0:
+            logger.error(f"{mnt_dir} contains no py files")
+            return []
 
         '''
         Find the py file used to generate the result image

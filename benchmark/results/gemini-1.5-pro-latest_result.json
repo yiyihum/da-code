@@ -1,6 +1,6 @@
 {
-    "num_results": 259,
-    "average_score": 0.3237145003104784,
+    "num_results": 262,
+    "average_score": 0.3200078457267706,
     "results": [
         {
             "id": "dm-csv-001",
@@ -265,6 +265,69 @@
                     "Python",
                     16,
                     "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-008",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "Please provide valid URLs for the files or upload the files.",
+            "added_files": [
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-008/calculate_correlation.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-008/Income_Statement.xlsx",
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-008/Balance_Sheet.xlsx"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "echo 'Balance Sheet' && head -n 2 Balance_Sheet.xlsx && echo '\\nIncome Statement' && head -n 2 Income_Statement.xlsx",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "curl -O https://cdn.discordapp.com/attachments/1129796523208503367/1131134569699196989/Balance_Sheet.xlsx && curl -O https://cdn.discordapp.com/attachments/1129796523208503367/1131134570983927888/Income_Statement.xlsx",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "wget https://cdn.discordapp.com/attachments/1129796523208503367/1131134569699196989/Balance_Sheet.xlsx && wget https://cdn.discordapp.com/attachments/1129796523208503367/1131134570983927888/Income_Statement.xlsx",
+                    "standard output"
                 ],
                 [
                     "Terminate",
@@ -706,6 +769,63 @@
                 [
                     "Python",
                     40,
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-017",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-017/calculate_nps.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-017/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat data_standard.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head 2020Q4_nps_email.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head 1 2020Q4_nps_mobile.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    33,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
                     ""
                 ]
             ],
@@ -4875,6 +4995,48 @@
                     "Python",
                     12,
                     "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": []
+        },
+        {
+            "id": "dm-csv-062",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.csv",
+            "added_files": [
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-062/calculate_average_reduction.py"
+            ],
+            "changed_files": [
+                "./benchmark/output/gemini-1.5-pro-latest/dm-csv-062/result.csv"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head monthly_deaths.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat result.csv",
+                    "standard output"
                 ],
                 [
                     "Terminate",
@@ -11538,7 +11700,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['text', 'index', 'company']"
+                        "result csv columns are different from gold csv: ['index', 'company', 'text']"
                     ],
                     "score": 0.0,
                     "metric": "f1",
@@ -15920,7 +16082,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['title', 'sponsored', 'remote_allowed', 'job_id', 'expiry', 'currency', 'posting_domain', 'applies', 'description', 'min_salary', 'max_salary', 'formatted_work_type', 'med_salary', 'listed_time', 'application_type', 'closed_time', 'company_id', 'views', 'original_listed_time', 'work_type', 'job_posting_url', 'pay_period', 'location', 'skills_desc', 'application_url', 'compensation_type', 'company_name']"
+                        "result csv columns are different from gold csv: ['sponsored', 'job_id', 'application_url', 'currency', 'pay_period', 'work_type', 'compensation_type', 'company_name', 'description', 'skills_desc', 'closed_time', 'application_type', 'title', 'max_salary', 'location', 'job_posting_url', 'original_listed_time', 'views', 'listed_time', 'remote_allowed', 'min_salary', 'formatted_work_type', 'med_salary', 'company_id', 'posting_domain', 'applies', 'expiry']"
                     ],
                     "score": 0.6655913442711576,
                     "metric": "f1",
