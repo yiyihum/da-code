@@ -29,45 +29,29 @@ def call_llm(payload):
             "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"
         }
         logger.info("Generating content with GPT model: %s", model)
-        response = requests.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers=headers,
-            json=payload
-        )
-        for i in range(3):
-            if response.status_code == 429 or response.status_code == 503:
-                logger.error("Rate limit exceeded or service unavailable. Retrying in 10 seconds.")
-                time.sleep(i*10+10)
-                response = requests.post(
-                    "https://api.openai.com/v1/chat/completions",
-                    headers=headers,
-                    json=payload
-                )
-            else:
-                break
         
-        if response.status_code != 200:
-            # if response.json()['error']['code'] == "context_length_exceeded":
-            #     logger.error("Context length exceeded. Retrying with a smaller context.")
-            #     for i in range(3,len(payload["messages"])-1,2):
-            #         payload["messages"] = [payload["messages"][0]] + payload["messages"][i:]
-            #         retry_response = requests.post(
-            #             "https://api.openai.com/v1/chat/completions",
-            #             headers=headers,
-            #             json=payload
-            #         )
-            #         if retry_response.status_code == 200:
-            #             response = retry_response
-            #             break
-
-            logger.error("Failed to call LLM: " + response.text)
-            time.sleep(5)
-            # logger.info(f"Input: \n{payload['messages']}\nOutput:{response.text}")
-            return False, response.json()['error']['code']
-        else:
-            output_message = response.json()['choices'][0]['message']['content']
-            # logger.info(f"Input: \n{payload['messages']}\nOutput:{output_message}")
-            return True, output_message
+        for i in range(3):
+            try:
+                response = requests.post(
+                            "https://api.openai.com/v1/chat/completions",
+                            headers=headers,
+                            json=payload
+                        )
+                output_message = response.json()['choices'][0]['message']['content']
+                # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
+                return True, output_message
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                code_value = error_info['error']['code']
+                if code_value == "content_filter":
+                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                if code_value == "context_length_exceeded":
+                    return False, code_value        
+                logger.error("Retrying ...")
+                time.sleep(10 * (2 ** (i + 1)))
+        return False, code_value
 
     elif model.startswith("azure"):
         

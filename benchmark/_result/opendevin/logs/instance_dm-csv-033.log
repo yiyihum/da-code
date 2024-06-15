@@ -1,0 +1,334 @@
+2024-06-15 19:01:30,735 - INFO - SSHBox is running as opendevin user with USER_ID=501 in the sandbox
+2024-06-15 19:01:30,745 - INFO - Detected initial session.
+2024-06-15 19:01:30,746 - INFO - Creating new Docker container
+2024-06-15 19:01:30,747 - WARNING - Using port forwarding for Mac OS. Server started by OpenDevin will not be accessible from the host machine at the moment. See https://github.com/OpenDevin/OpenDevin/issues/897 for more information.
+2024-06-15 19:01:30,747 - INFO - Mounting workspace directory: /Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/workspace
+2024-06-15 19:01:30,747 - INFO - Mounting volumes: {'/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/workspace': {'bind': '/workspace', 'mode': 'rw'}, '/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/cache': {'bind': '/home/opendevin/.cache', 'mode': 'rw'}}
+2024-06-15 19:01:30,747 - INFO - Mounting workspace directory: /Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/workspace
+2024-06-15 19:01:30,861 - INFO - Container started
+2024-06-15 19:01:31,869 - INFO - waiting for container to start: 1, container status: running
+2024-06-15 19:01:32,111 - INFO - Connecting to SSH session...
+2024-06-15 19:01:32,111 - INFO - You can debug the SSH connection by running: `ssh -v -p 52579 opendevin@localhost` using the password 'aa3a2ce0-915b-4ad5-a4fa-ffcc1642f6b4'
+2024-06-15 19:01:33,420 - INFO - Connected to SSH session
+2024-06-15 19:01:34,440 - INFO - Loading llm config from gpt4-eval
+2024-06-15 19:01:34,441 - INFO - Running agent CodeActAgent (model: gpt-4-32k, llm_config: ./config.toml) with task: "Please fix the following issue.
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+Please encapsulate your final answer (answer ONLY) within <solution> and </solution>.
+files in the environment are sufficient to support completion of the task, and you must not and are not allowed to search the internet.The README.md or task description may not be accurate regarding the dataset. You need to check the file contents before proceeding.Please encapsulate your final answer (answer ONLY) within <solution> and </solution>. For example: The result file path to the question is <solution> result.csv </solution>.# Problem 
+This is a dataset titled “Mobile-Games-Testing-with-Cookie-Cats,” with detailed descriptions provided in the README.md file. Your task is to compare the 1-day retention rates between two versions of a game (gate_30 and gate_40) according to the instructions in guidance.txt. Calculate the probability (expressed as a decimal) that the retention rate is higher for gate_30 and record the result in the probability_greater_retention.csv file using the provided template.
+
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+When you think you have solved the question, please first send your answer to user through message and then exit.
+"
+2024-06-15 19:01:34,441 - INFO - Initializing LLM with model: gpt-4-32k
+2024-06-15 19:01:34,443 - INFO - Initializing plugins in the sandbox
+2024-06-15 19:01:34,686 - INFO - Copied files from [/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/opendevin/runtime/plugins/agent_skills] to [/opendevin/plugins/agent_skills] inside sandbox.
+2024-06-15 19:01:34,686 - INFO - Initializing plugin [agent_skills] by executing [/opendevin/plugins/agent_skills/setup.sh] in the sandbox.
+2024-06-15 19:01:41,097 - INFO - Plugin agent_skills initialized successfully
+2024-06-15 19:01:41,130 - INFO - Copied files from [/Users/stewiepeter/Desktop/VsProjects/DA-500/OpenDevin/opendevin/runtime/plugins/jupyter] to [/opendevin/plugins/jupyter] inside sandbox.
+2024-06-15 19:01:41,130 - INFO - Initializing plugin [jupyter] by executing [/opendevin/plugins/jupyter/setup.sh] in the sandbox.
+2024-06-15 19:01:56,557 - INFO - Plugin jupyter initialized successfully
+2024-06-15 19:01:56,723 - INFO - Sourced ~/.bashrc successfully
+2024-06-15 19:01:56,723 - INFO - Starting browser env...
+2024-06-15 19:02:56,732 - WARNING - Failed to start browser environment, web browsing functionality will not work
+2024-06-15 19:02:56,735 - INFO - **MessageAction** (source=EventSource.USER)
+CONTENT: Please fix the following issue.
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+Please encapsulate your final answer (answer ONLY) within <solution> and </solution>.
+files in the environment are sufficient to support completion of the task, and you must not and are not allowed to search the internet.The README.md or task description may not be accurate regarding the dataset. You need to check the file contents before proceeding.Please encapsulate your final answer (answer ONLY) within <solution> and </solution>. For example: The result file path to the question is <solution> result.csv </solution>.# Problem 
+This is a dataset titled “Mobile-Games-Testing-with-Cookie-Cats,” with detailed descriptions provided in the README.md file. Your task is to compare the 1-day retention rates between two versions of a game (gate_30 and gate_40) according to the instructions in guidance.txt. Calculate the probability (expressed as a decimal) that the retention rate is higher for gate_30 and record the result in the probability_greater_retention.csv file using the provided template.
+
+IMPORTANT: You should ONLY interact with the environment provided to you AND NEVER ASK FOR HUMAN HELP.
+When you think you have solved the question, please first send your answer to user through message and then exit.
+
+2024-06-15 19:02:56,735 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+2024-06-15 19:02:56,736 - INFO - [Agent Controller default] Starting step loop...
+2024-06-15 19:02:56,736 - INFO - CodeActAgent LEVEL 0 STEP 0
+2024-06-15 19:02:59,389 - INFO - Cost: 0.21 USD | Accumulated Cost: 0.21 USD
+2024-06-15 19:02:59,389 - INFO - **MessageAction** (source=None)
+CONTENT: Let's start by checking the contents of the guidance.txt file to understand the instructions for the task. I will also check the README.md file to understand the dataset. Let's also check the template of the probability_greater_retention.csv file.
+2024-06-15 19:02:59,389 - INFO - **MessageAction** (source=EventSource.AGENT)
+CONTENT: Let's start by checking the contents of the guidance.txt file to understand the instructions for the task. I will also check the README.md file to understand the dataset. Let's also check the template of the probability_greater_retention.csv file.
+2024-06-15 19:02:59,389 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.AWAITING_USER_INPUT
+2024-06-15 19:02:59,390 - INFO - **MessageAction** (source=EventSource.USER)
+CONTENT: Please continue working on the task on whatever approach you think is suitable.
+If you think you have solved the task, please first send your answer to user through message and then <execute_bash> exit </execute_bash>.
+Please encapsulate your final answer (answer ONLY) within <solution> and </solution>.
+For example: The answer to the question is <solution> 42 </solution>.
+IMPORTANT: YOU SHOULD NEVER ASK FOR HUMAN HELP.
+
+2024-06-15 19:02:59,390 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.AWAITING_USER_INPUT to AgentState.RUNNING
+2024-06-15 19:02:59,492 - INFO - CodeActAgent LEVEL 0 STEP 1
+2024-06-15 19:03:02,356 - INFO - Cost: 0.22 USD | Accumulated Cost: 0.44 USD
+2024-06-15 19:03:02,356 - INFO - **CmdRunAction**
+THOUGHT: Let's start by checking the contents of the guidance.txt file. I will also check the README.md file to understand the dataset. Let's also check the template of the probability_greater_retention.csv file.
+COMMAND:
+cat guidance.txt
+cat README.md
+cat probability_greater_retention.csv
+2024-06-15 19:03:02,892 - INFO - **CmdOutputObservation (exit code=0)**
+1. **Data Preparation**:
+    - Organize the bootstrap-generated 1-day retention data into a DataFrame, containing data for two A/B test groups: `gate_30` and `gate_40`.
+
+2. **Calculate Percentage Difference**:
+    - Use the formula \((\text{gate\_30} - \text{gate\_40}) / \text{gate\_40} \times 100\) to calculate the percentage difference in 1-day retention between the `gate_30` and `gate_40` versions for each bootstrap sample, and store the results in a new column.
+
+3. **Plot Kernel Density Estimate (KDE) of the Differences**:
+    - Plot the distribution of the percentage differences using Kernel Density Estimate (KDE) to visually represent the retention rate differences between the two versions.
+
+4. **Calculate Probability**:
+    - Compute the probability that the 1-day retention rate is higher for the `gate_30` version than for the `gate_40` version. This is done by calculating the proportion of bootstrap samples where the percentage difference is greater than 0, using the formula \(\frac{\text{sum}(\text{diff} > 0)}{\text{len}(\text{diff})}\).
+
+5. **Format Result**:
+    - Format the computed probability as a percentage with one decimal place for clear presentation.
+
+6. **Save Result**:
+    - Save the computed probability value to a CSV file for further analysis or reporting purposes.
+
+This process uses the bootstrap method to compare the 1-day retention rates of the two versions, calculates the difference, and evaluates the likelihood that the `gate_30` version has a higher retention rate than the `gate_40` version.
+# Mobile-Games-A-B-Testing-with-Cookie-Cats
+
+Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three" style puzzle game 
+where the player must connect tiles of the same color in order to clear the board and win the level. It also features singing cats. Use
+URL below to view a trailer of the game:7
+
+https://youtu.be/GaP5f0jVTWE
+
+As players progress through the game they will encounter gates that force them to wait some time before they can progress or make an 
+in-app purchase. In this project, we will analyze the result of an AB-test where the first gate in Cookie Cats was moved from level 30 to 
+level 40. In particular, we will analyze the impact on player retention.
+
+## 8. The probability of a difference
+<p><img src="https://s3.amazonaws.com/assets.datacamp.com/production/project_184/img/ziggy_smiling.png" style="width:200px; float:left"> </p>
+<p>From this chart, we can see that the most likely % difference is around 1% - 2%, and that most of the distribution is above 0%, in favor of a gate at level 30. But what is the <em>probability</em> that the difference is above 0%? Let's calculate that as well.</p>
+probability
+
+2024-06-15 19:03:02,995 - INFO - CodeActAgent LEVEL 0 STEP 2
+2024-06-15 19:03:11,267 - INFO - Cost: 0.29 USD | Accumulated Cost: 0.72 USD
+2024-06-15 19:03:11,267 - INFO - **IPythonRunCellAction**
+THOUGHT: The guidance.txt file provides a step-by-step guide on how to approach the task. It suggests using the bootstrap method to compare the 1-day retention rates of the two versions, calculate the difference, and evaluate the likelihood that the `gate_30` version has a higher retention rate than the `gate_40` version.
+
+The README.md file provides a brief description of the dataset and the context of the task. It mentions that the dataset is from an A/B test where the first gate in the game Cookie Cats was moved from level 30 to level 40. The task is to analyze the impact of this change on player retention.
+
+The probability_greater_retention.csv file currently only contains the header "probability".
+
+Let's now check the contents of the dataset. I will load the dataset and perform an initial exploration to understand its structure and contents.
+CODE:
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('cookie_cats.csv')
+
+# Display the first few rows of the dataset
+data.head()
+2024-06-15 19:03:11,827 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 import pandas as pd
+      3 # Load the dataset
+      4 data = pd.read_csv('cookie_cats.csv')
+
+ModuleNotFoundError: No module named 'pandas'
+2024-06-15 19:03:11,929 - INFO - CodeActAgent LEVEL 0 STEP 3
+2024-06-15 19:03:13,827 - INFO - Cost: 0.28 USD | Accumulated Cost: 1.01 USD
+2024-06-15 19:03:13,827 - INFO - **CmdRunAction**
+THOUGHT: It seems that the pandas library is not installed in this environment. I will install it now.
+COMMAND:
+pip install pandas
+2024-06-15 19:03:16,801 - INFO - **CmdOutputObservation (exit code=0)**
+Package installed successfully
+2024-06-15 19:03:16,902 - INFO - CodeActAgent LEVEL 0 STEP 4
+2024-06-15 19:03:19,765 - INFO - Cost: 0.29 USD | Accumulated Cost: 1.30 USD
+2024-06-15 19:03:19,766 - INFO - **IPythonRunCellAction**
+THOUGHT: Now that pandas is installed, let's load the dataset and perform an initial exploration to understand its structure and contents.
+CODE:
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('cookie_cats.csv')
+
+# Display the first few rows of the dataset
+data.head()
+2024-06-15 19:03:20,442 - INFO - **IPythonRunCellObservation**
+   userid  version  sum_gamerounds  retention_1  retention_7
+0     116  gate_30               3        False        False
+1     337  gate_30              38         True        False
+2     377  gate_40             165         True        False
+3     483  gate_40               1        False        False
+4     488  gate_40             179         True         True
+2024-06-15 19:03:20,544 - INFO - CodeActAgent LEVEL 0 STEP 5
+2024-06-15 19:03:34,533 - INFO - Cost: 0.34 USD | Accumulated Cost: 1.64 USD
+2024-06-15 19:03:34,533 - INFO - **IPythonRunCellAction**
+THOUGHT: The dataset contains the following columns:
+
+- `userid`: A unique identifier for each player.
+- `version`: The version of the game that the player was assigned to, either `gate_30` or `gate_40`.
+- `sum_gamerounds`: The number of game rounds played by the player during the first week after installation.
+- `retention_1`: Did the player come back and play 1 day after installing?
+- `retention_7`: Did the player come back and play 7 days after installing?
+
+The `retention_1` column is the one we are interested in for this task, as we are comparing the 1-day retention rates between the two versions of the game.
+
+Let's now follow the steps outlined in the guidance.txt file. The first step is to organize the bootstrap-generated 1-day retention data into a DataFrame, containing data for two A/B test groups: `gate_30` and `gate_40`.
+
+To do this, I will create two separate DataFrames for the `gate_30` and `gate_40` groups, and calculate the 1-day retention rate for each group. The 1-day retention rate is the proportion of players who came back and played 1 day after installing. This can be calculated as the mean of the `retention_1` column, since this column contains boolean values (`True` for players who returned and `False` for players who didn't).
+CODE:
+# Create separate dataframes for the two groups
+gate_30 = data[data['version'] == 'gate_30']
+gate_40 = data[data['version'] == 'gate_40']
+
+# Calculate 1-day retention rate for each group
+retention_rate_30 = gate_30['retention_1'].mean()
+retention_rate_40 = gate_40['retention_1'].mean()
+
+retention_rate_30, retention_rate_40
+2024-06-15 19:03:35,021 - INFO - **IPythonRunCellObservation**
+(0.4481879194630872, 0.44228274967574577)
+2024-06-15 19:03:35,124 - INFO - CodeActAgent LEVEL 0 STEP 6
+2024-06-15 19:03:50,076 - INFO - Cost: 0.37 USD | Accumulated Cost: 2.00 USD
+2024-06-15 19:03:50,077 - INFO - **IPythonRunCellAction**
+THOUGHT: The 1-day retention rate for the `gate_30` version is approximately 0.448 (or 44.8%), and for the `gate_40` version is approximately 0.442 (or 44.2%).
+
+The next step in the guidance.txt file is to use the bootstrap method to generate a large number of samples of the 1-day retention rate for each group, and calculate the percentage difference between the two groups for each sample.
+
+The bootstrap method involves generating samples from the original data with replacement. For each sample, we calculate the 1-day retention rate and the percentage difference between the two groups. This will give us a distribution of the percentage differences, which we can use to estimate the probability that the 1-day retention rate is higher for the `gate_30` version than for the `gate_40` version.
+
+Let's perform the bootstrap sampling and calculate the percentage differences.
+CODE:
+import numpy as np
+
+# Initialize a list to store the percentage differences
+percentage_differences = []
+
+# Perform bootstrap sampling
+for i in range(10000):
+    # Generate a bootstrap sample from each group
+    bootstrap_30 = gate_30['retention_1'].sample(n=len(gate_30), replace=True)
+    bootstrap_40 = gate_40['retention_1'].sample(n=len(gate_40), replace=True)
+    
+    # Calculate the 1-day retention rate for each sample
+    retention_rate_30 = bootstrap_30.mean()
+    retention_rate_40 = bootstrap_40.mean()
+    
+    # Calculate the percentage difference and add it to the list
+    percentage_difference = (retention_rate_30 - retention_rate_40) / retention_rate_40 * 100
+    percentage_differences.append(percentage_difference)
+
+# Convert the list to a numpy array
+percentage_differences = np.array(percentage_differences)
+
+percentage_differences
+2024-06-15 19:03:59,114 - INFO - **IPythonRunCellObservation**
+array([1.54749167, 1.40547088, 0.92456594, ..., 1.40255306, 0.55959109,
+       2.37361517])
+2024-06-15 19:03:59,216 - INFO - CodeActAgent LEVEL 0 STEP 7
+2024-06-15 19:04:06,982 - INFO - Cost: 0.36 USD | Accumulated Cost: 2.37 USD
+2024-06-15 19:04:06,982 - INFO - **IPythonRunCellAction**
+THOUGHT: We have successfully generated a distribution of the percentage differences in 1-day retention between the `gate_30` and `gate_40` versions using bootstrap sampling.
+
+The next step in the guidance.txt file is to plot the distribution of the percentage differences using Kernel Density Estimate (KDE) to visually represent the retention rate differences between the two versions.
+
+Let's plot the KDE of the percentage differences.
+CODE:
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plot the KDE of the percentage differences
+sns.kdeplot(percentage_differences)
+plt.xlabel('Percentage Difference in 1-Day Retention')
+plt.ylabel('Density')
+plt.title('KDE of Percentage Differences in 1-Day Retention')
+plt.show()
+2024-06-15 19:04:07,509 - INFO - **IPythonRunCellObservation**
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 import matplotlib.pyplot as plt
+      2 import seaborn as sns
+      4 # Plot the KDE of the percentage differences
+
+ModuleNotFoundError: No module named 'matplotlib'
+2024-06-15 19:04:07,612 - INFO - CodeActAgent LEVEL 0 STEP 8
+2024-06-15 19:04:09,737 - INFO - Cost: 0.36 USD | Accumulated Cost: 2.73 USD
+2024-06-15 19:04:09,738 - INFO - **CmdRunAction**
+THOUGHT: It seems that the matplotlib and seaborn libraries are not installed in this environment. I will install them now.
+COMMAND:
+pip install matplotlib seaborn
+2024-06-15 19:04:15,607 - INFO - **CmdOutputObservation (exit code=0)**
+Package installed successfully
+2024-06-15 19:04:15,708 - INFO - CodeActAgent LEVEL 0 STEP 9
+2024-06-15 19:04:20,387 - INFO - Cost: 0.37 USD | Accumulated Cost: 3.11 USD
+2024-06-15 19:04:20,388 - INFO - **IPythonRunCellAction**
+THOUGHT: Now that matplotlib and seaborn are installed, let's plot the KDE of the percentage differences.
+CODE:
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plot the KDE of the percentage differences
+sns.kdeplot(percentage_differences)
+plt.xlabel('Percentage Difference in 1-Day Retention')
+plt.ylabel('Density')
+plt.title('KDE of Percentage Differences in 1-Day Retention')
+plt.show()
+2024-06-15 19:04:21,089 - INFO - **IPythonRunCellObservation**
+<Figure size 640x480 with 1 Axes>
+![image](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjcAAAHHCAYAAABDUnkqAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAB1aUlEQVR4nO3dd3hTZf8G8DtJ23TvSSe0rDJaKFCmgBSqshHFCVRFfwq+KkPFAW5EEfH1RVCUKbwgQ3Gy+jJkz7JXS1sKdJfunTy/P9JEQgfdJ03uz3Xlkp6cc/JNckzunOd5ziMTQggQERERGQm51AUQERERNSaGGyIiIjIqDDdERERkVBhuiIiIyKgw3BAREZFRYbghIiIio8JwQ0REREaF4YaIiIiMCsMNERERGRWGG2py5eXleP311+Hr6wu5XI4xY8ZIXRI1gYSEBMhkMqxcuVJv+bZt2xAaGgpLS0vIZDJkZ2cDANasWYMOHTrA3Nwcjo6OzV5vSxMQEIDJkydLXQZJTCaT4b333pO6DIPHcGPAVq5cCZlMhuPHj+stz8nJQa9evWBpaYlt27YBAN577z3IZDLdzdraGn5+fhg5ciRWrFiBkpKSSvufPHmy3jZ33iwtLRvteSxfvhyff/45xo8fj1WrVuG1116rdt1Bgwbp1eHs7IyePXti+fLlUKvVjVaTVNatW4dFixZJXUat3Pk+mJmZwdnZGWFhYXjllVdw4cKFWu0jMzMTjz76KKysrLB48WKsWbMGNjY2uHTpEiZPnozAwEAsW7YM3333XRM/G7pbcnIy3nzzTQwePBh2dnaQyWTYs2dPnfbRGMdIUwgICNCrzcbGBr169cLq1avrvc9vvvmmUnBvKn/++ScDTAOZSV0A1U1ubi6GDRuGM2fO4Oeff8YDDzygd/+SJUtga2uLkpIS3Lx5E9u3b8czzzyDRYsW4ffff4evr6/e+kqlEt9//32lx1EoFI1W8//+9z94e3vjyy+/rNX6Pj4+mDdvHgAgPT0dq1evxrPPPosrV67g008/bbS6pLBu3TqcO3cOr776qtSl1MrQoUMxceJECCGQk5OD06dPY9WqVfjmm28wf/58TJ8+Xbeuv78/ioqKYG5urlt27Ngx5OXl4cMPP0RERIRu+Z49e6BWq/HVV18hKCioWZ9TS3X58mXI5Y33e/Ty5cuYP38+2rZtiy5duuDQoUP12k9djpHmFBoaihkzZgDQBLnvv/8ekyZNQklJCaZMmVLn/X3zzTdwdXVtlrNnf/75JxYvXlxlwCkqKoKZGb+670mQwVqxYoUAII4dOyaEECI3N1f07t1bWFhYiN9//11v3blz5woAIj09vdJ+fvzxRyGXy0V4eLje8kmTJgkbG5umewIVBg8eLDp16lSrdQcOHFhp3YKCAuHj4yNsbGxEaWlpg2opKysTJSUlDdpHQwwfPlz4+/tL9vh1AUBMnTq10vKMjAzRp08fAUD88ccfNe5j1apVesew1vvvv1/t8Vpf+fn5jbYvU5CbmysyMzOFEEJs3LhRABC7d++u0z4a4xhpCv7+/mL48OF6y9LS0oStra3o2LFjvfbZqVMnMXDgwEao7t6mTp0q+PXcMGyWaiHy8/PxwAMP4OTJk9i8eTOGDx9e622ffPJJPPfcczhy5Ah27tzZaDUVFBRgxowZ8PX1hVKpRPv27bFgwQKIionmtX0wdu/ejfPnz+tOEdf11Le1tTV69+6NgoICpKenAwCys7Px6quv6h47KCgI8+fP12u60j7+ggULsGjRIgQGBkKpVOpOl1+6dAmPPvoo3NzcYGVlhfbt2+Ptt9/We+ybN2/imWeegYeHB5RKJTp16oTly5frrbNnzx7IZDL89NNP+Pjjj+Hj4wNLS0sMGTIEsbGxuvUGDRqEP/74A4mJibrXIiAgAABQWlqKOXPmICwsDA4ODrCxscGAAQOwe/fuSq9HZmYmnn76adjb28PR0RGTJk3C6dOnq+zvcunSJYwfPx7Ozs6wtLREjx498Ouvv9bp9b+bi4sL1q9fDzMzM3z88ce65Xf3uRk0aBAmTZoEAOjZsydkMhkmT56MgIAAzJ07FwDg5uZWqQ/BX3/9hQEDBsDGxgZ2dnYYPnw4zp8/r1fD5MmTYWtri7i4ODz00EOws7PDk08+CQBQq9VYtGgROnXqBEtLS3h4eOCFF17A7du39fYREBCAESNGYP/+/bpm3jZt2lTZdJGdnY3XXnsNAQEBUCqV8PHxwcSJE5GRkaFbp6SkBHPnzkVQUBCUSiV8fX3x+uuvV2oS3rlzJ/r37w9HR0fY2tqiffv2eOutt+75ut/d50bbbH3gwAFMnz4dbm5usLGxwdixY3X/n9TEzs4Ozs7O91yvPqo7RmpznAshEBAQgNGjR1fab3FxMRwcHPDCCy/UuSY3Nzd06NABcXFxestrc7wEBATg/Pnz2Lt3r+7/3UGDBunur+vn0Xfffaf7POrZsyeOHTumW2/y5MlYvHgxAP1mP62q+tycOnUKDz74IOzt7WFra4shQ4bg8OHDeus09HhpaXhuqwUoKCjAgw8+iGPHjmHTpk0YMWJEnffx9NNP47vvvsOOHTswdOhQvfvu/IDWsrCwgL29fbX7E0Jg1KhR2L17N5599lmEhoZi+/btmDVrFm7evIkvv/wSbm5uWLNmDT7++GPk5+frmpo6duxY5/qvXbsGhUIBR0dHFBYWYuDAgbh58yZeeOEF+Pn54eDBg5g9ezaSk5Mr9WlZsWIFiouL8fzzz0OpVMLZ2RlnzpzBgAEDYG5ujueffx4BAQGIi4vDb7/9pvswTk1NRe/evSGTyTBt2jS4ubnhr7/+wrPPPovc3NxKTUuffvop5HI5Zs6ciZycHHz22Wd48sknceTIEQDA22+/jZycHNy4cUPXRGdrawtA09z4/fff4/HHH8eUKVOQl5eHH374AZGRkTh69ChCQ0MBaD6IR44ciaNHj+LFF19Ehw4dsHXrVl2IuNP58+fRr18/eHt7480334SNjQ1++uknjBkzBps3b8bYsWPr/D5o+fn5YeDAgdi9ezdyc3OrPFbefvtttG/fHt999x0++OADtG7dGoGBgRgzZgxWr16Nn3/+WdeM2rVrVwCaTsaTJk1CZGQk5s+fj8LCQixZsgT9+/fHqVOndGEQ0HRUj4yMRP/+/bFgwQJYW1sDAF544QWsXLkSUVFR+Ne//oX4+Hj85z//walTp3DgwAG9ZrPY2FiMHz8ezz77LCZNmoTly5dj8uTJCAsLQ6dOnQBoflgMGDAAFy9exDPPPIPu3bsjIyMDv/76K27cuAFXV1eo1WqMGjUK+/fvx/PPP4+OHTvi7Nmz+PLLL3HlyhX88ssvuvdkxIgR6Nq1Kz744AMolUrExsbiwIED9X4vXn75ZTg5OWHu3LlISEjAokWLMG3aNGzYsKHe+2wMVR0jtTnOZTIZnnrqKXz22WfIysrSC2C//fYbcnNz8dRTT9W5nvLycty4cQNOTk56y2tzvCxatAgvv/wybG1tdT+APDw8AKDOn0fr1q1DXl4eXnjhBchkMnz22WcYN24crl27BnNzc7zwwgu4desWdu7ciTVr1tzzeZ0/fx4DBgyAvb09Xn/9dZibm+Pbb7/FoEGDsHfvXoSHh+utb6jHS6OT+MwR1UDbLOXv7y/Mzc3FL7/8Uu26NTVLCSHE7du3BQAxduxY3bJJkyYJAFXeIiMja6ztl19+EQDERx99pLd8/PjxQiaTidjYWN2yqpqaqjNw4EDRoUMHkZ6eLtLT08XFixfFv/71LwFAjBw5UgghxIcffihsbGzElStX9LZ98803hUKhENevXxdCCBEfHy8ACHt7e5GWlqa37n333Sfs7OxEYmKi3nK1Wq3797PPPiu8vLxERkaG3jqPPfaYcHBwEIWFhUIIIXbv3i0AiI4dO+o1eX311VcCgDh79qxuWXXNUuXl5ZWay27fvi08PDzEM888o1u2efNmAUAsWrRIt0ylUon7779fABArVqzQLR8yZIjo0qWLKC4u1nt+ffv2FW3btq1Uw91QTZOD1iuvvCIAiNOnTwsh/nm976zh7qZVraqO17y8POHo6CimTJmit25KSopwcHDQW649dt988029df/++28BQKxdu1Zv+bZt2yot9/f3FwDEvn37dMvS0tKEUqkUM2bM0C2bM2eOACC2bNlS6TXQHi9r1qwRcrlc/P3333r3L126VAAQBw4cEEII8eWXX9a7Oc7f319MmjRJ97f2tY2IiNA7bl977TWhUChEdnZ2rffd2M1SWncfI7U9zi9fviwAiCVLluitO2rUKBEQEKD3fKvi7+8vhg0bpvscOXv2rHj66acr1VuX46W6Zqm6fh65uLiIrKws3Xpbt24VAMRvv/2mW1ZTsxQAMXfuXN3fY8aMERYWFiIuLk637NatW8LOzk7cd999umWNeby0BGyWagFSU1NhaWlZqTNwXWjPEOTl5ektt7S0xM6dOyvd7tVx988//4RCocC//vUvveUzZsyAEAJ//fVXvWu9dOkS3Nzc4Obmho4dO+Lrr7/G8OHDdc1BGzduxIABA+Dk5ISMjAzdLSIiAiqVCvv27dPb38MPPww3Nzfd3+np6di3bx+eeeYZ+Pn56a2rPf0rhMDmzZsxcuRICCH0HicyMhI5OTk4efKk3rZRUVGwsLDQ/T1gwAAAmrNO96JQKHTbqtVqZGVloby8HD169NB7nG3btsHc3FyvQ6RcLsfUqVP19peVlYX//e9/ePTRR5GXl6erPTMzE5GRkbh69Spu3rx5z7pqUt0xVV87d+5EdnY2Hn/8cb3XW6FQIDw8vMomuhdffFHv740bN8LBwQFDhw7V20dYWBhsbW0r7SM4OFj3PgGapov27dvrvWebN29GSEhIlWe6tMfLxo0b0bFjR3To0EHvce+//34A0D2udsj71q1bG2303/PPP6/XbDFgwACoVCokJiY2yv4b4u5jpLbHebt27RAeHo61a9fqlmVlZeGvv/7Ck08+qfd8q7Njxw7d50iXLl2wZs0aREVF4fPPP9etU9fjpSp1/TyaMGGC3tmjunxO3E2lUmHHjh0YM2YM2rRpo1vu5eWFJ554Avv370dubq7eNoZ8vDQmNku1AN9++y2mT5+OBx54AH///Tfat29f533k5+cD0LSz30mhUOiNYqmtxMREtGrVqtL+tE1ODfkfJSAgAMuWLdMNSW/bti3c3d1191+9ehVnzpzRCyx3SktL0/u7devWen9rP0Q6d+5cbQ3p6enIzs7Gd999V+0w5bsf5+6gpP0Au7uvR3VWrVqFL774ApcuXUJZWVmV9ScmJsLLy0vXBKN194ij2NhYCCHw7rvv4t133622fm9v71rVVpXqjqn6unr1KgDoAsHd7m76MjMzg4+PT6V95OTk6B0vd7rXewZo3rc737O4uDg8/PDD96z94sWL9zwmJ0yYgO+//x7PPfcc3nzzTQwZMgTjxo3D+PHj6z0SqqHH3b1kZWWhtLRU97eVlRUcHBxqtW1Vx0htjnMAmDhxIqZNm4bExET4+/tj48aNKCsrw9NPP12rxw4PD8dHH30ElUqFc+fO4aOPPsLt27f1foDU9XipSl0/jxrz/UpPT0dhYWGV3wkdO3aEWq1GUlKSrom1sR/fkDHctADBwcH4888/MWTIEAwdOhQHDhyo81mcc+fOAaj8JWiIbGxsagxcarUaQ4cOxeuvv17l/e3atdP728rKqs41aH9VP/XUU1X2ZwGg6yeiVd3weVHRwbomP/74IyZPnowxY8Zg1qxZcHd3h0KhwLx58yp1gKwNbf0zZ85EZGRkles09Fg4d+4cFApFpS+l+tLWvGbNGnh6ela6/+7hr0qlslIgUKvVcHd31/vFf6e7v4Aa8p7d/bhdunTBwoULq7xf+/+rlZUV9u3bh927d+OPP/7Atm3bsGHDBtx///3YsWNHvS7B0FjPoTrjxo3D3r17dX9PmjSp1td7ufsYqctx/thjj+G1117D2rVr8dZbb+HHH39Ejx49av3jztXVVfc5EhkZiQ4dOmDEiBH46quvdMPT63q8VKWun0dN/X7di9SP31wYblqIXr164ZdffsHw4cMxdOhQ/P3337X6H09L2zGtui+6uvL398euXbuQl5en96vs0qVLuvubSmBgIPLz8+t1xgmA7vStNvBVxc3NDXZ2dlCpVPV+nKpUdzp906ZNaNOmDbZs2aK3jnZUkZa/vz92796NwsJCvbM3d47KAv55jubm5o1av9b169exd+9e9OnTp9HO3AQGBgIA3N3d611zYGAgdu3ahX79+tUr1Fa3z5qOFe06p0+fxpAhQ+7ZZCKXyzFkyBAMGTIECxcuxCeffIK3334bu3fvbpL3qqG++OILvV/1rVq1qtV2VR0jtT3OAcDZ2RnDhw/H2rVr8eSTT+LAgQMNugDm8OHDMXDgQHzyySd44YUXYGNjU6fjpbr3taGfR3V5rLu5ubnB2toaly9frnTfpUuXIJfLG9SdoSVjn5sWZMiQIfjvf/+L2NhYPPDAA5XaUquzbt06fP/99+jTpw+GDBnSKLU89NBDUKlU+M9//qO3/Msvv4RMJsODDz7YKI9TlUcffRSHDh3C9u3bK92XnZ2N8vLyGrd3c3PDfffdh+XLl+P69et692l/vSgUCjz88MPYvHlzlV9s9R06aWNjg5ycnErLtb+m7vz1dOTIkUoXVouMjERZWRmWLVumW6ZWq3VDR7Xc3d0xaNAgfPvtt0hOTm60+gFNM8Xjjz8OlUpVaeh8Q0RGRsLe3h6ffPKJXnOFVm1qfvTRR6FSqfDhhx9Wuq+8vFw39UNdPPzwwzh9+jR+/vnnSvdp369HH30UN2/e1HtftIqKilBQUABA89rdTTsSrqqriBuCsLAwRERE6G7BwcH33Ka6Y6S2x7nW008/jQsXLmDWrFlQKBR47LHHGvRc3njjDWRmZurep7ocLzY2NlUePw39PKqKjY2NbvuaKBQKDBs2DFu3bkVCQoJueWpqKtatW4f+/fvXOOrVmPHMTQszduxYLFu2DM888wxGjRqFbdu26U2VsGnTJtja2qK0tFR3heIDBw4gJCQEGzdurLS/8vJy/Pjjj9U+lvZ/sruNHDkSgwcPxttvv42EhASEhIRgx44d2Lp1K1599VXdr/CmMGvWLPz6668YMWKEbthuQUEBzp49i02bNiEhIQGurq417uPf//43+vfvj+7du+P5559H69atkZCQgD/++AMxMTEANEO7d+/ejfDwcEyZMgXBwcHIysrCyZMnsWvXriq/qO4lLCwMGzZswPTp09GzZ0/Y2tpi5MiRGDFiBLZs2YKxY8di+PDhiI+Px9KlSxEcHKzrtwAAY8aMQa9evTBjxgzExsaiQ4cO+PXXX3W13PmLb/Hixejfvz+6dOmCKVOmoE2bNkhNTcWhQ4dw48YNnD59+p71XrlyBT/++COEEMjNzcXp06exceNG5OfnY+HChZWukN0Q9vb2WLJkCZ5++ml0794djz32GNzc3HD9+nX88ccf6NevX6UwfbeBAwfihRdewLx58xATE4Nhw4bB3NwcV69excaNG/HVV19h/Pjxdapr1qxZ2LRpEx555BE888wzCAsLQ1ZWFn799VcsXboUISEhePrpp/HTTz/h//7v/7B7927069cPKpUKly5dwk8//YTt27ejR48e+OCDD7Bv3z4MHz4c/v7+SEtLwzfffAMfHx/079+/IS9fvXz00UcAoLuO0Jo1a7B//34AwDvvvFOrfdTlGKntca41fPhwuLi4YOPGjXjwwQer7RtTWw8++CA6d+6MhQsXYurUqXU6XsLCwrBkyRJ89NFHCAoKgru7O+6///5G+Ty6W1hYGADgX//6FyIjI2sMdh999JHu2kkvvfQSzMzM8O2336KkpASfffZZg16vFk2CEVpUS9UNoxVCiAULFggAYsSIEaKsrEw3tFZ7s7S0FD4+PmLEiBFi+fLlesOBtWoaCg5AxMfH11hfXl6eeO2110SrVq2Eubm5aNu2rfj8888rDdOs61Dw2qybl5cnZs+eLYKCgoSFhYVwdXUVffv2FQsWLNBdxVg79PLzzz+vch/nzp0TY8eOFY6OjsLS0lK0b99evPvuu3rrpKamiqlTpwpfX19hbm4uPD09xZAhQ8R3332nW0c7FHzjxo1621Y1NDo/P1888cQTwtHRUTfMXwjNkOJPPvlE+Pv7C6VSKbp16yZ+//13MWnSpEpDx9PT08UTTzwh7OzshIODg5g8ebI4cOCAACDWr1+vt25cXJyYOHGi8PT0FObm5sLb21uMGDFCbNq06Z6v8Z3HglwuF46OjqJbt27ilVdeEefPn6+0fkOHgt/5ekZGRgoHBwdhaWkpAgMDxeTJk8Xx48d169zr6trfffedCAsLE1ZWVsLOzk506dJFvP766+LWrVu6daq6iq0QmmPw7iG/mZmZYtq0acLb21tYWFgIHx8fMWnSJL3LBJSWlor58+eLTp06CaVSKZycnERYWJh4//33RU5OjhBCiOjoaDF69GjRqlUrYWFhIVq1aiUef/zxSsOIq1LdUPC7X1vt8VibYd01/f9fG3U9RupynGu99NJLAoBYt25drWoSovr3VgghVq5cWek4rc3xkpKSIoYPHy7s7OwEAL1jpKGfR7hreHd5ebl4+eWXhZubm5DJZHrvx93rCiHEyZMnRWRkpLC1tRXW1tZi8ODB4uDBg3rrNMbx0pLIhDCyXkREJuiXX37B2LFjsX//fvTr10/qcogazWuvvYYffvgBKSkplUYJElWHfW6IWpiioiK9v1UqFb7++mvY29uje/fuElVF1PiKi4vx448/4uGHH2awoTphnxuiFubll19GUVER+vTpg5KSEmzZsgUHDx7EJ5980mgjhIiklJaWhl27dmHTpk3IzMzEK6+8InVJ1MIw3BC1MPfffz+++OIL/P777yguLkZQUBC+/vprTJs2TerSiBrFhQsX8OSTT8Ld3R3//ve/dSPKiGqLfW6IiIjIqLDPDRERERkVhhsiIiIyKibX50atVuPWrVuws7Or9SWuiYiISFpCCOTl5aFVq1b3nGjW5MLNrVu3THauDSIiopYuKSkJPj4+Na5jcuFGO4FbUlKSyc65QURE1NLk5ubC19e3VpP1mly40TZF2dvbM9wQERG1MLXpUsIOxURERGRUGG6IiIjIqDDcEBERkVFhuCEiIiKjwnBDRERERoXhhoiIiIwKww0REREZFYYbIiIiMioMN0RERGRUGG6IiIjIqDDcEBERkVFhuCEiIiKjwnBDRERERsXkZgUnopZFCIELyblIySmGjdIMrrYWCHSzrdXMwERkmhhuiMgg5RSV4d/RV/Hn2WQk5xTr3RfoZoNx3X3wRC8/ONlYSFQhERkqmRBCSF1Ec8rNzYWDgwNycnJgb28vdTlEVIV9V9Lx+qYzSMnVhBorcwWC3G1RWFqOG7eLUFKuBgA4WZvjrYc6YnyYD8/kEBm5unx/88wNERmU7/++ho/+uAgAaO1qg9kPdsB97dxgaa4AAOQVl+Gvcyn44e94XE7Nw6xNZ7A15ha+eiwULrZKKUsnIgPBMzdEZDDWHknE2z+fAwA81dsPbz3UEdYWVf8GK1OpseJAPL7ceRVFZSp4OVhiyVNhCPV1bMaKiai51OX7m6OliMgg/Hr6Ft75RRNsXhwUiI/GdKk22ACAuUKO5+8LxK/T+qGNqw2Sc4rx6NJD+P3MreYqmYgMFMMNEUkuLj0fb2w6AyGASX388Xpk+1pv29bDDlun9cPQYA+UqtSYtu4Uvv/7WhNWS0SGjuGGiCRVWq7Gq+tjUFSmQt9AF8wd2anOnYPtLM2x9KkwTO4bAAD46I+L+OC3C1CrTarVnYgqMNwQkaQW7ryCszdz4GhtjoWPhkIur9+oJ4VchrkjgzH7wQ4AgOUH4vHyf0+huEzVmOUSUQvAcENEkjl3Mwff7osDAHw6ris8HSwbtD+ZTIYXBgbiq8dCYa6Q4Y+zyZi4/ChyCssao1wiaiEYbohIEkIIvPfreQgBjOjqhQc6ezbavkeHemPVM71gpzTD0fgsPLz0IG7cLmy0/RORYWO4ISJJ/Hr6Fo4n3oaVuQJvPdSx0fffN9AVG1/sA097S8Sm5WPcNwdx/lZOoz8OERkehhsianaFpeWY9+clAMBLgwLRytGqSR6ng6c9trzUF+08bJGWV4IJ3x7G31fTm+SxiMhwMNwQUbNbeTABKbnF8HGywpT72jTpY7VytMLG/+uL3m2ckV9SjqgVx7DtXEqTPiYRSYvhhoiaVX5JOb7bp7kOzfSh7XTTKjQlBytzrHqmF4Z39UK5WmDaupPYfp4Bh8hYMdwQUbNadTAB2YVlaONqg1EhrZrtcZVmCnw1IRSjQ1uhXC0wde1J7Lmc1myPT0TNxyDCzeLFixEQEABLS0uEh4fj6NGj1a67cuVKyGQyvZulZcOGjxJR88grLsOyiqsHvzwkCGaK5v0IMlPI8cUjIRgVogk4L//3FOIzCpq1BiJqepKHmw0bNmD69OmYO3cuTp48iZCQEERGRiItrfpfVPb29khOTtbdEhMTm7FiIqqv1YcSNWdt3GwwKsRbkhrMFHIseCQEPfydkFdcjimrjyO/pFySWoioaUgebhYuXIgpU6YgKioKwcHBWLp0KaytrbF8+fJqt5HJZPD09NTdPDw8mrFiIqqP0nI1Vh1MAABMHRQERT2vRNwYLMzk+Oap7rph4m9uPiNZLUTU+CQNN6WlpThx4gQiIiJ0y+RyOSIiInDo0KFqt8vPz4e/vz98fX0xevRonD9/vtp1S0pKkJubq3cjoub3+5lbSMsrgbudEiObsa9NddztLLH06TAo5DL8fiaZ/W+IjIik4SYjIwMqlarSmRcPDw+kpFQ9kqF9+/ZYvnw5tm7dih9//BFqtRp9+/bFjRs3qlx/3rx5cHBw0N18fX0b/XkQUc2EEPhhfzwAYFLfAFiYSX7SGAAQ6uuIqIrJNudsPc95qIiMhGF8wtRBnz59MHHiRISGhmLgwIHYsmUL3Nzc8O2331a5/uzZs5GTk6O7JSUlNXPFRHQkPgvnb+XC0lyOJ3r5SV2OnleHtoOnvSWuZxXim92xUpdDRI1A0nDj6uoKhUKB1NRUveWpqanw9KzdPDPm5ubo1q0bYmOr/lBSKpWwt7fXuxFR89KetRnX3QdONhYSV6PPVmmGOSODAQBL915Dam6xxBURUUNJGm4sLCwQFhaG6Oho3TK1Wo3o6Gj06dOnVvtQqVQ4e/YsvLy8mqpMImqAlJxiRF/U/IDRNgEZmgc7e6KHvxNKVWosrwhiRNRySd4sNX36dCxbtgyrVq3CxYsX8eKLL6KgoABRUVEAgIkTJ2L27Nm69T/44APs2LED165dw8mTJ/HUU08hMTERzz33nFRPgYhqsOlEEtQC6BnghLYedlKXUyWZTIaXBgcCAH48nIicwjKJKyKihjCTuoAJEyYgPT0dc+bMQUpKCkJDQ7Ft2zZdJ+Pr169DLv8ng92+fRtTpkxBSkoKnJycEBYWhoMHDyI4OFiqp0BE1VCrBTYc1/Rze6ynYfW1udvg9u5o72GHy6l5+PFIIqYODpK6JCKqJ5kQQkhdRHPKzc2Fg4MDcnJy2P+GqIn9fTUdT/9wFHaWZjj6VgSsLJp+HqmG+OXUTby6IQYuNhY48Ob9zTLvFRHVTl2+vyVvliIi47X+mOaszZhQb4MPNgAwoqsXfJyskFlQil9P35K6HCKqJ4YbImoStwtKsaNi5u3HerWM60uZKeR4vGKo+uYTVV87i4gMH8MNETWJP88lo0wl0NHLHp1aOUhdTq2N6+4NmUxzbZ6krEKpyyGiemC4IaIm8WuMpllnTKj0Uy3UhZeDFfoFugIANp/k2RuilojhhogaXXJOEY4mZAEARhjAPFJ1NT7MB4Am3KjVJjXmgsgoMNwQUaP7/XQyhAB6BTjD29FK6nLqLLKTJ2yVZkjKKsKxipBGRC0Hww0RNbqtp28CAEa1sCYpLSsLBR7qopkC5peYmxJXQ0R1xXBDRI0qLj0f527mwkwuw0NdWu60KCO6aoLZzgupULFpiqhFYbghokb119lkAEC/IFc4G9gkmXXRu40L7CzNkJFfipik21KXQ0R1wHBDRI1qxwXNJJkPdvaUuJKGsTCT4/4O7gCA7edTJa6GiOqC4YaIGs2t7CKcuZEDmQwY0tFD6nIabFiwJqBtP58CE5uphqhFY7ghokaz66LmDEeYnxPc7JQSV9NwA9u7wcJMjsTMQlxNy5e6HCKqJYYbImo0OyqabyI7tewmKS1bpRn6B2ku6KedSoKIDB/DDRE1ipzCMhy+lgkAGBrc8puktCI7aZ6Lti8RERk+hhsiahT/u5yKcrVAew87BLjaSF1Ooxlc0an4zI0cZOSXSFwNEdUGww0RNYpdF9IAGNdZGwBwt7NEsJc9AGD/1QyJqyGi2mC4IaIGK1ep8ffVdADA/R3dJa6m8Q1s7wYA2HslXeJKiKg2GG6IqMFikrKRW1wOR2tzhPg4Sl1Oo7uvrSbc/H01nRNpErUADDdE1GB7LmvOaAxo6waFXCZxNY0vzN8JNhYKZOSX4kJyrtTlENE9MNwQUYPtuaLpbzOonZvElTQNCzM5+lYMCWfTFJHhY7ghogZJyyvGuZuasxn3GWm4Af55bgw3RIaP4YaIGmTfFc0Ios7e9kZxVeLqDKzod3My8TbyisskroaIasJwQ0QNoj2TMaid8Y2SupOfizUCXKxRrhY4Gp8ldTlEVAOGGyKqN7VaYH/FEHDtcGlj1idQ0+/mYFymxJUQUU0Yboio3q6k5eF2YRmszBUI9XWUupwm1zfQBQDDDZGhY7ghono7XPEl3yPACeYK4/846VMRbi4m5yKTUzEQGSzj/zQioiZzpKLvSe82LhJX0jxcbZXo4GkHADh8jf1uiAwVww0R1YsQ4o5w4yxxNc2nj65pivNMERkqhhsiqperafnIKiiFpbkcXbwdpS6n2fSt6FR8iP1uiAwWww0R1cvhaxX9bfydYWFmOh8lvVo7Qy4DrmUUIDmnSOpyiKgKpvOJRESNShtuwlubTpMUADhYmaOLtwMAnr0hMlQMN0RUZ0IIHKnoUNs70DQ6E99JO8/UgViGGyJDxHBDRHUWm5aPzIr+Nl19HKQup9lpr3dzKC4DQgiJqyGiuzHcEFGdaZukuvs5QWmmkLia5tfD3xnmChlu5RQjMbNQ6nKI6C4MN0RUZ4dN7Po2d7OyUKCbnxMAXq2YyBAx3BBRnWj622i+0E013AB3TsXA690QGRqGGyKqk7j0fGTkl0JpJkeIr+n1t9HqF/TP9W7Uava7ITIkDDdEVCfaaQdMtb+NVoiPI6zMFcgsKMWVtDypyyGiOzDcEFGdHGaTFADAwkyOnhXX+DnIIeFEBoXhhohq7c75pMJNaD6p6vzT74bhhsiQMNwQUa1dyyhAel4JLMzkCPV1lLocyWnDzZFrmShXqSWuhoi0GG6IqNb+ub6NIyzNTbe/jVanVg6wtzRDXkk5zt3KlbocIqrAcENEtaadciG8tWn3t9FSyGW6vkccEk5kOBhuiKhWhBDsTFyFf6ZiYL8bIkPBcENEtRKfUYC0iv423fwcpS7HYGgn0TyWkIWScpXE1RARwHBDRLWkHSUV6sv+Nndq624LV1slisvUiLmeLXU5RASGGyKqJTZJVU0mk3FIOJGBYbghonvS62/Tmte3uRvnmSIyLAw3RHRPiZmFSM0tgYVCrpsNm/7RN1DT7+bU9WwUlpZLXA0RMdwQ0T1pz9qE+jrCyoL9be7m62wFb0crlKsFjiXclrocIpPHcENE98QpF2qm3++GTVNEUmO4IaIa8fo2tdM3iNe7ITIUDDdEVKPrWYVIzimGuUKG7uxvU60+bTT9bs7dzEFOUZnE1RCZNoYbIqqRdsqFEB/2t6mJp4Ml2rjZQC2AoxXNeEQkDYYbIqoRm6Rqj/1uiAwDww0RVYv9bepGOySc/W6IpGUQ4Wbx4sUICAiApaUlwsPDcfTo0Vptt379eshkMowZM6ZpCyQyUTduF+FWTjHM5DJ093eUuhyDpw2Al1LykJFfInE1RKZL8nCzYcMGTJ8+HXPnzsXJkycREhKCyMhIpKWl1bhdQkICZs6ciQEDBjRTpUSm51DFWZsQX0dYW5hJXI3hc7axQEcvewD/NOcRUfOTPNwsXLgQU6ZMQVRUFIKDg7F06VJYW1tj+fLl1W6jUqnw5JNP4v3330ebNm2asVoi06LtTNyb17epNc4zRSQ9ScNNaWkpTpw4gYiICN0yuVyOiIgIHDp0qNrtPvjgA7i7u+PZZ5+952OUlJQgNzdX70ZEtaM9+xDemv1taksbbtjvhkg6koabjIwMqFQqeHh46C338PBASkpKldvs378fP/zwA5YtW1arx5g3bx4cHBx0N19f3wbXTWQKkrIKcTO7CGZyGcL8eX2b2urV2hkKuQzxGQW4lV0kdTlEJknyZqm6yMvLw9NPP41ly5bB1dW1VtvMnj0bOTk5ultSUlITV0lkHLRTLnT1cYCNkv1tasvO0hxdvB0A8OwNkVQk/cRydXWFQqFAamqq3vLU1FR4enpWWj8uLg4JCQkYOXKkbplarQYAmJmZ4fLlywgMDNTbRqlUQqlUNkH1RMZN1yTFIeB11jfQBTFJ2TgYl4mHw3ykLofI5Eh65sbCwgJhYWGIjo7WLVOr1YiOjkafPn0qrd+hQwecPXsWMTExutuoUaMwePBgxMTEsMmJqBHx+jb198/1bjIghJC4GiLTI/m55unTp2PSpEno0aMHevXqhUWLFqGgoABRUVEAgIkTJ8Lb2xvz5s2DpaUlOnfurLe9o6MjAFRaTkT1d+N2IW7cLoJCLkMP9repszB/J1go5LiVU4zEzEIEuNpIXRKRSZE83EyYMAHp6emYM2cOUlJSEBoaim3btuk6GV+/fh1yeYvqGkTU4mmHgHfxZn+b+rCyUKCbnyOOxGfhYFwmww1RMzOIT61p06Zh2rRpVd63Z8+eGrdduXJl4xdEZOLYJNVwfQNdK8JNBp4I95O6HCKTwlMiRFSJdqRUOC/eV299g/653g373RA1L4YbItJzK7sI17MK2d+mgUJ8HGFlrkBmQSmupOZLXQ6RSWG4ISI92muzdPZ2gJ2lucTVtFwWZnL0CNCEw4NxGRJXQ2RaGG6ISI92ssw+7G/TYNoh4Zxniqh5MdwQkY4QQnfmRjtHEtWf9jU8fC0TKjX73RA1F4YbItJJyirCzewimCtkuiYVqr9OrexhZ2mGvOJynL+VI3U5RCaD4YaIdLR9Q0J9HWFtYRBXimjRzBRy3YzqbJoiaj4MN0Skw/42jU/bNMVwQ9R8GG6ICICmv432C7hPRUdYajjthRBPJGShXKWWuBoi08BwQ0QAgLj0AqTnlcDCTI5ufo5Sl2M02nvawd7SDAWlKpy/lSt1OUQmgeGGiABoZrAGgB7+TrA0V0hcjfFQyGXo1Vpzpecj8WyaImoODDdEBID9bZqStlPx0YppLYioaTHcEBHU6juubxPEcNPYtGdujsZn8Xo3RM2A4YaIcDk1D7cLy2BtoUBXH0epyzE6nVrZw1ZphtziclxOyZO6HCKjx3BDRLpRUj0DnGGu4MdCYzNTyBFWMQkp+90QNT1+ihGRrkmqD6dcaDK6TsXX2O+GqKkx3BCZOJVa6M4mcD6pptO7TUW/m4QsCMF+N0RNieGGyMSdv5WDvOJy2FmaoVMrB6nLMVpdvB1haS5HVkEpYtPypS6HyKgx3BCZOG1/m/DWzlDIZRJXY7wszOTo7qfpd3OYQ8KJmhTDDZGJO8QpF5oNr3dD1DwYbohMWEm5Stffph+vb9Pk/ulUnMl+N0RNiOGGyISdTMxGcZkarrZKtPewk7oco9fNzxEWCjnS8kqQkFkodTlERovhhsiE7Y9NBwD0D3KBTMb+Nk3N0lyBEF9Np+2jvN4NUZNhuCEyYfuvaibL7N/WTeJKTIe23w2vd0PUdBhuiExUTmEZztzMAQD0D2Jn4uYS3kY7QzjDDVFTYbghMlEH4zIgBBDkbgtPB0upyzEZ3f2coJDLcDO7CElZ7HdD1BQYbohM1P7YiiYpnrVpVjZKM3Tx1vS7OZ7IszdETYHhhshEMdxIp2eA5mJ+xxJuS1wJkXFiuCEyQUlZhUjMLISZXIbenE+q2fUI0PS7OcZ+N0RNguGGyARpz9p083OErdJM4mpMTw9/zZmbq2n5uF1QKnE1RMaH4YbIBGmHgPdjk5QkXGyVCHSzAQCcSGTTFFFjY7ghMjEqtcCBOE24GdCW4UYqPbVNU+xUTNToGG6ITMyFW7nILiyDrdIMIT6OUpdjsrT9bo6zUzFRo2O4ITIxf1dMudC7jQvMFPwIkIp2xNSZG9koLlNJXA2RceEnG5GJ0fa3YZOUtPycreFmp0SZSuB0UrbU5RAZFYYbIhNSVKrSNYP0Z7iRlEwm0529Oc5OxUSNiuGGyIQcS8hCqUoNLwdLtHG1kbock6frVJzATsVEjYnhhsiEHLjjqsQymUziakgbbk4k3oZKLSSuhsh4MNwQmZC/K/rbsEnKMHTwtIONhQJ5xeW4kpondTlERoPhhshEZOSX4EJyLgBevM9QmCnk6O6vnWeKTVNEjYXhhshEHIzLBAB09LKHq61S4mpIq4e/tt8NOxUTNRaGGyITsf+q5vo2/YM4UaYh6dm64sxNfBaEYL8bosbAcENkAoQQuuvb9G/rJnE1dKdQX0eYyWVIyS3GzewiqcshMgoMN0QmID6jALdyimGhkKNXxQgdMgzWFmbo5O0AgFMxEDUWhhsiE7C/Ygh4mL8TrCwUEldDd+vJTsVEjYrhhsgE7OcQcIPWgxfzI2pUDDdERq5cpcahipFSnE/KMGmnYbiSmo/swlKJqyFq+RhuiIzc6Rs5yCsph4OVOTq1cpC6HKqCi60Sbdw002Gc4DxTRA3GcENk5LRTLvQLcoFCzikXDFVPXu+GqNEw3BAZOV1/myAOATdkPbQzhLPfDVGDMdwQGbH8knKcvK45E9CfUy4YNO0kmmdu5KC4TCVxNUQtG8MNkRE7Gp+JcrWAn7M1/FyspS6HauDvYg03OyVKVWqcuZEjdTlELVq9ws21a9cauw4iagLaWcA5Uabhk8lkulFTHBJO1DD1CjdBQUEYPHgwfvzxRxQXFzd2TUTUSLSdiTkEvGXQTqLJfjdEDVOvcHPy5El07doV06dPh6enJ1544QUcPXq0sWsjogZIyy3GldR8yGRA30BOltkSaPvdHE+8DbWak2gS1Ve9wk1oaCi++uor3Lp1C8uXL0dycjL69++Pzp07Y+HChUhPT6/T/hYvXoyAgABYWloiPDy8xqC0ZcsW9OjRA46OjrCxsUFoaCjWrFlTn6dBZNS0Uy508XaAo7WFxNVQbXT0soO1hQJ5xeW4kpYndTlELVaDOhSbmZlh3Lhx2LhxI+bPn4/Y2FjMnDkTvr6+mDhxIpKTk++5jw0bNmD69OmYO3cuTp48iZCQEERGRiItLa3K9Z2dnfH222/j0KFDOHPmDKKiohAVFYXt27c35KkQGZ39sexv09KYKeTo7lfR7yaeTVNE9dWgcHP8+HG89NJL8PLywsKFCzFz5kzExcVh586duHXrFkaPHn3PfSxcuBBTpkxBVFQUgoODsXTpUlhbW2P58uVVrj9o0CCMHTsWHTt2RGBgIF555RV07doV+/fvb8hTITIqQghdfxsOAW9ZegbwYn5EDVWvcLNw4UJ06dIFffv2xa1bt7B69WokJibio48+QuvWrTFgwACsXLkSJ0+erHE/paWlOHHiBCIiIv4pSC5HREQEDh06dM86hBCIjo7G5cuXcd9999XnqRAZpbj0fKTmlkBpJkdYxYzT1DL05MX8iBrMrD4bLVmyBM888wwmT54MLy+vKtdxd3fHDz/8UON+MjIyoFKp4OHhobfcw8MDly5dqna7nJwceHt7o6SkBAqFAt988w2GDh1a5bolJSUoKSnR/Z2bm1tjTUTGQDsEvFdrZ1iaKySuhuoi1M8RCrkMt3KKcTO7CN6OVlKXRNTi1Cvc7Ny5E35+fpDL9U/8CCGQlJQEPz8/WFhYYNKkSY1S5N3s7OwQExOD/Px8REdHY/r06WjTpg0GDRpUad158+bh/fffb5I6iAzVAfa3abGsLczQuZU9Tt/IwfGELHiHektdElGLU69mqcDAQGRkZFRanpWVhdatW9d6P66urlAoFEhNTdVbnpqaCk9Pz2q3k8vlCAoKQmhoKGbMmIHx48dj3rx5Va47e/Zs5OTk6G5JSUm1ro+oJSpTqXH4mqZJg/1tWqYeFf1ujrJTMVG91CvcCFH19Rfy8/NhaWlZ6/1YWFggLCwM0dHRumVqtRrR0dHo06dPrfejVqv1mp7upFQqYW9vr3cjMmZnbmQjv6QcTtbmCPbi8d4S6a53w07FRPVSp2ap6dOnA9BcJnzOnDmwtv5nrhqVSoUjR44gNDS0TgVMnz4dkyZNQo8ePdCrVy8sWrQIBQUFiIqKAgBMnDgR3t7eujMz8+bNQ48ePRAYGIiSkhL8+eefWLNmDZYsWVKnxyUyVtr+Nn2DXCGXyySuhupDO0P45dQ85BSWwcHaXOKKiFqWOoWbU6dOAdCcuTl79iwsLP65MJiFhQVCQkIwc+bMOhUwYcIEpKenY86cOUhJSUFoaCi2bdum62R8/fp1vb49BQUFeOmll3Djxg1YWVmhQ4cO+PHHHzFhwoQ6PS6RseIQ8JbP1VaJNq42uJZRgBPXs3B/B497b0REOjJRXRtTDaKiovDVV1+1yCae3NxcODg4ICcnp0XWT1ST/JJyhL6/A+Vqgb9fHwxfZ84E3lK9vuk0fjp+Ay8OCsQbD3SQuhwiydXl+7tefW5WrFjBYEBkgI7GZ6JcLeDnbM1g08L1COAkmkT1VetmqXHjxmHlypWwt7fHuHHjalx3y5YtDS6MiOpu/9VMAEB/zgLe4vWqCDenk3JQXKbi9YqI6qDW4cbBwQEymUz3byIyPPtjNZPWsr9Ny+fvYg1XWyUy8ktw9maObgQVEd1brcPNihUrqvw3ERmGtNxiXEnNh0wG9GnjInU51EAymQw9A5zw17kUHEvIYrghqoN69bkpKipCYWGh7u/ExEQsWrQIO3bsaLTCiKhuDsRpRkl1buUAJxuLe6xNLUEPXu+GqF7qFW5Gjx6N1atXAwCys7PRq1cvfPHFFxg9ejSvN0MkEfa3MT53TqKpVtd5YCuRyapXuDl58iQGDBgAANi0aRM8PT2RmJiI1atX49///nejFkhE9yaEYH8bIxTsZQ9rCwVyi8txNS1f6nKIWox6hZvCwkLY2dkBAHbs2IFx48ZBLpejd+/eSExMbNQCieje4tLzkZpbAqWZHGH+TlKXQ43ETCFHdz/N+3mUQ8KJaq1e4SYoKAi//PILkpKSsH37dgwbNgwAkJaWxuvfEElgf8WUCz0DnDlk2Mhop2I4ci1T4kqIWo56hZs5c+Zg5syZCAgIQHh4uG6Syx07dqBbt26NWiAR3dv+WM0XXz82SRkd7ci3w9eyqp20mIj01WluKa3x48ejf//+SE5ORkhIiG75kCFDMHbs2EYrjojurUylxuGKX/UD2JnY6IT6OUJpJkdGfgli0/LR1sNO6pKIDF69wg0AeHp6wtPTU29Zr169GlwQEdXNmRvZyC8ph6O1OYK92CxsbJRmCvQMcMb+2AwcjMtkuCGqhXqFm4KCAnz66aeIjo5GWloa1Gq13v3Xrl1rlOKI6N60Q8D7BbpCLpdJXA01hT6BLtgfm4FDcZmY1DdA6nKIDF69ws1zzz2HvXv34umnn4aXl5duWgYian4HKy7e1zeIVyU2Vr21/W7iM6FWC4ZYonuoV7j566+/8Mcff6Bfv36NXQ8R1UFxmQqnrmcDAPoGsr+Nserq4wAbCwWyC8twMSUXnVpxfj+imtRrtJSTkxOcnTnPCZHUTiTeRqlKDU97SwS4WEtdDjURc4UcPVtrPnMPxXFIONG91CvcfPjhh5gzZ47e/FJE1Py0X3R9Al3YPGzk+gZqmqYYbojurV7NUl988QXi4uLg4eGBgIAAmJub691/8uTJRimOiGp2qGIIOGcBN37aZscj8VkoU6lhrqjXb1Mik1CvcDNmzJhGLoOI6qqgpBynk7IBaM7ckHEL9rKHk7U5bheWISYpGz0D2DWAqDr1Cjdz585t7DqIqI6OJ95GuVrA29EKvs7sb2Ps5HIZ+gW54vczyfj7SjrDDVEN6n1eMzs7G99//z1mz56NrCzNhG4nT57EzZs3G604Iqrenf1tyDTc19YNAPB3bIbElRAZtnqduTlz5gwiIiLg4OCAhIQETJkyBc7OztiyZQuuX7+O1atXN3adRHQX9rcxPf0rptc4nZSNnKIyOFiZ32MLItNUrzM306dPx+TJk3H16lVYWlrqlj/00EPYt29foxVHRFXLLS7D2RvZAHjmxpS0crRCoJsN1AI4FMezN0TVqVe4OXbsGF544YVKy729vZGSktLgooioZsfis6AWQICLNVo5WkldDjWjAdqmqasMN0TVqVe4USqVyM3NrbT8ypUrcHNza3BRRFQz9rcxXdqZ3xluiKpXr3AzatQofPDBBygrKwMAyGQyXL9+HW+88QYefvjhRi2QiCrT9rfpzf42Jqd3GxeYK2S4nlWIhIwCqcshMkj1CjdffPEF8vPz4ebmhqKiIgwcOBBBQUGws7PDxx9/3Ng1EtEdsgtLcSFZc+aUnYlNj43SDD38NcPAd19Ok7gaIsNUr9FSDg4O2LlzJw4cOIDTp08jPz8f3bt3R0RERGPXR0R3ORKfBSGAQDcbuNtb3nsDMjr3d3DHoWuZ2H05HVH9WktdDpHBqXO4UavVWLlyJbZs2YKEhATIZDK0bt0anp6eEEJwfhuiJsb+NjS4gxs+/vMiDl/LRGFpOawt6vU7lcho1alZSgiBUaNG4bnnnsPNmzfRpUsXdOrUCYmJiZg8eTLGjh3bVHUSUYXDuuvbuEpcCUkl0M0Wvs5WKC1X40AsJ9Ikuludws3KlSuxb98+REdH49SpU/jvf/+L9evX4/Tp09i1axf+97//8QJ+RE0oM78El1LyAAC92/Dy+6ZKJpNhcHt3AOx3Q1SVOoWb//73v3jrrbcwePDgSvfdf//9ePPNN7F27dpGK46I9B2+ppnqpIOnHVxslRJXQ1Ia3KEi3FxKgxBC4mqIDEudws2ZM2fwwAMPVHv/gw8+iNOnTze4KCKq2qFrmmubcAg49WnjAqWZHMk5xbqzeUSkUadwk5WVBQ8Pj2rv9/DwwO3btxtcFBFVjZ2JScvSXIF+QZp+V/+7xKYpojvVKdyoVCqYmVXfK1+hUKC8vLzBRRFRZWm5xYhLL4BMBvRuzXBDwNBgzY/NHec57Q3Rneo0flAIgcmTJ0OprLqtv6SkpFGKIqLKtFclDvayh4M1Z4MmYEhHd8hkwOkbOUjOKYKXA+cZIwLqGG4mTZp0z3UmTpxY72KIqHr/DAHnWRvScLezRHc/J5xIvI1dF1LxdJ8AqUsiMgh1CjcrVqxoqjqI6B7Y34aqMizYAycSb2MHww2RTr3mliKi5nUruwgJmYVQyGXo1ZrXt6F/DOvkCUATfnOKyiSuhsgwMNwQtQDaszadvR1gZ8n+NvSP1q42aOtui3K1wB5e0I8IAMMNUYtwiP1tqAbDOmlGTW07x1FTRADDDVGLwP42VJMHO3sB0EzFUFDCy3EQMdwQGbikrELczC6CmVyGHv5OUpdDBqhTK3sEuFijuEyNXRdTpS6HSHIMN0QGTnvWJsTXETbKOg1wJBMhk8kwomsrAMDvZ5IlroZIegw3RAaO/W2oNkaEaJqm9l5OR24xR02RaWO4ITJgQgj2t6Faae9hhyB3W5Sq1Nh5nk1TZNoYbogMWHxGAVJyi2GhkCOM/W2oBpqmKc3Zm9/P3JK4GiJpMdwQGTBtk1Q3P0dYmiskroYMnbbfzd9XM5BdWCpxNUTSYbghMmBskqK6CHK3RQdPO5SrBbZzpnAyYQw3RAZKrf6nv02/IFeJq6GWYmQIR00RMdwQGahLKXnILCiFjYUCob6OUpdDLYS2383BuExk5pdIXA2RNBhuiAzUgdgMAEB4GxeYK/i/KtWOv4sNung7QKUW+IvTMZCJ4icmkYHaXxFu2CRFdcVRU2TqGG6IDFBJuQpH47MAAP2C2JmY6mZ4Rbg5Ep+F1Nxiiashan4MN0QG6NT1bBSVqeBqa4H2HnZSl0MtjI+TNbr7OUIIdiwm08RwQ2SADtzRJCWTySSuhlqi0aHeAIBfY25KXAlR8zOIcLN48WIEBATA0tIS4eHhOHr0aLXrLlu2DAMGDICTkxOcnJwQERFR4/pELRH721BDPdTFCwq5DKdv5CA+o0DqcoialeThZsOGDZg+fTrmzp2LkydPIiQkBJGRkUhLS6ty/T179uDxxx/H7t27cejQIfj6+mLYsGG4eZO/Tsg45BaX4XRSNgCGG6o/Nzul7vj5NYYdi8m0SB5uFi5ciClTpiAqKgrBwcFYunQprK2tsXz58irXX7t2LV566SWEhoaiQ4cO+P7776FWqxEdHd3MlRM1jcNxmVALoI2rDbwdraQuh1qw0RUX9Nt6+iaEEBJXQ9R8JA03paWlOHHiBCIiInTL5HI5IiIicOjQoVrto7CwEGVlZXB2dq7y/pKSEuTm5urdiAzZATZJUSMZ1skDSjM5rqUX4PwtfvaR6ZA03GRkZEClUsHDw0NvuYeHB1JSanfxqTfeeAOtWrXSC0h3mjdvHhwcHHQ3X1/fBtdN1JTY34Yai52lOSI6aj5ft7JjMZkQyZulGuLTTz/F+vXr8fPPP8PS0rLKdWbPno2cnBzdLSkpqZmrJKq9lJxixKUXQC4D+rTh9W2o4UaHapqmfjudDLWaTVNkGsykfHBXV1coFAqkpqbqLU9NTYWnp2eN2y5YsACffvopdu3aha5du1a7nlKphFKpbJR6iZqatkmqi48jHKzNJa6GjMHA9m6wtzRDSm4xjiZkoTdDM5kASc/cWFhYICwsTK8zsLZzcJ8+fard7rPPPsOHH36Ibdu2oUePHs1RKlGz0PW3CeQXEDUOpZkCD3XRXLF4K0dNkYmQvFlq+vTpWLZsGVatWoWLFy/ixRdfREFBAaKiogAAEydOxOzZs3Xrz58/H++++y6WL1+OgIAApKSkICUlBfn5+VI9BaJGIYTQ9bfpz/421IhGVTRN/Xk2GaXlaomrIWp6kjZLAcCECROQnp6OOXPmICUlBaGhodi2bZuuk/H169chl/+TwZYsWYLS0lKMHz9ebz9z587Fe++915ylEzWqq2n5SMsrgdJMju7+TlKXQ0YkvLULPOyVSM0twb4r6YgI9rj3RkQtmOThBgCmTZuGadOmVXnfnj179P5OSEho+oKIJLD7kubCleFtXGBprpC4GjImCrkMI7u2wvf747H19C2GGzJ6kjdLEZHG7suacHN/ezeJKyFjNKLign7RF1NRXKaSuBqipsVwQ2QAcovLcDzhNgBgcAd3iashYxTi4wBvRysUlqqw53LV09sQGQuGGyIDsP9qBsrVAm3cbODvYiN1OWSEZDIZhnfVjJr642ztLpJK1FIx3BAZAG1/m8HtedaGmo52SDibpsjYMdwQSUytFthzJR0Aww01LTZNkalguCGS2PlbuUjPK4G1hQI9W3MIODUdNk2RqWC4IZJY9CXN9CP9glyhNOMQcGpabJoiU8BwQySxHec14WYorz1CzYBNU2QKGG6IJJSUVYgLybmQy4AhHAJOzUAmk+GhLpqJidk0RcaK4YZIQjsvaM7a9AxwhostZ6+n5jG8Ky/oR8aN4YZIQtvPa345D+vkKXElZErYNEXGjuGGSCJZBaU4lpAFABjG/jbUjNg0RcaO4YZIIrsupkItgGAve/g6W0tdDpkYjpoiY8ZwQySRHbomKZ61oeYX6ut4R9NUutTlEDUqhhsiCeQUlWFvxVWJH+zsJXE1ZIpkMhke6KxpmtIGbSJjwXBDJIEd51NQphJo52GL9p52UpdDJiqyoiP7roupKC1XS1wNUeNhuCGSwG9nkgEAIyuG5BJJIczfCa62FsgtLsfha5lSl0PUaBhuiJpZZn4JDsRmAABGhDDckHQUchmGBmvO3mxn0xQZEYYboma27XwKVGqBzt72aO1qI3U5ZOK0/W62n0+FSi0kroaocTDcEDWz307fAgCMYJMUGYA+bVxgZ2mGjPwSnLp+W+pyiBoFww1RM0rOKcKReM2F+4Z34Sgpkp6FmRwRHTWXI9h2jk1TZBwYboia0ZaTNyEE0Ku1My/cRwZDO2pq2/kUCMGmKWr5GG6ImokQAptP3gAAjO/uI3E1RP8Y2M4NluZy3LhdhPO3cqUuh6jBGG6ImklMUjaupRfA0lyOB7twokwyHFYWCgxq5w6Ao6bIODDcEDUT7VmbBzt7wc7SXOJqiPRpR02x3w0ZA4YbomZQUq7Cb6c1F+57mE1SZIAGd3CHuUKGq2n5iE3Ll7ocogZhuCFqBjsvpCKnqAxeDpboE+gidTlElThYmaNvoCsANk1Ry8dwQ9QM/nv0OgDgkR6+UMhlEldDVLV/LujHcEMtG8MNURNLyCjAgdhMyGTAhJ6+UpdDVK2hwR6QyYAzN3JwM7tI6nKI6o3hhqiJrT+WBAAY1M4N3o5WEldDVD1XWyV6BjgDALazYzG1YAw3RE2otFyNTSc04eaxXn4SV0N0bw/ccUE/opaK4YaoCe28kIqM/FK42ylxfwd3qcshuqfIin43xxOykJFfInE1RPXDcEPUhFYfSgAAPNrDF+YK/u9Ghs/b0QpdfRygFsCuC6lSl0NUL/y0JWoiF27l4kh8FhRyGZ7szSYpajki2TRFLRzDDVETWXUwAQDwYGdPeDmwIzG1HNoh4QdiM5BbXCZxNUR1x3BD1ASyCkrxS8xNAEBUvwBpiyGqo0A3W7R1t0WZSmD3pTSpyyGqM4Yboiaw/th1lJSr0cXbAd39nKQuh6jOONcUtWQMN0SNrFylxppDiQCAyX0DIJPxisTU8mj73ey5nI6iUpXE1RDVDcMNUSPbcSEVyTnFcLW1wIgQL6nLIaqXTq3s4eNkhaIyFfZdTZe6HKI6YbghamQrDyQAAJ7o5QelmULaYojqSSaT6S7ox6sVU0vDcEPUiM7dzMHRhCyYyWV4sre/1OUQNYi2382ui6koLVdLXA1R7THcEDUi7fDvh7p4wcPeUtpiiBqou58T3OyUyC0ux8G4DKnLIao1hhuiRpKeV4Ktp28BACZz+DcZAblchgcrzt78WnFsE7UEDDdEjWTVwQSUlqsR6uuIbr6OUpdD1ChGh7YCAOw4n4riMo6aopaB4YaoERSUlGPNYc3w7/8b2IbDv8lodPdzgrejFfJLyvE/XtCPWgiGG6JGsOFYEnKKytDa1QZDgz2lLoeo0chkMoyqOHuzteKq20SGjuGGqIHKVGr8sD8eADBlQBso5DxrQ8ZF2zS1+1I6coo41xQZPoYbogb682wybmYXwdXWAuO6e0tdDlGj6+Bpj3YetihVqXnNG2oRGG6IGkAIgaV7rwHQTLVgac6L9pFxGh2qCe5bTt2QuBKie2O4IWqA/bEZuJicC2sLBZ7iRfvIiI3t5g2ZDDh8LQtJWYVSl0NUI4Ybogb4tuKszYSevnC0tpC4GqKm08rRCv2DXAEAm07w7A0ZNoYbono6dzMH+2MzoJDL8Gz/1lKXQ9Tkxof5AAA2n7wBtVpIXA1R9RhuiOpp6d44AMDIrl7wcbKWuBqipjcs2BN2SjPcuF2EI/FZUpdDVC2GG6J6iE3Lxx9nkwEALwwMlLgaouZhZaHAiBAvAMDGE0kSV0NUPYYbonr4Zk8shACGBnugo5e91OUQNRtt09SfZ5N5zRsyWAw3RHV0PbMQW2M0kwi+fH+QxNUQNa/ufk5o72GH4jI1fj7JjsVkmCQPN4sXL0ZAQAAsLS0RHh6Oo0ePVrvu+fPn8fDDDyMgIAAymQyLFi1qvkKJKizZGweVWmBgOzd09XGUuhyiZiWTyfBkbz8AwNoj1yEEOxaT4ZE03GzYsAHTp0/H3LlzcfLkSYSEhCAyMhJpaVVPzlZYWIg2bdrg008/hacn5++h5ncruwibKvoa8KwNmaox3bxhZa7A1bR8HE+8LXU5RJVIGm4WLlyIKVOmICoqCsHBwVi6dCmsra2xfPnyKtfv2bMnPv/8czz22GNQKpXNXC0R8N2+ayhTCfRu44weAc5Sl0MkCXtLc4wK0cw3tfZwosTVEFUmWbgpLS3FiRMnEBER8U8xcjkiIiJw6NChRnuckpIS5Obm6t2I6iMtrxj/PXodAPDy/W0lroZIWk+Ea5qm/jybgsz8EomrIdInWbjJyMiASqWCh4eH3nIPDw+kpDTexGzz5s2Dg4OD7ubr69to+ybT8sPf8SgpV6ObnyP6BrpIXQ6RpLr6OKCrjwNKVWpd6CcyFJJ3KG5qs2fPRk5Oju6WlMRrM1DdZRWUYk3F6feX7w+CTCaTuCIiaclkMkT1CwAArDmciDKVWtqCiO4gWbhxdXWFQqFAamqq3vLU1NRG7SysVCphb2+vdyOqq6V741BYqkJnb3sMbu8udTlEBmF4l1Zws1MiNbcEf1Zc1JLIEEgWbiwsLBAWFobo6GjdMrVajejoaPTp00eqsogqSc0txqqDCQCAGcPa86wNUQULMzmeCvcHAKw4kCBtMUR3kLRZavr06Vi2bBlWrVqFixcv4sUXX0RBQQGioqIAABMnTsTs2bN165eWliImJgYxMTEoLS3FzZs3ERMTg9jYWKmeApmA//wvFiXlaoT5O2FQOzepyyEyKE+E+8FCIUdMUjZOXuewcDIMkoabCRMmYMGCBZgzZw5CQ0MRExODbdu26ToZX79+HcnJ/5zqvHXrFrp164Zu3bohOTkZCxYsQLdu3fDcc89J9RTIyCVlFWL9MU1nyZk8a0NUiZudEqNCNcPCv9t7TeJqiDRkwsQuL5mbmwsHBwfk5OSw/w3d06yNp7HxxA30C3LB2ud6S10OkUG6mpqHoV/ug0wGRE8fiDZutlKXREaoLt/fRj9aiqi+rqXnY3PF3DkzhrWXuBoiw9XWww4RHd0hBLDsb569Iekx3BBV48tdV6EWwJAO7uju5yR1OUQG7YWBgQCAzSduIi2vWOJqyNQx3BBV4WJyLn47rZn5e/qwdhJXQ2T4egY4I8zfCaUqNX7YHy91OWTiGG6IqrBg+2UAwPCuXujUykHiaohahpcGac7erDmUyCkZSFIMN0R3ORibgehLaTCTyzB9KM/aENXW/R3c0cXbAYWlKnzHvjckIYYbojuo1QIf/3kRAPBkuB8COeqDqNZkMhlejdBMKrv6YCIyePaGJMJwQ3SHn0/dxPlbubBTmuFfQzjzN1Fd3d/BHSE+DigqU+G7fTx7Q9JguCGqUFSqwoIdmr42Lw0OgoutUuKKiFoezdkbTXPu6kMJPHtDkmC4Iarww/5rSM4phrejlW62YyKqu0Ht3RDi64jiMjW+3RsndTlkghhuiACk55VgyR7Nh/DrD7SHpblC4oqIWq47+96sOZzI695Qs2O4IQLw5a4rKChVIcTHASO7tpK6HKIWb1A7N4Tqzt6w7w01L4YbMnmXU/Kw/qhmcsy3hwdDLufkmEQNJZPJ8FrFpRR+PJyI1FyevaHmw3BDJk0Igbm/noNaAA908kSv1s5Sl0RkNO5r64oe/k4oKVdj0a4rUpdDJoThhkzaH2eTcfhaFpRmcrw9vKPU5RAZFZlMhtkPdQAAbDiWhKupeRJXRKaC4YZMVmFpOT7+Q3PBvv8bGAhfZ2uJKyIyPmH+znigkyfUApi/7ZLU5ZCJYLghk/XN7jjd0O8XK+bEIaLGN+uB9lDIZdh1MQ2Hr2VKXQ6ZAIYbMkmJmQW6q6e+O6Ijh34TNaFAN1s80csPAPD+bxegUguJKyJjx3BDJunD3y+gVKVG/yBXRHbylLocIqP32tB2sLc0w8XkXGw4liR1OWTkGG7I5Oy+nIZdFzWzfr83KhgyGYd+EzU1ZxsL3dDwBTsuI6ewTOKKyJgx3JBJKS5T4b1fzwMAJvcNQJC7ncQVEZmOp3r7o627LbIKSvElh4ZTE2K4IZPyze5YJGYWwsNeiVciOOs3UXMyV8jx3qhOAIBVhxJwOilb2oLIaDHckMmITcvHkopJ/N4b2Ql2luYSV0RkevoFuWJMaCsIAczechblKrXUJZERYrghkyCEwNs/n0WZSuD+Du54oDM7ERNJ5Z0RwXCwMseF5FysPJggdTlkhBhuyCRsPnkTR+KzYGkux/ujOrETMZGEXG2VeKviysULdlxGfEaBxBWRsWG4IaN3u6AUn/ypuRLxK0Pa8UrERAbgkTBf9A10QXGZGtN/imHzFDUqhhsyevP+uoisglK097DDcwNaS10OEQGQy2X4/JEQ2CnNcOp6Nr6tuKgmUWNguCGjdiguEz8dvwEA+GRcZ5greMgTGQpvRyu8P1ozeurLnVcQw9FT1Ej4SU9GK7+kHLM2nQYAPBHuhzB/Z4krIqK7je3mjeFdvFCuFpi69iRuF5RKXRIZAYYbMlrz/ryIG7eL4ONkhbce6ih1OURUBZlMhk8f7oLWrja4mV2EVzbEcO4pajCGGzJKf19Nx9oj1wEAn43vClulmcQVEVF17CzNseSp7rA0l2PflXR8tv2S1CVRC8dwQ0Ynt7gMb2w6AwCY1McffQNdJa6IiO6lg6c9Ph3XFQDw7d5rWHM4UeKKqCVjuCGj8/HvF3Erpxj+LtZ448EOUpdDRLU0pps3pldMrjl36znsOJ8icUXUUjHckFHZfTkNG44nQSYDPh8fAmsLNkcRtSQv3x+Ex3r6Qi2AqetOYteFVKlLohaI4YaMRnpeCWZt1DRHPdOvNXq15ugoopZGJpPhwzGdMbyLF8pUAi+uPcEzOFRnDDdkFNRqgdc2xCAjvwTtPewwK7K91CURUT2ZK+T46rFQjOiqDTgnsfYI++BQ7THckFFYsjcO+2MzYGWuwOInu8HSXCF1SUTUAGYKORZNCMX4MB+o1AJv/3wOH/9xgcPEqVYYbqjF23clHV/suAwA+HBMZwS520lcERE1BjOFHJ+P76rrZLzs73hMXH4E6XklEldGho7hhlq0xMwCvPzfU1AL4JEwH4wP85G6JCJqRDKZDP8a0hb/frwbrC0UOBCbiYf+/Tf2XUmXujQyYAw31GLll5RjyurjyCkqQ6ivIz4a21nqkoioiYwKaYVfp/VDOw9bpOeVYOLyo5i18TRyCsukLo0MEMMNtUil5Wq8+OMJXEnNh5udEt8+HQalGfvZEBmzIHc7/DK1H6L6BUAmAzaeuIGhX+7laCqqhOGGWhwhBN7YfAZ/X9V0IP5+Yg942FtKXRYRNQNrCzPMHdkJG1/ogzZuNkjLK8Hza05g6rqTSM4pkro8MhAMN9SiCCHw4e8X8fOpm1DIZfjmqe4I8XWUuiwiamY9Apzx578G4MVBgVDIZfjjTDLuX7AX//nfVRSXqaQujyTGcEMthhACH/9xEcsPxAMAPh3XBYPbu0tcFRFJxdJcgTce6ICtU/uhh78TispUWLDjCoZ+uRfbz6dACA4bN1UyYWLvfm5uLhwcHJCTkwN7e3upy6FaUqsFProj2HwytgueCPeTuCoiMhRCCPx6+hbm/XkJKbnFAIDw1s5448EO6O7nJHF11Bjq8v3NcEMGr6RchZkbz+C307cAAB+P7Ywnw/0lroqIDFFBSTmW7InDd39fQ2m5GgAQ2ckDsyI7IMjdVuLqqCEYbmrAcNOyZOSXYOrakzgSnwUzuQyfP9IVY7vxWjZEVLOb2UVYtPMKNp+8AbUA5DLgkTBfvDq0LbwcrKQuj+qB4aYGDDctx4nELExdewopucWwVZph6VNh6N/WVeqyiKgFuZqah8+2X8bOitnFlWZyTO4bgOfvawMXW6XE1VFdMNzUgOHG8JWWq7F4dywW745FuVqgjZsNlj4VhnYenFaBiOrnRGIW5v91GUcTsgAAVuYKPBHuh+fva8NLSbQQDDc1YLgxbEfjs/DuL+dwOTUPADCiqxc+fbgrbJVmEldGRC2dEAK7L6dh0a6rOHMjBwBgoZDjkR4++L+BgfB1tpa4QqoJw00NGG4M04VbuVi48zJ2XUwDALjYWOD90Z0wvIsXZDKZxNURkTERQmDf1Qws/l+s7kyOQi7D6NBWeGlQEDseGyiGmxow3BiOknIVdl9Kw6qDiTh0LROA5gNmQk9fzBzWHs42FhJXSETG7si1TPxndyz+vpqhW3Z/B3c80681+gW58MeVAWG4qQHDjbTS80pwMC4De6+kY+f5VOSVlAPQhJoHO3vitaHtEOjGX01E1LxOJ2XjP7tjsetiKrTfiu08bBHVrzXGhHrDyoJz10mN4aYGDDfNo7C0HPEZBUjIKERCZgEuJufi7M0cJGYW6q3naW+JMd288XQff3g7cngmEUkrPqMAqw4m4KfjSSgs1UzjYKs0w4iuXnikhw+6+znxbI5EGG5qwHDTeIrLVEjMLNSEmMwCJGQU6P6dmltS7XbBXvboF+SCYZ08EebnBLmcHxREZFhyi8vw07EkrD6UiOtZ//woa+Nqg3HdvTE02BPtPGwZdJoRw00NGG7qpqRchaSsQsRnFGrCS0WIScgowK2c4hq3dbI2R4CrDVq72CDQ3RZdfRzQxdsBjtbsS0NELYNaLXA0IQsbj9/An2eTUXTHpJzejlYY3MENQzp4oFdrZ9hwVGeTanHhZvHixfj888+RkpKCkJAQfP311+jVq1e162/cuBHvvvsuEhIS0LZtW8yfPx8PPfRQrR6L4aay4jIVbtwu1DUhJWZq/hufUYBb2UVQ13CE2FuaobWrDQJcbRDgYqP7d2sXGzhYmzffkyAiamL5JeX482wytp1LwYHYDJRUTO8AaK6A3NbdDqG+jgjxdURXHwcEutmyr04jalHhZsOGDZg4cSKWLl2K8PBwLFq0CBs3bsTly5fh7l55xueDBw/ivvvuw7x58zBixAisW7cO8+fPx8mTJ9G5c+d7Pp4phpsylRrpeSVIyS1GSk4xrmcVIjFT0x8mMbMAybnFqOkosLFQoLXbHeHFpSLAuNrAydqcp2WJyOQUlapw6FoGoi+mYc/ldNzMLqpyPW9HK7Rxs0EbVxv4OlvDy8EKng6W8HKwhLudEmYKeTNX3nK1qHATHh6Onj174j//+Q8AQK1Ww9fXFy+//DLefPPNSutPmDABBQUF+P3333XLevfujdDQUCxduvSej9eSw40QAkVlKuQWlSO3uAx5xWW6f+cWlSG3+J9/p+eVIDVXE2gy8ktqDC+ApsOcv4s1Alxs4OdijdYVASbA1RputkoGGCKiGqTlFiMmKRunb2QjJikb52/lIruwrMZt5DLAzU4JTwcruNhYwNHKHA7W5nC0soCjtTkcrc1hb2kOpZkc5mZymCvkMFfIYKHQ/NtMIYNCXnGTaf4rl8tgJpdBLvtnubH0a6zL97ekDYSlpaU4ceIEZs+erVsml8sRERGBQ4cOVbnNoUOHMH36dL1lkZGR+OWXX5qy1Hu6XVCKI/GZUKkBtRBQCwEhAJX6n3+rhYBKCKiFJqiUqQSKy1QoKlWhqExzK77j30WlKhSWqiqCTDlyi8pQXlMbUQ3M5DK42ynh4WAJP2dr+LvYIMBF819/F2u42FgwwBAR1ZO7vSWGdfLEsE6eumVZBaW4lp6Pa+kFiEvPx83sIqTkFCM5pxipucUoVwuk5pbUOACjMchkmu8AC4UcSnMFlGZyKM3ksDCTQ2lW8bf5Hf/WLjeXV2xz130V+1BUhCaZTAZZxePIIINMBjhZW6BPoEuTPq+aSBpuMjIyoFKp4OHhobfcw8MDly5dqnKblJSUKtdPSUmpcv2SkhKUlPxz4OTkaC65nZub25DSKzlz/Tae/+Foo+6zOgq5DHZKBeyszGGrNIO9pTnsLM1gZ2kGW0tz2CnN4GJrAXc7S3jYK+FuZwlnG4vq07u6BHl5Tfs/FxGRqTED0M7ZDO2cHYD2Dnr3qdUCmfmas+upeSXIKSxFTlEZcorKkVNUhtyiUuRUnJkvVwmUqdQoValRrlKjTPe3gBCi4kd0zbWoAJQAyGuqJ3uXEB8HrJ3Su1H3qf3erk2Dk9F37Z43bx7ef//9Sst9fX0lqIaIiMj4JQFwmNk0+87Ly4ODg0ON60gablxdXaFQKJCamqq3PDU1FZ6enlVu4+npWaf1Z8+erdeMpVarkZWVBReXqi+rnZubC19fXyQlJbW4PjlNia9L9fjaVI2vS/X42lSNr0v1+Npoztjk5eWhVatW91xX0nBjYWGBsLAwREdHY8yYMQA04SM6OhrTpk2rcps+ffogOjoar776qm7Zzp070adPnyrXVyqVUCqVesscHR3vWZu9vb3JHkA14etSPb42VePrUj2+NlXj61I9U39t7nXGRkvyZqnp06dj0qRJ6NGjB3r16oVFixahoKAAUVFRAICJEyfC29sb8+bNAwC88sorGDhwIL744gsMHz4c69evx/Hjx/Hdd99J+TSIiIjIQEgebiZMmID09HTMmTMHKSkpCA0NxbZt23Sdhq9fvw65/J/rAPTt2xfr1q3DO++8g7feegtt27bFL7/8Uqtr3BAREZHxkzzcAMC0adOqbYbas2dPpWWPPPIIHnnkkSapRalUYu7cuZWaskwdX5fq8bWpGl+X6vG1qRpfl+rxtakbyS/iR0RERNSYeN1nIiIiMioMN0RERGRUGG6IiIjIqDDcEBERkVFhuKlGQkICnn32WbRu3RpWVlYIDAzE3LlzUVpaKnVpkvv444/Rt29fWFtb1+qCiMZs8eLFCAgIgKWlJcLDw3H0aPPML2bI9u3bh5EjR6JVq1aQyWSST2prSObNm4eePXvCzs4O7u7uGDNmDC5fvix1WZJbsmQJunbtqrtAXZ8+ffDXX39JXZbB+fTTTyGTyfQuYktVY7ipxqVLl6BWq/Htt9/i/Pnz+PLLL7F06VK89dZbUpcmudLSUjzyyCN48cUXpS5FUhs2bMD06dMxd+5cnDx5EiEhIYiMjERaWprUpUmqoKAAISEhWLx4sdSlGJy9e/di6tSpOHz4MHbu3ImysjIMGzYMBQUFUpcmKR8fH3z66ac4ceIEjh8/jvvvvx+jR4/G+fPnpS7NYBw7dgzffvstunbtKnUpLYOgWvvss89E69atpS7DYKxYsUI4ODhIXYZkevXqJaZOnar7W6VSiVatWol58+ZJWJVhASB+/vlnqcswWGlpaQKA2Lt3r9SlGBwnJyfx/fffS12GQcjLyxNt27YVO3fuFAMHDhSvvPKK1CUZPJ65qYOcnBw4OztLXQYZgNLSUpw4cQIRERG6ZXK5HBERETh06JCElVFLkpOTAwD8XLmDSqXC+vXrUVBQUO2cgaZm6tSpGD58uN7nDdXMIK5Q3BLExsbi66+/xoIFC6QuhQxARkYGVCqVbpoQLQ8PD1y6dEmiqqglUavVePXVV9GvXz9OHwPg7Nmz6NOnD4qLi2Fra4uff/4ZwcHBUpclufXr1+PkyZM4duyY1KW0KCZ35ubNN9+ETCar8Xb3l9PNmzfxwAMP4JFHHsGUKVMkqrxp1ed1IaL6mzp1Ks6dO4f169dLXYpBaN++PWJiYnDkyBG8+OKLmDRpEi5cuCB1WZJKSkrCK6+8grVr18LS0lLqcloUkztzM2PGDEyePLnGddq0aaP7961btzB48GD07dvXqGcer+vrYupcXV2hUCiQmpqqtzw1NRWenp4SVUUtxbRp0/D7779j37598PHxkbocg2BhYYGgoCAAQFhYGI4dO4avvvoK3377rcSVSefEiRNIS0tD9+7ddctUKhX27duH//znPygpKYFCoZCwQsNlcuHGzc0Nbm5utVr35s2bGDx4MMLCwrBixQq92cmNTV1eF9J8EIeFhSE6OhpjxowBoGlmiI6OrnYSWCIhBF5++WX8/PPP2LNnD1q3bi11SQZLrVajpKRE6jIkNWTIEJw9e1ZvWVRUFDp06IA33niDwaYGJhduauvmzZsYNGgQ/P39sWDBAqSnp+vuM/Vf5tevX0dWVhauX78OlUqFmJgYAEBQUBBsbW2lLa4ZTZ8+HZMmTUKPHj3Qq1cvLFq0CAUFBYiKipK6NEnl5+cjNjZW93d8fDxiYmLg7OwMPz8/CSuT3tSpU7Fu3Tps3boVdnZ2SElJAQA4ODjAyspK4uqkM3v2bDz44IPw8/NDXl4e1q1bhz179mD79u1SlyYpOzu7Sv2xbGxs4OLiwn5a9yL1cC1DtWLFCgGgypupmzRpUpWvy+7du6Uurdl9/fXXws/PT1hYWIhevXqJw4cPS12S5Hbv3l3l8TFp0iSpS5NcdZ8pK1askLo0ST3zzDPC399fWFhYCDc3NzFkyBCxY8cOqcsySBwKXjsyIYRozjBFRERE1JSMtxMJERERmSSGGyIiIjIqDDdERERkVBhuiIiIyKgw3BAREZFRYbghIiIio8JwQ0REREaF4YaIAAArV66Eo6Oj3rLvvvsOvr6+kMvlWLRoUbXLjMmgQYPw6quvSl0G1dKePXsgk8mQnZ0tdSlkSKS+iiBRVe68CrK5ubkIDAwU77//vigrK5O6tHsCIH7++Wepy9DBHVfCtba2FkFBQWLSpEni+PHjeusVFhaK1NRU3d85OTnC3NxcfP311+LWrVuioKCgymXGJjMzU+Tm5jZoH3v37hUjRowQXl5edToe/P39de+VpaWl8Pf3F4888oiIjo5uUD21defjW1lZic6dO4tly5bVaR9z584VISEhTVJfVVfnLSkpEcnJyUKtVjfJY1LLxDM3ZLAeeOABJCcn4+rVq5gxYwbee+89fP755/Xal0qlglqtbuQKW44VK1YgOTkZ58+fx+LFi5Gfn4/w8HCsXr1at46VlRXc3d11f1+/fh1lZWUYPnw4vLy8YG1tXeWy+igrK2vwc2oqzs7OsLOza9A+CgoKEBISgsWLF9d52w8++ADJycm4fPkyVq9eDUdHR0RERODjjz9uUE11ffxz587hqaeewpQpU/DXX381y2PXh4WFBTw9PSGTyaQuhQyJ1OmKqCqTJk0So0eP1ls2dOhQ0bt3byGEEMXFxWLGjBmiVatWwtraWvTq1UtvbqsVK1YIBwcHsXXrVtGxY0ehUChEfHy8KC4uFq+//rrw8fERFhYWIjAwUHz//fe67c6ePSseeOABYWNjI9zd3cVTTz0l0tPTdfcPHDhQvPzyy2LWrFnCyclJeHh4iLlz5+ruv/OXLwDh7+8vhBAiNjZWjBo1Sri7uwsbGxvRo0cPsXPnTr3nd+vWLfHQQw8JS0tLERAQINauXSv8/f3Fl19+qVvn9u3b4tlnnxWurq7Czs5ODB48WMTExNT4WqKaMwcTJ04UdnZ2IisrS+810/4bVcx/dPey+Ph4IYQQv/zyi+jWrZtQKpWidevW4r333tM7ywZAfPPNN2LkyJHC2tpa95rVZrtly5aJMWPGCCsrKxEUFCS2bt2q9zzOnTsnhg8fLuzs7IStra3o37+/iI2N1d2/bNky0aFDB6FUKkX79u3F4sWLa3y97j474O/vLz7++GMRFRUlbG1tha+vr/j2229r3Medqnv9q3L3+601Z84cIZfLxaVLl4QQQpSXl4tnnnlGBAQECEtLS9GuXTuxaNEi3fp79+4VZmZmIjk5WW8/r7zyiujfv3+dHt/Z2Vm89tprur9rOgarO27utZ0Q/5zxWb16tfD39xf29vZiwoQJurNoVc1pFx8fr5vL7Pbt27p9bdq0SQQHBwsLCwvh7+8vFixYUOl5NuQ9JcPHcEMGqapwM2rUKNG9e3chhBDPPfec6Nu3r9i3b5+IjY0Vn3/+uVAqleLKlStCCM2HrLm5uejbt684cOCAuHTpkigoKBCPPvqo8PX1FVu2bBFxcXFi165dYv369UIIzYevm5ubmD17trh48aI4efKkGDp0qBg8eLCuhoEDBwp7e3vx3nvviStXrohVq1YJmUymm+QvLS1N94GenJws0tLShBBCxMTEiKVLl4qzZ8+KK1euiHfeeUdYWlqKxMRE3b4jIiJEaGioOHz4sDhx4oQYOHCgsLKy0vuyiYiIECNHjhTHjh0TV65cETNmzBAuLi4iMzOz2teyui/XU6dOCQBiw4YNutdMG24KCwvFrl27BABx9OhRkZycLPLz8ystKy8vF/v27RP29vZi5cqVIi4uTuzYsUMEBASI9957T68Gd3d3sXz5chEXFycSExNrvZ2Pj49Yt26duHr1qvjXv/4lbG1tdc/3xo0bwtnZWYwbN04cO3ZMXL58WSxfvlwXAn788Ufh5eUlNm/eLK5duyY2b94snJ2dxcqVK6t9vaoKN87OzmLx4sXi6tWrYt68eXpB414aI9xkZmYKmUwm5s+fL4QQorS0VMyZM0ccO3ZMXLt2Tfz444/C2tpa914KIUS7du3EZ599pvu7tLRUuLq6iuXLl9fq8VUqldi0aZOQyWTijTfe0K1T0zFYWFgoZsyYITp16iSSk5NFcnKyKCwsvOd2QmjCja2trRg3bpw4e/as2Ldvn/D09BRvvfWWEEKI7Oxs0adPHzFlyhTdvsvLyyuFm+PHjwu5XC4++OADcfnyZbFixQphZWWlNzlpQ99TMnwMN2SQ7gw3arVa7Ny5UyiVSjFz5kyRmJgoFAqFuHnzpt42Q4YMEbNnzxZC/PML8s5fhpcvXxYAKp0x0frwww/FsGHD9JYlJSUJAOLy5ctCCM0X392/fHv27Kn34V/bL7NOnTqJr7/+WgghxMWLFwUAcezYMd39V69eFQB0XzZ///23sLe3F8XFxXr7CQwMrPFXZ3X1FBUVCQC6L8w7w40Q/4Qf7dmZ6pYNGTJEfPLJJ3r7XrNmjfDy8tKr4dVXX9Vbp7bbvfPOO7q/8/PzBQDx119/CSGEmD17tmjdurUoLS2t8rkHBgaKdevW6S378MMPRZ8+fapcX4iqw81TTz2l+1utVgt3d3exZMmSavdxp8YIN0II4eHhIV588cVqt506dap4+OGHdX/Pnz9fdOzYUff35s2bha2trcjPz6/x8S0sLISNjY0wMzMTAISzs7O4evWqEKJ2x2BVfW5qu521tbVef6dZs2aJ8PBw3d9V9bm5O9w88cQTYujQoXrrzJo1SwQHB+s9z4a8p2T4zBq9nYuokfz++++wtbVFWVkZ1Go1nnjiCbz33nvYs2cPVCoV2rVrp7d+SUkJXFxcdH9bWFiga9euur9jYmKgUCgwcODAKh/v9OnT2L17N2xtbSvdFxcXp3u8O/cJAF5eXkhLS6vxueTn5+O9997DH3/8geTkZJSXl6OoqAjXr18HAFy+fBlmZmbo3r27bpugoCA4OTnp1Zefn6/3HAGgqKgIcXFxNT5+VYQQANDgvgqnT5/GgQMH9PqEqFQqFBcXo7CwUNcvp0ePHvXa7s7X28bGBvb29rrXOyYmBgMGDIC5uXmlugoKChAXF4dnn30WU6ZM0S0vLy+Hg4NDnZ7jnTXIZDJ4enre8z2vySeffIJPPvlE9/eFCxfg5+dX4zZCCL33avHixVi+fDmuX7+OoqIilJaWIjQ0VHf/5MmT8c477+Dw4cPo3bs3Vq5ciUcffRQ2NjY1Ps6sWbMwefJkJCcnY9asWXjppZcQFBQEoP7HYG23CwgI0OvvVJv/t+528eJFjB49Wm9Zv379sGjRIqhUKigUCgCN/56SYWG4IYM1ePBgLFmyBBYWFmjVqhXMzDSHa35+PhQKBU6cOKH7oNK6M5hYWVnpfRlYWVnV+Hj5+fkYOXIk5s+fX+k+Ly8v3b/v/iKVyWT37Kw8c+ZM7Ny5EwsWLEBQUBCsrKwwfvx4lJaW1rjd3fV5eXlhz549le67ewh3bVy8eBEA0Lp16zpve3dd77//PsaNG1fpPktLS92/7/5Sre12Nb3eNb2n+fn5AIBly5YhPDxc7767j5t7qc97XpP/+7//w6OPPqr7u1WrVjWun5mZifT0dN17tX79esycORNffPEF+vTpAzs7O3z++ec4cuSIbht3d3eMHDkSK1asQOvWrfHXX39VeezczdXVFUFBQQgKCsLGjRvRpUsX9OjRA8HBwfU+Bmu7XWO/zjVpzsei5sdwQwbLxsZG94vxTt26dYNKpUJaWhoGDBhQ6/116dIFarUae/fuRURERKX7u3fvjs2bNyMgIEAXpOrD3NwcKpVKb9mBAwcwefJkjB07FoDmwz4hIUF3f/v27VFeXo5Tp04hLCwMABAbG4vbt2/r1ZeSkgIzMzMEBATUuz6tRYsWwd7evsrXoi66d++Oy5cvV/leNcV2d+ratStWrVqFsrKySl9WHh4eaNWqFa5du4Ynn3yy3o/RFJydneHs7Fzr9b/66ivI5XKMGTMGgOZ46tu3L1566SXdOlWdOXnuuefw+OOPw8fHB4GBgejXr1+d6vT19cWECRMwe/ZsbN26tVbHoIWFRaXjv7GO3ar2fbeOHTviwIEDessOHDiAdu3a1TnUUsvFoeDU4rRr1w5PPvkkJk6ciC1btiA+Ph5Hjx7FvHnz8Mcff1S7XUBAACZNmoRnnnkGv/zyC+Lj47Fnzx789NNPAICpU6ciKysLjz/+OI4dO4a4uDhs374dUVFR9/xAvftxoqOjkZKSogsnbdu2xZYtWxATE4PTp0/jiSee0PuV2KFDB0REROD555/H0aNHcerUKTz//PN6Z58iIiLQp08fjBkzBjt27EBCQgIOHjyIt99+G8ePH6+xpuzsbKSkpCAxMRE7d+7E+PHjsW7dOixZsqReZ33uNGfOHKxevRrvv/8+zp8/j4sXL2L9+vV45513mmS7O02bNg25ubl47LHHcPz4cVy9ehVr1qzB5cuXAQDvv/8+5s2bh3//+9+4cuUKzp49ixUrVmDhwoUNes73kp+fj5iYGMTExAAA4uPjERMTo2uGrEleXh5SUlKQlJSEffv24fnnn8dHH32Ejz/+WBcE27Zti+PHj2P79u24cuUK3n33XRw7dqzSviIjI2Fvb4+PPvoIUVFR9Xour7zyCn777TccP368VsdgQECA7vlmZGSgpKSkQcfunQICAnDkyBEkJCQgIyOjyjMtM2bMQHR0ND788ENcuXIFq1atwn/+8x/MnDmzXs+fWiaGG2qRVqxYgYkTJ2LGjBlo3749xowZg2PHjt2z38KSJUswfvx4vPTSS+jQoQOmTJmCgoICAJqmgQMHDkClUmHYsGHo0qULXn31VTg6OkIur/3/Kl988QV27twJX19fdOvWDQCwcOFCODk5oW/fvhg5ciQiIyP1+tcAwOrVq+Hh4YH77rsPY8eOxZQpU2BnZ6dropHJZPjzzz9x3333ISoqCu3atcNjjz2GxMREeHh41FhTVFQUvLy80KFDB7z44ouwtbXF0aNH8cQTT9T6eVUnMjISv//+O3bs2IGePXuid+/e+PLLL+Hv798k293JxcUF//vf/5Cfn4+BAwciLCwMy5Yt053Fee655/D9999jxYoV6NKlCwYOHIiVK1c2uCnuXo4fP45u3brp3v/p06ejW7dumDNnzj23nTNnDry8vBAUFISnn34aOTk5iI6OxhtvvKFb54UXXsC4ceMwYcIEhIeHIzMzU+8sjpZcLsfkyZOhUqkwceLEej2X4OBgDBs2DHPmzKnVMfjwww/jgQcewODBg+Hm5ob//ve/DTp27zRz5kwoFAoEBwfDzc2tyrDYvXt3/PTTT1i/fj06d+6MOXPm4IMPPsDkyZPr9fypZZIJba9CIjIoN27cgK+vL3bt2oUhQ4ZIXQ61UM8++yzS09Px66+/Sl0KUbNhnxsiA6E9A9GlSxckJyfj9ddfR0BAAO677z6pS6MWKCcnB2fPnsW6desYbMjkMNwQGYiysjK89dZbuHbtGuzs7NC3b1+sXbu2ymHORPcyevRoHD16FP/3f/+HoUOHSl0OUbNisxQREREZFXYoJiIiIqPCcENERERGheGGiIiIjArDDRERERkVhhsiIiIyKgw3REREZFQYboiIiMioMNwQERGRUWG4ISIiIqPy//dxAEwLcHySAAAAAElFTkSuQmCC)
+
+2024-06-15 19:04:21,191 - INFO - CodeActAgent LEVEL 0 STEP 10
+2024-06-15 19:04:29,398 - INFO - Cost: 0.39 USD | Accumulated Cost: 3.50 USD
+2024-06-15 19:04:29,398 - INFO - **IPythonRunCellAction**
+THOUGHT: The KDE plot shows the distribution of the percentage differences in 1-day retention between the `gate_30` and `gate_40` versions. The distribution appears to be centered around 1%, suggesting that the `gate_30` version tends to have a slightly higher 1-day retention rate than the `gate_40` version.
+
+The next step in the guidance.txt file is to compute the probability that the 1-day retention rate is higher for the `gate_30` version than for the `gate_40` version. This is done by calculating the proportion of bootstrap samples where the percentage difference is greater than 0.
+
+Let's calculate this probability.
+CODE:
+# Calculate the probability that the 1-day retention rate is higher for gate_30
+probability = (percentage_differences > 0).mean()
+
+probability
+2024-06-15 19:04:29,923 - INFO - **IPythonRunCellObservation**
+0.9608
+2024-06-15 19:04:30,026 - INFO - CodeActAgent LEVEL 0 STEP 11
+2024-06-15 19:04:34,927 - INFO - Cost: 0.40 USD | Accumulated Cost: 3.90 USD
+2024-06-15 19:04:34,928 - INFO - **IPythonRunCellAction**
+THOUGHT: The calculated probability that the 1-day retention rate is higher for the `gate_30` version than for the `gate_40` version is approximately 0.961 (or 96.1%).
+
+The final step in the guidance.txt file is to save this result to the probability_greater_retention.csv file. Let's do that now.
+CODE:
+# Create a DataFrame with the result
+result = pd.DataFrame({'probability': [probability]})
+
+# Save the result to the CSV file
+result.to_csv('probability_greater_retention.csv', index=False)
+2024-06-15 19:04:35,441 - INFO - **IPythonRunCellObservation**
+[Code executed successfully with no output]
+2024-06-15 19:04:35,544 - INFO - CodeActAgent LEVEL 0 STEP 12
+2024-06-15 19:04:37,796 - INFO - Cost: 0.40 USD | Accumulated Cost: 4.29 USD
+2024-06-15 19:04:37,796 - INFO - **CmdRunAction**
+THOUGHT: Let's verify that the result was saved correctly by reading the contents of the probability_greater_retention.csv file.
+COMMAND:
+cat probability_greater_retention.csv
+2024-06-15 19:04:37,982 - INFO - **CmdOutputObservation (exit code=0)**
+probability
+0.9608
+2024-06-15 19:04:38,085 - INFO - CodeActAgent LEVEL 0 STEP 13
+2024-06-15 19:04:41,278 - INFO - Cost: 0.40 USD | Accumulated Cost: 4.70 USD
+2024-06-15 19:04:41,278 - INFO - **MessageAction** (source=None)
+CONTENT: The probability that the 1-day retention rate is higher for the `gate_30` version than for the `gate_40` version has been successfully saved to the probability_greater_retention.csv file. The calculated probability is approximately 0.961 (or 96.1%).
+
+<solution>probability_greater_retention.csv</solution>
+2024-06-15 19:04:41,279 - INFO - **MessageAction** (source=EventSource.AGENT)
+CONTENT: The probability that the 1-day retention rate is higher for the `gate_30` version than for the `gate_40` version has been successfully saved to the probability_greater_retention.csv file. The calculated probability is approximately 0.961 (or 96.1%).
+
+<solution>probability_greater_retention.csv</solution>
+2024-06-15 19:04:41,279 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.AWAITING_USER_INPUT
+2024-06-15 19:04:41,279 - INFO - **MessageAction** (source=EventSource.USER)
+CONTENT: /exit
+2024-06-15 19:04:41,279 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.AWAITING_USER_INPUT to AgentState.RUNNING
+2024-06-15 19:04:41,382 - INFO - CodeActAgent LEVEL 0 STEP 14
+2024-06-15 19:04:41,382 - INFO - AgentFinishAction(outputs={}, thought='', action='finish')
+2024-06-15 19:04:41,383 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.FINISHED
+2024-06-15 19:04:42,282 - INFO - [Agent Controller default] Setting agent(CodeActAgent) state from AgentState.FINISHED to AgentState.STOPPED
+2024-06-15 19:04:42,283 - INFO - AgentController task was cancelled
