@@ -34,7 +34,7 @@ ordered_categories = [
 ]
 
 # 指定数据目录
-results_folder = 'dabench\\benchmark\\results\\results_analysis'
+results_folder = 'dabench\\benchmark\\results\\counts_for_turn'
 
 # 遍历目录中的所有统计文件
 for file_name in os.listdir(results_folder):

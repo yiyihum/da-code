@@ -167,7 +167,7 @@ import os
 import pandas as pd
 from collections import defaultdict
 
-results_folder = 'dabench\\benchmark\\results\\results_analysis'
+results_folder = 'dabench\\benchmark\\results\\counts_for_turn'
 mapping_file = os.path.join(input_dir, 'mapping.csv')
 mapping_df = pd.read_csv(mapping_file)
 type_mapping = dict(zip(mapping_df['step_type'], mapping_df['class']))
