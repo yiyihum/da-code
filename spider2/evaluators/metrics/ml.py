@@ -24,9 +24,9 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     target_column = kwargs.get('target_column', '')
     task_type = config.get('type', '')
     metric = config.get("metric", "")
+    scale = kwargs.get("scale", True)
     upper_bound = config.get("upper_bound", 0.9)
     lower_bound = config.get("lower_bound", 0.0)
-    output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
 
     if not config or not task_type:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type", such as {TYPES}')
@@ -88,15 +88,16 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
         output_ml['score'] = 0.0
         return output_ml
     
-    is_lower_metric = metric.lower() in LOWER_METRICS
-    if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
-        score = 1.0
-    elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
-        score = 0.0
-    else:
-        score = (score - lower_bound) / (upper_bound - lower_bound)
+    if scale:
+        is_lower_metric = metric.lower() in LOWER_METRICS
+        if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
+            score = 1.0
+        elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
+            score = 0.0
+        else:
+            score = (score - lower_bound) / (upper_bound - lower_bound)
+        output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
 
-            
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
     
@@ -108,10 +109,10 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
     task_type = config.get('type', '')
     averaged = kwargs.get('average', '')
     metric = config.get("metric", "")
+    scale = kwargs.get("scale", True)
     upper_bound = config.get("upper_bound", 0.9)
     lower_bound = config.get("lower_bound", 0.0)
-    output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
-
+    
     if not config or not task_type or not metric:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type" and a "metric"')
     
@@ -159,13 +160,15 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
             output_ml['score'] = 0.0
             return output_ml
     
-    is_lower_metric = metric.lower() in LOWER_METRICS
-    if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
-        score = 1.0
-    elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
-        score = 0.0
-    else:
-        score = (score - lower_bound) / (upper_bound - lower_bound)
+    if scale:
+        is_lower_metric = metric.lower() in LOWER_METRICS
+        if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
+            score = 1.0
+        elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
+            score = 0.0
+        else:
+            score = (score - lower_bound) / (upper_bound - lower_bound)
+        output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
 
     output_ml['errors'].extend(output['errors'])
     output_ml['score'] = score
