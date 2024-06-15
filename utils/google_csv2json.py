@@ -55,7 +55,7 @@ for index, row in data.iterrows():
         })
     if is_verbose and row["Level"].lower() == "hard":
         verbose = row["Verbose"]
-        ins_verbose = "\n\n[Verbose]\n" + verbose
+        ins_verbose = "\n\nStep for reference\n" + verbose
         
         data_json.append({
             "id": id,

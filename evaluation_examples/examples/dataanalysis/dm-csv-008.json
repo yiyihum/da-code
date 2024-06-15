@@ -1,0 +1,2 @@
+{"id": "dm-csv-008", "config":{"task": "eda", "type": "csv", "metric": "", "threshold": 0.0}, "func":["compare_csv"], "result":[{"file": ["correlation_results.csv"]}],"options": [{"condition_cols": [1]}]}
+  
