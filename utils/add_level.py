@@ -1,8 +1,8 @@
 import jsonlines, json, os
 
 
-ins_path = 'benchmark/configs/ML.jsonl'
-eval_path = 'benchmark/configs/Evaluation_ML_wo_thr.jsonl'
+ins_path = 'benchmark/configs/Visual.jsonl'
+eval_path = 'benchmark/configs/Evaluation_Visual.jsonl'
 
 
 with jsonlines.open(ins_path, 'r') as f:
@@ -26,7 +26,7 @@ for eval in evals:
     eval["config"]["hardness"] = levels[id]
     evals2.append(eval)
 
-eval_path = 'benchmark/configs/Evaluation_ML_wo_thr2.jsonl'
+eval_path = 'benchmark/configs/Evaluation_V2.jsonl'
 with jsonlines.open(eval_path, 'w') as js:
     js.write_all(evals2)
 

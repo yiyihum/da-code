@@ -1,33 +1,15 @@
-import jsonlines, json
+import jsonlines
 
+# 定义源文件和目标文件的路径
+source_file = 'benchmark/configs/Visual.jsonl'
+target_file = 'benchmark/configs/Verbose.jsonl'
 
-LOWER_METRICS = ["logloss_class", "logloss_total", "rmsle", "mae", "mse", "smape", "medae", "crps"]
-with jsonlines.open('./benchmark/configs/Evaluation_ML.jsonl', 'r') as js:
-    lines = [line for line in js]
+# 读取源文件内容
+with jsonlines.open(source_file) as reader:
+    source_data = [obj for obj in reader if obj["hardness"] == "Hard"]
 
-configs = []    
-for line in lines:
-    id = line['id']
-    if 'regression' in id or 'multi' in 'id':
-        configs.append(line)
-        continue
-    metric = line['config']['metric']
-    if metric in LOWER_METRICS:
-        line['config']['upper_bound'] = line['config']['upper_bound'] * 0.9
-    else:
-        line['config']['upper_bound'] = line['config']['upper_bound'] / 0.9
+# 追加到目标文件
+with jsonlines.open(target_file, mode='a') as writer:
+    writer.write_all(source_data)
 
-    
-    if "competition" in id:
-        if metric in LOWER_METRICS:
-            line['config']['lower_bound'] = line['config']['lower_bound'] * 0.9
-        else:
-            line['config']['lower_bound'] = line['config']['lower_bound'] / 0.9
-            
-    configs.append(line)
-
-with jsonlines.open('./benchmark/configs/Evaluation_ML2.jsonl', 'w') as js:
-    js.write_all(configs)
-        
-    
-
+print("内容已成功追加到目标文件中。")

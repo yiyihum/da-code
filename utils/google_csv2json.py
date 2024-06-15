@@ -4,7 +4,7 @@ def load_csv(file_path):
     return pd.read_csv(file_path)
 
 # 使用方法：
-file_path = "./benchmark/configs/DM.csv"
+file_path = "./benchmark/configs/DV.csv"
 
 is_verbose = False
 
@@ -29,10 +29,9 @@ data = load_csv(file_path)
 # }
 
 data_json = []
-print(data.columns)
 for index, row in data.iterrows():
     id = str(row["id."])
-    if 'dm-csv' not in id:
+    if 'plot-' not in id:
         continue
     
     if not is_verbose:
@@ -51,8 +50,9 @@ for index, row in data.iterrows():
                     }
                 }
             ],
-            "post_process": []
+            "post_process": ["plot_process"]
         })
+    
     if is_verbose and row["Level"].lower() == "hard":
         verbose = row["Verbose"]
         ins_verbose = "\n\nStep for reference\n" + verbose
@@ -72,12 +72,12 @@ for index, row in data.iterrows():
                     }
                 }
             ],
-            "post_process": []
+            "post_process": ["plot_process"]
         })
     
 # 保存为jsonl
 import json, jsonlines
 data_json = sorted(data_json, key=lambda x: x["id"])
-with jsonlines.open('./benchmark/configs/DM.jsonl', mode='w') as writer:
+with jsonlines.open('./benchmark/configs/Visual2.jsonl', mode='w') as writer:
     for item in data_json:
         writer.write(item)
