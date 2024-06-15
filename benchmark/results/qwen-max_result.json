@@ -1,6 +1,6 @@
 {
-    "num_results": 263,
-    "average_score": 0.2378988503428017,
+    "num_results": 265,
+    "average_score": 0.2361033873213466,
     "results": [
         {
             "id": "dm-csv-001",
@@ -11530,7 +11530,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['DeviceRegistered', 'SupportTicketsPerMonth', 'PaperlessBilling', 'Gender', 'PaymentMethod', 'SubscriptionType', 'MultiDeviceAccess', 'GenrePreference', 'ContentType', 'ParentalControl', 'AverageViewingDuration', 'MonthlyCharges', 'AccountAge', 'SubtitlesEnabled', 'WatchlistSize', 'TotalCharges', 'UserRating', 'ViewingHoursPerWeek', 'ContentDownloadsPerMonth', 'CustomerID']"
+                        "result csv columns are different from gold csv: ['PaperlessBilling', 'AverageViewingDuration', 'WatchlistSize', 'SupportTicketsPerMonth', 'MultiDeviceAccess', 'DeviceRegistered', 'ContentDownloadsPerMonth', 'SubscriptionType', 'CustomerID', 'ParentalControl', 'AccountAge', 'TotalCharges', 'ContentType', 'ViewingHoursPerWeek', 'MonthlyCharges', 'SubtitlesEnabled', 'Gender', 'PaymentMethod', 'GenrePreference', 'UserRating']"
                     ],
                     "score": 0.9030195127194834,
                     "metric": "f1",
@@ -13365,6 +13365,95 @@
             ]
         },
         {
+            "id": "ml-competition-001",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 12,
+            "result": "final_submission.csv",
+            "added_files": [
+                "./benchmark/output/qwen-max-ML0613/ml-competition-001/preprocess_data.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-001/align_and_submit.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-001/align_and_submit_corrected.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-001/verify_and_submit.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-001/final_submission.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    43,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    36,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    34,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    43,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "ID does not match, result has extra id: 165034,165035,165036,165037,165038...189789"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "final_submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "ml-competition-002",
             "total_score": 0.0,
             "hardness": "Hard",
@@ -13650,7 +13739,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Steel_Plate_Thickness', 'X_Perimeter', 'Y_Maximum', 'X_Minimum', 'Edges_Index', 'Outside_X_Index', 'Maximum_of_Luminosity', 'Length_of_Conveyer', 'Empty_Index', 'Minimum_of_Luminosity', 'Luminosity_Index', 'LogOfAreas', 'Log_X_Index', 'TypeOfSteel_A300', 'Y_Perimeter', 'TypeOfSteel_A400', 'X_Maximum', 'Edges_Y_Index', 'Pixels_Areas', 'Edges_X_Index', 'Orientation_Index', 'Outside_Global_Index', 'Y_Minimum', 'Sum_of_Luminosity', 'Square_Index', 'SigmoidOfAreas', 'Log_Y_Index']"
+                        "Unexpected Column: ['Y_Maximum', 'Square_Index', 'X_Minimum', 'Length_of_Conveyer', 'Edges_X_Index', 'Log_Y_Index', 'SigmoidOfAreas', 'TypeOfSteel_A400', 'Maximum_of_Luminosity', 'TypeOfSteel_A300', 'X_Perimeter', 'Y_Minimum', 'Minimum_of_Luminosity', 'Y_Perimeter', 'Luminosity_Index', 'Sum_of_Luminosity', 'Edges_Y_Index', 'LogOfAreas', 'Pixels_Areas', 'Empty_Index', 'Steel_Plate_Thickness', 'Outside_Global_Index', 'Log_X_Index', 'X_Maximum', 'Outside_X_Index', 'Edges_Index', 'Orientation_Index']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -13876,6 +13965,89 @@
                     "lower_bound": 0.0,
                     "file": [
                         "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 10,
+            "result": "test_preprocessed.csv",
+            "added_files": [
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/preprocess_test_data.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/test_preprocessed.csv",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/train_model.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/preprocess_and_train.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/explore_train_data.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/preprocess_test_data_outline.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/preprocess_train_data.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/preprocess_and_train_regression_lite.py",
+                "./benchmark/output/qwen-max-ML0613/ml-competition-008/preprocess_and_train_regression.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    18,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "Unexpected Column: ['Encroachments', 'InadequatePlanning', 'TopographyDrainage', 'RiverManagement', 'PopulationScore', 'ClimateChange', 'CoastalVulnerability', 'MonsoonIntensity', 'AgriculturalPractices', 'DeterioratingInfrastructure', 'WetlandLoss', 'Watersheds', 'DrainageSystems', 'Siltation', 'PoliticalFactors', 'IneffectiveDisasterPreparedness', 'Deforestation', 'Landslides', 'Urbanization', 'DamsQuality']"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "test_preprocessed.csv"
                     ]
                 }
             ]
@@ -17205,7 +17377,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['game', 'predicted_rating']",
+                        "result csv columns are different from gold csv: ['predicted_rating', 'game']",
                         "Could not find target column in result, which is rating in gold"
                     ],
                     "score": 0.0,

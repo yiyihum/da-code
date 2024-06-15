@@ -1,6 +1,6 @@
 {
-    "num_results": 78,
-    "average_score": 0.38984940912886623,
+    "num_results": 80,
+    "average_score": 0.3801031739006446,
     "results": [
         {
             "id": "dm-csv-007",
@@ -2711,6 +2711,103 @@
             ]
         },
         {
+            "id": "ml-competition-001",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 12,
+            "result": "/workspace/submission_cat3.csv",
+            "added_files": [
+                "./benchmark/output/azure-verbose/ml-competition-001/preprocessed_test.csv",
+                "./benchmark/output/azure-verbose/ml-competition-001/save_model.py",
+                "./benchmark/output/azure-verbose/ml-competition-001/inspect_data.py",
+                "./benchmark/output/azure-verbose/ml-competition-001/preprocessed_train.csv",
+                "./benchmark/output/azure-verbose/ml-competition-001/model_training.py",
+                "./benchmark/output/azure-verbose/ml-competition-001/data_preprocessing.py",
+                "./benchmark/output/azure-verbose/ml-competition-001/generate_predictions.py",
+                "./benchmark/output/azure-verbose/ml-competition-001/catboost_model.pkl",
+                "./benchmark/output/azure-verbose/ml-competition-001/submission_cat3.csv",
+                "./benchmark/output/azure-verbose/ml-competition-001/catboost_info/time_left.tsv",
+                "./benchmark/output/azure-verbose/ml-competition-001/catboost_info/learn_error.tsv",
+                "./benchmark/output/azure-verbose/ml-competition-001/catboost_info/catboost_training.json",
+                "./benchmark/output/azure-verbose/ml-competition-001/catboost_info/learn/events.out.tfevents"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    38,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    43,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install catboost",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    46,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "ID does not match, result has extra id: 15695872,15794178,15695874,15630349,15695888...15695865"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission_cat3.csv"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "ml-competition-002",
             "total_score": 0.0,
             "hardness": "Hard",
@@ -3650,6 +3747,112 @@
                     "lower_bound": 4.93137,
                     "file": [
                         "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-017",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 14,
+            "result": "test_paragraph_counts.csv",
+            "added_files": [
+                "./benchmark/output/azure-verbose/ml-competition-017/load_train_data.py",
+                "./benchmark/output/azure-verbose/ml-competition-017/paragraph_stats_train.py",
+                "./benchmark/output/azure-verbose/ml-competition-017/test_paragraph_counts.csv",
+                "./benchmark/output/azure-verbose/ml-competition-017/preprocess_paragraphs.py",
+                "./benchmark/output/azure-verbose/ml-competition-017/paragraph_stats_test.py",
+                "./benchmark/output/azure-verbose/ml-competition-017/test_paragraphs.csv",
+                "./benchmark/output/azure-verbose/ml-competition-017/train_paragraph_counts.csv",
+                "./benchmark/output/azure-verbose/ml-competition-017/paragraph_split_test.py",
+                "./benchmark/output/azure-verbose/ml-competition-017/preprocess_paragraphs_train.py",
+                "./benchmark/output/azure-verbose/ml-competition-017/train_paragraphs_features.csv",
+                "./benchmark/output/azure-verbose/ml-competition-017/test_paragraphs_features.csv",
+                "./benchmark/output/azure-verbose/ml-competition-017/load_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat sample_submission.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    34,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install nltk",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    38,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    41,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "Unexpected Column: ['paragraph_count_len_gt_50', 'paragraph_count_len_gt_200', 'paragraph_count_len_gt_100', 'paragraph_count_len_gt_150']"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "test_paragraph_counts.csv"
                     ]
                 }
             ]
