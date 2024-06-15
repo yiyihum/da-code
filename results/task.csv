@@ -1,0 +1,10 @@
+                            ,dw ,ml ,plot ,dm ,sa ,total
+gpt4-turbo                  , 0 ,95 ,  49 ,61 ,60 ,  265
+claude-3-opus-20240229      , 0 ,74 ,  49 , 7 , 0 ,  130
+gemini-1.5-pro-latest       , 0 ,95 ,  49 ,56 ,59 ,  259
+llama3-70b                  , 0 ,95 ,  49 ,13 , 0 ,  157
+qwen-max                    , 0 ,93 ,  49 ,60 ,60 ,  262
+Mixtral-8x22B-Instruct-v0.1 , 0 ,95 ,  19 , 0 , 0 ,  114
+deepseek-coder-33b-instruct , 0 ,94 ,   8 , 0 , 0 ,  102
+CodeLlama-70b-Instruct-hf   , 0 ,92 ,  17 , 0 , 0 ,  109
+mixtral-8x7b-32768          , 0 ,16 ,  30 , 0 , 0 ,   46

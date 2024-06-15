@@ -1,0 +1,6263 @@
+{
+    "num_results": 109,
+    "average_score": 0.01834862385321101,
+    "results": [
+        {
+            "id": "plot-bar-001",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "sales.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-002",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-003",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-004",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-005",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-006",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "team.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-007",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-008",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-009",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-011",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "output.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-016",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-017",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "party_sums_plot.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "The length of the result content is not equal to the length of the true value."
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-002/submission.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-003",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "The length of the result content is not equal to the length of the true value."
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "prediction.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-004",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-004/submission.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "accuracy",
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-005",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-005/label.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "label.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-006",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head README.md",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-006/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-007",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-007/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-008",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 18,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-008/train_model.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head loan_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head loan_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head loan_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head loan_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head loan_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head test.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-008/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-009",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-009/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-011",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 8,
+            "result": "results.csv",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-011/predict_results.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-011/explore_dataset.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-011/train_model.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-011/preprocess_dataset.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-011/preprocessed_train.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head Train.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-011/results.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "results.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-012/sentiment.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "sentiment.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-013",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-013/target.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "accuracy",
+                    "file": [
+                        "target.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-014",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 8,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 data_descriptions.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 test.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-014/churn.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "churn.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-015",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-015/class.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "class.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-016",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 19,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-016/data_analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-016/defaulter.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "defaulter.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-017",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 18,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-017/tomorrow.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "tomorrow.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-018",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "stroke.csv",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-018/explore_data.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-binary-018/model.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    37,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    34,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    34,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    34,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-018/stroke.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "stroke.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-019",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-019/class.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "class.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-020",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-020/disease.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "disease.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-021",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-021/diabetes.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "diabetes.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-binary-022",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-binary-022/bankrupt.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "bankrupt.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-001",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 10,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-001/clustering.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-001/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-002",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-002/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-003",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-003/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-004",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-004/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-005/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-006",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "cluster.csv",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-006/cluster.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-006/clustering.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Python",
+                    23,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 1.0,
+                    "metric": "silhouette",
+                    "target_output": "Cluster",
+                    "upper_bound": 0.4612088888888889,
+                    "lower_bound": 0.0,
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 7,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-007/cluster.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    20,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-007/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-008",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-008/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-009",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-009/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-010",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 7,
+            "result": "clustered_data.csv",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/data_exploration.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/scaled_data.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/read_dataset.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/clustering.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/cluster_labels.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/combine_data.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/clustered_data.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-010/data_preprocessing.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    16,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "target_output": "Cluster",
+                    "upper_bound": 0.7999999999999999,
+                    "lower_bound": 0.0,
+                    "file": [
+                        "clustered_data.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-012/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-013",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-013/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-014/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-015",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-015/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-016",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-016/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-017",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-017/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-018",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-018/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-019",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-cluster-019/cluster.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "silhouette",
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-cluster-020",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 12,
+            "result": "cluster.csv",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-020/cluster.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-020/analyze_data.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-cluster-020/cluster_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head -n 5 iris.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 iris.data",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 IRIS.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l cluster.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 cluster.csv",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result contains non numeric columns: ['species']"
+                    ],
+                    "score": 1.0,
+                    "metric": "silhouette",
+                    "target_output": "cluster",
+                    "upper_bound": 0.4644111111111111,
+                    "lower_bound": 0.0,
+                    "file": [
+                        "cluster.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-001",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 11,
+            "result": "FAIL",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-002/explore_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    6,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    21,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    21,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM train",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM train",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-003",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-005",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-005/data_exploration.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-005/model_training.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-006",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 11,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-007/describe_data.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-007/load_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat data_description.txt",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-009",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-010",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-011",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-013",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-015",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 8,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-015/data_analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    16,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-016",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-017",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-competition-017/explore_dataset.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head train.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    40,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    54,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    51,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    51,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-018",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-019",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-competition-020",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file submission.csv does not exist"
+                    ],
+                    "score": 0.0,
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-001",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 11,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-multi-001/data_analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    11,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    14,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    20,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-001/activity.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "accuracy",
+                    "file": [
+                        "activity.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-002/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "accuracy",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-003",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-003/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-004",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-004/level.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "level.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-005/emotions.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "emotions.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-006",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-006/score.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "score.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-007",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-007/class.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "class.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 9,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-multi-008/read_csv.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-008/category.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "category.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-009",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-009/type.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "type.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-010/class.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "class.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-011",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-011/sentiment.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "sentiment.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-multi-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-multi-012/prediction.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "f1",
+                    "file": [
+                        "prediction.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-001",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-001/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-002/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-003",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-003/submission.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-004",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 8,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 train.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 top_10000_1960-now.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-004/popularity.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "popularity.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-005/price.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "price.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-006",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-006/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-007",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-007/job_satisfaction.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "job_satisfaction.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-008",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 7,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 vietnamese_tiki_products_men_shoes.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-008/quantity.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "quantity.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-009",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-009/price.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "price.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-010",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-010/Usefulness.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "Usefulness.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-012",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-012/explore_dataset.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM New_York_cars LIMIT 5",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM New_York_cars LIMIT 5",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM New_York_cars LIMIT 5",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM New_York_cars LIMIT 5",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM New_York_cars LIMIT 5",
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    45,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-012/result.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "result.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-013/analyze_dataset.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    40,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    65,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    62,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    65,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    62,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    62,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-013/price.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "price.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-014",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 19,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-014/explore_dataset.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-014/car_prices.db",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-014/read_csv.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-014/predict_prices.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    16,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    39,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    36,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    43,
+                    "error message"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-014/price.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "price.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": false,
+            "steps": 7,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head -n 5 test.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-015/appliance.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "appliance.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-016",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 16,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-016/data_analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    110,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "error message"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT * FROM Cleaned_dataset",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-016/fare.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "fare.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-017",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-017/rating.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "rating.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-018",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-018/submission.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-019",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/data_exploration.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/y_train.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/train_model.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/X_test.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/read_csv.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/data_preprocessing.py",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/X_train.csv",
+                "./benchmark/output/CodeLlama-70b-Instruct-hf-ML/ml-regression-019/y_test.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    11,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    22,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-019/pm.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "pm.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-020",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 10,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "head -n 5 README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 test.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 sample_submission.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 Sample_Submission.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 Sample_Submission.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-020/submission.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "submission.csv"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ml-regression-021",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 4,
+            "result": "",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "None",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "errors": [
+                        "result file ./benchmark/output/CodeLlama-70b-Instruct-hf/ml-regression-021/price.csv does not exists"
+                    ],
+                    "score": 0.0,
+                    "metric": "r2",
+                    "file": [
+                        "price.csv"
+                    ]
+                }
+            ]
+        }
+    ]
+}

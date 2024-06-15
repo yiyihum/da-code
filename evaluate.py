@@ -19,11 +19,11 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
         json.dump(results_json, json_file, indent=4)
 
 # Parameters
-experiments = "azure-ML0611"
-output_dir = f'./benchmark/_result/azure-ML0611'
+experiments = "azure-verbose"
+output_dir = f'./benchmark/output/azure-verbose'
 gold_dir = './benchmark/gold'
-eval_json = './benchmark/configs/Evaluation_ML.jsonl'
-output_file = f'./benchmark/results/{experiments}_result22.json'
+eval_json = './benchmark/configs/Evaluation_Verbose.jsonl'
+output_file = f'./benchmark/results/verbose/gpt4_turbo_with_verbose.json'
 timeout_seconds = 6000
 
 # Run the evaluation with the specified parameters

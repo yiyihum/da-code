@@ -1,0 +1,10 @@
+,Easy,Medium,Hard,none
+gpt4-turbo,8.261,7.793,8.988,0.000
+claude-3-opus-20240229,9.576,7.596,9.750,0.000
+gemini-1.5-pro-latest,8.121,6.737,9.418,0.000
+llama3-70b,11.400,10.185,11.558,0.000
+qwen-max,8.362,8.183,8.282,0.000
+Mixtral-8x22B-Instruct-v0.1,10.971,11.256,12.488,0.000
+deepseek-coder-33b-instruct,13.515,12.633,13.385,0.000
+CodeLlama-70b-Instruct-hf,6.906,5.811,6.950,0.000
+mixtral-8x7b-32768,14.900,13.423,11.400,0.000
