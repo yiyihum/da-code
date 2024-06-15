@@ -13,7 +13,7 @@ def clean_action_detail(detail):
 
 # 定义目录路径
 input_dir = 'dabench\\benchmark\\results'
-output_dir = 'dabench\\benchmark\\results\\results_analysis'
+output_dir = 'dabench\\benchmark\\results\\statistic'
 
 # 如果输出目录不存在，则创建
 if not os.path.exists(output_dir):
@@ -79,10 +79,8 @@ for filename in os.listdir(input_dir):
                         step = "Python-new"
                     elif previous_action[0] == "Python" and previous_action[2] == "error message":
                         step = "Python-debug"
-                    elif previous_action[0] == "Python" and action_result != "execution succeeded":
-                        step = "Python-new"
                     else:
-                        step = "Python"
+                        step = "Python-new"
                         
                 elif action_type == "SQL":
                     # 尝试对 command 进行分割
@@ -132,7 +130,7 @@ import os
 import pandas as pd
 
 # 定义目录路径
-input_dir = 'dabench\\benchmark\\results\\results_analysis'
+input_dir = 'dabench\\benchmark\\results\\statistic'
 
 # 遍历文件夹下所有的CSV文件
 for filename in os.listdir(input_dir):
@@ -165,3 +163,49 @@ for filename in os.listdir(input_dir):
         df.to_csv(filepath, index=False)
 
         print(f"Processed {filepath} and saved changes back to the source file")
+import os
+import pandas as pd
+from collections import defaultdict
+
+results_folder = 'dabench\\benchmark\\results\\results_analysis'
+mapping_file = os.path.join(input_dir, 'mapping.csv')
+mapping_df = pd.read_csv(mapping_file)
+type_mapping = dict(zip(mapping_df['step_type'], mapping_df['class']))
+
+
+# 用于收集Unknown类型的数据
+unknown_content = defaultdict(list)
+
+for file_name in os.listdir(input_dir):
+    if file_name.endswith('.csv') and file_name != 'mapping.csv':
+        file_path = os.path.join(input_dir, file_name)
+        
+        # 读取CSV文件
+        df = pd.read_csv(file_path)
+        
+        # 初始化类型计数
+        round_type_counts = defaultdict(lambda: defaultdict(int))
+
+        # 统计每一轮中每种操作的数量
+        for turn_index, column in enumerate(df.columns[1:], start=1):  # 跳过第一列，轮数从1开始
+            for step in df[column].dropna():
+                clazz = type_mapping.get(step, 'Other')
+                round_type_counts[turn_index][clazz] += 1
+        
+        # 将统计信息转换为 DataFrame
+        all_rounds_data = []
+        for round_index, counts in round_type_counts.items():
+            round_data = {'Round': round_index}
+            round_data.update(counts)
+            all_rounds_data.append(round_data)
+        counts_df = pd.DataFrame(all_rounds_data)
+        counts_df = counts_df.fillna(0)  # 用 0 填充NaN
+        counts_df = counts_df.sort_values(by='Round')  # 根据轮数排序
+        # 将数值列转换为整型
+        for col in counts_df.columns[1:]:  # 跳过 'Round' 列
+            counts_df[col] = counts_df[col].astype(int)
+        # 保存结果到 CSV
+        output_file = os.path.join(results_folder, file_name.replace('.csv', '_counts.csv'))
+        counts_df.to_csv(output_file, index=False)
+        print(f"Saved round type counts to {output_file}")
+

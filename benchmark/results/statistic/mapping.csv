@@ -78,49 +78,48 @@ Bash-debug-sqlite3,System Operations
 Bash-new-file,System Operations
 Bash-debug-files,System Operations
 Terminate,System Operations
-Bash-new-display,Image & Display Operations
-Bash-new-eog,Image & Display Operations
-Bash-new-feh,Image & Display Operations
-Bash-new-xdg-open,Image & Display Operations
+Bash-new-display,File Viewing
+Bash-new-eog,File Viewing
+Bash-new-feh,File Viewing
+Bash-new-xdg-open,File Viewing
 Bash-new-unzip,File Operating
 Bash-new-gunzip,File Operating
 Bash-new-zcat,File Operating
-Bash-new-pip,Package Management Operations
-Bash-debug-pip,Package Management Operations
-Bash-new-apt-get,Package Management Operations
-Bash-debug-apt-get,Package Management Operations
-Bash-new-yum,Package Management Operations
-Bash-new-dnf,Package Management Operations
-Bash-new-zypper,Package Management Operations
-Bash-new-pacman,Package Management Operations
-Bash-new-brew,Package Management Operations
-Bash-new-pkg,Package Management Operations
-Bash-new-emerge,Package Management Operations
-Bash-new-port,Package Management Operations
-Bash-new-pkg_add,Package Management Operations
-Bash-new-pkgutil,Package Management Operations
-Bash-new-pkg_info,Package Management Operations
-Bash-new-pkg_search,Package Management Operations
-Bash-new-python3+source+pip,Package Management Operations
-Bash-new-python3,Package Management Operations
-Bash-new-pip+python3,Package Management Operations
-Bash-debug-pip+python3,Package Management Operations
+Bash-new-pip,Package Management
+Bash-debug-pip,Package Management
+Bash-new-apt-get,Package Management
+Bash-debug-apt-get,Package Management
+Bash-new-yum,Package Management
+Bash-new-dnf,Package Management
+Bash-new-zypper,Package Management
+Bash-new-pacman,Package Management
+Bash-new-brew,Package Management
+Bash-new-pkg,Package Management
+Bash-new-emerge,Package Management
+Bash-new-port,Package Management
+Bash-new-pkg_add,Package Management
+Bash-new-pkgutil,Package Management
+Bash-new-pkg_info,Package Management
+Bash-new-pkg_search,Package Management
+Bash-new-python3+source+pip,Package Management
+Bash-new-python3,Package Management
+Bash-new-pip+python3,Package Management
+Bash-debug-pip+python3,Package Management
 Bash-new-wget,Other
 Bash-new-curl,Other
 Bash-new-ssh,Other
 Bash-new-lynx,Other
 Bash-new-mail,Other
-SQL-new-SELECT,New SQL Query
-SQL-new-PRAGMA,New SQL
-SQL-new-CREATE,New SQL Create
-SQL-new-WITH,New SQL
-SQL-debug-SELECT,Debug SQL Query
-SQL-debug-PRAGMA,Debug SQL
-SQL-debug-CREATE,Debug SQL Create
-SQL-debug-.tables,Debug SQL
-Python-new,New Python
-Python-debug,Debug Python
-Python,Python
+SQL-new-SELECT,SQL Query
+SQL-new-PRAGMA,SQL Update
+SQL-new-CREATE,SQL Update
+SQL-new-WITH,SQL Update
+SQL-debug-SELECT,SQL Debug
+SQL-debug-PRAGMA,SQL Debug
+SQL-debug-CREATE,SQL Debug
+SQL-debug-.tables,SQL Debug
+Python-new,Python
+Python-debug,Python Debug
 Bash-new-date,Other
 Bash-new-head+echo+tail,Other
 Bash-new-huggingface-cli,Other
@@ -141,7 +140,17 @@ Bash-debug-echo,File Viewing
 Bash-new-cat+echo,File Viewing
 Bash-new-echo+grep,File Viewing
 Bash-new-.open,File Viewing
-
-
-
-
+SQL-debug,SQL Debug
+Bash-new-pip+python,Package Management
+Bash-debug-pip+python,Package Management
+Bash-new-pip+python,Package Management
+Bash-new-ls+cat+echo,File Viewing
+Bash-new-echo+head,File Viewing
+Bash-new-csvkit,Other
+Bash-new-cat+python,System Operations
+Bash-debug-cat+python,System Operations
+Bash-new-sed+python,System Operations
+Bash-new-sed+python,System Operations
+Bash-new-sed+python,System Operations
+SQL-new-.mode,SQL Update
+Bash-new-touch+echo,File Viewing
