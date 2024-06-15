@@ -381,9 +381,11 @@ def call_llm(payload):
         #     code_value = error_info['error']['code']
         #     response = error_info['error']['message']
         
-    elif model.startswith("deepseek") or model.startswith("codellama") or model.startswith("mistral"):
+    elif model.startswith("deepseek") or model.startswith("codellama") or model.startswith("mistralai"):
         messages = payload["messages"]
         max_tokens = payload["max_tokens"]
+        if model == "codellama/CodeLlama-70b-Instruct-hf":
+            max_tokens = 800
         top_p = payload["top_p"]
         temperature = payload["temperature"]
 
@@ -406,7 +408,7 @@ def call_llm(payload):
                         base_url='https://api.together.xyz',
                         )
 
-        for i in range(2):
+        for i in range(3):
             try:
                 logger.info("Generating content with model: %s", model)
                 response = client.chat.completions.create(
@@ -423,11 +425,11 @@ def call_llm(payload):
                 time.sleep(10 * (2 ** (i + 1)))
                 if hasattr(e, 'response'):
                     error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
-                    code_value = error_info['error']['code']
-                    if code_value == "content_filter":
+                    code_value = error_info['error']['param']
+                    if "content" in code_value:
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
                             payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
-                    if code_value == "context_length_exceeded":
+                    if code_value == "max_tokens":
                         return False, code_value        
                 else:
                     code_value = "context_length_exceeded"

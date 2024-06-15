@@ -110,7 +110,7 @@ class PromptAgent:
             })
             response = response.strip()
             if not status:
-                if response in ["context_length_exceeded","rate_limit_exceeded"]:
+                if response in ["context_length_exceeded","rate_limit_exceeded","max_tokens"]:
                     self.history_messages = [self.history_messages[0]] + self.history_messages[3:]
                 else:
                     raise Exception(f"Failed to call LLM, response: {response}")
@@ -268,7 +268,7 @@ class PromptAgent:
 
 if __name__ == "__main__":
     agent = PromptAgent()
-    response = """Thought: The dataset contains relevant columns like Name, Average User Rating, User Rating Count, Size, Primary Genre, Genres, and Current Version Release Date. I should filter the data based on the guidance rules and create a DataFrame with the required columns.\n\nAction: Python(file_path=\"process_data.py\"):\n```python\nimport pandas as pd\n\n# Read the CSV file\ndf = pd.read_csv('appstore_games.csv')\n\n# Filter games with user ratings >= 200 and update time <= 6 months\ndf = df[(df['User Rating Count'] >= 200) & (pd.to_datetime(df['Current Version Release Date']) >= '2019-04-30')]\n\n# Convert game size from bytes to MB\ndf['Size_MB'] = df['Size'] / (1024 * 1024)\n\n# Extract the year from the 'Current Version Release Date'\ndf['Year'] = pd.to_datetime(df['Current Version Release Date']).dt.year\n\n# Categorize games into four main types based on the guidance rules\ndef categorize_game(row):\n    genres = row['Genres'].lower()\n    if 'puzzle' in genres or 'board' in genres:\n        return 'Puzzle'\n    elif 'action' in genres:\n        return 'Action'\n    elif 'adventure' in genres or 'role' in genres:\n        return 'Adventure'\n    elif 'family' in genres or 'education' in genres:\n        return 'Family'\n    else:\n        return 'Other'\n\ndf['Game_Type'] = df.apply(categorize_game, axis=1)\n\n# Group by Year and Game_Type, calculate the average size, and pivot the data\nresult = df.groupby(['Year', 'Game_Type'])['Size_MB'].mean().reset_index()\nresult_pivot = result.pivot(index='Year', columns='Game_Type', values='Size_MB')\n\n# Save the processed data to a new CSV file\nresult_pivot.to_csv('processed_data.csv')\nprint(\"Data processing completed. Saved to 'processed_data.csv'.\")\n```"""
+    response = """Bash(code=\"\"ls -a\"):\n\n(Note: I am using the 'ls -a' command to list all files, including hidden ones, in the working directory. This will help me ensure that I am in the correct directory and provide a reference for the file paths.\")"""
     import pdb; pdb.set_trace()
     action = agent.parse_action(response)
     print(action)

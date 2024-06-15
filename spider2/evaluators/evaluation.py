@@ -60,6 +60,8 @@ class Evaluator:
 
         gold_id_dir = os.path.join(self.gold_dir, id)
         config = eval_config.get('config', {})
+        hardness = config.get('hardness', "none")
+        trajectory_info = {"hardness": hardness, **trajectory_info}
         metric_conj: str = eval_config.get("conj", "avg")  # take conjunction of multiple metrics
         expected = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
@@ -102,23 +104,41 @@ class Evaluator:
             result = json.load(f)
         trajectory = result["trajectory"]
         actions = []
-        for step in trajectory:
+        for i, step in enumerate(trajectory):
+            if i+1 < len(trajectory):
+                observation = trajectory[i+1]["observation"]
+                if "executed successfully. No output." in observation:
+                    observation = "execution succeeded"
+                elif observation.startswith("Failed to parse action from your response,"):
+                    observation = "action parse failed"
+                elif observation.startswith("ERROR:") or "Traceback (" in observation or \
+                    observation.startswith("bash: -c: line ") or "Error: " in observation:
+                    observation = "error message"
+                elif "Warning:" in observation:
+                    observation = "warning message"
+                else:
+                    # if "error" in observation.lower():
+                    #     print(f"Unknown observation: {observation}\n{result_file}")
+                    observation = "standard output"
+            else:
+                observation = ""
+
             if step["action"].startswith("Bash"):
-                actions.append(("Bash", step["code"]))
+                actions.append(("Bash", step["code"], observation))
             elif step["action"].startswith("Python"):
                 # 保存有多少行代码，即有多少个\n
-                actions.append(("Python", len(step["code"].split("\n"))))
+                actions.append(("Python", len(step["code"].split("\n")), observation))
             elif step["action"].startswith("SQL"):
-                actions.append(("SQL", step["code"]))
+                actions.append(("SQL", step["code"], observation))
             elif step["action"].startswith("Terminate"):
-                actions.append(("Terminate", ""))
+                actions.append(("Terminate", "", observation))
             else:
-                actions.append(("Other", ""))
+                actions.append(("None", "", observation))
 
         info = {"finished": result["finished"], "steps": result["steps"], 
                 "result": result["result"],
-                "len_added_files": len(result["result_files"]["added_files"]),
-                "len_changed_files": len(result["result_files"]["changed_files"]),
+                "added_files": result["result_files"]["added_files"],
+                "changed_files": result["result_files"]["changed_files"],
                 "actions": actions}
         return info
 
