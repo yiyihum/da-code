@@ -23,10 +23,9 @@ ordered_categories = [
     "File Operating",  
     "Data Processing",  
     "System Operations", 
-    "Package Management Operations",  
+    "Package Management",  
     "SQL Query",  
-    "SQL",  
-    "SQL Create",  
+    "SQL Update",   
     "SQL Debug",  
     "Python",  
     "Python Debug",  
@@ -70,7 +69,7 @@ for file_name in os.listdir(results_folder):
         plt.tight_layout()
         
         # 显示图表
-        plt.savefig(os.path.join(output_folder, file_name.replace('_counts.csv', '.png')))
+        plt.savefig(os.path.join(output_folder, file_name.replace('_counts.csv', '.pdf')))
         plt.close()  # 关闭图表，避免占用过多资源
 
 # import os
