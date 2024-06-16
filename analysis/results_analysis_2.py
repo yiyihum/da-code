@@ -129,9 +129,6 @@ for filename in os.listdir(input_dir):
 import os
 import pandas as pd
 
-# 定义目录路径
-input_dir = 'benchmark/results/statistic'
-
 # 遍历文件夹下所有的CSV文件
 for filename in os.listdir(input_dir):
     if filename.endswith('.csv'):
@@ -167,8 +164,8 @@ import os
 import pandas as pd
 from collections import defaultdict
 
-results_folder = 'benchmark/results/counts_for_turn'
-mapping_file = os.path.join(input_dir, 'mapping.csv')
+results_folder = 'analysis/counts_for_turn'
+mapping_file = 'analysis\mapping.csv'
 mapping_df = pd.read_csv(mapping_file)
 type_mapping = dict(zip(mapping_df['step_type'], mapping_df['class']))
 
