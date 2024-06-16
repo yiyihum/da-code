@@ -11700,7 +11700,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['index', 'company', 'text']"
+                        "result csv columns are different from gold csv: ['company', 'index', 'text']"
                     ],
                     "score": 0.0,
                     "metric": "f1",
@@ -12058,7 +12058,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['satisfaction', 'id']"
+                        "result csv columns are different from gold csv: ['id', 'satisfaction']"
                     ],
                     "score": 0.9954013915451956,
                     "metric": "f1",
@@ -16082,7 +16082,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['sponsored', 'job_id', 'application_url', 'currency', 'pay_period', 'work_type', 'compensation_type', 'company_name', 'description', 'skills_desc', 'closed_time', 'application_type', 'title', 'max_salary', 'location', 'job_posting_url', 'original_listed_time', 'views', 'listed_time', 'remote_allowed', 'min_salary', 'formatted_work_type', 'med_salary', 'company_id', 'posting_domain', 'applies', 'expiry']"
+                        "result csv columns are different from gold csv: ['description', 'job_posting_url', 'applies', 'expiry', 'company_id', 'title', 'skills_desc', 'company_name', 'listed_time', 'closed_time', 'views', 'formatted_work_type', 'application_type', 'max_salary', 'sponsored', 'pay_period', 'work_type', 'application_url', 'location', 'compensation_type', 'job_id', 'min_salary', 'posting_domain', 'med_salary', 'currency', 'original_listed_time', 'remote_allowed']"
                     ],
                     "score": 0.6655913442711576,
                     "metric": "f1",

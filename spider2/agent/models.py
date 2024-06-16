@@ -54,15 +54,23 @@ def call_llm(payload):
         return False, code_value
 
     elif model.startswith("azure"):
-        
-        client = AzureOpenAI(
-            api_key = os.environ['AZURE_API_KEY'],  
-            api_version = "2024-02-15-preview",
-            azure_endpoint = "https://gpt4caxu.openai.azure.com/"
-        )
+        if model =="azure/gpt-4":
+            client = AzureOpenAI(
+                api_key = os.environ['AZURE_API_KEY'],  
+                api_version = "2024-02-15-preview",
+                azure_endpoint = "https://gpt4caxu.openai.azure.com/"
+                )
+            model_name = "gpt4turbo"
+        elif model =="azure/gpt-4o":
+            client = AzureOpenAI(
+                api_key = os.environ['GPT4O_API_KEY'],  
+                api_version = "2024-02-15-preview",
+                azure_endpoint = "https://aims-oai-research-inference-uks.openai.azure.com/"
+                )
+            model_name = "tscience-uks-gpt-4o"
         for i in range(3):
             try:
-                response = client.chat.completions.create(model='gpt4turbo',messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'], stop=stop)
+                response = client.chat.completions.create(model=model_name,messages=payload['messages'], max_tokens=payload['max_tokens'], top_p=payload['top_p'], temperature=payload['temperature'], stop=stop)
                 response = response.choices[0].message.content
                 # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
                 return True, response
@@ -431,7 +439,7 @@ def call_llm(payload):
         #     code_value = error_info['error']['code']
         #     response = error_info['error']['message']
         
-    elif model.startswith("deepseek") or model.startswith("codellama") or model.startswith("mistralai"):
+    elif model.startswith("deepseek") or model.startswith("codellama") or model.startswith("mistralai") or model.startswith("Qwen"):
         messages = payload["messages"]
         max_tokens = payload["max_tokens"]
         if model == "codellama/CodeLlama-70b-Instruct-hf":

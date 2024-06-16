@@ -449,7 +449,8 @@ class CalculateML:
             output['errors'].append(f'result csv fails to be converted to numpy, because {str(e)}')
             return (0.0, output)
         gold_np = gold.to_numpy()
-        result_np = result_np / result_np.sum(axis=1, keepdims=True)
+        epsilon = 1e-15
+        result_np = result_np / (result_np.sum(axis=1, keepdims=True) + epsilon)
 
         result_np = np.clip(result_np, lower_bound, upper_bound)
 

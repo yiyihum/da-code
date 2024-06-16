@@ -11530,7 +11530,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['PaperlessBilling', 'AverageViewingDuration', 'WatchlistSize', 'SupportTicketsPerMonth', 'MultiDeviceAccess', 'DeviceRegistered', 'ContentDownloadsPerMonth', 'SubscriptionType', 'CustomerID', 'ParentalControl', 'AccountAge', 'TotalCharges', 'ContentType', 'ViewingHoursPerWeek', 'MonthlyCharges', 'SubtitlesEnabled', 'Gender', 'PaymentMethod', 'GenrePreference', 'UserRating']"
+                        "result csv columns are different from gold csv: ['Gender', 'MultiDeviceAccess', 'SubscriptionType', 'TotalCharges', 'ViewingHoursPerWeek', 'WatchlistSize', 'ParentalControl', 'ContentDownloadsPerMonth', 'PaperlessBilling', 'AccountAge', 'ContentType', 'SubtitlesEnabled', 'UserRating', 'CustomerID', 'AverageViewingDuration', 'DeviceRegistered', 'GenrePreference', 'MonthlyCharges', 'PaymentMethod', 'SupportTicketsPerMonth']"
                     ],
                     "score": 0.9030195127194834,
                     "metric": "f1",
@@ -13739,7 +13739,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Y_Maximum', 'Square_Index', 'X_Minimum', 'Length_of_Conveyer', 'Edges_X_Index', 'Log_Y_Index', 'SigmoidOfAreas', 'TypeOfSteel_A400', 'Maximum_of_Luminosity', 'TypeOfSteel_A300', 'X_Perimeter', 'Y_Minimum', 'Minimum_of_Luminosity', 'Y_Perimeter', 'Luminosity_Index', 'Sum_of_Luminosity', 'Edges_Y_Index', 'LogOfAreas', 'Pixels_Areas', 'Empty_Index', 'Steel_Plate_Thickness', 'Outside_Global_Index', 'Log_X_Index', 'X_Maximum', 'Outside_X_Index', 'Edges_Index', 'Orientation_Index']"
+                        "Unexpected Column: ['Square_Index', 'Steel_Plate_Thickness', 'Log_X_Index', 'X_Minimum', 'Edges_Y_Index', 'Outside_X_Index', 'Minimum_of_Luminosity', 'Y_Minimum', 'LogOfAreas', 'Orientation_Index', 'TypeOfSteel_A400', 'Edges_Index', 'Sum_of_Luminosity', 'TypeOfSteel_A300', 'Pixels_Areas', 'Maximum_of_Luminosity', 'X_Perimeter', 'Edges_X_Index', 'Y_Perimeter', 'Luminosity_Index', 'SigmoidOfAreas', 'X_Maximum', 'Empty_Index', 'Y_Maximum', 'Log_Y_Index', 'Outside_Global_Index', 'Length_of_Conveyer']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -14043,7 +14043,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Encroachments', 'InadequatePlanning', 'TopographyDrainage', 'RiverManagement', 'PopulationScore', 'ClimateChange', 'CoastalVulnerability', 'MonsoonIntensity', 'AgriculturalPractices', 'DeterioratingInfrastructure', 'WetlandLoss', 'Watersheds', 'DrainageSystems', 'Siltation', 'PoliticalFactors', 'IneffectiveDisasterPreparedness', 'Deforestation', 'Landslides', 'Urbanization', 'DamsQuality']"
+                        "Unexpected Column: ['InadequatePlanning', 'CoastalVulnerability', 'IneffectiveDisasterPreparedness', 'MonsoonIntensity', 'TopographyDrainage', 'Siltation', 'Landslides', 'DeterioratingInfrastructure', 'PoliticalFactors', 'DamsQuality', 'Urbanization', 'WetlandLoss', 'Watersheds', 'AgriculturalPractices', 'PopulationScore', 'ClimateChange', 'DrainageSystems', 'Encroachments', 'Deforestation', 'RiverManagement']"
                     ],
                     "score": 0.0,
                     "file": [

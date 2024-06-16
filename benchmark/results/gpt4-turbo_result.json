@@ -13704,7 +13704,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Z_Scratch', 'K_Scatch', 'Stains', 'Pastry', 'Dirtiness', 'Other_Faults', 'Bumps']"
+                        "Unexpected Column: ['Other_Faults', 'K_Scatch', 'Dirtiness', 'Pastry', 'Bumps', 'Z_Scratch', 'Stains']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -13847,7 +13847,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['D', 'CL', 'C']"
+                        "Unexpected Column: ['C', 'CL', 'D']"
                     ],
                     "score": 0.0,
                     "file": [

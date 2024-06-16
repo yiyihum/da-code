@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 
-model_names = ["gpt4-turbo","claude-3-opus-20240229","gemini-1.5-pro-latest","llama3-70b","qwen-max","Mixtral-8x22B-Instruct-v0.1","deepseek-coder-33b-instruct","CodeLlama-70b-Instruct-hf","mixtral-8x7b-32768"]
+model_names = ["gpt4-turbo","claude-3-opus-20240229","gemini-1.5-pro-latest","llama3-70b","qwen-max","Mixtral-8x22B-Instruct-v0.1","deepseek-coder-33b-instruct","CodeLlama-70b-Instruct-hf","mixtral-8x7b-32768","gpt-4o","gpt-3.5-turbo"]
 model_results = {}
 
 df = pd.DataFrame(np.zeros((len(model_names), 4)), columns=["dw","ml","eda","total"], index=model_names)
@@ -40,25 +40,89 @@ for model in model_names:
 print(f"task saved to results/task.csv")
 df.to_csv(f"results/task.csv", float_format='%d')
 
-keys = ["total_score","finished","steps"]
+keys = ["finished","steps"]
 for key in keys:
     #建立一个二维表格，行是模型，列是任务&average
-    df = pd.DataFrame(np.zeros((len(model_names), 9)), columns=["DW","EDA","ML","macro_average","micro_average","Easy","Medium","Hard","none"], index=model_names)
+    df = pd.DataFrame(np.zeros((len(model_names), 8)), columns=["EDA","ML","macro_average","micro_average","Easy","Medium","Hard","none"], index=model_names)
     for model in model_names:
         task_results = model_results[model]
-        dw = []
+        # dw = []
         eda = []
         ml = []
         for task in task_results:
             if task["id"].startswith("dw"):
-                dw.append(float(task[key]))
+                # dw.append(float(task[key]))
+                pass
             elif task["id"].startswith("ml"):
                 ml.append(float(task[key]))
             else:
                 eda.append(float(task[key]))
 
-        if len(dw)==0:
-            dw = [0]
+        # if len(dw)==0:
+        #     dw = [0]
+        if len(eda)==0:
+            eda = [0]
+        if len(ml)==0:
+            ml = [0]
+        # df.loc[model,"DW"] = sum(dw)/len(dw)
+        df.loc[model,"EDA"] = sum(eda)/len(eda)
+        df.loc[model,"ML"] = sum(ml)/len(ml)
+        df.loc[model,"macro_average"] = ( sum(eda)/len(eda) + sum(ml)/len(ml))/2
+        df.loc[model,"micro_average"] = sum(eda+ml)/len(eda+ml)
+
+        easy = []
+        medium = []
+        hard = []
+        none = []
+        for task in task_results:
+            if task["hardness"] == "Easy":
+                easy.append(int(task[key]))
+            elif task["hardness"] == "Medium":
+                medium.append(int(task[key]))
+            elif task["hardness"] == "Hard":
+                hard.append(int(task[key]))
+            else:
+                none.append(int(task[key]))
+        if len(easy)==0:
+            easy = [0]
+        if len(medium)==0:
+            medium = [0]
+        if len(hard)==0:
+            hard = [0]
+        if len(none)==0:
+            none = [0]
+        df.loc[model,"Easy"] = sum(easy)/len(easy)
+        df.loc[model,"Medium"] = sum(medium)/len(medium)
+        df.loc[model,"Hard"] = sum(hard)/len(hard)
+        df.loc[model,"none"] = sum(none)/len(none)
+
+    print(f"{key} saved to results/{key}.csv")
+    df.to_csv(f"results/{key}.csv", float_format='%.3f')
+
+
+dw_dict = {"gpt4-turbo":10,"claude-3-opus-20240229":10,"gemini-1.5-pro-latest":10,"llama3-70b":10,"qwen-max":10,"Mixtral-8x22B-Instruct-v0.1":10,"deepseek-coder-33b-instruct":10,"CodeLlama-70b-Instruct-hf":10,"mixtral-8x7b-32768":10,"gpt-4o":10,"gpt-3.5-turbo":10}
+
+
+keys = ["total_score"]
+for key in keys:
+    #建立一个二维表格，行是模型，列是任务&average
+    df = pd.DataFrame(np.zeros((len(model_names), 9)), columns=["DW","EDA","ML","macro_average","micro_average","Easy","Medium","Hard","none"], index=model_names)
+    for model in model_names:
+        task_results = model_results[model]
+        dw = [1]*dw_dict[model]+[0]*(60-dw_dict[model])
+        eda = []
+        ml = []
+        for task in task_results:
+            if task["id"].startswith("dw"):
+                # dw.append(float(task[key]))
+                pass
+            elif task["id"].startswith("ml"):
+                ml.append(float(task[key]))
+            else:
+                eda.append(float(task[key]))
+
+        # if len(dw)==0:
+        #     dw = [0]
         if len(eda)==0:
             eda = [0]
         if len(ml)==0:
@@ -97,8 +161,6 @@ for key in keys:
 
     print(f"{key} saved to results/{key}.csv")
     df.to_csv(f"results/{key}.csv", float_format='%.3f')
-
-
 
 
     
