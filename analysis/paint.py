@@ -8,7 +8,7 @@ category_colors = {
     "File Operating": "#6640ff",  
     "Data Processing": "#1e90ff",  
     "System Operations": "#66ffe6", 
-    "Package Management": "#a6ffcc",  
+    "Package Management": "#36bf36",  
     "SQL Query": "#008b8b",  
     "SQL Update": "#d2b48c",   
     "SQL Debug": "#9acd32",  
@@ -33,11 +33,12 @@ ordered_categories = [
 ]
 
 # 指定数据目录
-results_folder = 'analysis\counts_for_turn'
+results_folder = 'analysis\counts_for_turn_scale'
 output_folder = 'analysis\images'
 # 遍历目录中的所有统计文件
 for file_name in os.listdir(results_folder):
     if file_name.endswith('_counts.csv'):
+        print(file_name)
         file_path = os.path.join(results_folder, file_name)
         
         # 将CSV文件读取到DataFrame
