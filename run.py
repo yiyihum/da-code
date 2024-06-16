@@ -54,7 +54,7 @@ def config() -> argparse.Namespace:
     parser.add_argument("--max_steps", type=int, default=20)
     
     parser.add_argument("--max_memory_length", type=int, default=15)
-    parser.add_argument("--suffix", '-s', type=str, default="test")
+    parser.add_argument("--suffix", '-s', type=str, default="")
     
     parser.add_argument("--model", type=str, default="azure")
     parser.add_argument("--temperature", type=float, default=0.0)
@@ -64,10 +64,10 @@ def config() -> argparse.Namespace:
     
     # example config
     parser.add_argument("--domain", type=str, default="all")
-    parser.add_argument("--test_all_meta_path","-t",type=str, default="benchmark/configs/ML.jsonl")
+    parser.add_argument("--test_all_meta_path","-t",type=str, default="benchmark/configs/EDA_ML.jsonl")
     parser.add_argument("--example_index", "-i", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--example_name", "-n", type=str, default="", help="name of the example to run")
-    parser.add_argument("--skip_existing", action="store_true", default=False)
+    parser.add_argument("--overwriting", action="store_true", default=False)
     parser.add_argument("--retry_failed", action="store_true", default=False)
 
 
@@ -99,7 +99,8 @@ def test(
     }
 
     if args.suffix == "":
-        experiment_id = args.model.split("/")[-1] + "-" +datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        logger.warning("No suffix is provided, the experiment id will be the model name.")
+        experiment_id = args.model.split("/")[-1]
     else:
         experiment_id = args.model.split("/")[-1] + "-" + args.suffix
 
@@ -143,9 +144,13 @@ def test(
         instance_id = experiment_id +"/"+ task_config["id"]
         output_dir = os.path.join(args.output_dir, instance_id)
         result_json_path =os.path.join(output_dir, "dabench/result.json")
-        if args.skip_existing and os.path.exists(result_json_path):
+        if not args.overwriting and os.path.exists(result_json_path):
             logger.info("Skipping %s", instance_id)
             continue
+        elif os.path.exists(result_json_path):
+            logger.info("Overwriting %s", instance_id)
+        else:
+            logger.info("Running %s", instance_id)
         if args.retry_failed and os.path.exists(result_json_path):
             with open(result_json_path, "r") as f:
                 result = json.load(f)

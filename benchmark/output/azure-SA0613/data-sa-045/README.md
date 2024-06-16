@@ -1,3 +1,0 @@
-Be careful that the hypothesis we are testing is not that the beak depths come from the same distribution. For that we could use a permutation test. The hypothesis is that the means are equal. To perform this hypothesis test, we need to shift the two data sets so that they have the same mean and then use bootstrap sampling to compute the difference of means.
-
-Take 10,000 bootstrap replicates of the mean each for the 1975 and 2012 beak depths.

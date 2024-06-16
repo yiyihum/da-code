@@ -1,1 +1,0 @@
-There exists a unique increasing geometric sequence of five 2-digit positive integers. What is their sum?

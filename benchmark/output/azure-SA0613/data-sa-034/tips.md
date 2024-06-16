@@ -1,2 +1,0 @@
-**Literacy rate** is usually defined as the proportion of the population within a certain age range that can read and write, which indicates that a person possesses basic reading and writing skills. 
-Conversely, the **illiteracy rate** refers to the proportion of the population within a certain age range that cannot read and write, which indicates a lack of basic reading and writing skills.

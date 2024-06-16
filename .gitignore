@@ -3,8 +3,7 @@
 benchmark/output/*
 logs/*
 benchmark/source/*
-
-!benchmark/output/example
+benchmark/gold/*
 
 
 *.DS_Store

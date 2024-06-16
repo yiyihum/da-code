@@ -1,7 +1,0 @@
-Unfortunately, you do not have Frog E's impact forces available, but you know they have a mean of 0.55 N. Because you don't have the original data of Frog E, you cannot do a permutation test, and you cannot assess the hypothesis that the forces from Frog D and Frog E come from the same distribution. You will therefore test another, less restrictive hypothesis: The mean strike force of Frog D is equal to that of Frog E.
-
-To set up the bootstrap hypothesis test, you will take the mean as our test statistic. Remember, your goal is to calculate the probability of getting a mean impact force less than or equal to what was observed for Frog D if the hypothesis that the true mean of Frog D's impact forces is equal to that of Frog E is true. You first translate all of the data of Frog D such that the mean is 0.55 N. This involves adding the mean force of Frog E and subtracting the mean force of Frog D from each measurement of Frog D. This leaves other properties of Frog D's distribution, such as the variance, unchanged.
-
-Notice that you should take at least 10,000 bootstrap replicates of the mean of your translated forces.
-
-Compute the p-value by finding the fraction of your bootstrap replicates that are less than the observed mean impact force of Frog D.

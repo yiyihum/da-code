@@ -27,7 +27,8 @@ experiments = [["gemini-1.5-pro-latest-ML0613", "azure-ML0608", "claude-3-opus-2
                 ["gemini-1.5-pro-latest-SA0613","azure-SA0613","claude-3-opus-20240229-SA0613","qwen-max-SA0613","llama3-70b-SA0613","mixtral-8x7b-32768-SA0613"],
                 ["azure-DW0614",]]
 
-models = ["gemini-1.5-pro-latest","gpt4-turbo","claude-3-opus-20240229","qwen-max","llama3-70b","mixtral-8x7b-32768","CodeLlama-70b-Instruct-hf","deepseek-coder-33b-instruct","Mixtral-8x22B-Instruct-v0.1"]
+# models = ["gemini-1.5-pro-latest","gpt4-turbo","claude-3-opus-20240229","qwen-max","llama3-70b","mixtral-8x7b-32768","CodeLlama-70b-Instruct-hf","deepseek-coder-33b-instruct","Mixtral-8x22B-Instruct-v0.1","gpt-4o","gpt-3.5-turbo"]
+models = ["gpt-3.5-turbo"]
 
 for model in models:
     eval_json=f'benchmark/configs/Evaluation_EDA_ML.jsonl'
