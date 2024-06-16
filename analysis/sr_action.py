@@ -57,13 +57,14 @@ for model, rates in models_results.items():
 
 # Labels and titles
 ax1.set_xlabel('Step')
-ax1.set_ylabel('Unfinished Ratio (%)')
-ax2.set_ylabel('Successfull Ratio (%)')
+ax1.set_ylabel('Uncompletion Rate (%)')
+ax2.set_ylabel('Success Ratio (%)')
 ax2.set_ylim(0, 0.6)
 
 # Custom legend handles
-success_line = mlines.Line2D([], [], color='black', markersize=10, label='Successfull Ratio', linestyle='-')
-unfinished_line = mlines.Line2D([], [], color='black', label='Unfinished Ratio', linestyle='--')
+success_line = mlines.Line2D([], [], color='black', markersize=10, label='Success Rate', linestyle='-')
+unfinished_line = mlines.Line2D([], [], color='black', label='Uncompletion Rate',
+                                 linestyle='--')
 
 ax1.set_title('Model Performance Over Steps', fontsize=16)
 # fig.tight_layout()

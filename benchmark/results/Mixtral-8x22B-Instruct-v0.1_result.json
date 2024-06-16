@@ -12272,7 +12272,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['index', 'sentiment']",
+                        "result csv columns are different from gold csv: ['sentiment', 'index']",
                         "Could not find target column in result, which is result in gold"
                     ],
                     "score": 0.0,
@@ -12949,7 +12949,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['id', 'target']"
+                        "result csv columns are different from gold csv: ['target', 'id']"
                     ],
                     "score": 0.8804108584005869,
                     "metric": "accuracy",

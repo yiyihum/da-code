@@ -15441,7 +15441,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['index', 'age']"
+                        "Unexpected Column: ['age', 'index']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -18759,7 +18759,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['Car_Name', 'Fuel_Type', 'Year', 'Owner', 'Seller_Type', 'Transmission', 'Present_Price', 'Kms_Driven', 'Predicted_Price']",
+                        "result csv columns are different from gold csv: ['Present_Price', 'Car_Name', 'Kms_Driven', 'Transmission', 'Fuel_Type', 'Seller_Type', 'Year', 'Owner', 'Predicted_Price']",
                         "Could not find target column in result, which is Selling_Price in gold"
                     ],
                     "score": 0.0,

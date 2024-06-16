@@ -11530,7 +11530,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['Gender', 'MultiDeviceAccess', 'SubscriptionType', 'TotalCharges', 'ViewingHoursPerWeek', 'WatchlistSize', 'ParentalControl', 'ContentDownloadsPerMonth', 'PaperlessBilling', 'AccountAge', 'ContentType', 'SubtitlesEnabled', 'UserRating', 'CustomerID', 'AverageViewingDuration', 'DeviceRegistered', 'GenrePreference', 'MonthlyCharges', 'PaymentMethod', 'SupportTicketsPerMonth']"
+                        "result csv columns are different from gold csv: ['PaperlessBilling', 'SupportTicketsPerMonth', 'MonthlyCharges', 'DeviceRegistered', 'ContentType', 'AccountAge', 'Gender', 'SubscriptionType', 'CustomerID', 'ContentDownloadsPerMonth', 'AverageViewingDuration', 'GenrePreference', 'MultiDeviceAccess', 'ParentalControl', 'UserRating', 'SubtitlesEnabled', 'WatchlistSize', 'PaymentMethod', 'ViewingHoursPerWeek', 'TotalCharges']"
                     ],
                     "score": 0.9030195127194834,
                     "metric": "f1",
@@ -13739,7 +13739,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['Square_Index', 'Steel_Plate_Thickness', 'Log_X_Index', 'X_Minimum', 'Edges_Y_Index', 'Outside_X_Index', 'Minimum_of_Luminosity', 'Y_Minimum', 'LogOfAreas', 'Orientation_Index', 'TypeOfSteel_A400', 'Edges_Index', 'Sum_of_Luminosity', 'TypeOfSteel_A300', 'Pixels_Areas', 'Maximum_of_Luminosity', 'X_Perimeter', 'Edges_X_Index', 'Y_Perimeter', 'Luminosity_Index', 'SigmoidOfAreas', 'X_Maximum', 'Empty_Index', 'Y_Maximum', 'Log_Y_Index', 'Outside_Global_Index', 'Length_of_Conveyer']"
+                        "Unexpected Column: ['Orientation_Index', 'Square_Index', 'Empty_Index', 'Pixels_Areas', 'Y_Minimum', 'Minimum_of_Luminosity', 'Log_X_Index', 'TypeOfSteel_A400', 'X_Perimeter', 'Edges_X_Index', 'TypeOfSteel_A300', 'Sum_of_Luminosity', 'Outside_X_Index', 'Edges_Index', 'X_Maximum', 'Maximum_of_Luminosity', 'LogOfAreas', 'Y_Perimeter', 'SigmoidOfAreas', 'Luminosity_Index', 'Outside_Global_Index', 'Steel_Plate_Thickness', 'Y_Maximum', 'X_Minimum', 'Edges_Y_Index', 'Length_of_Conveyer', 'Log_Y_Index']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -14043,7 +14043,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected Column: ['InadequatePlanning', 'CoastalVulnerability', 'IneffectiveDisasterPreparedness', 'MonsoonIntensity', 'TopographyDrainage', 'Siltation', 'Landslides', 'DeterioratingInfrastructure', 'PoliticalFactors', 'DamsQuality', 'Urbanization', 'WetlandLoss', 'Watersheds', 'AgriculturalPractices', 'PopulationScore', 'ClimateChange', 'DrainageSystems', 'Encroachments', 'Deforestation', 'RiverManagement']"
+                        "Unexpected Column: ['WetlandLoss', 'PoliticalFactors', 'DrainageSystems', 'AgriculturalPractices', 'Encroachments', 'RiverManagement', 'Deforestation', 'TopographyDrainage', 'Urbanization', 'IneffectiveDisasterPreparedness', 'CoastalVulnerability', 'Landslides', 'InadequatePlanning', 'ClimateChange', 'PopulationScore', 'DeterioratingInfrastructure', 'DamsQuality', 'MonsoonIntensity', 'Siltation', 'Watersheds']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -17377,7 +17377,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['predicted_rating', 'game']",
+                        "result csv columns are different from gold csv: ['game', 'predicted_rating']",
                         "Could not find target column in result, which is rating in gold"
                     ],
                     "score": 0.0,

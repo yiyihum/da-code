@@ -1,6 +1,6 @@
 {
     "num_results": 265,
-    "average_score": 0.44318756751444915,
+    "average_score": 0.4431875675144492,
     "results": [
         {
             "id": "dm-csv-001",
@@ -10430,7 +10430,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['index', 'label']",
+                        "result csv columns are different from gold csv: ['label', 'index']",
                         "Could not find target column in result, which is result in gold"
                     ],
                     "score": 0.0,
@@ -14342,7 +14342,7 @@
         },
         {
             "id": "ml-competition-005",
-            "total_score": 0.1715380202809129,
+            "total_score": 0.17153802028092163,
             "hardness": "Hard",
             "finished": true,
             "steps": 7,
@@ -14392,7 +14392,7 @@
             "info": [
                 {
                     "errors": [],
-                    "score": 0.1715380202809129,
+                    "score": 0.17153802028092163,
                     "upper_bound": 0.4057209,
                     "lower_bound": 0.31671,
                     "file": [
@@ -16639,7 +16639,7 @@
             "info": [
                 {
                     "errors": [
-                        "result csv columns are different from gold csv: ['Date', 'Store', 'Dept']"
+                        "result csv columns are different from gold csv: ['Store', 'Date', 'Dept']"
                     ],
                     "score": 0.5693131076747756,
                     "metric": "r2",

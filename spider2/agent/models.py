@@ -481,16 +481,16 @@ def call_llm(payload):
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
                 time.sleep(10 * (2 ** (i + 1)))
-                if hasattr(e, 'response'):
-                    error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
-                    code_value = error_info['error']['param']
-                    if "content" in code_value:
-                        if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
-                            payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
-                    if code_value == "max_tokens":
-                        return False, code_value        
-                else:
-                    code_value = "context_length_exceeded"
+                # if hasattr(e, 'response'):
+                #     error_info = e.response  # 假设异常对象有 response 属性并包含 JSON 数据
+                #     code_value = error_info['error']['param']
+                #     if "content" in code_value:
+                #         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                #             payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                #     if code_value == "max_tokens":
+                #         return False, code_value        
+                # else:
+                code_value = "context_length_exceeded"
                 logger.error("Retrying ...")
 
         return False, code_value
