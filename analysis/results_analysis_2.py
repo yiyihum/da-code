@@ -12,8 +12,8 @@ def clean_action_detail(detail):
     return cleaned_detail
 
 # 定义目录路径
-input_dir = 'benchmark/results'
-output_dir = 'benchmark/results/statistic'
+input_dir = '../benchmark/results'
+output_dir = 'statistic'
 
 # 如果输出目录不存在，则创建
 if not os.path.exists(output_dir):
@@ -165,7 +165,7 @@ import pandas as pd
 from collections import defaultdict
 
 results_folder = 'analysis/counts_for_turn'
-mapping_file = 'analysis\mapping.csv'
+mapping_file = 'mapping.csv'
 mapping_df = pd.read_csv(mapping_file)
 type_mapping = dict(zip(mapping_df['step_type'], mapping_df['class']))
 

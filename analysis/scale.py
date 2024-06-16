@@ -25,10 +25,10 @@ for file in all_files:
         for i in random_id:
             line = lines[i]
             rad = random.uniform(0, 1)
-            if rad < 0.8:
+            if rad < 0.6:
                 line = line.replace('Python-new','SQL-new-SELECT').replace('Python-debug','SQL-debug-SELECT')
-            if rad <0.4:
-                line = line.replace('Python-new','SQL-new-CREATE')
+            if rad <0.3:
+                line = line.replace('SQL-new-SELECT','SQL-new-CREATE')
             if rad<0.2:
                 line = line.replace('Bash-new-cat','SQL-new-SELECT')
             lines[i] = line

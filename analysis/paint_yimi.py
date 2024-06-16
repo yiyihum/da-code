@@ -8,12 +8,13 @@ category_colors = {
     "File Operating": "#6640ff",  
     "Data Processing": "#1e90ff",  
     "System Operations": "#66ffe6", 
-    "Package Management": "#a6ffcc",  
+    "Package Management": "#36bf36",  
     "SQL Query": "#008b8b",  
     "SQL Update": "#d2b48c",   
     "SQL Debug": "#9acd32",  
     "Python": "#ff4d40",  
-    "Python Debug": "#ff8c69",  
+    "Python Debug": "#ff8c69", 
+    "Action Parse Failed": "#ff8c69",
     "Other": "#e68ab8"  
 }
 
@@ -23,18 +24,20 @@ ordered_categories = [
     "File Operating",  
     "Data Processing",  
     "System Operations", 
-    "Package Management Operations",  
+    "Package Management",  
     "SQL Query",  
-    "SQL",  
-    "SQL Create",  
+    "SQL Update",   
     "SQL Debug",  
     "Python",  
     "Python Debug",  
+    "Action Parse Failed",
     "Other"  
 ]
 
+
 # 指定数据目录
 results_folder = 'counts_for_turn_scale'
+plot_folder = 'images_1'
 
 # 遍历目录中的所有统计文件
 for file_name in os.listdir(results_folder):
@@ -70,7 +73,7 @@ for file_name in os.listdir(results_folder):
         plt.tight_layout()
         
         # 显示图表
-        plt.savefig(os.path.join(results_folder, file_name.replace('_counts.csv', '.pdf')))
+        plt.savefig(os.path.join(plot_folder, file_name.replace('_counts.csv', '.pdf')))
         plt.close()  # 关闭图表，避免占用过多资源
 
 # import os
