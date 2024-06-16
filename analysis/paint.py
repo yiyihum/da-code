@@ -34,8 +34,8 @@ ordered_categories = [
 ]
 
 # 指定数据目录
-results_folder = 'dabench\\benchmark\\results\\counts_for_turn'
-
+results_folder = 'analysis\counts_for_turn'
+output_folder = 'analysis\images'
 # 遍历目录中的所有统计文件
 for file_name in os.listdir(results_folder):
     if file_name.endswith('_counts.csv'):
@@ -70,7 +70,7 @@ for file_name in os.listdir(results_folder):
         plt.tight_layout()
         
         # 显示图表
-        plt.savefig(file_name.replace('_counts.csv', '.png'))
+        plt.savefig(os.path.join(output_folder, file_name.replace('_counts.csv', '.png')))
         plt.close()  # 关闭图表，避免占用过多资源
 
 # import os

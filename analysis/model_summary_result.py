@@ -51,7 +51,7 @@ def analyze_model_results(input_dir):
 
     # 创建 DataFrame 并保存到 CSV
     df = pd.DataFrame(model_results)
-    df.to_csv(os.path.join(input_dir, 'model_summary_results.csv'), index=False)
+    df.to_csv('analysis\model_summary_results.csv', index=False)
     print("Model analysis completed and saved to 'model_summary_results.csv'.")
 
 # 调用函数进行分析
