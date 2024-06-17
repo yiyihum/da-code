@@ -11,7 +11,7 @@ import matplotlib.lines as mlines
 #E58606,#5D69B1,#52BCA3,#99C945,#CC61B0,#24796C,#DAA51B,#2F8AC4,#764E9F,#ED645A,#CC3A8E,#A5AA99
 colorset = ["#E58606","#5D69B1","#52BCA3","#99C945","#CC61B0","#24796C","#DAA51B","#2F8AC4","#764E9F","#ED645A","#CC3A8E","#A5AA99"]
 
-result_folder = '/home/v-yimhuang/dabench/dabench/benchmark/results'
+result_folder = 'benchmark/results'
 
 # models = ["Gemini-1.5-pro","Claude-3-opus","Qwen-max","Llama3-70b","CodeLlama-70b","CodeLlama-34b","Deepseek-Coder-33b","Mixtral-8x22B","GPT-4o","GPT-4","GPT-3.5","Qwen2-72B"]
 models = ["Gemini-1.5-pro","Claude-3-opus","Qwen-max","Llama3-70b","Deepseek-Coder-33b","Mixtral-8x22B","GPT-4o","GPT-4","GPT-3.5","Qwen2-72B"]
@@ -57,13 +57,13 @@ for model, rates in models_results.items():
 
 # Labels and titles
 ax1.set_xlabel('Step')
-ax1.set_ylabel('Uncompletion Rate (%)')
+ax1.set_ylabel('Incompletion Rate (%)')
 ax2.set_ylabel('Success Ratio (%)')
 ax2.set_ylim(0, 0.6)
 
 # Custom legend handles
 success_line = mlines.Line2D([], [], color='black', markersize=10, label='Success Rate', linestyle='-')
-unfinished_line = mlines.Line2D([], [], color='black', label='Uncompletion Rate',
+unfinished_line = mlines.Line2D([], [], color='black', label='Incompletion Rate',
                                  linestyle='--')
 
 ax1.set_title('Model Performance Over Steps', fontsize=16)

@@ -20,10 +20,10 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
 
 # Parameters
 experiments = "opendevin"
-output_dir = f'./benchmark/_result/opendevin-0615'
+output_dir = f'./benchmark/output/gpt-4-verset-wo-10'
 gold_dir = './benchmark/gold'
 eval_json = './benchmark/configs/Evaluation_Verbose.jsonl'
-output_file = f'./benchmark/results/verbose/opendevin_wo_verbose.json'
+output_file = f'./benchmark/results/verbose/gpt-4-wo-m5.json'
 timeout_seconds = 60
 
 # Run the evaluation with the specified parameters
