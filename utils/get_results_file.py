@@ -2,7 +2,7 @@ import os
 import json
 import glob
 
-experiment_name = "gpt4-turbo"
+experiment_name = "claude-3-opus-20240229"
 output_path = f"./benchmark/_result/{experiment_name}/"
 result_path = f"./benchmark/output/{experiment_name}/"
 os.makedirs(output_path, exist_ok=True)
