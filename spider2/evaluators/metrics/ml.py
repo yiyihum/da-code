@@ -27,6 +27,7 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     scale = kwargs.get("scale", True)
     upper_bound = config.get("upper_bound", 0.9)
     lower_bound = config.get("lower_bound", 0.0)
+    output_ml.update({'metric': metric})
 
     if not config or not task_type:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type", such as {TYPES}')
@@ -35,8 +36,6 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     if not ratio > 90:
         raise ValueError(f"please provide a right task type, such as {TYPES}")
     task_type = best_type.split(' ')[0]
-
-    output_ml.update({'metric': metric})
 
     expected = expected if isinstance(expected, list) else [expected]
     gold = next((file for file in expected if file.endswith('.csv')), '')
@@ -70,8 +69,8 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     if not target_column_result:
         output_ml['errors'].append(f'Could not find target column in result, which is {target_column_gold} in gold')
         return output_ml
-
     output_ml['target_output'] = target_column_result
+    
     metric_func = getattr(CalculateML, f'calculate_{metric}')
     if not metric_func:
         raise ValueError(f'Now do not support func calculate_{metric}')

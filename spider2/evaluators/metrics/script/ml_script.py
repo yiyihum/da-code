@@ -1,5 +1,5 @@
 # import operator
-from typing import List, Type, Optional
+from typing import List, Type, Optional, Union, Dict
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from fuzzywuzzy import process
@@ -19,10 +19,16 @@ from sklearn.metrics import (roc_auc_score,
                             r2_score,
                              confusion_matrix)
 
+array_like = Union[pd.DataFrame, pd.Series, np.ndarray, List]
+
 class PreprocessML:
-    _LABELS = ['label', 'labels', 'class', 'classes']
+    _LABELS = ['label', 'labels', 'class', 'classes', 'results', 'result']
+
     @classmethod
     def is_incremental(cls, column_data):
+        """
+        check a column is whether a id column
+        """
         sorted_data = column_data.sort_values().values
         return all((sorted_data[i] - sorted_data[i-1] == 1) for i in range(1, len(sorted_data)))
     
@@ -38,48 +44,69 @@ class PreprocessML:
             except ValueError:
                 non_numeric_columns.append(column)
         return non_numeric_columns
-
+    
+    def convert_to_numeric(array: array_like, target_type: str='int', 
+            map_label: Dict={}) -> np.ndarray:
+        '''
+        Convert all columns to numeric
+        '''
+        if target_type not in ['int', 'float']:
+            raise f'target_type should be "int" or "float", but got {target_type}'
+        def check_is_arraylike(array):
+            return hasattr(array, "__len__") or hasattr(array, "shape") or hasattr(array, "__array__")
+        if not check_is_arraylike(array):
+            raise ValueError(f"{array} is not an array-like")
+        try:
+            if isinstance(array, list): 
+                array = np.array(array)
+            elif isinstance(array, pd.DataFrame) or isinstance(array, pd.Series):
+                array = array.values
+        except Exception as e:
+            raise f"{array} fails to convert to np.ndarray, because of {e}"
+        
+        def safe_convert(item):
+            try:
+                return float(item) if target_type == "float" \
+                    else int(item)
+            except ValueError:
+                return map_label.get(item, 0)
+        
+        vectorized_convert = np.vectorize(safe_convert)
+        numeric_array = vectorized_convert(array)
+        
+        return numeric_array
+        
+    
     @classmethod
     def process_competition_csv(cls, result_df:pd.DataFrame, gold_df: pd.DataFrame):
-        flag = False
         output = {'errors': []}
         gold_columns = gold_df.columns
         result_columns = result_df.columns
 
         if len(result_df) != len(gold_df):
-            output['errors'].append(f"Length mismatch: result CSV has {len(result_df)} rows, while expected CSV has {len(gold_df)} rows.")
-            flag = False
-            return result_df, gold_df, output, flag
+            output['errors'].append(f"Row count mismatch: result CSV has {len(result_df)} rows, expected {len(gold_df)} rows.")
+            return result_df, gold_df, output, False
         if set(result_columns) != set(gold_columns):
-            output['errors'].append(f'Unexpected Column: {list(set(result_df.columns) - set(gold_df.columns))}')
-            flag = False
-            return result_df, gold_df, output, flag
+            output['errors'].append(f'Unexpected columns in result CSV: {list(set(result_columns) - set(gold_columns))}')
+            return result_df, gold_df, output, False
         
         id = next((col for col in gold_columns if 'id' in col.lower()), '')
-        if id:
-            if gold_df[id].nunique() > max(0.6 * len(gold_df), 2):
-                gold_id = set(gold_df[id])
-                result_id = set(result_df[id])
-                if not result_id == gold_id:
-                    extra_id = list(set(result_id)- set(gold_id))
-                    extra_id = list(map(lambda x: str(x), extra_id))
-                    if len(extra_id) > 10:
-                        extra_id = ','.join(extra_id[:5]) + '...' + extra_id[-1]
-                    else:
-                        extra_id = ','.join(extra_id)
-                    output['errors'].append(f"ID does not match, result has extra id: {extra_id}")
-                    flag = False
-                    return result_df, gold_df, output, flag
-                gold_df = gold_df.sort_values(by=id)
-                result_df = result_df.sort_values(by=id)
-                gold_df.drop(id, inplace=True, axis=1)
-                result_df.drop(id, inplace=True, axis=1)
+        if id and len(gold_df[id].nunique()) > max(0.6 * len(gold_df), 2):
+            gold_id = set(gold_df[id])
+            result_id = set(result_df[id])
+            if result_id != gold_id:
+                extra_id = list(map(lambda x: str(x), set(result_id)- set(gold_id)))
+                extra_id = ','.join(extra_id[:3]) + '...' + extra_id[-1] if len(extra_id) > 4 \
+                    else ','.join(extra_id)
+                output['errors'].append(f"ID does not match, result has extra id: {extra_id}")
+                return result_df, gold_df, output, False
+            # Sort the dataframes by id and drop the id column
+            gold_df = gold_df.sort_values(by=id).drop(columns=[id], axis=1)
+            result_df = result_df.sort_values(by=id).drop(columns=[id], axis=1)
         
         gold_df.sort_index(axis=1, inplace=True)
         result_df.sort_index(axis=1, inplace=True)
-        flag = True
-        return result_df, gold_df, output, flag
-
+        return result_df, gold_df, output, True
 
     @classmethod
     def process_csv(cls, df: pd.DataFrame, task_type, **kwargs):
@@ -174,19 +201,10 @@ class PreprocessML:
 class CalculateML:
 
     @staticmethod
-    def calculate_accuracy(result, gold, task_type: Optional[str]=None, **kwargs):
+    def calculate_accuracy(result: array_like, gold: array_like, task_type: Optional[str]=None, **kwargs):
         output = {'errors': []}
         
-        if isinstance(gold, pd.DataFrame):
-            gold = gold.iloc[:, 0]
-        if isinstance(result, pd.DataFrame):
-            result = result.iloc[:, 0]
-        
-        if not str(gold.dtype) == str(result.dtype):
-            output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
- 
         label_encoder = LabelEncoder()
-        
         def is_label_encoder_fitted(le):
             return hasattr(le, 'classes_')
         def convert_to_numeric(input):
