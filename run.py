@@ -8,12 +8,12 @@ import sys
 
 from tqdm import tqdm
 
-from spider2.envs.spider2 import Spider2Env
-from spider2.agent.agents import PromptAgent
+from da_agent.envs.da_agent import DA_Agent_Env
+from da_agent.agent.agents import PromptAgent
 
 
 #  Logger Configs {{{ #
-logger = logging.getLogger("spider2")
+logger = logging.getLogger("da_agent")
 logger.setLevel(logging.DEBUG)
 
 datetime_str: str = datetime.datetime.now().strftime("%Y%m%d@%H%M%S")
@@ -35,8 +35,8 @@ debug_handler.setFormatter(formatter)
 stdout_handler.setFormatter(formatter)
 sdebug_handler.setFormatter(formatter)
 
-stdout_handler.addFilter(logging.Filter("spider2"))
-sdebug_handler.addFilter(logging.Filter("spider2"))
+stdout_handler.addFilter(logging.Filter("da_agent"))
+sdebug_handler.addFilter(logging.Filter("da_agent"))
 
 logger.addHandler(file_handler)
 logger.addHandler(debug_handler)
@@ -166,7 +166,7 @@ def test(
         os.makedirs(output_dir, exist_ok=True)
 
         env_config["init_args"]["name"] = experiment_id +"-"+ task_config["id"]
-        env = Spider2Env(
+        env = DA_Agent_Env(
             env_config=env_config,
             task_config=task_config,
             cache_dir="./cache",

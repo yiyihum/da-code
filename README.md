@@ -1,8 +1,5 @@
-# VaftBench
+# DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models
 
 
-debug setup and evaluation
-```
-python main.py
-```
 
+## Usage

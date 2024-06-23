@@ -1,1 +1,0 @@
-{"type": "scatter", "color": ["#1f77b4"], "figsize": [16.0, 6.0], "graph_title": "", "legend_title": "", "labels": [], "x_label": "Updated version date since release (days)", "y_label": "User Rating count", "xtick_labels": ["0", "500", "1000", "1500", "2000", "2500", "3000", "3500", "4000"], "ytick_labels": ["0", "2000", "4000", "6000", "8000", "10000"]}

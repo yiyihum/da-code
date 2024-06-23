@@ -1,1 +1,0 @@
-{"type": "bar", "color": ["#e9d4d0", "#a16f8d", "#2d223a"], "figsize": [14.0, 12.0], "graph_title": "Sex vs Pclass Survival Comparison", "legend_title": "Pclass", "labels": ["1", "2", "3"], "x_label": "Sex", "y_label": "Survived", "xtick_labels": ["male", "female"], "ytick_labels": ["0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "1.2"]}
