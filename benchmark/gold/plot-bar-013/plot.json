@@ -1,1 +1,0 @@
-{"type": "bar", "color": ["#3274a1"], "figsize": [12.0, 6.0], "graph_title": "Distribution of Player Roles in Hall of Fame", "legend_title": "", "labels": [], "x_label": "Player Role", "y_label": "Count", "xtick_labels": ["Batter", "All-rounder", "Bowler", "Wicket-keeper", "Right-hand"], "ytick_labels": ["0", "10", "20", "30", "40", "50"]}

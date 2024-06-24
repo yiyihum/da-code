@@ -1,0 +1,9 @@
+figsize: [12, 6]
+graph_title: "Cumulative Returns Over Time"
+labels:
+  - "Cumulative EW"
+  - "Cumulative MCap"
+  - "Cumulative MSR"
+  - "Cumulative GMV"
+x_label: "Date"
+y_label: "Cumulative Returns"

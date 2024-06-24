@@ -1,0 +1,204 @@
+id,country,region
+1,AFG - Afghanistan,ASIA (EX. NEAR EAST)         
+2,ALB - Albania,EASTERN EUROPE                     
+3,ALG - Algeria,NORTHERN AFRICA                    
+4,ASA - American Samoa,OCEANIA                            
+5,AND - Andorra,WESTERN EUROPE                     
+6,ANG - Angola,SUB-SAHARAN AFRICA                 
+7,ANT - Antigua and Barbuda,LATIN AMER. & CARIB    
+8,ARG - Argentina,LATIN AMER. & CARIB    
+9,ARM - Armenia,C.W. OF IND. STATES 
+10,ARU - Aruba,LATIN AMER. & CARIB    
+11,AUS - Australia,OCEANIA                            
+12,AUT - Austria,WESTERN EUROPE                     
+13,AZE - Azerbaijan,C.W. OF IND. STATES 
+14,BAH - Bahamas,LATIN AMER. & CARIB    
+15,BRN - Bahrain,NEAR EAST                          
+16,BAN - Bangladesh,ASIA (EX. NEAR EAST)         
+17,BAR - Barbados,LATIN AMER. & CARIB    
+18,BLR - Belarus,C.W. OF IND. STATES 
+19,BEL - Belgium,WESTERN EUROPE                     
+20,BIZ - Belize,LATIN AMER. & CARIB    
+21,BEN - Benin,SUB-SAHARAN AFRICA                 
+22,BER - Bermuda,NORTHERN AMERICA                   
+23,BOL - Bolivia,LATIN AMER. & CARIB    
+24,BIH - Bosnia and Herzegovina,EASTERN EUROPE                     
+25,BOT - Botswana,SUB-SAHARAN AFRICA                 
+26,BRA - Brazil,LATIN AMER. & CARIB    
+27,IVB - British Virgin Islands,LATIN AMER. & CARIB    
+28,BRU - Brunei,ASIA (EX. NEAR EAST)         
+29,BUL - Bulgaria,EASTERN EUROPE                     
+30,BUR - Burkina Faso,SUB-SAHARAN AFRICA                 
+31,BDI - Burundi,SUB-SAHARAN AFRICA                 
+32,CAM - Cambodia,ASIA (EX. NEAR EAST)         
+33,CMR - Cameroon,SUB-SAHARAN AFRICA                 
+34,CAN - Canada,NORTHERN AMERICA                   
+35,CPV - Cape Verde,SUB-SAHARAN AFRICA                 
+36,CAY - Cayman Islands,LATIN AMER. & CARIB    
+37,CAF - Central African Republic,SUB-SAHARAN AFRICA                 
+38,CHA - Chad,SUB-SAHARAN AFRICA                 
+39,CHI - Chile,LATIN AMER. & CARIB    
+40,CHN - China,ASIA (EX. NEAR EAST)         
+41,TPE - Chinese Taipei,ASIA (EX. NEAR EAST)         
+42,COL - Colombia,LATIN AMER. & CARIB    
+43,COM - Comoros,SUB-SAHARAN AFRICA                 
+44,CGO - Congo (Brazzaville),SUB-SAHARAN AFRICA                 
+45,COD - Congo (Kinshasa),SUB-SAHARAN AFRICA                 
+46,COK - Cook Islands,OCEANIA                            
+47,CRC - Costa Rica,LATIN AMER. & CARIB    
+48,CIV - Cote d'Ivoire,SUB-SAHARAN AFRICA                 
+49,CRO - Croatia,EASTERN EUROPE                     
+50,CUB - Cuba,LATIN AMER. & CARIB    
+51,CYP - Cyprus,NEAR EAST                          
+52,CZE - Czech Republic,EASTERN EUROPE                     
+53,DEN - Denmark,WESTERN EUROPE                     
+54,DJI - Djibouti,SUB-SAHARAN AFRICA                 
+55,DMA - Dominica,LATIN AMER. & CARIB    
+56,DOM - Dominican Republic,LATIN AMER. & CARIB    
+57,ECU - Ecuador,LATIN AMER. & CARIB    
+58,EGY - Egypt,NORTHERN AFRICA                    
+59,ESA - El Salvador,LATIN AMER. & CARIB    
+60,GEQ - Equatorial Guinea,SUB-SAHARAN AFRICA                 
+61,ERI - Eritrea,SUB-SAHARAN AFRICA                 
+62,EST - Estonia,BALTICS                            
+63,ETH - Ethiopia,SUB-SAHARAN AFRICA                 
+64,FSM - Federated States of Micronesia,OCEANIA                            
+65,FIJ - Fiji,OCEANIA                            
+66,FIN - Finland,WESTERN EUROPE                     
+67,FRA - France,WESTERN EUROPE                     
+68,GAB - Gabon,SUB-SAHARAN AFRICA                 
+69,GAM - Gambia,SUB-SAHARAN AFRICA                 
+70,GEO - Georgia,C.W. OF IND. STATES 
+71,GER - Germany,WESTERN EUROPE                     
+72,GHA - Ghana,SUB-SAHARAN AFRICA                 
+73,GBR - Great Britain,WESTERN EUROPE                     
+74,GRE - Greece,WESTERN EUROPE                     
+75,GRN - Grenada,LATIN AMER. & CARIB    
+76,GUM - Guam,OCEANIA                            
+77,GUA - Guatemala,LATIN AMER. & CARIB    
+78,GUI - Guinea,SUB-SAHARAN AFRICA                 
+79,GBS - Guinea Bissau,SUB-SAHARAN AFRICA                 
+80,GUY - Guyana,LATIN AMER. & CARIB    
+81,HAI - Haiti,LATIN AMER. & CARIB    
+82,HON - Honduras,LATIN AMER. & CARIB    
+83,HKG - Hong Kong,ASIA (EX. NEAR EAST)         
+84,HUN - Hungary,EASTERN EUROPE                     
+85,ISL - Iceland,WESTERN EUROPE                     
+86,IND - India,ASIA (EX. NEAR EAST)         
+87,IOA - Individual Olympic Athletes,
+88,INA - Indonesia,ASIA (EX. NEAR EAST)         
+89,IRI - Iran,ASIA (EX. NEAR EAST)         
+90,IRL - Ireland,WESTERN EUROPE                     
+91,ISR - Israel,NEAR EAST                          
+92,ITA - Italy,WESTERN EUROPE                     
+93,JAM - Jamaica,LATIN AMER. & CARIB    
+94,JPN - Japan,ASIA (EX. NEAR EAST)         
+95,JOR - Jordan,NEAR EAST                          
+96,KAZ - Kazakhstan,C.W. OF IND. STATES 
+97,KEN - Kenya,SUB-SAHARAN AFRICA                 
+98,KIR - Kiribati,OCEANIA                            
+99,KOS - Kosovo,EASTERN EUROPE                     
+100,KGZ - Kyrgyzstan,C.W. OF IND. STATES 
+101,LAO - Laos,ASIA (EX. NEAR EAST)         
+102,LAT - Latvia,BALTICS                            
+103,LIB - Lebanon,NEAR EAST                          
+104,LES - Lesotho,SUB-SAHARAN AFRICA                 
+105,LBR - Liberia,SUB-SAHARAN AFRICA                 
+106,LBA - Libya,NORTHERN AFRICA                    
+107,LIE - Liechtenstein,WESTERN EUROPE                     
+108,LTU - Lithuania,BALTICS                            
+109,LUX - Luxembourg,WESTERN EUROPE                     
+110,MKD - Macedonia,EASTERN EUROPE                     
+111,MAD - Madagascar,SUB-SAHARAN AFRICA                 
+112,MAW - Malawi,SUB-SAHARAN AFRICA                 
+113,MAS - Malaysia,ASIA (EX. NEAR EAST)         
+114,MDV - Maldives,ASIA (EX. NEAR EAST)         
+115,MLI - Mali,SUB-SAHARAN AFRICA                 
+116,MLT - Malta,WESTERN EUROPE                     
+117,MHL - Marshall Islands,OCEANIA                            
+118,MTN - Mauritania,SUB-SAHARAN AFRICA                 
+119,MRI - Mauritius,SUB-SAHARAN AFRICA                 
+120,MEX - Mexico,LATIN AMER. & CARIB    
+121,MDA - Moldova,C.W. OF IND. STATES 
+122,MON - Monaco,WESTERN EUROPE                     
+123,MGL - Mongolia,ASIA (EX. NEAR EAST)         
+124,MNE - Montenegro,EASTERN EUROPE                     
+125,MAR - Morocco,NORTHERN AFRICA                    
+126,MOZ - Mozambique,SUB-SAHARAN AFRICA                 
+127,MYA - Myanmar,EASTERN EUROPE                     
+128,NAM - Namibia,SUB-SAHARAN AFRICA                 
+129,NEP - Nepal,ASIA (EX. NEAR EAST)         
+130,NED - Netherlands,WESTERN EUROPE                     
+131,NZL - New Zealand,OCEANIA                            
+132,NCA - Nicaragua,LATIN AMER. & CARIB    
+133,NIG - Niger,SUB-SAHARAN AFRICA                 
+134,NGR - Nigeria,SUB-SAHARAN AFRICA                 
+135,PRK - North Korea,ASIA (EX. NEAR EAST)         
+136,NOR - Norway,WESTERN EUROPE                     
+137,OMA - Oman,NEAR EAST                          
+138,PAK - Pakistan,ASIA (EX. NEAR EAST)         
+139,PLW - Palau,OCEANIA                            
+140,PLE - Palestine,ASIA (EX. NEAR EAST)         
+141,PAN - Panama,LATIN AMER. & CARIB    
+142,PNG - Papua New Guinea,OCEANIA                            
+143,PAR - Paraguay,LATIN AMER. & CARIB    
+144,PER - Peru,LATIN AMER. & CARIB    
+145,PHI - Philippines,ASIA (EX. NEAR EAST)         
+146,POL - Poland,EASTERN EUROPE                     
+147,POR - Portugal,WESTERN EUROPE                     
+148,PUR - Puerto Rico,LATIN AMER. & CARIB    
+149,QAT - Qatar,NEAR EAST                          
+150,ROT - Refugee Olympic Athletes,
+151,ROU - Romania,EASTERN EUROPE                     
+152,RUS - Russia,C.W. OF IND. STATES 
+153,RWA - Rwanda,SUB-SAHARAN AFRICA                 
+154,SKN - Saint Kitts and Nevis,LATIN AMER. & CARIB    
+155,LCA - Saint Lucia,LATIN AMER. & CARIB    
+156,VIN - Saint Vincent and the Grenadines,LATIN AMER. & CARIB    
+157,SAM - Samoa,OCEANIA                            
+158,SMR - San Marino,WESTERN EUROPE                     
+159,STP - Sao Tome and Principe,SUB-SAHARAN AFRICA                 
+160,KSA - Saudi Arabia,NEAR EAST                          
+161,SEN - Senegal,SUB-SAHARAN AFRICA                 
+162,SRB - Serbia,EASTERN EUROPE                     
+163,SEY - Seychelles,SUB-SAHARAN AFRICA                 
+164,SLE - Sierra Leone,SUB-SAHARAN AFRICA                 
+165,SGP - Singapore,ASIA (EX. NEAR EAST)         
+166,SVK - Slovakia,EASTERN EUROPE                     
+167,SLO - Slovenia,EASTERN EUROPE                     
+168,SOL - Solomon Islands,OCEANIA                            
+169,SOM - Somalia,SUB-SAHARAN AFRICA                 
+170,RSA - South Africa,SUB-SAHARAN AFRICA                 
+171,KOR - South Korea,ASIA (EX. NEAR EAST)         
+172,SSD - South Sudan,SUB-SAHARAN AFRICA                 
+173,ESP - Spain,WESTERN EUROPE                     
+174,SRI - Sri Lanka,ASIA (EX. NEAR EAST)         
+175,SUD - Sudan,SUB-SAHARAN AFRICA                 
+176,SUR - Suriname,LATIN AMER. & CARIB    
+177,SWZ - Swaziland,SUB-SAHARAN AFRICA                 
+178,SWE - Sweden,WESTERN EUROPE                     
+179,SUI - Switzerland,WESTERN EUROPE                     
+180,SYR - Syria,NEAR EAST                          
+181,TJK - Tajikistan,C.W. OF IND. STATES 
+182,TAN - Tanzania,SUB-SAHARAN AFRICA                 
+183,THA - Thailand,ASIA (EX. NEAR EAST)         
+184,TLS - Timor Leste,ASIA (EX. NEAR EAST)         
+185,TOG - Togo,SUB-SAHARAN AFRICA                 
+186,TGA - Tonga,OCEANIA                            
+187,TTO - Trinidad and Tobago,LATIN AMER. & CARIB    
+188,TUN - Tunisia,NORTHERN AFRICA                    
+189,TUR - Turkey,NEAR EAST                          
+190,TKM - Turkmenistan,C.W. OF IND. STATES 
+191,TUV - Tuvalu,OCEANIA                            
+192,UGA - Uganda,SUB-SAHARAN AFRICA                 
+193,UKR - Ukraine,C.W. OF IND. STATES 
+194,UAE - United Arab Emirates,NEAR EAST                          
+195,USA - United States,NORTHERN AMERICA                   
+196,ISV - United States Virgin Islands,LATIN AMER. & CARIB    
+197,URU - Uruguay,LATIN AMER. & CARIB    
+198,UZB - Uzbekistan,C.W. OF IND. STATES 
+199,VEN - Venezuela,LATIN AMER. & CARIB    
+200,VIE - Vietnam,ASIA (EX. NEAR EAST)         
+201,YEM - Yemen,NEAR EAST                          
+202,ZAM - Zambia,SUB-SAHARAN AFRICA                 
+203,ZIM - Zimbabwe,SUB-SAHARAN AFRICA                 

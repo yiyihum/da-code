@@ -1,1 +1,0 @@
-{"type": "bar", "color": ["#ff7f0e", "#1f77b4"], "figsize": [15.0, 10.0], "graph_title": "Where do children between 15 and 22 live", "legend_title": "", "labels": ["Living Together", "Living Apart"], "x_label": "Living Together Sum and Living Apart Sum", "y_label": "Age", "xtick_labels": ["Teenagers", "Adults"], "ytick_labels": ["0", "50", "100", "150", "200", "250", "300"]}

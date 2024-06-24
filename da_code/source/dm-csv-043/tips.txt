@@ -1,0 +1,4 @@
+The output is formatted as a CSV file with the following structure:
+* Each row represents a cohort defined by the month of the first purchase.
+* Each column represents the CohortIndex, which is the number of months since the first transaction.
+* The cells contain the retention rate, which is the proportion of the original cohort that made purchases in the subsequent months.

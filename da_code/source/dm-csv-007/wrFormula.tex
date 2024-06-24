@@ -1,0 +1,18 @@
+\begin{document}
+
+Please Considering ONLY those movies whose number of votes falls within the top 15% !!!
+
+Weighted Rating (wr) Formula : IMDB's weighted rating (wr) is calculated using the formula :
+\begin{equation}
+Weighted Rating(WR) = \left(\frac{v}{v+m}\cdot R \right) + \left(\frac{m}{v+m} \cdot C \right)
+\end{equation}
+where,
+\begin{enumrate}
+\item $v$ : Number of votes for the movie
+\item $m$ : Minimum votes required to be listed in the chart, set to the 85th percentile.
+\item $R$ : Average rating of the movie
+\item $C$ : Mean vote across the dataset
+\end{enumrate}
+We'll use this formula to calculate a score for each movie, which will help us in recommending movies to users.
+Now, let's proceed with the implementation of demographic filtering.
+\end{document}

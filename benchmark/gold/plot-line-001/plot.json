@@ -1,1 +1,0 @@
-{"type": "line", "color": ["#1f77b4"], "figsize": [6.4, 4.8], "graph_title": "NBA: Average Total Points per Game", "legend_title": "", "labels": [], "x_label": "game_year", "y_label": "", "xtick_labels": ["1940", "1950", "1960", "1970", "1980", "1990", "2000", "2010", "2020", "2030"], "ytick_labels": ["120", "140", "160", "180", "200", "220", "240"]}

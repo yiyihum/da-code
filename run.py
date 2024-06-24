@@ -8,12 +8,12 @@ import sys
 
 from tqdm import tqdm
 
-from spider2.envs.spider2 import Spider2Env
-from spider2.agent.agents import PromptAgent
+from da_agent.envs.da_agent import DA_Agent_Env
+from da_agent.agent.agents import PromptAgent
 
 
 #  Logger Configs {{{ #
-logger = logging.getLogger("spider2")
+logger = logging.getLogger("da_agent")
 logger.setLevel(logging.DEBUG)
 
 datetime_str: str = datetime.datetime.now().strftime("%Y%m%d@%H%M%S")
@@ -35,8 +35,8 @@ debug_handler.setFormatter(formatter)
 stdout_handler.setFormatter(formatter)
 sdebug_handler.setFormatter(formatter)
 
-stdout_handler.addFilter(logging.Filter("spider2"))
-sdebug_handler.addFilter(logging.Filter("spider2"))
+stdout_handler.addFilter(logging.Filter("da_agent"))
+sdebug_handler.addFilter(logging.Filter("da_agent"))
 
 logger.addHandler(file_handler)
 logger.addHandler(debug_handler)
@@ -56,7 +56,7 @@ def config() -> argparse.Namespace:
     parser.add_argument("--max_memory_length", type=int, default=15)
     parser.add_argument("--suffix", '-s', type=str, default="")
     
-    parser.add_argument("--model", type=str, default="azure/gpt-4")
+    parser.add_argument("--model", type=str, default="gpt-4")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--top_p", type=float, default=0.9)
     parser.add_argument("--max_tokens", type=int, default=1500)
@@ -64,12 +64,11 @@ def config() -> argparse.Namespace:
     
     # example config
     parser.add_argument("--domain", type=str, default="all")
-    parser.add_argument("--test_all_meta_path","-t",type=str, default="benchmark/configs/EDA_ML.jsonl")
+    parser.add_argument("--test_all_meta_path","-t",type=str, default="da_code/configs/examples.jsonl")
     parser.add_argument("--example_index", "-i", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--example_name", "-n", type=str, default="", help="name of the example to run")
     parser.add_argument("--overwriting", action="store_true", default=False)
     parser.add_argument("--retry_failed", action="store_true", default=False)
-
 
     # output related
     parser.add_argument("--output_dir", type=str, default="./benchmark/output")
@@ -106,7 +105,7 @@ def test(
 
     env_config = \
     {
-        "image_name": "dabench-image",
+        "image_name": "da_agent-image",
         "init_args": {
             "name": experiment_id,
             "work_dir": "/workspace",
@@ -166,7 +165,7 @@ def test(
         os.makedirs(output_dir, exist_ok=True)
 
         env_config["init_args"]["name"] = experiment_id +"-"+ task_config["id"]
-        env = Spider2Env(
+        env = DA_Agent_Env(
             env_config=env_config,
             task_config=task_config,
             cache_dir="./cache",

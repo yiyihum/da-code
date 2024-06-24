@@ -1,0 +1,6 @@
+color: "#87ceeb"
+figsize: [12, 8]
+graph_title: "Best Teams from 2000 to 2023"
+x_label: "Football Team"
+y_label: "Overall Score"
+xtick_labels: ["Mexico", "Iraq", "Japan", "Bahrain", "Brazil", "Saudi Arabia", "Argentina", "South Korea", "El Salvador", "Qatar"]

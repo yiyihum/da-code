@@ -1,0 +1,8 @@
+Here are some currency conversion rates presented in a markdown table:
+
+Currency Pair	Conversion Rate
+1 INR =	0.0120988 USD
+1 USD =	82.57 INR
+1 EUR =	1.10 USD
+1 GBP =	1.25 USD
+1 AUD =	0.67 USD

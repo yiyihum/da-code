@@ -1,0 +1,13 @@
+
+Four main game types: Puzzle, Action, Adventure, Family
+Specific game types include: Puzzle, Board, Action, Adventure, Role, Family, Education
+
+Rules for categorizing specific types into four classes:
+1. Games containing 'Puzzle' or 'Board' are categorized as Puzzle type
+2. Games containing 'Action' are categorized as Action type
+3. Games containing 'Adventure' or 'Role' are categorized as Adventure type
+4. Games containing 'Family' or 'Education' are categorized as Family type
+
+Tips:
+1. Games that do not have user ratings less than 200 and update time less than 6 months are not needed.
+2. The unit for game size in the CSV data is bytes.

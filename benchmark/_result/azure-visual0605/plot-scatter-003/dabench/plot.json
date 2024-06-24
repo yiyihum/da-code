@@ -1,1 +1,0 @@
-{"type": "scatter", "color": ["#0000ff"], "figsize": [12.0, 8.0], "graph_title": "Athletes per Olympic game", "legend_title": "", "labels": [], "x_label": "Year", "y_label": "Number of athletes", "xtick_labels": ["1880", "1900", "1920", "1940", "1960", "1980", "2000", "2020", "2040"], "ytick_labels": ["0", "2k", "4k", "6k", "8k", "10k", "12k"]}

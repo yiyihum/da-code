@@ -1,6 +1,6 @@
 import pandas as pd
 from tqdm import tqdm
-from spider2.evaluators.evaluation import Evaluator
+from da_agent.evaluators.evaluation import Evaluator
 import json
 
 def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds=10):
@@ -19,11 +19,11 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
         json.dump(results_json, json_file, indent=4)
 
 # Parameters
-experiments = "opendevin"
-output_dir = f'./benchmark/output/gpt-4-verset-wo-10'
-gold_dir = './benchmark/gold'
-eval_json = './benchmark/configs/Evaluation_Verbose.jsonl'
-output_file = f'./benchmark/results/verbose/gpt-4-wo-m5.json'
+experiment = 'gpt-4'
+output_dir = f'./da_code/output/{experiment}'
+gold_dir = './da_code/gold'
+eval_json = './da_code/configs/eval_example.jsonl'
+output_file = f'./da_code/results/{experiment}_results.json'
 timeout_seconds = 60
 
 # Run the evaluation with the specified parameters

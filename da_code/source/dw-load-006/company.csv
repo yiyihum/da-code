@@ -1,0 +1,11 @@
+id,exchange,ticker,name,parent_id
+1,nasdaq,PYPL,PayPal Holdings Incorporated,
+2,nasdaq,AMZN,Amazon.com Inc,
+3,nasdaq,MSFT,Microsoft Corp.,
+4,nasdaq,MDB,MongoDB,
+5,nasdaq,DBX,Dropbox,
+6,nasdaq,AAPL,Apple Incorporated,
+7,nasdaq,CTXS,Citrix Systems,
+8,nasdaq,GOOGL,Alphabet,
+9,nyse,IBM,International Business Machines Corporation,
+10,nasdaq,ADBE,Adobe Systems Incorporated,

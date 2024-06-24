@@ -1,0 +1,7 @@
+ **Group and Aggregate Data**: Group the filtered match data by the home team. For each team, calculate the following:
+   - **Average Home Score**: The mean number of goals scored by the home team.
+   - **Average Away Score**: The mean number of goals scored by the away team when playing against the home team.
+   - **Matches Played**: The total number of matches played by the home team.
+   - **Neutral Ground Matches**: The total number of matches played on neutral ground.
+
+4. **Calculate the Overall Score**: For each team, calculate an overall performance score. This score is derived by adding the total number of matches played to twice the number of matches played on neutral ground. The neutral ground matches are weighted more heavily because they are often considered more challenging.
