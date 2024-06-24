@@ -142,7 +142,7 @@ def test(
     for task_config in task_configs:
         instance_id = experiment_id +"/"+ task_config["id"]
         output_dir = os.path.join(args.output_dir, instance_id)
-        result_json_path =os.path.join(output_dir, "dabench/result.json")
+        result_json_path =os.path.join(output_dir, "dacode/result.json")
         if not args.overwriting and os.path.exists(result_json_path):
             logger.info("Skipping %s", instance_id)
             continue
