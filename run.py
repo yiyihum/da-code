@@ -71,7 +71,7 @@ def config() -> argparse.Namespace:
     parser.add_argument("--retry_failed", action="store_true", default=False)
 
     # output related
-    parser.add_argument("--output_dir", type=str, default="./benchmark/output")
+    parser.add_argument("--output_dir", type=str, default="output")
     args = parser.parse_args()
 
     return args

@@ -1,0 +1,7 @@
+1. Spring: Month 3 - 5
+2. Summer: Month 6 - 8
+3. Autumn: Month 9 - 11
+4. Winter: Month 12 - 2
+
+Please Exclude the data from Denmark, Antarctica, France, Europe, Netherlands, United Kingdom, Africa, South America
+and Standardized Country Names: replace the format containing "(Europe)" with the standard name that does not include "(Europe)"

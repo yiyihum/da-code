@@ -1,0 +1,43 @@
+# Database Schema
+
+## Table: wrestlers
+- id: INTEGER PRIMARY KEY
+- name: TEXT
+
+## Table: belts
+- id: INTEGER PRIMARY KEY
+- name: TEXT
+
+## Table: cards
+- id: INTEGER PRIMARY KEY
+- table_id: INTEGER
+- location_id: INTEGER
+- promotion_id: INTEGER
+- event_date: DATE
+- event_id: INTEGER
+- url: TEXT
+- info_html: TEXT
+- match_html: TEXT
+
+## Table: events
+- id: INTEGER PRIMARY KEY
+- name: TEXT
+
+## Table: locations
+- id: INTEGER PRIMARY KEY
+- name: TEXT
+
+## Table: matches
+- id: INTEGER PRIMARY KEY
+- card_id: INTEGER
+- winner_id: INTEGER
+- win_type: TEXT
+- loser_id: INTEGER
+- match_type_id: INTEGER
+- duration: TIME
+- title_id: INTEGER
+- title_change: INTEGER
+
+## Table: promotions
+- id: INTEGER PRIMARY KEY
+- name: TEXT

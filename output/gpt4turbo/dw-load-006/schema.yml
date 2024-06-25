@@ -1,0 +1,69 @@
+### Database Schema Documentation
+
+#### Tables:
+
+**1. evanston311**
+   - **Description**: Stores records of service requests or reports from the city of Evanston.
+   - **Fields**:
+     - `id` (Integer): Primary key.
+     - `priority` (Varchar(6)): Priority level of the request.
+     - `source` (Varchar(20)): Origin of the data entry.
+     - `category` (Varchar(64)): Classification of the request.
+     - `date_created` (TimestampTZ): Time when the entry was created.
+     - `date_completed` (TimestampTZ): Time when the entry was resolved.
+     - `street` (Varchar(48)): Street address related to the request.
+     - `house_num` (Varchar(12)): House number related to the request.
+     - `zip` (Char(5)): ZIP code related to the request.
+     - `description` (Text): Detailed description of the request.
+
+**2. company**
+   - **Description**: Contains information about companies.
+   - **Fields**:
+     - `id` (Integer): Primary key.
+     - `exchange` (Varchar(10)): Stock exchange where the company is listed.
+     - `ticker` (Char(5)): Stock ticker symbol.
+     - `name` (Varchar): Name of the company.
+     - `parent_id` (Integer, Nullable): References `id` in the same `company` table, indicating parent company, if any.
+
+**3. tag_company**
+   - **Description**: Associates tags with companies.
+   - **Fields**:
+     - `tag` (Varchar(30)): Primary key, tag related to the company.
+     - `company_id` (Integer): Foreign key referencing `company.id`.
+
+**4. stackoverflow**
+   - **Description**: Tracks Stack Overflow data tagged with specific technology tags.
+   - **Fields**:
+     - `id` (Serial): Primary key.
+     - `tag` (Varchar(30)): Foreign key referencing `tag_company.tag`.
+     - `date` (Date): Date of data entry.
+     - `question_count` (Integer): Number of questions associated with the tag.
+     - `question_pct` (Double Precision): Percentage of total questions that are associated with the tag.
+     - `unanswered_count` (Integer): Number of unanswered questions.
+     - `unanswered_pct` (Double Precision): Percentage of unanswered questions.
+
+**5. tag_type**
+   - **Description**: Defines types or categories for tags used across different companies.
+   - **Fields**:
+     - `id` (Serial): Primary key.
+     - `tag` (Varchar(30)): Foreign key referencing `tag_company.tag`.
+     - `type` (Varchar(30)): Type or category of the tag.
+
+**6. fortune500**
+   - **Description**: Contains rankings and information related to Fortune 500 companies.
+   - **Fields**:
+     - `rank` (Integer): Ranking in the Fortune 500 list.
+     - `title` (Varchar): Primary key, title of the ranking entry.
+     - `name` (Varchar): Unique name of the company.
+     - `ticker` (Char(5)): Stock ticker symbol.
+     - `url` (Varchar): URL to company information.
+     - `hq` (Varchar): Headquarters location.
+     - `sector` (Varchar): Sector of operation.
+     - `industry` (Varchar): Industry classification.
+     - `employees` (Integer): Number of employees.
+     - `revenues` (Integer): Annual revenues.
+     - `revenues_change` (Real): Year-on-year change in revenues.
+     - `profits` (Numeric): Annual profits.
+     - `profits_change` (Real): Year-on-year change in profits.
+     - `assets` (Numeric): Total assets.
+     - `equity` (Numeric): Total equity.

@@ -86,7 +86,7 @@ class DA_Agent_Env(gym.Env):
     def _set_task_info(self, task_config: Dict[str, Any]):
         self.task_id: str = task_config['id']
         self.cache_dir: str = os.path.join(self.cache_dir_base, self.task_id)
-        os.makedirs(self.cache_dir, exist_ok=True)
+        # os.makedirs(self.cache_dir, exist_ok=True)
         self.instruction = task_config["instruction"]
         self.config = task_config["config"] if "config" in task_config else []
         self.post_process_func = task_config["post_process"] if "post_process" in task_config else []

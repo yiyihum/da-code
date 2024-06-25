@@ -1,0 +1,501 @@
+rank,title,name,ticker,url,hq,sector,industry,employees,revenues,revenues_change,profits,profits_change,assets,equity
+1,Walmart,"Wal-Mart Stores, Inc.",WMT,http://www.walmart.com,"Bentonville, AR",Retailing,General Merchandisers,2300000,485873,0.8,13643,-7.2,198825,77798
+2,Berkshire Hathaway,Berkshire Hathaway Inc.,BRKA,http://www.berkshirehathaway.com,"Omaha, NE",Financials,Insurance: Property and Casualty (Stock),367700,223604,6.1,24074,0,620854,283001
+3,Apple,"Apple, Inc.",AAPL,http://www.apple.com,"Cupertino, CA",Technology,"Computers, Office Equipment",116000,215639,-7.7,45687,-14.4,321686,128249
+4,Exxon Mobil,Exxon Mobil Corporation,XOM,http://www.exxonmobil.com,"Irving, TX",Energy,Petroleum Refining,72700,205004,-16.7,7840,-51.5,330314,167325
+5,McKesson,McKesson Corporation,MCK,http://www.mckesson.com,"San Francisco, CA",Wholesalers,Wholesalers: Health Care,68000,192487,6.2,2258,53,56563,8924
+6,UnitedHealth Group,UnitedHealth Group Incorporated,UNH,http://www.unitedhealthgroup.com,"Minnetonka, MN",Health Care,Health Care: Insurance and Managed Care,230000,184840,17.7,7017,20.7,122810,38274
+7,CVS Health,CVS Health Corporation,CVS,http://www.cvshealth.com,"Woonsocket, RI",Health Care,Health Care: Pharmacy and Other Services,204000,177526,15.8,5317,1.5,94462,36830
+8,General Motors,General Motors Company,GM,http://www.gm.com,"Detroit, MI",Motor Vehicles & Parts,Motor Vehicles and Parts,225000,166380,9.2,9427,-2.7,221690,43836
+9,AT&T,AT&T Inc.,T,http://www.att.com,"Dallas, TX",Telecommunications,Telecommunications,268540,163786,11.6,12976,-2.8,403821,123135
+10,Ford Motor,Ford Motor Company,F,http://www.ford.com,"Dearborn, MI",Motor Vehicles & Parts,Motor Vehicles and Parts,201000,151800,1.5,4596,-37.7,237951,29170
+11,AmerisourceBergen,AmerisourceBergen Corp.,ABC,http://www.amerisourcebergen.com,"Chesterbrook, PA",Wholesalers,Wholesalers: Health Care,18500,146850,8,1427.9,NA,33656,2129
+12,Amazon.com,"Amazon.com, Inc.",AMZN,http://www.amazon.com,"Seattle, WA",Technology,Internet Services and Retailing,341400,135987,27.1,2371,297.8,83402,19285
+13,General Electric,General Electric Company,GE,http://www.ge.com,"Boston, MA",Industrials,Industrial Machinery,295000,126661,-9.8,8831,NA,365183,75828
+14,Verizon,Verizon Communications Inc.,VZ,http://www.verizon.com,"New York, NY",Telecommunications,Telecommunications,160900,125980,-4.3,13127,-26.6,244180,22524
+15,Cardinal Health,"Cardinal Health, Inc.",CAH,http://www.cardinalhealth.com,"Dublin, OH",Wholesalers,Wholesalers: Health Care,37300,121546,18.5,1427,17.4,34122,6554
+16,Costco,Costco Wholesale Corporation,COST,http://www.costco.com,"Issaquah, WA",Retailing,General Merchandisers,172000,118719,2.2,2350,-1.1,33163,12079
+17,Walgreens Boots Alliance,"Walgreens Boots Alliance, Inc",WBA,http://www.walgreensbootsalliance.com,"Deerfield, IL",Food & Drug Stores,Food and Drug Stores,300000,117351,13.4,4173,NA,72688,29880
+18,Kroger,The Kroger Company,KR,http://www.thekrogerco.com,"Cincinnati, OH",Food & Drug Stores,Food and Drug Stores,443000,115337,5,1975,-3.1,36505,6698
+19,Chevron,Chevron Corporation,CVX,http://www.chevron.com,"San Ramon, CA",Energy,Petroleum Refining,55200,107567,-18,-497,-110.8,260078,145556
+20,Fannie Mae,Fannie Mae,FNMA,http://www.fanniemae.com,"Washington, DC",Financials,Diversified Financials,7000,107162,-2.9,12313,12.4,3287968,6071
+21,J.P. Morgan Chase,JPMorgan Chase & Co.,JPM,http://www.jpmorganchase.com,"New York, NY",Financials,Commercial Banks,243355,105486,4.4,24733,1.2,2490972,254190
+22,Express Scripts Holding,Express Scripts Holding Company,ESRX,http://www.express-scripts.com,"St. Louis, MO",Health Care,Health Care: Pharmacy and Other Services,25600,100288,-1.4,3404.4,37.5,51745,16236
+23,Home Depot,"The Home Depot, Inc.",HD,http://www.homedepot.com,"Atlanta, GA",Retailing,Specialty Retailers: Other,406000,94595,6.9,7957,13.5,42966,4333
+24,Boeing,The Boeing Company,BA,http://www.boeing.com,"Chicago, IL",Aerospace & Defense,Aerospace and Defense,150540,94571,-1.6,4895,-5.4,89997,817
+25,Wells Fargo,Wells Fargo & Company,WFC,http://www.wellsfargo.com,"San Francisco, CA",Financials,Commercial Banks,269100,94176,4.6,21938,-4.2,1930115,199581
+26,Bank of America Corp.,Bank of America Corporation,BAC,http://www.bankofamerica.com,"Charlotte, NC",Financials,Commercial Banks,208024,93662,0.7,17906,12.7,2187702,266840
+27,Alphabet,Alphabet Inc.,GOOGL,http://www.abc.xyz,"Mountain View, CA",Technology,Internet Services and Retailing,72053,90272,20.4,19478,19.1,167497,139036
+28,Microsoft,Microsoft Corporation,MSFT,http://www.microsoft.com,"Redmond, WA",Technology,Computer Software,114000,85320,-8.8,16798,37.8,193694,71997
+29,Anthem,"Anthem, Inc.",ANTM,http://www.antheminc.com,"Indianapolis, IN",Health Care,Health Care: Insurance and Managed Care,53000,84863,7.2,2469.8,-3.5,65083,25100
+30,Citigroup,Citigroup Inc.,C,http://www.citigroup.com,"New York, NY",Financials,Commercial Banks,219000,82386,-6.7,14912,-13.5,1792077,225120
+31,Comcast,Comcast Corporation,CMCSA,http://www.comcastcorporation.com,"Philadelphia, PA",Telecommunications,Telecommunications,159000,80403,7.9,8695,6.5,180500,53943
+32,IBM,International Business Machines Corporation,IBM,http://www.ibm.com,"Armonk, NY",Technology,Information Technology Services,414400,79919,-3.1,11872,-10,117470,18246
+33,State Farm Insurance Cos.,State Farm Insurance Cos.,NA,http://www.statefarm.com,"Bloomington, IL",Financials,Insurance: Property and Casualty (Mutual),68234,76132,0.6,350.3,-94.4,256030,87592
+34,Phillips 66,Phillips 66,PSX,http://www.phillips66.com,"Houston, TX",Energy,Petroleum Refining,14800,72396,-16.9,1555,-63.2,51653,22390
+35,Johnson & Johnson,Johnson & Johnson,JNJ,http://www.jnj.com,"New Brunswick, NJ",Health Care,Pharmaceuticals,126400,71890,2.6,16540,7.3,141208,70418
+36,Procter & Gamble,The Procter & Gamble Company,PG,http://www.pg.com,"Cincinnati, OH",Household Products,Household and Personal Products,105000,71726,-8.9,10508,49.3,127136,57341
+37,Valero Energy,Valero Energy Corporation,VLO,http://www.valero.com,"San Antonio, TX",Energy,Petroleum Refining,9996,70166,-14.2,2289,-42.6,46173,20024
+38,Target,Target Corporation,TGT,http://www.target.com,"Minneapolis, MN",Retailing,General Merchandisers,323000,69495,-5.8,2737,-18.6,37431,10953
+39,Freddie Mac,Freddie Mac,FMCC,http://www.freddiemac.com,"McLean, VA",Financials,Diversified Financials,5982,65665,3.4,7815,22.6,2023376,5075
+40,Lowe’s,"Lowe's Companies, Inc.",LOW,http://www.lowes.com,"Mooresville, NC",Retailing,Specialty Retailers: Other,240000,65017,10.1,3093,21.5,34408,6434
+41,Dell Technologies,Dell Technologies Inc.,NA,http://www.delltechnologies.com,"Round Rock, TX",Technology,"Computers, Office Equipment",138000,64806,18.1,-1672,NA,118206,13243
+42,MetLife,"MetLife, Inc.",MET,http://www.metlife.com,"New York, NY",Financials,"Insurance: Life, Health (Stock)",58000,63476,-9.3,800,-84.9,898764,67309
+43,Aetna,Aetna Inc.,AET,http://www.aetna.com,"Hartford, CT",Health Care,Health Care: Insurance and Managed Care,49500,63155,4.7,2271,-5,69146,17881
+44,PepsiCo,"PepsiCo, Inc.",PEP,http://www.pepsico.com,"Purchase, NY","Food, Beverages & Tobacco",Food Consumer Products,264000,62799,-0.4,6329,16.1,74129,11095
+45,Archer Daniels Midland,Archer-Daniels-Midland Company,ADM,http://www.adm.com,"Chicago, IL","Food, Beverages & Tobacco",Food Production,31800,62346,-7.9,1279,-30.8,39769,17173
+46,UPS,"United Parcel Service, Inc.",UPS,http://www.ups.com,"Atlanta, GA",Transportation,"Mail, Package, and Freight Delivery",335520,60906,4.4,3431,-29.2,40377,405
+47,Intel,Intel Corporation,INTC,http://www.intel.com,"Santa Clara, CA",Technology,Semiconductors and Other Electronic Components,106000,59387,7.3,10316,-9.7,113327,66226
+48,Prudential Financial,"Prudential Financial, Inc.",PRU,http://www.prudential.com,"Newark, NJ",Financials,"Insurance: Life, Health (Stock)",49739,58779,2.9,4368,-22.6,783962,45863
+49,Albertsons Cos.,"Albertsons Companies, Inc.",NA,http://www.albertsons.com,"Boise, ID",Food & Drug Stores,Food and Drug Stores,274000,58734,115.9,-502.2,NA,23770,1613
+50,United Technologies,United Technologies Corporation,UTX,http://www.utc.com,"Farmington, CT",Aerospace & Defense,Aerospace and Defense,201600,57244,-6.2,5055,-33.6,89706,27579
+51,Marathon Petroleum,Marathon Petroleum Corporation,MPC,http://www.marathonpetroleum.com,"Findlay, OH",Energy,Petroleum Refining,44460,55858,-13.5,1174,-58.8,44413,13557
+52,Disney,The Walt Disney Company,DIS,http://www.disney.com,"Burbank, CA",Media,Entertainment,195000,55632,6,9391,12,92033,43265
+53,Humana,Humana Inc.,HUM,http://www.humana.com,"Louisville, KY",Health Care,Health Care: Insurance and Managed Care,51600,54379,0.2,614,-51.9,25396,10685
+54,Pfizer,Pfizer Inc.,PFE,http://www.pfizer.com,"New York, NY",Health Care,Pharmaceuticals,96500,52824,8.1,7215,3.7,171615,59544
+55,AIG,"American International Group, Inc.",AIG,http://www.aig.com,"New York, NY",Financials,Insurance: Property and Casualty (Stock),56400,52367,-10.2,-849,-138.7,498264,76300
+56,Lockheed Martin,Lockheed Martin Corporation,LMT,http://www.lockheedmartin.com,"Bethesda, MD",Aerospace & Defense,Aerospace and Defense,97000,50658,9.8,5302,47.1,47806,1511
+57,Sysco,Sysco Corporation,SYY,http://www.sysco.com,"Houston, TX",Wholesalers,Wholesalers: Food and Grocery,51900,50367,3.5,949.6,38.3,16722,3480
+58,FedEx,FedEx Corporation,FDX,http://www.fedex.com,"Memphis, TN",Transportation,"Mail, Package, and Freight Delivery",335767,50365,6.1,1820,73.3,46064,13784
+59,Hewlett Packard Enterprise,Hewlett Packard Enterprise Company,HPE,http://www.hpe.com,"Palo Alto, CA",Technology,Information Technology Services,195000,50123,6.1,3161,NA,79679,31448
+60,Cisco Systems,"Cisco Systems, Inc.",CSCO,http://www.cisco.com,"San Jose, CA",Technology,Network and Other Communications Equipment,73700,49247,0.2,10739,19.6,121652,63586
+61,HP,HP Inc.,HPQ,http://www.hp.com,"Palo Alto, CA",Technology,"Computers, Office Equipment",49000,48238,-53.3,2496,-45.2,29010,-3889
+62,Dow Chemical,The Dow Chemical Company,DOW,http://www.dow.com,"Midland, MI",Chemicals,Chemicals,56000,48158,-1.3,4318,-43.8,79511,25987
+63,HCA Holdings,"HCA Holdings, Inc.",HCA,http://www.hcahealthcare.com,"Nashville, TN",Health Care,Health Care: Medical Facilities,210500,44747,2.7,2890,35.7,33758,-7302
+64,Coca-Cola,The Coca-Cola Company,KO,http://www.coca-colacompany.com,"Atlanta, GA","Food, Beverages & Tobacco",Beverages,100300,41863,-5.5,6527,-11.2,87270,23062
+65,New York Life Insurance,New York Life Insurance Company,NA,http://www.newyorklife.com,"New York, NY",Financials,"Insurance: Life, Health (Mutual)",11320,40787,-11.1,1088.1,324.1,287196,20108
+66,Centene,Centene Corporation,CNC,http://www.centene.com,"St. Louis, MO",Health Care,Health Care: Insurance and Managed Care,30500,40721,78.6,562,58.3,20197,5895
+67,American Airlines Group,American Airlines Group Inc.,AAL,http://www.aa.com,"Fort Worth, TX",Transportation,Airlines,122300,40180,-2,2676,-64.8,51274,3785
+68,Nationwide,Nationwide Mutual Insurance Co.,NA,http://www.nationwide.com,"Columbus, OH",Financials,Insurance: Property and Casualty (Mutual),34320,40074,-0.4,334.3,-42.4,197790,15537
+69,Merck,"Merck & Co., Inc.",MRK,http://www.merck.com,"Kenilworth, NJ",Health Care,Pharmaceuticals,68000,39807,0.8,3920,-11.8,95377,40088
+70,Cigna,CIGNA Corporation,CI,http://www.cigna.com,"Bloomfield, CT",Health Care,Health Care: Insurance and Managed Care,41000,39668,4.7,1867,-10.8,59360,13723
+71,Delta Air Lines,"Delta Air Lines, Inc.",DAL,http://www.delta.com,"Atlanta, GA",Transportation,Airlines,83756,39639,-2.6,4373,-3.4,51261,12287
+72,Best Buy,"Best Buy Co., Inc.",BBY,http://www.bestbuy.com,"Richfield, MN",Retailing,Specialty Retailers: Other,125000,39403,-0.9,1228,36.9,13856,4709
+73,Honeywell International,Honeywell International Inc.,HON,http://www.honeywell.com,"Morris Plains, NJ",Industrials,"Electronics, Electrical Equipment",131000,39302,1.9,4809,0.9,54146,19369
+74,Caterpillar,Caterpillar Inc.,CAT,http://www.caterpillar.com,"Peoria, IL",Industrials,Construction and Farm Machinery,95400,38537,-18,-67,-103.2,74704,13137
+75,Liberty Mutual Insurance Group,Liberty Mutual Holding Company Inc.,NA,http://www.libertymutual.com,"Boston, MA",Financials,Insurance: Property and Casualty (Stock),50000,38308,-2.9,1006,95.7,125592,20366
+76,Morgan Stanley,Morgan Stanley,MS,http://www.morganstanley.com,"New York, NY",Financials,Commercial Banks,55311,37949,0.1,5979,-2.4,814949,76050
+77,Massachusetts Mutual Life Insurance,Massachusetts Mutual Life Insurance Company,NA,http://www.massmutual.com,"Springfield, MA",Financials,"Insurance: Life, Health (Mutual)",11737,37788,-1.2,1273.5,-10.6,271040,15424
+78,Goldman Sachs Group,"The Goldman Sachs Group, Inc.",GS,http://www.gs.com,"New York, NY",Financials,Commercial Banks,34400,37712,-3.8,7398,21.6,860165,86893
+79,Energy Transfer Equity,"Energy Transfer Equity, L.P.",ETE,http://www.energytransfer.com,"Dallas, TX",Energy,Pipelines,30992,37504,-11,995,-16.3,79011,-1694
+80,TIAA,Teachers Insurance and Annuity Association,NA,http://www.tiaa.org,"New York, NY",Financials,"Insurance: Life, Health (Mutual)",12997,37105,5.5,1492.3,22.9,523194,35583
+81,Oracle,Oracle Corporation,ORCL,http://www.oracle.com,"Redwood City, CA",Technology,Computer Software,136000,37047,-3.1,8901,-10.4,112180,47289
+82,Tyson Foods,"Tyson Foods, Inc.",TSN,http://www.tysonfoods.com,"Springdale, AR","Food, Beverages & Tobacco",Food Production,114000,36881,-10.9,1768,44.9,22373,9608
+83,United Continental Holdings,"United Continental Holdings, Inc.",UAL,http://www.unitedcontinentalholdings.com,"Chicago, IL",Transportation,Airlines,88000,36556,-3.5,2263,-69.2,40140,8659
+84,Allstate,The Allstate Corporation,ALL,http://www.allstate.com,"Northbrook, IL",Financials,Insurance: Property and Casualty (Stock),43275,36534,2.5,1877,-13.5,108610,20573
+85,Publix Super Markets,"Publix Super Markets, Inc.",NA,http://www.publix.com,"Lakeland, FL",Food & Drug Stores,Food and Drug Stores,191000,34274,5.1,2025.7,3.1,17464,13473
+86,American Express,American Express Company,AXP,http://www.americanexpress.com,"New York, NY",Financials,Diversified Financials,56400,33823,-1.8,5408,4.7,158893,20501
+87,TJX,"The TJX Companies, Inc.",TJX,http://www.tjx.com,"Framingham, MA",Retailing,Specialty Retailers: Apparel,235000,33184,7.2,2298.2,0.9,12884,4511
+88,Nike,"Nike, Inc.",NKE,http://www.nike.com,"Beaverton, OR",Apparel,Apparel,70700,32376,5.8,3760,14.9,21396,12258
+89,Exelon,Exelon Corporation,EXC,http://www.exeloncorp.com,"Chicago, IL",Energy,Utilities: Gas and Electric,34396,31360,6.5,1134,-50,114904,25837
+90,General Dynamics,General Dynamics Corporation,GD,http://www.generaldynamics.com,"Falls Church, VA",Aerospace & Defense,Aerospace and Defense,98800,31353,-0.4,2955,-0.3,32872,10976
+91,Rite Aid,Rite Aid Corporation,RAD,http://www.riteaid.com,"Camp Hill, PA",Food & Drug Stores,NA,70580,30737,15.9,165.5,-92.2,11277,581
+92,Gilead Sciences,"Gilead Sciences, Inc.",GILD,http://www.gilead.com,"Foster City, CA",Health Care,Pharmaceuticals,9000,30390,-6.9,13501,-25.4,56977,18887
+93,CHS,CHS Inc.,NA,http://www.chsinc.com,"Inver Grove Heights, MN","Food, Beverages & Tobacco",Food Production,12157,30347,-12.2,424.2,-45.7,17318,7852
+94,3M,3M Company,MMM,http://www.3m.com,"St. Paul, MN",Industrials,Miscellaneous,91584,30109,-0.5,5050,4.5,32906,10298
+95,Time Warner,Time Warner Inc.,TWX,http://www.timewarner.com,"New York, NY",Media,Entertainment,25000,29318,4.3,3926,2.4,65966,24335
+96,Charter Communications,"Charter Communications, Inc.",CHTR,http://www.charter.com,"Stamford, CT",Telecommunications,Telecommunications,91500,29003,197.3,3522,NA,149067,40139
+97,Northwestern Mutual,"Northwestern Mutual Life Insurance Company, Inc.",NA,http://www.northwesternmutual.com,"Milwaukee, WI",Financials,"Insurance: Life, Health (Mutual)",5646,28799,2.4,818,0.4,250441,20226
+98,Facebook,"Facebook, Inc.",FB,http://www.facebook.com,"Menlo Park, CA",Technology,Internet Services and Retailing,17048,27638,54.2,10217,177,64961,59194
+99,Travelers Cos.,"The Travelers Companies, Inc.",TRV,http://www.travelers.com,"New York, NY",Financials,Insurance: Property and Casualty (Stock),30900,27625,3.1,3014,-12.4,100245,23221
+100,Capital One Financial,Capital One Financial Corporation,COF,http://www.capitalone.com,"McLean, VA",Financials,Commercial Banks,47300,27519,9.6,3751,-7.4,357033,47514
+101,Twenty-First Century Fox,"Twenty-First Century Fox, Inc.",FOXA,http://www.21cf.com,"New York, NY",Media,Entertainment,21500,27326,-5.7,2755,-66.8,48365,13661
+102,USAA,United Services Automobile Association,NA,http://www.usaa.com,"San Antonio, TX",Financials,Insurance: Property and Casualty (Stock),29943,27131,11.4,1779.1,-21.7,147290,28840
+103,World Fuel Services,World Fuel Services Corporation,INT,http://www.wfscorp.com,"Miami, FL",Energy,Energy,5000,27016,-11.1,126.5,-27.5,5413,1925
+104,Philip Morris International,Philip Morris International Inc.,PM,http://www.pmi.com,"New York, NY","Food, Beverages & Tobacco",Tobacco,79500,26685,-0.4,6967,1.4,36851,-12688
+105,Deere,Deere & Company,DE,http://www.johndeere.com,"Moline, IL",Industrials,Construction and Farm Machinery,56767,26644,-7.7,1523.9,-21.4,57981,6520
+106,Kraft Heinz,The Kraft Heinz Company,KHC,http://www.kraftheinzcompany.com,"Pittsburgh, PA","Food, Beverages & Tobacco",Food Consumer Products,41000,26487,44.4,3632,472.9,120480,57358
+107,Tech Data,Tech Data Corporation,TECD,http://www.techdata.com,"Clearwater, FL",Wholesalers,Wholesalers: Electronics and Office Equipment,9500,26235,-0.5,195.1,-26.6,7932,2170
+108,Avnet,"Avnet, Inc.",AVT,http://www.avnet.com,"Phoenix, AZ",Wholesalers,Wholesalers: Electronics and Office Equipment,17700,26219,-6.1,506.5,-11.4,11240,4691
+109,Mondelez International,"Mondelez International, Inc.",MDLZ,http://www.mondelezinternational.com,"Deerfield, IL","Food, Beverages & Tobacco",Food Consumer Products,90000,25923,-12.5,1659,-77.2,61538,25161
+110,Macy’s,"Macy's, Inc.",M,http://www.macysinc.com,"Cincinnati, OH",Retailing,General Merchandisers,148300,25778,-4.8,619,-42.3,19851,4323
+111,AbbVie,AbbVie Inc.,ABBV,http://www.abbvie.com,"North Chicago, IL",Health Care,Pharmaceuticals,30000,25638,12.2,5953,15.7,66099,4636
+112,McDonald’s,McDonald's Corporation,MCD,http://www.aboutmcdonalds.com,"Oak Brook, IL","Hotels, Restaurants & Leisure",Food Services,375000,24622,-3.1,4686.5,3.5,31024,-2204
+113,DuPont,E.I. du Pont de Nemours and Company,DD,http://www.dupont.com,"Wilmington, DE",Chemicals,Chemicals,46000,NA,-12,2513,28.7,39964,9998
+114,Northrop Grumman,Northrop Grumman Corporation,NOC,http://www.northropgrumman.com,"Falls Church, VA",Aerospace & Defense,Aerospace and Defense,67000,NA,4.2,2200,10.6,25614,5259
+115,ConocoPhillips,ConocoPhillips,COP,http://www.conocophillips.com,"Houston, TX",Energy,"Mining, Crude-Oil Production",13300,24360,-21.3,-3615,NA,89772,34974
+116,Raytheon,Raytheon Company,RTN,http://www.raytheon.com,"Waltham, MA",Aerospace & Defense,Aerospace and Defense,63000,24069,3.5,2211,6.6,30052,10066
+117,Tesoro,Tesoro Corporation,TSO,http://www.tsocorp.com,"San Antonio, TX",Energy,Petroleum Refining,6308,24005,-14.7,734,-52.3,20398,5465
+118,Arrow Electronics,"Arrow Electronics, Inc",ARW,http://www.arrow.com,"Centennial, CO",Wholesalers,Wholesalers: Electronics and Office Equipment,18700,23825,2.3,522.8,5,14206,4413
+119,Qualcomm,Qualcomm Incorporated,QCOM,http://www.qualcomm.com,"San Diego, CA",Technology,Semiconductors and Other Electronic Components,30500,23554,-6.8,5705,8.2,52359,31778
+120,Progressive,The Progressive Corporation,PGR,http://www.progressive.com,"Mayfield Village, OH",Financials,Insurance: Property and Casualty (Stock),31721,23441,12.4,1031,-18.7,33428,7957
+121,Duke Energy,Duke Energy Corporation,DUK,http://www.duke-energy.com,"Charlotte, NC",Energy,Utilities: Gas and Electric,28798,23369,-1,2152,-23.6,132761,41033
+122,Enterprise Products Partners,Enterprise Products Partners L.P.,EPD,http://www.enterpriseproducts.com,"Houston, TX",Energy,Pipelines,6800,23022,-14.8,2513.1,-0.3,52194,22047
+123,Amgen,Amgen Inc.,AMGN,http://www.amgen.com,"Thousand Oaks, CA",Health Care,Pharmaceuticals,19200,22991,6.1,7722,11.3,77626,29875
+124,US Foods Holding,US Foods Holding Corp.,USFD,http://www.usfoods.com,"Rosemont, IL",Wholesalers,Wholesalers: Food and Grocery,25000,22919,-0.9,209.8,25.2,8945,2538
+125,U.S. Bancorp,U.S. Bancorp,USB,http://www.usbank.com,"Minneapolis, MN",Financials,Commercial Banks,71191,22744,5.8,5888,0.2,445964,47298
+126,Aflac,Aflac Incorporated,AFL,http://www.aflac.com,"Columbus, GA",Financials,"Insurance: Life, Health (Stock)",10212,22559,8.1,2659,5,129819,20482
+127,Sears Holdings,Sears Holdings Corporation,SHLD,http://www.searsholdings.com,"Hoffman Estates, IL",Retailing,General Merchandisers,140000,22138,-12,-2221,NA,9362,-3824
+128,Dollar General,Dollar General Corporation,DG,http://www.dollargeneral.com,"Goodlettsville, TN",Retailing,Specialty Retailers: Other,121000,21987,7.9,1251.1,7.4,11672,5406
+129,AutoNation,"AutoNation, Inc.",AN,http://www.autonation.com,"Fort Lauderdale, FL",Retailing,"Automotive Retailing, Services",26000,21609,3.6,430.5,-2.7,10060,2310
+130,Community Health Systems,"Community Health Systems, Inc.",CYH,http://www.chs.net,"Franklin, TN",Health Care,Health Care: Medical Facilities,108000,21374,-5.8,-1721,-1189.2,21944,1615
+131,Starbucks,Starbucks Corporation,SBUX,http://www.starbucks.com,"Seattle, WA","Hotels, Restaurants & Leisure",Food Services,254000,21316,11.2,2817.7,2.2,14330,5884
+132,Eli Lilly,Eli Lilly and Company,LLY,http://www.lilly.com,"Indianapolis, IN",Health Care,Pharmaceuticals,41975,21222,6.3,2737.6,13.7,38806,14008
+133,International Paper,International Paper Company,IP,http://www.internationalpaper.com,"Memphis, TN",Materials,"Packaging, Containers",55000,21079,-5.8,904,-3.6,33345,4341
+134,Tenet Healthcare,Tenet Healthcare Corporation,THC,http://www.tenethealth.com,"Dallas, TX",Health Care,Health Care: Medical Facilities,116475,21070,4.8,-192,NA,24701,417
+135,Abbott Laboratories,Abbott Laboratories,ABT,http://www.abbott.com,"Abbott Park, IL",Health Care,NA,75000,20853,0.9,1400,-68.3,52666,20538
+136,Dollar Tree,"Dollar Tree, Inc.",DLTR,http://www.dollartree.com,"Chesapeake, VA",Retailing,Specialty Retailers: Other,116050,20719,33.7,896.2,217.4,15702,5390
+137,Whirlpool,Whirlpool Corporation,WHR,http://www.whirlpoolcorp.com,"Benton Harbor, MI",Industrials,"Electronics, Electrical Equipment",93000,20718,-0.8,888,13.4,19153,4773
+138,Southwest Airlines,Southwest Airlines Co.,LUV,http://www.southwest.com,"Dallas, TX",Transportation,Airlines,53536,20425,3.1,2244,2.9,23286,8441
+139,Emerson Electric,Emerson Electric Co.,EMR,http://www.emerson.com,"St. Louis, MO",Industrials,"Electronics, Electrical Equipment",103500,20268,-9.1,1635,-39.7,21743,7568
+140,Staples,"Staples, Inc.",SPLS,http://www.staples.com,"Framingham, MA",Retailing,Specialty Retailers: Other,61503,20217,-4,-1497,-494.8,8271,3688
+141,Plains GP Holdings,"Plains GP Holdings, L.P.",PAGP,http://www.plainsallamerican.com,"Houston, TX",Energy,NA,5100,20182,-12.8,94,-20.3,26103,1737
+142,Penske Automotive Group,"Penske Automotive Group, Inc.",PAG,http://www.penskeautomotive.com,"Bloomfield Hills, MI",Retailing,"Automotive Retailing, Services",24000,20143,4,342.9,5.2,8861,1751
+143,Union Pacific,Union Pacific Corporation,UNP,http://www.up.com,"Omaha, NE",Transportation,Railroads,42919,19941,-8.6,4233,-11.3,55718,19932
+144,Danaher,Danaher Corporation,DHR,http://www.danaher.com,"Washington, DC",Technology,"Scientific, Photographic and Control Equipment",62000,19912,-4.8,2553.7,-23.9,45295,23003
+145,Southern,The Southern Company,SO,http://www.southerncompany.com,"Atlanta, GA",Energy,Utilities: Gas and Electric,32015,19896,13.8,2448,3.4,109697,24758
+146,ManpowerGroup,ManpowerGroup Inc.,MAN,http://www.manpowergroup.com,"Milwaukee, WI",Business Services,Temporary Help,28000,19654,1.7,443.7,5.8,7574,2362
+147,Bristol-Myers Squibb,Bristol-Myers Squibb Company,BMY,http://www.bms.com,"New York, NY",Health Care,Pharmaceuticals,25000,19427,17.3,4457,184.8,33707,16177
+148,Altria Group,"Altria Group, Inc.",MO,http://www.altria.com,"Richmond, VA","Food, Beverages & Tobacco",Tobacco,8300,19337,2.6,14239,171.7,45932,12770
+149,Fluor,Fluor Corporation,FLR,http://www.fluor.com,"Irving, TX",Engineering & Construction,"Engineering, Construction",61551,19037,5.1,281.4,-31.8,9216,3125
+150,Kohl’s,Kohl's Corporation,KSS,http://www.kohls.com,"Menomonee Falls, WI",Retailing,General Merchandisers,85000,18686,-2.7,556,-17.4,13574,5177
+151,Lear,Lear Corporation,LEA,http://www.lear.com,"Southfield, MI",Motor Vehicles & Parts,Motor Vehicles and Parts,148400,18558,1.9,975.1,30.8,9901,3057
+152,Jabil Circuit,"Jabil Circuit, Inc.",JBL,http://www.jabil.com,"St. Petersburg, FL",Technology,Semiconductors and Other Electronic Components,138000,18353,2.5,254.1,-10.5,10323,2438
+153,Hartford Financial Services Group,"The Hartford Financial Services Group, Inc.",HIG,http://www.thehartford.com,"Hartford, CT",Financials,Insurance: Property and Casualty (Stock),16900,18300,-0.4,896,-46.7,223432,16903
+154,Thermo Fisher Scientific,Thermo Fisher Scientific Inc.,TMO,http://www.thermofisher.com,"Waltham, MA",Technology,"Scientific, Photographic and Control Equipment",54800,18274,7.7,2021.8,2.3,45908,21539
+155,Kimberly-Clark,Kimberly-Clark Corporation,KMB,http://www.kimberly-clark.com,"Irving, TX",Household Products,Household and Personal Products,42000,18202,-2.1,2166,113.8,14602,-102
+156,Molina Healthcare,"Molina Healthcare, Inc.",MOH,http://www.molinahealthcare.com,"Long Beach, CA",Health Care,Health Care: Insurance and Managed Care,21000,17782,25.4,52,-63.6,7449,1649
+157,PG&E Corp.,PG&E Corporation,PCG,http://www.pgecorp.com,"San Francisco, CA",Energy,Utilities: Gas and Electric,24000,17666,4.9,1393,59.4,68598,17940
+158,Supervalu,Supervalu Inc.,SVU,http://www.supervalu.com,"Eden Prairie, MN",Food & Drug Stores,Food and Drug Stores,38000,17529,-1.6,178,-7.3,4370,-441
+159,Cummins,Cummins Inc.,CMI,http://www.cummins.com,"Columbus, IN",Industrials,Industrial Machinery,55400,17509,-8.4,1394,-0.4,15011,6875
+160,CenturyLink,"CenturyLink, Inc.",CTL,http://www.centurylink.com,"Monroe, LA",Telecommunications,Telecommunications,40000,17470,-2.4,626,-28.7,47017,13399
+161,AECOM,AECOM,ACM,http://www.aecom.com,"Los Angeles, CA",Engineering & Construction,"Engineering, Construction",87000,17411,-3.2,96.1,NA,13727,3367
+162,Xerox,Xerox Corporation,XRX,http://www.xerox.com,"Norwalk, CT",Technology,Computer Peripherals,133600,17126,-8.2,-477,-200.6,18145,4803
+163,Marriott International,"Marriott International, Inc.",MAR,http://www.marriott.com,"Bethesda, MD","Hotels, Restaurants & Leisure","Hotels, Casinos, Resorts",226500,17072,17.9,780,-9.2,24140,5357
+164,Paccar,PACCAR Inc,PCAR,http://www.paccar.com,"Bellevue, WA",Industrials,Construction and Farm Machinery,23000,17033,-10.9,521.7,-67.5,20639,6778
+165,General Mills,"General Mills, Inc.",GIS,http://www.generalmills.com,"Minneapolis, MN","Food, Beverages & Tobacco",Food Consumer Products,39000,16563,-6.1,1697.4,39,21712,4930
+166,PNC Financial Services Group,"The PNC Financial Services Group, Inc.",PNC,http://www.pnc.com,"Pittsburgh, PA",Financials,Commercial Banks,50683,16423,0.9,3903,-4.9,366380,45699
+167,American Electric Power,"American Electric Power Company, Inc.",AEP,http://www.aep.com,"Columbus, OH",Energy,Utilities: Gas and Electric,17634,16380,-3.1,610.9,-70.2,63468,17397
+168,Icahn Enterprises,Icahn Enterprises L.P.,IEP,http://www.ielp.com,"New York, NY",Financials,Diversified Financials,90980,16348,7,-1128,NA,33335,2154
+169,Nucor,Nucor Corporation,NUE,http://www.nucor.com,"Charlotte, NC",Materials,Metals,23900,16208,-1.4,796.3,122.6,15224,7880
+170,NextEra Energy,"NextEra Energy, Inc.",NEE,http://www.nexteraenergy.com,"Juno Beach, FL",Energy,Utilities: Gas and Electric,14700,16155,-7.6,2912,5.8,89993,24341
+171,Performance Food Group,Performance Food Group Company,PFGC,http://www.pfgc.com,"Richmond, VA",Wholesalers,Wholesalers: Food and Grocery,13000,16105,5.5,68.3,20.9,3455,803
+172,PBF Energy,PBF Energy Inc.,PBF,http://www.pbfenergy.com,"Parsippany, NJ",Energy,Petroleum Refining,3165,15920,21.3,170.8,16.7,7622,2025
+173,Halliburton,Halliburton Company,HAL,http://www.halliburton.com,"Houston, TX",Energy,"Oil and Gas Equipment, Services",50000,15887,-32.8,-5763,NA,27000,9409
+174,CarMax,"CarMax, Inc.",KMX,http://www.carmax.com,"Richmond, VA",Retailing,"Automotive Retailing, Services",22429,15833,6.4,623.4,4.4,14482,2905
+175,Freeport-McMoRan,Freeport-McMoRan Inc.,FCX,http://www.fcx.com,"Phoenix, AZ",Energy,"Mining, Crude-Oil Production",30000,15789,-0.6,-4154,NA,37317,6051
+176,Whole Foods Market,"Whole Foods Market, Inc.",WFM,http://www.wholefoodsmarket.com,"Austin, TX",Food & Drug Stores,Food and Drug Stores,73515,15724,2.2,507,-5.4,6341,3224
+177,Bank of New York Mellon,The Bank of New York Mellon Corporation,BK,http://www.bnymellon.com,"New York, NY",Financials,Commercial Banks,52000,15683,1,3547,12.3,333469,38811
+178,Gap,"The Gap, Inc.",GPS,http://www.gapinc.com,"San Francisco, CA",Retailing,Specialty Retailers: Apparel,135000,15516,-1.8,676,-26.5,7610,2904
+179,Omnicom Group,Omnicom Group Inc.,OMC,http://www.omnicomgroup.com,"New York, NY",Business Services,"Advertising, Marketing",78500,15417,1.9,1148.6,5,23165,2162
+180,Genuine Parts,Genuine Parts Company,GPC,http://www.genpt.com,"Atlanta, GA",Wholesalers,Wholesalers: Diversified,40000,15340,0.4,687.2,-2.6,8859,3194
+181,DaVita,DaVita Inc.,DVA,http://www.davita.com,"Denver, CO",Health Care,Health Care: Medical Facilities,70300,15197,6.9,879.9,226.2,18741,4648
+182,Colgate-Palmolive,Colgate-Palmolive Company,CL,http://www.colgatepalmolive.com,"New York, NY",Household Products,Household and Personal Products,36700,15195,-5.2,2441,76.4,12123,-243
+183,PPG Industries,"PPG Industries, Inc.",PPG,http://www.ppg.com,"Pittsburgh, PA",Chemicals,Chemicals,47000,15178,-1,877,-37.6,15769,4826
+184,Goodyear Tire & Rubber,The Goodyear Tire & Rubber Company,GT,http://www.goodyear.com,"Akron, OH",Motor Vehicles & Parts,Motor Vehicles and Parts,66000,15158,-7.8,1264,311.7,16511,4507
+185,Synchrony Financial,Synchrony Financial,SYF,http://www.synchronyfinancial.com,"Stamford, CT",Financials,Diversified Financials,15000,15122,11,2251,1.7,90207,14196
+186,DISH Network,DISH Network Corporation,DISH,http://www.dish.com,"Englewood, CO",Telecommunications,Telecommunications,16000,15095,0.2,1449.9,94.1,28092,4637
+187,Visa,Visa Inc.,V,http://www.visa.com,"Foster City, CA",Business Services,Financial Data Services,14200,15082,8.7,5991,-5.3,64035,32912
+188,Nordstrom,"Nordstrom, Inc.",JWN,http://www.nordstrom.com,"Seattle, WA",Retailing,General Merchandisers,72500,14757,2.2,354,-41,7858,870
+189,INTL FCStone,INTL FCStone Inc.,INTL,http://www.intlfcstone.com,"New York, NY",Financials,Diversified Financials,1464,14755,-57.5,54.7,-1.8,5951,434
+190,WestRock,WestRock Company,WRK,http://www.westrock.com,"Richmond, VA",Materials,"Packaging, Containers",39000,14706,29.2,-396.3,-178.2,23038,9729
+191,XPO Logistics,"XPO Logistics, Inc.",XPO,http://www.xpo.com,"Greenwich, CT",Transportation,Transportation and Logistics,87000,14619,91.8,69,NA,11698,2700
+192,Aramark,Aramark,ARMK,http://www.aramark.com,"Philadelphia, PA",Business Services,Diversified Outsourcing Services,217250,14416,0.6,287.8,22,10582,2161
+193,CBS,CBS Corporation,CBS,http://www.cbscorporation.com,"New York, NY",Media,Entertainment,18410,14386,3.6,1261,-10.8,24238,3689
+194,AES,The AES Corporation,AES,http://www.aes.com,"Arlington, VA",Energy,Utilities: Gas and Electric,19000,14287,-4.5,-1130,-469.3,36119,2794
+195,WellCare Health Plans,"WellCare Health Plans, Inc.",WCG,http://www.wellcare.com,"Tampa, FL",Health Care,Health Care: Insurance and Managed Care,7400,14237,2.5,242.1,104.1,6153,2e3
+196,FirstEnergy,FirstEnergy Corp.,FE,http://www.firstenergycorp.com,"Akron, OH",Energy,Utilities: Gas and Electric,15707,14156,-3.1,-6177,-1168.7,43148,6241
+197,Conagra Brands,"Conagra Brands, Inc.",CAG,http://www.conagrabrands.com,"Chicago, IL","Food, Beverages & Tobacco",Food Consumer Products,20900,14134,-10.8,-677,NA,13391,3714
+198,Synnex,Synnex Corporation,SNX,http://www.synnex.com,"Fremont, CA",Wholesalers,Wholesalers: Electronics and Office Equipment,110000,14062,5.4,234.9,12.7,5223,1976
+199,CDW,CDW Corporation,CDW,http://www.cdw.com,"Lincolnshire, IL",Technology,Information Technology Services,8516,13982,7.6,424.4,5.3,6948,1046
+200,Textron,Textron Inc.,TXT,http://www.textron.com,"Providence, RI",Aerospace & Defense,Aerospace and Defense,36000,13788,2.7,962,38,15358,5574
+201,Waste Management,"Waste Management, Inc.",WM,http://www.wm.com,"Houston, TX",Business Services,Waste Management,41200,13609,5,1182,57,20859,5297
+202,Illinois Tool Works,Illinois Tool Works Inc.,ITW,http://www.itw.com,"Glenview, IL",Industrials,Industrial Machinery,50000,NA,1.4,2035,7.2,15201,4254
+203,Office Depot,"Office Depot, Inc.",ODP,http://www.officedepot.com,"Boca Raton, FL",Retailing,Specialty Retailers: Other,38000,13585,-6.2,529,NA,5540,1852
+204,Monsanto,Monsanto Company,MON,http://www.monsanto.com,"St. Louis, MO",Chemicals,Chemicals,22450,13502,-10,1336,-42.3,19736,4534
+205,Cognizant Technology Solutions,Cognizant Technology Solutions Corporation,CTSH,http://www.cognizant.com,"Teaneck, NJ",Technology,Information Technology Services,260200,13487,8.6,1553,-4.3,14262,10728
+206,Texas Instruments,Texas Instruments Incorporated,TXN,http://www.ti.com,"Dallas, TX",Technology,Semiconductors and Other Electronic Components,29865,13370,2.8,3595,20.4,16431,10473
+207,Lincoln National,Lincoln National Corporation,LNC,http://www.lfg.com,"Radnor, PA",Financials,"Insurance: Life, Health (Stock)",9057,13330,-1.8,1192,3.3,261627,14478
+208,Newell Brands,Newell Brands Inc.,NWL,http://www.newellbrands.com,"Hoboken, NJ",Household Products,"Home Equipment, Furnishings",53400,13264,122.1,527.8,50.8,33838,11349
+209,Land O’Lakes,"Land O'Lakes, Inc.",NA,http://www.landolakesinc.com,"Arden Hills, MN","Food, Beverages & Tobacco",Food Consumer Products,10000,13233,0.6,244.9,-20.4,8305,1904
+210,Marsh & McLennan,"Marsh & McLennan Companies, Inc.",MMC,http://www.mmc.com,"New York, NY",Financials,Diversified Financials,60000,13211,2.5,1768,10.6,18190,6192
+211,Ecolab,Ecolab Inc.,ECL,http://www.ecolab.com,"St. Paul, MN",Chemicals,NA,47565,13153,-2.9,1229.6,22.7,18330,6901
+212,C.H. Robinson Worldwide,"C. H. Robinson Worldwide, Inc.",CHRW,http://www.chrobinson.com,"Eden Prairie, MN",Transportation,Transportation and Logistics,14125,13144,-2.5,513.4,0.7,3688,1258
+213,Loews,Loews Corporation,L,http://www.loews.com,"New York, NY",Financials,Insurance: Property and Casualty (Stock),15800,13105,-2.3,654,151.5,76594,18163
+214,CBRE Group,"CBRE Group, Inc.",CBG,http://www.cbre.com,"Los Angeles, CA",Financials,Real Estate,75000,13072,20.4,572,4.5,10780,3015
+215,Kinder Morgan,"Kinder Morgan, Inc.",KMI,http://www.kindermorgan.com,"Houston, TX",Energy,Pipelines,11121,13058,-9.3,708,179.8,80305,34431
+216,Kellogg,Kellogg Company,K,http://www.kelloggcompany.com,"Battle Creek, MI","Food, Beverages & Tobacco",Food Consumer Products,37369,13014,-3.8,694,13,15111,1910
+217,Western Digital,Western Digital Corporation,WDC,http://www.westerndigital.com,"Irvine, CA",Technology,Computer Peripherals,72878,12994,-10.8,242,-83.5,32862,11145
+218,Guardian Life Ins. Co. of America,Guardian Life Ins. Co. of America,NA,http://www.guardianlife.com,"New York, NY",Financials,"Insurance: Life, Health (Mutual)",8876,12919,2.3,263.9,-35.7,70339,6172.5
+219,Ross Stores,"Ross Stores, Inc.",ROST,http://www.rossstores.com,"Dublin, CA",Retailing,Specialty Retailers: Apparel,78600,12867,7.8,1117.7,9.5,5309,2748
+220,L Brands,"L Brands, Inc.",LB,http://www.lb.com,"Columbus, OH",Retailing,Specialty Retailers: Apparel,59100,12574,3.5,1158.1,-7.6,8170,-729
+221,J.C. Penney,"J.C. Penney Company, Inc.",JCP,http://www.jcpenney.com,"Plano, TX",Retailing,General Merchandisers,106000,12547,-0.6,1,NA,9314,1354
+222,Farmers Insurance Exchange,Farmers Insurance Exchange,NA,http://www.farmers.com,"Woodland Hills, CA",Financials,Insurance: Property and Casualty (Mutual),13309,12513,-0.9,-147.9,NA,16057,4219
+223,Reynolds American,Reynolds American Inc.,RAI,http://www.reynoldsamerican.com,"Winston-Salem, NC","Food, Beverages & Tobacco",Tobacco,5525,12503,17.1,6073,86.7,51095,21711
+224,Viacom,Viacom Inc.,VIAB,http://www.viacom.com,"New York, NY",Media,Entertainment,9650,12488,-5.9,1438,-25.2,22508,4277
+225,Becton Dickinson,"Becton, Dickinson and Company",BDX,http://www.bd.com,"Franklin Lakes, NJ",Health Care,Medical Products and Equipment,50928,12483,21.4,976,40.4,25586,7633
+226,Micron Technology,"Micron Technology, Inc.",MU,http://www.micron.com,"Boise, ID",Technology,Semiconductors and Other Electronic Components,31400,12399,-23.4,-276,-109.5,27540,12080
+227,Principal Financial,"Principal Financial Group, Inc.",PFG,http://www.principal.com,"Des Moines, IA",Financials,"Insurance: Life, Health (Stock)",14854,12394,3.6,1316.5,6.7,228014,10227
+228,Arconic,Arconic Inc.,ARNC,http://www.arconic.com,"New York, NY",Aerospace & Defense,Aerospace and Defense,41500,12394,-45,-941,NA,20038,5115
+229,NRG Energy,"NRG Energy, Inc.",NRG,http://www.nrg.com,"Princeton, NJ",Energy,Energy,8763,12351,-15.8,-774,NA,30355,2041
+230,VF,V.F. Corporation,VFC,http://www.vfc.com,"Greensboro, NC",Apparel,Apparel,69000,12207,-1.4,1074.1,-12.8,9739,4941
+231,Devon Energy,Devon Energy Corporation,DVN,http://www.devonenergy.com,"Oklahoma City, OK",Energy,"Mining, Crude-Oil Production",3545,12197,-7.2,-3302,NA,25913,5927
+232,D.R. Horton,"D.R. Horton, Inc.",DHI,http://www.drhorton.com,"Fort Worth, TX",Engineering & Construction,Homebuilders,6976,12157,12.3,886.3,18.1,11559,6793
+233,Bed Bath & Beyond,Bed Bath & Beyond Inc.,BBBY,http://www.bedbathandbeyond.com,"Union, NJ",Retailing,Specialty Retailers: Other,62000,12104,1.9,841.5,-12.1,6499,2560
+234,Consolidated Edison,"Consolidated Edison, Inc.",ED,http://www.conedison.com,"New York, NY",Energy,Utilities: Gas and Electric,14960,12075,-3.8,1245,4.4,48255,14298
+235,Edison International,Edison International,EIX,http://www.edisoninvestor.com,"Rosemead, CA",Energy,Utilities: Gas and Electric,12390,11869,3,1311,28.5,51319,11996
+236,Sherwin-Williams,The Sherwin-Williams Company,SHW,http://www.sherwin.com,"Cleveland, OH",Chemicals,NA,42550,11856,4.6,1132.7,7.5,6753,1878
+237,NGL Energy Partners,NGL Energy Partners LP,NGL,http://www.nglenergypartners.com,"Tulsa, OK",Energy,Energy,3200,11742,-30.1,-198.9,-633.2,5560,1656
+238,Dominion Energy,"Dominion Energy, Inc.",D,http://www.dominionenergy.com,"Richmond, VA",Energy,Utilities: Gas and Electric,16200,11737,0.5,2123,11.8,71610,14605
+239,Ameriprise Financial,"Ameriprise Financial, Inc.",AMP,http://www.ameriprise.com,"Minneapolis, MN",Financials,Diversified Financials,13195,11735,-3.8,1314,-15.9,139821,6292
+240,ADP,"Automatic Data Processing, Inc.",ADP,http://www.adp.com,"Roseland, NJ",Business Services,Diversified Outsourcing Services,57000,11668,1.7,1492.5,2.8,43670,4482
+241,Hilton Worldwide Holdings,Hilton Worldwide Holdings Inc.,HLT,http://www.hiltonworldwide.com,"McLean, VA","Hotels, Restaurants & Leisure","Hotels, Casinos, Resorts",169000,11663,3.5,348,-75.2,26211,5899
+242,First Data,First Data Corporation,FDC,http://www.firstdata.com,"Atlanta, GA",Business Services,Financial Data Services,24000,11584,1.2,420,NA,40292,1220
+243,Henry Schein,"Henry Schein, Inc.",HSIC,http://www.henryschein.com,"Melville, NY",Wholesalers,Wholesalers: Health Care,21000,11572,8.9,506.8,5.8,6730,2793
+244,Toys “R” Us,"Toys ""R"" Us, Inc.",NA,http://www.toysrusinc.com,"Wayne, NJ",Retailing,Specialty Retailers: Other,64000,11540,-2.2,-36,NA,6908,-1292
+245,BB&T Corp.,BB&T Corporation,BBT,http://www.bbt.com,"Winston-Salem, NC",Financials,Commercial Banks,37500,11538,11.5,2426,16.4,219276,29881
+246,Reinsurance Group of America,"Reinsurance Group of America, Incorporated",RGA,http://www.rgare.com,"Chesterfield, MO",Financials,"Insurance: Life, Health (Stock)",2371,11522,10.6,701.4,39.7,53098,7093.1
+247,Core-Mark Holding,"Core-Mark Holding Company, Inc.",CORE,http://www.core-mark.com,"South San Francisco, CA",Wholesalers,Wholesalers: Food and Grocery,7688,11507,29.9,54.2,5.2,1497,530
+248,Biogen,Biogen Inc.,BIIB,http://www.biogen.com,"Cambridge, MA",Health Care,Pharmaceuticals,7400,11449,6.4,3702.8,4.4,22877,12140
+249,Las Vegas Sands,Las Vegas Sands Corp.,LVS,http://www.sands.com,"Las Vegas, NV","Hotels, Restaurants & Leisure","Hotels, Casinos, Resorts",49000,11410,-2.4,1670,-15.1,20469,6177
+250,Stanley Black & Decker,"Stanley Black & Decker, Inc.",SWK,http://www.stanleyblackanddecker.com,"New Britain, CT",Household Products,"Home Equipment, Furnishings",54023,11407,1.7,965.3,9.2,15635,6367
+251,Parker-Hannifin,Parker-Hannifin Corporation,PH,http://www.parker.com,"Cleveland, OH",Industrials,Industrial Machinery,48950,11361,-10.6,806.8,-20.3,12057,4575
+252,Stryker,Stryker Corporation,SYK,http://www.stryker.com,"Kalamazoo, MI",Health Care,Medical Products and Equipment,33000,11325,13.9,1647,14.5,20435,9550
+253,Estee Lauder,The Estee Lauder Companies Inc.,EL,http://www.elcompanies.com,"New York, NY",Household Products,Household and Personal Products,46000,11262,4.5,1114.6,2.4,9223,3572
+254,Celgene,Celgene Corporation,CELG,http://www.celgene.com,"Summit, NJ",Health Care,Pharmaceuticals,7132,11229,21.3,1999.2,24.8,28086,6599
+255,BlackRock,"BlackRock, Inc.",BLK,http://www.blackrock.com,"New York, NY",Financials,Securities,13000,11155,-2.2,3172,-5.2,220177,29098
+256,Xcel Energy,Xcel Energy Inc.,XEL,http://www.xcelenergy.com,"Minneapolis, MN",Energy,Utilities: Gas and Electric,11476,11107,0.7,1123.4,14.1,41155,11021
+257,CSX,CSX Corporation,CSX,http://www.csx.com,"Jacksonville, FL",Transportation,Railroads,26628,11069,-6.3,1714,-12.9,35414,11679
+258,Unum Group,Unum Group,UNM,http://www.unum.com,"Chattanooga, TN",Financials,"Insurance: Life, Health (Stock)",9400,11047,2.9,931.4,7.4,61942,8968
+259,Jacobs Engineering Group,Jacobs Engineering Group Inc.,JEC,http://www.jacobs.com,"Dallas, TX",Engineering & Construction,"Engineering, Construction",49350,10964,-9.5,210.5,-30.5,7360,4265
+260,Lennar,Lennar Corporation,LEN,http://www.lennar.com,"Miami, FL",Engineering & Construction,Homebuilders,8335,10950,15.6,911.8,13.6,15362,7026
+261,Group 1 Automotive,"Group 1 Automotive, Inc.",GPI,http://www.group1auto.com,"Houston, TX",Retailing,"Automotive Retailing, Services",13500,10888,2.4,147.1,56.5,4462,930
+262,Leucadia National,Leucadia National Corporation,LUK,http://www.leucadia.com,"New York, NY",Financials,Diversified Financials,13000,10875,-6.9,130,-54.2,45071,10128
+263,Entergy,Entergy Corporation,ETR,http://www.entergy.com,"New Orleans, LA",Energy,Utilities: Gas and Electric,13513,10846,-5.8,-583.6,NA,45904,8082
+264,PayPal Holdings,"PayPal Holdings, Inc.",PYPL,http://www.paypal.com,"San Jose, CA",Business Services,Financial Data Services,18100,10842,17.2,1401,14.1,33103,14712
+265,Applied Materials,"Applied Materials, Inc.",AMAT,http://www.appliedmaterials.com,"Santa Clara, CA",Technology,Semiconductors and Other Electronic Components,16150,10825,12.1,1721,25,14588,7217
+266,Voya Financial,"Voya Financial, Inc.",VOYA,http://www.voya.com,"New York, NY",Financials,Diversified Financials,6700,10782,-4.9,-428,-204.8,214235,12994
+267,Mastercard,Mastercard Incorporated,MA,http://www.mastercard.com,"Purchase, NY",Business Services,Financial Data Services,11900,10776,11.5,4059,6.6,18675,5656
+268,Priceline Group,The Priceline Group Inc.,PCLN,http://www.pricelinegroup.com,"Norwalk, CT",Technology,Internet Services and Retailing,18500,10743,16.5,2135,-16.3,19839,9820
+269,Liberty Interactive,Liberty Interactive Corporation,QVCA,http://www.libertyinteractive.com,"Englewood, CO",Retailing,Internet Services and Retailing,21080,10647,6.6,1235,42.1,20355,6772
+270,AutoZone,"AutoZone, Inc.",AZO,http://www.autozone.com,"Memphis, TN",Retailing,Specialty Retailers: Other,66780,10636,4.4,1241,7,8600,-1788
+271,State Street Corp.,State Street Corporation,STT,http://www.statestreet.com,"Boston, MA",Financials,Commercial Banks,33783,10635,-1.2,2143,8.2,242698,21219
+272,DTE Energy,DTE Energy Company,DTE,http://www.dteenergy.com,"Detroit, MI",Energy,Utilities: Gas and Electric,10000,10630,2.8,868,19.4,32041,9011
+273,L3 Technologies,"L3 Technologies, Inc.",LLL,http://www.l3t.com,"New York, NY",Aerospace & Defense,Aerospace and Defense,38000,10597,-8.3,710,NA,11865,4553
+274,HollyFrontier,HollyFrontier Corporation,HFC,http://www.hollyfrontier.com,"Dallas, TX",Energy,Petroleum Refining,2676,10536,-20.4,-260.5,-135.2,9436,4681
+275,Praxair,"Praxair, Inc.",PX,http://www.praxair.com,"Danbury, CT",Chemicals,Chemicals,26498,10534,-2.2,1500,-3,19332,5021
+276,Universal Health Services,"Universal Health Services, Inc.",UHS,http://www.uhsinc.com,"King of Prussia, PA",Health Care,Health Care: Medical Facilities,70863,10508,7.4,702.4,3.2,10318,4533
+277,Discover Financial Services,Discover Financial Services,DFS,http://www.discover.com,"Riverwoods, IL",Financials,Commercial Banks,15549,10497,4.9,2393,4.2,92308,11323
+278,Occidental Petroleum,Occidental Petroleum Corporation,OXY,http://www.oxy.com,"Houston, TX",Energy,NA,11000,10398,-18.1,-574,NA,43109,21497
+279,United States Steel,United States Steel Corporation,X,http://www.ussteel.com,"Pittsburgh, PA",Materials,Metals,29800,10261,-11.3,-440,NA,9160,2274
+280,Sempra Energy,Sempra Energy,SRE,http://www.sempra.com,"San Diego, CA",Energy,Utilities: Gas and Electric,16575,10183,-0.5,1370,1.6,47786,12951
+281,Baxter International,Baxter International Inc.,BAX,http://www.baxter.com,"Deerfield, IL",Health Care,Medical Products and Equipment,48000,10163,2,4965,412.9,15546,8290
+282,W.W. Grainger,"W.W. Grainger, Inc.",GWW,http://www.grainger.com,"Lake Forest, IL",Wholesalers,Wholesalers: Diversified,25000,10137,1.6,605.9,-21.2,5694,1798
+283,Autoliv,"Autoliv, Inc.",ALV,http://www.autoliv.com,"Auburn Hills, MI",Motor Vehicles & Parts,Motor Vehicles and Parts,65900,10074,9.9,567.1,24.1,8234,3677
+284,Norfolk Southern,Norfolk Southern Corporation,NSC,http://www.nscorp.com,"Norfolk, VA",Transportation,Railroads,27856,9888,-5.9,1668,7.2,34892,12409
+285,Baker Hughes,Baker Hughes Incorporated,BHI,http://www.bakerhughes.com,"Houston, TX",Energy,"Oil and Gas Equipment, Services",33000,9841,-37.5,-2738,NA,19034,12656
+286,Ally Financial,Ally Financial Inc.,ALLY,http://www.ally.com,"Detroit, MI",Financials,Diversified Financials,7600,9835,3.1,1067,-17.2,163728,13317
+287,Sonic Automotive,"Sonic Automotive, Inc",SAH,http://www.sonicautomotive.com,"Charlotte, NC",Retailing,"Automotive Retailing, Services",9800,9732,1.1,93.2,8,3639,725
+288,Owens & Minor,"Owens & Minor, Inc.",OMI,http://www.owens-minor.com,"Mechanicsville, VA",Wholesalers,Wholesalers: Health Care,7900,9723,-0.5,108.8,5.2,2718,960
+289,Huntsman,Huntsman Corporation,HUN,http://www.huntsman.com,"The Woodlands, TX",Chemicals,Chemicals,15000,9657,-6.2,326,250.5,9189,1287
+290,Laboratory Corp. of America,Laboratory Corporation of America Holdings,LH,http://www.labcorp.com,"Burlington, NC",Health Care,Health Care: Pharmacy and Other Services,52000,9642,11.1,732.1,67.6,14247,5506
+291,Murphy USA,Murphy USA Inc.,MUSA,http://www.murphyusa.com,"El Dorado, AR",Retailing,Specialty Retailers: Other,6600,9633,-11.5,221.5,25.6,2089,697
+292,Advance Auto Parts,"Advance Auto Parts, Inc.",AAP,http://www.advanceautoparts.com,"Roanoke, VA",Retailing,Specialty Retailers: Other,57500,9568,-1.7,459.6,-2.9,8315,2916
+293,Fidelity National Financial,"Fidelity National Financial, Inc.",FNF,http://www.fnf.com,"Jacksonville, FL",Financials,Insurance: Property and Casualty (Stock),55219,9554,4.6,650,23.3,14463,5996
+294,Air Products & Chemicals,"Air Products & Chemicals, Inc.",APD,http://www.airproducts.com,"Allentown, PA",Chemicals,Chemicals,18450,9524,-3.7,631.1,-50.6,18055,7080
+295,Hormel Foods,Hormel Foods Corporation,HRL,http://www.hormelfoods.com,"Austin, MN","Food, Beverages & Tobacco",Food Consumer Products,21100,9523,2.8,890.1,29.7,6370,4448
+296,Hertz Global Holdings,"Hertz Global Holdings, Inc.",HTZ,http://www.hertz.com,"Estero, FL",Retailing,"Automotive Retailing, Services",36000,9480,-10,-491,-279.9,19155,1075
+297,MGM Resorts International,MGM Resorts International,MGM,http://www.mgmresorts.com,"Las Vegas, NV","Hotels, Restaurants & Leisure","Hotels, Casinos, Resorts",66500,9455,2.9,1101.4,NA,28173,6220
+298,Corning,Corning Incorporated,GLW,http://www.corning.com,"Corning, NY",Industrials,"Electronics, Electrical Equipment",40700,9390,3.1,3695,176,27899,17893
+299,Republic Services,"Republic Services, Inc.",RSG,http://www.republicservices.com,"Phoenix, AZ",Business Services,Waste Management,33000,9388,3,612.6,-18.3,20630,7691
+300,Alcoa,Alcoa Corporation,AA,http://www.alcoa.com,"New York, NY",Materials,Metals,14000,9318,3,-400,NA,16741,5654
+301,Fidelity National Information Services,"Fidelity National Information Services, Inc.",FIS,http://www.fisglobal.com,"Jacksonville, FL",Business Services,Financial Data Services,55000,9241,40.1,568,-10.1,26031,9741
+302,Pacific Life,Pacific Life,NA,http://www.pacificlife.com,"Newport Beach, CA",Financials,"Insurance: Life, Health (Stock)",3628,9169,6.1,824,24.7,143298,11022
+303,SunTrust Banks,"SunTrust Banks, Inc.",STI,http://www.suntrust.com,"Atlanta, GA",Financials,Commercial Banks,24375,9161,7.4,1878,-2.8,204875,23515
+304,LKQ,LKQ Corporation,LKQ,http://www.lkqcorp.com,"Chicago, IL",Wholesalers,Wholesalers: Diversified,42500,9082,26.3,464,9.6,8303,3442.9
+305,BorgWarner,BorgWarner Inc.,BWA,http://www.borgwarner.com,"Auburn Hills, MI",Motor Vehicles & Parts,Motor Vehicles and Parts,27000,9071,13.1,118.5,-80.6,8835,3218.3
+306,Ball,Ball Corporation,BLL,http://www.ball.com,"Broomfield, CO",Materials,"Packaging, Containers",18450,9061,13.3,263,-6.4,16173,3435
+306,CST Brands,"CST Brands, Inc.",CST,http://www.cstbrands.com,"San Antonio, TX",Retailing,Specialty Retailers: Other,12380,9061,-4.6,324,117.4,4360,1229
+306,Public Service Enterprise Group,Public Service Enterprise Group Incorporated,PEG,http://www.pseg.com,"Newark, NJ",Energy,Utilities: Gas and Electric,13065,9061,-13,887,-47.2,40070,13130
+309,Eastman Chemical,Eastman Chemical Company,EMN,http://www.eastman.com,"Kingsport, TN",Chemicals,Chemicals,14000,9008,-6.6,854,0.7,15457,4532
+310,eBay,eBay Inc.,EBAY,http://www.ebay.com,"San Jose, CA",Technology,Internet Services and Retailing,12600,8979,-5.4,7266,321.2,23847,10539
+311,Mohawk Industries,"Mohawk Industries, Inc.",MHK,http://www.mohawkind.com,"Calhoun, GA",Household Products,"Home Equipment, Furnishings",37800,8959,11,930.4,51.2,10231,5777
+312,Oneok,"ONEOK, Inc.",OKE,http://www.oneok.com,"Tulsa, OK",Energy,NA,2384,8921,14.9,352,43.7,16139,189
+313,Frontier Communications,Frontier Communications Corporation,FTR,http://www.frontier.com,"Norwalk, CT",Telecommunications,Telecommunications,28332,8896,59.5,-373,NA,29013,4519
+314,Netflix,"Netflix, Inc.",NFLX,http://www.netflix.com,"Los Gatos, CA",Technology,Internet Services and Retailing,3850,8831,30.3,186.7,52.2,13587,2680
+315,American Family Insurance Group,American Family Insurance Group,NA,http://www.amfam.com,"Madison, WI",Financials,Insurance: Property and Casualty (Stock),10471,8829,6.6,325.6,-53.1,22662,7760
+316,Thrivent Financial for Lutherans,Thrivent Financial for Lutherans,NA,http://www.thrivent.com,"Minneapolis, MN",Financials,"Insurance: Life, Health (Mutual)",3282,8777,-0.1,587.8,-23.6,88561,7726
+317,Expedia,"Expedia, Inc.",EXPE,http://www.expediainc.com,"Bellevue, WA",Technology,Internet Services and Retailing,20075,8774,31.5,281.8,-63.1,15778,4132
+318,Lithia Motors,"Lithia Motors, Inc.",LAD,http://www.lithiamotors.com,"Medford, OR",Retailing,"Automotive Retailing, Services",11170,8678,10.3,197.1,7.7,3844,911
+319,Avis Budget Group,"Avis Budget Group, Inc.",CAR,http://www.avisbudgetgroup.com,"Parsippany, NJ",Retailing,"Automotive Retailing, Services",25600,8659,1.8,163,-47.9,17643,221
+320,Reliance Steel & Aluminum,Reliance Steel & Aluminum Co.,RS,http://www.rsac.com,"Los Angeles, CA",Materials,Metals,14500,8613,-7.9,304.3,-2.3,7411,4149
+321,GameStop,GameStop Corp.,GME,http://www.gamestopcorp.com,"Grapevine, TX",Retailing,Specialty Retailers: Other,41750,8608,-8.1,353.2,-12.3,4976,2254
+322,Tenneco,Tenneco Inc.,TEN,http://www.tenneco.com,"Lake Forest, IL",Motor Vehicles & Parts,Motor Vehicles and Parts,31000,8599,4.8,363,47,4342,588
+323,O’Reilly Automotive,"O'Reilly Automotive, Inc.",ORLY,http://www.oreillyauto.com,"Springfield, MO",Retailing,Specialty Retailers: Other,58397,8593,7.9,1037.7,11.4,7204,1627
+324,Peter Kiewit Sons’,"Peter Kiewit Sons', Inc.",NA,http://www.kiewit.com,"Omaha, NE",Engineering & Construction,"Engineering, Construction",20000,8573,-4.7,396,57.8,6179,3268
+325,United Natural Foods,"United Natural Foods, Inc.",UNFI,http://www.unfi.com,"Providence, RI",Wholesalers,Wholesalers: Food and Grocery,9554,8470,3.5,125.8,-9.3,2852,1520
+326,salesforce.com,"salesforce.com, inc.",CRM,http://www.salesforce.com,"San Francisco, CA",Technology,Computer Software,25000,8392,25.9,179.6,NA,17585,7500
+327,Boston Scientific,Boston Scientific Corporation,BSX,http://www.bostonscientific.com,"Marlborough, MA",Health Care,Medical Products and Equipment,27000,8386,12.2,347,NA,18096,6733
+328,Newmont Mining,Newmont Mining Corporation,NEM,http://www.newmont.com,"Greenwood Village, CO",Energy,"Mining, Crude-Oil Production",12438,8379,8.4,-627,-385,21031,10721
+329,Genworth Financial,"Genworth Financial, Inc.",GNW,http://www.genworth.com,"Richmond, VA",Financials,"Insurance: Life, Health (Stock)",3400,8369,-9.5,-277,NA,104658,12644
+330,Live Nation Entertainment,"Live Nation Entertainment, Inc.",LYV,http://www.livenationentertainment.com,"Beverly Hills, CA",Media,Entertainment,11500,8355,15.3,2.9,NA,6764,1126
+331,Veritiv,Veritiv Corp,VRTV,http://www.veritivcorp.com,"Atlanta, GA",Wholesalers,Wholesalers: Diversified,8700,8327,-4.5,21,-21.3,2484,542
+332,News Corp.,News Corporation,NWSA,http://www.newscorp.com,"New York, NY",Media,"Publishing, Printing",24000,8319,-3.6,179,NA,15483,11564
+333,Crown Holdings,"Crown Holdings, Inc.",CCK,http://www.crowncork.com,"Philadelphia, PA",Materials,"Packaging, Containers",23992,8284,-5.5,496,26.2,9599,366
+334,Global Partners,Global Partners LP,GLP,http://www.globalp.com,"Waltham, MA",Wholesalers,Wholesalers: Diversified,1770,8240,-20.1,-199.4,-557.8,2564,393
+335,PVH,PVH Corp.,PVH,http://www.pvh.com,"New York, NY",Apparel,Apparel,26650,8203,2.3,549,-4.1,11068,4805
+336,Level 3 Communications,"Level 3 Communications, Inc.",LVLT,http://www.level3.com,"Broomfield, CO",Telecommunications,Telecommunications,12600,8172,-0.7,677,-80.3,24888,10917
+337,Navistar International,Navistar International Corporation,NAV,http://www.navistar.com,"Lisle, IL",Industrials,Construction and Farm Machinery,11300,8111,-20,-97,NA,5653,-5298
+338,Univar,Univar Inc.,UNVR,http://www.univar.com,"Downers Grove, IL",Wholesalers,Wholesalers: Diversified,8700,8074,-10.1,-68.4,-514.5,5390,810
+339,Campbell Soup,Campbell Soup Company,CPB,http://www.campbellsoupcompany.com,"Camden, NJ","Food, Beverages & Tobacco",Food Consumer Products,16500,7961,-1.5,563,-18.5,7837,1525
+340,Dick’s Sporting Goods,"Dick's Sporting Goods, Inc.",DKS,http://www.dicks.com,"Coraopolis, PA",Retailing,Specialty Retailers: Other,27550,7922,9,287.4,-13,4058,1930
+341,Weyerhaeuser,Weyerhaeuser Company,WY,http://www.weyerhaeuser.com,"Seattle, WA",Materials,Forest and Paper Products,10400,7902,11.6,1027,103,19243,9180
+342,Mutual of Omaha Insurance,Mutual of Omaha Insurance Company,NA,http://www.mutualofomaha.com,"Omaha, NE",Financials,"Insurance: Life, Health (Stock)",5732,7899,9.2,356.6,7.1,38465,5618
+343,Chesapeake Energy,Chesapeake Energy Corporation,CHK,http://www.chk.com,"Oklahoma City, OK",Energy,"Mining, Crude-Oil Production",3300,7872,-38.3,-4401,NA,13028,-1460
+344,Anadarko Petroleum,Anadarko Petroleum Corporation,APC,http://www.anadarko.com,"The Woodlands, TX",Energy,"Mining, Crude-Oil Production",4500,7869,-9.5,-3071,NA,45564,12212
+345,Interpublic Group,"The Interpublic Group of Companies, Inc.",IPG,http://www.interpublic.com,"New York, NY",Business Services,"Advertising, Marketing",49800,NA,3.1,608.5,33.9,12485,2017
+346,J.M. Smucker,The J.M. Smucker Company,SJM,http://www.jmsmucker.com,"Orrville, OH","Food, Beverages & Tobacco",Food Consumer Products,6910,7811,37.2,688.7,99.7,15984,7009
+347,Steel Dynamics,"Steel Dynamics, Inc.",STLD,http://www.steeldynamics.com,"Fort Wayne, IN",Materials,Metals,7695,7777,2.4,382.1,NA,6424,2927
+348,Foot Locker,"Foot Locker, Inc.",FL,http://www.footlocker-inc.com,"New York, NY",Retailing,Specialty Retailers: Apparel,32965,7766,4.8,664,22.7,3840,2710
+349,Western Refining,"Western Refining, Inc.",NA,http://www.wnr.com,"El Paso, TX",Energy,Petroleum Refining,7134,7743,-20.9,124.9,-69.3,5560,1697
+350,SpartanNash,SpartanNash Company,SPTN,http://www.spartannash.com,"Byron Center, MI",Wholesalers,Wholesalers: Food and Grocery,11500,7735,1.1,56.8,-9.4,1930,825
+351,Dean Foods,Dean Foods Company,DF,http://www.deanfoods.com,"Dallas, TX","Food, Beverages & Tobacco",Food Consumer Products,17000,7710,-5.1,119.9,NA,2606,611
+352,Zimmer Biomet Holdings,"Zimmer Biomet Holdings, Inc.",ZBH,http://www.zimmerbiomet.com,"Warsaw, IN",Health Care,Medical Products and Equipment,18500,7684,28.1,305.9,108.1,26684,9669
+353,PulteGroup,"PulteGroup, Inc.",PHM,http://www.pultegroupinc.com,"Atlanta, GA",Engineering & Construction,Homebuilders,4623,7669,28.2,602.7,22,10178,4659
+354,W.R. Berkley,W.R. Berkley Corporation,WRB,http://www.wrberkley.com,"Greenwich, CT",Financials,Insurance: Property and Casualty (Stock),7608,7654,6.2,601.9,19.5,23365,5047
+355,Quanta Services,"Quanta Services, Inc.",PWR,http://www.quantaservices.com,"Houston, TX",Engineering & Construction,"Engineering, Construction",28100,7651,0.2,198.4,-36.2,5354,3339
+356,EOG Resources,"EOG Resources, Inc.",EOG,http://www.eogresources.com,"Houston, TX",Energy,"Mining, Crude-Oil Production",2650,7651,-12.6,-1096.7,NA,29459,13982
+357,Charles Schwab,The Charles Schwab Corporation,SCHW,http://www.aboutschwab.com,"San Francisco, CA",Financials,Securities,16200,7644,17.6,1889,30.5,223383,16421
+358,Eversource Energy,Eversource Energy,ES,http://www.eversource.com,"Springfield, MA",Energy,Utilities: Gas and Electric,7762,7639,-4,942.3,7.3,32053,10712
+359,Anixter International,Anixter International Inc.,AXE,http://www.anixter.com,"Glenview, IL",Wholesalers,Wholesalers: Electronics and Office Equipment,8900,7625,15.6,120.5,-5.6,4094,1292
+360,EMCOR Group,"EMCOR Group, Inc.",EME,http://www.emcorgroup.com,"Norwalk, CT",Engineering & Construction,"Engineering, Construction",31000,7552,12.3,181.9,5.6,3894,1537
+361,Assurant,"Assurant, Inc.",AIZ,http://www.assurant.com,"New York, NY",Financials,Insurance: Property and Casualty (Stock),14700,7532,-27.1,565.4,299.4,29709,4098
+362,CenterPoint Energy,"CenterPoint Energy, Inc.",CNP,http://www.centerpointenergy.com,"Houston, TX",Energy,Utilities: Gas and Electric,7727,7528,1.9,432,NA,21829,3460
+363,Harris,Harris Corporation,HRS,http://www.harris.com,"Melbourne, FL",Technology,Network and Other Communications Equipment,21000,7527,48.1,324,-3,11996,3056
+364,HD Supply Holdings,"HD Supply Holdings, Inc.",HDS,http://www.hdsupply.com,"Atlanta, GA",Wholesalers,Wholesalers: Diversified,14000,7524,-14.3,196,-86.7,5707,960
+365,PPL,PPL Corporation,PPL,http://www.pplweb.com,"Allentown, PA",Energy,Utilities: Gas and Electric,12689,7517,-2,1902,178.9,38315,9899
+366,Quest Diagnostics,Quest Diagnostics Incorporated,DGX,http://www.questdiagnostics.com,"Madison, NJ",Health Care,Health Care: Pharmacy and Other Services,43000,7515,0.3,645,-9,10100,4628
+367,Williams,"The Williams Companies, Inc.",WMB,http://www.williams.com,"Tulsa, OK",Energy,Energy,5604,7499,1.9,-424,NA,46835,4643
+368,WEC Energy Group,"WEC Energy Group, Inc.",WEC,http://www.wecenergygroup.com,"Milwaukee, WI",Energy,Utilities: Gas and Electric,8074,7472,26.1,939,47.1,30123,8930
+369,Hershey,The Hershey Company,HSY,http://www.thehersheycompany.com,"Hershey, PA","Food, Beverages & Tobacco",Food Consumer Products,17140,7440,0.7,720,40.4,5524,786
+370,AGCO,AGCO Corporation,AGCO,http://www.agcocorp.com,"Duluth, GA",Industrials,Construction and Farm Machinery,19795,7411,-0.8,160.1,-39.9,7168,2776
+371,Ralph Lauren,Ralph Lauren Corporation,RL,http://www.ralphlauren.com,"New York, NY",Apparel,Apparel,20500,7405,-2.8,396,-43.6,6213,3744
+372,Masco,Masco Corporation,MAS,http://www.masco.com,"Taylor, MI",Household Products,"Home Equipment, Furnishings",26000,7357,-6.9,491,38.3,5137,-298
+373,WESCO International,"WESCO International, Inc.",WCC,http://www.wesco.com,"Pittsburgh, PA",Wholesalers,NA,9000,7336,-2.4,101.6,-51.8,4491,2013
+374,LifePoint Health,"LifePoint Health, Inc.",LPNT,http://www.lifepointhealth.net,"Brentwood, TN",Health Care,Health Care: Medical Facilities,47000,7274,20.9,121.9,-33,6319,2180
+375,National Oilwell Varco,"National Oilwell Varco, Inc.",NOV,http://www.nov.com,"Houston, TX",Energy,"Oil and Gas Equipment, Services",36384,7251,-50.9,-2412,NA,21140,13940
+376,Kindred Healthcare,"Kindred Healthcare, Inc.",KND,http://www.kindredhealthcare.com,"Louisville, KY",Health Care,Health Care: Medical Facilities,76650,7227,1.8,-664.2,NA,6113,813
+377,Mosaic,The Mosaic Company,MOS,http://www.mosaicco.com,"Plymouth, MN",Chemicals,NA,8700,7163,-19.5,297.8,-70.2,16841,9585
+378,Alliance Data Systems,Alliance Data Systems Corporation,ADS,http://www.alliancedata.com,"Plano, TX",Business Services,Financial Data Services,17000,7138,10.8,515.8,-13.5,25514,1658
+379,Computer Sciences,Computer Sciences Corporation,NA,http://www.dxc.technology,"Tysons, VA",Technology,Information Technology Services,59000,7106,-41.7,251,12450,7736,2025
+380,Huntington Ingalls Industries,"Huntington Ingalls Industries, Inc.",HII,http://www.huntingtoningalls.com%20,"Newport News, VA",Aerospace & Defense,Aerospace and Defense,37000,7068,0.7,573,41.8,6352,1653
+381,Leidos Holdings,"Leidos Holdings, Inc.",LDOS,http://www.leidos.com,"Reston, VA",Technology,Information Technology Services,32000,7043,38.5,244,-3.9,9132,3135
+382,Erie Insurance Group,Erie Insurance Group,NA,http://www.erieinsurance.com,"Erie, PA",Financials,Insurance: Property and Casualty (Mutual),4988,7016,5.7,741.9,10.7,18417,8528
+383,Tesla,"Tesla, Inc.",TSLA,http://www.tesla.com,"Palo Alto, CA",Motor Vehicles & Parts,Motor Vehicles and Parts,30025,7000,73,-674.9,NA,22664,4753
+384,Ascena Retail Group,"Ascena Retail Group, Inc.",ASNA,http://www.ascenaretail.com,"Mahwah, NJ",Retailing,Specialty Retailers: Apparel,41000,6995,45.6,-11.9,NA,5506,1863
+385,Darden Restaurants,"Darden Restaurants, Inc.",DRI,http://www.darden.com,"Orlando, FL","Hotels, Restaurants & Leisure",Food Services,150942,6934,-3.2,375,-47.1,4583,1952
+386,Harman International Industries,"Harman International Industries, Incorporated",NA,http://www.harman.com,"Stamford, CT",Industrials,"Electronics, Electrical Equipment",26000,6912,12.3,361.7,5.6,6054,2453
+387,Nvidia,NVIDIA Corporation,NVDA,http://www.nvidia.com,"Santa Clara, CA",Technology,Semiconductors and Other Electronic Components,10299,6910,37.9,1666,171.3,9841,5762
+388,R.R. Donnelley & Sons,R.R. Donnelley & Sons Company,RRD,http://www.rrdonnelley.com,"Chicago, IL",Media,"Publishing, Printing",44360,6896,-38.7,-495.9,-428.2,4285,-106
+389,Fifth Third Bancorp,Fifth Third Bancorp,FITB,http://www.53.com,"Cincinnati, OH",Financials,Commercial Banks,17844,6889,-2,1564,-8.6,142177,16205
+390,Quintiles IMS Holdings,"Quintiles IMS Holdings, Inc.",Q,http://www.quintilesims.com,"Durham, NC",Health Care,Health Care: Pharmacy and Other Services,50000,6878,19.9,115,-70.3,21208,8633
+391,Jones Lang LaSalle,Jones Lang LaSalle Incorporated,JLL,http://www.jll.com,"Chicago, IL",Financials,Real Estate,77300,6804,14,318.2,-27.5,7629,2790
+392,Dover,Dover Corporation,DOV,http://www.dovercorporation.com,"Downers Grove, IL",Industrials,Industrial Machinery,29000,6794,-3.3,508.9,-41.5,10116,3800
+393,Spirit AeroSystems Holdings,"Spirit AeroSystems Holdings, Inc.",SPR,http://www.spiritaero.com,"Wichita, KS",Aerospace & Defense,Aerospace and Defense,14400,6793,2.2,469.7,-40.4,5405,1928
+394,Ryder System,"Ryder System, Inc.",R,http://www.ryder.com,"Miami, FL",Transportation,"Trucking, Truck Leasing",34500,6787,3.3,262.5,-13.9,10903,2052
+395,A-Mark Precious Metals,"A-Mark Precious Metals, Inc.",AMRK,http://www.amark.com,"Santa Monica, CA",Materials,Miscellaneous,83,6784,11.8,9.3,31.5,437,63
+396,Tractor Supply,Tractor Supply Company,TSCO,http://www.tractorsupply.com,"Brentwood, TN",Retailing,Specialty Retailers: Other,19500,6780,8.9,437.1,6.5,2675,1453
+397,Sealed Air,Sealed Air Corporation,SEE,http://www.sealedair.com,"Charlotte, NC",Materials,"Packaging, Containers",23000,6778,-3.6,486.4,45,7389,610
+398,Auto-Owners Insurance,Auto-Owners Insurance Group,NA,http://www.auto-owners.com,"Lansing, MI",Financials,NA,4737,6775,4,706.3,-13.4,21571,9690
+399,Yum China Holdings,"Yum China Holdings, Inc.",YUMC,http://ir.yumchina.com,"Plano, TX","Hotels, Restaurants & Leisure",Food Services,420000,6752,4,502,NA,3727,2377
+400,Calpine,Calpine Corporation,CPN,http://www.calpine.com,"Houston, TX",Energy,Energy,2372,6716,3.8,92,-60.9,19317,3268
+401,Owens-Illinois,"Owens-Illinois, Inc.",OI,http://www.o-i.com,"Perrysburg, OH",Materials,"Packaging, Containers",27000,6702,8.9,209,54.8,9135,254
+402,Targa Resources,Targa Resources Corp.,TRGP,http://www.targaresources.com,"Houston, TX",Energy,Pipelines,1970,6691,0.5,-187.3,-421.3,12871,5439
+403,Jones Financial (Edward Jones),"The Jones Financial Companies, L.L.L.P.",JBLU,http://www.edwardjones.com,"Des Peres, MO",Financials,Securities,43000,6632,-0.9,746,-11,19424,2634
+403,JetBlue Airways,JetBlue Airways Corporation,NA,http://www.jetblue.com,"Long Island City, NY",Transportation,Airlines,15986,6632,3.4,759,12.1,9487,4013
+405,Franklin Resources,"Franklin Resources, Inc.",BEN,http://www.franklinresources.com,"San Mateo, CA",Financials,Securities,9059,6618,-16.7,1726.7,-15.2,16099,11936
+406,Activision Blizzard,"Activision Blizzard, Inc.",ATVI,http://www.activisionblizzard.com,"Santa Monica, CA",Technology,Computer Software,9500,6608,41.7,966,8.3,17452,9119
+407,J.B. Hunt Transport Services,"J.B. Hunt Transport Services, Inc.",JBHT,http://www.jbhunt.com,"Lowell, AR",Transportation,"Trucking, Truck Leasing",22190,6556,5.9,432.1,1.1,3829,1414
+408,Constellation Brands,"Constellation Brands, Inc.",STZ,http://www.cbrands.com,"Victor, NY","Food, Beverages & Tobacco",Beverages,9000,6548,8.6,1054.9,25.7,16965,6560
+409,NCR,NCR Corporation,NCR,http://www.ncr.com,"Duluth, GA",Technology,"Computers, Office Equipment",33500,6543,2.7,270,NA,7673,1542
+410,Asbury Automotive Group,"Asbury Automotive Group, Inc.",ABG,http://www.asburyauto.com,"Duluth, GA",Retailing,"Automotive Retailing, Services",7900,6528,-0.9,167.2,-1.2,2336,280
+411,American Financial Group,"American Financial Group, Inc.",AFG,http://www.afginc.com,"Cincinnati, OH",Financials,NA,7600,6498,5.7,649,84.4,55072,4916
+412,Discovery Communications,"Discovery Communications, Inc.",DISCA,http://www.discoverycommunications.com,"Silver Spring, MD",Media,NA,7000,6497,1.6,1194,15.5,15758,5167
+413,Berry Global Group,"Berry Global Group, Inc.",BERY,http://www.berryglobal.com,"Evansville, IN",Materials,"Packaging, Containers",21000,6489,32.9,236,174.4,7653,218
+414,Sanmina,Sanmina Corporation,SANM,http://www.sanmina.com,"San Jose, CA",Technology,Semiconductors and Other Electronic Components,40178,6481,1.7,187.8,-50.2,3625,1610
+415,CalAtlantic Group,"CalAtlantic Group, Inc.",CAA,http://www.calatlantichomes.com,"Arlington, VA",Engineering & Construction,Homebuilders,3055,6477,83,484.7,127,8709,4208
+416,Dr Pepper Snapple Group,"Dr Pepper Snapple Group, Inc.",DPS,http://www.drpeppersnapplegroup.com,"Plano, TX","Food, Beverages & Tobacco",Beverages,20000,NA,2.5,847,10.9,9791,2134
+417,Dillard’s,"Dillard's, Inc.",DDS,http://www.dillards.com,"Little Rock, AR",Retailing,General Merchandisers,30800,6418,-5,169.2,-37.2,3888,1717
+418,HRG Group,"HRG Group, Inc.",HRG,http://www.hrggroup.com,"New York, NY",Household Products,Household and Personal Products,16021,6403,10.1,-198.8,NA,35793,638
+419,CMS Energy,CMS Energy Corporation,CMS,http://www.cmsenergy.com,"Jackson, MI",Energy,Utilities: Gas and Electric,7750,6399,-0.9,551,5.4,21622,4253
+420,Graybar Electric,"Graybar Electric Company, Inc.",NA,http://www.graybar.com,"St. Louis, MO",Wholesalers,Wholesalers: Diversified,8500,6385,4.5,93.1,2.2,2099,728
+421,Builders FirstSource,"Builders FirstSource, Inc.",BLDR,http://www.bldr.com,"Dallas, TX",Materials,"Building Materials, Glass",14000,6367,78.6,144.3,NA,2910,310
+422,Yum Brands,"Yum! Brands, Inc.",YUM,http://www.yum.com,"Louisville, KY","Hotels, Restaurants & Leisure",Food Services,90000,6366,-51.4,1619,25.2,5478,-5656
+423,Casey’s General Stores,"Casey's General Stores, Inc.",CASY,http://www.caseys.com,"Ankeny, IA",Retailing,Specialty Retailers: Other,24724,6304,-10.6,226,25.1,2726,1084
+424,Amphenol,Amphenol Corporation,APH,http://www.amphenol.com,"Wallingford, CT",Technology,Network and Other Communications Equipment,62000,6286,12.9,822.9,7.8,8499,3675
+425,Oshkosh,Oshkosh Corporation,OSK,http://www.oshkoshcorporation.com,"Oshkosh, WI",Industrials,Construction and Farm Machinery,13800,6279,3,216.4,-5.7,4514,1977
+426,iHeartMedia,"iHeartMedia, Inc.",IHRT,http://www.iheartmedia.com,"San Antonio, TX",Media,Entertainment,18700,6274,0.5,-296.3,NA,12862,-11021
+427,TreeHouse Foods,"TreeHouse Foods, Inc.",THS,http://www.treehousefoods.com,"Oak Brook, IL","Food, Beverages & Tobacco",Food Consumer Products,16027,6175,92.6,-228.6,-298.9,6546,2503
+428,Alleghany,Alleghany Corporation,Y,http://www.alleghany.com,"New York, NY",Financials,Insurance: Property and Casualty (Stock),3420,6131,22.6,456.9,-18.5,23757,7940
+429,Expeditors International of Washington,"Expeditors International of Washington, Inc.",EXPD,http://www.expeditors.com,"Seattle, WA",Transportation,Transportation and Logistics,16000,6098,-7.8,430.8,-5.8,2791,1845
+430,Avery Dennison,Avery Dennison Corporation,AVY,http://www.averydennison.com,"Glendale, CA",Materials,"Packaging, Containers",25000,6087,2,320.7,16.9,4396,926
+431,Ameren,Ameren Corporation,AEE,http://www.ameren.com,"St. Louis, MO",Energy,Utilities: Gas and Electric,8629,6076,-0.4,653,3.7,24699,7103
+432,Hanesbrands,Hanesbrands Inc.,HBI,http://www.hanes.com,"Winston-Salem, NC",Apparel,Apparel,67800,6063,5.8,539.4,25.8,6908,1224
+433,Motorola Solutions,"Motorola Solutions, Inc.",MSI,http://www.motorolasolutions.com,"Chicago, IL",Technology,Network and Other Communications Equipment,14000,6038,6,560,-8.2,8463,-964
+434,St. Jude Medical,"St. Jude Medical, Inc.",NA,http://www.abbott.com,"St. Paul, MN",Health Care,Medical Products and Equipment,18000,6004,8.4,734,-16.6,12578,4578
+435,Harley-Davidson,"Harley-Davidson, Inc.",HOG,http://www.harley-davidson.com,"Milwaukee, WI",Transportation,Transportation Equipment,6000,5997,8.4,692.2,-8,9890,1920
+436,Regions Financial,Regions Financial Corporation,RF,http://www.regions.com,"Birmingham, AL",Financials,Commercial Banks,22166,5967,5.2,1163,9.5,125968,16664
+437,Intercontinental Exchange,"Intercontinental Exchange, Inc.",ICE,http://www.theice.com,"Atlanta, GA",Financials,Securities,5631,5958,27.3,1422,11.6,82003,15717
+438,Alaska Air Group,"Alaska Air Group, Inc.",ALK,http://www.alaskaair.com,"Seattle, WA",Transportation,Airlines,19112,5931,5.9,814,-4,9962,2931
+439,Old Republic International,Old Republic International Corporation,ORI,http://www.oldrepublic.com,"Chicago, IL",Financials,Insurance: Property and Casualty (Stock),8500,5901,2.3,466.9,10.6,18592,4472
+440,Lam Research,Lam Research Corporation,LRCX,http://www.lamresearch.com,"Fremont, CA",Technology,Semiconductors and Other Electronic Components,7500,5886,11.9,914,39.4,12272,5895
+441,AK Steel Holding,AK Steel Holding Corporation,AKS,http://www.aksteel.com,"West Chester, OH",Materials,Metals,8500,5883,-12.1,-7.8,NA,4036,-272
+442,Rockwell Automation,"Rockwell Automation, Inc.",ROK,http://www.rockwellautomation.com,"Milwaukee, WI",Industrials,"Electronics, Electrical Equipment",22000,5880,-6.8,729.7,-11.8,7101,1990
+443,Adobe Systems,Adobe Systems Incorporated,ADBE,http://www.adobe.com,"San Jose, CA",Technology,Computer Software,15706,5854,22.1,1168.8,85.7,12707,7425
+444,Avon Products,"Avon Products, Inc.",AVP,http://www.avoninvestor.com,"Rye, NY",Household Products,Household and Personal Products,26400,5853,-18.4,-107.6,NA,3419,-848
+445,Terex,Terex Corporation,TEX,http://www.terex.com,"Westport, CT",Industrials,Construction and Farm Machinery,18100,5841,-10.7,-176.1,-220.7,5007,1484.7
+446,NVR,"NVR, Inc.",NVR,http://www.nvrinc.com,"Reston, VA",Engineering & Construction,Homebuilders,4900,5835,12.9,425.3,11.1,2644,1304
+447,Dana,Dana Incorporated,DAN,http://www.dana.com,"Maumee, OH",Motor Vehicles & Parts,Motor Vehicles and Parts,24900,5826,-3.9,640,302.5,4860,1157
+448,Realogy Holdings,Realogy Holdings Corp.,RLGY,http://www.realogy.com,"Madison, NJ",Financials,Real Estate,11800,5810,1.8,213,15.8,7421,2464
+449,American Tower,American Tower Corporation,AMT,http://www.americantower.com,"Boston, MA",Telecommunications,Telecommunications,4507,5786,21.3,956.4,39.6,30879,6764
+450,Packaging Corp. of America,Packaging Corporation of America,PKG,http://www.packagingcorp.com,"Lake Forest, IL",Materials,"Packaging, Containers",14000,5779,0.6,449.6,2.9,5777,1760
+451,Citizens Financial Group,"Citizens Financial Group, Inc.",CFG,http://www.citizensbank.com,"Providence, RI",Financials,Commercial Banks,17600,5763,9.2,1045,24.4,149520,19747
+452,United Rentals,"United Rentals, Inc.",URI,http://www.unitedrentals.com,"Stamford, CT",Business Services,Miscellaneous,12500,5762,-0.9,566,-3.2,11988,1648
+453,Clorox,The Clorox Company,CLX,http://www.thecloroxcompany.com,"Oakland, CA",Household Products,Household and Personal Products,8000,5761,1.7,648,11.7,4518,297
+454,Genesis Healthcare,"Genesis Healthcare, Inc.",GEN,http://www.genesishcc.com,"Kennett Square, PA",Health Care,NA,82000,5733,2,-64,NA,5779,-490
+455,M&T Bank Corp.,M&T Bank Corporation,MTB,http://www.mtb.com,"Buffalo, NY",Financials,Commercial Banks,16487,5722,14.5,1315.1,21.8,123449,16487
+456,Ingredion,Ingredion Incorporated,INGR,http://www.ingredion.com,"Westchester, IL","Food, Beverages & Tobacco",Food Production,11000,5704,1.5,484.9,20.6,5782,2565
+457,UGI,UGI Corporation,UGI,http://www.ugicorp.com,"King of Prussia, PA",Energy,Energy,13105,5686,-15,364.7,29.8,10847,2851
+458,Owens Corning,Owens Corning,OC,http://www.owenscorning.com,"Toledo, OH",Materials,"Building Materials, Glass",16000,5677,6.1,393,19.1,7741,3849
+459,S&P Global,S&P Global Inc.,SPGI,http://www.spglobal.com,"New York, NY",Business Services,Financial Data Services,20000,5661,6.6,2106,82.2,8669,650
+460,Markel,Markel Corporation,MKL,http://www.markelcorp.com,"Glen Allen, VA",Financials,Insurance: Property and Casualty (Stock),10900,5612,4.5,455.7,-21.8,25875,8461
+461,Wyndham Worldwide,Wyndham Worldwide Corporation,WYN,http://www.wyndhamworldwide.com,"Parsippany, NJ","Hotels, Restaurants & Leisure","Hotels, Casinos, Resorts",37800,5599,1.1,611,-0.2,9819,714
+462,Arthur J. Gallagher,Arthur J. Gallagher & Co.,AJG,http://www.ajg.com,"Itasca, IL",Financials,Diversified Financials,24790,5595,3.8,414.4,16.1,11490,3597
+463,Burlington Stores,"Burlington Stores, Inc.",BURL,http://www.burlingtonstores.com,"Burlington, NJ",Retailing,Specialty Retailers: Apparel,40000,5591,9,215.9,43.5,2575,-50
+464,First American Financial,First American Financial Corporation,FAF,http://www.firstam.com,"Santa Ana, CA",Financials,Insurance: Property and Casualty (Stock),19531,5576,7.7,343,19.1,8832,3008
+465,Symantec,Symantec Corporation,SYMC,http://www.symantec.com,"Mountain View, CA",Technology,Computer Software,11000,5568,-14.4,2488,183.4,11767,3676
+466,Patterson,"Patterson Companies, Inc.",PDCO,http://www.pattersoncompanies.com,"St. Paul, MN",Wholesalers,Wholesalers: Health Care,7000,5555,27,187.2,-16.2,3521,1442
+467,Olin,Olin Corporation,OLN,http://www.olin.com,"Clayton, MO",Chemicals,Chemicals,6400,5551,94.5,-3.9,NA,8763,2273
+468,NetApp,"NetApp, Inc.",NTAP,http://www.netapp.com,"Sunnyvale, CA",Technology,Computer Peripherals,12030,5546,-9.4,229,-59.1,10037,2881
+469,Raymond James Financial,"Raymond James Financial, Inc.",RJF,http://www.raymondjames.com,"St. Petersburg, FL",Financials,Securities,11900,5520,4,529.4,5.4,31594,4914
+470,TravelCenters of America,TravelCenters of America LLC,TA,http://www.ta-petrol.com,"Westlake, OH",Retailing,Specialty Retailers: Other,20259,5511,-5.8,-2,-107.3,1660,552
+471,Fiserv,"Fiserv, Inc.",FISV,http://www.fiserv.com,"Brookfield, WI",Business Services,Financial Data Services,23000,5505,4.8,930,30.6,9743,2541
+472,Host Hotels & Resorts,"Host Hotels & Resorts, Inc.",HST,http://www.hosthotels.com,"Bethesda, MD",Financials,Real Estate,220,5488,1.9,762,36.6,11408,6994
+473,Insight Enterprises,"Insight Enterprises, Inc.",NSIT,http://www.insight.com,"Tempe, AZ",Wholesalers,Wholesalers: Electronics and Office Equipment,5930,5486,2.1,84.7,11.7,2219,713
+474,Mattel,"Mattel, Inc.",MAT,http://www.mattel.com,"El Segundo, CA",Household Products,"Toys, Sporting Goods",32000,5457,-4.3,318,-13.9,6494,2408
+475,AmTrust Financial Services,"AmTrust Financial Services, Inc.",AFSI,http://www.amtrustgroup.com,"New York, NY",Financials,Insurance: Property and Casualty (Stock),8000,5451,18.1,411,-8.8,22615,3269
+476,Cincinnati Financial,Cincinnati Financial Corporation,CINF,http://www.cinfin.com,"Fairfield, OH",Financials,Insurance: Property and Casualty (Stock),4754,5449,6,590.7,-6.8,20386,7060
+477,Simon Property Group,"Simon Property Group, Inc.",SPG,http://www.simon.com,"Indianapolis, IN",Financials,Real Estate,4050,5435,3.2,1838.9,0.6,31104,4310
+478,Western Union,The Western Union Company,WU,http://www.westernunion.com,"Englewood, CO",Business Services,Financial Data Services,10700,5423,-1.1,253.2,-69.8,9420,902
+479,KeyCorp,KeyCorp,KEY,http://www.key.com,"Cleveland, OH",Financials,Commercial Banks,15700,5422,19.4,791,-13.6,136453,15240
+480,Delek US Holdings,"Delek US Holdings, Inc.",DK,http://www.delekus.com,"Brentwood, TN",Energy,Petroleum Refining,1326,5414,-6,-153.7,-892.3,2985,992
+481,Booz Allen Hamilton Holding,Booz Allen Hamilton Holding Corp.,BAH,http://www.boozallen.com,"McLean, VA",Technology,Information Technology Services,22600,5406,2.5,294.1,26.5,3010,409
+482,Chemours,The Chemours Company,CC,http://www.chemours.com,"Wilmington, DE",Chemicals,Chemicals,7000,5400,2.5,7,NA,6060,100
+483,Western & Southern Financial Group,Western & Southern Mutual Holding Company,NA,http://www.westernsouthern.com,"Cincinnati, OH",Financials,"Insurance: Life, Health (Mutual)",2178,5398,0.8,241.2,-47.2,43831,5104
+484,Celanese,Celanese Corporation,CE,http://www.celanese.com,"Irving, TX",Chemicals,Chemicals,7293,5389,-5,900,196.1,8357,2588
+485,Windstream Holdings,"Windstream Holdings, Inc.",WIN,http://www.windstream.com,"Little Rock, AR",Telecommunications,Telecommunications,11870,5387,-6.6,-383.5,-1499.6,11770,170
+486,Seaboard,Seaboard Corporation,SEB,http://www.seaboardcorp.com,"Merriam, KS","Food, Beverages & Tobacco",Food Production,11781,5379,-3.8,312,82.5,4755,3162
+487,Essendant,Essendant Inc.,ESND,http://www.essendant.com,"Deerfield, IL",Wholesalers,Wholesalers: Electronics and Office Equipment,6600,5369,0.1,63.9,NA,2164,781
+488,Apache,Apache Corporation,APA,http://www.apachecorp.com,"Houston, TX",Energy,"Mining, Crude-Oil Production",3727,5354,-19.5,-1405,NA,22519,6238
+489,Airgas,"Airgas, Inc.",NA,http://www.airgas.com,"Radnor, PA",Wholesalers,Wholesalers: Diversified,17000,5314,0.2,337.5,-8.3,6135,2045
+490,Kelly Services,"Kelly Services, Inc.",KELYA,http://www.kellyservices.com,"Troy, MI",Business Services,Temporary Help,7500,5277,-4.4,120.8,124.5,2028,1012
+491,Liberty Media,Liberty Media Corporation,LSXMA,http://www.libertymedia.com,"Englewood, CO",Media,Entertainment,3626,5276,10,680,962.5,31377,11756
+492,Rockwell Collins,"Rockwell Collins, Inc.",COL,http://www.rockwellcollins.com,"Cedar Rapids, IA",Aerospace & Defense,Aerospace and Defense,19000,5259,-0.1,728,6.1,7707,2078
+493,Robert Half International,Robert Half International Inc.,RHI,http://www.roberthalf.com,"Menlo Park, CA",Business Services,Temporary Help,16400,5250,3.1,343.4,-4,1778,1087
+494,CH2M Hill,"CH2M HILL Companies, Ltd.",NA,http://www.ch2m.com,"Englewood, CO",Engineering & Construction,"Engineering, Construction",20000,5236,-2.3,15,-81.3,2671,547
+495,Big Lots,"Big Lots, Inc.",BIG,http://www.biglots.com,"Columbus, OH",Retailing,Specialty Retailers: Other,23150,5200,0.2,152.8,7,1608,651
+496,Michaels Cos.,"The Michaels Companies, Inc.",MIK,http://www.michaels.com,"Irving, TX",Retailing,Specialty Retailers: Other,31000,5197,5.8,378.2,4.2,2148,-1698
+497,Toll Brothers,"Toll Brothers, Inc.",TOL,http://www.tollbrothers.com,"Horsham, PA",Engineering & Construction,Homebuilders,4200,5170,23.9,382.1,5.2,9737,4229
+498,Yahoo,Yahoo! Inc.,YHOO,http://www.yahoo.com,"Sunnyvale, CA",Technology,Internet Services and Retailing,8500,5169,4,-214.3,NA,48083,31049
+499,Vistra Energy,Vistra Energy Corp.,VST,http://www.vistraenergy.com,"Dallas, TX",Energy,Energy,4431,5164,4,NA,NA,15167,6597
+500,ABM Industries,ABM Industries Incorporated,ABM,http://www.abm.com,"New York, NY",Business Services,Diversified Outsourcing Services,110000,5145,-2.8,57.2,-25,2281,974

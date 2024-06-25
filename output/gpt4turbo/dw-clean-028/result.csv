@@ -1,0 +1,7 @@
+stop_outcome,False,True
+Arrest Driver,0.0,1.0
+Arrest Passenger,0.0,1.0
+Citation,1.0,0.0
+N/D,1.0,0.0
+No Action,1.0,0.0
+Warning,1.0,0.0

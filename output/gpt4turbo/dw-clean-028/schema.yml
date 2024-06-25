@@ -1,0 +1,112 @@
+DataTableAfterTransformation:
+  columns:
+    - name: "STATION"
+      type: "string"
+      description: "The station identifier where the weather data was collected."
+
+    - name: "DATE"
+      type: "date"
+      description: "The date on which the weather data was collected."
+
+    - name: "AWND"
+      type: "float"
+      description: "Average daily wind speed (miles per hour), remains unchanged."
+
+    - name: "TAVG"
+      type: "float"
+      description: "Average daily temperature (degrees Fahrenheit), remains unchanged."
+
+    - name: "TMAX"
+      type: "float"
+      description: "Maximum temperature for the day (degrees Fahrenheit), converted from string to float."
+
+    - name: "TMIN"
+      type: "float"
+      description: "Minimum temperature for the day (degrees Fahrenheit), converted from string to float."
+
+    - name: "WT01"
+      type: "integer"
+      description: "Weather type indicator (e.g., fog), remains unchanged."
+    - name: "WT02"
+      type: "integer"
+      description: "Weather type indicator for heavy fog."
+
+    - name: "WT03"
+      type: "integer"
+      description: "Weather type indicator for thunder."
+
+    - name: "WT04"
+      type: "integer"
+      description: "Weather type indicator for ice pellets, sleet, snow pellets, or small hail."
+
+    - name: "WT05"
+      type: "integer"
+      description: "Weather type indicator for hail (not small)."
+
+    - name: "WT06"
+      type: "integer"
+      description: "Weather type indicator for glaze or rime."
+
+    - name: "WT07"
+      type: "integer"
+      description: "Weather type indicator for dust, sandstorm, or blowing obstruction."
+
+    - name: "WT08"
+      type: "integer"
+      description: "Weather type indicator for smoke or haze."
+
+    - name: "WT09"
+      type: "integer"
+      description: "Weather type indicator for blowing or drifting snow."
+
+    - name: "WT10"
+      type: "integer"
+      description: "Weather type indicator for tornado, waterspout, or funnel cloud."
+
+    - name: "WT11"
+      type: "integer"
+      description: "Weather type indicator for high or damaging winds."
+
+    - name: "WT13"
+      type: "integer"
+      description: "Weather type indicator for mist."
+
+    - name: "WT14"
+      type: "integer"
+      description: "Weather type indicator for drizzle."
+
+    - name: "WT15"
+      type: "integer"
+      description: "Weather type indicator for freezing drizzle."
+
+    - name: "WT16"
+      type: "integer"
+      description: "Weather type indicator for rain."
+
+    - name: "WT17"
+      type: "integer"
+      description: "Weather type indicator for freezing rain."
+
+    - name: "WT18"
+      type: "integer"
+      description: "Weather type indicator for snow, snow pellets, snow grains, or ice crystals."
+
+    - name: "WT19"
+      type: "integer"
+      description: "Weather type indicator for unknown source of precipitation."
+
+    - name: "WT21"
+      type: "integer"
+      description: "Weather type indicator for ground fog."
+
+    - name: "WT22"
+      type: "integer"
+      description: "Weather type indicator (e.g., snow), remains unchanged."
+
+    - name: "bad_conditions"
+      type: "integer"
+      description: "A calculated field representing the sum or severity of bad weather conditions."
+
+    - name: "rating"
+      type: "string"
+      description: "A qualitative rating of weather conditions based on the 'bad_conditions' score. 0:good [1,4]:bad, [5,9]:worse"

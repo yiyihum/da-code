@@ -9,10 +9,10 @@ bash requirements.sh
 
 ### Set LLM API Key
 ```bash
-export AZURE_API_KEY = your_azure_api_key
-export AZURE_ENDPOINT = your_azure_endpoint
-export OPENAI_API_KEY = your_openai_api_key
-export GEMINI_API_KEY = your_genmini_api_key
+export AZURE_API_KEY=your_azure_api_key
+export AZURE_ENDPOINT=your_azure_endpoint
+export OPENAI_API_KEY=your_openai_api_key
+export GEMINI_API_KEY=your_genmini_api_key
 ```
 
 ### Run the benchmark

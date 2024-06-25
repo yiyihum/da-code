@@ -1,0 +1,7 @@
+The previous code calculates the three categories of best authors through the following steps:
+Group the data by author and calculate each author's average rating, average price, total number of ratings, and average ratings per book.
+Set a threshold for the number of ratings (1000) to ensure only authors with a significant number of ratings are considered, enhancing the reliability of the results.
+  
+- **Best Rated Authors**: Sort the filtered data by average rating and extract the top 10 authors with the highest ratings.
+- **Most Expensive Authors**: Sort by average price and extract the top 10 authors with the highest prices.
+- **Most Rated Authors**: Sort by total number of ratings and extract the top 10 authors with the most ratings.

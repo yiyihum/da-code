@@ -1,0 +1,111 @@
+tables:
+  - name: date_dim
+    columns:
+      - name: date_key
+        type: SERIAL
+        primary_key: true
+      - name: full_date
+        type: DATE
+        not_null: true
+      - name: month
+        type: INT
+        not_null: true
+      - name: day
+        type: INT
+        not_null: true
+      - name: month_name
+        type: VARCHAR(20)
+      - name: day_name
+        type: VARCHAR(20)
+      - name: financial_qtr
+        type: INT
+      - name: weekend
+        type: BOOLEAN
+
+  - name: stations
+    columns:
+      - name: id
+        type: SERIAL
+        primary_key: true
+      - name: station_name
+        type: VARCHAR(255)
+      - name: latitude
+        type: FLOAT
+      - name: longitude
+        type: FLOAT
+
+  - name: trip_demo
+    columns:
+      - name: id
+        type: SERIAL
+        primary_key: true
+      - name: user_type
+        type: VARCHAR(50)
+      - name: gender
+        type: VARCHAR(50)
+      - name: birth_year
+        type: INT
+      - name: age
+        type: INT
+
+  - name: weather
+    columns:
+      - name: id
+        type: SERIAL
+        primary_key: true
+      - name: rec_date
+        type: DATE
+      - name: avg_wind
+        type: FLOAT
+      - name: prcp
+        type: FLOAT
+      - name: snow_amt
+        type: FLOAT
+      - name: snow_depth
+        type: FLOAT
+      - name: tavg
+        type: FLOAT
+      - name: tmax
+        type: FLOAT
+      - name: tmin
+        type: FLOAT
+      - name: date_key
+        type: INT
+        references: date_dim(date_key)
+      - name: rain
+        type: BOOLEAN
+      - name: snow
+        type: BOOLEAN
+
+  - name: rides
+    columns:
+      - name: id
+        type: SERIAL
+        primary_key: true
+      - name: date_key
+        type: INT
+        references: date_dim(date_key)
+      - name: trip_duration
+        type: INT
+      - name: trip_minutes
+        type: INT
+      - name: trip_hours
+        type: INT
+      - name: start_time
+        type: TIMESTAMP
+      - name: stop_time
+        type: TIMESTAMP
+      - name: start_station_id
+        type: INT
+        references: stations(id)
+      - name: end_station_id
+        type: INT
+        references: stations(id)
+      - name: bike_id
+        type: INT
+      - name: valid_duration
+        type: BOOLEAN
+        description: According to the data dictionary, trips under 60 seconds were already assumed to be false starts/stops and were pruned. For the max, Citi Bike policies state that the maximum length of a trip is 24 hours (or 86400 seconds).
+      - name: trip_demo
+        type: INT
+        references: trip_demo(id)

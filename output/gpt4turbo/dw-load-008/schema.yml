@@ -1,0 +1,68 @@
+schema:
+  tables:
+    athletes:
+      columns:
+        - id: integer
+        - name: string
+        - gender: string
+        - age: integer
+        - height: float
+        - weight: float
+
+    countries:
+      columns:
+        - id: integer
+        - country: string
+        - region: string
+
+    country_stats:
+      columns:
+        - year: integer
+        - country_id: integer
+        - gdp: float
+        - pop_in_millions: float
+        - nobel_prize_winners: integer
+
+    summer_games:
+      columns:
+        - sport: string
+        - event: string
+        - year: integer
+        - athlete_id: integer
+        - country_id: integer
+        - bronze: integer
+        - silver: integer
+        - gold: integer
+
+    winter_games:
+      columns:
+        - sport: string
+        - event: string
+        - year: integer
+        - athlete_id: integer
+        - country_id: integer
+        - bronze: integer
+        - silver: integer
+        - gold: integer
+
+  relationships:
+    - from: summer_games
+      to: athletes
+      type: many_to_one
+      foreign_key: athlete_id
+    - from: summer_games
+      to: countries
+      type: many_to_one
+      foreign_key: country_id
+    - from: winter_games
+      to: athletes
+      type: many_to_one
+      foreign_key: athlete_id
+    - from: winter_games
+      to: countries
+      type: many_to_one
+      foreign_key: country_id
+    - from: country_stats
+      to: countries
+      type: many_to_one
+      foreign_key: country_id

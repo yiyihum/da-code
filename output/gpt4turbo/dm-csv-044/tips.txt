@@ -1,0 +1,4 @@
+The output is formatted as a CSV file with the following structure:
+* Each row represents a cohort defined by the month of the first purchase.
+* Each column represents the CohortIndex, which is the number of months since the first transaction.
+* Each cell in the table shows the average unit price for that cohort group at the specific number of months since their first purchase, rounded to one decimal place.
