@@ -153,7 +153,7 @@ def test(
         if args.retry_failed and os.path.exists(result_json_path):
             with open(result_json_path, "r") as f:
                 result = json.load(f)
-                if result["finished"]:
+                if not result["finished"] and not ("FAIL" in result["result"]) and not ("error" in result["result"].lower()):
                     logger.info("Skipping %s", instance_id)
                     continue
             logger.info("Retrying %s", instance_id)
