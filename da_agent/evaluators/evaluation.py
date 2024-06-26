@@ -68,16 +68,15 @@ class Evaluator:
 
         output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
 
-        
-        if not os.path.exists(output_results[0]):
-            if isinstance(trajectory_info["result"], str):
-                output_results = [trajectory_info["result"]]
-            gold_results = expected
-        else:
+        import pdb; pdb.set_trace()
+        if output_results == [] or os.path.exists(output_results[0]):
             gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
             if len(output_results) != len(gold_results):
                 output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
-            
+        else:            
+            if isinstance(trajectory_info["result"], str):
+                output_results = [trajectory_info["result"]]
+            gold_results = expected            
         
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\
@@ -96,7 +95,7 @@ class Evaluator:
         metric_options = metric_options * len(output_results) if len(output_results) > len(metric_options) \
             and len(metric_options) == 1  \
             else metric_options
-        import pdb; pdb.set_trace()
+
         assert (not isinstance(eval_config["func"], list)
             or (len(metric) == len(output_results) == len(gold_results) == len(
                 metric_options))), "Evaluation configs need to be consistent: lengths of 'metric', 'output_results', 'gold_results', " \
