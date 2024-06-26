@@ -91,4 +91,4 @@
 {"id": "plot-pie-008", "config": {"task": "data visualization", "type": "pie", "metric": "", "threshold": 0.0, "hardness": "Hard"}, "func": ["compare_image"], "result": [{"multi": true, "file": ["result.jpg", "dabench/plot.json", "dabench/result.npy"]}], "options": [{"keys": ["color", "figsize", "graph_title"]}]}
 {"id": "plot-scatter-002", "config": {"task": "data visualization", "type": "scatter", "metric": "", "threshold": 0.0, "hardness": "Hard"}, "func": ["compare_image"], "result": [{"multi": true, "file": ["result.png", "dabench/plot.json", "dabench/result.npy"]}], "options": [{"keys": ["x_label", "y_label", "labels"]}]}
 {"id": "text2sql001", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true}]}
-{"id": "text2sql002", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["parking_violation.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
+{"id": "text2sql002", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
