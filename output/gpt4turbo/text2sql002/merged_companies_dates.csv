@@ -1,0 +1,1075 @@
+company_id,company,city,country,continent,date_joined,year_founded
+189,Otto Bock HealthCare,Duderstadt,Germany,Europe,2017-06-24T00:00:00.000,1919
+848,Matrixport,,Singapore,Asia,2021-06-01T00:00:00.000,2019
+556,Cloudinary,Santa Clara,United States,North America,2022-02-15T00:00:00.000,2011
+999,PLACE,Bellingham,United States,North America,2021-11-17T00:00:00.000,2020
+396,candy.com,New York,United States,North America,2021-10-21T00:00:00.000,2021
+931,HAYDON,Shanghai,China,Asia,2021-09-24T00:00:00.000,2020
+364,eDaili,Shanghai,China,Asia,2019-02-01T00:00:00.000,2015
+732,CoinTracker,San Francisco,United States,North America,2022-01-27T00:00:00.000,2017
+906,EcoFlow,Shenzhen,China,Asia,2021-06-10T00:00:00.000,2017
+72,DJI Innovations,Shenzhen,China,Asia,2015-01-23T00:00:00.000,2006
+983,Numbrs,Zurich,Switzerland,Europe,2019-08-22T00:00:00.000,1999
+898,Darwinbox,Hyderabad,India,Asia,2022-01-25T00:00:00.000,2015
+844,MobileCoin,San Francisco,United States,North America,2021-07-07T00:00:00.000,2018
+894,Clara,Mexico City,Mexico,North America,2021-12-06T00:00:00.000,2020
+813,CoinDCX,Maharashtra,India,Asia,2021-08-10T00:00:00.000,2017
+743,Manner,Shanghai,China,Asia,2020-12-24T00:00:00.000,2015
+226,Clubhouse,San Francisco,United States,North America,2021-01-24T00:00:00.000,2020
+963,Masterworks,New York,United States,North America,2021-10-05T00:00:00.000,2017
+764,AgentSync,Denver,United States,North America,2021-12-07T00:00:00.000,2018
+839,Mamaearth,Gurgaon,India,Asia,2021-12-28T00:00:00.000,2016
+1033,Splashtop,San Jose,United States,North America,2021-01-27T00:00:00.000,2006
+725,Athletic Greens,New York,United States,North America,2022-01-25T00:00:00.000,2010
+549,Black Sesame Technologies,Shanghai,China,Asia,2021-09-22T00:00:00.000,2016
+667,Apus Group,Beijing,China,Asia,2015-01-16T00:00:00.000,2014
+755,Marshmallow,London,United Kingdom,Europe,2021-09-08T00:00:00.000,2017
+782,Phantom,San Francisco,United States,North America,2022-01-31T00:00:00.000,2021
+175,Kraken,San Francisco,United States,North America,2019-06-25T00:00:00.000,2011
+398,CoinList,San Francisco,United States,North America,2021-10-15T00:00:00.000,2017
+814,Daily Harvest,New York,United States,North America,2021-11-16T00:00:00.000,2014
+436,Afiniti,Hamilton,Bermuda,North America,2017-04-14T00:00:00.000,2006
+1046,Tractable,London,United Kingdom,Europe,2021-06-16T00:00:00.000,2014
+565,Hive,San Francisco,United States,North America,2021-04-21T00:00:00.000,2013
+781,Offchain Labs,Princeton,United States,North America,2021-08-31T00:00:00.000,2018
+997,Pet Circle,Alexandria,Australia,Oceania,2021-12-06T00:00:00.000,2011
+194,Relativity,Chicago,United States,North America,2021-03-18T00:00:00.000,2001
+249,Worldcoin,San Francisco,United States,North America,2021-06-29T00:00:00.000,2019
+434,Star Charge,Changzhou,China,Asia,2021-05-19T00:00:00.000,2014
+1035,Stytch,San Francisco,United States,North America,2021-11-18T00:00:00.000,2020
+969,Minio,Palo Alto,United States,North America,2022-01-26T00:00:00.000,2014
+1018,Sentry,San Francisco,United States,North America,2021-02-18T00:00:00.000,2011
+355,1047 Games,Zephyr Cove,United States,North America,2021-09-14T00:00:00.000,2017
+934,Hotmart,Amsterdam,Netherlands,Europe,2020-03-17T00:00:00.000,2011
+1054,Vise,New York,United States,North America,2021-05-18T00:00:00.000,2016
+901,Drata,San Diego,United States,North America,2021-11-08T00:00:00.000,2020
+173,Turing,Palo Alto,United States,North America,2021-12-20T00:00:00.000,2018
+738,iTrustCapital,Long Beach,United States,North America,2022-01-11T00:00:00.000,2018
+422,Temporal,Bellevue,United States,North America,2022-02-16T00:00:00.000,2019
+830,Rightway,New York,United States,North America,2021-03-30T00:00:00.000,2017
+1004,Printful,Charlotte,United States,North America,2021-05-24T00:00:00.000,2016
+951,Lamabang,Shenzhen,China,Asia,2015-03-06T00:00:00.000,2011
+734,Domestika,Berkeley,United States,North America,2022-01-27T00:00:00.000,2012
+1063,Wrapbook,New York,United States,North America,2021-11-10T00:00:00.000,2018
+623,JimuBox,Beijing,China,Asia,2015-04-21T00:00:00.000,2013
+846,Instabase,San Francisco,United States,North America,2019-10-21T00:00:00.000,2015
+823,Ivalua,Redwood City,United States,North America,2019-05-21T00:00:00.000,2000
+944,Interos,Arlington,United States,North America,2021-07-22T00:00:00.000,2005
+1030,Snorkel AI,Palo Alto,United States,North America,2021-08-09T00:00:00.000,2019
+824,Juanpi,Wuhan,China,Asia,2016-04-14T00:00:00.000,2012
+930,Hasura,Bengaluru,India,Asia,2022-02-22T00:00:00.000,2017
+370,Jusfoun Big Data,Beijing,China,Asia,2018-07-09T00:00:00.000,2010
+618,Hosjoy,Nanjing,China,Asia,2018-10-18T00:00:00.000,2009
+456,Verkada,San Mateo,United States,North America,2020-01-29T00:00:00.000,2016
+893,Cider,,Hong Kong,Asia,2021-09-02T00:00:00.000,2020
+812,Chief,New York,United States,North America,2022-03-31T00:00:00.000,2019
+1001,Playco,Tokyo,Japan,Asia,2020-09-21T00:00:00.000,2020
+703,Panther Labs,San Francisco,United States,North America,2021-12-02T00:00:00.000,2018
+884,Cadence,New York,United States,North America,2021-12-14T00:00:00.000,2020
+404,ID.me,McLean,United States,North America,2021-03-19T00:00:00.000,2010
+952,LayerZero Labs,New York,United States,North America,2022-03-30T00:00:00.000,2021
+625,Justworks,New York,United States,North America,2020-01-28T00:00:00.000,2012
+971,Moka,Beijing,China,Asia,2021-11-02T00:00:00.000,2015
+796,Luoji Siwei,Beijing,China,Asia,2017-07-20T00:00:00.000,2012
+909,Esusu,New York,United States,North America,2022-01-27T00:00:00.000,2015
+587,Preferred Networks,Tokyo,Japan,Asia,2018-05-17T00:00:00.000,2014
+273,Oura,Oulu,Finland,Europe,2022-04-05T00:00:00.000,2013
+771,Gem,San Francisco,United States,North America,2021-09-28T00:00:00.000,2017
+758,Tackle.io,Boise,United States,North America,2021-12-21T00:00:00.000,2016
+652,Xiaoe Tech,Shenzhen,China,Asia,2021-06-15T00:00:00.000,2015
+8,JUUL Labs,San Francisco,United States,North America,2017-12-20T00:00:00.000,2015
+760,GalaxySpace,Beijing,China,Asia,2020-11-17T00:00:00.000,2016
+394,Athelas,Mountain View,United States,North America,2022-01-31T00:00:00.000,2016
+393,Ascend Money,Bangkok,Thailand,Asia,2021-09-27T00:00:00.000,2013
+870,Axiom Space,Houston,United States,North America,2021-02-16T00:00:00.000,2016
+804,Rebellion Defense,Washington DC,United States,North America,2021-09-16T00:00:00.000,2019
+1041,Tezign,Shanghai,China,Asia,2021-11-02T00:00:00.000,2015
+443,Cresta,San Francisco,United States,North America,2022-03-17T00:00:00.000,2017
+978,News Break,Mountain View,United States,North America,2021-01-07T00:00:00.000,2015
+612,Einride,Stockholm,Sweden,Europe,2021-12-31T00:00:00.000,2016
+714,Yidian Zixun,Beijing,China,Asia,2017-10-17T00:00:00.000,2021
+925,Glia,New York,United States,North America,2022-03-21T00:00:00.000,2012
+421,Strava,San Francisco,United States,North America,2020-11-16T00:00:00.000,2009
+449,Mercury,San Francisco,United States,North America,2021-07-03T00:00:00.000,2019
+1022,Shippo,San Francisco,United States,North America,2021-06-02T00:00:00.000,2013
+240,Dadi Cinema,Shenzhen,China,Asia,2016-05-11T00:00:00.000,2006
+644,UISEE Technology,Beijing,China,Asia,2021-01-25T00:00:00.000,2016
+718,Alloy,New York,United States,North America,2021-09-30T00:00:00.000,2015
+920,Freshbooks,Toronto,Canada,North America,2021-08-10T00:00:00.000,2004
+1048,TrialSpark,New York,United States,North America,2021-09-30T00:00:00.000,2014
+1024,Sift,San Francisco,United States,North America,2021-04-22T00:00:00.000,2011
+929,Haomao.AI,Beijing,China,Asia,2021-12-22T00:00:00.000,2019
+751,Flipdish,Dublin,Ireland,Europe,2022-01-13T00:00:00.000,2015
+1012,Revolution Precrafted,Manila,Philippines,Asia,2017-10-23T00:00:00.000,2015
+863,Anyscale,Berkeley,United States,North America,2021-12-07T00:00:00.000,2019
+662,Qualia,San Francisco,United States,North America,2020-12-21T00:00:00.000,2015
+1027,SmartAsset,New York,United States,North America,2021-06-24T00:00:00.000,2012
+317,Gorillas,Berlin,Germany,Europe,2021-03-25T00:00:00.000,2020
+783,Pilot.com,San Francisco,United States,North America,2021-03-26T00:00:00.000,2016
+592,StarkWare,Netanya,Israel,Asia,2021-11-17T00:00:00.000,2018
+1023,Sidecar Health,El Segundo,United States,North America,2021-01-26T00:00:00.000,2018
+1051,Vagaro,Dublin,United States,North America,2021-11-03T00:00:00.000,2009
+633,Phenom People,Ambler,United States,North America,2021-04-07T00:00:00.000,2011
+635,Qingting FM,Shanghai,China,Asia,2021-06-02T00:00:00.000,2011
+750,CaptivateIQ,San Francisco,United States,North America,2022-01-26T00:00:00.000,2014
+697,Figment,Toronto,Canada,North America,2021-12-20T00:00:00.000,2018
+886,Cameo,Chicago,United States,North America,2021-03-30T00:00:00.000,2016
+826,LEAD School,Andheri,India,Asia,2022-01-13T00:00:00.000,2012
+1000,Placer.ai,Los Altos,United States,North America,2022-01-12T00:00:00.000,2016
+740,LinkTree,Melbourne,Australia,Oceania,2022-03-16T00:00:00.000,2016
+798,Modern Health,San Francisco,United States,North America,2021-02-11T00:00:00.000,2017
+1008,Razor,Berlin,Germany,Europe,2021-11-08T00:00:00.000,2020
+761,Insider,Istanbul,Turkey,Europe,2022-02-28T00:00:00.000,2012
+701,Kong,San Francisco,United States,North America,2020-12-31T00:00:00.000,2007
+825,Karat,Seattle,United States,North America,2021-10-13T00:00:00.000,2014
+344,Lucid,South Jordan,United States,North America,2021-06-29T00:00:00.000,2010
+695,Envoy,San Francisco,United States,North America,2022-01-11T00:00:00.000,2013
+876,BitFury,Amsterdam,Netherlands,Europe,2018-11-06T00:00:00.000,2011
+643,TUNGEE,Guangzhou,China,Asia,2021-12-15T00:00:00.000,2016
+509,FullStory,Atlanta,United States,North America,2021-08-04T00:00:00.000,2014
+979,Newsela,New York,United States,North America,2021-02-25T00:00:00.000,2013
+1031,Solo.io,Cambridge,United States,North America,2021-10-07T00:00:00.000,2017
+817,Firefly Aerospace,Cedar Park,United States,North America,2021-05-04T00:00:00.000,2014
+943,Intellifusion,Shenzhen,China,Asia,2019-03-22T00:00:00.000,2014
+975,Mux,San Francisco,United States,North America,2021-04-30T00:00:00.000,2015
+647,Venafi,Salt Lake City,United States,North America,2020-12-10T00:00:00.000,2000
+426,Veriff,Tallinn,Estonia,Europe,2022-01-26T00:00:00.000,2015
+705,Pristyn Care,Gurugram,India,Asia,2021-12-07T00:00:00.000,2018
+724,RIDI,Seoul,South Korea,Asia,2022-01-24T00:00:00.000,2008
+464,Optimism,San Francisco,United States,North America,2022-03-17T00:00:00.000,2019
+942,Injective Protocol,New York,United States,North America,2021-04-20T00:00:00.000,2018
+354,Wildlife Studios,Sao Paulo,Brazil,South America,2019-12-05T00:00:00.000,2011
+688,Away,New York,United States,North America,2019-05-15T00:00:00.000,2015
+1045,Timescale,New York,United States,North America,2022-02-22T00:00:00.000,2015
+391,Airbyte,San Francisco,United States,North America,2021-12-17T00:00:00.000,2020
+891,CHEQ,New York,United States,North America,2022-02-22T00:00:00.000,2014
+1066,YH Global,Shenzhen,China,Asia,2017-09-21T00:00:00.000,1997
+579,Modern Treasury,San Francisco,United States,North America,2021-10-06T00:00:00.000,2018
+686,SonderMind,Denver,United States,North America,2021-07-28T00:00:00.000,2014
+822,GlobalBees,New Delhi,India,Asia,2021-12-28T00:00:00.000,2021
+882,Bringg,Tel Aviv,Israel,Asia,2021-06-16T00:00:00.000,2013
+816,eSentire,Waterloo,Canada,North America,2022-02-22T00:00:00.000,2001
+369,Iluvatar CoreX,Shanghai,China,Asia,2021-03-01T00:00:00.000,2015
+340,Inxeption,San Francisco,United States,North America,2022-01-13T00:00:00.000,2017
+1058,VTS,New York,United States,North America,2019-05-07T00:00:00.000,2012
+129,Howden Group Holdings,London,United Kingdom,Europe,2020-09-29T00:00:00.000,1994
+862,Amperity,Seattle,United States,North America,2021-07-13T00:00:00.000,2016
+363,Changingedu,Shanghai,China,Asia,2017-10-30T00:00:00.000,2014
+603,56PINGTAI,Shanghai,China,Asia,2021-01-25T00:00:00.000,2013
+645,Valgen Medtech,Hangzhou,China,Asia,2021-05-06T00:00:00.000,2015
+769,DailyPay,New York,United States,North America,2021-05-18T00:00:00.000,2016
+788,SeekOut,Bellevue,United States,North America,2022-01-12T00:00:00.000,2017
+452,SmartHR,Tokyo,Japan,Asia,2021-06-08T00:00:00.000,2013
+420,StoreDot,Herzliya,Israel,Asia,2022-01-04T00:00:00.000,2012
+996,Pentera,Petah Tikva,Israel,Asia,2022-01-11T00:00:00.000,2015
+763,Ada Support,Toronto,Canada,North America,2021-05-07T00:00:00.000,2016
+803,Happy Money,Tustin,United States,North America,2022-02-08T00:00:00.000,2009
+765,Alation,Redwood City,United States,North America,2021-06-03T00:00:00.000,2012
+989,Orca Bio,Menlo Park,United States,North America,2020-06-17T00:00:00.000,2016
+409,MOLOCO,Redwood City,United States,North America,2021-04-29T00:00:00.000,2013
+580,MURAL,San Francisco,United States,North America,2021-07-20T00:00:00.000,2011
+513,Accelerant,Colchester,United Kingdom,Europe,2022-01-12T00:00:00.000,2018
+809,apna,Bengaluru,India,Asia,2021-09-15T00:00:00.000,2019
+791,UpGrad,Mumbai,India,Asia,2021-08-09T00:00:00.000,2015
+998,PicsArt,San Francisco,United States,North America,2021-08-26T00:00:00.000,2011
+455,Unite Us,New York,United States,North America,2021-03-16T00:00:00.000,2014
+477,Harness,San Francisco,United States,North America,2021-01-14T00:00:00.000,2016
+896,CommerceIQ,Palo Alto,United States,North America,2022-03-21T00:00:00.000,2012
+797,IRL,San Francisco,United States,North America,2021-06-15T00:00:00.000,2017
+361,CFGI,Boston,United States,North America,2021-09-15T00:00:00.000,2000
+250,Hive Box,Shenzhen,China,Asia,2018-01-23T00:00:00.000,2015
+229,MEGVII,Beijing,China,Asia,2017-10-31T00:00:00.000,2011
+540,4Paradigm,Beijing,China,Asia,2018-12-19T00:00:00.000,2015
+73,Netskope,Santa Clara,United States,North America,2018-11-13T00:00:00.000,2012
+852,Leap Motor,Hangzhou,China,Asia,2018-11-20T00:00:00.000,2015
+78,Hopin,London,United Kingdom,Europe,2020-11-10T00:00:00.000,2019
+79,Caris Life Sciences,Irving,United States,North America,2021-05-12T00:00:00.000,1996
+632,OVH,Roubaix,France,Europe,2016-08-15T00:00:00.000,1999
+314,Flink Food,Berlin,Germany,Europe,2021-12-01T00:00:00.000,2021
+82,Fireblocks,New York,United States,North America,2021-07-27T00:00:00.000,2018
+164,SambaNova Systems,Palo Alto,United States,North America,2021-04-13T00:00:00.000,2017
+85,Meicai,Beijing,China,Asia,2016-06-22T00:00:00.000,2014
+212,Relativity Space,Inglewood,United States,North America,2020-11-23T00:00:00.000,2016
+65,Snyk,Boston,United States,North America,2020-01-21T00:00:00.000,2015
+258,BYTON,Nanjing,China,Asia,2018-04-20T00:00:00.000,2016
+63,Pony.ai,Fremont,United States,North America,2018-07-11T00:00:00.000,2016
+58,reddit,San Francisco,United States,North America,2017-07-31T00:00:00.000,2005
+31,Faire,San Francisco,United States,North America,2019-10-30T00:00:00.000,2017
+248,OakNorth Bank,London,United Kingdom,Europe,2017-10-12T00:00:00.000,2015
+32,Airtable,San Francisco,United States,North America,2018-11-15T00:00:00.000,2013
+252,MessageBird,Amsterdam,Netherlands,Europe,2020-10-08T00:00:00.000,2011
+33,Brex,San Francisco,United States,North America,2018-10-05T00:00:00.000,2017
+287,Cars24,Gurgaon,India,Asia,2020-11-24T00:00:00.000,2015
+251,Trax,,Singapore,Asia,2019-07-22T00:00:00.000,2010
+243,OpenAI,San Francisco,United States,North America,2019-07-22T00:00:00.000,2015
+40,Bolt,Tallinn,Estonia,Europe,2018-05-29T00:00:00.000,2013
+44,Bolt,San Francisco,United States,North America,2021-10-08T00:00:00.000,2014
+45,Celonis,Munich,Germany,Europe,2018-06-26T00:00:00.000,2011
+211,Intarcia Therapeutics,Boston,United States,North America,2014-04-01T00:00:00.000,1995
+50,ServiceTitan,Glendale,United States,North America,2018-11-14T00:00:00.000,2012
+53,Digital Currency Group,New York,United States,North America,2021-11-01T00:00:00.000,2015
+285,Youxia Motors,Shanghai,China,Asia,2018-04-02T00:00:00.000,2014
+217,Dataminr,New York,United States,North America,2018-06-04T00:00:00.000,2009
+134,Monzo,London,United Kingdom,Europe,2018-10-31T00:00:00.000,2015
+365,ENOVATE,Shanghai,China,Asia,2019-04-15T00:00:00.000,2015
+91,Carta,San Francisco,United States,North America,2019-05-06T00:00:00.000,2012
+185,Indigo Ag,Boston,United States,North America,2017-09-26T00:00:00.000,2014
+121,Lianjia,Beijing,China,Asia,2016-04-07T00:00:00.000,2001
+335,FlixBus,Munich,Germany,Europe,2019-07-18T00:00:00.000,2013
+1014,SaltPay,London,United Kingdom,Europe,2021-04-09T00:00:00.000,2019
+191,WeRide,Guangzhou,China,Asia,2020-12-23T00:00:00.000,2017
+334,Delhivery,Gurgaon,India,Asia,2019-02-27T00:00:00.000,2011
+118,Vice Media,Brooklyn,United States,North America,2011-04-02T00:00:00.000,1994
+115,DataRobot,Boston,United States,North America,2019-07-29T00:00:00.000,2012
+113,Back Market,Paris,France,Europe,2021-05-18T00:00:00.000,2014
+147,Chipone,Beijing,China,Asia,2021-12-16T00:00:00.000,2008
+136,VIPKid,Beijing,China,Asia,2016-08-04T00:00:00.000,2013
+130,Meesho,Bengaluru,India,Asia,2021-04-05T00:00:00.000,2015
+321,Udaan,Bengaluru,India,Asia,2018-09-04T00:00:00.000,2016
+327,BlockFi,Jersey City,United States,North America,2021-03-11T00:00:00.000,2017
+641,SumUp,London,United Kingdom,Europe,2019-07-16T00:00:00.000,2011
+352,Traveloka,Jakarta,Indonesia,Asia,2017-01-01T00:00:00.000,2012
+972,Momenta,Beijing,China,Asia,2018-10-17T00:00:00.000,2016
+201,ShareChat,Bengaluru,India,Asia,2021-04-08T00:00:00.000,2015
+168,Abogen,Suzhou,China,Asia,2021-11-29T00:00:00.000,2019
+104,WeDoctor,Hangzhou,China,Asia,2015-09-22T00:00:00.000,2010
+171,Radiology Partners,El Segundo,United States,North America,2018-02-26T00:00:00.000,2012
+350,SouChe Holdings,Hangzhou,China,Asia,2017-11-01T00:00:00.000,2012
+101,Ro,New York,United States,North America,2020-07-27T00:00:00.000,2017
+239,Zapier,Sunnyvale,United States,North America,2021-01-14T00:00:00.000,2011
+1065,XForcePlus,Shanghai,China,Asia,2021-06-01T00:00:00.000,2015
+938,iCarbonX,Shenzhen,China,Asia,2016-04-12T00:00:00.000,2015
+828,People.ai,San Francisco,United States,North America,2021-08-11T00:00:00.000,2017
+941,Infobip,Vodnjan,Croatia,Europe,2020-07-30T00:00:00.000,2006
+988,Orbbec Technology,Shenzhen,China,Asia,2018-05-21T00:00:00.000,2013
+484,Wave,Dakar,Senegal,Africa,2021-09-07T00:00:00.000,2018
+864,Aptos,Palo Alto,United States,North America,2022-03-15T00:00:00.000,2021
+383,Pantheon Systems,San Francisco,United States,North America,2021-07-13T00:00:00.000,2010
+1060,Weights & Biases,San Francisco,United States,North America,2021-10-13T00:00:00.000,2017
+595,Trendy Group International,Kowloon,Hong Kong,Asia,2012-02-13T00:00:00.000,1999
+840,Radius Payment Solutions,Crewe,United Kingdom,Europe,2017-11-27T00:00:00.000,1990
+290,Nextiva,Scottsdale,United States,North America,2021-09-14T00:00:00.000,2008
+742,Lukka,New York,United States,North America,2022-01-14T00:00:00.000,2014
+964,Maven Clinic,New York,United States,North America,2021-08-17T00:00:00.000,2014
+712,Tripledot,London,United Kingdom,Europe,2022-02-14T00:00:00.000,2017
+837,Zego,London,United Kingdom,Europe,2021-03-09T00:00:00.000,2016
+583,Netlify,San Francisco,United States,North America,2021-11-17T00:00:00.000,2014
+411,Next Silicon,Tel Aviv,Israel,Asia,2021-06-14T00:00:00.000,2018
+430,Loom,San Francisco,United States,North America,2021-05-20T00:00:00.000,2016
+875,Betterfly,Santiago,Chile,South America,2022-02-01T00:00:00.000,2018
+810,Beyond Identity,New York,United States,North America,2022-02-22T00:00:00.000,2019
+805,STORD,Atlanta,United States,North America,2021-09-13T00:00:00.000,2015
+953,Lessen,Scottsdale,United States,North America,2021-11-30T00:00:00.000,2019
+606,Axtria,Berkeley Heights,United States,North America,2021-05-13T00:00:00.000,2009
+679,YunQuNa,Shanghai,China,Asia,2021-06-29T00:00:00.000,2015
+907,Electric,New York,United States,North America,2022-03-29T00:00:00.000,2016
+880,bolttech,,Singapore,Asia,2021-07-01T00:00:00.000,2018
+834,Sunbit,Los Angeles,United States,North America,2021-05-20T00:00:00.000,2016
+542,Aiven,Helsinki,Finland,Europe,2021-10-18T00:00:00.000,2016
+1043,Thirty Madison,New York,United States,North America,2021-06-02T00:00:00.000,1993
+410,Mu Sigma,Northbrook,United States,North America,2013-02-07T00:00:00.000,2004
+637,Shukun Technology,Beijing,China,Asia,2021-08-16T00:00:00.000,2017
+616,Flipboard,Palo Alto,United States,North America,2015-07-22T00:00:00.000,2010
+611,dMed Biopharmaceutical,Shanghai,China,Asia,2021-07-12T00:00:00.000,2016
+1064,Xendit,Jakarta,Indonesia,Asia,2021-09-14T00:00:00.000,2014
+1032,SoundHound,Santa Clara,United States,North America,2018-05-03T00:00:00.000,2005
+737,Island,Dallas,United States,North America,2022-03-23T00:00:00.000,2020
+374,Tubatu.com,Shenzhen,China,Asia,2015-03-09T00:00:00.000,2008
+172,Yello Mobile,Seoul,South Korea,Asia,2014-11-11T00:00:00.000,2012
+414,Pacaso,Cincinnati,United States,North America,2021-03-24T00:00:00.000,2020
+845,Density,San Francisco,United States,North America,2021-11-10T00:00:00.000,2014
+1055,Visier,Vancouver,Canada,North America,2021-06-29T00:00:00.000,2010
+416,Persona,San Francisco,United States,North America,2021-09-15T00:00:00.000,2018
+682,Coocaa,Shenzhen,China,Asia,2018-03-16T00:00:00.000,2006
+967,Mensa Brands,Bengaluru,India,Asia,2021-11-16T00:00:00.000,2021
+551,Calm,San Francisco,United States,North America,2019-02-06T00:00:00.000,2012
+491,Uptake,Chicago,United States,North America,2015-10-27T00:00:00.000,2014
+446,HomeLight,San Francisco,United States,North America,2021-09-02T00:00:00.000,2012
+982,Noname Security,Palo Alto,United States,North America,2021-12-15T00:00:00.000,2020
+850,Sendbird,San Mateo,United States,North America,2021-04-06T00:00:00.000,2013
+928,Hailo,Tel Aviv,Israel,Asia,2021-10-12T00:00:00.000,2017
+380,InMobi,Bengaluru,India,Asia,2014-12-02T00:00:00.000,2007
+451,SafetyCulture,Sydney,Australia,Oceania,2021-05-03T00:00:00.000,2004
+987,OpenWeb,New York,United States,North America,2021-11-09T00:00:00.000,2012
+842,Rubicon,Atlanta,United States,North America,2017-08-25T00:00:00.000,2008
+620,HuJiang,Shanghai,China,Asia,2015-10-29T00:00:00.000,2001
+356,Baiwang,Beijing,China,Asia,2019-03-25T00:00:00.000,2015
+872,BeiBei,Hangzhou,China,Asia,2015-01-22T00:00:00.000,2011
+417,SmartRecruiters,San Francisco,United States,North America,2021-07-20T00:00:00.000,2010
+427,Whatnot,Marina del Rey,United States,North America,2021-09-16T00:00:00.000,2019
+255,A24 Films,New York,United States,North America,2022-03-09T00:00:00.000,2012
+397,Cognite,Lysaker,Norway,Europe,2021-05-19T00:00:00.000,2016
+857,Aircall,New York,United States,North America,2021-06-23T00:00:00.000,2014
+588,Quora,Mountain View,United States,North America,2017-04-21T00:00:00.000,2009
+1005,Quantum Metric,Colorado Springs,United States,North America,2021-01-07T00:00:00.000,2015
+609,CredAvenue,Chennai,India,Asia,2022-03-07T00:00:00.000,2017
+619,Huisuanzhang,Beijing,China,Asia,2021-05-24T00:00:00.000,2015
+681,Aleo,San Francisco,United States,North America,2022-02-07T00:00:00.000,2019
+489,Odoo,Louvain-la-Neuve,Belgium,Europe,2021-07-29T00:00:00.000,2005
+626,Keenon Robotics,Shanghai,China,Asia,2021-09-15T00:00:00.000,2010
+649,WeBull,Changsha,China,Asia,2021-02-18T00:00:00.000,2016
+234,PointClickCare,Mississauga,Canada,North America,2021-01-07T00:00:00.000,2000
+770,FloQast,Los Angeles,United States,North America,2021-07-21T00:00:00.000,2013
+614,Everly Health,Austin,United States,North America,2020-12-03T00:00:00.000,2015
+482,Spotter,Los Angeles,United States,North America,2022-02-16T00:00:00.000,2019
+968,Mia.com,Beijing,China,Asia,2015-09-08T00:00:00.000,2011
+899,Dental Monitoring,Paris,France,Europe,2021-10-21T00:00:00.000,2014
+386,BrewDog,Aberdeen,United Kingdom,Europe,2017-04-10T00:00:00.000,2007
+665,Kujiale,Hangzhou,China,Asia,2019-10-25T00:00:00.000,2011
+1039,TensTorrent,Toronto,Canada,North America,2021-05-05T00:00:00.000,2016
+800,CloudBees,San Jose,United States,North America,2021-12-09T00:00:00.000,2010
+457,Wayflyer,Dublin,Ireland,Europe,2022-02-01T00:00:00.000,2019
+676,TaxBit,Draper,United States,North America,2021-08-04T00:00:00.000,2018
+1050,Unico,Sao Paulo,Brazil,South America,2021-08-03T00:00:00.000,2007
+694,Deliverect,Ghent,Belgium,Europe,2022-01-24T00:00:00.000,2018
+481,Reltio,Redwood City,United States,North America,2021-11-04T00:00:00.000,2011
+878,Bluecore,New York,United States,North America,2021-08-05T00:00:00.000,2013
+995,Payhawk,London,United Kingdom,Europe,2022-02-14T00:00:00.000,2018
+1034,Standard,San Francisco,United States,North America,2021-02-17T00:00:00.000,2017
+855,Agile Robots,Munich,Germany,Europe,2021-09-09T00:00:00.000,2018
+345,Outschool,San Francisco,United States,North America,2021-04-14T00:00:00.000,2015
+691,Coda,Mountain View,United States,North America,2021-07-08T00:00:00.000,2014
+860,Amagi,Bengaluru,India,Asia,2022-03-16T00:00:00.000,2008
+511,Opentrons,New York,United States,North America,2021-09-23T00:00:00.000,2016
+704,Papa,Miami,United States,North America,2021-11-04T00:00:00.000,2016
+881,Boom Supersonic,Englewood,United States,North America,2020-12-16T00:00:00.000,2014
+747,Intercom,San Francisco,United States,North America,2018-03-27T00:00:00.000,2011
+861,Amount,Chicago,United States,North America,2021-05-17T00:00:00.000,2019
+407,Lusha,New York,United States,North America,2021-11-10T00:00:00.000,2016
+858,Ajaib,Jakarta,Indonesia,Asia,2021-10-04T00:00:00.000,2018
+749,BigID,New York,United States,North America,2020-12-16T00:00:00.000,2015
+841,Rivigo,Gurgaon,India,Asia,2019-07-11T00:00:00.000,2014
+282,Sourcegraph,San Francisco,United States,North America,2021-07-13T00:00:00.000,2013
+1026,Slice,Bengaluru,India,Asia,2021-11-28T00:00:00.000,2015
+630,MobiKwik,Gurugram,India,Asia,2021-10-13T00:00:00.000,2009
+621,Hyperchain,Hangzhou,China,Asia,2021-04-11T00:00:00.000,2016
+847,Jiuxian,Beijing,China,Asia,2015-07-30T00:00:00.000,2009
+223,BrowserStack,Dublin,Ireland,Europe,2021-06-16T00:00:00.000,2011
+1009,Red Ventures,Fort Mill,United States,North America,2015-01-07T00:00:00.000,2000
+563,Formlabs,Somerville,United States,North America,2018-08-01T00:00:00.000,2011
+476,H2O.ai,Mountain View,United States,North America,2021-11-07T00:00:00.000,2011
+970,Mobvoi,Beijing,China,Asia,2017-04-06T00:00:00.000,2012
+990,Orchard,New York,United States,North America,2021-09-09T00:00:00.000,2017
+728,Tongdun Technology,Hangzhou,China,Asia,2019-04-25T00:00:00.000,2013
+415,Paradox,Scottsdale,United States,North America,2021-12-27T00:00:00.000,2016
+956,LinkDoc Technology,Beijing,China,Asia,2018-07-05T00:00:00.000,2014
+418,Snapdocs,San Francisco,United States,North America,2021-05-25T00:00:00.000,2012
+892,Chronosphere,New York,United States,North America,2021-10-07T00:00:00.000,2019
+991,Owkin,New York,United States,North America,2021-11-18T00:00:00.000,2016
+1028,SMS Assist,Chicago,United States,North America,2016-06-07T00:00:00.000,2003
+454,Truepill,Hayward,United States,North America,2021-10-27T00:00:00.000,2016
+400,Culture Amp,Richmond,Australia,Oceania,2021-07-29T00:00:00.000,2011
+1042,The Zebra,Austin,United States,North America,2021-04-12T00:00:00.000,2012
+753,Incode Technologies,San Francisco,United States,North America,2021-12-07T00:00:00.000,2015
+911,Expel,Herndon,United States,North America,2021-11-18T00:00:00.000,2016
+819,G2,Chicago,United States,North America,2021-06-22T00:00:00.000,2012
+507,Reify Health,Boston,United States,North America,2021-08-10T00:00:00.000,2012
+910,Evidation,San Mateo,United States,North America,2021-03-22T00:00:00.000,2012
+756,Mythical Games,Sherman Oaks,United States,North America,2021-11-04T00:00:00.000,2018
+480,Productboard,San Francisco,United States,North America,2022-02-02T00:00:00.000,2014
+405,impact.com,Santa Barbara,United States,North America,2021-07-13T00:00:00.000,2008
+683,Gymshark,Solihull,United Kingdom,Europe,2020-08-14T00:00:00.000,2012
+959,Lydia,Paris,France,Europe,2021-12-08T00:00:00.000,2011
+954,LetsGetChecked,Dublin,Ireland,Europe,2021-06-07T00:00:00.000,2015
+203,VAST Data,New York,United States,North America,2020-04-16T00:00:00.000,2016
+170,HyalRoute,,Singapore,Asia,2020-05-26T00:00:00.000,2015
+698,Firebolt,Tel Aviv,Israel,Asia,2022-01-26T00:00:00.000,2019
+790,Tealium,San Diego,United States,North America,2021-02-03T00:00:00.000,2008
+962,Mammoth Biosciences,Brisbane,United States,North America,2021-09-09T00:00:00.000,2017
+865,Aqua Security,Ramat Gan,Israel,Asia,2021-03-10T00:00:00.000,2015
+461,Glossier,New York,United States,North America,2019-03-19T00:00:00.000,2014
+670,DT Dream,Hangzhou,China,Asia,2017-06-08T00:00:00.000,2015
+529,Jeeves,Orlando,United States,North America,2022-03-14T00:00:00.000,2019
+634,Pipa Coding,Beijing,China,Asia,2021-03-25T00:00:00.000,2017
+897,Contrast Security,Los Altos,United States,North America,2021-11-09T00:00:00.000,2014
+924,Gelato,Oslo,Norway,Europe,2021-08-16T00:00:00.000,2007
+768,Copado,Chicago,United States,North America,2021-09-13T00:00:00.000,2013
+707,Salt Security,Palo Alto,United States,North America,2022-02-10T00:00:00.000,2016
+673,K Health,New York,United States,North America,2021-01-19T00:00:00.000,2016
+1049,TrueLayer,London,United Kingdom,Europe,2021-09-21T00:00:00.000,2016
+1017,Scandit,Zurich,Switzerland,Europe,2022-02-09T00:00:00.000,2009
+856,Aibee,Beijing,China,Asia,2021-04-13T00:00:00.000,2017
+1007,RapidAPI,San Francisco,United States,North America,2022-03-23T00:00:00.000,2015
+462,Hibob,Tel Aviv,Israel,Asia,2021-10-12T00:00:00.000,2015
+832,Sisense,New York,United States,North America,2020-01-09T00:00:00.000,2004
+265,Infra.Market,Thane,India,Asia,2021-02-25T00:00:00.000,2016
+485,ZenBusiness,Austin,United States,North America,2021-11-09T00:00:00.000,2015
+490,Skydance Media,Santa Monica,United States,North America,2020-02-11T00:00:00.000,2010
+723,Motorway,London,United Kingdom,Europe,2021-11-29T00:00:00.000,2017
+913,Feedzai,San Mateo,United States,North America,2021-03-24T00:00:00.000,2009
+534,ReCharge,Los Angeles,United States,North America,2021-05-06T00:00:00.000,2017
+494,Pattern,Lehi,United States,North America,2021-10-06T00:00:00.000,2013
+849,Mixpanel,San Francisco,United States,North America,2021-11-15T00:00:00.000,2009
+908,Emerging Markets Property Group,Dubai,United Arab Emirates,Asia,2020-04-28T00:00:00.000,2015
+264,Immutable,Sydney,Australia,Oceania,2022-03-07T00:00:00.000,2018
+550,Bunq,Amsterdam,Netherlands,Europe,2021-06-18T00:00:00.000,2013
+778,MindTickle,San Francisco,United States,North America,2021-08-03T00:00:00.000,2012
+624,Juma Peisong,Chengdu,China,Asia,2018-11-26T00:00:00.000,2011
+958,Lookout,San Francisco,United States,North America,2013-10-10T00:00:00.000,2007
+440,Capitolis,New York,United States,North America,2022-03-22T00:00:00.000,2017
+921,FXiaoKe,Beijing,China,Asia,2015-07-02T00:00:00.000,2011
+926,GO1,Brisbane,Australia,Oceania,2021-07-19T00:00:00.000,2015
+584,OCSiAl,Leudelange,Luxembourg,Europe,2019-03-04T00:00:00.000,2012
+980,NIUM,,Singapore,Asia,2021-07-13T00:00:00.000,2014
+468,Biren Technology,Shanghai,China,Asia,2020-08-18T00:00:00.000,2019
+709,SparkCognition,Austin,United States,North America,2022-01-25T00:00:00.000,2013
+138,Lendable,London,United Kingdom,Europe,2021-03-31T00:00:00.000,2014
+719,Epirus,Hawthorne,United States,North America,2022-02-14T00:00:00.000,2018
+505,MUSINSA,Seoul,South Korea,Asia,2019-11-11T00:00:00.000,2001
+811,Carousell,,Singapore,Asia,2021-09-15T00:00:00.000,2012
+395,Built,Nashville,United States,North America,2021-09-30T00:00:00.000,2015
+746,YugaByte,Sunnyvale,United States,North America,2021-10-28T00:00:00.000,2016
+1052,Vedantu,Bengaluru,India,Asia,2021-09-29T00:00:00.000,2014
+806,At-Bay,Mountain View,United States,North America,2021-07-27T00:00:00.000,2016
+873,BenevolentAI,London,United Kingdom,Europe,2015-06-02T00:00:00.000,2013
+966,Meero,Paris,France,Europe,2019-06-18T00:00:00.000,2016
+545,AppsFlyer,San Francisco,United States,North America,2020-01-21T00:00:00.000,2011
+912,Fabric,New York,United States,North America,2021-10-26T00:00:00.000,2015
+187,Rec Room,Seattle,United States,North America,2021-03-23T00:00:00.000,2016
+47,Ripple,San Francisco,United States,North America,2019-12-20T00:00:00.000,2012
+868,Augury,New York,United States,North America,2021-10-26T00:00:00.000,2011
+671,fabric,Bellevue,United States,North America,2022-02-24T00:00:00.000,2017
+521,Aledade,Bethesda,United States,North America,2021-01-19T00:00:00.000,2014
+591,Spring Health,New York,United States,North America,2021-09-16T00:00:00.000,2016
+593,SWORD Health,New York,United States,North America,2021-11-22T00:00:00.000,2015
+84,National Stock Exchange of India,Mumbai,India,Asia,2020-07-01T00:00:00.000,1998
+459,Transcarent,San Francisco,United States,North America,2022-01-11T00:00:00.000,2020
+514,Huaqin Telecom Technology,Shanghai,China,Asia,2019-10-08T00:00:00.000,2005
+425,Veho,Boulder,United States,North America,2021-12-21T00:00:00.000,2016
+561,Everlaw,Oakland,United States,North America,2020-03-10T00:00:00.000,2010
+303,Blockstream,Vancouver,Canada,North America,2021-08-24T00:00:00.000,2014
+914,Fever Labs,New York,United States,North America,2022-01-26T00:00:00.000,2012
+957,Locus Robotics,Wilmington,United States,North America,2021-02-17T00:00:00.000,2014
+368,Il Makiage,New York,United States,North America,2022-01-10T00:00:00.000,2018
+204,Articulate,New York,United States,North America,2021-07-01T00:00:00.000,2015
+14,Chime,San Francisco,United States,North America,2019-03-05T00:00:00.000,2013
+1010,REEF Technology,Miami,United States,North America,2018-12-10T00:00:00.000,2015
+10,Revolut,London,United Kingdom,Europe,2018-04-26T00:00:00.000,2015
+220,Hozon Auto,Shanghai,China,Asia,2022-02-22T00:00:00.000,2014
+615,Fair,Santa Monica,United States,North America,2018-12-20T00:00:00.000,2016
+6,Checkout.com,London,United Kingdom,Europe,2019-05-02T00:00:00.000,2012
+3,Stripe,San Francisco,United States,North America,2014-01-23T00:00:00.000,2010
+34,Getir,Istanbul,Turkey,Europe,2021-03-26T00:00:00.000,2015
+12,FTX,,Bahamas,North America,2021-07-20T00:00:00.000,2018
+657,Hello TransTech,Shanghai,China,Asia,2018-06-01T00:00:00.000,2016
+169,Greensill,London,United Kingdom,Europe,2018-07-16T00:00:00.000,2011
+2,SHEIN,Shenzhen,China,Asia,2018-07-03T00:00:00.000,2008
+26,Devoted Health,Waltham,United States,North America,2018-10-16T00:00:00.000,2017
+93,Ziroom,Beijing,China,Asia,2018-01-17T00:00:00.000,2011
+176,Horizon Robotics,Beijing,China,Asia,2019-02-27T00:00:00.000,2015
+86,Impossible Foods,Redwood City,United States,North America,2019-05-13T00:00:00.000,2011
+66,Kavak,Lerma de Villada,Mexico,North America,2020-10-01T00:00:00.000,2016
+64,Nuro,Mountain View,United States,North America,2019-02-11T00:00:00.000,2016
+62,Yanolja,Seoul,South Korea,Asia,2019-06-10T00:00:00.000,2005
+60,Thrasio,Walpole,United States,North America,2020-07-15T00:00:00.000,2018
+71,Dream11,Mumbai,India,Asia,2019-04-09T00:00:00.000,2007
+640,Snapdeal,New Delhi,India,Asia,2014-05-21T00:00:00.000,2008
+56,Lalamove,Cheung Sha Wan,Hong Kong,Asia,2019-02-21T00:00:00.000,2013
+76,Lacework,San Jose,United States,North America,2021-01-07T00:00:00.000,2015
+83,Flexport,San Francisco,United States,North America,2018-04-30T00:00:00.000,2013
+149,Rappi,Bogota,Colombia,South America,2018-08-31T00:00:00.000,2015
+67,N26,Berlin,Germany,Europe,2019-01-10T00:00:00.000,2013
+155,C6 Bank,Sao Paulo,Brazil,South America,2020-12-02T00:00:00.000,2018
+103,Easyhome,Beijing,China,Asia,2018-02-12T00:00:00.000,1999
+523,ConcertAI,Boston,United States,North America,2022-03-29T00:00:00.000,2018
+789,SmartMore,Shenzhen,China,Asia,2021-06-24T00:00:00.000,2019
+961,Maimai,Beijing,China,Asia,2017-11-15T00:00:00.000,2013
+854,58 Daojia,Beijing,China,Asia,2015-10-12T00:00:00.000,2014
+554,ClickHouse,Portola Valley,United States,North America,2021-10-28T00:00:00.000,2021
+522,CoinSwitch Kuber,Bangalore,India,Asia,2021-10-06T00:00:00.000,2017
+935,Huike Group,Beijing,China,Asia,2018-05-24T00:00:00.000,2010
+552,Chipper Cash,San Francisco,United States,North America,2021-05-31T00:00:00.000,2017
+687,Astranis Space Technologies,San Francisco,United States,North America,2021-04-14T00:00:00.000,2015
+815,Enpal,Berlin,Germany,Europe,2021-10-18T00:00:00.000,2017
+895,Clearcover,Chicago,United States,North America,2021-04-13T00:00:00.000,2016
+510,Lightricks,Jerusalem,Israel,Asia,2019-07-31T00:00:00.000,2013
+531,Moveworks,Mountain View,United States,North America,2021-06-30T00:00:00.000,2016
+949,KnowBox,Beijing,China,Asia,2019-05-30T00:00:00.000,2014
+833,Staffbase,Chemnitz,Germany,Europe,2022-03-15T00:00:00.000,2014
+650,WTOIP,Guangzhou,China,Asia,2018-04-08T00:00:00.000,2013
+1057,Vox Media,Washington,United States,North America,2015-08-12T00:00:00.000,2011
+785,Public,New York,United States,North America,2021-02-17T00:00:00.000,2008
+408,Matillion,Altrincham,United Kingdom,Europe,2021-09-15T00:00:00.000,2011
+1015,Savage X Fenty,El Segundo,United States,North America,2021-02-10T00:00:00.000,2018
+642,TalkingData,Beijing,China,Asia,2021-01-06T00:00:00.000,2013
+617,Globality,Menlo Park,United States,North America,2019-01-22T00:00:00.000,2015
+779,MyGlamm,Mumbai,India,Asia,2021-11-10T00:00:00.000,2015
+475,Gousto,London,United Kingdom,Europe,2020-11-03T00:00:00.000,2012
+349,Sky Mavis,Ho Chi Minh City,Vietnam,Asia,2021-10-04T00:00:00.000,2019
+272,Vercel,San Francisco,United States,North America,2021-06-23T00:00:00.000,2015
+708,Scalable Capital,Munich,Germany,Europe,2021-06-08T00:00:00.000,2014
+916,FLASH,Austin,United States,North America,2022-03-16T00:00:00.000,2011
+289,Komodo Health,San Francisco,United States,North America,2020-05-22T00:00:00.000,2014
+675,Spendesk,Paris,France,Europe,2022-01-18T00:00:00.000,2015
+266,Side,San Francisco,United States,North America,2021-03-22T00:00:00.000,2017
+784,Prime Medicine,Cambridge,United States,North America,2021-07-13T00:00:00.000,2019
+471,CircleCI,San Francisco,United States,North America,2021-05-11T00:00:00.000,2011
+622,iTutorGroup,Shanghai,China,Asia,2015-11-18T00:00:00.000,1998
+574,LTK,Dallas,United States,North America,2021-11-22T00:00:00.000,2011
+766,BigPanda,Mountain View,United States,North America,2022-01-12T00:00:00.000,2012
+693,Degreed,Pleasanton,United States,North America,2021-04-13T00:00:00.000,2012
+390,Extend,San Francisco,United States,North America,2021-05-18T00:00:00.000,2004
+413,Olist,Curitiba,Brazil,South America,2021-12-15T00:00:00.000,2015
+684,M1 Finance,Chicago,United States,North America,2021-07-14T00:00:00.000,2015
+801,Elemy,San Francisco,United States,North America,2021-10-06T00:00:00.000,2019
+748,OVO Energy,Bristol,United Kingdom,Europe,2019-02-14T00:00:00.000,2009
+206,FalconX,San Mateo,United States,North America,2021-08-10T00:00:00.000,2018
+752,Honor Technology,San Francisco,United States,North America,2021-10-05T00:00:00.000,2014
+820,Gaussian Robotics,Shanghai,China,Asia,2021-11-10T00:00:00.000,2013
+965,MediaMath,New York,United States,North America,2018-07-10T00:00:00.000,2007
+448,Infinidat,Waltham,United States,North America,2015-04-29T00:00:00.000,2011
+902,DriveNets,Ra'anana,Israel,Asia,2021-01-27T00:00:00.000,2015
+1036,Swile,Montpellier,France,Europe,2021-10-11T00:00:00.000,2016
+304,Cedar,New York,United States,North America,2021-03-09T00:00:00.000,2016
+325,Amber Group,,Hong Kong,Asia,2021-06-21T00:00:00.000,2015
+1019,Shield AI,San Diego,United States,North America,2021-08-24T00:00:00.000,2015
+690,Clarify Health,San Francisco,United States,North America,2022-04-05T00:00:00.000,2015
+636,Rad Power Bikes,Seattle,United States,North America,2021-10-28T00:00:00.000,2007
+342,Lattice,San Francisco,United States,North America,2021-03-23T00:00:00.000,2015
+343,LaunchDarkly,Oakland,United States,North America,2021-08-10T00:00:00.000,2014
+933,HMD Global,Espoo,Finland,Europe,2018-05-21T00:00:00.000,2016
+1011,ReliaQuest,Tampa,United States,North America,2021-12-01T00:00:00.000,2007
+1062,Womai,Beijing,China,Asia,2015-10-12T00:00:00.000,2009
+428,Zenoti,Bellevue,United States,North America,2020-12-15T00:00:00.000,2010
+1021,ShipBob,Chicago,United States,North America,2021-06-29T00:00:00.000,2014
+332,Contentful,Berlin,Germany,Europe,2021-07-28T00:00:00.000,2013
+950,Kopi Kenangan,Jakarta,Indonesia,Asia,2021-12-27T00:00:00.000,2017
+54,Figma,San Francisco,United States,North America,2020-04-30T00:00:00.000,2012
+308,Ironclad,Sacramento,United States,North America,2022-01-18T00:00:00.000,2014
+493,Algolia,San Francisco,United States,North America,2021-07-28T00:00:00.000,2012
+237,Webflow,San Francisco,United States,North America,2021-01-13T00:00:00.000,2012
+730,Betterment,New York,United States,North America,2021-09-29T00:00:00.000,2010
+741,Loadsmart,New York,United States,North America,2022-02-01T00:00:00.000,2014
+960,MadeiraMadeira,Parana,Brazil,South America,2021-01-07T00:00:00.000,2009
+1038,TechStyle Fashion Group,El Segundo,United States,North America,2014-08-29T00:00:00.000,2010
+780,Oda,Oslo,Norway,Europe,2021-06-02T00:00:00.000,2013
+774,Inari,Cambridge,United States,North America,2021-05-12T00:00:00.000,2016
+936,Human Interest,San Francisco,United States,North America,2021-08-04T00:00:00.000,2015
+351,TradingView,Westerville,United States,North America,2021-10-14T00:00:00.000,2011
+602,Zilch,London,United Kingdom,Europe,2021-11-10T00:00:00.000,2018
+802,Guideline,San Mateo,United States,North America,2021-06-16T00:00:00.000,2015
+794,L&P Cosmetic,Seoul,South Korea,Asia,2016-01-01T00:00:00.000,2009
+381,MindMaze,Lausanne,Switzerland,Europe,2016-01-28T00:00:00.000,2012
+1025,Skydio,Redwood City,United States,North America,2021-02-25T00:00:00.000,2014
+831,Sennder,Berlin,Germany,Europe,2021-01-14T00:00:00.000,2015
+429,Zeta,San Francisco,United States,North America,2021-05-24T00:00:00.000,2015
+547,Aviatrix,Santa Clara,United States,North America,2021-09-08T00:00:00.000,2014
+568,Iterable,San Francisco,United States,North America,2021-06-15T00:00:00.000,2013
+57,Notion Labs,San Francisco,United States,North America,2020-04-01T00:00:00.000,2016
+628,LifeMiles,Bogota,Colombia,South America,2015-07-13T00:00:00.000,2011
+517,CloudWalk,Sao Paulo,Brazil,South America,2021-09-08T00:00:00.000,2015
+777,Merama,Mexico City,Mexico,North America,2021-12-09T00:00:00.000,2020
+827,Nexthink,Prilly,Switzerland,Europe,2021-02-08T00:00:00.000,2004
+786,Qumulo,Seattle,United States,North America,2020-07-16T00:00:00.000,2012
+528,InVision,New York,United States,North America,2017-11-01T00:00:00.000,2011
+210,Globalization Partners,Boston,United States,North America,2022-01-24T00:00:00.000,2012
+917,Flash Express,Bangkok,Thailand,Asia,2021-02-01T00:00:00.000,2017
+328,Calendly,Atlanta,United States,North America,2021-01-26T00:00:00.000,2013
+508,Diamond Foundry,San Francisco,United States,North America,2021-03-29T00:00:00.000,2012
+192,Applied Intuition,Sunnyvale,United States,North America,2020-10-22T00:00:00.000,2017
+994,PatSnap,,Singapore,Asia,2021-03-16T00:00:00.000,2007
+877,BlackBuck,Bengaluru,India,Asia,2021-07-22T00:00:00.000,2015
+646,Vectra Networks,San Jose,United States,North America,2021-04-29T00:00:00.000,2011
+589,Redis Labs,Mountain View,United States,North America,2020-08-25T00:00:00.000,2011
+278,Pendo,Raleigh,United States,North America,2019-10-17T00:00:00.000,2013
+474,Dragos,Hanover,United States,North America,2021-10-28T00:00:00.000,2016
+918,FlashEx,Beijing,China,Asia,2018-08-27T00:00:00.000,2014
+323,ActiveCampaign,Chicago,United States,North America,2021-04-21T00:00:00.000,2003
+729,Unisound,Beijing,China,Asia,2018-07-19T00:00:00.000,2012
+835,TangoMe,Mountain View,United States,North America,2014-03-20T00:00:00.000,2009
+680,Bordrin Motors,Shanghai,China,Asia,2019-06-03T00:00:00.000,2016
+927,Groq,Mountain View,United States,North America,2021-04-14T00:00:00.000,2016
+467,Alan,Paris,France,Europe,2021-04-19T00:00:00.000,2016
+535,Roofstock,Oakland,United States,North America,2022-03-10T00:00:00.000,2015
+773,Helium Systems,San Francisco,United States,North America,2022-02-22T00:00:00.000,2013
+596,Unqork,New York,United States,North America,2020-10-06T00:00:00.000,2017
+267,SiFive,San Mateo,United States,North America,2022-03-16T00:00:00.000,2015
+208,Chainalysis,New York,United States,North America,2020-11-23T00:00:00.000,2014
+702,Koudai,Beijing,China,Asia,2014-10-23T00:00:00.000,2010
+648,Wacai,Hangzhou,China,Asia,2018-07-18T00:00:00.000,2009
+1003,PPRO,London,United Kingdom,Europe,2021-01-19T00:00:00.000,2006
+412,NotCo,Santiago,Chile,South America,2021-07-26T00:00:00.000,2015
+558,Divvy Homes,San Francisco,United States,North America,2021-08-13T00:00:00.000,2017
+1029,SnapLogic,San Mateo,United States,North America,2021-12-13T00:00:00.000,2006
+158,Icertis,Bellevue,United States,North America,2019-07-17T00:00:00.000,2009
+536,Urban Company,Gurgaon,India,Asia,2021-04-27T00:00:00.000,2014
+598,Virta Health,San Francisco,United States,North America,2020-12-02T00:00:00.000,2015
+512,ZocDoc,New York,United States,North America,2015-08-20T00:00:00.000,2007
+39,ZongMu Technology,Shanghai,China,Asia,2021-06-03T00:00:00.000,2013
+1037,Tarana Wireless,Milpitas,United States,North America,2022-03-23T00:00:00.000,2009
+431,Mobile Premier League,Bengaluru,India,Asia,2021-09-15T00:00:00.000,2018
+739,Konfio,Mexico City,Mexico,North America,2021-09-29T00:00:00.000,2013
+499,Bitso,Mexico City,Mexico,North America,2021-05-05T00:00:00.000,2014
+207,Guild Education,Denver,United States,North America,2019-11-13T00:00:00.000,2015
+1069,Zhaogang,Shanghai,China,Asia,2017-06-29T00:00:00.000,2012
+307,Innovaccer,San Francisco,United States,North America,2021-02-19T00:00:00.000,2014
+437,ASAPP,New York,United States,North America,2021-05-19T00:00:00.000,2014
+787,Rohlik,Prague,Czech Republic,Europe,2021-07-01T00:00:00.000,2019
+392,Andela,New York,United States,North America,2021-09-29T00:00:00.000,2014
+182,Flock Safety,Atlanta,United States,North America,2021-07-13T00:00:00.000,2017
+401,Devo,Cambridge,United States,North America,2021-10-26T00:00:00.000,2011
+555,Clip,Mexico City,Mexico,North America,2021-06-10T00:00:00.000,2012
+713,VideoAmp,Los Angeles,United States,North America,2021-10-21T00:00:00.000,2014
+772,GrubMarket,San Francisco,United States,North America,2021-09-14T00:00:00.000,2013
+700,GupShup,San Francisco,United States,North America,2021-04-08T00:00:00.000,2011
+442,Clio,Burnaby,Canada,North America,2021-04-27T00:00:00.000,2008
+663,Beisen,Beijing,China,Asia,2021-05-11T00:00:00.000,2002
+1068,Yunxuetang,Suzhou,China,Asia,2021-03-29T00:00:00.000,2011
+722,Signifyd,San Jose,United States,North America,2021-04-15T00:00:00.000,2011
+444,Exabeam,Foster City,United States,North America,2021-06-01T00:00:00.000,2013
+888,CargoX,Sao Paulo,Brazil,South America,2021-10-21T00:00:00.000,2015
+366,Fenbi Education,Beijing,China,Asia,2021-02-07T00:00:00.000,2015
+915,Fiture,Chengdu,China,Asia,2021-04-14T00:00:00.000,2019
+339,Groww,Bengaluru,India,Asia,2021-04-07T00:00:00.000,2017
+656,Ynsect,Evry,France,Europe,2019-02-21T00:00:00.000,2011
+659,ECARX,Wuhan,China,Asia,2020-10-26T00:00:00.000,2016
+631,Modernizing Medicine,Boca Raton,United States,North America,2017-05-10T00:00:00.000,2010
+275,Axonius,New York,United States,North America,2021-03-01T00:00:00.000,2017
+807,TELD,Qingdao,China,Asia,2019-12-16T00:00:00.000,2014
+985,Omio,Berlin,Germany,Europe,2018-10-23T00:00:00.000,2013
+466,WEMAKEPRICE,Seoul,South Korea,Asia,2015-09-09T00:00:00.000,2009
+524,Eightfold.ai,Santa Clara,United States,North America,2020-10-27T00:00:00.000,2016
+296,BlockDaemon,Los Angeles,United States,North America,2021-09-21T00:00:00.000,2016
+735,Flock Freight,Encinitas,United States,North America,2021-10-20T00:00:00.000,2015
+309,Skims,Los Angeles,United States,North America,2021-04-09T00:00:00.000,2019
+577,Magic Leap,Plantation,United States,North America,2014-10-21T00:00:00.000,2010
+23,goPuff,Philadelphia,United States,North America,2020-10-08T00:00:00.000,2013
+105,SVOLT,Changzhou,China,Asia,2020-06-08T00:00:00.000,2018
+9,Databricks,San Francisco,United States,North America,2019-02-05T00:00:00.000,2013
+46,Zuoyebang,Beijing,China,Asia,2018-07-18T00:00:00.000,2014
+7,Instacart,San Francisco,United States,North America,2014-12-30T00:00:00.000,2012
+48,OYO Rooms,Gurugram,India,Asia,2018-09-25T00:00:00.000,2012
+502,Dialpad,San Francisco,United States,North America,2020-10-06T00:00:00.000,2011
+28,Grammarly,San Francisco,United States,North America,2019-10-10T00:00:00.000,2009
+516,YITU Technology,Shanghai,China,Asia,2018-03-08T00:00:00.000,2012
+438,BitSight Technologies,Boston,United States,North America,2021-09-13T00:00:00.000,2013
+501,Current,New York,United States,North America,2021-04-27T00:00:00.000,2015
+473,DispatchHealth,Denver,United States,North America,2021-03-03T00:00:00.000,2013
+465,solarisBank,Berlin,Germany,Europe,2021-07-13T00:00:00.000,2016
+1044,Thought Machine,London,United Kingdom,Europe,2021-11-29T00:00:00.000,2014
+818,Fundbox,San Francisco,United States,North America,2021-11-30T00:00:00.000,2013
+195,Whoop,Boston,United States,North America,2020-10-28T00:00:00.000,2012
+125,Better.com,New York,United States,North America,2020-11-10T00:00:00.000,2018
+885,CAIS,New York,United States,North America,2022-01-11T00:00:00.000,2009
+689,Cabify,Madrid,Spain,Europe,2018-01-22T00:00:00.000,2011
+288,Ethos,San Francisco,United States,North America,2021-05-11T00:00:00.000,2016
+280,JumpCloud,Louisville,United States,North America,2021-09-13T00:00:00.000,2012
+843,Socar,Jeju-do,South Korea,Asia,2020-10-16T00:00:00.000,2012
+256,Acronis,Schaffhausen,Switzerland,Europe,2019-09-18T00:00:00.000,2003
+582,Neo4j,San Mateo,United States,North America,2021-06-17T00:00:00.000,2007
+745,TravelPerk,Barcelona,Spain,Europe,2022-01-12T00:00:00.000,2015
+559,Dremio,Santa Clara,United States,North America,2021-01-06T00:00:00.000,2015
+590,SmartNews,Tokyo,Japan,Asia,2019-08-05T00:00:00.000,2012
+124,Benchling,San Francisco,United States,North America,2021-04-14T00:00:00.000,2012
+233,Patreon,San Francisco,United States,North America,2020-09-02T00:00:00.000,2013
+209,dbt Labs,Philadelphia,United States,North America,2021-06-30T00:00:00.000,2016
+284,Starburst,Boston,United States,North America,2021-01-06T00:00:00.000,1999
+119,Workato,Mountain View,United States,North America,2021-01-12T00:00:00.000,2013
+1016,Scalapay,Milan,Italy,Europe,2022-02-23T00:00:00.000,2019
+291,o9 Solutions,Dallas,United States,North America,2020-04-28T00:00:00.000,2009
+371,Pagaya,Tel Aviv,Israel,Asia,2020-06-17T00:00:00.000,2015
+488,KeepTruckin,San Francisco,United States,North America,2019-04-23T00:00:00.000,2013
+245,Vista Global,Dubai,United Arab Emirates,Asia,2017-08-23T00:00:00.000,2004
+435,ABL Space Systems,El Segundo,United States,North America,2021-03-25T00:00:00.000,2017
+346,Podium,Lehi,United States,North America,2020-04-07T00:00:00.000,2014
+445,ezCater,Boston,United States,North America,2019-04-02T00:00:00.000,2007
+539,Ankorstore,Paris,France,Europe,2022-01-10T00:00:00.000,2019
+500,BloomReach,Mountain View,United States,North America,2022-02-23T00:00:00.000,2009
+497,Zume,Mountain View,United States,North America,2018-11-01T00:00:00.000,2015
+99,Gemini,New York,United States,North America,2021-11-19T00:00:00.000,2015
+981,NoBroker,Bengaluru,India,Asia,2021-11-23T00:00:00.000,2014
+159,Moon Active,Tel Aviv,Israel,Asia,2020-01-26T00:00:00.000,2011
+150,6Sense,San Francisco,United States,North America,2021-03-30T00:00:00.000,2013
+710,Stash,New York,United States,North America,2021-02-03T00:00:00.000,2015
+348,Seismic,San Diego,United States,North America,2018-12-18T00:00:00.000,2010
+27,OpenSea,New York,United States,North America,2021-07-20T00:00:00.000,2017
+776,LivSpace,Bengaluru,India,Asia,2022-02-08T00:00:00.000,2015
+145,Pleo,Copenhagen,Denmark,Europe,2021-07-06T00:00:00.000,2015
+775,Jokr,New York,United States,North America,2021-12-02T00:00:00.000,2021
+385,AppDirect,San Francisco,United States,North America,2015-10-07T00:00:00.000,2009
+597,VerbIT,New York,United States,North America,2021-06-08T00:00:00.000,2016
+685,Ouyeel,Shanghai,China,Asia,2019-06-27T00:00:00.000,2015
+112,Postman,San Francisco,United States,North America,2020-06-11T00:00:00.000,2014
+829,Pharmapacks,Islandia,United States,North America,2020-11-12T00:00:00.000,2010
+553,Clearco,Toronto,Canada,North America,2021-04-20T00:00:00.000,2015
+492,MoMo,Ho Chi Minh City,Vietnam,Asia,2021-12-10T00:00:00.000,2013
+183,Handshake,San Francisco,United States,North America,2021-05-12T00:00:00.000,2014
+188,Tekion,San Ramon,United States,North America,2020-10-21T00:00:00.000,2016
+402,ElasticRun,Pune,India,Asia,2022-02-07T00:00:00.000,2016
+419,Solugen,Houston,United States,North America,2021-09-10T00:00:00.000,2016
+715,Yotpo,New York,United States,North America,2021-03-18T00:00:00.000,2011
+543,Akulaku,Jakarta,Indonesia,Asia,2022-02-15T00:00:00.000,2014
+923,Geek+,Beijing,China,Asia,2018-11-21T00:00:00.000,2015
+638,Shulan Health,Hangzhou,China,Asia,2021-03-01T00:00:00.000,2015
+660,Eat Just,San Francisco,United States,North America,2017-11-30T00:00:00.000,2011
+199,Papaya Global,New York,United States,North America,2021-03-04T00:00:00.000,2016
+525,FirstCry,Pune,India,Asia,2020-02-07T00:00:00.000,2010
+458,Zhubajie,Chongqing,China,Asia,2015-06-16T00:00:00.000,2006
+236,Vuori,Carlsbad,United States,North America,2021-10-13T00:00:00.000,2015
+90,Rippling,San Francisco,United States,North America,2020-08-04T00:00:00.000,2017
+108,Mambu,Amsterdam,Netherlands,Europe,2021-01-06T00:00:00.000,2011
+575,Lunar,Aarhus,Denmark,Europe,2021-07-12T00:00:00.000,2015
+767,CarDekho,Jaipur,India,Asia,2021-10-13T00:00:00.000,2008
+984,Omada Health,San Francisco,United States,North America,2022-02-23T00:00:00.000,2011
+548,BlaBlaCar,Paris,France,Europe,2015-09-16T00:00:00.000,2006
+238,Yuga Labs,Miami,United States,North America,2022-03-22T00:00:00.000,2021
+532,MX Technologies,Lehi,United States,North America,2021-01-13T00:00:00.000,2010
+562,Exotec,Croix,France,Europe,2022-01-17T00:00:00.000,2015
+453,Tonal,San Francisco,United States,North America,2021-03-31T00:00:00.000,2015
+699,Five Star Business Finance,Chennai,India,Asia,2021-03-26T00:00:00.000,1984
+557,Deliverr,San Francisco,United States,North America,2021-11-22T00:00:00.000,2017
+808,Acko General Insurance,Bengaluru,India,Asia,2021-10-28T00:00:00.000,2016
+759,Nexii,Vancouver,Canada,North America,2021-09-08T00:00:00.000,2020
+357,Boba,San Francisco,United States,North America,2022-04-05T00:00:00.000,2018
+922,Gauntlet Networks,New York,United States,North America,2022-03-07T00:00:00.000,2018
+905,EBANX,Curitiba,Brazil,South America,2019-10-16T00:00:00.000,2012
+300,MasterClass,San Francisco,United States,North America,2021-05-13T00:00:00.000,2015
+151,Cerebral,San Francisco,United States,North America,2021-06-10T00:00:00.000,2020
+976,Nature's Fynd,Chicago,United States,North America,2021-07-19T00:00:00.000,2012
+268,Somatus,McLean,United States,North America,2022-02-23T00:00:00.000,2016
+406,Ledger,Paris,France,Europe,2021-06-10T00:00:00.000,2014
+298,Dream Games,Istanbul,Turkey,Europe,2021-06-30T00:00:00.000,2019
+179,ChargeBee Technologies,Walnut,United States,North America,2021-04-20T00:00:00.000,2011
+242,Moglix,,Singapore,Asia,2021-05-17T00:00:00.000,2015
+387,Enflame,Shanghai,China,Asia,2021-01-05T00:00:00.000,2018
+496,Trulioo,Vancouver,Canada,North America,2021-06-07T00:00:00.000,2011
+336,Flutterwave,San Francisco,United States,North America,2021-03-09T00:00:00.000,2016
+727,Grove Collaborative,San Francisco,United States,North America,2019-09-06T00:00:00.000,2016
+560,Druva,Sunnyvale,United States,North America,2019-06-20T00:00:00.000,2007
+318,HighRadius,Houston,United States,North America,2020-01-07T00:00:00.000,2006
+581,Mynt,Taguig City,Philippines,Asia,2021-11-01T00:00:00.000,2015
+18,Miro,San Francisco,United States,North America,2022-01-05T00:00:00.000,2011
+193,Course Hero,Redwood City,United States,North America,2020-02-12T00:00:00.000,2006
+358,Bought By Many,London,United Kingdom,Europe,2021-06-01T00:00:00.000,2012
+757,Route,Lehi,United States,North America,2022-01-21T00:00:00.000,2018
+302,ApplyBoard,Kitchener,Canada,North America,2020-05-05T00:00:00.000,2015
+311,Zipline,South San Francisco,United States,North America,2019-05-20T00:00:00.000,2014
+1013,Rothy's,San Francisco,United States,North America,2021-12-21T00:00:00.000,2016
+537,Rokt,New York,United States,North America,2021-12-16T00:00:00.000,2012
+326,Anchorage Digital,San Francisco,United States,North America,2021-12-15T00:00:00.000,2017
+190,Outreach,Seattle,United States,North America,2019-04-16T00:00:00.000,2011
+955,Licious,Bengaluru,India,Asia,2021-10-05T00:00:00.000,2015
+24,Blockchain.com,London,United Kingdom,Europe,2021-02-17T00:00:00.000,2011
+133,Royole Corporation,Shenzhen,China,Asia,2015-08-18T00:00:00.000,2012
+1067,YipitData,New York,United States,North America,2021-12-06T00:00:00.000,2008
+197,GOAT,Culver City,United States,North America,2020-09-23T00:00:00.000,2015
+213,StockX,Detroit,United States,North America,2019-06-26T00:00:00.000,2016
+533,PayFit,London,United Kingdom,Europe,2022-01-06T00:00:00.000,2016
+721,Yaoshibang,Guangzhou,China,Asia,2021-06-15T00:00:00.000,2015
+276,Clari,Sunnyvale,United States,North America,2021-03-03T00:00:00.000,2012
+347,Remote,San Francisco,United States,North America,2021-07-13T00:00:00.000,2016
+59,Talkdesk,San Francisco,United States,North America,2018-10-03T00:00:00.000,2011
+486,Bowery Farming,New York,United States,North America,2021-05-25T00:00:00.000,2015
+142,Color,Burlingame,United States,North America,2021-01-04T00:00:00.000,2013
+447,HoneyBook,San Francisco,United States,North America,2021-05-04T00:00:00.000,2013
+196,Arctic Wolf Networks,Eden Prairie,United States,North America,2020-10-22T00:00:00.000,2012
+52,Chehaoduo,Beijing,China,Asia,2016-03-12T00:00:00.000,2015
+15,BYJU's,Bengaluru,India,Asia,2017-07-25T00:00:00.000,2008
+13,Fanatics,Jacksonville,United States,North America,2012-06-06T00:00:00.000,2002
+19,Yuanfudao,Beijing,China,Asia,2017-05-31T00:00:00.000,2012
+30,Northvolt,Stockholm,Sweden,Europe,2019-06-12T00:00:00.000,2016
+89,Ola Cabs,Bengaluru,India,Asia,2014-10-27T00:00:00.000,2010
+166,WM Motor,Shanghai,China,Asia,2019-03-08T00:00:00.000,2015
+29,Argo AI,Pittsburgh,United States,North America,2019-07-12T00:00:00.000,2016
+4,Klarna,Stockholm,Sweden,Europe,2011-12-12T00:00:00.000,2005
+324,Age of Learning,Glendale,United States,North America,2016-05-03T00:00:00.000,2007
+257,Aura,Burlington,United States,North America,2021-06-09T00:00:00.000,2019
+165,United Imaging Healthcare,Shanghai,China,Asia,2017-09-15T00:00:00.000,2011
+359,Cambridge Mobile Telematics,Cambridge,United States,North America,2018-12-19T00:00:00.000,2010
+576,Mafengwo,Beijing,China,Asia,2019-05-23T00:00:00.000,2010
+230,Melio,New York,United States,North America,2021-01-25T00:00:00.000,2018
+948,Kitopi,Dubai,United Arab Emirates,Asia,2021-07-01T00:00:00.000,2018
+180,Coalition,San Francisco,United States,North America,2021-03-17T00:00:00.000,2017
+573,Loggi,Sao Paulo,Brazil,South America,2019-06-05T00:00:00.000,2013
+530,Medable,Palo Alto,United States,North America,2021-10-26T00:00:00.000,2013
+283,OwnBackup,Englewood Cliffs,United States,North America,2021-01-28T00:00:00.000,2015
+520,Acorns,Irvine,United States,North America,2022-03-09T00:00:00.000,2012
+495,Spinny,Gurugram,India,Asia,2021-11-24T00:00:00.000,2015
+696,Epidemic Sound,Stockholm,Sweden,Europe,2021-03-11T00:00:00.000,2009
+711,Symphony,New York,United States,North America,2017-05-16T00:00:00.000,2014
+678,Yijiupi,Beijing,China,Asia,2018-09-20T00:00:00.000,2014
+132,CloudWalk Technology,Guangzhou,China,Asia,2018-10-08T00:00:00.000,2015
+986,ONE,,Singapore,Asia,2021-12-08T00:00:00.000,2011
+1056,VOI,Stockholm,Sweden,Europe,2021-12-21T00:00:00.000,2018
+469,Voodoo,Paris,France,Europe,2020-08-17T00:00:00.000,2013
+566,HuiMin,Beijing,China,Asia,2016-09-05T00:00:00.000,2013
+1047,Tresata,Charlotte,United States,North America,2018-10-10T00:00:00.000,2011
+992,PandaDoc,San Francisco,United States,North America,2021-09-22T00:00:00.000,2016
+762,Spiber,Tsuruoka,Japan,Asia,2021-09-08T00:00:00.000,2007
+706,Rebel Foods,Pune,India,Asia,2021-10-07T00:00:00.000,2011
+221,Aurora Solar,San Francisco,United States,North America,2021-05-24T00:00:00.000,2013
+564,Guoquan Shihui,Shanghai,China,Asia,2021-03-17T00:00:00.000,2017
+329,Carbon Health,San Francisco,United States,North America,2021-07-21T00:00:00.000,2015
+608,China Cloud,Wuxi,China,Asia,2018-06-11T00:00:00.000,2010
+116,Personio,Munich,Germany,Europe,2021-01-19T00:00:00.000,2015
+859,Alto Pharmacy,San Francisco,United States,North America,2020-01-30T00:00:00.000,2015
+504,Gympass,New York,United States,North America,2019-06-12T00:00:00.000,2012
+337,Forter,New York,United States,North America,2020-11-19T00:00:00.000,2013
+879,BlueVoyant,New York,United States,North America,2022-02-23T00:00:00.000,2017
+578,Misfits Market,Pennsauken,United States,North America,2021-04-21T00:00:00.000,2018
+527,GoCardless,London,United Kingdom,Europe,2022-02-08T00:00:00.000,2011
+629,LinkSure Network,Shanghai,China,Asia,2015-01-01T00:00:00.000,2013
+260,Digit Insurance,Bengaluru,India,Asia,2021-01-15T00:00:00.000,2016
+692,Deezer,Paris,France,Europe,2018-08-02T00:00:00.000,2007
+259,Cato Networks,Tel Aviv,Israel,Asia,2020-11-17T00:00:00.000,2015
+867,Assent,Ottawa,Canada,North America,2022-01-06T00:00:00.000,2010
+338,Grafana Labs,New York,United States,North America,2021-03-25T00:00:00.000,2014
+225,ClickUp,San Diego,United States,North America,2020-12-15T00:00:00.000,2017
+362,Cgtz,Hangzhou,China,Asia,2017-02-21T00:00:00.000,2014
+541,Advance Intelligence Group,,Singapore,Asia,2021-09-23T00:00:00.000,2016
+883,C2FO,Leawood,United States,North America,2019-08-07T00:00:00.000,2008
+450,Paxos,New York,United States,North America,2021-04-29T00:00:00.000,2012
+838,Nxin,Beijing,China,Asia,2018-09-18T00:00:00.000,2015
+181,Commure,San Francisco,United States,North America,2021-09-16T00:00:00.000,2017
+479,PAX,San Francisco,United States,North America,2018-10-22T00:00:00.000,2007
+286,Zetwerk,Bengaluru,India,Asia,2021-08-20T00:00:00.000,2018
+432,Uala,Buenos Aires,Argentina,South America,2021-08-13T00:00:00.000,2017
+570,Kaseya,Miami,United States,North America,2019-03-27T00:00:00.000,2000
+1020,Shift Technology,Paris,France,Europe,2021-05-06T00:00:00.000,2014
+216,BitPanda,Vienna,Austria,Europe,2021-03-16T00:00:00.000,2014
+607,Cell C,Midrand,South Africa,Africa,2017-08-07T00:00:00.000,2000
+900,DianRong,Shanghai,China,Asia,2017-08-02T00:00:00.000,2012
+77,Tipalti,San Mateo,United States,North America,2020-10-06T00:00:00.000,2010
+244,Upstox,Mumbai,India,Asia,2021-11-29T00:00:00.000,2010
+569,Kajabi,Irvine,United States,North America,2021-05-04T00:00:00.000,2010
+506,NuCom Group,Unterfoehring,Germany,Europe,2018-02-22T00:00:00.000,2016
+313,DriveWealth,Chatham,United States,North America,2021-08-20T00:00:00.000,2012
+235,Rubrik,Palo Alto,United States,North America,2017-04-28T00:00:00.000,2014
+654,Yimidida,Shanghai,China,Asia,2019-01-14T00:00:00.000,2015
+177,MoonPay,Miami,United States,North America,2021-11-22T00:00:00.000,2019
+373,Promasidor Holdings,Bryanston,South Africa,Asia,2016-11-08T00:00:00.000,1979
+487,Greenlight,Atlanta,United States,North America,2020-09-24T00:00:00.000,2014
+42,Weilong Foods,Luohe,China,Asia,2021-05-08T00:00:00.000,1999
+299,Illumio,Sunnyvale,United States,North America,2015-04-14T00:00:00.000,2013
+141,Checkr,San Francisco,United States,North America,2019-09-19T00:00:00.000,2014
+137,Vinted,Vilnius,Lithuania,Europe,2019-11-27T00:00:00.000,2008
+51,Alchemy,San Francisco,United States,North America,2021-10-28T00:00:00.000,2017
+586,Pipe,Miami,United States,North America,2021-05-19T00:00:00.000,2019
+144,BetterUp,San Francisco,United States,North America,2021-02-25T00:00:00.000,2013
+389,HeartFlow,Redwood City,United States,North America,2017-12-04T00:00:00.000,2007
+572,KRY,Stockholm,Sweden,Europe,2021-04-27T00:00:00.000,2014
+585,Opay,Lagos,Nigeria,Africa,2021-08-23T00:00:00.000,2018
+887,Capsule,New York,United States,North America,2021-04-28T00:00:00.000,2016
+5,Canva,Surry Hills,Australia,Oceania,2018-01-08T00:00:00.000,2012
+677,XiaoZhu,Beijing,China,Asia,2017-11-01T00:00:00.000,2012
+49,OutSystems,Boston,United States,North America,2018-06-05T00:00:00.000,2001
+793,Xpressbees,Pune,India,Asia,2022-02-09T00:00:00.000,2012
+470,Carsome,Selangor,Malaysia,Asia,2021-07-12T00:00:00.000,2015
+261,Fetch Rewards,Madison,United States,North America,2021-03-31T00:00:00.000,2014
+295,Transmit Security,Tel Aviv,Israel,Asia,2021-06-22T00:00:00.000,2014
+95,Gong,Palo Alto,United States,North America,2020-08-12T00:00:00.000,2015
+1053,Veev,San Mateo,United States,North America,2022-02-24T00:00:00.000,2008
+594,Tier,Berlin,Germany,Europe,2021-10-25T00:00:00.000,2018
+120,Upgrade,San Francisco,United States,North America,2018-02-12T00:00:00.000,2016
+974,Movile,Sao Paulo,Brazil,South America,2018-07-12T00:00:00.000,1998
+306,Eruditus Executive Education,Mumbai,India,Asia,2021-08-12T00:00:00.000,2010
+939,iFood,Osasco,Brazil,South America,2018-11-13T00:00:00.000,2011
+526,Forto,Berlin,Germany,Europe,2021-06-21T00:00:00.000,2016
+754,Kuaikan Manhua,Beijing,China,Asia,2017-12-01T00:00:00.000,2014
+376,HEYTEA,Shenzhen,China,Asia,2019-07-01T00:00:00.000,2012
+889,Carro,,Singapore,Asia,2021-06-14T00:00:00.000,2015
+148,Collibra,Brussels,Belgium,Europe,2019-01-29T00:00:00.000,2008
+157,Hopper,Montreal,Canada,North America,2021-03-24T00:00:00.000,2007
+519,Volocopter,Bruchsal,Germany,Europe,2022-03-04T00:00:00.000,2011
+41,Swiggy,Bengaluru,India,Asia,2018-06-21T00:00:00.000,2014
+43,Global Switch,London,United Kingdom,Europe,2016-12-22T00:00:00.000,1998
+16,J&T Express,Jakarta,Indonesia,Asia,2021-04-07T00:00:00.000,2015
+38,Xingsheng Selected,Changsha,China,Asia,2020-07-22T00:00:00.000,2009
+312,BharatPe,New Delhi,India,Asia,2021-07-30T00:00:00.000,2018
+940,InFarm,Berlin,Germany,Europe,2021-12-16T00:00:00.000,2013
+127,Wiz,Tel Aviv,Israel,Asia,2021-03-17T00:00:00.000,2020
+94,Scale AI,San Francisco,United States,North America,2019-08-05T00:00:00.000,2018
+205,Dutchie,Bend,United States,North America,2021-03-16T00:00:00.000,2017
+270,Uniphore,Palo Alto,United States,North America,2022-02-16T00:00:00.000,2008
+75,Dapper Labs,Vancouver,Canada,North America,2021-03-30T00:00:00.000,2018
+993,Pat McGrath Labs,New York,United States,North America,2018-07-16T00:00:00.000,2016
+744,The Brandtech Group,New York,United States,North America,2019-11-19T00:00:00.000,2015
+341,KK Group,Dongguan,China,Asia,2019-10-23T00:00:00.000,2014
+472,DealShare,Bengaluru,India,Asia,2022-01-27T00:00:00.000,2018
+571,Keep,Beijing,China,Asia,2020-05-19T00:00:00.000,2014
+228,Houzz,Palo Alto,United States,North America,2014-09-30T00:00:00.000,2008
+1073,Zwift,Long Beach,United States,North America,2020-09-16T00:00:00.000,2014
+1040,TERMINUS Technology,Beijing,China,Asia,2018-10-25T00:00:00.000,2015
+460,Trader Interactive,Norfolk,United States,North America,2021-05-12T00:00:00.000,2017
+316,SpotOn,San Francisco,United States,North America,2021-05-26T00:00:00.000,2017
+320,Nuvemshop,Sao Paulo,Brazil,South America,2021-08-17T00:00:00.000,2011
+107,Deel,San Francisco,United States,North America,2021-04-21T00:00:00.000,2018
+605,Aprogen,Seongnam-Si,South Korea,Asia,2019-05-31T00:00:00.000,2000
+1006,Quizlet,San Francisco,United States,North America,2020-05-13T00:00:00.000,2005
+666,Orca Security,Portland,United States,North America,2021-03-23T00:00:00.000,2019
+736,InSightec,Tirat Carmel,Israel,Asia,2020-03-06T00:00:00.000,1999
+156,Cockroach Labs,New York,United States,North America,2021-01-12T00:00:00.000,2015
+372,PolicyBazaar,Gurgaon,India,Asia,2019-05-06T00:00:00.000,2008
+544,Apeel Sciences,Goleta,United States,North America,2020-05-26T00:00:00.000,2012
+378,Claroty,New York,United States,North America,2021-06-17T00:00:00.000,2015
+184,Highspot,Seattle,United States,North America,2021-02-22T00:00:00.000,2013
+135,Socure,New York,United States,North America,2021-03-16T00:00:00.000,2012
+102,Black Unicorn Factory,Los Angeles,United States,North America,2021-05-20T00:00:00.000,2020
+143,Dataiku,New York,United States,North America,2019-12-04T00:00:00.000,2013
+869,Axelar,Waterloo,Canada,North America,2022-02-15T00:00:00.000,2020
+674,Mofang Living,Shanghai,China,Asia,2016-04-13T00:00:00.000,2009
+627,Kuaigou Dache,Tianjin,China,Asia,2018-07-13T00:00:00.000,2014
+977,Newlink Group,Beijing,China,Asia,2020-07-10T00:00:00.000,2016
+167,ZEPZ,London,United Kingdom,Europe,2021-08-23T00:00:00.000,2010
+821,GetYourGuide,Berlin,Germany,Europe,2019-05-16T00:00:00.000,2009
+198,Noom,New York,United States,North America,2021-05-24T00:00:00.000,2006
+655,Yipin Shengxian,Hefei,China,Asia,2019-03-11T00:00:00.000,2017
+546,Avant,Chicago,United States,North America,2012-12-17T00:00:00.000,2012
+661,Trumid,New York,United States,North America,2020-07-15T00:00:00.000,2014
+80,Ramp,New York,United States,North America,2021-03-29T00:00:00.000,2019
+253,Cohesity,San Jose,United States,North America,2018-06-11T00:00:00.000,2013
+100,ConsenSys,New York,United States,North America,2021-11-17T00:00:00.000,2014
+483,Vestiaire Collective,Paris,France,Europe,2021-03-01T00:00:00.000,2009
+214,ThoughtSpot,Sunnyvale,United States,North America,2018-05-08T00:00:00.000,2012
+669,CureFit,Bengaluru,India,Asia,2021-11-10T00:00:00.000,2016
+315,PsiQuantum,Palo Alto,United States,North America,2021-07-27T00:00:00.000,2016
+297,Convoy,Seattle,United States,North America,2018-09-21T00:00:00.000,2015
+222,Branch,Redwood City,United States,North America,2018-09-10T00:00:00.000,2014
+515,Addepar,Mountain View,United States,North America,2021-06-15T00:00:00.000,2009
+68,Klaviyo,Boston,United States,North America,2020-11-17T00:00:00.000,2012
+726,GPclub,Seoul,South Korea,Asia,2018-10-22T00:00:00.000,2003
+904,Dxy.cn,Hangzhou,China,Asia,2018-04-10T00:00:00.000,2000
+441,Carbon,Redwood City,United States,North America,2015-08-20T00:00:00.000,2013
+301,Graphcore,Bristol,United Kingdom,Europe,2018-12-18T00:00:00.000,2016
+919,Fractal Analytics,Mumbai,India,Asia,2022-01-05T00:00:00.000,2000
+263,GoStudent,Vienna,Austria,Europe,2021-06-22T00:00:00.000,2017
+140,Anduril,Irvine,United States,North America,2019-09-11T00:00:00.000,2017
+55,Gusto,San Francisco,United States,North America,2015-12-18T00:00:00.000,2011
+377,BGL Group,Peterborough,United Kingdom,Europe,2017-11-24T00:00:00.000,1992
+871,Banma Network Technologies,Shanghai,China,Asia,2018-09-13T00:00:00.000,2015
+310,Thumbtack,San Francisco,United States,North America,2015-09-29T00:00:00.000,2008
+613,EQRx,Cambridge,United States,North America,2021-01-11T00:00:00.000,2020
+163,Qonto,Paris,France,Europe,2022-01-11T00:00:00.000,2016
+277,ManoMano,Paris,France,Europe,2021-07-05T00:00:00.000,2013
+1059,Watershed,San Francisco,United States,North America,2022-02-08T00:00:00.000,2019
+503,G7 Networks,Beijing,China,Asia,2022-02-15T00:00:00.000,2006
+330,Circle,Boston,United States,North America,2018-05-15T00:00:00.000,2013
+254,Cybereason,Boston,United States,North America,2019-08-06T00:00:00.000,2012
+367,Hesai Tech,Shanghai,China,Asia,2020-08-01T00:00:00.000,2013
+399,Collective Health,San Francisco,United States,North America,2019-06-17T00:00:00.000,2013
+61,Dunamu,Seoul,South Korea,Asia,2021-07-22T00:00:00.000,2012
+375,Ximalaya FM,Shanghai,China,Asia,2017-09-22T00:00:00.000,2012
+716,Neon,Sao Paulo,Brazil,South America,2022-02-14T00:00:00.000,2016
+224,Cerebras Systems,Los Altos,United States,North America,2018-11-14T00:00:00.000,2016
+22,Genki Forest,Beijing,China,Asia,2020-03-01T00:00:00.000,2016
+720,Klook,Central,Hong Kong,Asia,2018-08-07T00:00:00.000,2014
+322,Workrise,Austin,United States,North America,2019-09-30T00:00:00.000,2014
+279,Plume,Palo Alto,United States,North America,2021-02-23T00:00:00.000,2015
+111,FiveTran,Oakland,United States,North America,2020-06-30T00:00:00.000,2012
+126,iCapital Network,New York,United States,North America,2021-07-27T00:00:00.000,2013
+269,Sysdig,San Francisco,United States,North America,2021-04-28T00:00:00.000,2013
+25,Plaid,San Francisco,United States,North America,2018-12-11T00:00:00.000,2012
+160,OfBusiness,Gurgaon,India,Asia,2021-07-31T00:00:00.000,2015
+731,Cava Group,Washington,United States,North America,2021-04-27T00:00:00.000,2010
+202,Sorare,Paris,France,Europe,2021-09-21T00:00:00.000,2019
+74,Razorpay,Bengaluru,India,Asia,2020-10-11T00:00:00.000,2013
+439,Cao Cao Mobility,Hangzhou,China,Asia,2018-01-17T00:00:00.000,2015
+379,Improbable,London,United Kingdom,Europe,2017-05-11T00:00:00.000,2012
+154,QuintoAndar,Campinas,Brazil,South America,2019-09-09T00:00:00.000,2012
+423,TuJia,Beijing,China,Asia,2015-06-17T00:00:00.000,2011
+262,Games24x7,Mumbai,India,Asia,2022-03-30T00:00:00.000,2006
+219,Medlinker,Chengdu,China,Asia,2018-07-31T00:00:00.000,2014
+161,Ola Electric Mobility,Bengaluru,India,Asia,2019-07-02T00:00:00.000,2019
+36,Bitmain,Beijing,China,Asia,2018-07-06T00:00:00.000,2015
+384,SellerX,Berlin,Germany,Europe,2021-12-09T00:00:00.000,2020
+599,Xinchao Media,Chengdu,China,Asia,2018-04-09T00:00:00.000,2007
+20,Rapyd,London,United Kingdom,Europe,2019-12-03T00:00:00.000,2016
+241,Kurly,Seoul,South Korea,Asia,2021-07-09T00:00:00.000,2014
+69,Niantic,San Francisco,United States,North America,2017-11-24T00:00:00.000,2015
+333,Cross River Bank,Fort Lee,United States,North America,2022-02-11T00:00:00.000,2008
+246,Yixia,Beijing,China,Asia,2015-11-24T00:00:00.000,2011
+70,Tanium,Kirkland,United States,North America,2015-03-31T00:00:00.000,2007
+174,Lenskart,Faridabad,India,Asia,2019-12-20T00:00:00.000,2008
+294,Via,New York,United States,North America,2020-03-30T00:00:00.000,2012
+601,XtalPi,Shenzhen,China,Asia,2021-08-11T00:00:00.000,2014
+795,Mininglamp Technology,Beijing,China,Asia,2019-03-27T00:00:00.000,2014
+319,Loft,Sao Paulo,Brazil,South America,2020-01-03T00:00:00.000,2018
+274,Unacademy,Bengaluru,India,Asia,2020-09-02T00:00:00.000,2015
+538,Starling Bank,London,United Kingdom,Europe,2021-03-08T00:00:00.000,2014
+478,Harry's,New York,United States,North America,2018-02-16T00:00:00.000,2013
+1072,Zopa,London,United Kingdom,Europe,2021-10-19T00:00:00.000,2005
+200,Redwood Materials,Carson City,United States,North America,2021-07-28T00:00:00.000,2017
+498,AIWAYS,Shanghai,China,Asia,2018-04-16T00:00:00.000,2017
+35,Biosplice Therapeutics,San Diego,United States,North America,2018-08-06T00:00:00.000,2008
+903,Dune Analytics,Oslo,Norway,Europe,2022-02-02T00:00:00.000,2018
+610,DeepBlue Technology,Shanghai,China,Asia,2018-04-16T00:00:00.000,2014
+11,Epic Games,Cary,United States,North America,2018-10-26T00:00:00.000,1991
+1,SpaceX,Hawthorne,United States,North America,2012-12-01T00:00:00.000,2002
+932,Heyday,Chicago,United States,North America,2021-11-16T00:00:00.000,2017
+653,Yiguo,Shanghai,China,Asia,2016-11-09T00:00:00.000,2005
+874,Berlin Brands Group,Berlin,Germany,Europe,2021-09-01T00:00:00.000,2005
+37,GoodLeap,Roseville,United States,North America,2021-10-13T00:00:00.000,2003
+106,Airwallex,Melbourne,Australia,Oceania,2019-03-25T00:00:00.000,2015
+117,RELEX Solutions,Helsinki,Finland,Europe,2022-02-17T00:00:00.000,2005
+1071,Zihaiguo,Chongqing,China,Asia,2021-05-06T00:00:00.000,2018
+305,ContentSquare,Paris,France,Europe,2021-05-25T00:00:00.000,2012
+110,Doctolib,Paris,France,Europe,2019-03-19T00:00:00.000,2013
+281,Project44,Chicago,United States,North America,2021-06-01T00:00:00.000,2014
+81,Tempus,Chicago,United States,North America,2018-03-21T00:00:00.000,2015
+152,Creditas,Sao Paulo,Brazil,South America,2020-12-18T00:00:00.000,2012
+122,Hinge Health,San Francisco,United States,North America,2021-01-06T00:00:00.000,2015
+403,Gett,London,United Kingdom,Europe,2016-05-24T00:00:00.000,2010
+92,Toss,Seoul,South Korea,Asia,2018-12-09T00:00:00.000,2013
+98,Automation Anywhere,San Jose,United States,North America,2018-07-02T00:00:00.000,2003
+232,Olive,Columbus,United States,North America,2020-12-01T00:00:00.000,2012
+247,Automattic,San Francisco,United States,North America,2013-05-27T00:00:00.000,2005
+388,Tradeshift,San Francisco,United States,North America,2018-05-30T00:00:00.000,2009
+88,Attentive,Hoboken,United States,North America,2020-09-23T00:00:00.000,2016
+218,Weee!,Fremont,United States,North America,2021-03-16T00:00:00.000,2015
+178,Celsius Network,Hoboken,United States,North America,2021-10-12T00:00:00.000,2017
+128,DailyHunt,Bengaluru,India,Asia,2020-12-22T00:00:00.000,2007
+851,OrCam Technologies,Jerusalem,Israel,Asia,2018-02-20T00:00:00.000,2010
+853,1KMXC,Hangzhou,China,Asia,2021-08-30T00:00:00.000,2014
+227,Farmers Business Network,San Carlos,United States,North America,2020-08-03T00:00:00.000,2014
+1061,WeLab,,Hong Kong,Asia,2017-11-08T00:00:00.000,2013
+799,Tuhu,Shanghai,China,Asia,2018-09-15T00:00:00.000,2011
+293,Sila Nanotechnologies,Alameda,United States,North America,2019-04-16T00:00:00.000,2011
+231,Next Insurance,Palo Alto,United States,North America,2019-10-07T00:00:00.000,2016
+114,Cityblock Health,Brooklyn,United States,North America,2020-12-10T00:00:00.000,2017
+0,Bytedance,Beijing,China,Asia,2017-04-07T00:00:00.000,2012
+463,Jobandtalent,Madrid,Spain,Europe,2021-12-01T00:00:00.000,2009
+162,Pine Labs,Noida,India,Asia,2020-01-24T00:00:00.000,1998
+433,Wenheyou,Hunan,China,Asia,2021-04-17T00:00:00.000,2013
+836,The Bank of London,London,United Kingdom,Europe,2021-11-30T00:00:00.000,2018
+668,Forte Labs,San Francisco,United States,North America,2021-05-12T00:00:00.000,2018
+123,Lyra Health,Burlingame,United States,North America,2020-08-25T00:00:00.000,2015
+96,TripActions,Palo Alto,United States,North America,2018-11-08T00:00:00.000,2015
+17,Xiaohongshu,Shanghai,China,Asia,2016-03-31T00:00:00.000,2013
+353,wefox,Berlin,Germany,Europe,2019-03-05T00:00:00.000,2014
+973,Morning Consult,Washington DC,United States,North America,2021-06-08T00:00:00.000,2014
+97,1Password,Toronto,Canada,North America,2021-07-08T00:00:00.000,2005
+87,CRED,Bengaluru,India,Asia,2021-04-06T00:00:00.000,2018
+153,OneTrust,Atlanta,United States,North America,2019-07-11T00:00:00.000,2016
+109,Mollie,Amsterdam,Netherlands,Europe,2020-09-08T00:00:00.000,2004
+946,JoyTunes,Tel Aviv,Israel,Asia,2021-06-21T00:00:00.000,2011
+937,Ibotta,Denver,United States,North America,2019-08-06T00:00:00.000,2011
+139,UBTECH Robotics,Shenzhen,China,Asia,2016-07-25T00:00:00.000,2012
+131,Meizu Technology,Zhuhai,China,Asia,2014-07-23T00:00:00.000,2003
+360,Carzone,Jiangsu,China,Asia,2019-03-01T00:00:00.000,1995
+658,Miaoshou Doctor,Beijing,China,Asia,2019-06-27T00:00:00.000,2015
+186,Mirakl,Paris,France,Europe,2020-09-22T00:00:00.000,2011
+604,Alzheon,Framingham,United States,North America,2020-09-30T00:00:00.000,2013
+600,Xingyun Group,Shenzhen,China,Asia,2020-09-24T00:00:00.000,2015
+672,JOLLY Information Technology,Hangzhou,China,Asia,2018-05-29T00:00:00.000,2008
+518,Retool,San Francisco,United States,North America,2021-12-22T00:00:00.000,2000
+331,CMR Surgical,Cambridge,United Kingdom,Europe,2019-09-17T00:00:00.000,2014
+382,Ninja Van,,Singapore,Asia,2021-09-27T00:00:00.000,2014
+21,Discord,San Francisco,United States,North America,2018-04-20T00:00:00.000,2012
+271,Varo Bank,San Francisco,United States,North America,2021-09-09T00:00:00.000,2015
+664,Earnix,Giv'atayim,Israel,Asia,2021-02-21T00:00:00.000,2001
+1070,Zhuan Zhuan,Beijing,China,Asia,2017-04-18T00:00:00.000,2015
+146,Trade Republic,Berlin,Germany,Europe,2021-05-20T00:00:00.000,2015
+292,Scopely,Culver City,United States,North America,2019-10-29T00:00:00.000,2011
+792,Workhuman,Dublin,Ireland,Europe,2020-06-23T00:00:00.000,1999
+639,SITECH DEV,Guiyang,China,Asia,2019-05-16T00:00:00.000,2017
+567,ISN,Dallas,United States,North America,2020-12-17T00:00:00.000,2001
+945,Iodine Software,Austin,United States,North America,2021-12-01T00:00:00.000,2010
+947,Kendra Scott,Austin,United States,North America,2016-12-21T00:00:00.000,2002
+717,Veepee,La Plaine Saint-Denis,France,Europe,2007-07-02T00:00:00.000,2001
+424,Uplight,Boulder,United States,North America,2021-03-03T00:00:00.000,2019
+733,DistroKid,New York,United States,North America,2021-08-16T00:00:00.000,2013
+1002,Poizon,Shanghai,China,Asia,2019-04-29T00:00:00.000,2015
+215,SSENSE,Montreal,Canada,North America,2021-06-08T00:00:00.000,2003
+866,Assembly,Culver City,United States,North America,2021-09-21T00:00:00.000,2019
+651,Xiaobing,Beijing,China,Asia,2021-07-12T00:00:00.000,2020
+890,Carson Group,Lincoln,United States,North America,2021-07-14T00:00:00.000,2012
