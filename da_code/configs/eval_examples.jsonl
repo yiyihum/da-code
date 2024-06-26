@@ -41,7 +41,7 @@
 {"id": "dw-clean-021", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["cars_details_merges.csv"]}], "options": [{"condition_cols": [6], "ignore_order": true}]}
 {"id": "dw-clean-028", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "dw-clean-031", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true}]}
-{"id": "dw-load-001", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["date_dim.csv", "stations.csv"]}], "options": [{"ignore_order": true},{"ignore_order": true}]}
+{"id": "dw-load-001", "config": {"task": "data wangling"}, "func": ["compare_csv"], "result": [{"file": ["date_dim.csv", "stations.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true},{"condition_cols": [], "ignore_order": true}]}
 {"id": "dw-load-002", "config": {"task": "data wangling"}, "func": ["compare_sqlite"], "result": [{"file": ["wwe.db"]}], "options": [{"condition_tabs": ["belts", "cards"], "condition_cols": [[], []], "ignore_order": [true, true]}]}
 {"id": "dw-load-003", "config": {"task": "data wangling"}, "func": ["compare_sqlite"], "result": [{"file": ["sport.db"]}], "options": [{"condition_tabs": ["player", "team"], "condition_cols": [[], []], "ignore_order": [true, true]}]}
 {"id": "dw-load-004", "config": {"task": "data wangling"}, "func": ["compare_sqlite"], "result": [{"file": ["sport.db"]}], "options": [{"condition_tabs": ["player"], "condition_cols": [[]], "ignore_order": [true]}]}
