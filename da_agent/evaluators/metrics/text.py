@@ -120,7 +120,6 @@ def compare_text(result: str, expected: str|List[str], metrics: str|List[str], m
 
 
 def match_text(result: str, expected: str|List[str], **options) -> float:
-    import pdb; pdb.set_trace()
     if options['type'] == "number":
         result = float(result)
         for exp in expected:

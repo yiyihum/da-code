@@ -23,6 +23,8 @@ class Evaluator:
     def get_result_file(self, results: List, dir: str, isgold: bool):
         results = results if isinstance(results, list)\
             else [results]
+        if 'number' in results[0].keys():
+            return 'number', [results[0]['number']]
         result_files = []
         for result in results:
             multi = result.get("multi", False)
@@ -35,8 +37,10 @@ class Evaluator:
             else:
                 for file in files:
                     file = file if not isgold else os.path.basename(file)
+                    if not os.path.exists(os.path.join(dir, file)):
+                        print(f"File not found : {os.path.join(dir, file)}")
                     result_files.append(os.path.join(dir, file))
-        return result_files
+        return 'file', result_files
 
     def _get_eval_config_info(self, eval_config: Dict[str, Any]):
         # evaluator dict
@@ -65,24 +69,30 @@ class Evaluator:
         expected = eval_config['result'] if isinstance(eval_config['result'], list) \
             else [eval_config['result']]
 
-        output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
-
-        def is_path_exist(results: List):
-            if len(results) == 0:
-                return False
-            if not isinstance(results[0], list):
-                return os.path.exists(results[0])
-            else:
-                return is_path_exist(results[0])
-        # import pdb; pdb.set_trace()
-        if output_results == [] or is_path_exist(output_results):
-            gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
+        type, gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
+        if type == 'number':
+            output_results = [trajectory_info["result"]]
+        else:
+            output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
             if len(output_results) != len(gold_results):
-                output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
-        else:            
-            if isinstance(trajectory_info["result"], str):
-                output_results = [trajectory_info["result"]]
-            gold_results = expected           
+                _, output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
+        # import pdb; pdb.set_trace()
+        # def is_path_exist(results: List):
+        #     if len(results) == 0:
+        #         return False
+        #     if not isinstance(results[0], list):
+        #         return os.path.exists(results[0])
+        #     else:
+        #         return is_path_exist(results[0])
+        # import pdb; pdb.set_trace()
+        # if output_results == [] or is_path_exist(output_results):
+        #     gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
+        #     if len(output_results) != len(gold_results):
+        #         output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
+        # else:            
+        #     if isinstance(trajectory_info["result"], str):
+        #         output_results = [trajectory_info["result"]]
+        #     gold_results = expected           
         
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\
