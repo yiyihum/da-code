@@ -8,6 +8,7 @@
 {"id": "data-sa-043", "config": {"task": "sa", "type": "csv", "metric": "", "threshold": 0.0, "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1, 2, 3, 4]}]}
 {"id": "data-sa-051", "config": {"task": "sa", "type": "csv", "metric": "", "threshold": 0.0, "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["anova_results.csv"]}], "options": [{"condition_cols": [1, 2], "ignore_order": true}]}
 {"id": "data-sa-054", "config": {"task": "sa", "type": "csv", "metric": "", "threshold": 0.0, "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1, 2], "ignore_order": true}]}
+{"id": "data-sa-106", "config": {"task": "sa", "type": "csv", "metric": "", "threshold": 0.0, "hardness": "Hard"}, "func": ["compare_csv","compare_csv","compare_csv","compare_csv"], "result": [{"file": ["correlation2.csv","correlation3.csv","correlation4.csv","correlation5.csv"]}], "options": [{},{},{},{}]}
 {"id": "di001", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [0, 5], "ignore_order": true}]}
 {"id": "di002", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["top_10_charging_times.csv"]}], "options": [{}]}
 {"id": "di003", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
