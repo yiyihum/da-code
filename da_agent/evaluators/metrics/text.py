@@ -118,8 +118,4 @@ def compare_text(result: str, expected: str|List[str], metrics: str|List[str], m
     
     return metrics_results
 
-if __name__ == '__main__':
-    hyp_test = '/Users/stewiepeter/Desktop/VsProjects/VaftBench/text_test/hyp.txt'
-    ref_test = '/Users/stewiepeter/Desktop/VsProjects/VaftBench/text_test/ref.txt'
-    print(compare_text(hyp_test, [ref_test], metrics=METRICS))
 

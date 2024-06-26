@@ -3,8 +3,6 @@ from typing import Dict
 import docker
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append("/Users/leifangyu/workspace/DataAgentBench/environment")
-sys.path.append("/Users/leifangyu/workspace/DataAgentBench")
 
     
 def get_docker_script_output(env, config: Dict[str, str]):

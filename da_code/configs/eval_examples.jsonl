@@ -93,4 +93,4 @@
 {"id": "di004", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
 {"id": "di005", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [0], "ignore_order": true}]}
 {"id": "di006", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true}]}
-{"id": "di007", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "di007", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv", "result1.csv"]}],"options": [{}], ""}

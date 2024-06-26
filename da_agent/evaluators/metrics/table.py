@@ -281,8 +281,8 @@ def compare_csv_files(folder1, folder2):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Compare two CSV files")
-    parser.add_argument("--folder1", help="The first folder containing CSV files", default="/Users/leifangyu/workspace/DataAgentBench/benchmark/mnt/load001/cache")
-    parser.add_argument("--folder2", help="The second folder containing CSV files", default="/Users/leifangyu/workspace/DataAgentBench/benchmark/source/load001/results.zip")
+    parser.add_argument("--folder1", help="The first folder containing CSV files")
+    parser.add_argument("--folder2", help="The second folder containing CSV files")
     args = parser.parse_args()
 
     score = compare_csv_files(args.folder1, args.folder2)

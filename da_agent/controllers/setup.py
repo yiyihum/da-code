@@ -109,12 +109,3 @@ class SetupController:
         cmd = ["sh", "-c", command]
         exit_code, output = self.container.exec_run(cmd)
         return output.decode("utf-8").strip()
-        
-        
-        
-if __name__ == "__main__":
-    sc = SetupController(docker.from_env().containers.get("da_agent"), "/Users/leifangyu/workspace/DataAgentBench/cache")
-    sc._download_setup([{"url": "https://drive.usercontent.google.com/download?id=1U7npRKhoe1ms3Nkj7OVT6x-w9K9KzZtL&export=download&authuser=0&confirm=t", "path": "/workspace/eval.sh"}])
-    sc._execute_setup(command="chmod a+x /workspace/eval.sh")
-    response = sc._execute_setup(command="bash /workspace/eval.sh")
-    sc._execute_setup(command="rm -f /workspace/eval.sh")
