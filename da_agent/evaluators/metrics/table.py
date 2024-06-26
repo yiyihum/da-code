@@ -219,8 +219,10 @@ def compare_sqlite(result: str, expected, **options) -> float:
     condition_cols = options.get('condition_cols', [[]]*len(condition_tabs))
     ignore_order = options.get('ignore_order', [False]*len(condition_tabs))
 
-    
-    pred_tables = convert_to_csvs(result, condition_tabs)
+    try:
+        pred_tables = convert_to_csvs(result, condition_tabs)
+    except:
+        return 0
     gold_tables = convert_to_csvs(expected, condition_tabs)
     
     output_scores = []
