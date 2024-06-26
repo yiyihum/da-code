@@ -57,7 +57,6 @@ class Evaluator:
             return id, False, None, None
         trajectory_info = self._get_trajectory_info_from_json(result_file)
 
-
         gold_id_dir = os.path.join(self.gold_dir, id)
         config = eval_config.get('config', {})
         hardness = config.get('hardness', "none")
@@ -68,15 +67,22 @@ class Evaluator:
 
         output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
 
-        import pdb; pdb.set_trace()
-        if output_results == [] or os.path.exists(output_results[0]):
+        def is_path_exist(results: List):
+            if len(results) == 0:
+                return False
+            if not isinstance(results[0], list):
+                return os.path.exists(results[0])
+            else:
+                return is_path_exist(results[0])
+        # import pdb; pdb.set_trace()
+        if output_results == [] or is_path_exist(output_results):
             gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
             if len(output_results) != len(gold_results):
                 output_results = self.get_result_file(expected, dir=output_id_dir, isgold=False)
         else:            
             if isinstance(trajectory_info["result"], str):
                 output_results = [trajectory_info["result"]]
-            gold_results = expected            
+            gold_results = expected           
         
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\

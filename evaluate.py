@@ -26,7 +26,7 @@ experiment = 'gpt4turbo'
 output_dir = f'./output/{experiment}'
 gold_dir = './da_code/gold'
 eval_json = './da_code/configs/eval_examples.jsonl'
-output_file = f'./results/{experiment}_results.json'
+output_file = f'./results/{experiment}_results2.json'
 timeout_seconds = 60
 
 # Run the evaluation with the specified parameters

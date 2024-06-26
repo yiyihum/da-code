@@ -91,7 +91,7 @@ class PreprocessML:
             return result_df, gold_df, output, False
         
         id = next((col for col in gold_columns if 'id' in col.lower()), '')
-        if id and len(gold_df[id].nunique()) > max(0.6 * len(gold_df), 2):
+        if id and gold_df[id].nunique() > max(0.6 * len(gold_df), 2):
             gold_id = set(gold_df[id])
             result_id = set(result_df[id])
             if result_id != gold_id:
@@ -162,15 +162,15 @@ class PreprocessML:
         def is_unique_id_column(column):
             return ('id' in column.lower() or 'unnamed' in column.lower()) and df[column].nunique() > 0.8 * len(df)
         def is_binary_target_column(column):
-            return len(df[column].unique()) == 2
+            return df[column].unique() == 2
         def is_multi_target_column(column):
-            return 2 < len(df[column].unique()) < 10
+            return 2 < df[column].unique() < 10
         def is_cluster_target_column(column):
-            return 1 <= len(df[column].unique()) < max(0.01 * len(df), 10)
+            return 1 <= df[column].unique() < max(0.01 * len(df), 10)
         def is_regression_target_column(column):
             return str(df[column].dtype) in ['int64', 'float64']  \
                 and not PreprocessML.is_incremental(df[column]) \
-                and len(df[column].unique()) > max(3, 0.1 * len(df))
+                and df[column].unique() > max(3, 0.1 * len(df))
 
         for column in columns:
             if is_unique_id_column(column):
