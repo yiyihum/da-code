@@ -119,3 +119,17 @@ def compare_text(result: str, expected: str|List[str], metrics: str|List[str], m
     return metrics_results
 
 
+def match_text(result: str, expected: str|List[str], **options) -> float:
+    import pdb; pdb.set_trace()
+    if options['type'] == "number":
+        result = float(result)
+        for exp in expected:
+            if abs(result - float(exp)) <= 0.1:
+                return 1.0
+        return 0.0
+    elif options['type'] == "string":
+        for exp in expected:
+            if str(exp).lower() in str(result).lower():
+                return 1.0
+        return 0.0
+

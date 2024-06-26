@@ -11,7 +11,8 @@ from .table import (
 )
 
 from .text import (
-    compare_text
+    compare_text,
+    match_text
 )
 
 from .image import (
