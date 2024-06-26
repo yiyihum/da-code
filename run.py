@@ -63,8 +63,7 @@ def config() -> argparse.Namespace:
     parser.add_argument("--stop_token", type=str, default=None)
     
     # example config
-    parser.add_argument("--domain", type=str, default="all")
-    parser.add_argument("--test_all_meta_path","-t",type=str, default="da_code/configs/examples.jsonl")
+    parser.add_argument("--test_path","-t", type=str, default="da_code/configs/examples.jsonl")
     parser.add_argument("--example_index", "-i", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--example_name", "-n", type=str, default="", help="name of the example to run")
     parser.add_argument("--overwriting", action="store_true", default=False)
@@ -153,7 +152,7 @@ def test(
         if args.retry_failed and os.path.exists(result_json_path):
             with open(result_json_path, "r") as f:
                 result = json.load(f)
-                if not result["finished"] and not ("FAIL" in result["result"]) and not ("error" in result["result"].lower()):
+                if result["finished"] and (not "FAIL" in result["result"]) and (not "error" in result["result"].lower()):
                     logger.info("Skipping %s", instance_id)
                     continue
             logger.info("Retrying %s", instance_id)

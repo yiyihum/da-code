@@ -240,9 +240,9 @@ class Evaluator:
             except Exception as e:
                 # output_result = output_result if isinstance(output_result, list) else [output_result]
                 logging.error(f"Error in task {id}: {e}")
-                continue
-                # scores.append(0.0)
-                # info.append({"score": 0.0, "errors": [str(e)], 'file': [os.path.basename(file) for file in output_result]})
+                # continue
+                scores.append(0.0)
+                info.append({"score": 0.0, "errors": [str(e)], 'file': [os.path.basename(file) for file in output_result]})
 
             if metric_conj == 'avg':
                 total_score = sum(scores) / len(scores)
