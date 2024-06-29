@@ -34,7 +34,11 @@ def convert_config_to_uuid(uuid_path: str, src: str):
     with jsonlines.open(src, 'r') as f:
         lines = [line for line in f]
     lines = list(map(
-        lambda line: {**line, "id": task2uuid.get(line["id"], line["id"])},
+        lambda line: {**line, "name": line["id"]},
+        lines
+    ))
+    lines = list(map(
+        lambda line: {**line, "id": task2uuid.get(line["name"], line["name"])},
         lines
     ))
     src = os.path.abspath(src)
@@ -62,7 +66,11 @@ def convert_result_to_uuid(uuid_path: str, src_path:str):
         task2uuid = json.load(js)
     
     results["results"] = list(map(
-        lambda x: {**x, "id": task2uuid.get(x["id"], x["id"])},
+        lambda x: {**x, "name": x["id"]},
+        results["results"]
+    ))
+    results["results"] = list(map(
+        lambda x: {**x, "id": task2uuid.get(x["name"], x["name"])},
         results["results"]
     ))
     
@@ -73,11 +81,11 @@ def convert_result_to_uuid(uuid_path: str, src_path:str):
     
     
 uuid_path = './da_code/configs/id2uuid.json'
-src = './da_code/configs/eval_examples.jsonl'
+src = './da_code/configs/examples.jsonl'
 dir_path = './output/gpt4'
 src_path = "results/gpt4.json"
 
-convert_result_to_uuid(uuid_path, src_path)
+convert_config_to_uuid(uuid_path, src)
     
             
         
