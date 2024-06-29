@@ -15,10 +15,10 @@ Metric = Callable[[Any, Any], float]
 
 class Evaluator:
 
-    def __init__(self, output_dir: str, gold_dir: str, timeout_second: int = 10):
+    def __init__(self, output_dir: str, gold_dir: str, timeout_seconds: int = 10):
         self.output_dir = output_dir
         self.gold_dir = gold_dir
-        self.timeout_second = timeout_second
+        self.timeout_second = timeout_seconds
 
     def get_result_file(self, results: List, dir: str, isgold: bool):
         results = results if isinstance(results, list)\

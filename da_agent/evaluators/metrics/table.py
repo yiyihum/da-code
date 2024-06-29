@@ -152,9 +152,9 @@ def compare_csv(result: str, expected, **options) -> float:
     
     output = []
 
-    df1 = pd.read_csv(result)
+    df1 = pd.read_csv(result, low_memory=False)
     for i in range(len(expected)):
-        df2 = pd.read_csv(expected[i])
+        df2 = pd.read_csv(expected[i], low_memory=False)
         pre_score = csv_score(df1, df2, condition_cols_=condition_cols[i], score_rule_=score_rule[i], ignore_order_=ignore_order[i], total_scores_=total_scores[i])
         output.append(pre_score)
     

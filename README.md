@@ -19,26 +19,6 @@ export GEMINI_API_KEY=your_genmini_api_key
 ```bash
 python run.py
 ```
-
-根据你的 `config()` 函数的设置，我们可以更新你的 README 文件以反映如何使用这个脚本以及如何设置不同的命令行参数。以下是一个提议的 README 更新示例：
-
----
-
-## Benchmark Evaluation Script
-
-### Description
-This script is designed to run end-to-end evaluations on a specified benchmark using various configurations. The script is highly customizable through command line arguments to suit different testing needs.
-
-### Requirements
-Ensure that you have Python installed on your system to run the script. Additionally, all required libraries should be installed, preferably in a virtual environment.
-
-### Usage
-To run the benchmark evaluation script, use the following command:
-
-```bash
-python run.py
-```
-
 Arguments:
 - `--max_steps`: Maximum number of steps (default is 20)
 - `--max_memory_length`: Maximum length of memory to retain (default is 15)
@@ -58,8 +38,20 @@ Arguments:
 
 ### Evaluate the benchmark
 ```bash
-python evaluate.py
+python evaluate.py \
+    --output_dir output/gpt4 \
+    --gold_dir da_code/gold \
+    --eval_json da_code/configs/eval_examples.jsonl \
+    --result_file results/gpt4.json \
+    --timeout_seconds 300
 ```
+
+Arguments:
+- `--output_dir`: Directory for output files
+- `--gold_dir`: Directory for gold files
+- `--eval_json`: Path to the evaluation configuration file 
+- `--result_file`: Path to the result file
+- `--timeout_seconds`: Timeout in seconds for each evaluation
 
 ### Get Full Dataset
 We provide 100 examples of the dataset in the source folder. To get the full dataset, follow the instructions below:

@@ -1,6 +1,6 @@
 {
-    "num_results": 94,
-    "average_score": 0.25566319694619827,
+    "num_results": 93,
+    "average_score": 0.2584122635800284,
     "results": [
         {
             "id": "data-sa-001",
@@ -2139,68 +2139,7 @@
                     ""
                 ]
             ],
-            "info": [
-                {
-                    "score": 0.0,
-                    "errors": [
-                        "Action execution time exceeded!"
-                    ],
-                    "file": [
-                        ".",
-                        "",
-                        "o",
-                        "u",
-                        "t",
-                        "p",
-                        "u",
-                        "t",
-                        "",
-                        "g",
-                        "p",
-                        "t",
-                        "4",
-                        "t",
-                        "u",
-                        "r",
-                        "b",
-                        "o",
-                        "",
-                        "d",
-                        "w",
-                        "-",
-                        "c",
-                        "l",
-                        "e",
-                        "a",
-                        "n",
-                        "-",
-                        "0",
-                        "0",
-                        "6",
-                        "",
-                        "B",
-                        "u",
-                        "i",
-                        "l",
-                        "d",
-                        "i",
-                        "n",
-                        "g",
-                        "_",
-                        "P",
-                        "e",
-                        "r",
-                        "m",
-                        "i",
-                        "t",
-                        "s",
-                        ".",
-                        "c",
-                        "s",
-                        "v"
-                    ]
-                }
-            ]
+            "info": []
         },
         {
             "id": "dw-clean-012",
@@ -3244,45 +3183,6 @@
             ]
         },
         {
-            "id": "ml-cluster-006",
-            "total_score": 0.0,
-            "hardness": "Hard",
-            "finished": true,
-            "steps": 3,
-            "result": "FAIL",
-            "added_files": [],
-            "changed_files": [],
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l",
-                    "standard output"
-                ],
-                [
-                    "Bash",
-                    "ls -la",
-                    "standard output"
-                ],
-                [
-                    "Terminate",
-                    "",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "errors": [
-                        "result file ./output/gpt4turbo/ml-cluster-006/cluster.csv does not exists"
-                    ],
-                    "score": 0.0,
-                    "metric": "silhouette",
-                    "file": [
-                        "cluster.csv"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ml-cluster-007",
             "total_score": 0.15836889332963838,
             "hardness": "Medium",
@@ -3876,7 +3776,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected columns in result CSV: ['Other_Faults', 'K_Scatch', 'Pastry', 'Stains', 'Bumps', 'Dirtiness', 'Z_Scratch']"
+                        "Unexpected columns in result CSV: ['Pastry', 'K_Scatch', 'Stains', 'Dirtiness', 'Other_Faults', 'Z_Scratch', 'Bumps']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -4267,7 +4167,7 @@
             "info": [
                 {
                     "errors": [
-                        "result file ./output/gpt4turbo/ml-multi-003/test.csv does not exists"
+                        "result file output/gpt4/ml-multi-003/test.csv does not exists"
                     ],
                     "score": 0.0,
                     "metric": "f1",
