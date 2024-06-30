@@ -148,4 +148,3 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
     
     output_result["score"] = max(scores)
     return output_result
-            

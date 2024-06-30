@@ -99,6 +99,3 @@
 {"id": "2362cea0-4220-4895-8979-979d04d59a4d", "config": {"task": "EDA"}, "func": ["compare_text"],"result": [{"file": ["result.json"]}], "options": [{}], "name": "di-text-004"}
 {"id": "034a5c57-d937-45b9-99b2-46dfc07a76fe", "config": {"task": "eda", "type": "text", "metric": "", "threshold": 0.0, "hardness": "Medium"}, "func": ["compare_text"], "result": [{"file": ["result.json"]}], "options": [{"score_rule": "all"}], "name": "dm-text-001"}
 {"id": "d8e3f44b-56ea-4498-a795-9c6fafe888ae", "config": {"task": "eda", "type": "text", "metric": "", "threshold": 0.0, "hardness": "Medium"}, "func": ["compare_text"], "result": [{"file": ["result.json"]}], "options": [{"score_rule": "all"}], "name": "dm-text-002"}
-
-
-

@@ -85,16 +85,6 @@ def test(
     
     # log args
     logger.info("Args: %s", args)
-    
-    cfg_args = \
-    {
-        "max_steps": args.max_steps,
-        "max_memory_length": args.max_memory_length,
-        "model": args.model,
-        "temperature": args.temperature,
-        "top_p": args.top_p,
-        "max_tokens": args.max_tokens,
-    }
 
     if args.suffix == "":
         logger.warning("No suffix is provided, the experiment id will be the model name.")
@@ -121,8 +111,8 @@ def test(
     )
     
     ## load task configs
-    assert os.path.exists(args.test_all_meta_path) and args.test_all_meta_path.endswith(".jsonl"), f"Invalid test_all_meta_path, must be a valid jsonl file: {args.test_all_meta_path}"
-    with open(args.test_all_meta_path, "r") as f:
+    assert os.path.exists(args.test_path) and args.test_path.endswith(".jsonl"), f"Invalid test_path, must be a valid jsonl file: {args.test_path}"
+    with open(args.test_path, "r") as f:
         task_configs = [json.loads(line) for line in f]
     if args.example_name != "":
         task_configs = [task for task in task_configs if args.example_name in task["id"]]

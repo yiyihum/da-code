@@ -39,7 +39,7 @@ Arguments:
 ### Evaluate the benchmark
 ```bash
 python evaluate.py \
-    --output_dir output/gpt4 \
+    --output_dir output/gpt4turbo \
     --gold_dir da_code/gold \
     --eval_json da_code/configs/eval_examples.jsonl \
     --result_file results/gpt4.json \
