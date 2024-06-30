@@ -99,28 +99,6 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
     if len(expected) == 0:
         raise TypeError("No dictionary type elements found in the expected list")
     
-    def select_expected(expect):
-        if isinstance(expect, dict):
-            return expect
-        elif isinstance(expect, str) and expect.endswith(".json"):
-            try:
-                with open(expect, 'r') as f:
-                    return json.load(f)
-            except (FileNotFoundError, json.JSONDecodeError) as e:
-                print(f"Error loading JSON: {e}")
-                return None
-        else:
-            return None
-        
-    expected = list(filter(lambda x: x is not None, map(select_expected, expected)))
-    result = result if isinstance(result, list) else [result]
-    score_rule = options.get('score_rule', ['all']*len(expected))
-    ignore_order = options.get('ignore_order', [False]*len(expected))
-    tolerance = 1e-3
-    
-    output_result["options"] = {"score_rule": score_rule, 
-        "ignore_order": ignore_order}
-    
     def text2json(text: str):
         match = re.search(r'\{.*\}', text)
         if match:
@@ -133,8 +111,32 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
         else:
             return None
         
-    result = list(filter(lambda x: x is not None, 
-            map(text2json, result)))
+    def select_expected(expect):
+        if isinstance(expect, dict):
+            return expect
+        elif isinstance(expect, str) and expect.endswith(".json"):
+            try:
+                with open(expect, 'r') as f:
+                    return json.load(f)
+            except (FileNotFoundError, json.JSONDecodeError) as e:
+                print(f"Error loading JSON: {e}")
+                return None
+        elif isinstance(expect, str) and not expect.endswith(".json"):
+            return text2json(expect)
+        else:
+            return None
+        
+    expected = list(filter(lambda x: x is not None, map(select_expected, expected)))
+    result = result if isinstance(result, list) else [result]
+    result = list(filter(lambda x: x is not None, map(select_expected, result)))
+    score_rule = options.get('score_rule', ['all']*len(expected))
+    ignore_order = options.get('ignore_order', [False]*len(expected))
+    tolerance = 1e-3
+    
+    output_result["options"] = {"score_rule": score_rule, 
+        "ignore_order": ignore_order}
+    
+
     if len(result) == 0:
         output_result["score"] = 0.0
         return output_result

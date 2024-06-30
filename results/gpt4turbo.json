@@ -895,8 +895,12 @@
             "info": [
                 {
                     "options": {
-                        "score_rule": [],
-                        "ignore_order": []
+                        "score_rule": [
+                            "all"
+                        ],
+                        "ignore_order": [
+                            false
+                        ]
                     },
                     "score": 0.0,
                     "file": [
@@ -3787,7 +3791,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected columns in result CSV: ['Other_Faults', 'Z_Scratch', 'K_Scatch', 'Dirtiness', 'Stains', 'Pastry', 'Bumps']"
+                        "Unexpected columns in result CSV: ['Pastry', 'Dirtiness', 'Other_Faults', 'K_Scatch', 'Z_Scratch', 'Bumps', 'Stains']"
                     ],
                     "score": 0.0,
                     "file": [
@@ -5796,7 +5800,7 @@
                     },
                     "score": 0.0,
                     "file": [
-                        "result.json"
+                        "{\"highest country\": [\"Malaysia\"], \"lowest country\": [\"Bangladesh\"]}"
                     ]
                 }
             ]
@@ -5871,7 +5875,7 @@
                     },
                     "score": 0.0,
                     "file": [
-                        "result.json"
+                        "{\"highest country\": [], \"Agricultural Land %\": []}"
                     ]
                 }
             ]
@@ -5984,7 +5988,7 @@
                     },
                     "score": 0.0,
                     "file": [
-                        "0.4612850082372323"
+                        "\"\"\n{\n  \"The most frequent experience level\": [\"SE\"],\n  \"ratio\": [0.4612850082372323]\n}\n\"\""
                     ]
                 }
             ]
@@ -6053,7 +6057,9 @@
             "info": [
                 {
                     "options": {
-                        "score_rule": "all",
+                        "score_rule": [
+                            "all"
+                        ],
                         "ignore_order": [
                             false
                         ]
@@ -6111,14 +6117,16 @@
             "info": [
                 {
                     "options": {
-                        "score_rule": "all",
+                        "score_rule": [
+                            "all"
+                        ],
                         "ignore_order": [
                             false
                         ]
                     },
                     "score": 0.0,
                     "file": [
-                        "result.json"
+                        "{\\n  \"Algeria 2030 World Population Percentage\": [0.6071879222571669],\\n  \"Algeria 2040 World Population Percentage\": [0.6718030882156419],\\n  \"Algeria 2050 World Population Percentage\": [0.7432944114868657]\\n}"
                     ]
                 }
             ]

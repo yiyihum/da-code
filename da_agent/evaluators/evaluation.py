@@ -24,7 +24,7 @@ class Evaluator:
         results = results if isinstance(results, list)\
             else [results]
         if 'number' in results[0].keys():
-            return 'number', [results[0]['number']]
+            return 'number', [results[0]['number']] 
         result_files = []
         for result in results:
             multi = result.get("multi", False)
@@ -71,7 +71,13 @@ class Evaluator:
 
         type, gold_results = self.get_result_file(expected, dir=gold_id_dir, isgold=True)
         if type == 'number':
-            output_results = [trajectory_info["result"]]
+            output_type = ['.txt', '.json', '.png', '.jpg', '.csv', '.npy']
+            output = trajectory_info["result"]
+            is_file = any(map(lambda x: output.endswith(x), output_type))
+            if not is_file:
+                output_results = [trajectory_info["result"]]
+            else:
+                output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
         else:
             output_results = self._get_result_file_from_json(output_id_dir, trajectory_info["result"], is_plot=(config["task"] == "data visualization"))
             if len(output_results) != len(gold_results):
