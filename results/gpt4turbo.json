@@ -1,6 +1,6 @@
 {
     "num_results": 101,
-    "average_score": 0.23027693368103097,
+    "average_score": 0.24017792378004085,
     "results": [
         {
             "id": "6b1e64ca-4032-482e-ae04-a835ceafed71",
@@ -866,11 +866,11 @@
         },
         {
             "id": "a71aa2af-2f64-4b56-974e-47e7caa75757",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "hardness": "none",
             "finished": true,
             "steps": 3,
-            "result": "0.08396",
+            "result": "{\"result\": [0.08396]}",
             "added_files": [
                 "output/gpt4turbo/di007/analyze_deaths.py"
             ],
@@ -902,9 +902,9 @@
                             false
                         ]
                     },
-                    "score": 0.0,
+                    "score": 1.0,
                     "file": [
-                        "0.08396"
+                        "{\"result\": [0.08396]}"
                     ]
                 }
             ]
@@ -3791,7 +3791,7 @@
             "info": [
                 {
                     "errors": [
-                        "Unexpected columns in result CSV: ['Pastry', 'Dirtiness', 'Other_Faults', 'K_Scatch', 'Z_Scratch', 'Bumps', 'Stains']"
+                        "Unexpected columns in result CSV: ['Pastry', 'Other_Faults', 'Dirtiness', 'Z_Scratch', 'K_Scatch', 'Bumps', 'Stains']"
                     ],
                     "score": 0.0,
                     "file": [

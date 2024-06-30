@@ -1,7 +1,7 @@
 {
   "finished": true,
   "steps": 3,
-  "result": "0.08396",
+  "result": "{\"result\": [0.08396]}",
   "result_files": {
     "added_files": [
       "output/gpt4turbo/di007/analyze_deaths.py"
