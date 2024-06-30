@@ -41,6 +41,12 @@ def convert_config_to_uuid(uuid_path: str, src: str):
         lambda line: {**line, "id": task2uuid.get(line["name"], line["name"])},
         lines
     ))
+    
+    for line in lines:
+        for config in line["config"]:
+            param = config["parameters"]["dirs"]
+            config["parameters"]["dirs"] = [dir.replace(line["name"], line["id"]) for dir in param]
+        
     src = os.path.abspath(src)
     tgt = os.path.join(os.path.dirname(src), "uuid_" + os.path.basename(src))
     with jsonlines.open(tgt, 'w') as f:
@@ -82,10 +88,14 @@ def convert_result_to_uuid(uuid_path: str, src_path:str):
     
 uuid_path = './da_code/configs/id2uuid.json'
 src = './da_code/configs/examples.jsonl'
-dir_path = './output/gpt4'
-src_path = "results/gpt4.json"
+dir_path = './da_code/source'
+src_path = "results/examples.json"
+add_lists = ["di-text-001", "di-text-002", "di-text-003", "di-text-004", "dm-text-001",
+            "dm-text-002", "data-sa-061", "ml-binary-016"]
 
-convert_config_to_uuid(uuid_path, src)
+#add_uuid(uuid_path, add_list=add_lists)
+#convert_config_to_uuid(uuid_path, src)
+convert_dirname_to_uuid(uuid_path, dir_path)
     
             
         

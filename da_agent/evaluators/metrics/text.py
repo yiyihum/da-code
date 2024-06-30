@@ -83,7 +83,7 @@ class CalculateText:
             
         
         
-def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]], **options) -> float:
+def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict], str, List[str]], **options) -> float:
     """ 
     @args:
         result(Union[str, List[str]): the pred csv file
@@ -94,11 +94,25 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
             - total_scores(int|List(int)): the total scores for the answer, mostly 1
     """
     output_result = {}
-    expected = list(filter(lambda x : isinstance(x, dict), expected)) \
+    expected = expected \
         if isinstance(expected, list) else [expected]
     if len(expected) == 0:
         raise TypeError("No dictionary type elements found in the expected list")
     
+    def select_expected(expect):
+        if isinstance(expect, dict):
+            return expect
+        elif isinstance(expect, str) and expect.endswith(".json"):
+            try:
+                with open(expect, 'r') as f:
+                    return json.load(f)
+            except (FileNotFoundError, json.JSONDecodeError) as e:
+                print(f"Error loading JSON: {e}")
+                return None
+        else:
+            return None
+        
+    expected = list(filter(lambda x: x is not None, map(select_expected, expected)))
     result = result if isinstance(result, list) else [result]
     score_rule = options.get('score_rule', ['all']*len(expected))
     ignore_order = options.get('ignore_order', [False]*len(expected))

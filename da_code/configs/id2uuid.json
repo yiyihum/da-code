@@ -96,5 +96,13 @@
     "ml-cluster-008": "4020451a-14f4-449c-bd4f-080791e12553",
     "ml-regression-009": "7616e940-3db9-43ca-8ea9-f51fe2a163c5",
     "dw-clean-007": "f8943c34-67c7-4677-b746-8c76c7d13548",
-    "ml-binary-012": "a3388051-01b9-4c23-8778-10324b63b5f2"
+    "ml-binary-012": "a3388051-01b9-4c23-8778-10324b63b5f2",
+    "di-text-001": "b3a6eae4-1021-414c-b19e-6fac0b20b74f",
+    "di-text-002": "f634ffb2-9258-45a7-bd1e-2933804b624e",
+    "di-text-003": "9dd1f14c-3b26-4217-9e13-6a53a6c1811e",
+    "di-text-004": "2362cea0-4220-4895-8979-979d04d59a4d",
+    "dm-text-001": "034a5c57-d937-45b9-99b2-46dfc07a76fe",
+    "dm-text-002": "d8e3f44b-56ea-4498-a795-9c6fafe888ae",
+    "data-sa-061": "fbc01026-bdba-4534-af33-c781e3736dba",
+    "ml-binary-016": "175d53f0-d57a-41cb-aafc-a133368b19c2"
 }

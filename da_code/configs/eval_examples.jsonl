@@ -91,3 +91,14 @@
 {"id": "b2db939a-3138-48fa-8e18-ab720c48542e", "config": {"task": "data visualization", "type": "scatter", "metric": "", "threshold": 0.0, "hardness": "Hard"}, "func": ["compare_image"], "result": [{"multi": true, "file": ["result.png", "dabench/plot.json", "dabench/result.npy"]}], "options": [{"keys": ["x_label", "y_label", "labels"]}], "name": "plot-scatter-002"}
 {"id": "f5b55fd2-6a2d-4bd8-ba55-21b5673916ef", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true}], "name": "text2sql001"}
 {"id": "4b5c69c4-8188-4516-b3a4-09de6dea0fa1", "config": {"task": "EDA"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}], "name": "text2sql002"}
+{"id": "175d53f0-d57a-41cb-aafc-a133368b19c2", "config": {"task": "machinelearning", "type": "binary classification", "metric": "f1", "upper_bound": 0.9637600000000001, "lower_bound": 0.6, "hardness": "Hard"}, "func": ["compare_ml"],"result": [{"file": "defaulter.csv"}],"options": [{"target_column": "IsDefaulter"}], "name": "ml-binary-016"}
+{"id": "fbc01026-bdba-4534-af33-c781e3736dba", "config": {"task": "sa", "type": "text", "metric": "","hardness": "Easy"}, "func": ["compare_text"], "result": [{"file": ["result.json"]}], "options": [{}], "name": "data-sa-061"}
+{"id": "b3a6eae4-1021-414c-b19e-6fac0b20b74f", "config": {"task": "EDA"}, "func": ["compare_text"],"result": [{"file": ["result.json"]}], "options": [{}], "name": "di-text-001"}
+{"id": "f634ffb2-9258-45a7-bd1e-2933804b624e", "config": {"task": "EDA"}, "func": ["compare_text"],"result": [{"file": ["result.json"]}], "options": [{}], "name": "di-text-002"}
+{"id": "9dd1f14c-3b26-4217-9e13-6a53a6c1811e", "config": {"task": "EDA"}, "func": ["compare_text"],"result": [{"file": ["result.json"]}], "options": [{}], "name": "di-text-003"}
+{"id": "2362cea0-4220-4895-8979-979d04d59a4d", "config": {"task": "EDA"}, "func": ["compare_text"],"result": [{"file": ["result.json"]}], "options": [{}], "name": "di-text-004"}
+{"id": "034a5c57-d937-45b9-99b2-46dfc07a76fe", "config": {"task": "eda", "type": "text", "metric": "", "threshold": 0.0, "hardness": "Medium"}, "func": ["compare_text"], "result": [{"file": ["result.json"]}], "options": [{"score_rule": "all"}], "name": "dm-text-001"}
+{"id": "d8e3f44b-56ea-4498-a795-9c6fafe888ae", "config": {"task": "eda", "type": "text", "metric": "", "threshold": 0.0, "hardness": "Medium"}, "func": ["compare_text"], "result": [{"file": ["result.json"]}], "options": [{"score_rule": "all"}], "name": "dm-text-002"}
+
+
+
