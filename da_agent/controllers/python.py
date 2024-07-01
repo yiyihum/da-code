@@ -100,18 +100,15 @@ class PythonController:
     
     def execute_python_file(self, file_path: str, content: str):
         escaped_content = content.replace('"', '\\"').replace('`', '\\`').replace('$', '\\$')
-        # 组合文件路径，确保它是容器内的绝对路径
         if not file_path.startswith('/'):
             if platform.system() == 'Windows':
                 file_path = self.work_dir + '/' + file_path
             else:
                 file_path = os.path.join(self.work_dir, file_path)
-        # 确保目录存在
         dir_path = os.path.dirname(file_path)
         mkdir_command = f"mkdir -p {dir_path}"
         self.execute_command(mkdir_command)
 
-        # 写入内容到文件
         create_command = f'echo "{escaped_content}" > {file_path} && python3 {file_path}'
         return self.execute_command(create_command)
     
@@ -141,7 +138,6 @@ class PythonController:
         mkdir_command = f"mkdir -p {dir_path}"
         self.execute_command(mkdir_command)
 
-        # 写入内容到文件
         create_command = f'echo "{escaped_content}" > {file_path}'
 
         return self.execute_command(create_command)

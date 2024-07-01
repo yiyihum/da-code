@@ -16,13 +16,6 @@ from typing import Dict, List, Optional, Tuple, Any, TypedDict
 
 from agent.models import call_llm
 
-# TODO: 
-# add time limit for each action ✅
-# add length limit for each ovbservation  ✅
-# process contant policy violation ⭕️
-# process massage too long ✅
-# create file & edit 加一个检查 比如符合csv的格式 ✅
-
 MAX_OBSERVATION_LENGTH = 2000
 TIME_OUT_ACTION = 600
 
