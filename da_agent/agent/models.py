@@ -42,7 +42,7 @@ def call_llm(payload):
                 return True, output_message
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
-                error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                error_info = e.response.json()  
                 code_value = error_info['error']['code']
                 if code_value == "content_filter":
                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -68,7 +68,7 @@ def call_llm(payload):
                 return True, response
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
-                error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                error_info = e.response.json()  
                 code_value = error_info['error']['code']
                 if code_value == "content_filter":
                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -131,7 +131,7 @@ def call_llm(payload):
                 if response.status_code == 200:
                     return True, response.json()['choices'][0]['message']['content']
                 else:
-                    error_info = response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                    error_info = response.json()  
                     code_value = error_info['error']['code']
                     if code_value == "content_filter":
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -209,7 +209,7 @@ def call_llm(payload):
     #             logger.error("Failed to call LLM: " + str(e))
     #             time.sleep(10 * (2 ** (i + 1)))
     #             if hasattr(e, 'response'):
-    #                 error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+    #                 error_info = e.response.json()  
     #                 code_value = error_info['error']['code']
     #                 if code_value == "content_filter":
     #                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -269,7 +269,7 @@ def call_llm(payload):
                 logger.error("Failed to call LLM: " + str(e))
                 time.sleep(10 * (2 ** (i + 1)))
                 if hasattr(e, 'response'):
-                    error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                    error_info = e.response.json()  
                     code_value = error_info['error']['code']
                     if code_value == "content_filter":
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -323,7 +323,7 @@ def call_llm(payload):
                 logger.error("Failed to call LLM: " + str(e))
                 time.sleep(10 * (2 ** (i + 1)))
                 if hasattr(e, 'response'):
-                    error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                    error_info = e.response.json()  
                     code_value = error_info['error']['code']
                     if code_value == "content_filter":
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -394,7 +394,7 @@ def call_llm(payload):
                 logger.error("Failed to call LLM: " + str(e))
                 time.sleep(10 * (2 ** (i + 1)))
                 if hasattr(e, 'response'):
-                    error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                    error_info = e.response.json()  
                     code_value = error_info['error']['code']
                     if code_value == "content_filter":
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -427,7 +427,7 @@ def call_llm(payload):
         # except Exception as e:
         #     logger.error("Failed to call LLM: " + str(e))
         #     time.sleep(10 * (2 ** (i + 1)))
-        #     error_info = e.response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+        #     error_info = e.response.json()  
         #     code_value = error_info['error']['code']
         #     response = error_info['error']['message']
         
@@ -474,7 +474,7 @@ def call_llm(payload):
                 logger.error("Failed to call LLM: " + str(e))
                 time.sleep(10 * (2 ** (i + 1)))
                 # if hasattr(e, 'response'):
-                #     error_info = e.response  # 假设异常对象有 response 属性并包含 JSON 数据
+                #     error_info = e.response  
                 #     code_value = error_info['error']['param']
                 #     if "content" in code_value:
                 #         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
@@ -584,7 +584,7 @@ def call_llm(payload):
                 if response.status_code == 200:
                     return True, response.json()['choices'][0]['message']['content']
                 else:
-                    error_info = response.json()  # 假设异常对象有 response 属性并包含 JSON 数据
+                    error_info = response.json()  
                     code_value = error_info['error']['code']
                     if code_value == "content_filter":
                         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):

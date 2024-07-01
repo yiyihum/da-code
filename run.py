@@ -125,9 +125,6 @@ def test(
                 indices = list(map(int, args.example_index.split(",")))
                 task_configs = [task_configs[i] for i in indices]
     
-    # TODO: record the task state
-    # save all setting to output_dir
-    # delete container after finish ✅
     for task_config in task_configs:
         instance_id = experiment_id +"/"+ task_config["id"]
         output_dir = os.path.join(args.output_dir, instance_id)

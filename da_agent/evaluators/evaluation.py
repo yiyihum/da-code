@@ -152,7 +152,6 @@ class Evaluator:
             if step["action"].startswith("Bash"):
                 actions.append(("Bash", step["code"], observation))
             elif step["action"].startswith("Python"):
-                # 保存有多少行代码，即有多少个\n
                 actions.append(("Python", len(step["code"].split("\n")), observation))
             elif step["action"].startswith("SQL"):
                 actions.append(("SQL", step["code"], observation))
@@ -170,14 +169,11 @@ class Evaluator:
 
 
     def _get_result_file_from_json(self, output_id_dir, result_file, is_plot=False):
-            # 正则表达式匹配文件路径和文件名，路径和文件名可以包含字母、数字、下划线、破折号和点
         pattern = r'\b(?:[\w/\-_]+/)?([\w\-_]+(\.\w+)+)\b'
-        # 使用findall找到所有匹配的文件名
         filenames = re.findall(pattern, result_file)
         if not filenames:
             # print(f"File not found : {result_file}; dir: {output_id_dir}")
             return []
-        # findall返回的是元组列表，我们只需要文件名部分
         filenames = [filename[0] for filename in filenames]
         result_file = [os.path.join(output_id_dir, file) for file in filenames]
             # print(f"result_file: {result_file}")
