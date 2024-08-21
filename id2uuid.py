@@ -14,6 +14,7 @@ def create_uuid(src: str):
         json.dump(uuids, js, indent=4)
 
 def add_uuid(uuid_path: str, add_list: list):
+### generate uuid different from existing uuid
     with open(uuid_path, 'r') as f:
         task2uuid = json.load(f)
     uuids = task2uuid.values()
@@ -29,6 +30,7 @@ def add_uuid(uuid_path: str, add_list: list):
 
     
 def convert_config_to_uuid(uuid_path: str, src: str, is_eval: bool):
+### convert the id in task config or eval config to uuid
     with open(uuid_path, 'r') as js:
         task2uuid = json.load(js)
     with jsonlines.open(src, 'r') as f:
@@ -53,6 +55,7 @@ def convert_config_to_uuid(uuid_path: str, src: str, is_eval: bool):
         f.write_all(lines)
 
 def convert_dirname_to_uuid(uuid_path: str, dir_path: str):
+### convert the dirname in task configs to uuid
     with open(uuid_path, 'r') as js:
         task2uuid = json.load(js)
     sub_dirs = os.listdir(dir_path)
@@ -66,6 +69,7 @@ def convert_dirname_to_uuid(uuid_path: str, dir_path: str):
         os.rename(src_path, tgt_path)
     
 def convert_result_to_uuid(uuid_path: str, src_path:str):
+### convert id in the dabench/result.json to uuid
     with open(src_path, 'r') as f:
         results = json.load(f)
     with open(uuid_path, 'r') as js:
