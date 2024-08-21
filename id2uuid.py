@@ -28,7 +28,7 @@ def add_uuid(uuid_path: str, add_list: list):
         json.dump(task2uuid, f, indent=4)
 
     
-def convert_config_to_uuid(uuid_path: str, src: str):
+def convert_config_to_uuid(uuid_path: str, src: str, is_eval: bool):
     with open(uuid_path, 'r') as js:
         task2uuid = json.load(js)
     with jsonlines.open(src, 'r') as f:
@@ -41,11 +41,11 @@ def convert_config_to_uuid(uuid_path: str, src: str):
         lambda line: {**line, "id": task2uuid.get(line["name"], line["name"])},
         lines
     ))
-    
-    for line in lines:
-        for config in line["config"]:
-            param = config["parameters"]["dirs"]
-            config["parameters"]["dirs"] = [dir.replace(line["name"], line["id"]) for dir in param]
+    if not is_eval:
+        for line in lines:
+            for config in line["config"]:
+                param = config["parameters"]["dirs"]
+                config["parameters"]["dirs"] = [dir.replace(line["name"], line["id"]) for dir in param]
         
     src = os.path.abspath(src)
     tgt = os.path.join(os.path.dirname(src), "uuid_" + os.path.basename(src))
@@ -87,15 +87,17 @@ def convert_result_to_uuid(uuid_path: str, src_path:str):
     
     
 uuid_path = './da_code/configs/id2uuid.json'
-src = './da_code/configs/examples.jsonl'
+src = 'da_code/configs/visual.jsonl'
 dir_path = './da_code/source'
-src_path = "results/examples.json"
-add_lists = ["di-text-001", "di-text-002", "di-text-003", "di-text-004", "dm-text-001",
-            "dm-text-002", "data-sa-061", "ml-binary-016"]
+src_path = "da_code/configs/visual.jsonl"
 
-#add_uuid(uuid_path, add_list=add_lists)
-#convert_config_to_uuid(uuid_path, src)
-convert_dirname_to_uuid(uuid_path, dir_path)
+with jsonlines.open("da_code/configs/eval_dm.jsonl", "r") as f:
+    add_lists = [obj["id"] for obj in f]
+        
+
+# add_uuid(uuid_path, add_list=add_lists)
+convert_config_to_uuid(uuid_path, src, is_eval=False)
+# convert_dirname_to_uuid(uuid_path, dir_path)
     
             
         
