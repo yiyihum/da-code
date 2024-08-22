@@ -70,8 +70,11 @@ def convert_dirname_to_uuid(uuid_path: str, dir_path: str):
     
 def convert_result_to_uuid(uuid_path: str, src_path:str):
 ### convert id in the dabench/result.json to uuid
-    with open(src_path, 'r') as f:
-        results = json.load(f)
+    with jsonlines.open(src_path, 'r') as f:
+        for line in f:
+            print(line)
+        results = [line for line in f]
+            
     with open(uuid_path, 'r') as js:
         task2uuid = json.load(js)
     
@@ -91,15 +94,14 @@ def convert_result_to_uuid(uuid_path: str, src_path:str):
     
     
 uuid_path = './da_code/configs/id2uuid.json'
-src = 'da_code/configs/visual.jsonl'
+src = 'da_code/configs/task/visual.jsonl'
 dir_path = './da_code/source'
-src_path = "da_code/configs/visual.jsonl"
 
-with jsonlines.open("da_code/configs/eval_dm.jsonl", "r") as f:
+with jsonlines.open("da_code/configs/eval/eval_ml.jsonl", "r") as f:
     add_lists = [obj["id"] for obj in f]
         
-
 # add_uuid(uuid_path, add_list=add_lists)
+ 
 convert_config_to_uuid(uuid_path, src, is_eval=False)
 # convert_dirname_to_uuid(uuid_path, dir_path)
     
