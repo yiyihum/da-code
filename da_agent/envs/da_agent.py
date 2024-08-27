@@ -52,7 +52,6 @@ class DA_Agent_Env(gym.Env):
               * base snapshot
               * task id (uuid)
               * instruction
-              * setup config
 
             tmp_dir (str): temporary directory to store trajectory stuffs like
               the extracted screenshots
@@ -77,7 +76,10 @@ class DA_Agent_Env(gym.Env):
         self.setup_controller = SetupController(container=self.container, cache_dir=self.cache_dir)
         
         logger.info("Setting up environment...")
-        self.setup_controller.setup(self.config)
+        
+        dir = os.path.join(self.source_dir, self.task_id)
+        assert os.path.isdir(dir), f"Task directory {dir} does not exist."
+        self.setup_controller.setup_cp_dir(dir)
         self.init_files_hash = self._get_env_files_hash()
         time.sleep(2)
         logger.info("Environment setup complete.")
@@ -89,7 +91,6 @@ class DA_Agent_Env(gym.Env):
         self.cache_dir: str = os.path.join(self.cache_dir_base, self.task_id)
         # os.makedirs(self.cache_dir, exist_ok=True)
         self.instruction = task_config["instruction"]
-        self.config = task_config["config"] if "config" in task_config else []
         self.post_process_func = task_config["post_process"] if "post_process" in task_config else []
 
 
@@ -146,8 +147,6 @@ class DA_Agent_Env(gym.Env):
         logger.info(f"Container {self.container_name} stopped and removed.")
         
     def _construct_container(self):
-        import pdb; pdb.set_trace()
-        
         client = docker.from_env()
         container_name = self.container_name
         #### delete existing container
