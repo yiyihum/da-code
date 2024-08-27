@@ -28,7 +28,8 @@ Arguments:
 - `--top_p`: Top p sampling parameter (default is 0.9)
 - `--max_tokens`: Maximum number of tokens per generation (default is 1500)
 - `--stop_token`: Token that triggers stop in generation (default is None)
-- `--test_all_meta_path`: Path to the meta configuration file (default is "da_code/configs/examples.jsonl")
+- `--task_config`: Path to the meta configuration file (default is "da_code/configs/examples.jsonl")
+- `--source_dir`: Directory for source files (default is "da_code/source")
 - `--example_index`: Index range of the examples to run (default is "all")
 - `--example_name`: Name of the example to run (default is an empty string)
 - `--overwriting`: Enables overwriting existing files (default is False)
@@ -41,7 +42,7 @@ Arguments:
 python evaluate.py \
     --output_dir output/gpt4turbo \
     --gold_dir da_code/gold \
-    --eval_json da_code/configs/eval_examples.jsonl \
+    --eval_json da_code/configs/eval/eval_examples.jsonl \
     --result_file results/gpt4.json \
     --timeout_seconds 300
 ```
@@ -65,8 +66,3 @@ unzip source.zip -d da_code/source
 ```bash
 unzip gold.zip -d da_code/gold
 ```
-
-
-
-
-

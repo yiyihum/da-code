@@ -41,7 +41,7 @@ class DA_Agent_Env(gym.Env):
     DesktopEnv with OpenAI Gym interface.
     Fixme: refactor the logic when implementing the multi-process version
     """
-    def __init__(self, env_config, task_config, cache_dir, mnt_dir):
+    def __init__(self, env_config, task_config, source_dir, cache_dir, mnt_dir):
         """
         Args:
             path_to_vm (str): path to .vmx file
@@ -64,6 +64,7 @@ class DA_Agent_Env(gym.Env):
         self.cache_dir_base = cache_dir
         self.container_name = env_config['init_args']['name']
         self.image_name = env_config['image_name']
+        self.source_dir = source_dir
         self.mnt_dir = mnt_dir
         self.work_dir = DEFAULT_WORK_DIR
         self.kwargs = env_config['init_args']
@@ -145,6 +146,7 @@ class DA_Agent_Env(gym.Env):
         logger.info(f"Container {self.container_name} stopped and removed.")
         
     def _construct_container(self):
+        import pdb; pdb.set_trace()
         
         client = docker.from_env()
         container_name = self.container_name

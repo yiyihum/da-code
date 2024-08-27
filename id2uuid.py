@@ -92,18 +92,20 @@ def convert_result_to_uuid(uuid_path: str, src_path:str):
     with open(tgt, 'w') as f:
         json.dump(results, f, indent=4)
     
-    
-uuid_path = './da_code/configs/id2uuid.json'
-src = 'da_code/configs/task/visual.jsonl'
-dir_path = './da_code/source'
 
-with jsonlines.open("da_code/configs/eval/eval_ml.jsonl", "r") as f:
-    add_lists = [obj["id"] for obj in f]
-        
-# add_uuid(uuid_path, add_list=add_lists)
- 
-convert_config_to_uuid(uuid_path, src, is_eval=False)
-# convert_dirname_to_uuid(uuid_path, dir_path)
+if __name__ == "__main__":
+    
+    uuid_path = './da_code/configs/id2uuid.json'
+    # src = 'da_code/configs/task/visual.jsonl'
+    dir_path = '/home/v-yimhuang/dabench/visual'
+
+    # with jsonlines.open("da_code/configs/eval/eval_ml.jsonl", "r") as f:
+    #     add_lists = [obj["id"] for obj in f]
+            
+    # add_uuid(uuid_path, add_list=add_lists)
+    
+    # convert_config_to_uuid(uuid_path, src, is_eval=False)
+    convert_dirname_to_uuid(uuid_path, dir_path)
     
             
         

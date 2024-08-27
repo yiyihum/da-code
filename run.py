@@ -63,7 +63,8 @@ def config() -> argparse.Namespace:
     parser.add_argument("--stop_token", type=str, default=None)
     
     # example config
-    parser.add_argument("--test_path","-t", type=str, default="da_code/configs/examples.jsonl")
+    parser.add_argument("--task_config","-t", type=str, default="da_code/configs/task/examples.jsonl")
+    parser.add_argument("--source_dir", type=str, default="da_code/source")
     parser.add_argument("--example_index", "-i", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--example_name", "-n", type=str, default="", help="name of the example to run")
     parser.add_argument("--overwriting", action="store_true", default=False)
@@ -111,8 +112,8 @@ def test(
     )
     
     ## load task configs
-    assert os.path.exists(args.test_path) and args.test_path.endswith(".jsonl"), f"Invalid test_path, must be a valid jsonl file: {args.test_path}"
-    with open(args.test_path, "r") as f:
+    assert os.path.exists(args.task_config) and args.task_config.endswith(".jsonl"), f"Invalid task_config, must be a valid jsonl file: {args.task_config}"
+    with open(args.task_config, "r") as f:
         task_configs = [json.loads(line) for line in f]
     if args.example_name != "":
         task_configs = [task for task in task_configs if args.example_name in task["id"]]
@@ -154,6 +155,7 @@ def test(
         env = DA_Agent_Env(
             env_config=env_config,
             task_config=task_config,
+            source_dir=args.source_dir,
             cache_dir="./cache",
             mnt_dir=output_dir
         )

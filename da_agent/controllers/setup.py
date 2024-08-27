@@ -109,3 +109,20 @@ class SetupController:
         cmd = ["sh", "-c", command]
         exit_code, output = self.container.exec_run(cmd)
         return output.decode("utf-8").strip()
+
+    def _copy_all_subfiles_setup(self, dirs: List[str]):
+        mnt_dir = self.mnt_dir
+        for dir in dirs:
+            # change the father directory to  self.source_dir
+            file_name = os.path.basename(dir)
+            dir = os.path.join(self.source_dir, file_name)
+
+            if os.path.isfile(dir):
+                print(f"Warning: {dir} is a file, not a directory. Copying the file to {mnt_dir}.")
+                shutil.copy2(dir, mnt_dir)
+            elif os.path.isdir(dir):
+                print(f"Copying all files in {dir} to {mnt_dir}.")
+                shutil.copytree(dir, mnt_dir, dirs_exist_ok=True)
+            else:
+                print(f"Warning: {dir} is neither a file nor a directory.")
+        return
