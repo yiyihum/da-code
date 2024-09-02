@@ -1,6 +1,6 @@
 {
-    "num_results": 79,
-    "average_score": 0.6835443037974683,
+    "num_results": 78,
+    "average_score": 0.7051282051282052,
     "results": [
         {
             "id": "plot-bar-001",
@@ -345,11 +345,11 @@
             "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
-            "steps": 5,
+            "steps": 9,
             "result": "team.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-006/team.png",
-                "output/gpt-4o/plot-bar-006/compile_scores.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-006/team.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-006/plot_team_performance.py"
             ],
             "changed_files": [],
             "actions": [
@@ -360,12 +360,32 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 results.csv",
+                    "cat plot.yaml",
                     "standard output"
                 ],
                 [
                     "Python",
-                    42,
+                    33,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    33,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    34,
                     "execution succeeded"
                 ],
                 [
@@ -384,11 +404,11 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
-                    "figsize": false,
-                    "graph_title": false,
-                    "x_label": false,
-                    "y_label": false,
-                    "xtick_labels": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
                     "score": 0.0,
                     "file": [
                         "team.png",
@@ -483,11 +503,11 @@
             "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 6,
+            "steps": 10,
             "result": "distribution.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-008/gender_distribution.py",
-                "output/gpt-4o/plot-bar-008/distribution.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-008/gender_distribution.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-008/distribution.png"
             ],
             "changed_files": [],
             "actions": [
@@ -498,17 +518,37 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 multipleChoiceResponses.csv",
+                    "cat plot_details.txt",
                     "standard output"
                 ],
                 [
                     "Bash",
-                    "head -n 10 SurveySchema.csv",
+                    "head -n 5 multipleChoiceResponses.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 multipleChoiceResponses.csv | tr ',' '\\n' | grep -i 'gender\\|country'",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 multipleChoiceResponses.csv | cut -d',' -f1-20",
                     "standard output"
                 ],
                 [
                     "Python",
-                    27,
+                    48,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    48,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    48,
                     "execution succeeded"
                 ],
                 [
@@ -531,7 +571,7 @@
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "xtick_labels": false,
+                    "xtick_labels": true,
                     "score": 0.0,
                     "file": [
                         "distribution.png",
@@ -543,16 +583,18 @@
         },
         {
             "id": "plot-bar-009",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 12,
+            "steps": 13,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-009/inspect_coaches.py",
-                "output/gpt-4o/plot-bar-009/inspect_medals.py",
-                "output/gpt-4o/plot-bar-009/result.png",
-                "output/gpt-4o/plot-bar-009/process_and_plot.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-009/inspect_athletes_coaches.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-009/analyze_medals.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-009/top_10_countries_data.csv",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-009/inspect_medals.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-009/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-009/create_bar_chart.py"
             ],
             "changed_files": [],
             "actions": [
@@ -573,7 +615,32 @@
                 ],
                 [
                     "Python",
-                    42,
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    8,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    14,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    53,
                     "error message"
                 ],
                 [
@@ -583,28 +650,96 @@
                 ],
                 [
                     "Python",
-                    42,
-                    "error message"
+                    53,
+                    "execution succeeded"
                 ],
                 [
-                    "Python",
-                    8,
-                    "warning message"
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
                 ],
                 [
-                    "Python",
-                    42,
-                    "error message"
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 11,
+            "result": "result.png",
+            "added_files": [
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-010/calculate_mutual_information.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-010/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
                 ],
                 [
-                    "Python",
-                    8,
-                    "warning message"
+                    "Bash",
+                    "cat guidance.txt plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "python3 calculate_mutual_information.py",
+                    "standard output"
                 ],
                 [
                     "Python",
                     41,
-                    "warning message"
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    41,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    42,
+                    "execution succeeded"
                 ],
                 [
                     "Bash",
@@ -624,92 +759,6 @@
                     "scale_data": false,
                     "figsize": true,
                     "graph_title": true,
-                    "x_label": true,
-                    "y_label": true,
-                    "xtick_labels": true,
-                    "score": 0.0,
-                    "file": [
-                        "result.png",
-                        "plot.json",
-                        "result.npy"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "plot-bar-010",
-            "total_score": 0.0,
-            "hardness": "Medium",
-            "finished": true,
-            "steps": 10,
-            "result": "result.png",
-            "added_files": [
-                "output/gpt-4o/plot-bar-010/calculate_mutual_information.py",
-                "output/gpt-4o/plot-bar-010/result.png",
-                "output/gpt-4o/plot-bar-010/create_bar_chart.py",
-                "output/gpt-4o/plot-bar-010/mutual_information_scores.csv"
-            ],
-            "changed_files": [],
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l",
-                    "standard output"
-                ],
-                [
-                    "Bash",
-                    "cat guidance.txt",
-                    "standard output"
-                ],
-                [
-                    "Bash",
-                    "head -n 10 data.csv",
-                    "standard output"
-                ],
-                [
-                    "Python",
-                    26,
-                    "error message"
-                ],
-                [
-                    "Python",
-                    28,
-                    "error message"
-                ],
-                [
-                    "Python",
-                    31,
-                    "execution succeeded"
-                ],
-                [
-                    "Bash",
-                    "cat plot.yaml",
-                    "standard output"
-                ],
-                [
-                    "Python",
-                    17,
-                    "execution succeeded"
-                ],
-                [
-                    "Bash",
-                    "ls -l result.png",
-                    "standard output"
-                ],
-                [
-                    "Terminate",
-                    "",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "figsize": false,
-                    "graph_title": true,
-                    "x_label": false,
                     "xtick_labels": false,
                     "score": 0.0,
                     "file": [
@@ -728,8 +777,8 @@
             "steps": 5,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-011/analyze_airbnb_listings.py",
-                "output/gpt-4o/plot-bar-011/result.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-011/analyze_airbnb_listings.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-011/result.png"
             ],
             "changed_files": [],
             "actions": [
@@ -745,7 +794,7 @@
                 ],
                 [
                     "Python",
-                    35,
+                    36,
                     "execution succeeded"
                 ],
                 [
@@ -779,8 +828,8 @@
             "steps": 5,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-012/result.png",
-                "output/gpt-4o/plot-bar-012/analyze_living_arrangements.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-012/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-012/analyze_living_arrangements.py"
             ],
             "changed_files": [],
             "actions": [
@@ -796,7 +845,7 @@
                 ],
                 [
                     "Python",
-                    21,
+                    28,
                     "execution succeeded"
                 ],
                 [
@@ -817,9 +866,8 @@
                     "scale_data": false,
                     "figsize": false,
                     "graph_title": true,
-                    "x_label": false,
-                    "y_label": false,
-                    "xtick_labels": false,
+                    "x_label": true,
+                    "y_label": true,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -912,10 +960,10 @@
             "hardness": "Medium",
             "finished": true,
             "steps": 4,
-            "result": "missing_values_bar_chart.png",
+            "result": "output.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-014/analyze_missing_values.py",
-                "output/gpt-4o/plot-bar-014/missing_values_bar_chart.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-014/output.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-014/analyze_missing_values.py"
             ],
             "changed_files": [],
             "actions": [
@@ -926,12 +974,12 @@
                 ],
                 [
                     "Python",
-                    25,
+                    28,
                     "execution succeeded"
                 ],
                 [
                     "Bash",
-                    "ls -l missing_values_bar_chart.png",
+                    "ls -l output.png",
                     "standard output"
                 ],
                 [
@@ -943,16 +991,16 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "figsize": false,
                     "graph_title": false,
                     "x_label": true,
                     "y_label": true,
-                    "xtick_labels": false,
+                    "xtick_labels": true,
                     "score": 0.0,
                     "file": [
-                        "missing_values_bar_chart.png",
+                        "output.png",
                         "plot.json",
                         "result.npy"
                     ]
@@ -967,8 +1015,8 @@
             "steps": 5,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-015/result.png",
-                "output/gpt-4o/plot-bar-015/process_sales_data.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-015/analyze_sales.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-015/result.png"
             ],
             "changed_files": [],
             "actions": [
@@ -984,7 +1032,7 @@
                 ],
                 [
                     "Python",
-                    36,
+                    35,
                     "warning message"
                 ],
                 [
@@ -1003,11 +1051,16 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "type": true,
+                    "color": false,
                     "figsize": false,
                     "graph_title": false,
+                    "legend_title": true,
+                    "labels": true,
                     "x_label": true,
                     "y_label": false,
                     "xtick_labels": true,
+                    "ytick_labels": false,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -1022,13 +1075,13 @@
             "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 13,
+            "steps": 11,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-016/generate_bar_chart.py",
-                "output/gpt-4o/plot-bar-016/olist.sqlite",
-                "output/gpt-4o/plot-bar-016/top_10_product_categories.csv",
-                "output/gpt-4o/plot-bar-016/result.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-016/generate_bar_chart.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-016/olist.sqlite",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-016/top_10_categories.csv",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-016/result.png"
             ],
             "changed_files": [],
             "actions": [
@@ -1058,21 +1111,6 @@
                     "standard output"
                 ],
                 [
-                    "Python",
-                    22,
-                    "error message"
-                ],
-                [
-                    "Bash",
-                    "pip install pyyaml",
-                    "standard output"
-                ],
-                [
-                    "Python",
-                    22,
-                    "error message"
-                ],
-                [
                     "Bash",
                     "cat plot.yaml",
                     "standard output"
@@ -1081,6 +1119,11 @@
                     "Python",
                     22,
                     "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
                 ],
                 [
                     "Python",
@@ -1100,14 +1143,7 @@
             ],
             "info": [
                 {
-                    "img": false,
-                    "data": true,
-                    "scale_data": true,
-                    "figsize": true,
-                    "graph_title": true,
-                    "x_label": true,
-                    "y_label": true,
-                    "xtick_labels": true,
+                    "img": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -1125,8 +1161,8 @@
             "steps": 5,
             "result": "party_sums_plot.png",
             "added_files": [
-                "output/gpt-4o/plot-bar-017/plot_party_donations.py",
-                "output/gpt-4o/plot-bar-017/party_sums_plot.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-017/plot_party_donations.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-017/party_sums_plot.png"
             ],
             "changed_files": [],
             "actions": [
@@ -1233,64 +1269,6 @@
                 {
                     "img": true,
                     "score": 1.0,
-                    "file": [
-                        "result.png",
-                        "plot.json",
-                        "result.npy"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "plot-bar-019",
-            "total_score": 0.0,
-            "hardness": "Medium",
-            "finished": true,
-            "steps": 5,
-            "result": "result.png",
-            "added_files": [
-                "output/gpt-4o/plot-bar-019/result.png",
-                "output/gpt-4o/plot-bar-019/analyze_amazon_sales.py"
-            ],
-            "changed_files": [],
-            "actions": [
-                [
-                    "Bash",
-                    "ls -l",
-                    "standard output"
-                ],
-                [
-                    "Bash",
-                    "head -n 10 amazon.csv",
-                    "standard output"
-                ],
-                [
-                    "Python",
-                    21,
-                    "execution succeeded"
-                ],
-                [
-                    "Bash",
-                    "ls -l result.png",
-                    "standard output"
-                ],
-                [
-                    "Terminate",
-                    "",
-                    ""
-                ]
-            ],
-            "info": [
-                {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "figsize": true,
-                    "graph_title": false,
-                    "x_label": true,
-                    "y_label": true,
-                    "ytick_labels": false,
-                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
