@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 # Upgrade pip and install Python packages
 RUN pip install --upgrade pip
 
-RUN pip install google-cloud-bigquery db-dtypes pandas matplotlib scikit-learn seaborn numpy scipy statsmodels xgboost plotly tabulate snowflake-connector-python duckdb openpyxl
+RUN pip install google-cloud-bigquery db-dtypes pandas matplotlib scikit-learn seaborn numpy scipy statsmodels xgboost plotly tabulate snowflake-connector-python duckdb openpyxl pyyaml
 
 # Set the default command to run when starting the container
 CMD ["/bin/bash"]
