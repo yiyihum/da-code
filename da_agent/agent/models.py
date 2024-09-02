@@ -37,12 +37,14 @@ def call_llm(payload):
                             headers=headers,
                             json=payload
                         )
+                print(response.json())
                 output_message = response.json()['choices'][0]['message']['content']
                 # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
                 return True, output_message
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
-                error_info = e.response.json()  
+                error_info = response.json()  
+                logger.error(error_info["error"]["message"])
                 code_value = error_info['error']['code']
                 if code_value == "content_filter":
                     if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):

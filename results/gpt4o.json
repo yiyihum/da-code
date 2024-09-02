@@ -1,0 +1,5484 @@
+{
+    "num_results": 79,
+    "average_score": 0.6835443037974683,
+    "results": [
+        {
+            "id": "plot-bar-001",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "sales.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-bar-001/top_ten_artists_sales.py",
+                "output/gpt-4o/plot-bar-001/sales.jpg"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Song.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l sales.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "sales.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-002",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-bar-002/result.jpg",
+                "output/gpt-4o/plot-bar-002/generate_stacked_bar_chart.py",
+                "output/gpt-4o/plot-bar-002/zomato_rawdata.sqlite",
+                "output/gpt-4o/plot-bar-002/users_data.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "unzip zomato_rawdata.sqlite.zip",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table';",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(Users);",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT rate, online_order FROM Users;",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    33,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-003",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-bar-003/result.jpg",
+                "output/gpt-4o/plot-bar-003/analyze_books.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Books_df.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "graph_title": true,
+                    "ytick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-004",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-004/result.png"
+            ],
+            "changed_files": [
+                "output/gpt-4o/plot-bar-004/analysis.py"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat analysis.py",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-005",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-005/plot_age_distribution.py",
+                "output/gpt-4o/plot-bar-005/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat AgeGroup.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 multipleChoiceResponses.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 multipleChoiceResponses.csv | grep -o -i 'age'",
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 multipleChoiceResponses.csv | cut -d',' -f1-10",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    47,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    55,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-006",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "team.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-006/team.png",
+                "output/gpt-4o/plot-bar-006/compile_scores.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 results.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l team.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": false,
+                    "x_label": false,
+                    "y_label": false,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "team.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-007",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-007/extract_top_neighborhoods.py",
+                "output/gpt-4o/plot-bar-007/result.png",
+                "output/gpt-4o/plot-bar-007/create_bar_chart.py",
+                "output/gpt-4o/plot-bar-007/top_10_neighborhoods.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat NeighborhoodCalculate.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 listings.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cut -d, -f 8 listings.csv | sort | uniq -c | sort -nr | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    10,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat top_10_neighborhoods.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-008",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "distribution.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-008/gender_distribution.py",
+                "output/gpt-4o/plot-bar-008/distribution.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 multipleChoiceResponses.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 SurveySchema.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l distribution.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-009",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 12,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-009/inspect_coaches.py",
+                "output/gpt-4o/plot-bar-009/inspect_medals.py",
+                "output/gpt-4o/plot-bar-009/result.png",
+                "output/gpt-4o/plot-bar-009/process_and_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install pandas openpyxl",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    8,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    8,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    41,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-010/calculate_mutual_information.py",
+                "output/gpt-4o/plot-bar-010/result.png",
+                "output/gpt-4o/plot-bar-010/create_bar_chart.py",
+                "output/gpt-4o/plot-bar-010/mutual_information_scores.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": true,
+                    "x_label": false,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-011",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-011/analyze_airbnb_listings.py",
+                "output/gpt-4o/plot-bar-011/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 AB_NYC_2019.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    35,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-012",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-012/result.png",
+                "output/gpt-4o/plot-bar-012/analyze_living_arrangements.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 student-mat.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": true,
+                    "x_label": false,
+                    "y_label": false,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-013",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-013/generate_bar_chart.py",
+                "output/gpt-4o/plot-bar-013/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 'icc hall of fame.csv'",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-014",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 4,
+            "result": "missing_values_bar_chart.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-014/analyze_missing_values.py",
+                "output/gpt-4o/plot-bar-014/missing_values_bar_chart.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l missing_values_bar_chart.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "missing_values_bar_chart.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-015/result.png",
+                "output/gpt-4o/plot-bar-015/process_sales_data.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 'Amazon Sale Report.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": false,
+                    "xtick_labels": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-016",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 13,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-016/generate_bar_chart.py",
+                "output/gpt-4o/plot-bar-016/olist.sqlite",
+                "output/gpt-4o/plot-bar-016/top_10_product_categories.csv",
+                "output/gpt-4o/plot-bar-016/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "unzip olist.sqlite.zip",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table';",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(products);",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT product_category_name, COUNT(*) as count FROM products GROUP BY product_category_name ORDER BY count DESC LIMIT 10;",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-017",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "party_sums_plot.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-017/plot_party_donations.py",
+                "output/gpt-4o/plot-bar-017/party_sums_plot.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 'Electoral bond received by political parties.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l party_sums_plot.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "party_sums_plot.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-018",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-018/generate_bar_chart.py",
+                "output/gpt-4o/plot-bar-018/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Building_Permits.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-019",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-019/result.png",
+                "output/gpt-4o/plot-bar-019/analyze_amazon_sales.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 amazon.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-020",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-020/result.png",
+                "output/gpt-4o/plot-bar-020/analyze_apps.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 AppleStore.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-021",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "category.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-021/category.png",
+                "output/gpt-4o/plot-bar-021/process_top250.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Top250.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    74,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l category.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "category.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-022",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": false,
+            "steps": 20,
+            "result": "",
+            "added_files": [
+                "output/gpt-4o/plot-bar-022/process_attendance.py",
+                "output/gpt-4o/plot-bar-022/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 2018-2019_Daily_Attendance_20240429.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    29,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-023",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-bar-023/result.png",
+                "output/gpt-4o/plot-bar-023/process_and_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    56,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    56,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-001",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "point.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-001/extract_and_calculate_avg_scores.py",
+                "output/gpt-4o/plot-line-001/plot_avg_scores.py",
+                "output/gpt-4o/plot-line-001/point.png",
+                "output/gpt-4o/plot-line-001/plot.yaml",
+                "output/gpt-4o/plot-line-001/create_plot_yaml.py",
+                "output/gpt-4o/plot-line-001/processed_game_data.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 game.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l point.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "point.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-002",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-002/processed_matches.csv",
+                "output/gpt-4o/plot-line-002/create_line_graph.py",
+                "output/gpt-4o/plot-line-002/result.png",
+                "output/gpt-4o/plot-line-002/process_matches.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat teamabbreviations.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 matches.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 deliveries.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    18,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "x_label": true,
+                    "y_label": false,
+                    "labels": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 11,
+            "result": "output.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-003/plot_spam_scores.py",
+                "output/gpt-4o/plot-line-003/debug_plot_config.py",
+                "output/gpt-4o/plot-line-003/output.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 fake.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    35,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    38,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l output.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 1.0,
+                    "file": [
+                        "output.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-004",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 13,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-004/olist.sqlite",
+                "output/gpt-4o/plot-line-004/result.png",
+                "output/gpt-4o/plot-line-004/orders_data.csv",
+                "output/gpt-4o/plot-line-004/generate_plot.py"
+            ],
+            "changed_files": [
+                "output/gpt-4o/plot-line-004/plot.yaml"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "unzip olist.sqlite.zip",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table';",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "PRAGMA table_info(orders);",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT order_status, order_purchase_timestamp FROM orders;",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    40,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "sed -i 's/xtick_labels\"/xtick_labels/' plot.yaml",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    40,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "legend_title": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 11,
+            "result": "ERROR: Repeated action",
+            "added_files": [
+                "output/gpt-4o/plot-line-005/calculate_and_plot_happiness.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat Region.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 2015.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    41,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "head -n 1 2016.csv && head -n 1 2017.csv && head -n 1 2018.csv && head -n 1 2019.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    59,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    54,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    61,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    61,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    61,
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-006",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-006/process_and_plot_temperatures.py",
+                "output/gpt-4o/plot-line-006/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 GlobalTemperatures.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    49,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    49,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-007",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-007/result.png",
+                "output/gpt-4o/plot-line-007/analyze_games.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 appstore_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    52,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-008",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-008/result.png",
+                "output/gpt-4o/plot-line-008/calculate_and_plot_bmi.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat BMI.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 all_seasons.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-009",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-009/result.png",
+                "output/gpt-4o/plot-line-009/process_and_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat tips.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 city_temperature.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    46,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-010",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-line-010/result.jpg",
+                "output/gpt-4o/plot-line-010/analyze_nobel.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 nobel.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-011",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-line-011/result.jpg",
+                "output/gpt-4o/plot-line-011/analyze_nobel.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 nobel.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    35,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "legend_title": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-012",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 6,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-line-012/result.jpg",
+                "output/gpt-4o/plot-line-012/generate_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 MyTransaction.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    32,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-line-013/result.jpg",
+                "output/gpt-4o/plot-line-013/calculate_moving_average.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 orders.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    33,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-014",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-line-014/result.jpg",
+                "output/gpt-4o/plot-line-014/calculate_cumulative_returns.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Big9Returns2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    38,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-015",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-line-015/result.jpg",
+                "output/gpt-4o/plot-line-015/calculate_cumulative_returns.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Big9Returns2017.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    49,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    49,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    49,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-016",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-016/result.png",
+                "output/gpt-4o/plot-line-016/plot_visitors.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 museum_visitors.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-017",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 12,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-017/result.png",
+                "output/gpt-4o/plot-line-017/plot_markdown_timeline.py"
+            ],
+            "changed_files": [
+                "output/gpt-4o/plot-line-017/plot.yaml"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 'Features data set.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat -n plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i '3s/,//' plot.yaml",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-018",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-018/compile_and_plot_scores.py",
+                "output/gpt-4o/plot-line-018/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 matches.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 deliveries.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-019",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-019/compile_and_plot_scores.py",
+                "output/gpt-4o/plot-line-019/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Seasons_Stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-020",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-020/compile_and_plot_scores.py",
+                "output/gpt-4o/plot-line-020/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 Seasons_Stats.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 Players.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 nba.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 nba_extra.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat README.md",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    43,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-021",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-line-021/calculate_missing_values.py",
+                "output/gpt-4o/plot-line-021/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-line-022",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": false,
+            "steps": 5,
+            "result": "ERROR: Repeated action",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "\"head -n 10 'global-data-on-sustainable-energy (1",
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "\"head -n 10 'global-data-on-sustainable-energy (1",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "\"head -n 10 'global-data-on-sustainable-energy (1",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-001",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "/workspace/answer.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-001/answer.png",
+                "output/gpt-4o/plot-pie-001/analyze_transactions.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l /workspace",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 /workspace/MyTransaction.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat /workspace/plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace/answer.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "answer.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-002",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "distribution.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-002/plot_distribution.py",
+                "output/gpt-4o/plot-pie-002/distribution.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 deliveries.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    27,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l distribution.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "legend_title": true,
+                    "score": 0.0,
+                    "file": [
+                        "distribution.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-pie-003/result.jpg",
+                "output/gpt-4o/plot-pie-003/analyze_transactions.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 MyTransaction.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-004",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-004/result.png",
+                "output/gpt-4o/plot-pie-004/generate_pie_chart.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 student-mat.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-005",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-005/result.png"
+            ],
+            "changed_files": [
+                "output/gpt-4o/plot-pie-005/analysis.py"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 appstore_games.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    38,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    38,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-006",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-006/result.png",
+                "output/gpt-4o/plot-pie-006/analyze_ufo_sightings.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 complete.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-007",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-007/plot_diabetes_proportions.py",
+                "output/gpt-4o/plot-pie-007/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 diabetes_012_health_indicators_BRFSS2015.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-008",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 17,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-pie-008/analyze_biker_deliveries_debug.py",
+                "output/gpt-4o/plot-pie-008/result.jpg",
+                "output/gpt-4o/plot-pie-008/largest_avg_distance_city.txt",
+                "output/gpt-4o/plot-pie-008/generate_pie_chart.py",
+                "output/gpt-4o/plot-pie-008/analyze_biker_deliveries.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 deliveries.csv hubs.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 drivers.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    42,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 orders.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 stores.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    42,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    42,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat largest_avg_distance_city.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    34,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install PyYAML",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    34,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-009",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-009/result.png",
+                "output/gpt-4o/plot-pie-009/analyze_reviews.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l /workspace",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat /workspace/plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 /workspace/AB_NYC_2019.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace/result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-010",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-010/analyze_and_plot.py",
+                "output/gpt-4o/plot-pie-010/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 matches.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    35,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-011",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 11,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-011/analyze_and_plot.py",
+                "output/gpt-4o/plot-pie-011/inspect_data_types.py",
+                "output/gpt-4o/plot-pie-011/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 'countries of the world.csv'",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-012",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-012/extract_and_plot.py",
+                "output/gpt-4o/plot-pie-012/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 HighestGrossers.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    25,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-013",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-013/result.png",
+                "output/gpt-4o/plot-pie-013/analyze_cancellations.py",
+                "output/gpt-4o/plot-pie-013/generate_pie_chart.py",
+                "output/gpt-4o/plot-pie-013/cancellation_proportions.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 hotel_booking.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    21,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-014",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 7,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-014/result.png",
+                "output/gpt-4o/plot-pie-014/inspect_sales_data.py",
+                "output/gpt-4o/plot-pie-014/generate_pie_chart.py",
+                "output/gpt-4o/plot-pie-014/list_columns.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    8,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    27,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-015",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-015/analyze_genres.py",
+                "output/gpt-4o/plot-pie-015/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 netflix_titles.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    19,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-016",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-016/analyze_coupon_status.py",
+                "output/gpt-4o/plot-pie-016/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 file.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-017",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-017/result.png",
+                "output/gpt-4o/plot-pie-017/generate_pie_chart.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 googleplaystore.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-018",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-018/plot_experience_levels.py",
+                "output/gpt-4o/plot-pie-018/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 ds_salaries.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-pie-019",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 6,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-pie-019/inspect_medals.py",
+                "output/gpt-4o/plot-pie-019/result.png",
+                "output/gpt-4o/plot-pie-019/generate_pie_chart.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "pip install pandas openpyxl",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    19,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-001",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-001/analyze_netflix.py",
+                "output/gpt-4o/plot-scatter-001/result.png"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 netflix.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-002",
+            "total_score": 0.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 8,
+            "result": "FAIL",
+            "added_files": [],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "zcat closing_odds.csv.gz | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "zcat odds_series.csv.gz | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "zcat odds_series_b.csv.gz | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "zcat odds_series_b_matches.csv.gz | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "zcat odds_series_matches.csv.gz | head -n 10",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-003",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-003/result.png",
+                "output/gpt-4o/plot-scatter-003/generate_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 athlete_events.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-004",
+            "total_score": 1.0,
+            "hardness": "Hard",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-004/result.png",
+                "output/gpt-4o/plot-scatter-004/create_scatter_plot.py",
+                "output/gpt-4o/plot-scatter-004/inspect_columns.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat guidance.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-005",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 11,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-005/result.png",
+                "output/gpt-4o/plot-scatter-005/analyze_steam_data.py"
+            ],
+            "changed_files": [
+                "output/gpt-4o/plot-scatter-005/plot.yaml"
+            ],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat standard.txt",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 steam.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    31,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat -n plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i 's/],/]/' plot.yaml",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    31,
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": false,
+                    "x_label": false,
+                    "y_label": false,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-006",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.jpg",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-006/result.jpg",
+                "output/gpt-4o/plot-scatter-006/analysis.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    22,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.jpg",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.jpg",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-007",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-007/result.png",
+                "output/gpt-4o/plot-scatter-007/plot_sales.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l /workspace",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 /workspace/vgsales.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat /workspace/plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    30,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    30,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l /workspace/result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-008",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 11,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-008/extract_and_merge_data.py",
+                "output/gpt-4o/plot-scatter-008/result.png",
+                "output/gpt-4o/plot-scatter-008/merged_data_2000.csv",
+                "output/gpt-4o/plot-scatter-008/create_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Players.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 Seasons_Stats.csv",
+                    "standard output"
+                ],
+                [
+                    "None",
+                    "",
+                    "action parse failed"
+                ],
+                [
+                    "Python",
+                    17,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    29,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    29,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-009",
+            "total_score": 0.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-009/result.png",
+                "output/gpt-4o/plot-scatter-009/generate_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 data.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "labels": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-010",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-010/result.png",
+                "output/gpt-4o/plot-scatter-010/generate_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 ifood_df.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-011",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-011/result.png",
+                "output/gpt-4o/plot-scatter-011/generate_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 spotify-2023.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    26,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-012",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 10,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-012/load_and_inspect_data.py",
+                "output/gpt-4o/plot-scatter-012/clean_and_analyze_data.py",
+                "output/gpt-4o/plot-scatter-012/result.png",
+                "output/gpt-4o/plot-scatter-012/create_scatter_plot.py",
+                "output/gpt-4o/plot-scatter-012/cleaned_data.csv"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 world-data-2023.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    9,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    23,
+                    "warning message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    20,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-013",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 8,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-013/result.png",
+                "output/gpt-4o/plot-scatter-013/create_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 jobs_in_data.csv",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    36,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "ytick_labels": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-014",
+            "total_score": 1.0,
+            "hardness": "Easy",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-014/result.png",
+                "output/gpt-4o/plot-scatter-014/generate_scatter_plot.py",
+                "output/gpt-4o/plot-scatter-014/inspect_columns.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    24,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-scatter-015",
+            "total_score": 1.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 9,
+            "result": "result.png",
+            "added_files": [
+                "output/gpt-4o/plot-scatter-015/result.png",
+                "output/gpt-4o/plot-scatter-015/create_scatter_plot.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 netflix1.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install pyyaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    28,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": true,
+                    "score": 1.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        }
+    ]
+}

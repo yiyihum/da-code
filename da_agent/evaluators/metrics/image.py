@@ -125,7 +125,7 @@ class ImageTest:
         if not os.path.exists(result_np):
             return (0.0, {'data': False, "scale_data": False})
         assert os.path.exists(gold_np), f'the gold file {gold_np} does not exist'
-        results, golds = np.load(result_np), np.load(gold_np)
+        results, golds = np.load(result_np,allow_pickle=True), np.load(gold_np, allow_pickle=True)
         results = results.reshape(-1,1) if results.ndim == 1 else results
         golds = golds.reshape(-1, 1) if golds.ndim == 1 else golds
         if results.shape != golds.shape:

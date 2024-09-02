@@ -10,6 +10,7 @@ import metrics
 from tqdm import tqdm
 from da_agent.envs.utils import timeout
 import re
+import traceback
 
 Metric = Callable[[Any, Any], float]
 
@@ -242,6 +243,7 @@ class Evaluator:
             except Exception as e:
                 # output_result = output_result if isinstance(output_result, list) else [output_result]
                 logging.error(f"Error in task {id}: {e}")
+                traceback.print_exc()
                 # continue
                 scores.append(0.0)
                 info.append({"score": 0.0, "errors": [str(e)], 'file': [os.path.basename(file) for file in output_result]})
