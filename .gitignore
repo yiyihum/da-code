@@ -4,6 +4,6 @@ logs/*
 
 *.DS_Store
 *.pyc
-
+*dw
 # da_code/gold/*
 # da_code/source/*

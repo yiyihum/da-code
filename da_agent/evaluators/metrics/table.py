@@ -91,12 +91,12 @@ def compare_csv(result: str, expected, **options) -> float:
     """
     if isinstance(expected, List):
         condition_cols = options.get('condition_cols', [[]]*len(expected))
-        score_rule = options.get('score_rule', ['all']*len(expected))
+        score_rule = options.get('score_rule', ['divide']*len(expected))
         ignore_order = options.get('ignore_order', [False]*len(expected))
         total_scores = options.get('total_scores', [1]*len(expected))
     elif isinstance(expected, str):
         condition_cols = [options.get('condition_cols', [])]
-        score_rule = [options.get('score_rule', 'all')]
+        score_rule = [options.get('score_rule', 'divide')]
         ignore_order = [options.get('ignore_order', False)]
         total_scores = [options.get('total_scores', 1)]
         expected = [expected]
@@ -232,10 +232,6 @@ def compare_sqlite(result: str, expected, **options) -> float:
 
     return min(output_scores)
     
-
-
-
-
 
 
 
