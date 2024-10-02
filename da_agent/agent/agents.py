@@ -134,7 +134,8 @@ class PromptAgent:
             self.codes.append(None)
 
         return response, action
-        
+    
+    
     
     def _add_message(self, observations: str, thought: str, action: Action):
         self.history_messages.append({
@@ -189,7 +190,6 @@ class PromptAgent:
         
         return output_action
     
-
     
     def run(self):
         assert self.env is not None, "Environment is not set."
@@ -251,19 +251,6 @@ class PromptAgent:
         }
         return trajectory_log
 
-
-    
-    # @backoff.on_exception(
-    #     backoff.expo,
-    #     # here you should add more model exceptions as you want,
-    #     # but you are forbidden to add "Exception", that is, a common type of exception
-    #     # because we want to catch this kind of Exception in the outside to ensure each example won't exceed the time limit
-    #     (openai.RateLimitError,
-    #      openai.BadRequestError,
-    #      openai.InternalServerError,
-    #      InvalidArgument),
-    #     max_tries=5
-    # )
 
 if __name__ == "__main__":
     agent = PromptAgent()

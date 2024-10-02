@@ -1,0 +1,7 @@
+{
+    "November-December": ["Sales increase"],
+    "January": ["Sales drop"],
+    "February-March": ["Sales rise"],
+    "April-August": ["Generally stable trend"],
+    "October": ["Sharp downward trend"]
+}

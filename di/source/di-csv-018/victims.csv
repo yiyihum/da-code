@@ -1,0 +1,1001 @@
+id,case_id,party_number,victim_role,victim_sex,victim_age,victim_degree_of_injury,victim_seating_position,victim_safety_equipment_1,victim_safety_equipment_2,victim_ejected
+1,3858022,1,passenger,female,24,no injury,passenger seat 4,air bag not deployed,,not ejected
+2,3858022,1,passenger,male,31,no injury,passenger seat 6,air bag not deployed,,not ejected
+3,3899450,1,driver,female,72,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+4,3899453,2,driver,male,66,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+5,3899453,3,passenger,male,65,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+6,3899454,1,pedestrian,female,29,complaint of pain,position unknown,,not required,unknown
+7,3899454,2,pedestrian,female,7,complaint of pain,position unknown,,not required,unknown
+8,3899457,1,passenger,female,60,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+9,3899457,2,passenger,female,1,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+10,3899458,1,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+11,3899466,1,passenger,male,42,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+12,3899474,1,driver,female,40,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+13,3899477,1,driver,male,20,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+14,3899477,2,driver,female,33,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+15,3899477,2,passenger,female,4,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+16,3899477,2,passenger,male,1,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+17,3899482,2,passenger,female,,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+18,3899482,2,passenger,male,,no injury,passenger seat 4,not required,"child restraint in vehicle, use unknown",not ejected
+19,3899486,2,driver,female,46,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+20,3899490,2,driver,male,44,severe injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+21,3899490,3,passenger,male,8,no injury,passenger seat 5,not required,lap belt used,not ejected
+22,3899490,3,passenger,female,17,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+23,3899490,3,passenger,male,7,no injury,passenger seat 2,not required,lap belt used,unknown
+24,3899490,3,passenger,female,39,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+25,3899490,3,passenger,female,14,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+26,3899490,4,passenger,female,42,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+27,3899490,4,passenger,female,40,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+28,3899493,2,driver,female,38,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+29,3899497,3,driver,male,55,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+30,3899501,1,passenger,female,44,other visible injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+31,3899501,1,passenger,female,33,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+32,3899501,1,passenger,male,43,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+33,3899501,1,passenger,male,14,no injury,passenger seat 5,air bag not deployed,lap/shoulder harness used,not ejected
+34,3899506,1,passenger,female,8,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+35,3899510,2,passenger,male,35,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+36,3899513,1,passenger,female,31,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+37,3899513,1,passenger,male,11,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+38,3899513,1,passenger,female,5,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+39,3899513,2,passenger,female,1,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+40,3899518,1,passenger,male,22,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+41,3899518,1,passenger,male,20,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+42,3899518,2,passenger,female,29,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+43,3918943,2,driver,male,25,complaint of pain,driver,other,lap/shoulder harness used,not ejected
+44,3981302,1,passenger,male,7,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+45,3981302,1,passenger,female,10,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+46,3981318,2,driver,female,26,complaint of pain,driver,not required,lap belt used,not ejected
+47,3981318,2,passenger,male,10,complaint of pain,position unknown,not required,none in vehicle,not ejected
+48,3981318,2,passenger,female,12,complaint of pain,position unknown,not required,none in vehicle,not ejected
+49,3981318,2,passenger,female,12,complaint of pain,position unknown,not required,none in vehicle,not ejected
+50,3981318,2,passenger,female,11,complaint of pain,position unknown,not required,none in vehicle,not ejected
+51,3981348,1,passenger,male,17,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+52,3981348,2,passenger,female,60,no injury,passenger seat 6,not required,lap belt not used,not ejected
+53,3982882,2,driver,female,51,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+54,3982882,2,passenger,female,51,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+55,3982882,3,passenger,female,45,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+56,3982882,3,passenger,male,13,complaint of pain,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+57,3982882,3,passenger,female,7,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+58,3982883,1,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+59,3982883,2,passenger,female,16,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+60,3982883,2,passenger,male,13,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+61,3982883,2,driver,female,41,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+62,3982883,3,passenger,female,28,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+63,3982886,1,passenger,female,77,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+64,3982888,2,passenger,male,53,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+65,3982888,2,passenger,male,19,no injury,passenger seat 4,lap/shoulder harness used,,not ejected
+66,3982890,2,driver,male,78,complaint of pain,driver,other,lap/shoulder harness used,not ejected
+67,3982896,1,passenger,male,20,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+68,3982896,2,passenger,female,23,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+69,3982898,1,driver,female,18,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+70,3982899,1,passenger,female,74,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+71,3982899,1,passenger,female,83,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+72,3982899,2,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+73,3982899,3,passenger,female,7,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+74,3982900,1,passenger,female,31,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+75,3982900,1,passenger,male,5,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+76,3982900,1,passenger,female,1,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+77,3982900,1,passenger,male,10,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+78,3982902,1,driver,female,20,complaint of pain,driver,,lap/shoulder harness used,unknown
+79,3982903,1,passenger,female,27,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+80,3982903,2,driver,male,18,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+81,3982903,2,passenger,male,14,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+82,3982903,2,passenger,male,15,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+83,3982904,2,passenger,female,33,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+84,3982904,2,passenger,female,5,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+85,3982904,2,passenger,female,9,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+86,3982904,2,passenger,female,0,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+87,3982904,3,passenger,female,3,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+88,3982906,2,driver,male,25,severe injury,driver,not required,"driver, motorcycle helmet used",fully ejected
+89,3982907,2,passenger,male,39,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+90,3982908,1,passenger,male,10,no injury,passenger seat 4,lap/shoulder harness used,,not ejected
+91,3982908,1,passenger,male,8,no injury,passenger seat 6,lap/shoulder harness used,,not ejected
+92,3982908,2,passenger,female,34,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+93,3982908,3,passenger,female,51,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+94,3982908,3,passenger,female,9,no injury,passenger seat 4,lap/shoulder harness used,,not ejected
+95,3982908,3,passenger,female,8,no injury,passenger seat 5,lap/shoulder harness used,,not ejected
+96,3982908,3,passenger,male,12,no injury,passenger seat 6,lap/shoulder harness used,,not ejected
+97,3982908,4,passenger,female,39,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+98,3982910,1,bicyclist,male,15,complaint of pain,driver,"driver, motorcycle helmet not used",,fully ejected
+99,3982911,1,passenger,female,10,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+100,3982911,3,passenger,male,52,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+101,3982914,1,bicyclist,male,19,other visible injury,position unknown,,,unknown
+102,3982915,1,driver,female,19,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+103,3982916,2,passenger,female,66,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+104,3982916,2,passenger,female,4,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+105,3982916,2,passenger,male,2,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+106,3982916,2,passenger,female,2,no injury,station wagon rear,air bag not deployed,child restraint in vehicle used,not ejected
+107,3982918,1,bicyclist,male,59,complaint of pain,position unknown,,,not ejected
+108,3982919,2,driver,,20,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,unknown
+109,3982920,1,passenger,female,21,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+110,3982920,1,passenger,male,21,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+111,3982920,1,passenger,female,22,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+112,3982922,2,driver,female,84,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+113,3982922,2,passenger,male,86,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+114,3982924,2,passenger,female,18,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+115,3982926,1,driver,female,46,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+116,3982926,2,driver,female,64,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+117,3982927,1,passenger,male,15,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+118,3982928,1,driver,female,18,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+119,3982928,2,passenger,female,45,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+120,3982928,2,passenger,female,40,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+121,3982928,2,passenger,female,48,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+122,3982930,1,driver,female,24,complaint of pain,driver,,lap/shoulder harness used,not ejected
+123,3982930,2,driver,female,35,complaint of pain,driver,lap/shoulder harness used,,not ejected
+124,3982932,1,driver,female,62,complaint of pain,driver,lap/shoulder harness used,,not ejected
+125,3982932,2,driver,male,24,complaint of pain,driver,lap/shoulder harness used,,not ejected
+126,3982932,2,passenger,female,23,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+127,3982934,1,passenger,female,,complaint of pain,passenger seat 3,not required,lap/shoulder harness used,not ejected
+128,3982934,1,passenger,female,,complaint of pain,passenger seat 6,not required,unknown,not ejected
+129,3982934,2,driver,female,34,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+130,3982937,1,driver,female,49,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+131,3982937,2,driver,male,74,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+132,3982937,2,passenger,female,72,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+133,3982938,1,passenger,female,45,complaint of pain,passenger seat 3,,lap/shoulder harness used,not ejected
+134,3982938,2,passenger,female,54,complaint of pain,passenger seat 3,,lap/shoulder harness used,not ejected
+135,3982940,1,driver,male,21,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+136,3982941,1,driver,female,24,complaint of pain,driver,lap/shoulder harness used,,not ejected
+137,3982942,2,driver,female,46,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+138,3982946,2,bicyclist,male,62,other visible injury,driver,"driver, motorcycle helmet used",,not ejected
+139,3982948,1,passenger,male,22,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+140,3982951,2,passenger,female,31,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+141,3982951,2,passenger,male,1,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+142,3982952,1,passenger,female,24,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+143,3982953,1,driver,male,32,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+144,3982953,2,driver,female,77,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+145,3982955,1,passenger,female,23,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+146,3982955,1,passenger,female,1,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+147,3982957,1,passenger,male,,no injury,passenger seat 3,air bag not deployed,unknown,not ejected
+148,3982957,1,passenger,male,,no injury,passenger seat 4,not required,unknown,not ejected
+149,3982957,2,passenger,female,26,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+150,3982957,2,passenger,male,2,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+151,3982958,1,driver,male,84,complaint of pain,driver,lap/shoulder harness used,,not ejected
+152,3982958,1,passenger,female,85,complaint of pain,passenger seat 3,lap/shoulder harness used,,not ejected
+153,3982958,2,driver,female,44,complaint of pain,driver,lap/shoulder harness used,,not ejected
+154,3982959,3,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+155,3982959,3,passenger,male,25,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+156,3982959,3,passenger,male,28,no injury,passenger seat 5,air bag not deployed,lap/shoulder harness used,not ejected
+157,3982960,1,passenger,male,33,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+158,3984218,1,driver,male,23,killed,driver,,,not ejected
+159,3984219,1,driver,male,19,killed,driver,air bag deployed,lap/shoulder harness used,not ejected
+160,3984244,1,driver,female,35,killed,driver,air bag not deployed,lap/shoulder harness used,fully ejected
+161,3984244,1,passenger,male,40,other visible injury,passenger seat 3,air bag not deployed,shoulder harness used,fully ejected
+162,3984245,2,pedestrian,female,73,killed,position unknown,,,unknown
+163,3984246,1,driver,male,28,killed,driver,not required,"driver, motorcycle helmet used",fully ejected
+164,3984274,2,pedestrian,female,58,killed,position unknown,,,not ejected
+165,3984278,1,pedestrian,male,82,killed,position unknown,,,not ejected
+166,3984278,2,passenger,male,56,no injury,rear occupant of truck or van,not required,,not ejected
+167,3984278,2,passenger,female,55,no injury,rear occupant of truck or van,not required,,not ejected
+168,3984278,2,passenger,female,16,no injury,rear occupant of truck or van,not required,,not ejected
+169,3984278,2,passenger,female,27,no injury,rear occupant of truck or van,not required,,not ejected
+170,3984278,2,passenger,male,30,no injury,rear occupant of truck or van,not required,,not ejected
+171,3984278,2,passenger,female,60,no injury,rear occupant of truck or van,not required,,not ejected
+172,3984278,2,passenger,male,25,no injury,rear occupant of truck or van,not required,,not ejected
+173,3984278,2,passenger,male,40,no injury,rear occupant of truck or van,not required,,not ejected
+174,3984278,2,passenger,male,59,no injury,rear occupant of truck or van,not required,,not ejected
+175,3984280,1,driver,female,18,killed,driver,not required,lap/shoulder harness used,not ejected
+176,3984281,1,driver,male,29,killed,driver,air bag deployed,lap/shoulder harness not used,not ejected
+177,3984282,2,bicyclist,male,55,killed,driver,"driver, motorcycle helmet used",,fully ejected
+178,3984283,2,driver,male,49,killed,driver,air bag not deployed,lap/shoulder harness used,not ejected
+179,3984283,2,passenger,female,49,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+180,3984283,2,passenger,female,30,complaint of pain,passenger seat 4,air bag not deployed,lap/shoulder harness not used,fully ejected
+181,3984284,1,driver,female,67,killed,driver,air bag not deployed,lap/shoulder harness used,not ejected
+182,3984285,1,driver,male,87,killed,driver,air bag deployed,lap/shoulder harness used,not ejected
+183,3984313,1,driver,male,41,killed,driver,air bag not deployed,lap/shoulder harness used,not ejected
+184,3984313,1,passenger,female,27,killed,passenger seat 2,air bag not deployed,lap belt not used,not ejected
+185,3984313,1,passenger,male,38,severe injury,passenger seat 3,air bag not deployed,lap/shoulder harness not used,not ejected
+186,3984314,1,driver,male,42,killed,driver,unknown,,not ejected
+187,3984314,1,passenger,female,27,killed,passenger seat 3,unknown,,not ejected
+188,3984314,1,other,,999,killed,other occupants,unknown,not required,not ejected
+189,3984314,2,driver,male,21,killed,driver,air bag not deployed,lap/shoulder harness not used,fully ejected
+190,3984319,1,pedestrian,female,24,killed,other occupants,not required,,not ejected
+191,3984324,1,driver,male,74,killed,driver,air bag deployed,,not ejected
+192,3984328,1,passenger,male,82,killed,passenger seat 3,not required,lap/shoulder harness used,not ejected
+193,3984328,1,passenger,female,9,other visible injury,rear occupant of truck or van,not required,,not ejected
+194,3984328,1,driver,female,80,other visible injury,driver,,,not ejected
+195,3984329,1,driver,female,38,killed,driver,not required,"driver, motorcycle helmet used",not ejected
+196,3984329,2,passenger,male,73,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+197,3984333,1,driver,female,31,killed,driver,air bag deployed,lap/shoulder harness used,not ejected
+198,3984333,1,passenger,male,5,killed,passenger seat 4,not required,child restraint in vehicle used,fully ejected
+199,3984333,1,passenger,female,11,other visible injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+200,3984348,1,pedestrian,male,24,killed,other occupants,not required,,not ejected
+201,3984348,3,passenger,female,21,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+202,3984348,4,passenger,male,58,no injury,passenger seat 3,air bag not deployed,shoulder harness used,not ejected
+203,3984348,4,passenger,female,31,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+204,3984348,4,passenger,male,10,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+205,3984348,4,passenger,female,13,no injury,passenger seat 2,not required,lap/shoulder harness used,not ejected
+206,3984348,4,passenger,male,4,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+207,3984351,1,passenger,male,18,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+208,3984351,1,passenger,female,18,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+209,3984351,2,bicyclist,male,53,killed,driver,"driver, motorcycle helmet not used",,fully ejected
+210,3984352,1,passenger,female,,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+211,3984352,1,passenger,male,2,no injury,passenger seat 5,air bag not deployed,child restraint in vehicle used,not ejected
+212,3984352,2,driver,male,20,killed,driver,air bag deployed,"driver, motorcycle helmet used",fully ejected
+213,3984353,1,pedestrian,male,27,killed,position unknown,,,unknown
+214,3984353,2,driver,male,43,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+215,3984358,1,driver,female,26,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+216,3984358,2,passenger,female,47,killed,passenger seat 3,not required,passive restraint not used,fully ejected
+217,3984358,2,driver,female,55,severe injury,driver,not required,lap/shoulder harness used,not ejected
+218,3984359,1,driver,male,63,killed,driver,air bag not deployed,lap/shoulder harness used,not ejected
+219,3984361,1,passenger,male,,severe injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+220,3984361,1,passenger,male,,killed,passenger seat 4,not required,lap/shoulder harness not used,not ejected
+221,3984361,1,driver,male,24,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+222,3984369,2,pedestrian,male,34,killed,position unknown,,,unknown
+223,3984376,1,driver,male,40,killed,driver,not required,lap/shoulder harness used,not ejected
+224,3984381,1,driver,male,78,killed,driver,air bag deployed,lap/shoulder harness used,not ejected
+225,3984383,1,driver,male,21,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+226,3984383,3,pedestrian,male,29,killed,position unknown,,,not ejected
+227,3984389,1,driver,male,48,killed,driver,air bag not deployed,lap/shoulder harness used,not ejected
+228,3984398,1,driver,male,20,killed,driver,not required,"driver, motorcycle helmet used",fully ejected
+229,3984398,2,passenger,female,12,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+230,3984869,2,driver,male,53,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+231,3984928,2,passenger,male,26,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+232,3985078,2,passenger,male,34,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+233,3986476,2,passenger,female,29,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+234,3986476,2,passenger,female,,no injury,passenger seat 5,air bag not deployed,child restraint in vehicle used,not ejected
+235,3987521,2,passenger,male,50,no injury,other occupants,unknown,none in vehicle,not ejected
+236,3987526,1,passenger,male,32,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+237,3987530,1,driver,male,54,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+238,3987530,2,driver,male,42,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+239,3987530,2,passenger,female,12,other visible injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+240,3987534,2,passenger,male,45,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+241,3987534,2,passenger,male,14,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+242,3987534,2,passenger,female,16,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+243,3987538,3,passenger,male,28,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+244,3987542,3,driver,male,52,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+245,3987542,3,passenger,female,77,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+246,3987542,4,passenger,male,23,no injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+247,3987554,1,passenger,female,23,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+248,3987554,2,passenger,female,48,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+249,3987554,2,passenger,female,15,no injury,rear occupant of truck or van,not required,,not ejected
+250,3987565,2,passenger,male,15,no injury,position unknown,not required,,not ejected
+251,3987565,2,passenger,female,52,no injury,position unknown,not required,,not ejected
+252,3987565,2,passenger,male,36,no injury,position unknown,not required,,not ejected
+253,3987565,2,passenger,male,34,no injury,position unknown,not required,,not ejected
+254,3987565,2,passenger,male,44,no injury,position unknown,not required,,not ejected
+255,3987565,2,passenger,female,22,no injury,position unknown,not required,,not ejected
+256,3987570,2,passenger,female,,no injury,other occupants,not required,none in vehicle,not ejected
+257,3987570,2,passenger,male,,no injury,other occupants,not required,none in vehicle,not ejected
+258,3987570,2,passenger,female,,no injury,other occupants,not required,none in vehicle,not ejected
+259,3987570,2,passenger,,,no injury,other occupants,not required,none in vehicle,not ejected
+260,3987570,2,passenger,male,,no injury,other occupants,not required,none in vehicle,not ejected
+261,3987570,2,passenger,male,,no injury,other occupants,not required,none in vehicle,not ejected
+262,3987570,2,passenger,male,,no injury,other occupants,not required,none in vehicle,not ejected
+263,3987570,2,passenger,female,,no injury,other occupants,not required,none in vehicle,not ejected
+264,3987570,2,passenger,male,,no injury,other occupants,not required,none in vehicle,not ejected
+265,3987612,1,driver,male,37,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+266,3987614,1,passenger,male,46,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+267,3987614,2,passenger,female,55,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+268,3987614,3,driver,male,35,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+269,3987614,3,passenger,female,33,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+270,3987614,3,passenger,female,3,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+271,3987614,3,passenger,female,74,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+272,3987618,1,passenger,male,42,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+273,3987622,1,passenger,male,30,no injury,passenger seat 3,air bag not deployed,unknown,not ejected
+274,3987626,1,passenger,male,49,no injury,passenger seat 2,air bag not deployed,lap/shoulder harness used,not ejected
+275,3987632,1,passenger,female,26,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+276,3987634,1,passenger,female,17,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+277,3987634,1,passenger,male,12,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+278,3987634,2,passenger,male,15,no injury,passenger seat 5,not required,lap belt used,not ejected
+279,3987636,1,passenger,female,76,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+280,3987644,1,passenger,female,78,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+281,3987660,1,driver,male,48,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+282,3987664,2,passenger,male,30,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+283,3987664,2,passenger,male,67,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+284,3987680,1,pedestrian,male,14,other visible injury,other occupants,not required,,not ejected
+285,3987682,2,passenger,female,48,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+286,3987682,2,passenger,female,21,complaint of pain,passenger seat 6,not required,lap/shoulder harness used,not ejected
+287,3987685,1,passenger,male,52,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+288,3987685,1,passenger,male,29,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+289,3987685,2,passenger,female,30,complaint of pain,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+290,3987685,2,passenger,female,15,complaint of pain,passenger seat 5,air bag not deployed,lap/shoulder harness used,not ejected
+291,3987685,2,passenger,female,14,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+292,3987685,2,passenger,female,17,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+293,3987706,2,passenger,male,56,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+294,3987708,1,passenger,,22,other visible injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+295,3987711,2,passenger,male,29,complaint of pain,position unknown,lap/shoulder harness used,,not ejected
+296,3987713,1,passenger,female,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+297,3987713,1,passenger,female,1,no injury,passenger seat 2,not required,child restraint in vehicle used,not ejected
+298,3987721,2,passenger,female,42,no injury,other occupants,not required,none in vehicle,not ejected
+299,3987721,2,passenger,male,31,no injury,other occupants,not required,none in vehicle,not ejected
+300,3987721,2,passenger,female,18,no injury,other occupants,not required,none in vehicle,not ejected
+301,3987725,1,passenger,female,30,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+302,3987733,1,driver,male,54,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+303,3987733,1,passenger,female,70,complaint of pain,rear occupant of truck or van,not required,lap belt used,not ejected
+304,3987733,1,passenger,male,71,complaint of pain,station wagon rear,not required,lap/shoulder harness used,not ejected
+305,3987733,2,driver,male,21,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+306,3987737,2,driver,female,34,complaint of pain,driver,lap/shoulder harness used,,not ejected
+307,3987741,1,passenger,female,55,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+308,3987741,3,pedestrian,male,25,other visible injury,position unknown,,,unknown
+309,3987741,4,driver,female,47,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+310,3987757,2,driver,female,23,complaint of pain,driver,air bag not deployed,,not ejected
+311,3987802,2,passenger,female,35,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+312,3987802,2,passenger,male,8,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+313,3987802,3,passenger,female,66,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+314,3987806,3,passenger,male,20,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+315,3987917,1,passenger,female,33,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+316,3987917,1,passenger,male,14,no injury,station wagon rear,air bag not deployed,lap/shoulder harness used,not ejected
+317,3987917,1,passenger,female,8,no injury,station wagon rear,air bag not deployed,lap belt used,not ejected
+318,3987917,1,passenger,male,6,no injury,station wagon rear,air bag not deployed,child restraint in vehicle used,not ejected
+319,3988069,2,passenger,male,10,other visible injury,passenger seat 4,other,lap/shoulder harness used,not ejected
+320,3988069,2,driver,male,17,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+321,3988069,2,passenger,male,15,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+322,3988069,2,passenger,female,15,complaint of pain,passenger seat 6,other,lap/shoulder harness used,not ejected
+323,3988077,2,pedestrian,male,48,other visible injury,position unknown,,,unknown
+324,3989688,1,passenger,male,37,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+325,3989712,2,driver,female,78,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+326,3989809,2,pedestrian,,48,other visible injury,position unknown,,,unknown
+327,3989813,1,passenger,male,39,no injury,station wagon rear,not required,,not ejected
+328,3989813,1,passenger,female,39,no injury,station wagon rear,not required,,not ejected
+329,3989813,1,driver,male,57,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+330,3989817,2,driver,male,54,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+331,3990161,1,passenger,female,17,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+332,3990183,2,passenger,female,60,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+333,3990195,1,driver,male,53,complaint of pain,other occupants,air bag not deployed,not required,not ejected
+334,3990207,1,passenger,male,57,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+335,3990243,1,passenger,male,19,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+336,3990243,1,passenger,female,30,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+337,3990243,1,passenger,male,38,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+338,3990243,2,passenger,female,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+339,3990251,1,passenger,male,47,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+340,3990261,2,passenger,male,33,no injury,position unknown,,,unknown
+341,3990261,2,passenger,male,,no injury,position unknown,,,unknown
+342,3990265,2,passenger,male,17,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+343,3990267,2,passenger,male,25,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+344,3990273,1,driver,female,75,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+345,3990275,1,driver,male,28,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+346,3990275,2,driver,male,28,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+347,3990275,2,passenger,female,25,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+348,3990275,2,passenger,female,17,complaint of pain,passenger seat 6,not required,lap/shoulder harness used,not ejected
+349,3990293,1,passenger,male,42,other visible injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+350,3990293,2,driver,female,52,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+351,3990305,2,passenger,female,4,no injury,passenger seat 4,not required,child restraint in vehicle used,not ejected
+352,3990483,1,passenger,male,28,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+353,3990483,2,passenger,male,17,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+354,3990503,3,passenger,,49,complaint of pain,passenger seat 6,air bag not deployed,none in vehicle,not ejected
+355,3990507,2,passenger,male,47,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+356,3990507,2,passenger,male,1,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+357,3990507,2,passenger,male,1,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+358,3990507,2,passenger,male,3,no injury,passenger seat 5,air bag not deployed,child restraint in vehicle used,not ejected
+359,3990531,2,driver,female,26,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+360,3990535,2,passenger,male,56,no injury,driver,lap/shoulder harness not used,,not ejected
+361,3990539,1,passenger,female,55,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+362,3990556,1,driver,female,58,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+363,3990556,2,passenger,male,28,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+364,3990597,1,passenger,male,42,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+365,3990597,2,passenger,male,18,complaint of pain,passenger seat 3,not required,lap/shoulder harness used,not ejected
+366,3990597,2,driver,male,23,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+367,3990637,2,passenger,female,22,no injury,position unknown,none in vehicle,,not ejected
+368,3990637,2,passenger,female,35,no injury,position unknown,none in vehicle,,not ejected
+369,3990644,2,driver,male,53,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+370,3990644,2,passenger,female,50,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+371,3990646,1,driver,female,43,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+372,3990646,2,driver,female,36,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+373,3990646,2,passenger,female,0,other visible injury,passenger seat 6,air bag deployed,child restraint in vehicle used,not ejected
+374,3990646,3,passenger,male,39,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+375,3990649,2,driver,male,51,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+376,3990653,2,driver,male,38,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+377,3990654,1,passenger,male,25,no injury,position unknown,none in vehicle,,not ejected
+378,3990654,1,passenger,female,2,no injury,position unknown,none in vehicle,,not ejected
+379,3990654,1,passenger,female,26,no injury,position unknown,none in vehicle,,not ejected
+380,3990654,1,passenger,female,48,no injury,position unknown,none in vehicle,,not ejected
+381,3990654,1,passenger,female,61,no injury,position unknown,none in vehicle,,not ejected
+382,3990654,1,passenger,male,13,no injury,position unknown,none in vehicle,,not ejected
+383,3990654,1,passenger,female,47,no injury,position unknown,none in vehicle,,not ejected
+384,3990654,1,passenger,male,40,no injury,position unknown,none in vehicle,,not ejected
+385,3990654,1,passenger,male,13,no injury,position unknown,none in vehicle,,not ejected
+386,3990654,1,passenger,male,21,no injury,position unknown,none in vehicle,,not ejected
+387,3990654,2,passenger,male,15,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+388,3990654,2,passenger,female,18,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+389,3990656,1,passenger,female,55,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+390,3990656,1,passenger,female,25,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+391,3990656,1,passenger,male,18,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+392,3990656,2,passenger,male,27,no injury,passenger seat 2,air bag not deployed,lap/shoulder harness used,not ejected
+393,3990657,1,driver,male,67,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+394,3990657,1,passenger,female,61,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+395,3990659,1,driver,female,20,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+396,3990660,2,passenger,male,37,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+397,3990668,1,driver,male,49,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+398,3990669,1,passenger,male,23,severe injury,passenger seat 3,none in vehicle,lap/shoulder harness used,not ejected
+399,3990671,2,driver,male,58,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+400,3990671,2,passenger,female,57,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+401,3990673,1,driver,female,20,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+402,3990683,1,passenger,,49,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+403,3990683,2,passenger,female,29,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+404,3990689,1,passenger,male,3,no injury,passenger seat 3,not required,child restraint in vehicle used,not ejected
+405,3990689,1,passenger,male,6,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+406,3990689,1,passenger,male,13,no injury,station wagon rear,not required,lap/shoulder harness used,not ejected
+407,3990703,1,driver,female,69,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+408,3990703,1,passenger,male,81,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+409,3990703,2,driver,male,36,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+410,3990704,1,passenger,male,1,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+411,3990704,1,passenger,male,4,no injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+412,3990704,2,passenger,female,62,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+413,3990704,2,passenger,male,45,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+414,3990705,1,driver,female,49,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+415,3990705,1,passenger,male,42,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+416,3990706,1,passenger,female,53,complaint of pain,passenger seat 6,not required,none in vehicle,not ejected
+417,3990707,2,driver,female,26,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+418,3990707,2,passenger,male,33,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+419,3990714,1,driver,female,32,complaint of pain,driver,air bag not deployed,unknown,not ejected
+420,3990719,1,driver,male,46,other visible injury,driver,air bag not deployed,none in vehicle,not ejected
+421,3993844,5,driver,male,36,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+422,3993844,6,driver,male,49,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+423,3993860,1,passenger,male,31,complaint of pain,other occupants,not required,,not ejected
+424,3993860,1,passenger,male,46,no injury,other occupants,not required,,unknown
+425,3993860,1,passenger,male,35,no injury,other occupants,not required,,not ejected
+426,3993887,1,passenger,male,34,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+427,3993891,2,passenger,female,23,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,unknown
+428,3993896,1,driver,female,23,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+429,3993900,1,driver,female,51,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+430,3993904,2,driver,female,36,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+431,3993908,3,pedestrian,male,22,severe injury,position unknown,not required,,not ejected
+432,3995203,2,passenger,male,57,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+433,3995203,2,passenger,female,23,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+434,3995203,2,passenger,female,58,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+435,3995210,2,passenger,female,32,no injury,passenger seat 3,lap/shoulder harness used,air bag not deployed,not ejected
+436,3995210,2,passenger,female,6,no injury,passenger seat 4,none in vehicle,lap/shoulder harness used,not ejected
+437,3995210,2,passenger,male,13,no injury,passenger seat 6,none in vehicle,lap/shoulder harness used,not ejected
+438,3995218,1,driver,female,69,complaint of pain,driver,child restraint in vehicle used,lap/shoulder harness used,not ejected
+439,3995218,2,driver,female,49,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+440,3995219,1,passenger,male,25,no injury,passenger seat 3,none in vehicle,lap/shoulder harness used,not ejected
+441,3995222,1,passenger,female,12,complaint of pain,position unknown,none in vehicle,not required,not ejected
+442,3995226,2,passenger,male,26,no injury,passenger seat 2,air bag not deployed,lap/shoulder harness used,not ejected
+443,3995226,2,passenger,male,45,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+444,3995227,1,driver,male,45,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+445,3995230,1,passenger,male,,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+446,3995235,2,passenger,male,25,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+447,3995238,1,driver,male,23,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+448,3995238,1,passenger,male,24,other visible injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+449,3995242,1,driver,female,64,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+450,3995254,1,passenger,female,22,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+451,3995254,2,driver,female,20,complaint of pain,driver,lap/shoulder harness used,,not ejected
+452,3995254,2,passenger,female,23,complaint of pain,passenger seat 3,lap/shoulder harness used,,not ejected
+453,3995257,1,driver,male,36,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+454,3995257,2,passenger,male,50,severe injury,passenger seat 6,not required,lap/shoulder harness not used,not ejected
+455,3995257,2,driver,male,58,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+456,3995925,2,passenger,female,15,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+457,3995941,2,passenger,female,61,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+458,3995949,1,driver,male,24,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+459,3995949,1,passenger,female,20,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+460,3995961,2,driver,male,50,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+461,3995965,1,driver,male,18,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+462,3995965,1,passenger,female,13,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+463,3995965,2,driver,male,51,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+464,3995973,1,passenger,female,18,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+465,3996570,2,driver,female,38,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+466,3996582,1,driver,male,20,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+467,3996582,1,passenger,male,20,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+468,3996582,2,passenger,female,,no injury,passenger seat 2,air bag not deployed,none in vehicle,not ejected
+469,3996582,2,passenger,male,,no injury,passenger seat 6,air bag not deployed,none in vehicle,not ejected
+470,3996582,2,passenger,,,no injury,passenger seat 3,air bag not deployed,none in vehicle,not ejected
+471,3996582,2,passenger,female,,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+472,3996582,2,passenger,male,,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+473,3996586,2,passenger,male,23,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+474,3996590,1,driver,female,32,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+475,3996590,1,passenger,female,32,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+476,3996610,1,driver,male,23,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+477,3996610,3,driver,female,53,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+478,3996614,2,passenger,female,59,complaint of pain,other occupants,none in vehicle,,not ejected
+479,3996614,2,driver,male,49,complaint of pain,driver,air bag not deployed,lap belt used,not ejected
+480,3996626,1,driver,male,31,other visible injury,driver,not required,other,partially ejected
+481,3996626,2,passenger,male,21,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+482,4000502,2,driver,female,24,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+483,4000504,1,pedestrian,male,18,other visible injury,other occupants,not required,,not ejected
+484,4000507,2,driver,male,23,other visible injury,driver,not required,lap/shoulder harness used,not ejected
+485,4000509,2,passenger,male,10,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+486,4000509,2,passenger,male,8,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+487,4000510,2,passenger,female,9,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+488,4000510,2,passenger,female,3,no injury,passenger seat 4,not required,other,not ejected
+489,4000510,2,driver,female,58,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+490,4000511,1,driver,male,25,complaint of pain,driver,air bag deployed,unknown,not ejected
+491,4000511,2,driver,male,59,complaint of pain,driver,unknown,,not ejected
+492,4000515,1,passenger,female,50,no injury,passenger seat 4,not required,none in vehicle,not ejected
+493,4000515,1,passenger,male,33,no injury,passenger seat 6,not required,none in vehicle,not ejected
+494,4000515,2,passenger,male,4,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+495,4000517,2,driver,male,35,other visible injury,driver,air bag not deployed,lap belt used,not ejected
+496,4000517,2,passenger,female,40,no injury,passenger seat 3,air bag not deployed,lap belt used,not ejected
+497,4000518,1,passenger,female,61,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+498,4000519,1,passenger,male,52,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+499,4000520,1,driver,male,45,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+500,4000520,2,passenger,male,53,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+501,4000520,2,passenger,male,73,no injury,rear occupant of truck or van,not required,passive restraint not used,not ejected
+502,4000520,2,passenger,male,57,no injury,rear occupant of truck or van,not required,passive restraint not used,not ejected
+503,4000524,1,passenger,male,33,no injury,passenger seat 2,air bag not deployed,lap belt used,not ejected
+504,4000524,1,passenger,male,,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+505,4000524,2,passenger,female,14,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+506,4000524,2,passenger,female,12,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+507,4000524,2,passenger,female,12,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+508,4000530,2,passenger,male,2,no injury,passenger seat 5,air bag not deployed,child restraint in vehicle used,not ejected
+509,4000535,2,passenger,female,34,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+510,4000535,2,passenger,male,7,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+511,4000535,2,passenger,male,9,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+512,4000535,3,driver,male,57,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+513,4000544,2,passenger,female,46,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+514,4000545,1,passenger,female,16,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+515,4000545,1,passenger,female,15,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+516,4000546,1,passenger,male,6,no injury,passenger seat 2,air bag not deployed,lap/shoulder harness used,not ejected
+517,4000546,1,passenger,male,28,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+518,4000547,1,passenger,male,50,no injury,rear occupant of truck or van,not required,,not ejected
+519,4000668,1,driver,male,37,other visible injury,driver,not required,lap/shoulder harness used,not ejected
+520,4000671,2,driver,female,22,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+521,4000679,1,passenger,female,9,complaint of pain,rear occupant of truck or van,not required,lap belt used,not ejected
+522,4000679,1,passenger,male,10,no injury,rear occupant of truck or van,not required,lap belt used,not ejected
+523,4000679,1,passenger,male,15,no injury,position unknown,not required,lap belt used,not ejected
+524,4000679,1,passenger,female,8,no injury,passenger seat 4,not required,lap belt used,not ejected
+525,4000679,2,passenger,female,30,no injury,passenger seat 5,not required,lap/shoulder harness used,not ejected
+526,4000679,2,passenger,male,0,no injury,passenger seat 3,not required,child restraint in vehicle used,not ejected
+527,4000679,3,passenger,female,49,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+528,4000679,3,passenger,female,5,no injury,station wagon rear,not required,lap/shoulder harness used,not ejected
+529,4000680,2,passenger,male,58,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+530,4000680,2,passenger,male,17,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+531,4000680,2,passenger,male,23,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+532,4000683,1,passenger,female,58,complaint of pain,position unknown,not required,none in vehicle,not ejected
+533,4000683,1,passenger,male,46,complaint of pain,position unknown,not required,none in vehicle,not ejected
+534,4000683,1,passenger,male,53,no injury,position unknown,not required,none in vehicle,not ejected
+535,4000683,2,passenger,female,4,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+536,4000683,2,passenger,female,25,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+537,4000684,1,passenger,male,41,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+538,4000687,2,passenger,male,45,no injury,driver,not required,lap belt used,not ejected
+539,4000688,1,passenger,male,26,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+540,4000691,2,passenger,female,49,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+541,4000692,1,passenger,female,64,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+542,4000692,1,passenger,male,64,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+543,4000692,2,passenger,male,34,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+544,4000695,2,passenger,female,48,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+545,4000699,1,passenger,male,37,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+546,4000703,1,passenger,female,38,severe injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+547,4000703,1,driver,male,24,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+548,4000704,1,driver,female,47,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+549,4000711,2,passenger,female,40,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+550,4000715,1,driver,male,51,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+551,4000722,1,driver,female,25,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+552,4000730,1,passenger,female,14,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+553,4000730,2,passenger,female,17,no injury,other occupants,not required,unknown,not ejected
+554,4000730,2,passenger,male,15,no injury,other occupants,not required,unknown,not ejected
+555,4000730,2,passenger,female,16,no injury,other occupants,not required,unknown,not ejected
+556,4000730,2,passenger,male,17,no injury,other occupants,not required,unknown,not ejected
+557,4000730,2,passenger,female,15,no injury,other occupants,not required,unknown,not ejected
+558,4000734,1,driver,female,29,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+559,4000734,1,passenger,female,14,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+560,4000734,1,passenger,male,16,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+561,4000734,1,passenger,female,4,no injury,passenger seat 5,air bag not deployed,lap belt used,not ejected
+562,4000734,1,passenger,male,14,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+563,4000738,1,passenger,male,21,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+564,4000742,1,driver,male,45,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+565,4000742,1,passenger,female,5,other visible injury,passenger seat 6,not required,child restraint in vehicle used,not ejected
+566,4000758,2,passenger,male,82,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+567,4000766,2,passenger,female,17,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+568,4000766,2,passenger,female,,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+569,4000789,1,passenger,female,6,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+570,4000789,1,passenger,male,9,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+571,4000789,1,passenger,male,52,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+572,4000789,1,driver,female,49,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+573,4000793,2,passenger,male,22,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+574,4000794,1,driver,male,54,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+575,4001511,2,passenger,male,36,no injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+576,4001512,1,passenger,male,9,other visible injury,passenger seat 6,not required,,not ejected
+577,4001516,1,passenger,female,49,no injury,position unknown,not required,,not ejected
+578,4001520,1,passenger,female,15,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+579,4001761,1,passenger,male,43,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+580,4001764,1,driver,female,17,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+581,4001765,1,driver,male,90,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+582,4001765,2,passenger,male,36,no injury,station wagon rear,not required,,not ejected
+583,4001768,1,passenger,male,27,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+584,4001773,1,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+585,4001773,2,passenger,male,59,no injury,position unknown,not required,,not ejected
+586,4001773,2,passenger,female,19,no injury,position unknown,not required,,not ejected
+587,4001773,2,passenger,female,43,no injury,position unknown,not required,,not ejected
+588,4001773,2,passenger,female,9,no injury,position unknown,not required,,not ejected
+589,4001773,2,passenger,female,12,no injury,position unknown,not required,,not ejected
+590,4001773,2,passenger,male,12,no injury,position unknown,not required,,not ejected
+591,4001773,2,passenger,male,20,no injury,position unknown,not required,,not ejected
+592,4001773,2,passenger,female,18,no injury,position unknown,not required,,not ejected
+593,4001773,2,passenger,male,31,no injury,position unknown,not required,,not ejected
+594,4001777,2,driver,male,42,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+595,4001778,1,driver,male,40,other visible injury,driver,other,lap/shoulder harness used,not ejected
+596,4001778,2,driver,male,68,complaint of pain,driver,other,lap/shoulder harness used,not ejected
+597,4001782,2,passenger,male,51,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+598,4001789,1,passenger,female,44,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+599,4001797,1,driver,male,34,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+600,4001800,3,pedestrian,male,58,complaint of pain,position unknown,,,unknown
+601,4001800,4,pedestrian,male,,complaint of pain,position unknown,,,unknown
+602,4001804,1,driver,female,67,complaint of pain,driver,,,not ejected
+603,4001806,1,passenger,male,21,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+604,4001814,1,passenger,female,15,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+605,4001818,1,pedestrian,male,49,complaint of pain,position unknown,,,unknown
+606,4001819,1,passenger,female,73,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+607,4001819,2,driver,male,29,severe injury,driver,not required,lap/shoulder harness used,not ejected
+608,4001819,3,driver,female,54,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+609,4001819,3,passenger,female,52,complaint of pain,other occupants,not required,none in vehicle,not ejected
+610,4001819,3,passenger,male,59,complaint of pain,other occupants,not required,none in vehicle,not ejected
+611,4001820,1,driver,male,36,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+612,4001820,1,passenger,male,27,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+613,4001822,1,driver,female,19,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+614,4001823,1,driver,male,48,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+615,4001824,2,driver,female,60,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+616,4001825,2,passenger,female,69,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+617,4001827,1,passenger,male,35,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+618,4001827,2,passenger,male,14,no injury,rear occupant of truck or van,not required,,not ejected
+619,4001827,2,passenger,male,17,no injury,rear occupant of truck or van,not required,,not ejected
+620,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+621,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+622,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+623,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+624,4001827,2,passenger,female,19,no injury,rear occupant of truck or van,not required,,not ejected
+625,4001827,2,passenger,male,14,no injury,rear occupant of truck or van,not required,,not ejected
+626,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+627,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+628,4001827,2,passenger,male,16,no injury,rear occupant of truck or van,not required,,not ejected
+629,4001827,2,passenger,male,14,no injury,rear occupant of truck or van,not required,,not ejected
+630,4001827,2,passenger,male,15,no injury,rear occupant of truck or van,not required,,not ejected
+631,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+632,4001827,2,passenger,male,15,no injury,rear occupant of truck or van,not required,,not ejected
+633,4001827,2,passenger,male,16,no injury,rear occupant of truck or van,not required,,not ejected
+634,4001827,2,passenger,male,14,no injury,rear occupant of truck or van,not required,,not ejected
+635,4001827,2,passenger,male,14,no injury,rear occupant of truck or van,not required,,not ejected
+636,4001827,2,passenger,male,17,no injury,rear occupant of truck or van,not required,,not ejected
+637,4001827,2,passenger,male,18,no injury,rear occupant of truck or van,not required,,not ejected
+638,4001827,2,passenger,female,15,no injury,rear occupant of truck or van,not required,,not ejected
+639,4001827,2,passenger,female,14,no injury,rear occupant of truck or van,not required,,not ejected
+640,4001827,2,passenger,female,15,no injury,rear occupant of truck or van,not required,,not ejected
+641,4001827,2,passenger,female,15,no injury,rear occupant of truck or van,not required,,not ejected
+642,4001827,2,passenger,female,15,no injury,rear occupant of truck or van,not required,,not ejected
+643,4001827,2,passenger,female,15,no injury,rear occupant of truck or van,not required,,not ejected
+644,4001827,2,passenger,male,15,no injury,rear occupant of truck or van,not required,,not ejected
+645,4001827,2,passenger,female,14,no injury,rear occupant of truck or van,not required,,not ejected
+646,4001827,2,passenger,female,14,no injury,rear occupant of truck or van,not required,,not ejected
+647,4001827,2,passenger,female,14,no injury,rear occupant of truck or van,not required,,not ejected
+648,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+649,4001827,2,passenger,female,17,no injury,rear occupant of truck or van,not required,,not ejected
+650,4001827,2,passenger,male,16,no injury,rear occupant of truck or van,not required,,not ejected
+651,4001827,2,passenger,male,15,no injury,rear occupant of truck or van,not required,,not ejected
+652,4001827,2,passenger,male,16,no injury,rear occupant of truck or van,not required,,not ejected
+653,4001827,2,passenger,male,16,no injury,rear occupant of truck or van,not required,,not ejected
+654,4001828,2,driver,male,47,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+655,4001830,1,passenger,male,31,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+656,4001832,2,passenger,male,28,no injury,driver,other,lap/shoulder harness used,not ejected
+657,4001832,2,passenger,male,21,no injury,passenger seat 3,other,lap/shoulder harness used,not ejected
+658,4001834,2,driver,female,46,complaint of pain,driver,air bag not deployed,lap/shoulder harness not used,not ejected
+659,4001834,2,passenger,female,60,severe injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+660,4001834,2,passenger,female,56,complaint of pain,passenger seat 6,not required,lap/shoulder harness used,not ejected
+661,4001836,1,passenger,female,39,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+662,4001837,1,pedestrian,male,54,complaint of pain,position unknown,not required,,not ejected
+663,4001838,1,driver,male,24,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+664,4003283,1,driver,male,62,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+665,4003283,2,driver,male,59,complaint of pain,driver,air bag not deployed,shoulder harness used,not ejected
+666,4003284,1,driver,female,20,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+667,4003284,2,driver,male,31,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+668,4003288,1,driver,male,21,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+669,4003291,1,passenger,male,24,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+670,4003292,1,driver,female,34,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+671,4003299,1,passenger,female,18,other visible injury,passenger seat 2,air bag deployed,lap/shoulder harness used,not ejected
+672,4003303,1,driver,female,23,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+673,4003303,1,passenger,female,15,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+674,4003303,1,passenger,female,15,complaint of pain,passenger seat 4,not required,lap/shoulder harness used,not ejected
+675,4003308,2,driver,female,56,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+676,4003323,1,driver,male,41,severe injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+677,4003324,1,driver,male,30,other visible injury,driver,air bag not deployed,lap/shoulder harness not used,fully ejected
+678,4003324,2,passenger,male,18,no injury,passenger seat 3,lap/shoulder harness used,air bag not deployed,not ejected
+679,4003328,1,driver,female,23,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+680,4003328,2,driver,male,30,other visible injury,driver,air bag not deployed,lap/shoulder harness not used,fully ejected
+681,4003328,3,driver,male,28,other visible injury,driver,none in vehicle,"driver, motorcycle helmet used",fully ejected
+682,4003362,1,driver,female,27,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+683,4003362,1,passenger,female,18,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+684,4003368,1,passenger,female,75,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+685,4003369,2,driver,female,18,complaint of pain,driver,lap/shoulder harness used,,unknown
+686,4003370,1,driver,female,50,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+687,4003370,1,passenger,female,59,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+688,4003372,1,driver,male,63,severe injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+689,4003372,2,driver,male,18,other visible injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+690,4003374,3,pedestrian,male,62,other visible injury,position unknown,,,unknown
+691,4003378,2,driver,female,51,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+692,4003379,2,driver,male,32,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+693,4003380,1,driver,male,21,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+694,4003383,1,passenger,female,60,other visible injury,passenger seat 2,air bag not deployed,lap/shoulder harness used,not ejected
+695,4003384,1,driver,male,52,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+696,4003385,1,driver,male,44,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+697,4003388,1,passenger,female,39,no injury,passenger seat 5,not required,lap/shoulder harness used,not ejected
+698,4003388,1,passenger,male,2,no injury,passenger seat 4,not required,child restraint in vehicle used,not ejected
+699,4003392,2,driver,female,38,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+700,4003393,2,passenger,female,24,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+701,4003393,2,passenger,male,26,no injury,passenger seat 5,air bag not deployed,lap belt used,not ejected
+702,4003395,1,passenger,female,32,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+703,4003397,2,passenger,female,0,no injury,passenger seat 2,air bag not deployed,child restraint in vehicle used,not ejected
+704,4003397,2,passenger,female,33,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+705,4003397,2,passenger,male,10,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+706,4003397,2,passenger,male,11,no injury,passenger seat 5,not required,lap belt used,not ejected
+707,4003397,2,passenger,female,4,no injury,passenger seat 5,not required,lap belt used,not ejected
+708,4003397,2,passenger,male,14,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+709,4003400,1,bicyclist,male,29,other visible injury,driver,not required,"driver, motorcycle helmet used",fully ejected
+710,4003400,2,passenger,male,22,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+711,4003401,2,passenger,male,6,no injury,passenger seat 4,not required,child restraint in vehicle used,not ejected
+712,4003409,2,driver,male,41,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+713,4003411,2,passenger,male,32,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+714,4003419,1,driver,male,51,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+715,4003419,1,passenger,female,50,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+716,4003419,2,passenger,male,51,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+717,4003419,2,passenger,female,30,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+718,4003419,2,passenger,female,,no injury,position unknown,air bag not deployed,lap/shoulder harness used,not ejected
+719,4003419,2,passenger,female,49,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+720,4003419,2,passenger,female,44,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+721,4003419,2,passenger,female,32,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+722,4003419,2,passenger,female,31,no injury,position unknown,air bag not deployed,none in vehicle,not ejected
+723,4003420,1,driver,female,28,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+724,4003420,2,passenger,male,49,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+725,4003420,2,passenger,male,,no injury,other occupants,air bag not deployed,not required,not ejected
+726,4003433,1,passenger,male,39,no injury,passenger seat 2,not required,lap/shoulder harness not used,not ejected
+727,4003433,3,driver,male,32,severe injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+728,4003437,1,driver,male,29,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+729,4003442,2,driver,male,26,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+730,4003442,2,passenger,male,23,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+731,4003442,5,passenger,male,16,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+732,4003447,2,driver,female,70,complaint of pain,driver,,lap/shoulder harness used,not ejected
+733,4003449,2,bicyclist,male,46,complaint of pain,driver,not required,,not ejected
+734,4003450,1,passenger,female,78,no injury,passenger seat 3,air bag not deployed,unknown,not ejected
+735,4003450,1,driver,male,77,other visible injury,driver,air bag not deployed,unknown,not ejected
+736,4003453,1,passenger,male,18,no injury,passenger seat 2,air bag not deployed,lap/shoulder harness used,not ejected
+737,4003454,2,driver,female,20,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+738,4003455,1,passenger,female,10,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+739,4003455,1,passenger,female,13,complaint of pain,passenger seat 6,not required,lap/shoulder harness used,not ejected
+740,4003467,2,passenger,male,19,complaint of pain,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+741,4003467,2,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+742,4003470,1,passenger,female,40,no injury,driver,not required,lap belt not used,not ejected
+743,4003470,1,passenger,female,9,no injury,other occupants,not required,,not ejected
+744,4003470,1,passenger,female,12,no injury,other occupants,none in vehicle,,not ejected
+745,4003470,1,passenger,male,9,no injury,other occupants,not required,,not ejected
+746,4003470,1,passenger,male,10,no injury,other occupants,not required,,not ejected
+747,4003470,1,passenger,female,12,no injury,other occupants,not required,,not ejected
+748,4003470,1,passenger,male,8,no injury,other occupants,not required,,not ejected
+749,4003470,1,passenger,female,10,no injury,other occupants,not required,,not ejected
+750,4003470,1,passenger,female,10,no injury,other occupants,not required,,not ejected
+751,4003470,1,passenger,female,8,no injury,other occupants,not required,,not ejected
+752,4003470,1,passenger,male,11,no injury,other occupants,not required,,not ejected
+753,4003470,1,passenger,male,10,no injury,other occupants,not required,,not ejected
+754,4003470,1,passenger,male,6,no injury,other occupants,not required,,not ejected
+755,4003470,1,passenger,female,5,no injury,other occupants,not required,,not ejected
+756,4003470,1,passenger,male,8,no injury,other occupants,not required,,not ejected
+757,4003470,1,passenger,male,4,no injury,other occupants,not required,,not ejected
+758,4003470,1,passenger,male,6,no injury,other occupants,not required,,not ejected
+759,4003470,1,passenger,female,6,no injury,other occupants,not required,,not ejected
+760,4003470,1,passenger,female,16,no injury,other occupants,not required,,not ejected
+761,4003470,1,passenger,female,14,no injury,other occupants,not required,,not ejected
+762,4003470,1,passenger,female,17,no injury,other occupants,not required,,not ejected
+763,4003471,1,passenger,male,53,no injury,driver,not required,lap/shoulder harness used,not ejected
+764,4003471,2,driver,male,21,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+765,4003474,1,driver,male,56,other visible injury,driver,not required,lap/shoulder harness used,not ejected
+766,4003479,3,passenger,female,38,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+767,4003479,3,passenger,female,6,no injury,rear occupant of truck or van,air bag not deployed,child restraint in vehicle used,not ejected
+768,4003479,3,passenger,male,3,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+769,4003482,1,passenger,female,81,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+770,4003494,2,passenger,male,16,no injury,passenger seat 4,none in vehicle,,not ejected
+771,4003494,2,passenger,female,16,no injury,rear occupant of truck or van,none in vehicle,,not ejected
+772,4003494,2,passenger,female,15,no injury,position unknown,none in vehicle,,not ejected
+773,4003494,2,passenger,male,16,no injury,position unknown,none in vehicle,,not ejected
+774,4003494,2,passenger,female,15,no injury,position unknown,none in vehicle,,not ejected
+775,4003494,2,passenger,male,16,no injury,position unknown,none in vehicle,,not ejected
+776,4003498,2,passenger,female,34,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+777,4003499,1,passenger,female,40,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+778,4003499,2,passenger,female,,no injury,position unknown,not required,,not ejected
+779,4003499,2,passenger,male,41,no injury,position unknown,not required,,not ejected
+780,4003499,2,passenger,female,,no injury,position unknown,not required,,not ejected
+781,4003499,2,passenger,,,no injury,position unknown,not required,,not ejected
+782,4003499,2,passenger,,,no injury,position unknown,not required,,not ejected
+783,4003499,2,passenger,female,27,no injury,position unknown,not required,,not ejected
+784,4003499,2,passenger,female,,no injury,position unknown,not required,,not ejected
+785,4003499,2,passenger,male,,no injury,position unknown,not required,,not ejected
+786,4003499,2,passenger,female,,no injury,position unknown,not required,,not ejected
+787,4003499,2,passenger,male,,no injury,position unknown,not required,,not ejected
+788,4003499,2,passenger,female,,no injury,position unknown,not required,,not ejected
+789,4003499,2,passenger,female,,no injury,position unknown,not required,,not ejected
+790,4003502,1,driver,male,48,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+791,4003502,1,passenger,female,64,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+792,4003502,1,passenger,female,73,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+793,4003502,1,passenger,female,76,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+794,4003502,1,passenger,male,79,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+795,4003502,1,passenger,female,77,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+796,4003502,1,passenger,female,75,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+797,4003502,1,passenger,female,83,complaint of pain,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+798,4003502,1,passenger,male,81,no injury,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+799,4003502,1,passenger,male,83,no injury,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+800,4003502,1,passenger,male,81,no injury,rear occupant of truck or van,not required,lap/shoulder harness used,not ejected
+801,4003503,2,passenger,female,3,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+802,4003503,2,passenger,female,1,no injury,passenger seat 5,air bag not deployed,child restraint in vehicle used,not ejected
+803,4003506,1,driver,male,44,complaint of pain,driver,lap/shoulder harness not used,,not ejected
+804,4003507,1,driver,male,48,complaint of pain,driver,not required,"driver, motorcycle helmet used",fully ejected
+805,4004164,2,passenger,female,17,no injury,other occupants,not required,,not ejected
+806,4004164,2,passenger,female,79,no injury,other occupants,not required,,not ejected
+807,4004164,2,passenger,male,16,no injury,passenger seat 3,not required,,not ejected
+808,4004168,2,passenger,male,21,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+809,4004168,2,passenger,female,48,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+810,4004168,2,passenger,female,24,no injury,passenger seat 5,not required,lap belt used,not ejected
+811,4004168,2,passenger,female,36,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+812,4004171,1,driver,male,30,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+813,4004172,2,passenger,male,75,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+814,4004172,3,driver,male,20,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+815,4004172,3,passenger,male,,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+816,4004172,3,passenger,,20,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+817,4004172,3,passenger,male,23,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+818,4004174,1,driver,male,43,other visible injury,driver,not required,lap/shoulder harness used,not ejected
+819,4004178,1,passenger,male,15,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+820,4004178,2,passenger,female,28,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+821,4004178,2,passenger,female,5,no injury,passenger seat 4,air bag not deployed,no child restraint in vehicle,not ejected
+822,4004178,2,passenger,female,,no injury,passenger seat 5,air bag not deployed,child restraint in vehicle used,not ejected
+823,4004179,2,passenger,male,9,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+824,4004179,2,passenger,female,6,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+825,4004181,2,passenger,male,51,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+826,4004182,1,driver,female,26,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+827,4004182,2,passenger,female,59,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+828,4004183,2,passenger,male,10,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+829,4004186,1,driver,male,52,other visible injury,driver,not required,lap/shoulder harness used,not ejected
+830,4004190,2,passenger,female,4,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+831,4004190,2,passenger,male,7,no injury,passenger seat 5,not required,lap/shoulder harness used,not ejected
+832,4004191,2,driver,male,22,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+833,4004194,1,driver,male,42,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+834,4004194,1,passenger,female,58,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+835,4004194,2,driver,male,67,complaint of pain,driver,not required,lap/shoulder harness used,not ejected
+836,4004196,1,driver,male,41,severe injury,driver,air bag deployed,lap/shoulder harness used,not ejected
+837,4004198,1,driver,male,51,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+838,4004199,2,driver,female,37,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+839,4004201,2,passenger,female,3,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+840,4004204,1,driver,male,28,complaint of pain,driver,,,not ejected
+841,4004205,2,passenger,female,33,complaint of pain,passenger seat 3,lap/shoulder harness used,,not ejected
+842,4004209,2,driver,,43,other visible injury,driver,,,unknown
+843,4004210,2,driver,female,36,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+844,4004210,3,passenger,male,59,other visible injury,passenger seat 3,none in vehicle,lap/shoulder harness used,not ejected
+845,4004210,3,passenger,male,46,other visible injury,other occupants,none in vehicle,,not ejected
+846,4004213,1,driver,male,22,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+847,4004218,1,passenger,male,30,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+848,4004223,2,driver,male,45,other visible injury,driver,passive restraint not used,,not ejected
+849,4004223,2,passenger,male,41,no injury,passenger seat 6,lap/shoulder harness used,,not ejected
+850,4004223,2,passenger,male,31,complaint of pain,passenger seat 3,lap/shoulder harness used,,not ejected
+851,4004230,2,passenger,female,30,no injury,rear occupant of truck or van,not required,,not ejected
+852,4004230,2,passenger,male,30,no injury,rear occupant of truck or van,not required,,not ejected
+853,4004230,2,passenger,male,43,no injury,rear occupant of truck or van,not required,,not ejected
+854,4004230,2,passenger,female,54,no injury,rear occupant of truck or van,not required,,not ejected
+855,4004230,2,passenger,male,30,no injury,rear occupant of truck or van,not required,,not ejected
+856,4004230,2,passenger,male,24,no injury,rear occupant of truck or van,not required,,not ejected
+857,4004230,2,passenger,female,63,no injury,rear occupant of truck or van,not required,,not ejected
+858,4004230,2,passenger,female,24,no injury,rear occupant of truck or van,not required,,not ejected
+859,4004230,2,passenger,male,42,no injury,rear occupant of truck or van,not required,,not ejected
+860,4004230,2,passenger,male,34,no injury,rear occupant of truck or van,not required,,not ejected
+861,4004234,2,passenger,male,17,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+862,4004238,2,driver,male,41,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+863,4004244,1,passenger,male,21,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+864,4004268,1,passenger,female,21,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+865,4004268,1,driver,male,23,complaint of pain,driver,air bag deployed,lap/shoulder harness used,unknown
+866,4004272,1,driver,male,56,other visible injury,driver,air bag deployed,lap/shoulder harness not used,not ejected
+867,4004280,2,passenger,female,52,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+868,4004280,3,passenger,female,37,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+869,4004280,3,passenger,male,3,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+870,4004280,3,passenger,female,4,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+871,4004280,3,passenger,male,10,no injury,position unknown,not required,none in vehicle,not ejected
+872,4004280,3,passenger,female,16,no injury,position unknown,not required,none in vehicle,not ejected
+873,4004280,3,passenger,male,13,no injury,position unknown,not required,none in vehicle,not ejected
+874,4004280,3,passenger,male,16,no injury,position unknown,not required,none in vehicle,not ejected
+875,4004284,2,driver,male,27,complaint of pain,driver,air bag deployed,lap/shoulder harness used,unknown
+876,4004292,2,driver,male,41,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+877,4004295,1,driver,male,24,complaint of pain,driver,none in vehicle,lap/shoulder harness used,not ejected
+878,4004299,1,passenger,female,33,complaint of pain,station wagon rear,air bag deployed,,unknown
+879,4004299,1,passenger,male,28,other visible injury,station wagon rear,,,unknown
+880,4004299,2,driver,male,33,other visible injury,driver,lap/shoulder harness used,air bag deployed,unknown
+881,4004304,2,driver,female,60,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+882,4004304,2,passenger,male,52,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+883,4004308,1,passenger,female,44,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+884,4004308,1,passenger,female,85,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+885,4004308,1,passenger,female,44,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+886,4004311,2,driver,female,52,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+887,4004315,1,passenger,male,31,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+888,4004320,1,passenger,female,12,no injury,passenger seat 3,lap/shoulder harness used,,not ejected
+889,4004320,2,driver,,58,complaint of pain,driver,lap/shoulder harness used,,not ejected
+890,4004482,1,passenger,male,55,no injury,other occupants,not required,lap/shoulder harness used,not ejected
+891,4004482,2,passenger,female,54,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+892,4004485,2,driver,female,24,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+893,4004489,1,passenger,male,43,no injury,passenger seat 3,other,lap/shoulder harness used,not ejected
+894,4004493,1,passenger,male,35,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+895,4004493,3,passenger,female,38,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+896,4004493,3,passenger,male,6,no injury,passenger seat 5,not required,child restraint in vehicle used,not ejected
+897,4004501,2,driver,female,42,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+898,4004509,2,driver,female,53,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+899,4004513,1,passenger,male,26,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+900,4004513,1,passenger,male,45,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+901,4004513,1,passenger,female,24,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+902,4004517,1,passenger,female,24,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+903,4004525,2,driver,female,21,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+904,4004525,3,passenger,male,16,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+905,4004525,4,passenger,female,32,no injury,passenger seat 3,none in vehicle,lap/shoulder harness used,not ejected
+906,4004529,1,driver,male,42,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+907,4004529,1,passenger,male,20,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+908,4004529,2,passenger,male,34,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+909,4004541,1,passenger,male,39,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+910,4004549,1,passenger,female,77,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+911,4004549,1,passenger,female,81,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+912,4004553,2,passenger,female,10,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+913,4004562,2,passenger,female,41,complaint of pain,passenger seat 3,lap/shoulder harness used,,not ejected
+914,4004562,2,passenger,male,4,complaint of pain,passenger seat 4,lap belt used,,not ejected
+915,4004563,1,driver,male,36,other visible injury,driver,air bag not deployed,lap/shoulder harness used,not ejected
+916,4004564,2,driver,male,49,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+917,4004564,3,driver,female,29,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+918,4004566,2,driver,female,33,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+919,4004571,1,driver,male,51,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+920,4004572,2,passenger,male,11,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+921,4004572,2,passenger,female,2,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+922,4004574,1,passenger,female,52,no injury,driver,unknown,,not ejected
+923,4004574,2,pedestrian,female,20,complaint of pain,position unknown,,,unknown
+924,4004575,1,driver,male,28,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+925,4004576,1,passenger,male,52,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+926,4004576,1,passenger,female,23,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+927,4004576,1,passenger,female,12,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+928,4004576,2,driver,female,28,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+929,4004576,2,passenger,male,31,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+930,4004584,1,passenger,male,29,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+931,4004587,2,passenger,female,74,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness not used,not ejected
+932,4004590,1,pedestrian,male,21,other visible injury,other occupants,not required,,not ejected
+933,4004591,2,driver,female,67,complaint of pain,driver,air bag deployed,lap/shoulder harness used,not ejected
+934,4004594,2,passenger,male,24,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+935,4004595,1,passenger,female,29,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+936,4004595,1,passenger,male,7,no injury,passenger seat 6,air bag not deployed,lap/shoulder harness used,not ejected
+937,4004595,2,passenger,female,44,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+938,4004599,2,passenger,male,10,other visible injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+939,4004599,2,passenger,female,3,no injury,passenger seat 4,not required,child restraint in vehicle used,not ejected
+940,4004600,1,passenger,male,44,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+941,4004601,2,passenger,female,30,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+942,4004604,2,passenger,female,20,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+943,4004604,2,passenger,female,20,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+944,4004604,2,passenger,female,19,no injury,passenger seat 5,not required,lap/shoulder harness used,not ejected
+945,4004604,2,passenger,male,19,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+946,4004607,1,passenger,male,53,no injury,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+947,4004608,1,passenger,male,18,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+948,4004608,1,passenger,female,18,no injury,passenger seat 4,air bag not deployed,lap/shoulder harness used,not ejected
+949,4004611,2,passenger,male,1,no injury,passenger seat 2,not required,child restraint in vehicle used,not ejected
+950,4004611,2,passenger,female,20,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+951,4004612,1,passenger,male,29,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+952,4004612,1,passenger,female,58,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+953,4004612,1,passenger,female,24,no injury,passenger seat 6,not required,lap/shoulder harness used,not ejected
+954,4004612,2,passenger,male,19,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+955,4004616,1,passenger,male,5,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+956,4004616,1,passenger,male,1,no injury,passenger seat 6,air bag not deployed,child restraint in vehicle used,not ejected
+957,4004620,1,passenger,male,57,no injury,position unknown,not required,,not ejected
+958,4004620,1,passenger,female,55,no injury,position unknown,not required,,not ejected
+959,4004620,1,passenger,male,51,no injury,position unknown,not required,,not ejected
+960,4004620,1,passenger,male,51,no injury,position unknown,not required,,not ejected
+961,4004620,1,passenger,female,16,no injury,position unknown,not required,,not ejected
+962,4004620,1,passenger,male,45,no injury,position unknown,not required,,not ejected
+963,4004620,1,passenger,female,46,no injury,position unknown,not required,,not ejected
+964,4004620,1,passenger,female,13,no injury,position unknown,not required,,not ejected
+965,4004620,1,passenger,male,44,no injury,position unknown,not required,,not ejected
+966,4004620,1,passenger,female,41,no injury,position unknown,not required,,not ejected
+967,4004620,1,passenger,male,12,no injury,position unknown,not required,,not ejected
+968,4004620,1,passenger,male,38,no injury,position unknown,not required,,not ejected
+969,4004620,1,passenger,female,37,no injury,position unknown,not required,,not ejected
+970,4004620,1,passenger,female,17,no injury,position unknown,not required,,not ejected
+971,4004620,1,passenger,female,12,no injury,position unknown,not required,,not ejected
+972,4004620,1,passenger,female,71,no injury,position unknown,not required,,not ejected
+973,4004620,1,passenger,female,61,no injury,position unknown,not required,,not ejected
+974,4004620,1,passenger,male,47,no injury,position unknown,not required,,not ejected
+975,4004620,1,passenger,female,48,no injury,position unknown,not required,,not ejected
+976,4004620,1,passenger,female,71,no injury,position unknown,not required,,not ejected
+977,4004620,1,passenger,female,48,no injury,position unknown,not required,,not ejected
+978,4004620,1,passenger,female,16,no injury,position unknown,not required,,not ejected
+979,4004620,1,passenger,female,12,no injury,position unknown,not required,,not ejected
+980,4004620,1,passenger,female,60,no injury,position unknown,not required,,not ejected
+981,4004622,2,passenger,male,37,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+982,4004622,2,passenger,male,3,no injury,passenger seat 4,air bag not deployed,child restraint in vehicle used,not ejected
+983,4004623,1,driver,male,67,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+984,4004623,1,passenger,male,22,complaint of pain,passenger seat 3,air bag deployed,lap/shoulder harness used,not ejected
+985,4004628,1,passenger,male,54,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+986,4004628,2,driver,,42,complaint of pain,driver,air bag not deployed,lap/shoulder harness used,not ejected
+987,4004628,2,passenger,male,20,complaint of pain,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+988,4004628,4,passenger,male,45,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+989,4004632,2,passenger,male,30,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+990,4004635,2,passenger,male,22,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+991,4004640,2,passenger,female,62,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+992,4005025,2,passenger,female,33,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+993,4005037,1,passenger,male,24,no injury,passenger seat 3,not required,lap/shoulder harness used,not ejected
+994,4005037,1,passenger,male,26,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected
+995,4006083,1,passenger,male,48,no injury,passenger seat 4,not required,,not ejected
+996,4006087,1,passenger,female,48,no injury,passenger seat 3,air bag not deployed,lap/shoulder harness used,not ejected
+997,4006091,2,passenger,,,no injury,position unknown,air bag not deployed,,unknown
+998,4006091,2,passenger,,,no injury,position unknown,air bag not deployed,,unknown
+999,4006094,1,passenger,male,43,no injury,rear occupant of truck or van,not required,,not ejected
+1000,4006094,2,passenger,male,58,no injury,passenger seat 4,not required,lap/shoulder harness used,not ejected

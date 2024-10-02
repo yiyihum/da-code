@@ -1,9 +1,10 @@
 # Byte-compiled / optimized / DLL files
 **/__pycache__/
 logs/*
-
+*di
 *.DS_Store
 *.pyc
+output_dw.zip
 *dw
 # da_code/gold/*
 # da_code/source/*

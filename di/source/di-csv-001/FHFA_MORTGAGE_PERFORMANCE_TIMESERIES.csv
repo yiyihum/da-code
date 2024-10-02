@@ -1,0 +1,176 @@
+GEO_ID,VARIABLE,VARIABLE_NAME,DATE,VALUE,UNIT
+geoId/C38300,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2008-12-31,0.03,Percent
+geoId/02,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2021-06-30,0.008,Percent
+geoId/M47894,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2020-03-31,0.028,Percent
+geoId/M19124,Percent_in_Forbearance_Government / Non-Conventional,Percent in Forbearance - Government / Non-Conventional,2021-12-31,0.025,Percent
+country/USA,Percent_in_Forbearance_Enterprise Acquisitions,Percent in Forbearance - Enterprise Acquisitions,2021-03-31,0.023,Percent
+geoId/C49180,Percent_in_Forbearance_All Mortgages,Percent in Forbearance - All Mortgages,2022-09-30,0.004,Percent
+geoId/M20994,Percent_in_Forbearance_Other Conventional Market,Percent in Forbearance - Other Conventional Market,2020-09-30,0.029,Percent
+geoId/C17820,Percent_in_Forbearance_All Mortgages,Percent in Forbearance - All Mortgages,2021-03-31,0.019,Percent
+geoId/16,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2023-12-31,0.014,Percent
+geoId/37,Percent_in_Forbearance_All Mortgages,Percent in Forbearance - All Mortgages,2020-06-30,0.036,Percent
+geoId/C38060,Percent_30_or_60_Days_Past_Due_Date_Other Conventional Market,Percent 30 or 60 Days Past Due Date - Other Conventional Market,2023-12-31,0.015,Percent
+geoId/C40060,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2012-12-31,0.032,Percent
+geoId/38,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2022-06-30,0.004,Percent
+geoId/C24860,Percent_30_or_60_Days_Past_Due_Date_Other Conventional Market,Percent 30 or 60 Days Past Due Date - Other Conventional Market,2019-12-31,0.045,Percent
+geoId/C12940,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2019-06-30,0.013,Percent
+geoId/40,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2023-03-31,0.007,Percent
+geoId/12,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2005-12-31,0.023,Percent
+geoId/M31084,Percent_in_Forbearance_Enterprise Acquisitions,Percent in Forbearance - Enterprise Acquisitions,2020-03-31,0.009,Percent
+geoId/M33874,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2017-06-30,0.006,Percent
+geoId/C16740,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2016-03-31,0.025,Percent
+geoId/C46060,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2014-03-31,0.022,Percent
+geoId/C26420,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2021-09-30,0.004,Percent
+geoId/49,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2013-12-31,0.026,Percent
+geoId/C45060,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2013-09-30,0.023,Percent
+geoId/M15764,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2022-03-31,0,Percent
+geoId/22,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2003-03-31,0.035,Percent
+geoId/C45060,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2016-12-31,0.008,Percent
+geoId/46,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2007-12-31,0.007,Percent
+geoId/32,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2022-09-30,0.016,Percent
+geoId/C10740,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2003-03-31,0.035,Percent
+geoId/29,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2002-12-31,0.014,Percent
+geoId/C21340,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2014-06-30,0.006,Percent
+geoId/M31084,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2018-09-30,0.034,Percent
+geoId/M15764,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2003-03-31,0.003,Percent
+geoId/C26420,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2019-06-30,0.01,Percent
+geoId/M42644,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2007-12-31,0.001,Percent
+geoId/C16740,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2007-03-31,0.024,Percent
+geoId/C35300,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2003-03-31,0.014,Percent
+geoId/M23224,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2017-03-31,0.018,Percent
+geoId/M16984,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2021-12-31,0.006,Percent
+geoId/C35300,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2011-03-31,0.025,Percent
+geoId/50,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2012-12-31,0.029,Percent
+geoId/C49340,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2012-12-31,0.02,Percent
+geoId/M48424,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2007-03-31,0.002,Percent
+geoId/C37100,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2007-03-31,0.004,Percent
+geoId/51,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2003-03-31,0.011,Percent
+geoId/C41940,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2019-06-30,0.001,Percent
+geoId/10,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2014-12-31,0.023,Percent
+geoId/C37100,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2010-03-31,0.021,Percent
+geoId/C49340,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2013-12-31,0.018,Percent
+geoId/M23844,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2006-06-30,0.009,Percent
+geoId/C45060,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2003-09-30,0.002,Percent
+geoId/45,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2012-12-31,0.046,Percent
+geoId/C41940,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2012-09-30,0.049,Percent
+geoId/28,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2015-09-30,0.067,Percent
+geoId/C28140,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2013-03-31,0.044,Percent
+geoId/C10580,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2007-09-30,0.048,Percent
+geoId/M20994,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2002-09-30,0.065,Percent
+geoId/C19740,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2012-03-31,0.012,Percent
+geoId/C28940,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2018-06-30,0.033,Percent
+geoId/C46140,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2004-09-30,0.016,Percent
+geoId/13,Percent_30_or_60_Days_Past_Due_Date_Other Conventional Market,Percent 30 or 60 Days Past Due Date - Other Conventional Market,2004-03-31,0.04,Percent
+geoId/11,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2014-09-30,0.054,Percent
+geoId/C41180,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2005-09-30,0.031,Percent
+geoId/M48864,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2018-09-30,0.043,Percent
+geoId/M33874,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2011-12-31,0.013,Percent
+geoId/38,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2003-12-31,0.009,Percent
+geoId/05,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2005-12-31,0.013,Percent
+geoId/40,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2010-09-30,0.025,Percent
+geoId/C35840,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2014-06-30,0.07,Percent
+geoId/C44700,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2016-12-31,0.003,Percent
+geoId/42,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2015-06-30,0.013,Percent
+geoId/C35840,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2014-09-30,0.027,Percent
+geoId/C47260,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2007-12-31,0.002,Percent
+geoId/C38060,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2015-12-31,0.007,Percent
+geoId/M23224,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2014-12-31,0.02,Percent
+geoId/C15380,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2022-12-31,0.007,Percent
+geoId/C10740,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2014-03-31,0.042,Percent
+geoId/M23104,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2006-09-30,0.019,Percent
+geoId/35,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2005-09-30,0.008,Percent
+geoId/20,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2004-12-31,0.025,Percent
+geoId/06,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2013-03-31,0.013,Percent
+geoId/18,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2016-03-31,0.007,Percent
+geoId/56,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2020-12-31,0,Percent
+geoId/C45300,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2007-12-31,0.071,Percent
+geoId/C46060,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2003-09-30,0.023,Percent
+geoId/C41620,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2019-12-31,0.002,Percent
+geoId/C41620,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2005-03-31,0.026,Percent
+geoId/56,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2017-03-31,0.007,Percent
+geoId/C12580,Percent_30_or_60_Days_Past_Due_Date_Other Conventional Market,Percent 30 or 60 Days Past Due Date - Other Conventional Market,2020-03-31,0.027,Percent
+geoId/M48424,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2015-12-31,0.01,Percent
+geoId/M23104,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2020-06-30,0.001,Percent
+geoId/20,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2011-03-31,0.016,Percent
+geoId/54,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2018-06-30,0.006,Percent
+geoId/C12540,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2005-06-30,0,Percent
+geoId/M15764,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2007-03-31,0.012,Percent
+geoId/C13820,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2012-03-31,0.059,Percent
+geoId/10,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2020-09-30,0.018,Percent
+geoId/M23224,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2023-06-30,0,Percent
+geoId/11,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2015-12-31,0.011,Percent
+geoId/M23844,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2022-12-31,0.009,Percent
+geoId/C24660,Percent_in_Forbearance_Other Conventional Market,Percent in Forbearance - Other Conventional Market,2021-06-30,0.013,Percent
+geoId/55,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2023-06-30,0.032,Percent
+geoId/M41884,Percent_in_Forbearance_Government / Non-Conventional,Percent in Forbearance - Government / Non-Conventional,2021-03-31,,Percent
+geoId/36,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2015-12-31,0.025,Percent
+geoId/C47260,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2008-12-31,0.007,Percent
+geoId/C49340,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2015-09-30,0.015,Percent
+geoId/C40380,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2019-09-30,0.011,Percent
+geoId/M35004,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2021-09-30,0.001,Percent
+geoId/28,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2018-06-30,0.021,Percent
+geoId/M31084,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2009-03-31,0.01,Percent
+geoId/C10740,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2011-06-30,0.079,Percent
+geoId/C48620,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2022-03-31,0.003,Percent
+geoId/20,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2022-12-31,0.01,Percent
+geoId/C12060,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2017-06-30,0.006,Percent
+geoId/C14260,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2017-12-31,0.01,Percent
+geoId/53,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2010-12-31,0.027,Percent
+geoId/C12940,Percent_30_or_60_Days_Past_Due_Date_Other Conventional Market,Percent 30 or 60 Days Past Due Date - Other Conventional Market,2022-12-31,0.032,Percent
+geoId/M35084,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2011-06-30,0.088,Percent
+geoId/C40060,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2003-12-31,0.017,Percent
+geoId/35,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2009-12-31,0.012,Percent
+geoId/C40060,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2018-06-30,0.003,Percent
+geoId/C10900,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2022-12-31,0.002,Percent
+geoId/C30780,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2006-12-31,0.023,Percent
+geoId/26,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2015-12-31,0.012,Percent
+geoId/M35004,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2004-03-31,0.058,Percent
+geoId/C35380,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2007-03-31,0.002,Percent
+geoId/34,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2016-06-30,0.018,Percent
+geoId/C28140,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2015-03-31,0.025,Percent
+geoId/M33124,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2006-06-30,0.007,Percent
+geoId/45,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2008-09-30,0.017,Percent
+geoId/C21340,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2011-06-30,0.049,Percent
+geoId/M42644,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2003-09-30,0.045,Percent
+geoId/M23844,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2016-09-30,0.01,Percent
+geoId/53,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2008-06-30,0.008,Percent
+geoId/C37100,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2015-12-31,0.012,Percent
+geoId/C15380,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Other Conventional Market","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Other Conventional Market",2015-09-30,0.025,Percent
+geoId/15,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2019-09-30,0.001,Percent
+geoId/04,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2009-06-30,0.033,Percent
+geoId/44,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2017-03-31,0.006,Percent
+geoId/C34980,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2011-03-31,0.019,Percent
+geoId/09,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2009-06-30,0.058,Percent
+geoId/28,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2008-09-30,0.031,Percent
+geoId/C46520,Percent_30_or_60_Days_Past_Due_Date_Enterprise Acquisitions,Percent 30 or 60 Days Past Due Date - Enterprise Acquisitions,2004-09-30,0.004,Percent
+geoId/44,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2002-09-30,0.001,Percent
+geoId/C12580,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2011-12-31,0.059,Percent
+geoId/C12060,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2012-12-31,0.015,Percent
+geoId/M42644,Percent_30_or_60_Days_Past_Due_Date_Other Conventional Market,Percent 30 or 60 Days Past Due Date - Other Conventional Market,2011-12-31,0.037,Percent
+geoId/M47894,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2012-03-31,0.017,Percent
+geoId/C33340,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2013-12-31,0.041,Percent
+geoId/C41940,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2023-03-31,0,Percent
+geoId/M22744,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2018-09-30,0.006,Percent
+geoId/04,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2021-03-31,0.006,Percent
+geoId/C41740,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2003-03-31,0.004,Percent
+geoId/C35300,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2015-03-31,0.02,Percent
+geoId/M37964,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2011-12-31,0.023,Percent
+geoId/C12940,Percent_90_to_180_Days_Past_Due_Date_Enterprise Acquisitions,Percent 90 to 180 Days Past Due Date - Enterprise Acquisitions,2018-03-31,0.008,Percent
+geoId/44,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2008-12-31,0.029,Percent
+geoId/53,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2022-03-31,0,Percent
+geoId/M35004,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2014-09-30,0.036,Percent
+geoId/C19740,Percent_30_or_60_Days_Past_Due_Date_Government / Non-Conventional,Percent 30 or 60 Days Past Due Date - Government / Non-Conventional,2002-03-31,0.036,Percent
+geoId/37,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2017-03-31,0.007,Percent
+geoId/C23420,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2017-12-31,0.017,Percent
+geoId/C36740,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2021-06-30,0.01,Percent
+geoId/46,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2009-09-30,0.006,Percent
+geoId/C41620,Percent_30_or_60_Days_Past_Due_Date_All Mortgages,Percent 30 or 60 Days Past Due Date - All Mortgages,2006-03-31,0.022,Percent
+geoId/20,Percent_90_to_180_Days_Past_Due_Date_Other Conventional Market,Percent 90 to 180 Days Past Due Date - Other Conventional Market,2021-12-31,0.006,Percent
+geoId/C12060,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Government / Non-Conventional","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Government / Non-Conventional",2013-12-31,0.021,Percent
+geoId/02,Percent_90_to_180_Days_Past_Due_Date_Government / Non-Conventional,Percent 90 to 180 Days Past Due Date - Government / Non-Conventional,2020-06-30,0.008,Percent
+geoId/01,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2021-09-30,0.004,Percent
+geoId/C38900,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2017-06-30,0.003,Percent
+geoId/34,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2007-09-30,0.011,Percent
+geoId/C26900,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_Enterprise Acquisitions","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - Enterprise Acquisitions",2004-09-30,0.009,Percent
+geoId/C24860,Percent_90_to_180_Days_Past_Due_Date_All Mortgages,Percent 90 to 180 Days Past Due Date - All Mortgages,2017-09-30,0.011,Percent
+geoId/C46060,"Percent_in_the_Process_of_Foreclosure,_Bankruptcy,_or_Deed_in_Lieu_All Mortgages","Percent in the Process of Foreclosure, Bankruptcy, or Deed in Lieu - All Mortgages",2019-06-30,0.003,Percent

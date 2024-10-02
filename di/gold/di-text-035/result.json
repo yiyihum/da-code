@@ -1,0 +1,4 @@
+{
+    "Strong Positively Correlated": ["Class_Business", "Online boarding", "Type of Travel_Business travel"],
+    "Strong Negatively Correlated": ["Class_Eco", "Type of Travel_Personal Travel"]
+}
