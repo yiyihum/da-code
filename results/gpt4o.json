@@ -1,6 +1,6 @@
 {
-    "num_results": 78,
-    "average_score": 0.7051282051282052,
+    "num_results": 79,
+    "average_score": 0.22784810126582278,
     "results": [
         {
             "id": "plot-bar-001",
@@ -253,7 +253,14 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -489,6 +496,7 @@
                     "x_label": true,
                     "y_label": true,
                     "xtick_labels": false,
+                    "color": false,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -771,7 +779,7 @@
         },
         {
             "id": "plot-bar-011",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 5,
@@ -810,8 +818,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": false,
+                    "graph_title": false,
+                    "x_label": false,
+                    "y_label": false,
+                    "xtick_labels": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -1143,7 +1158,15 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "xtick_labels": true,
+                    "color": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -1213,7 +1236,7 @@
         },
         {
             "id": "plot-bar-018",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 8,
@@ -1267,8 +1290,73 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
+                    "score": 0.0,
+                    "file": [
+                        "result.png",
+                        "plot.json",
+                        "result.npy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "plot-bar-019",
+            "total_score": 0.0,
+            "hardness": "Medium",
+            "finished": true,
+            "steps": 5,
+            "result": "result.png",
+            "added_files": [
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-019/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-019/analyze_amazon_sales.py"
+            ],
+            "changed_files": [],
+            "actions": [
+                [
+                    "Bash",
+                    "ls -l",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 10 amazon.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    26,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
+                    ""
+                ]
+            ],
+            "info": [
+                {
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": false,
+                    "x_label": true,
+                    "y_label": true,
+                    "ytick_labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -1279,7 +1367,7 @@
         },
         {
             "id": "plot-bar-020",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 5,
@@ -1318,8 +1406,14 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "color": false,
+                    "labels": true,
+                    "xtick_labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -1330,7 +1424,7 @@
         },
         {
             "id": "plot-bar-021",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 6,
@@ -1374,8 +1468,16 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "color": false,
+                    "labels": false,
+                    "x_label": true,
+                    "legend_title": false,
+                    "y_label": false,
+                    "score": 0.0,
                     "file": [
                         "category.png",
                         "plot.json",
@@ -1386,7 +1488,7 @@
         },
         {
             "id": "plot-bar-022",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Easy",
             "finished": false,
             "steps": 20,
@@ -1500,8 +1602,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "color": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "graph_title": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -1584,7 +1693,7 @@
         },
         {
             "id": "plot-line-001",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -1652,8 +1761,14 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": false,
+                    "x_label": false,
+                    "y_label": false,
+                    "score": 0.0,
                     "file": [
                         "point.png",
                         "plot.json",
@@ -2013,7 +2128,7 @@
         },
         {
             "id": "plot-line-006",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 9,
@@ -2072,8 +2187,17 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "legend_title": true,
+                    "labels": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2084,7 +2208,7 @@
         },
         {
             "id": "plot-line-007",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 6,
@@ -2128,8 +2252,10 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2184,7 +2310,14 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -2196,7 +2329,7 @@
         },
         {
             "id": "plot-line-009",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -2260,8 +2393,16 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
+                    "legend_title": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2510,7 +2651,7 @@
         },
         {
             "id": "plot-line-014",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 5,
@@ -2549,8 +2690,14 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "score": 0.0,
                     "file": [
                         "result.jpg",
                         "plot.json",
@@ -2698,7 +2845,15 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "color": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "legend_title": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -2710,7 +2865,7 @@
         },
         {
             "id": "plot-line-017",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 12,
@@ -2786,8 +2941,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2798,7 +2960,7 @@
         },
         {
             "id": "plot-line-018",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -2862,8 +3024,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "labels": false,
+                    "x_label": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2874,7 +3043,7 @@
         },
         {
             "id": "plot-line-019",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 9,
@@ -2933,8 +3102,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "color": true,
+                    "y_label": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2945,7 +3121,7 @@
         },
         {
             "id": "plot-line-020",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 9,
@@ -3004,8 +3180,16 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": false,
+                    "graph_title": false,
+                    "x_label": false,
+                    "color": true,
+                    "y_label": false,
+                    "labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3339,7 +3523,7 @@
         },
         {
             "id": "plot-pie-004",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 5,
@@ -3378,8 +3562,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3390,7 +3579,7 @@
         },
         {
             "id": "plot-pie-005",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 7,
@@ -3440,8 +3629,10 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3452,7 +3643,7 @@
         },
         {
             "id": "plot-pie-006",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -3516,8 +3707,14 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": true,
+                    "y_label": true,
+                    "legend_title": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3567,7 +3764,12 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "color": true,
+                    "graph_title": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -3579,7 +3781,7 @@
         },
         {
             "id": "plot-pie-008",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 17,
@@ -3681,8 +3883,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "score": 0.0,
                     "file": [
                         "result.jpg",
                         "plot.json",
@@ -3693,7 +3900,7 @@
         },
         {
             "id": "plot-pie-009",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 8,
@@ -3747,8 +3954,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": true,
+                    "labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3759,7 +3971,7 @@
         },
         {
             "id": "plot-pie-010",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 9,
@@ -3818,8 +4030,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": false,
+                    "labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3900,7 +4117,12 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "color": true,
+                    "graph_title": true,
+                    "figsize": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -3912,7 +4134,7 @@
         },
         {
             "id": "plot-pie-012",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Easy",
             "finished": true,
             "steps": 5,
@@ -3951,8 +4173,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "color": true,
+                    "graph_title": true,
+                    "figsize": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -3963,7 +4190,7 @@
         },
         {
             "id": "plot-pie-013",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Easy",
             "finished": true,
             "steps": 9,
@@ -4024,8 +4251,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": true,
+                    "graph_title": true,
+                    "figsize": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4036,7 +4268,7 @@
         },
         {
             "id": "plot-pie-014",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Easy",
             "finished": true,
             "steps": 7,
@@ -4087,8 +4319,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "color": true,
+                    "graph_title": true,
+                    "labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4099,7 +4336,7 @@
         },
         {
             "id": "plot-pie-015",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 5,
@@ -4138,8 +4375,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "color": false,
+                    "graph_title": false,
+                    "labels": false,
+                    "figsize": false,
+                    "legend_title": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4150,7 +4394,7 @@
         },
         {
             "id": "plot-pie-016",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 5,
@@ -4189,8 +4433,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "labels": false,
+                    "figsize": false,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4201,7 +4450,7 @@
         },
         {
             "id": "plot-pie-017",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 8,
@@ -4255,8 +4504,13 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "figsize": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4267,7 +4521,7 @@
         },
         {
             "id": "plot-pie-018",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 9,
@@ -4326,8 +4580,14 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "graph_title": true,
+                    "figsize": true,
+                    "color": true,
+                    "labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4338,7 +4598,7 @@
         },
         {
             "id": "plot-pie-019",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 6,
@@ -4383,8 +4643,14 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": false,
+                    "figsize": false,
+                    "color": true,
+                    "labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4513,7 +4779,7 @@
         },
         {
             "id": "plot-scatter-003",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 8,
@@ -4567,8 +4833,16 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
+                    "ytick_labels": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4579,7 +4853,7 @@
         },
         {
             "id": "plot-scatter-004",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 10,
@@ -4644,8 +4918,10 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4745,7 +5021,7 @@
         },
         {
             "id": "plot-scatter-006",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 5,
@@ -4784,8 +5060,10 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "score": 0.0,
                     "file": [
                         "result.jpg",
                         "plot.json",
@@ -4796,7 +5074,7 @@
         },
         {
             "id": "plot-scatter-007",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Easy",
             "finished": true,
             "steps": 9,
@@ -4855,8 +5133,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
+                    "legend_title": false,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -4867,7 +5152,7 @@
         },
         {
             "id": "plot-scatter-008",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 11,
@@ -4938,8 +5223,16 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": false,
+                    "figsize": true,
+                    "labels": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -5023,7 +5316,7 @@
         },
         {
             "id": "plot-scatter-010",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 9,
@@ -5082,8 +5375,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -5094,7 +5394,7 @@
         },
         {
             "id": "plot-scatter-011",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 9,
@@ -5153,8 +5453,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -5165,7 +5472,7 @@
         },
         {
             "id": "plot-scatter-012",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -5232,8 +5539,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -5377,7 +5691,14 @@
             ],
             "info": [
                 {
-                    "img": true,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "figsize": true,
+                    "color": true,
                     "score": 1.0,
                     "file": [
                         "result.png",
@@ -5389,7 +5710,7 @@
         },
         {
             "id": "plot-scatter-015",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 9,
@@ -5448,8 +5769,15 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": false,
+                    "scale_data": false,
+                    "graph_title": false,
+                    "x_label": false,
+                    "y_label": false,
+                    "figsize": false,
+                    "color": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",

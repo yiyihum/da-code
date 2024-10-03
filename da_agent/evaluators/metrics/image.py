@@ -65,7 +65,7 @@ class ImageTest:
             return (1.0, {key: True}) if result else (0.0, {key: False})
         else:
             raise \
-            ValueError('please check your key, must in [figsize, type, labels, x_label, y_label, graph_title, legend_title, color, xtick_labels, ytick_lables]')
+            ValueError(f'please check your key: {key}, it must in [figsize, type, labels, x_label, y_label, graph_title, legend_title, color, xtick_labels, ytick_lables]')
             
     @classmethod
     def scale_to_percentage(cls, arr):
@@ -102,7 +102,7 @@ class ImageTest:
             result_img = np.array(Image.open(result).convert('L')) if not iscolor \
                 else np.array(Image.open(result))
             gold_img = np.array(Image.open(gold).convert('L')) if not iscolor \
-                else np.array(Image.open(result))
+                else np.array(Image.open(gold))
             if gold_img.ndim == 3:
                 if result_img.ndim != 3:
                     return (0.0, {'img': False})
@@ -198,7 +198,7 @@ def compare_image(results: List[str] | str, expected: List[str], **options):
             iscolor=True if 'color' in keys_compare else False,
             issize=True if 'figsize' in keys_compare else False)
     output_dict.update(img_dict)
-    
+
     if image_score:
         output_dict.update({'score': 1.0})
         return output_dict
