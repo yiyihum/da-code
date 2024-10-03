@@ -1,6 +1,6 @@
 {
     "num_results": 79,
-    "average_score": 0.27848101265822783,
+    "average_score": 0.25316455696202533,
     "results": [
         {
             "id": "plot-bar-001",
@@ -2441,7 +2441,7 @@
         },
         {
             "id": "plot-line-009",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -2505,8 +2505,16 @@
             ],
             "info": [
                 {
-                    "img": true,
-                    "score": 1.0,
+                    "img": false,
+                    "data": true,
+                    "scale_data": true,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": false,
+                    "legend_title": true,
+                    "score": 0.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2574,7 +2582,7 @@
         },
         {
             "id": "plot-line-011",
-            "total_score": 1.0,
+            "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 6,
@@ -2619,13 +2627,13 @@
             "info": [
                 {
                     "img": false,
-                    "data": true,
-                    "scale_data": true,
+                    "data": false,
+                    "scale_data": false,
                     "figsize": true,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "score": 1.0,
+                    "score": 0.0,
                     "file": [
                         "result.jpg",
                         "plot.json",
@@ -2796,7 +2804,7 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
-                    "color": true,
+                    "color": false,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
@@ -3502,8 +3510,10 @@
             "steps": 9,
             "result": "distribution.png",
             "added_files": [
-                "output/gpt-4o/plot-pie-002/plot_distribution.py",
-                "output/gpt-4o/plot-pie-002/distribution.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-pie-002/analyze_kohli_runs.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-pie-002/create_pie_chart.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-pie-002/distribution.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-pie-002/kohli_run_distribution.csv"
             ],
             "changed_files": [],
             "actions": [
@@ -3524,22 +3534,22 @@
                 ],
                 [
                     "Python",
-                    24,
+                    13,
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    18,
                     "error message"
                 ],
                 [
                     "Bash",
-                    "pip install pyyaml",
+                    "pip install PyYAML",
                     "standard output"
                 ],
                 [
                     "Python",
-                    24,
-                    "error message"
-                ],
-                [
-                    "Python",
-                    27,
+                    18,
                     "execution succeeded"
                 ],
                 [
