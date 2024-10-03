@@ -2650,8 +2650,8 @@
             "steps": 6,
             "result": "result.jpg",
             "added_files": [
-                "output/gpt-4o/plot-line-012/result.jpg",
-                "output/gpt-4o/plot-line-012/generate_plot.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-012/result.jpg",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-012/plot_average_amounts.py"
             ],
             "changed_files": [],
             "actions": [
@@ -2662,17 +2662,17 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 MyTransaction.csv",
+                    "head -n 5 MyTransaction.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    29,
+                    27,
                     "error message"
                 ],
                 [
                     "Python",
-                    32,
+                    30,
                     "execution succeeded"
                 ],
                 [
