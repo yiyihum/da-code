@@ -82,7 +82,7 @@ class ImageTest:
             ref_np = cls.scale_to_percentage(ref_np)
         hyp_np = np.sort(hyp_np, axis=0).reshape(hyp_np.shape)
         ref_np = np.sort(ref_np, axis=0).reshape(hyp_np.shape)
-        if np.allclose(hyp_np, ref_np, atol=tol):
+        if np.allclose(hyp_np, ref_np, atol=tol, equal_nan=True):
             return True
         else:
             return False

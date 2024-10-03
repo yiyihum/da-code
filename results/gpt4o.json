@@ -1,6 +1,6 @@
 {
     "num_results": 79,
-    "average_score": 0.22784810126582278,
+    "average_score": 0.27848101265822783,
     "results": [
         {
             "id": "plot-bar-001",
@@ -10,8 +10,8 @@
             "steps": 5,
             "result": "sales.jpg",
             "added_files": [
-                "output/gpt-4o/plot-bar-001/top_ten_artists_sales.py",
-                "output/gpt-4o/plot-bar-001/sales.jpg"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-001/analyze_sales.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-001/sales.jpg"
             ],
             "changed_files": [],
             "actions": [
@@ -22,12 +22,12 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 Song.csv",
+                    "head -n 5 Song.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    24,
+                    27,
                     "execution succeeded"
                 ],
                 [
@@ -65,13 +65,13 @@
             "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 8,
+            "steps": 9,
             "result": "result.jpg",
             "added_files": [
-                "output/gpt-4o/plot-bar-002/result.jpg",
-                "output/gpt-4o/plot-bar-002/generate_stacked_bar_chart.py",
-                "output/gpt-4o/plot-bar-002/zomato_rawdata.sqlite",
-                "output/gpt-4o/plot-bar-002/users_data.csv"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-002/create_stacked_bar_chart.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-002/result.jpg",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-002/online_order_by_rating.csv",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-002/zomato_rawdata.sqlite"
             ],
             "changed_files": [],
             "actions": [
@@ -87,28 +87,33 @@
                 ],
                 [
                     "SQL",
-                    "SELECT name FROM sqlite_master WHERE type='table';",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
                     "standard output"
                 ],
                 [
                     "SQL",
-                    "PRAGMA table_info(Users);",
+                    "SELECT * FROM Users LIMIT 5",
                     "standard output"
                 ],
                 [
                     "SQL",
-                    "SELECT rate, online_order FROM Users;",
+                    "PRAGMA table_info(Users)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT rate, online_order, COUNT(*) as count FROM Users GROUP BY rate, online_order",
                     "standard output"
                 ],
                 [
                     "Python",
-                    33,
-                    "execution succeeded"
+                    35,
+                    "error message"
                 ],
                 [
-                    "Bash",
-                    "ls -l result.jpg",
-                    "standard output"
+                    "Python",
+                    38,
+                    "execution succeeded"
                 ],
                 [
                     "Terminate",
@@ -138,11 +143,11 @@
             "total_score": 1.0,
             "hardness": "Easy",
             "finished": true,
-            "steps": 5,
+            "steps": 6,
             "result": "result.jpg",
             "added_files": [
-                "output/gpt-4o/plot-bar-003/result.jpg",
-                "output/gpt-4o/plot-bar-003/analyze_books.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-003/result.jpg",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-bar-003/analyze_books.py"
             ],
             "changed_files": [],
             "actions": [
@@ -153,12 +158,17 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 Books_df.csv",
+                    "head -n 5 Books_df.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    21,
+                    24,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    24,
                     "execution succeeded"
                 ],
                 [
@@ -1699,12 +1709,10 @@
             "steps": 10,
             "result": "point.png",
             "added_files": [
-                "output/gpt-4o/plot-line-001/extract_and_calculate_avg_scores.py",
-                "output/gpt-4o/plot-line-001/plot_avg_scores.py",
-                "output/gpt-4o/plot-line-001/point.png",
-                "output/gpt-4o/plot-line-001/plot.yaml",
-                "output/gpt-4o/plot-line-001/create_plot_yaml.py",
-                "output/gpt-4o/plot-line-001/processed_game_data.csv"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-001/point.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-001/plot.yaml",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-001/create_plot_yaml.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-001/process_and_plot.py"
             ],
             "changed_files": [],
             "actions": [
@@ -1715,38 +1723,38 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 game.csv",
+                    "head -n 5 game.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    13,
-                    "execution succeeded"
-                ],
-                [
-                    "Python",
-                    28,
+                    29,
                     "error message"
                 ],
                 [
                     "Bash",
-                    "pip install pyyaml",
+                    "pip install PyYAML",
                     "standard output"
                 ],
                 [
                     "Python",
-                    28,
+                    29,
                     "error message"
                 ],
                 [
+                    "Bash",
+                    "ls -l plot.yaml",
+                    "standard output"
+                ],
+                [
                     "Python",
-                    13,
+                    15,
                     "execution succeeded"
                 ],
                 [
                     "Python",
-                    28,
-                    "execution succeeded"
+                    29,
+                    "warning message"
                 ],
                 [
                     "Bash",
@@ -1764,7 +1772,7 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
-                    "color": true,
+                    "color": false,
                     "graph_title": false,
                     "x_label": false,
                     "y_label": false,
@@ -1779,16 +1787,16 @@
         },
         {
             "id": "plot-line-002",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 9,
+            "steps": 10,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-line-002/processed_matches.csv",
-                "output/gpt-4o/plot-line-002/create_line_graph.py",
-                "output/gpt-4o/plot-line-002/result.png",
-                "output/gpt-4o/plot-line-002/process_matches.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-002/teams_over_100_matches.csv",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-002/create_line_graph.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-002/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-002/analyze_matches.py"
             ],
             "changed_files": [],
             "actions": [
@@ -1799,32 +1807,37 @@
                 ],
                 [
                     "Bash",
+                    "head -n 5 matches.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    15,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    15,
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "head -n 5 deliveries.csv",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
+                    "error message"
+                ],
+                [
+                    "Bash",
                     "cat teamabbreviations.md",
                     "standard output"
                 ],
                 [
-                    "Bash",
-                    "head -n 10 matches.csv",
-                    "standard output"
-                ],
-                [
                     "Python",
-                    36,
-                    "execution succeeded"
-                ],
-                [
-                    "Bash",
-                    "head -n 10 deliveries.csv",
-                    "standard output"
-                ],
-                [
-                    "Bash",
-                    "cat plot.yaml",
-                    "standard output"
-                ],
-                [
-                    "Python",
-                    18,
+                    38,
                     "execution succeeded"
                 ],
                 [
@@ -1841,12 +1854,10 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "x_label": true,
-                    "y_label": false,
-                    "labels": false,
-                    "score": 0.0,
+                    "data": true,
+                    "scale_data": true,
+                    "labels": true,
+                    "score": 1.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -1860,14 +1871,15 @@
             "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 11,
+            "steps": 14,
             "result": "output.png",
             "added_files": [
-                "output/gpt-4o/plot-line-003/plot_spam_scores.py",
-                "output/gpt-4o/plot-line-003/debug_plot_config.py",
-                "output/gpt-4o/plot-line-003/output.png"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-003/plot_spam_scores.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-003/output.png"
             ],
-            "changed_files": [],
+            "changed_files": [
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-003/plot.yaml"
+            ],
             "actions": [
                 [
                     "Bash",
@@ -1891,7 +1903,7 @@
                 ],
                 [
                     "Bash",
-                    "pip install pyyaml",
+                    "pip install PyYAML",
                     "standard output"
                 ],
                 [
@@ -1905,13 +1917,28 @@
                     "error message"
                 ],
                 [
-                    "Python",
-                    7,
-                    "standard output"
+                    "Bash",
+                    "sed -i 's/figsize\"/figsize:/' plot.yaml",
+                    "execution succeeded"
                 ],
                 [
                     "Python",
-                    38,
+                    35,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Bash",
+                    "sed -i 's/figsize::/figsize:/' plot.yaml",
+                    "execution succeeded"
+                ],
+                [
+                    "Python",
+                    35,
                     "execution succeeded"
                 ],
                 [
@@ -1947,16 +1974,16 @@
             "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 13,
+            "steps": 12,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-line-004/olist.sqlite",
-                "output/gpt-4o/plot-line-004/result.png",
-                "output/gpt-4o/plot-line-004/orders_data.csv",
-                "output/gpt-4o/plot-line-004/generate_plot.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-004/plot_orders.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-004/olist.sqlite",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-004/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-004/orders_data.csv"
             ],
             "changed_files": [
-                "output/gpt-4o/plot-line-004/plot.yaml"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-004/plot.yaml"
             ],
             "actions": [
                 [
@@ -1970,38 +1997,38 @@
                     "standard output"
                 ],
                 [
-                    "SQL",
-                    "SELECT name FROM sqlite_master WHERE type='table';",
-                    "standard output"
-                ],
-                [
-                    "SQL",
-                    "PRAGMA table_info(orders);",
-                    "standard output"
-                ],
-                [
-                    "SQL",
-                    "SELECT order_status, order_purchase_timestamp FROM orders;",
-                    "standard output"
-                ],
-                [
                     "Bash",
                     "cat plot.yaml",
                     "standard output"
                 ],
                 [
-                    "Python",
-                    40,
-                    "error message"
+                    "SQL",
+                    "SELECT name FROM sqlite_master WHERE type='table'",
+                    "standard output"
                 ],
                 [
-                    "Bash",
-                    "pip install pyyaml",
+                    "SQL",
+                    "PRAGMA table_info(orders)",
+                    "standard output"
+                ],
+                [
+                    "SQL",
+                    "SELECT order_status, strftime('%Y-%m', order_purchase_timestamp) as purchase_month FROM orders",
                     "standard output"
                 ],
                 [
                     "Python",
-                    40,
+                    32,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install PyYAML",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    32,
                     "error message"
                 ],
                 [
@@ -2011,13 +2038,8 @@
                 ],
                 [
                     "Python",
-                    40,
+                    32,
                     "execution succeeded"
-                ],
-                [
-                    "Bash",
-                    "ls -l result.png",
-                    "standard output"
                 ],
                 [
                     "Terminate",
@@ -2048,11 +2070,12 @@
             "id": "plot-line-005",
             "total_score": 0.0,
             "hardness": "Medium",
-            "finished": false,
-            "steps": 11,
-            "result": "ERROR: Repeated action",
+            "finished": true,
+            "steps": 13,
+            "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-line-005/calculate_and_plot_happiness.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-005/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-005/calculate_and_plot_happiness.py"
             ],
             "changed_files": [],
             "actions": [
@@ -2068,47 +2091,57 @@
                 ],
                 [
                     "Bash",
-                    "cat plot.yaml",
-                    "standard output"
-                ],
-                [
-                    "Bash",
                     "head -n 5 2015.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    41,
+                    40,
                     "error message"
                 ],
                 [
                     "Bash",
-                    "head -n 1 2016.csv && head -n 1 2017.csv && head -n 1 2018.csv && head -n 1 2019.csv",
+                    "pip install PyYAML",
                     "standard output"
                 ],
                 [
                     "Python",
-                    59,
+                    40,
                     "error message"
                 ],
                 [
-                    "Python",
-                    54,
-                    "error message"
-                ],
-                [
-                    "Python",
-                    61,
-                    "error message"
-                ],
-                [
-                    "Python",
-                    61,
+                    "Bash",
+                    "head -n 1 2016.csv 2017.csv 2018.csv 2019.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    61,
+                    56,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    57,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "cat plot.yaml",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    57,
+                    "execution succeeded"
+                ],
+                [
+                    "Bash",
+                    "ls -l result.png",
+                    "standard output"
+                ],
+                [
+                    "Terminate",
+                    "",
                     ""
                 ]
             ],
@@ -2117,6 +2150,9 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "legend_title": true,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -2128,7 +2164,7 @@
         },
         {
             "id": "plot-line-006",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "hardness": "Hard",
             "finished": true,
             "steps": 9,
@@ -2188,8 +2224,8 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "figsize": true,
                     "graph_title": true,
                     "x_label": true,
@@ -2197,7 +2233,7 @@
                     "legend_title": true,
                     "labels": true,
                     "color": true,
-                    "score": 0.0,
+                    "score": 1.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2211,11 +2247,17 @@
             "total_score": 0.0,
             "hardness": "Medium",
             "finished": true,
-            "steps": 6,
+            "steps": 19,
             "result": "result.png",
             "added_files": [
-                "output/gpt-4o/plot-line-007/result.png",
-                "output/gpt-4o/plot-line-007/analyze_games.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/check_yearly_avg_size.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/inspect_dataset.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/check_primary_genres.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/result.png",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/check_genres.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/check_genres_column.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/inspect_columns.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-007/process_and_plot.py"
             ],
             "changed_files": [],
             "actions": [
@@ -2231,12 +2273,77 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 appstore_games.csv",
+                    "cat plot.yaml",
                     "standard output"
                 ],
                 [
                     "Python",
-                    52,
+                    60,
+                    "error message"
+                ],
+                [
+                    "Bash",
+                    "pip install PyYAML",
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    60,
+                    "error message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    60,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    33,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    60,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    7,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    60,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    42,
+                    "standard output"
+                ],
+                [
+                    "Python",
+                    59,
+                    "warning message"
+                ],
+                [
+                    "Python",
+                    59,
                     "execution succeeded"
                 ],
                 [
@@ -2255,6 +2362,11 @@
                     "img": false,
                     "data": false,
                     "scale_data": false,
+                    "figsize": true,
+                    "graph_title": true,
+                    "x_label": true,
+                    "y_label": true,
+                    "color": true,
                     "score": 0.0,
                     "file": [
                         "result.png",
@@ -2329,7 +2441,7 @@
         },
         {
             "id": "plot-line-009",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 10,
@@ -2393,16 +2505,8 @@
             ],
             "info": [
                 {
-                    "img": false,
-                    "data": false,
-                    "scale_data": false,
-                    "figsize": true,
-                    "graph_title": true,
-                    "x_label": true,
-                    "y_label": true,
-                    "color": true,
-                    "legend_title": true,
-                    "score": 0.0,
+                    "img": true,
+                    "score": 1.0,
                     "file": [
                         "result.png",
                         "plot.json",
@@ -2419,8 +2523,8 @@
             "steps": 5,
             "result": "result.jpg",
             "added_files": [
-                "output/gpt-4o/plot-line-010/result.jpg",
-                "output/gpt-4o/plot-line-010/analyze_nobel.py"
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-010/analyze_nobel_data.py",
+                "/home/v-yimhuang/dabench/output/gpt-4o/plot-line-010/result.jpg"
             ],
             "changed_files": [],
             "actions": [
@@ -2431,12 +2535,12 @@
                 ],
                 [
                     "Bash",
-                    "head -n 10 nobel.csv",
+                    "head -n 5 nobel.csv",
                     "standard output"
                 ],
                 [
                     "Python",
-                    25,
+                    30,
                     "execution succeeded"
                 ],
                 [
@@ -2470,7 +2574,7 @@
         },
         {
             "id": "plot-line-011",
-            "total_score": 0.0,
+            "total_score": 1.0,
             "hardness": "Medium",
             "finished": true,
             "steps": 6,
@@ -2515,14 +2619,13 @@
             "info": [
                 {
                     "img": false,
-                    "data": false,
-                    "scale_data": false,
+                    "data": true,
+                    "scale_data": true,
                     "figsize": true,
                     "graph_title": true,
                     "x_label": true,
                     "y_label": true,
-                    "legend_title": false,
-                    "score": 0.0,
+                    "score": 1.0,
                     "file": [
                         "result.jpg",
                         "plot.json",
