@@ -30,6 +30,7 @@ def call_llm(payload):
         }
         logger.info("Generating content with GPT model: %s", model)
         
+
         for i in range(3):
             try:
                 response = requests.post(
@@ -37,22 +38,23 @@ def call_llm(payload):
                             headers=headers,
                             json=payload
                         )
-                print(response.json())
                 output_message = response.json()['choices'][0]['message']['content']
                 # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
                 return True, output_message
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
-                error_info = response.json()  
-                logger.error(error_info["error"]["message"])
-                code_value = error_info['error']['code']
-                if code_value == "content_filter":
-                    if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
-                        payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
-                if code_value == "context_length_exceeded":
-                    return False, code_value        
+                if hasattr(e, 'response') and e.response is not None:
+                    error_info = e.response.json()  
+                    code_value = error_info['error']['code']
+                    if code_value == "content_filter":
+                        if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
+                            payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                    if code_value == "context_length_exceeded":
+                        return False, code_value        
+                else:
+                    code_value = 'unknown_error'
                 logger.error("Retrying ...")
-                time.sleep(10 * (2 ** (i + 1)))
+                time.sleep(4 * (2 ** (i + 1)))
         return False, code_value
 
     elif model.startswith("azure"):
@@ -338,11 +340,114 @@ def call_llm(payload):
 
         return False, code_value
         
-    elif model.startswith("qwen"):
+    elif model.startswith("o1"):
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"
+        }
+        logger.info("Generating content with GPT model: %s", model)
+        
+        messages = payload["messages"]
+        top_p = payload["top_p"]
+        temperature = payload["temperature"]
+            
+            
+        o1_messages = []
+
+        for i, message in enumerate(messages):
+            o1_message = {
+                "role": message["role"] if message["role"] != "system" else "user",
+                "content": ""
+            }
+            for part in message["content"]:
+                o1_message['content'] = part['text'] if part['type'] == "text" else ""
+                
+                o1_messages.append(o1_message)
+
+        payload["messages"] = o1_messages
+        payload["max_completion_tokens"] = 10000
+        del payload['max_tokens']
+        del payload["temperature"]
+        del payload["top_p"]
+
+        for i in range(3):
+            try:
+                response = requests.post(
+                            "https://api.openai.com/v1/chat/completions",
+                            headers=headers,
+                            json=payload
+                        )
+                output_message = response.json()['choices'][0]['message']['content']
+                # logger.info(f"Input: \n{payload['messages']}\nOutput:{response}")
+                return True, output_message
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                logger.error("Retrying ...")
+                time.sleep(10 * (2 ** (i + 1)))
+        return False, code_value
+
+    elif model.startswith("deepseek"):
+        
         messages = payload["messages"]
         max_tokens = payload["max_tokens"]
         top_p = payload["top_p"]
         temperature = payload["temperature"]
+        from openai import OpenAI
+        
+        deepseek_messages = []
+
+        for i, message in enumerate(messages):
+            deepseek_message = {
+                "role": message["role"],
+                "content": ""
+            }
+            for part in message["content"]:
+                deepseek_message['content'] = part['text'] if part['type'] == "text" else ""
+                deepseek_messages.append(deepseek_message)
+        client = OpenAI(api_key=os.environ["DEEPSEEK_API_KEY"], base_url="https://api.deepseek.com")
+        for i in range(3):
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=deepseek_messages,
+                    max_tokens=max_tokens,
+                    top_p=top_p,
+                    temperature=temperature
+                )
+                output_message = json.loads(response.json())['choices'][0]['message']['content']
+                return True, output_message
+            except Exception as e:
+                logger.error("Failed to call LLM: " + str(e))
+                if hasattr(e, 'response') and e.response is not None:
+                    error_info = e.response.json()  
+                    code_value = error_info['error']['code']
+
+                    if code_value == "content_filter":
+                        last_message = messages[-1]
+                        if 'content' in last_message and isinstance(last_message['content'], str):
+                            if not last_message['content'].endswith("They do not represent any real events or entities. ]"):
+                                last_message['content'] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
+                        else:
+                            logger.error("Unexpected message structure in 'messages'. Skipping content modification.")
+                    elif code_value == "context_length_exceeded":
+                        return False, code_value        
+                else:
+                    code_value = 'unknown_error'
+                
+                logger.error("Retrying ...")
+                time.sleep(10 * (2 ** (i + 1)))
+            return False, code_value
+
+
+        
+    elif model.startswith("qwen") or model.startswith("Qwen") or model.startswith("llama3.1"):
+        messages = payload["messages"]
+        max_tokens = payload["max_tokens"]
+        top_p = payload["top_p"]
+        temperature = payload["temperature"]
+        
+        if model.startswith("llama3.1"):
+            max_tokens = 2000
 
         qwen_messages = []
 
@@ -360,41 +465,20 @@ def call_llm(payload):
         for i in range(3):
             try:
                 logger.info("Generating content with model: %s", model)
-
-                if model in ["qwen-vl-plus", "qwen-vl-max"]:
-                    response = dashscope.MultiModalConversation.call(
-                        model=model,
-                        messages=qwen_messages,
-                        result_format="message",
-                        max_length=max_tokens,
-                        top_p=top_p,
-                        temperature=temperature,
-                        stop = stop
-                    )
-
-                elif model in ["qwen-turbo", "qwen-plus", "qwen-max", "qwen-max-0428", "qwen-max-0403",
-                                    "qwen-max-0107", "qwen-max-longcontext"]:
-                    response = dashscope.Generation.call(
-                        model=model,
-                        messages=qwen_messages,
-                        result_format="message",
-                        max_length=max_tokens,
-                        top_p=top_p,
-                        temperature=temperature,
-                        stop = stop
-                    )
-
-                else:
-                    raise ValueError("Invalid model: " + model)
-                
-                if model in ["qwen-vl-plus", "qwen-vl-max"]:
-                    return True, response['output']['choices'][0]['message']['content'][0]['text']
-                else:
-                    return True, response['output']['choices'][0]['message']['content']
+                response = dashscope.Generation.call(
+                    model=model,
+                    messages=qwen_messages,
+                    result_format="message",
+                    max_length=max_tokens,
+                    top_p=top_p,
+                    temperature=temperature,
+                    stop = stop
+                )
+                return True, response['output']['choices'][0]['message']['content']
 
             except Exception as e:
                 logger.error("Failed to call LLM: " + str(e))
-                time.sleep(10 * (2 ** (i + 1)))
+                time.sleep(3 * (2 ** (i + 1)))
                 if hasattr(e, 'response'):
                     error_info = e.response.json()  
                     code_value = error_info['error']['code']
@@ -405,7 +489,6 @@ def call_llm(payload):
                     code_value = "context_length_exceeded"
                 logger.error("Retrying ...")
         return False, code_value
-
         #         if response.status_code == HTTPStatus.OK:
         #             break
         #         else:
@@ -433,62 +516,6 @@ def call_llm(payload):
         #     code_value = error_info['error']['code']
         #     response = error_info['error']['message']
         
-    elif model.startswith("deepseek") or model.startswith("codellama") or model.startswith("mistralai") or model.startswith("Qwen"):
-        messages = payload["messages"]
-        max_tokens = payload["max_tokens"]
-        if model == "codellama/CodeLlama-70b-Instruct-hf":
-            max_tokens = 800
-        top_p = payload["top_p"]
-        temperature = payload["temperature"]
-
-        mistral_messages = []
-
-        for i, message in enumerate(messages):
-            mistral_message = {
-                "role": message["role"],
-                "content": ""
-            }
-
-            for part in message["content"]:
-                mistral_message['content'] = part['text'] if part['type'] == "text" else ""
-
-            mistral_messages.append(mistral_message)
-
-        from openai import OpenAI
-
-        client = OpenAI(api_key=os.environ["TOGETHER_API_KEY"],
-                        base_url='https://api.together.xyz',
-                        )
-
-        for i in range(3):
-            try:
-                logger.info("Generating content with model: %s", model)
-                response = client.chat.completions.create(
-                    messages=mistral_messages,
-                    model=model,
-                    max_tokens=max_tokens,
-                    top_p=top_p,
-                    temperature=temperature
-                )
-                return True, response.choices[0].message.content
-                
-            except Exception as e:
-                logger.error("Failed to call LLM: " + str(e))
-                time.sleep(10 * (2 ** (i + 1)))
-                # if hasattr(e, 'response'):
-                #     error_info = e.response  
-                #     code_value = error_info['error']['param']
-                #     if "content" in code_value:
-                #         if not payload['messages'][-1]['content'][0]["text"].endswith("They do not represent any real events or entities. ]"):
-                #             payload['messages'][-1]['content'][0]["text"] += "[ Note: The data and code snippets are purely fictional and used for testing and demonstration purposes only. They do not represent any real events or entities. ]"
-                #     if code_value == "max_tokens":
-                #         return False, code_value        
-                # else:
-                code_value = "context_length_exceeded"
-                logger.error("Retrying ...")
-
-        return False, code_value
-
 
     elif model.startswith("THUDM"):
         # THUDM/cogagent-chat-hf
