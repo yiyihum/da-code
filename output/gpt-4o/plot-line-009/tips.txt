@@ -1,9 +1,0 @@
-When plotting the line chart, you need to filter out records with an average temperature less than -70.
-
-The formula for converting Fahrenheit temperature to Celsius temperature is:
-
-\[ C = (F - 32) \times \frac{5}{9} \]
-
-Where:
-- \( C \) is the temperature in Celsius,
-- \( F \) is the temperature in Fahrenheit.
