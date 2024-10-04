@@ -120,7 +120,6 @@ def compare_csv(result: str, expected, **options) -> float:
         
     
     def csv_score(pred, gold, condition_cols_=[], score_rule_='all', ignore_order_=False, total_scores_=1):
-        
         if condition_cols_ != []:
             gold_cols = gold.iloc[:, condition_cols_]
         else:
@@ -151,7 +150,8 @@ def compare_csv(result: str, expected, **options) -> float:
 
     
     output = []
-
+    if not os.path.exists(result):
+        return 0
     df1 = pd.read_csv(result, low_memory=False)
     for i in range(len(expected)):
         df2 = pd.read_csv(expected[i], low_memory=False)
@@ -230,7 +230,7 @@ def compare_sqlite(result: str, expected, **options) -> float:
         score = compare_csv(pred_tables[i], gold_tables[i], condition_cols=condition_cols[i], ignore_order=ignore_order[i])
         output_scores.append(score)
 
-    return min(output_scores)
+    return min(output_scores) if output_scores else 0
     
 
 

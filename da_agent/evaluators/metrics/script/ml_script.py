@@ -9,11 +9,11 @@ from joblib import Parallel, delayed
 import numpy as np
 import tempfile, os
 from sklearn.utils import resample
+import math
 from sklearn.metrics import (roc_auc_score, 
-                            root_mean_squared_log_error, 
+                            mean_squared_log_error , 
                             mean_absolute_error, 
                             mean_squared_error,
-                            root_mean_squared_error,
                             median_absolute_error,
                             accuracy_score, f1_score, 
                             r2_score,
@@ -162,15 +162,15 @@ class PreprocessML:
         def is_unique_id_column(column):
             return ('id' in column.lower() or 'unnamed' in column.lower()) and df[column].nunique() > 0.8 * len(df)
         def is_binary_target_column(column):
-            return df[column].unique() == 2
+            return df[column].nunique() == 2
         def is_multi_target_column(column):
-            return 2 < df[column].unique() < 10
+            return 2 < df[column].nunique() < 10
         def is_cluster_target_column(column):
-            return 1 <= df[column].unique() < max(0.01 * len(df), 10)
+            return 1 <= df[column].nunique() < max(0.01 * len(df), 10)
         def is_regression_target_column(column):
             return str(df[column].dtype) in ['int64', 'float64']  \
                 and not PreprocessML.is_incremental(df[column]) \
-                and df[column].unique() > max(3, 0.1 * len(df))
+                and df[column].nunique() > max(3, 0.1 * len(df))
 
         for column in columns:
             if is_unique_id_column(column):
@@ -551,7 +551,7 @@ class CalculateML:
         gold_np = gold.to_numpy()
 
         try:
-            score = root_mean_squared_log_error(y_true=gold_np, y_pred=result_np)
+            score = mean_squared_log_error  (y_true=gold_np, y_pred=result_np)
         except Exception as e:
             output['errors'].append(f"fail to calculate rmsle: {str(e)}")
             return (0.0, output)
@@ -569,7 +569,9 @@ class CalculateML:
         gold_np = gold.to_numpy()
 
         try:
-            score = root_mean_squared_error(y_true=gold_np, y_pred=result_np)
+            
+            score = mean_squared_error(y_true=gold_np, y_pred=result_np)
+            score = math.sqrt(score)
         except Exception as e:
             output['errors'].append(f"fail to calculate rmse: {str(e)}")
             return (0.0, output)

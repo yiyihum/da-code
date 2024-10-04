@@ -121,34 +121,30 @@ class ImageTest:
         return (1.0, {'img': True}) if score == float(len(golds)) else (0.0, {'img': False})
 
     @classmethod
-    def test_numpy(cls,result_np: str, gold_np: str):
+    def test_numpy(cls, result_np: str, gold_np: str):
         if not os.path.exists(result_np):
             return (0.0, {'data': False, "scale_data": False})
         assert os.path.exists(gold_np), f'the gold file {gold_np} does not exist'
-        results, golds = np.load(result_np,allow_pickle=True), np.load(gold_np, allow_pickle=True)
-        results = results.reshape(-1,1) if results.ndim == 1 else results
+        results, golds = np.load(result_np, allow_pickle=True), np.load(gold_np, allow_pickle=True)
+        # Reshape to 2D if necessary
+        results = results.reshape(-1, 1) if results.ndim == 1 else results
         golds = golds.reshape(-1, 1) if golds.ndim == 1 else golds
+        # Early exit if shapes don't match
         if results.shape != golds.shape:
             return (0.0, {'data': False, "scale_data": False})
-        output = []
-        scale_output = []
-        for idx in range(results.shape[0]):
-            finds = []
-            scale_finds= []
-            result = np.array(results[idx]) if isinstance(results[idx], list) else results[idx]
-            for row in range(golds.shape[0]):
-                gold = golds[row]
-                finds.append(cls.compare_numpy(hyp_np=result, ref_np=gold, is_sacle=False))
-                scale_finds.append(cls.compare_numpy(hyp_np=result, ref_np=gold, is_sacle=True))
-            output.append(any(finds))
-            scale_output.append(any(scale_finds))
+       
+     
+        # Avoid redundant computation
+        finds = cls.compare_numpy(hyp_np=results, ref_np=golds, is_sacle=False)
+        scale_finds = cls.compare_numpy(hyp_np=results, ref_np=golds, is_sacle=True) 
+                    
         result_dict = {
-            "data": True if all(output) else False,
-            "scale_data": True if all(scale_output) else False
+            "data": finds,
+            "scale_data": scale_finds
         }
 
-        return (1.0, result_dict) if all(output) else (0.0, result_dict)
-    
+        return (1.0, result_dict) if finds or scale_finds else (0.0, result_dict)
+        
     @classmethod
     def test_info(cls, result_js: str, gold_js: str, fig_keys: Optional[List[str]]=None):
         output_dict = {}
@@ -191,8 +187,8 @@ def compare_image(results: List[str] | str, expected: List[str], **options):
     result_npy = [npy for npy  in results if npy.endswith('.npy')]
     gold_npy = [npy for npy  in expected if npy.endswith('.npy')]
 
-    if not result_images and gold_images and result_npy and gold_npy:
-        raise 'result and gold files must contains image and npy, please check again.'
+    if not gold_npy or not gold_images:
+        raise Exception('Result and gold files must contain npy, please check again.')
     
     image_score, img_dict = ImageTest.test_image(results=result_images, golds=gold_images, 
             iscolor=True if 'color' in keys_compare else False,
