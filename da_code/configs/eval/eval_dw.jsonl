@@ -98,4 +98,3 @@
 {"id": "data-wrangling-098", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-099", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
 {"id": "data-wrangling-100", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-101", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["movies_all.csv"]}], "options": [{}]}

@@ -1,8 +1,8 @@
-Classfication,Easy,Medium,Hard
-DM,18,34,23
-DI,13,61,5
-SA,12,48,10
-DV,12,52,15
-ML,32,32,34
-DW,29,64,17
-total,116,291,101
+Classfication,Easy,Medium,Hard,Total
+DM,17,33,23,73
+DI,13,61,5,79
+SA,12,48,10,70
+DV,12,52,14,78
+ML,32,34,34,100
+DW,19,64,17,100
+total,105,292,103,500
