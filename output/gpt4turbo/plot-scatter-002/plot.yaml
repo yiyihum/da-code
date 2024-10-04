@@ -1,3 +1,0 @@
-labels: ["home victory", "draw", "away victory"]
-x_label: "estimated prob"
-y_label: "observed prob"

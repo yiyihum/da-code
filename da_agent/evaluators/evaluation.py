@@ -38,8 +38,8 @@ class Evaluator:
             else:
                 for file in files:
                     file = file if not isgold else os.path.basename(file)
-                    if not os.path.exists(os.path.join(dir, file)):
-                        print(f"File not found : {os.path.join(dir, file)}")
+                    # if not os.path.exists(os.path.join(dir, file)):
+                    #     print(f"File not found : {os.path.join(dir, file)}")
                     result_files.append(os.path.join(dir, file))
         return 'file', result_files
 
@@ -213,6 +213,11 @@ class Evaluator:
                 print(f"Result of Task {id} does not exist!")
                 continue
             (config, metric_list, metric_conj, metric_options, output_results, gold_results) = eval_info
+            task_type = config.get('task')
+            if trajectory_info["finished"] == False:
+                print(f"Task {id} is not finished!")
+                eval_results.append({"id": id, "task":task_type, "total_score": 0.0, **trajectory_info})
+                continue
 
             if metric_list == "infeasible":
                 return 0
@@ -229,8 +234,9 @@ class Evaluator:
                                 config_copy = {"config": config}
                                 metric_options[idx].update(config_copy)
                             result = metric(output_result, gold_result,**metric_options[idx])
-                        except FileNotFoundError:
-                            logging.error("File not found!")
+                        except FileNotFoundError as e:
+                            logging.error(f"File not found! Error: {e}")
+                            #print error message
                             scores.append(0.0)
                             continue
                         if isinstance(result, dict):
@@ -258,6 +264,6 @@ class Evaluator:
                 total_score = float(all(score!= 0 for score in scores))
             elif metric_conj == 'or':
                 total_score = float(any(score!= 0 for score in scores))
-            eval_results.append({"id": id, "total_score": total_score, **trajectory_info,
+            eval_results.append({"id": id, "task":task_type,"total_score": total_score, **trajectory_info,
                                   'info': info})
         return eval_results

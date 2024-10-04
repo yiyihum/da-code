@@ -1,1 +1,0 @@
-{"type": "scatter", "color": ["#1f77b4"], "figsize": [6.4, 4.8], "graph_title": "Scatter Plot of Estimated vs Observed Probabilities", "legend_title": "", "labels": ["home victory"], "x_label": "estimated prob", "y_label": "observed prob", "xtick_labels": ["0.0", "0.2", "0.4", "0.6", "0.8", "1.0"], "ytick_labels": ["0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "1.2"]}

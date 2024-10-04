@@ -1,9 +1,0 @@
-To calculate the estimated annual occupancy rate and the distribution of listings across neighborhoods, the following steps were performed:
-
-4. **Estimate Occupancy Rates**:
-   - **Average Annual Availability**: The average annual availability of all listings was calculated. This column indicates the number of days in a year that a listing is available for booking.
-   - **Estimated Annual Occupancy Rate**: The occupancy rate was estimated by subtracting the average annual availability from 100 (since a listing being available for fewer days means it is occupied more often).
-
-5. **Calculate Neighborhood Distribution**:
-   - **Distribution of Listings by Neighborhood**: The number of listings in each neighborhood was counted. This step involved using method to count the occurrences of each unique neighborhood and then selecting the top 10 neighborhoods with the highest number of listings.
-     

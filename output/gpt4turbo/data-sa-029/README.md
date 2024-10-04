@@ -1,4 +1,0 @@
-
-Quantitative Risk Management is crucial across the banking, insurance, and asset management industries. Financial risk analysts, regulators, and actuaries need to quantitatively balance rewards against risk exposure.
-
-This course covers financial portfolio risk management, focusing on the 2007—2008 financial crisis and its impact on investment banks like Goldman Sachs and J.P. Morgan. It includes using Python to calculate and mitigate risk exposure using Value at Risk (VaR) and Conditional Value at Risk (CVaR) measures. Additionally, it covers risk estimation techniques such as Monte Carlo simulation and the application of advanced technologies like neural networks for real-time portfolio rebalancing.
