@@ -1,9 +1,5 @@
 
-## About Dataset
-
 ### Abalone Dataset Description
-
-![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F10074224%2F3f29fd0ee4e9e0d4b71ffbf46f292696%2Fheader.png?generation=1711934913605740&alt=media)
 
 **Sex:** Represents the gender of the abalone, categorized as male (M), female (F), or infant (I).
 

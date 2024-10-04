@@ -1,26 +1,13 @@
-
 ## About Dataset
 
-### Context
+### Amazon Prime Video - Movies and TV Shows
 
-This dataset describes the listing activity of homestays in Seattle, WA, as part of the Airbnb Inside initiative. It includes data from 2008 onwards, providing insights into the unique and personalized travel experiences facilitated by Airbnb.
+> **About this Dataset:** Amazon Prime is another one of the most popular media and video streaming platforms. They have close to 10000 movies or tv shows available on their platform, as of mid-2021, they have over 200M Subscribers globally. This tabular dataset consists of listings of all the movies and tv shows available on Amazon Prime, along with details such as - cast, directors, ratings, release year, duration, etc.*** **
 
-### Content
+#### Interesting Task Ideas
 
-The dataset includes the following Airbnb activity in Seattle:
-
-- Listings: Full descriptions and average review scores
-- Reviews: Unique ID for each reviewer and detailed comments
-- Calendar: Listing ID, price, and availability for each day
-
-### Inspiration
-
-Potential analyses and insights include:
-
-- Describing the vibe of each Seattle neighborhood using listing descriptions
-- Identifying the busiest times of the year to visit Seattle and analyzing price spikes
-- Observing trends in new Airbnb listings and total Airbnb visitors to Seattle
-
-### Acknowledgement
-
-This dataset is part of the Airbnb Inside initiative.
+> 1. Understanding what content is available in different countries
+> 2. Identifying similar content by matching text-based features** **
+> 3. Network analysis of Actors / Directors and find interesting insights** **
+> 4. Does Amazon Prime has more focus on TV Shows than movies in recent years.
+>

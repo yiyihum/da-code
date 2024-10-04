@@ -8,7 +8,7 @@
 
 ### Evaluation
 
-Submissions are evaluated on** **[area under the ROC curve](http://en.wikipedia.org/wiki/Receiver_operating_characteristic) between the predicted probability and the observed target.
+Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 
 ## Submission File
 

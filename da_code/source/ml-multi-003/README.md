@@ -1,19 +1,12 @@
-## About Dataset
-
 ## Description
 
-**Scraper Code** -** **[`https://github.com/ArshKA/LinkedIn-Job-Scraper`](https://github.com/ArshKA/LinkedIn-Job-Scraper)
+Every day, thousands of companies and individuals turn to LinkedIn in search of talent. This dataset contains a nearly comprehensive record of **124,000+ job postings** listed in 2023 and 2024. Each individual posting contains **dozens of valuable attributes for both postings and companies** , including the title, job description, salary, location, application URL, and work-types (remote, contract, etc), in addition to separate files containing the benefits, skills, and industries associated with each posting. The majority of jobs are also linked to a company, which are all listed in another csv file containing attributes such as the company description, headquarters location, and number of employees, and follower count.**
 
-> Every day, thousands of companies and individuals turn to LinkedIn in search of talent. This dataset contains a nearly comprehensive record of** ****124,000+ job postings** listed in 2023 and 2024. Each individual posting contains** ** **dozens of valuable attributes for both postings and companies** , including the title, job description, salary, location, application URL, and work-types (remote, contract, etc), in addition to separate files containing the benefits, skills, and industries associated with each posting. The majority of jobs are also linked to a company, which are all listed in another csv file containing attributes such as the company description, headquarters location, and number of employees, and follower count.** **
->
-> With so many datapoints, the potential for exploration of this dataset is vast and includes exploring the highest compensated titles, companies, and locations; predicting salaries/benefits through NLP; and examining how industries and companies vary through their internship offerings and benefits. Future updates will permit further exploration into time-based trends, including company growth, prevalence of remote jobs, and demand of individual job titles over time.
-
-Thank you to** **[@zoeyyuzou](https://www.kaggle.com/zoeyyuzou) for scraping an additional 100,000 jobs
-‎
+With so many datapoints, the potential for exploration of this dataset is vast and includes exploring the highest compensated titles, companies, and locations; predicting salaries/benefits through NLP; and examining how industries and companies vary through their internship offerings and benefits. Future updates will permit further exploration into time-based trends, including company growth, prevalence of remote jobs, and demand of individual job titles over time.‎
 
 ## Files
 
-> ### job_postings.csv
+> ### postings.csv
 >
 > * **job_id** : The job ID as defined by LinkedIn ([https://www.linkedin.com/jobs/view/](https://www.linkedin.com/jobs/view/) *job_id* )
 > * **company_id** : Identifier for the company associated with the job posting (maps to companies.csv)
@@ -45,7 +38,7 @@ Thank you to** **[@zoeyyuzou](https://www.kaggle.com/zoeyyuzou) for scraping an 
 
 ‎
 
-> ### job_details/benefits.csv
+> ### jobs/benefits.csv
 >
 > * **job_id** : The job ID
 > * **type** : Type of benefit provided (401K, Medical Insurance, etc)
@@ -53,7 +46,7 @@ Thank you to** **[@zoeyyuzou](https://www.kaggle.com/zoeyyuzou) for scraping an 
 
 ‎
 
-> ### company_details/companies.csv
+> ### companies/companies.csv
 >
 > * **company_id** : The company ID as defined by LinkedIn
 > * **name** : Company name
@@ -68,7 +61,7 @@ Thank you to** **[@zoeyyuzou](https://www.kaggle.com/zoeyyuzou) for scraping an 
 
 ‎
 
-> ### company_details/employee_counts.csv
+> ### companies/employee_counts.csv
 >
 > * **company_id** : The company ID
 > * **employee_count** : Number of employees at company

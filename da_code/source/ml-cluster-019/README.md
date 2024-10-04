@@ -1,4 +1,3 @@
-
 ## About Dataset
 
 ### Context
@@ -19,13 +18,3 @@ The dataset includes detailed information on each transaction:
 - **UnitPrice**: Unit price. Numeric. Product price per unit in sterling (£).
 - **CustomerID**: Customer number. Nominal. A 5-digit integral number uniquely assigned to each customer.
 - **Country**: Country name. Nominal. The name of the country where a customer resides.
-
-### Objective
-
-This dataset facilitates analysis of customer behavior, sales trends, and operational insights for the online retailer. Key areas of exploration include:
-
-- Customer segmentation based on purchasing patterns.
-- Product popularity and sales dynamics.
-- Seasonal variations in sales and customer activity.
-- Geographic distribution of customers and sales.
--

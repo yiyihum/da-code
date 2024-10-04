@@ -1,19 +1,3 @@
+Managing risk using Quantitative Risk Management is a vital task across the banking, insurance, and asset management industries. It’s essential that financial risk analysts, regulators, and actuaries can quantitatively balance rewards against their exposure to risk.
 
-## About Dataset
-
-This dataset comprises reviews of the top 10 rated airlines in 2023, sourced from various sources. It covers aspects such as seat comfort, staff service, food and beverages, inflight entertainment, value for money, and overall rating. The dataset is suitable for tasks such as sentiment analysis and customer satisfaction analysis.
-
-**List of Airlines**
-
-1. Singapore Airlines
-2. Qatar Airways
-3. All Nippon Airways
-4. Emirates
-5. Japan Airlines
-6. Turkish Airlines
-7. Air France
-8. Cathay Pacific Airways
-9. EVA Air
-10. Korean Air
-
-This dataset is provided under the MIT License.
+This course introduces you to financial portfolio risk management through an examination of the 2007—2008 financial crisis and its effect on investment banks such as Goldman Sachs and J.P. Morgan. You’ll learn how to use Python to calculate and mitigate risk exposure using the Value at Risk and Conditional Value at Risk measures, estimate risk with techniques like Monte Carlo simulation, and use cutting-edge  technologies such as neural networks to conduct real time portfolio rebalancing.

@@ -6,5 +6,6 @@ logs/*
 *.pyc
 output_dw.zip
 *dw
-# da_code/gold/*
-# da_code/source/*
+da_code/gold/*
+da_code/source/*
+output/*
