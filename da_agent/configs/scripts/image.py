@@ -53,7 +53,7 @@ class Plotprocess:
                 colors.add(color)
         # Determine which dimension has the most variety to identify orientation
         data_type = max(result_data, key=lambda k: len(set(result_data[k])))
-        coord_type = 'x' if data_type == 'width' else 'y'  # Fixed: width should correlate with 'x'
+        coord_type = 'x' if data_type == 'height' else 'y' 
         last_coord = -1000
         result = []
         # Loop through patches and group based on coordinates
@@ -146,6 +146,10 @@ class Plotprocess:
             
         return results
     
+    @classmethod
+    def generate_random_string(cls, length=4):
+        letters = string.ascii_letters
+        return ''.join(random.choice(letters) for _ in range(length))
     
     @classmethod
     def plot_process(cls, ax, fig):
@@ -180,15 +184,16 @@ class Plotprocess:
         image_parameters['xtick_labels'] = xtick_labels
         image_parameters['ytick_labels'] = ytick_labels
         
+        random_string = cls.generate_random_string()
         if len(results) > 0:
-            npy_path = f'./result.npy'
+            npy_path = f'./{random_string}_data_result_.npy'
             np.save(npy_path, results)
             print(results)
             print(results.shape)
         else:
             npy_path = ''
 
-        output_path = f'./plot.json'
+        output_path = f'./{random_string}_result_image_parameters_.json'
         with open(output_path, 'w') as js:
             json.dump(image_parameters, js)
 

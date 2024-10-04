@@ -17,7 +17,6 @@ logger = logging.getLogger("da_agent.env")
 class PlotPy:
     _script_path = str(Path(__file__).absolute().parent / 'scripts/image.py')
 
-
     @classmethod
     def preprocess_py(cls, py_path: str):
 
@@ -120,7 +119,6 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
     else:
         plot_json, npy_path = '', ''
 
-    print(plot_json, npy_path)
     if not plot_json or not npy_path:
         # raise ValueError(f'fails to generate plot json result, please check the code in {plt_files}')
         error = f'fails to generate plot json result, please check the code in {plt_files}'
