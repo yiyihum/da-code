@@ -34,7 +34,6 @@
 {"id": "data-wrangling-034", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["laptop_cleaned.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-035", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-036", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_data.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-037", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-038", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_sqlite"], "result": [{"file": ["database.db"]}], "options": [{"condition_tabs": ["company", "tag_company", "stackoverflow", "tag_type"], "condition_cols": [[], [], [], [], [], []], "ignore_order": [true, true, true, true, true, true]}]}
 {"id": "data-wrangling-039", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["date_dim.csv", "stations.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true}, {"condition_cols": [], "ignore_order": true}]}
 {"id": "data-wrangling-040", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_sqlite"], "result": [{"file": ["database.db"]}], "options": [{"condition_tabs": ["athletes"], "condition_cols": [[]]}]}
@@ -98,3 +97,4 @@
 {"id": "data-wrangling-098", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-099", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
 {"id": "data-wrangling-100", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
+{"id": "data-wrangling-101", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["movies_all.csv"]}], "options": [{}]}
