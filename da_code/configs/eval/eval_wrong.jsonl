@@ -1,0 +1,1 @@
+{"id": "data-wrangling-023", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [31, 32], "ignore_order": true}]}
