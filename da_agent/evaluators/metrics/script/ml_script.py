@@ -227,9 +227,6 @@ class CalculateML:
                     return None       
                 return input
         
-        if str(gold.dtype) != str(result.dtype):
-            output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
-
         gold = convert_to_numeric(gold)
         result = convert_to_numeric(result)
         
@@ -308,10 +305,7 @@ class CalculateML:
                     output['errors'].append(f'fail to encoder label, because {str(e)}')
                     return None       
                 return input
-        
-        if str(gold.dtype) != str(result.dtype):
-            output['errors'].append(f"TypeError: result target dtype {str(result.dtype)} is not compatible with gold's {str(gold.dtype)}.")
-
+    
         gold = convert_to_numeric(gold)
         result = convert_to_numeric(result)
         

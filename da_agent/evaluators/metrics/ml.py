@@ -31,7 +31,7 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
 
     if not config or not task_type:
         raise ValueError(f'Machine Learning Evaluation needs a valid config with a "type", such as {TYPES}')
-
+    
     best_type, ratio = process.extractOne(task_type, TYPES)
     if not ratio > 90:
         raise ValueError(f"please provide a right task type, such as {TYPES}")
@@ -47,7 +47,7 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
     if not os.path.exists(result):
         output_ml['errors'].append(f'result file {result} does not exists')
         return output_ml
-
+    
     gold_df = pd.read_csv(gold) if task_type != 'cluster' else None    
     result_df = pd.read_csv(result)
 

@@ -175,7 +175,14 @@ def compare_sqlite(result: str, expected, **options) -> float:
     @return:
         score
     """
-    
+    if isinstance(expected, List):
+        condition_cols = options.get('condition_cols', [[]]*len(expected))
+        ignore_order = options.get('ignore_order', [False]*len(expected))
+    elif isinstance(expected, str):
+        condition_cols = [options.get('condition_cols', [])]
+        ignore_order = [options.get('ignore_order', False)]
+        expected = [expected]
+        
     def convert_to_csvs(db_path, tables):
         """ Convert specified tables in a SQLite database to CSV files and return their paths. """
         csv_dir = os.path.dirname(db_path)
@@ -216,9 +223,6 @@ def compare_sqlite(result: str, expected, **options) -> float:
         condition_tabs = get_table_names(expected)
 
 
-    condition_cols = options.get('condition_cols', [[]]*len(condition_tabs))
-    ignore_order = options.get('ignore_order', [False]*len(condition_tabs))
-
     try:
         pred_tables = convert_to_csvs(result, condition_tabs)
     except:
@@ -232,8 +236,6 @@ def compare_sqlite(result: str, expected, **options) -> float:
 
     return min(output_scores) if output_scores else 0
     
-
-
 
 
 def compare_csv_files(folder1, folder2):
