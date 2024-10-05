@@ -119,8 +119,15 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
                 with open(expect, 'r') as f:
                     return json.load(f)
             except (FileNotFoundError, json.JSONDecodeError) as e:
-                print(f"Error loading JSON: {e}")
-                return None
+                try:
+                    with open(expect, 'r') as f:
+                        content = f.read()
+                        # 将单引号替换为双引号
+                        content = content.replace("'", '"')
+                        return json.loads(content)
+                except Exception as e:
+                    print(f"Error loading JSON: {e}")
+                    return None
         elif isinstance(expect, str) and not expect.endswith(".json"):
             return text2json(expect)
         else:

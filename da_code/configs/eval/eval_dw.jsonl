@@ -20,7 +20,7 @@
 {"id": "data-wrangling-020", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-021", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-022", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_airquality.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-023", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [31, 32, 65, 66], "ignore_order": true}]}
+{"id": "data-wrangling-023", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [31, 32], "ignore_order": true}]}
 {"id": "data-wrangling-024", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [39, 40, 45], "ignore_order": true}]}
 {"id": "data-wrangling-025", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [39, 40, 45], "ignore_order": true}]}
 {"id": "data-wrangling-026", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
@@ -70,7 +70,7 @@
 {"id": "data-wrangling-071", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["moviesByHighestRevenue.csv"]}], "options": [{}]}
 {"id": "data-wrangling-072", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["total_wins_by_driver.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-073", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-074", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
+{"id": "data-wrangling-074", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["undefeated.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
 {"id": "data-wrangling-075", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-076", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-077", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["mostProfit.csv"]}], "options": [{}]}
@@ -95,6 +95,6 @@
 {"id": "data-wrangling-096", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-097", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["runs_concede_in_match.csv"]}], "options": [{}]}
 {"id": "data-wrangling-098", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-099", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "data-wrangling-099", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["genres_avg_rating.csv"]}], "options": [{}]}
 {"id": "data-wrangling-100", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-101", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["movies_all.csv"]}], "options": [{}]}

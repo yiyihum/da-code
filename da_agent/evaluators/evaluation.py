@@ -212,11 +212,14 @@ class Evaluator:
             if not exist:
                 print(f"Result of Task {id} does not exist!")
                 continue
+            
             (config, metric_list, metric_conj, metric_options, output_results, gold_results) = eval_info
             task_type = config.get('task')
+            hardness = config.get('hardness')
+            result_type = config.get('type')
             if trajectory_info["finished"] == False:
-                print(f"Task {id} is not finished!")
-                eval_results.append({"id": id, "task":task_type, "total_score": 0.0, **trajectory_info})
+                # print(f"Task {id} is not finished!")
+                eval_results.append({"id": id, "task":task_type,"result_type":result_type, "hardness":hardness, "total_score": 0.0, **trajectory_info})
                 continue
 
             if metric_list == "infeasible":
@@ -264,6 +267,6 @@ class Evaluator:
                 total_score = float(all(score!= 0 for score in scores))
             elif metric_conj == 'or':
                 total_score = float(any(score!= 0 for score in scores))
-            eval_results.append({"id": id, "task":task_type,"total_score": total_score, **trajectory_info,
+            eval_results.append({"id": id, "task":task_type,"result_type":result_type, "hardness":hardness, "total_score": total_score, **trajectory_info,
                                   'info': info})
         return eval_results

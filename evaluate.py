@@ -14,15 +14,26 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
     num_results = len(results_infos)
     scores = [result['total_score'] for result in results_infos]
     finished = [result['finished'] for result in results_infos]
+    result_type = [result['result_type'] for result in results_infos]
     types = [result['task'] for result in results_infos]
     types = ["machine learning" if "machine learning" in t else t for t in types]
+    hardness = [result['hardness'] for result in results_infos]
+    eda = ["data insight","data manipulation","data visualization","statistical analysis"]
+    big_types = ["EDA" if t in eda else t for t in types]
+    plot = ["line","pie","bar","scatter"]
+    result_type = ["plot" if t in plot else t for t in result_type]
     # 统计不同类型的任务的分数，完成度
-    df = pd.DataFrame({"type": types, "score": scores, "finished": finished})
+    df = pd.DataFrame({"type": types, "score": scores, "finished": finished, "hardness": hardness, "big_type": big_types,"result_type": result_type})
     print(df.groupby("type").agg({"score": "mean", "finished": "mean"}))
+    print(df.groupby("hardness").agg({"score": "mean", "finished": "mean"}))
+    print(df.groupby("big_type").agg({"score": "mean", "finished": "mean"}))
+    print(df.groupby("result_type").agg({"score": "mean", "finished": "mean"}))
     average_score = sum(scores) / num_results
-    results_json = {"num_results": num_results, "average_score": average_score, "results": results_infos}
+    average_finished = sum(finished) / num_results
+    results_json = {"num_results": num_results, "average_score": average_score, "results": results_infos, "average_finished": average_finished}
     print(f"Number of results: {num_results}")
     print(f"Average score: {average_score}")
+    print(f"Average finished: {average_finished}")
 
     
     # Ensure the directory exists before writing to the file

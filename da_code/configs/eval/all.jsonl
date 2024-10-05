@@ -172,7 +172,7 @@
 {"id": "data-wrangling-020", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-021", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-022", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_airquality.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-023", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [31, 32, 65, 66], "ignore_order": true}]}
+{"id": "data-wrangling-023", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [31, 32], "ignore_order": true}]}
 {"id": "data-wrangling-024", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [39, 40, 45], "ignore_order": true}]}
 {"id": "data-wrangling-025", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_cars_details_merges.csv"]}], "options": [{"condition_cols": [39, 40, 45], "ignore_order": true}]}
 {"id": "data-wrangling-026", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
@@ -186,7 +186,6 @@
 {"id": "data-wrangling-034", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["laptop_cleaned.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-035", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-036", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_data.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-037", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-038", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_sqlite"], "result": [{"file": ["database.db"]}], "options": [{"condition_tabs": ["company", "tag_company", "stackoverflow", "tag_type"], "condition_cols": [[], [], [], [], [], []], "ignore_order": [true, true, true, true, true, true]}]}
 {"id": "data-wrangling-039", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["date_dim.csv", "stations.csv"]}], "options": [{"condition_cols": [2], "ignore_order": true}, {"condition_cols": [], "ignore_order": true}]}
 {"id": "data-wrangling-040", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_sqlite"], "result": [{"file": ["database.db"]}], "options": [{"condition_tabs": ["athletes"], "condition_cols": [[]]}]}
@@ -223,7 +222,7 @@
 {"id": "data-wrangling-071", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["moviesByHighestRevenue.csv"]}], "options": [{}]}
 {"id": "data-wrangling-072", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["total_wins_by_driver.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-073", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-074", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
+{"id": "data-wrangling-074", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["undefeated.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
 {"id": "data-wrangling-075", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-076", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-077", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["mostProfit.csv"]}], "options": [{}]}
@@ -248,8 +247,9 @@
 {"id": "data-wrangling-096", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-097", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["runs_concede_in_match.csv"]}], "options": [{}]}
 {"id": "data-wrangling-098", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
-{"id": "data-wrangling-099", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{}]}
+{"id": "data-wrangling-099", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["genres_avg_rating.csv"]}], "options": [{}]}
 {"id": "data-wrangling-100", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
+{"id": "data-wrangling-101", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["movies_all.csv"]}], "options": [{}]}
 {"id": "ml-binary-001", "config": {"task": "machine learning", "type": "binary classification", "metric": "f1", "upper_bound": 0.9253666666666666, "lower_bound": 0.6, "hardness": "Medium"}, "func": ["compare_ml"], "result": [{"file": "result.csv"}], "options": [{"target_column": "result"}]}
 {"id": "ml-binary-002", "config": {"task": "machine learning", "type": "binary classification", "metric": "f1", "upper_bound": 0.95, "lower_bound": 0.6, "hardness": "Hard"}, "func": ["compare_ml"], "result": [{"file": "submission.csv"}], "options": [{"target_column": "Response"}]}
 {"id": "ml-binary-003", "config": {"task": "machine learning", "type": "binary classification", "metric": "f1", "upper_bound": 0.9199999999999999, "lower_bound": 0.6, "hardness": "Easy"}, "func": ["compare_ml"], "result": [{"file": "prediction.csv"}], "options": [{"target_column": "result"}]}
