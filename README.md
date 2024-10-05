@@ -3,11 +3,13 @@
 ## ⚙️ Quickstart
 
 ### Install required packages
+
 ```bash
 bash requirements.sh
 ```
 
 ### Set LLM API Key
+
 ```bash
 export AZURE_API_KEY=your_azure_api_key
 export AZURE_ENDPOINT=your_azure_endpoint
@@ -16,10 +18,13 @@ export GEMINI_API_KEY=your_genmini_api_key
 ```
 
 ### Run the benchmark
+
 ```bash
 python run.py
 ```
+
 Arguments:
+
 - `--max_steps`: Maximum number of steps (default is 20)
 - `--max_memory_length`: Maximum length of memory to retain (default is 15)
 - `--suffix`: Suffix for the filename (default is an empty string)
@@ -36,8 +41,8 @@ Arguments:
 - `--retry_failed`: Retry failed evaluations (default is False)
 - `--output_dir`: Directory for output files (default is "output")
 
-
 ### Evaluate the benchmark
+
 ```bash
 python evaluate.py \
     --output_dir output/gpt4turbo \
@@ -48,21 +53,36 @@ python evaluate.py \
 ```
 
 Arguments:
+
 - `--output_dir`: Directory for output files
 - `--gold_dir`: Directory for gold files
-- `--eval_json`: Path to the evaluation configuration file 
+- `--eval_json`: Path to the evaluation configuration file
 - `--result_file`: Path to the result file
 - `--timeout_seconds`: Timeout in seconds for each evaluation
 
 ### Get Full Dataset
+
 We provide 100 examples of the dataset in the source folder. To get the full dataset, follow the instructions below:
-* Download the source data from [here]()
+
+* Download the source data from [here](https://drive.google.com/file/d/1ZGi0iNv797OneK_b2l2thJCulP6NUf7v/view?usp=sharing)
+
+  > You can also use `gdown` liberay to download the gold data:
+  > First, `pip install gdown`
+  > Then, run command `gdown "https://drive.google.com/uc?id=1ZGi0iNv797OneK_b2l2thJCulP6NUf7v" -O source.zip`
+  >
 * Unzip the dataset to da_code/source
+
 ```bash
 unzip source.zip -d da_code/source
 ```
-* Download the gold data from [here]()
+
+* Download the gold data from [here](https://drive.google.com/file/d/1OkC1a6BZnjO8eQ8X-0ZgAmIs9jvfjdLM/view?usp=sharing)
+  > You can also use `gdown` liberay to download the gold data:
+  > First, `pip install gdown`
+  > Then, run command `gdown "https://drive.google.com/uc?id=1OkC1a6BZnjO8eQ8X-0ZgAmIs9jvfjdLM" -O gold.zip`
+  >
 * Unzip the gold data to da_code/gold
+
 ```bash
 unzip gold.zip -d da_code/gold
 ```
