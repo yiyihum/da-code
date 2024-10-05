@@ -101,9 +101,6 @@ class Evaluator:
         #         output_results = [trajectory_info["result"]]
         #     gold_results = expected           
         
-        import pdb
-        
-        pdb.set_trace()
         metric: Metric = [getattr(metrics, func) for func in eval_config["func"]] \
             if isinstance(eval_config["func"], list)\
             else [getattr(metrics, eval_config["func"])]
