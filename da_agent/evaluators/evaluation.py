@@ -57,11 +57,12 @@ class Evaluator:
         output_id_dir = os.path.join(self.output_dir, id)
 
         result_file = os.path.join(output_id_dir, 'dabench', 'result.json')
-        if not os.path.exists(result_file):
+        
+        # if not os.path.exists(result_file):
             # print(f"File {result_file} not found")
-            return id, False, None, None
-        trajectory_info = self._get_trajectory_info_from_json(result_file)
-
+        #    return id, False, None, None
+        # trajectory_info = self._get_trajectory_info_from_json(result_file)
+       
         gold_id_dir = os.path.join(self.gold_dir, id)
         config = eval_config.get('config', {})
         hardness = config.get('hardness', "none")
@@ -208,6 +209,7 @@ class Evaluator:
         pbar = tqdm(total=len(env_configs))
 
         for eval_config in env_configs:
+            
             id, exist, trajectory_info, eval_info = self._get_eval_config_info(eval_config)
             pbar.set_description(f"Processing Task id: {id}")
             pbar.update(1)
@@ -231,6 +233,7 @@ class Evaluator:
                 with timeout(self.timeout_second,"Action execution time exceeded!"):
                     scores = []
                     info = []
+                    
                     for idx, metric in enumerate(metric_list):
                         try:
                             output_result = output_results[idx]
@@ -238,6 +241,7 @@ class Evaluator:
                             if config:
                                 config_copy = {"config": config}
                                 metric_options[idx].update(config_copy)
+                            
                             result = metric(output_result, gold_result,**metric_options[idx])
                         except FileNotFoundError as e:
                             logging.error(f"File not found! Error: {e}")

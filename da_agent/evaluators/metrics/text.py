@@ -104,6 +104,7 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
         if match:
             json_str = match.group()
             try:
+                print(json_str)
                 json_data = json.loads(json_str)
                 return json_data
             except json.JSONDecodeError:
@@ -122,7 +123,6 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
                 try:
                     with open(expect, 'r') as f:
                         content = f.read()
-                        # 将单引号替换为双引号
                         content = content.replace("'", '"')
                         return json.loads(content)
                 except Exception as e:
@@ -136,6 +136,19 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
     expected = list(filter(lambda x: x is not None, map(select_expected, expected)))
     result = result if isinstance(result, list) else [result]
     result = list(filter(lambda x: x is not None, map(select_expected, result)))
+    if len(result) < 1:
+        return None
+    if len(result) == 1 and isinstance(result[0], list):
+        if len(result[0]) < 1:
+            return None
+        find_dict = False
+        for answer in result[0]:
+            if isinstance(answer, dict):
+                result = [answer]
+                find_dict = True
+                break
+        if not find_dict:
+            return None
     score_rule = options.get('score_rule', ['all']*len(expected))
     ignore_order = options.get('ignore_order', [False]*len(expected))
     tolerance = 1e-3

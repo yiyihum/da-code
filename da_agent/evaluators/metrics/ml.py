@@ -88,13 +88,7 @@ def compare_ml(result: str, expected: str| List[str]=[], **kwargs) -> dict:
         return output_ml
     
     if scale:
-        is_lower_metric = metric.lower() in LOWER_METRICS
-        if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
-            score = 1.0
-        elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
-            score = 0.0
-        else:
-            score = (score - lower_bound) / (upper_bound - lower_bound)
+        score = min(max((score - lower_bound) / (upper_bound - lower_bound), 0), 1)
         output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
 
     output_ml['errors'].extend(output['errors'])
@@ -160,13 +154,7 @@ def compare_competition_ml(result: str, expected: str|List[str], **kwargs) -> di
             return output_ml
     
     if scale:
-        is_lower_metric = metric.lower() in LOWER_METRICS
-        if (is_lower_metric and score <= lower_bound) or (not is_lower_metric and score >= upper_bound):
-            score = 1.0
-        elif (is_lower_metric and score >= upper_bound) or (not is_lower_metric and score <= lower_bound):
-            score = 0.0
-        else:
-            score = (score - lower_bound) / (upper_bound - lower_bound)
+        score = min(max((score - lower_bound) / (upper_bound - lower_bound), 0), 1)
         output_ml.update({'upper_bound': upper_bound, 'lower_bound': lower_bound})
 
     output_ml['errors'].extend(output['errors'])
