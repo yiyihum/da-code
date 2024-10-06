@@ -22,12 +22,8 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
     big_types = ["EDA" if t in eda else t for t in types]
     plot = ["line","pie","bar","scatter"]
     result_type = ["plot" if t in plot else t for t in result_type]
-    # 统计不同类型的任务的分数，完成度
     df = pd.DataFrame({"type": types, "score": scores, "finished": finished, "hardness": hardness, "big_type": big_types,"result_type": result_type})
-    print(df.groupby("type").agg({"score": "mean", "finished": "mean"}))
-    print(df.groupby("hardness").agg({"score": "mean", "finished": "mean"}))
-    print(df.groupby("big_type").agg({"score": "mean", "finished": "mean"}))
-    print(df.groupby("result_type").agg({"score": "mean", "finished": "mean"}))
+    
     average_score = sum(scores) / num_results
     average_finished = sum(finished) / num_results
     results_json = {"num_results": num_results, "average_score": average_score, "results": results_infos, "average_finished": average_finished}
@@ -35,7 +31,15 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
     print(f"Average score: {average_score}")
     print(f"Average finished: {average_finished}")
 
-    
+    print("====================================")
+    print(df.groupby("type").agg({"score": "mean", "finished": "mean"}))
+    print("-------------------------------")
+    print(df.groupby("hardness").agg({"score": "mean", "finished": "mean"}))
+    print("-------------------------------")
+    print(df.groupby("big_type").agg({"score": "mean", "finished": "mean"}))
+    print("-------------------------------")
+    print(df.groupby("result_type").agg({"score": "mean", "finished": "mean"}))
+
     # Ensure the directory exists before writing to the file
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, 'w') as json_file:
@@ -46,7 +50,7 @@ def parse_arguments():
     parser.add_argument("--output_dir", type=str, required=True, help="Directory for output files")
     parser.add_argument("--gold_dir", type=str, default="da_code/gold", help="Directory containing gold standard files")
     parser.add_argument("--eval_json", type=str, required=True, help="JSON file with evaluation configurations")
-    parser.add_argument("--result_file", type=str, required=True, help="File to write evaluation results to")
+    parser.add_argument("--result_dir", type=str, default="results", help="Directory to write evaluation results to")
     parser.add_argument("--timeout_seconds", type=int, default=300, help="Timeout for each evaluation in seconds")
     return parser.parse_args()
 

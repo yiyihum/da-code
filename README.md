@@ -5,7 +5,7 @@
 ### Install required packages
 
 ```bash
-bash requirements.sh
+pip install -r requirements.txt
 ```
 
 ### Set LLM API Key
@@ -57,7 +57,7 @@ Arguments:
 - `--output_dir`: Directory for output files
 - `--gold_dir`: Directory for gold files
 - `--eval_json`: Path to the evaluation configuration file
-- `--result_file`: Path to the result file
+- `--result_dir`: Directory to save the evaluation results
 - `--timeout_seconds`: Timeout in seconds for each evaluation
 
 ### Get Full Dataset

@@ -9,3 +9,5 @@ output_dw.zip
 da_code/gold/*
 da_code/source/*
 output/*
+results/*
+*examples.jsonl
