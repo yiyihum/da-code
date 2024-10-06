@@ -163,7 +163,7 @@
 {"id": "data-wrangling-011", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-012", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["2020Q4.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-013", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["result.csv"]}], "options": [{"condition_cols": [1, 2, 9], "ignore_order": true}]}
-{"id": "data-wrangling-014", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_sqlite"], "result": [{"file": ["parking_violation.db"]}], "options": [{"cleaned_condition_cols": [[1]], "ignore_order": [true]}]}
+{"id": "data-wrangling-014", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_sqlite"], "result": [{"file": ["cleaned_parking_violation.db"]}], "options": [{"cleaned_condition_cols": [[1]], "ignore_order": [true]}]}
 {"id": "data-wrangling-015", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_data.csv"]}], "options": [{"condition_cols": [10, 11, 12], "ignore_order": true}]}
 {"id": "data-wrangling-016", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_data.csv"]}], "options": [{"condition_cols": [5], "ignore_order": true}]}
 {"id": "data-wrangling-017", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_parking_violation.csv"]}], "options": [{"condition_cols": [1, 2, 3], "ignore_order": true}]}
@@ -182,7 +182,7 @@
 {"id": "data-wrangling-030", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_RI-clean.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-031", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["Building_Permits.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-032", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_parking_violation.csv"]}], "options": [{"condition_cols": [1], "ignore_order": true}]}
-{"id": "data-wrangling-033", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_sqlite"], "result": [{"file": ["travel.sqlite"]}], "options": [{"ignore_order": true}]}
+{"id": "data-wrangling-033", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_sqlite"], "result": [{"file": ["travel.sqlite"]}], "options": [{"ignore_order": [true,true,true,true,true,true,true,true]}]}
 {"id": "data-wrangling-034", "config": {"task": "data wrangling", "hardness": "Hard"}, "func": ["compare_csv"], "result": [{"file": ["laptop_cleaned.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-035", "config": {"task": "data wrangling", "hardness": "Easy"}, "func": ["compare_csv"], "result": [{"file": ["RI-clean.csv"]}], "options": [{"ignore_order": true}]}
 {"id": "data-wrangling-036", "config": {"task": "data wrangling", "hardness": "Medium"}, "func": ["compare_csv"], "result": [{"file": ["cleaned_data.csv"]}], "options": [{"ignore_order": true}]}

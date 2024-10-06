@@ -208,6 +208,9 @@ class CalculateML:
         def is_label_encoder_fitted(le):
             return hasattr(le, 'classes_')
         def convert_to_numeric(input):
+            if isinstance(input, pd.DataFrame):
+                return {col: convert_to_numeric(input[col]) for col in input.columns}
+    
             if 'float' in str(input.dtype):
                 return list(input.astype(int))
             elif 'int' in str(input.dtype):

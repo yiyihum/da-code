@@ -161,7 +161,7 @@ def compare_csv(result: str, expected, **options) -> float:
     return max(output)
 
 
-def compare_sqlite(result: str, expected, **options) -> float:
+def compare_sqlite(result: str, expected: str, **options) -> float:
     """ 
     @args:
         result(str): the pred database
@@ -175,13 +175,11 @@ def compare_sqlite(result: str, expected, **options) -> float:
     @return:
         score
     """
-    if isinstance(expected, List):
-        condition_cols = options.get('condition_cols', [[]]*len(expected))
-        ignore_order = options.get('ignore_order', [False]*len(expected))
-    elif isinstance(expected, str):
-        condition_cols = [options.get('condition_cols', [])]
-        ignore_order = [options.get('ignore_order', False)]
-        expected = [expected]
+    # if isinstance(expected, List):
+    #     condition_cols = options.get('condition_cols', [[]]*len(expected))
+    #     ignore_order = options.get('ignore_order', [False]*len(expected))
+    # elif isinstance(expected, str):
+        # expected = [expected]
         
     def convert_to_csvs(db_path, tables):
         """ Convert specified tables in a SQLite database to CSV files and return their paths. """
@@ -191,25 +189,26 @@ def compare_sqlite(result: str, expected, **options) -> float:
         try:
             for table_name in tables:
                 df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-                csv_path = os.path.join(csv_dir, f"{table_name}.csv")
+                csv_path = os.path.join(csv_dir, f"_{table_name}.csv")
                 df.to_csv(csv_path, index=False)
                 csv_paths.append(csv_path)
         finally:
             conn.close()
         return csv_paths
     
-    def convert_to_csvs(db_path, condition_tabs):
-        csv_dir = os.path.dirname(db_path)
-        csv_paths = []
-        conn = sqlite3.connect(db_path)
-        for table_name in condition_tabs:
-            df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-            csv_path = os.path.join(csv_dir, f"{table_name}.csv")
-            df.to_csv(csv_path, index=False)
-            csv_paths.append(csv_path)
-        return csv_paths
+    # def convert_to_csvs(db_path, condition_tabs):
+    #     csv_dir = os.path.dirname(db_path)
+    #     csv_paths = []
+    #     conn = sqlite3.connect(db_path)
+    #     for table_name in condition_tabs:
+    #         df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+    #         csv_path = os.path.join(csv_dir, f"{table_name}.csv")
+    #         df.to_csv(csv_path, index=False)
+    #         csv_paths.append(csv_path)
+    #     return csv_paths
     
     def get_table_names(db_path):
+        assert os.path.exists(db_path)
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
@@ -221,16 +220,22 @@ def compare_sqlite(result: str, expected, **options) -> float:
 
     if condition_tabs == []:
         condition_tabs = get_table_names(expected)
-
+    gold_tables = convert_to_csvs(expected, condition_tabs)
 
     try:
         pred_tables = convert_to_csvs(result, condition_tabs)
     except:
+        condition_tabs = get_table_names(result)
+        pred_tables = convert_to_csvs(result, condition_tabs)
+
+    if len(pred_tables) != len(gold_tables):
         return 0
-    gold_tables = convert_to_csvs(expected, condition_tabs)
-    
+    else:
+        condition_cols = options.get('condition_cols', [[]]*len(gold_tables))
+        ignore_order = options.get('ignore_order', [False]*len(gold_tables))
+
     output_scores = []
-    for i in range(len(pred_tables)):
+    for i in range(len(gold_tables)):
         score = compare_csv(pred_tables[i], gold_tables[i], condition_cols=condition_cols[i], ignore_order=ignore_order[i])
         output_scores.append(score)
 

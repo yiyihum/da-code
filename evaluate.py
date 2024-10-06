@@ -5,7 +5,7 @@ from da_agent.evaluators.evaluation import Evaluator
 import json
 import os
 
-def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds):
+def run_evaluation(output_dir, gold_dir, eval_json, result_dir, timeout_seconds):
     # Initialize the Evaluator with the provided directories
     evaluator = Evaluator(output_dir=output_dir, gold_dir=gold_dir, timeout_seconds=timeout_seconds)
 
@@ -41,7 +41,10 @@ def run_evaluation(output_dir, gold_dir, eval_json, output_file, timeout_seconds
     print(df.groupby("result_type").agg({"score": "mean", "finished": "mean"}))
 
     # Ensure the directory exists before writing to the file
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    os.makedirs(result_dir, exist_ok=True)
+    file_name = output_dir.split("/")[-1]
+    file_name = output_dir.split("/")[-2] if file_name == "" else file_name
+    output_file = os.path.join(result_dir, os.path.basename(output_dir) + ".json")
     with open(output_file, 'w') as json_file:
         json.dump(results_json, json_file, indent=4)
 
@@ -49,14 +52,14 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Run evaluations for NLP models.")
     parser.add_argument("--output_dir", type=str, required=True, help="Directory for output files")
     parser.add_argument("--gold_dir", type=str, default="da_code/gold", help="Directory containing gold standard files")
-    parser.add_argument("--eval_json", type=str, required=True, help="JSON file with evaluation configurations")
+    parser.add_argument("--eval_json", type=str, default="da_code/configs/eval/eval_all.jsonl", help="JSON file with evaluation configurations")
     parser.add_argument("--result_dir", type=str, default="results", help="Directory to write evaluation results to")
     parser.add_argument("--timeout_seconds", type=int, default=300, help="Timeout for each evaluation in seconds")
     return parser.parse_args()
 
 def main():
     args = parse_arguments()
-    run_evaluation(args.output_dir, args.gold_dir, args.eval_json, args.result_file, args.timeout_seconds)
+    run_evaluation(args.output_dir, args.gold_dir, args.eval_json, args.result_dir, args.timeout_seconds)
 
 if __name__ == "__main__":
     main()
