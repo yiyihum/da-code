@@ -76,10 +76,11 @@ We provide 100 examples of the dataset in the source folder. To get the full dat
 unzip source.zip -d da_code/source
 ```
 
-* Download the gold data from [here](https://drive.google.com/file/d/1OkC1a6BZnjO8eQ8X-0ZgAmIs9jvfjdLM/view?usp=sharing)
+* Download the gold data from [here](https://drive.google.com/file/d/1Kz_Ua6NeqiCbE_zLAqKEkQjbgJ7EP4La/view?usp=sharing)
+
   > You can also use `gdown` liberay to download the gold data:
   > First, `pip install gdown`
-  > Then, run command `gdown "https://drive.google.com/uc?id=1OkC1a6BZnjO8eQ8X-0ZgAmIs9jvfjdLM" -O gold.zip`
+  > Then, run command `gdown "https://drive.google.com/uc?`
   >
 * Unzip the gold data to da_code/gold
 
