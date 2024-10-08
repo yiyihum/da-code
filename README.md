@@ -1,10 +1,8 @@
-# DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models
+# [EMNLP 2024]DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models
 
 ## Overview
 
-
 <img src="assets/dacode.png" alt="overview" style="width:100%;" />
-
 
 ## ⚙️ Quickstart
 
@@ -74,7 +72,7 @@ Arguments:
 
 We provide 100 examples of the dataset in the source folder. To get the full dataset, follow the instructions below:
 
-* Download the source data from [here](https://drive.google.com/file/d/1ZGi0iNv797OneK_b2l2thJCulP6NUf7v/view?usp=sharing)
+* Download the **source data** from [here](https://drive.google.com/file/d/1ZGi0iNv797OneK_b2l2thJCulP6NUf7v/view?usp=sharing)
 
   > You can also use `gdown` liberay to download the gold data:
   > First, `pip install gdown`
@@ -86,7 +84,7 @@ We provide 100 examples of the dataset in the source folder. To get the full dat
 unzip source.zip -d da_code/source
 ```
 
-* Download the gold data from [here](https://drive.google.com/file/d/1Kz_Ua6NeqiCbE_zLAqKEkQjbgJ7EP4La/view?usp=sharing)
+* Download the **gold data** from [here](https://drive.google.com/file/d/1Kz_Ua6NeqiCbE_zLAqKEkQjbgJ7EP4La/view?usp=sharing)
 
   > You can also use `gdown` liberay to download the gold data:
   > First, `pip install gdown`
