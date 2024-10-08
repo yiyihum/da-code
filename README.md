@@ -3,7 +3,7 @@
 ## Overview
 
 
-<img src="assets/dataset.png" alt="overview" style="width:90%;" />
+<img src="assets/dataset.png" alt="overview" style="width:100%;" />
 
 
 ## ⚙️ Quickstart
