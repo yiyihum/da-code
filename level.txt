@@ -1,8 +1,0 @@
-Classfication,Easy,Medium,Hard,Total
-DM,17,33,23,73
-DI,13,61,5,79
-SA,12,48,10,70
-DV,12,52,14,78
-ML,32,34,34,100
-DW,19,64,17,100
-total,105,292,103,500

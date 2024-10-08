@@ -1,6 +1,16 @@
 # DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models
 
+## Overview
+
+
+<img src="assets/overview.png" alt="overview" style="width:50%;" />
+
+
 ## ⚙️ Quickstart
+
+### Install Docker
+
+Our agent and experiments need to run in a sandbox environment using Docker, so please follow the instructions in the [Docker setup guide](https://docs.docker.com/engine/install/) to install Docker on your machine.
 
 ### Install required packages
 
