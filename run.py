@@ -113,7 +113,7 @@ def test(
     
     ## load task configs
     assert os.path.exists(args.task_config) and args.task_config.endswith(".jsonl"), f"Invalid task_config, must be a valid jsonl file: {args.task_config}"
-    with open(args.task_config, "r") as f:
+    with open(args.task_config, "r", encoding="utf-8") as f:
         task_configs = [json.loads(line) for line in f]
     if args.example_name != "":
         task_configs = [task for task in task_configs if args.example_name in task["id"]]
