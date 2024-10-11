@@ -95,3 +95,17 @@ unzip source.zip -d da_code/source
 ```bash
 unzip gold.zip -d da_code/gold
 ```
+
+## BibTex
+
+```
+@misc{huang2024dacodeagentdatascience,
+      title={DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models}, 
+      author={Yiming Huang and Jianwen Luo and Yan Yu and Yitong Zhang and Fangyu Lei and Yifan Wei and Shizhu He and Lifu Huang and Xiao Liu and Jun Zhao and Kang Liu},
+      year={2024},
+      eprint={2410.07331},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.07331}, 
+}
+```
