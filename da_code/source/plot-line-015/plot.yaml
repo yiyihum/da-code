@@ -1,9 +1,7 @@
-figsize: [12, 6]
-graph_title: "Cumulative Returns Over Time"
-labels:
-  - "Cumulative EW"
-  - "Cumulative MCap"
-  - "Cumulative MSR"
-  - "Cumulative GMV"
+color: ["#1f77b4"]
+figsize: [14.0, 6.0]
+graph_title: "Number of visitors to Avila Adobe Museum from 2014 to 2019"
+labels: ["Avila Adobe"]
 x_label: "Date"
-y_label: "Cumulative Returns"
+y_label: "Avila Adobe"
+xtick_labels: ["2013", "2014", "2015", "2016", "2017", "2018", "2019"]
