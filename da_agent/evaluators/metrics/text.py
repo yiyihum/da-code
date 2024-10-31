@@ -1,5 +1,5 @@
 from typing import Dict, List,  Union
-import json, re
+import json5, re, json
 
 
 class CalculateText:
@@ -20,6 +20,7 @@ class CalculateText:
         ignore_order = kwargs.get("ignore_order", False)
         if len(gold_var) != len(ref_var):
             return 0.0
+        ignore_order = ignore_order[0] if isinstance(ignore_order, list) else ignore_order
         if ignore_order:
             gold_var, ref_var = (
                 sorted(gold_var, 
@@ -27,13 +28,16 @@ class CalculateText:
                 sorted(ref_var, 
                     key=lambda x: (x is None, str(x), isinstance(x, (int, float))))
                 )
+        list_scores = []
         for var1, var2 in zip(gold_var, ref_var):
             if type(var1) != type(var2):
                 return 0.0
             gold_type = type(var1).__name__
             calculate_func = getattr(cls, f'calculate_{gold_type.lower()}')
-            return calculate_func(var1, var2, **kwargs) if calculate_func \
-                else 0.0
+            list_scores.append(calculate_func(var1, var2, **kwargs) if calculate_func \
+                else 0.0)
+        return 1.0 if all(list_scores) and len(list_scores) > 0 else 0.0
+    
     @classmethod
     def calculate_dict(cls, gold_var, ref_var, **kwargs):
         if gold_var.keys() != ref_var.keys():
@@ -55,13 +59,16 @@ class CalculateText:
             "ignore_order": ignore_order_,
             "tolerance": tolerance_
         }
+        gold_dict_lower = {k.lower().strip(): v for k, v in gold_dict.items()}
+        ref_dict_lower = {k.lower().strip(): v for k, v in ref_dict.items()}
         scores =[]
-        for keys, gold_value in gold_dict.items():
-            if not keys in ref_dict.keys():
+        for keys, gold_value in gold_dict_lower.items():
+            
+            if not keys in ref_dict_lower.keys():
                 scores.append(0.0)
                 continue
             type_var = type(gold_value).__name__
-            ref_value = ref_dict[keys]
+            ref_value = ref_dict_lower[keys]
             try:
                 ref_value = type(gold_value)(ref_value)
             except:
@@ -93,6 +100,7 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
             - ignore_order(bool|List(bool)): whether to ignore the order of the rows
             - total_scores(int|List(int)): the total scores for the answer, mostly 1
     """
+
     output_result = {}
     expected = expected \
         if isinstance(expected, list) else [expected]
@@ -100,14 +108,14 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
         raise TypeError("No dictionary type elements found in the expected list")
     
     def text2json(text: str):
-        match = re.search(r'\{.*\}', text)
+        match = re.search(r'\{.*\}', text, re.DOTALL)
         if match:
             json_str = match.group()
             try:
-                print(json_str)
-                json_data = json.loads(json_str)
+
+                json_data = json5.loads(json_str)
                 return json_data
-            except json.JSONDecodeError:
+            except json5.JSONDecodeError:
                 return None   
         else:
             return None
@@ -136,6 +144,7 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
     expected = list(filter(lambda x: x is not None, map(select_expected, expected)))
     result = result if isinstance(result, list) else [result]
     result = list(filter(lambda x: x is not None, map(select_expected, result)))
+
     if len(result) < 1:
         return None
     if len(result) == 1 and isinstance(result[0], list):
@@ -153,6 +162,8 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
     ignore_order = options.get('ignore_order', [False]*len(expected))
     tolerance = 1e-3
     
+    print(expected)
+    print(result)
     output_result["options"] = {"score_rule": score_rule, 
         "ignore_order": ignore_order}
     
