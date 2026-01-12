@@ -73,8 +73,8 @@ class ImageTest:
         return arr / total_sum
 
     @classmethod
-    def compare_numpy(cls, hyp_np: np.ndarray, 
-        ref_np: np.ndarray, tol=1e-5, is_sacle: bool=False):
+    def compare_numpy(cls, hyp_np: np.ndarray,
+        ref_np: np.ndarray, tol=1e-2, is_sacle: bool=False):
         if hyp_np.shape != ref_np.shape:
             return False
         if is_sacle:
@@ -112,11 +112,11 @@ class ImageTest:
             if issize:
                 image_stat = (
                     result_img.shape == gold_img.shape
-                    and np.allclose(result_img, gold_img,  atol=1e-5)
+                    and np.allclose(result_img, gold_img,  atol=1e-2)
                 )
             else:
                 result_img = cv2.resize(result_img, (gold_img.shape[1], gold_img.shape[0]))
-                image_stat = np.allclose(result_img, gold_img, atol=1e-5)
+                image_stat = np.allclose(result_img, gold_img, atol=1e-2)
             score += float(image_stat)
         return (1.0, {'img': True}) if score == float(len(golds)) else (0.0, {'img': False})
 

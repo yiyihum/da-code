@@ -79,6 +79,18 @@ class DA_Agent_Env(gym.Env):
         
         dir = os.path.join(self.source_dir, self.task_id)
         assert os.path.isdir(dir), f"Task directory {dir} does not exist."
+        
+        # Record source file names before copying
+        self.source_files = set()
+        for root, dirs, files in os.walk(dir):
+            # Skip dabench directory if it exists in source
+            if 'dabench' in dirs:
+                dirs.remove('dabench')
+            for f in files:
+                rel_path = os.path.relpath(os.path.join(root, f), dir)
+                self.source_files.add(rel_path)
+        logger.info(f"Recorded {len(self.source_files)} source files")
+        
         self.setup_controller.setup_cp_dir(dir)
         self.init_files_hash = self._get_env_files_hash()
         time.sleep(2)
@@ -241,6 +253,41 @@ class DA_Agent_Env(gym.Env):
                     if init_file_dict[file_path] != calculate_sha256(file_path):
                         changed_files_list.append(file_path)
         return {"added_files": added_files_list, "changed_files": changed_files_list}
+    
+    def _cleanup_source_files(self):
+        """Remove source files from output directory to save memory."""
+        if not hasattr(self, 'source_files'):
+            return
+        
+        cleanup_enabled = os.environ.get('DA_CLEANUP_SOURCE_FILES', 'true').lower() == 'true'
+        if not cleanup_enabled:
+            logger.info("Source file cleanup is disabled")
+            return
+            
+        removed_count = 0
+        for rel_path in self.source_files:
+            file_path = os.path.join(self.mnt_dir, rel_path)
+            if os.path.exists(file_path):
+                try:
+                    os.remove(file_path)
+                    removed_count += 1
+                    logger.debug(f"Removed source file: {rel_path}")
+                except Exception as e:
+                    logger.warning(f"Failed to remove {rel_path}: {e}")
+        
+        # Clean up empty directories (but keep dabench directory)
+        for root, dirs, files in os.walk(self.mnt_dir, topdown=False):
+            # Skip dabench directory and mnt_dir itself
+            if root == self.mnt_dir or root.endswith('/dabench') or '/dabench/' in root:
+                continue
+            if not files and not dirs:
+                try:
+                    os.rmdir(root)
+                    logger.debug(f"Removed empty directory: {root}")
+                except:
+                    pass
+                    
+        logger.info(f"Cleaned up {removed_count} source files from output directory")
         
     # def evaluate(self):
     #     """

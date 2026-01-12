@@ -87,12 +87,30 @@ def test(
     # log args
     logger.info("Args: %s", args)
 
-    if args.suffix == "":
-        logger.warning("No suffix is provided, the experiment id will be the model name.")
-        experiment_id = args.model.split("/")[-1]
+    import uuid
+    
+    # 先检查是否已有相同 suffix 的实验在输出目录中
+    existing_experiment_id = None
+    if args.suffix != "":
+        # 尝试查找已存在的具有相同 suffix 前缀的实验
+        expected_prefix = args.model.split("/")[-1] + "-" + args.suffix + "-"
+        if os.path.exists(args.output_dir):
+            for item in os.listdir(args.output_dir):
+                if item.startswith(expected_prefix) and os.path.isdir(os.path.join(args.output_dir, item)):
+                    existing_experiment_id = item
+                    logger.info("Reusing existing experiment ID: %s", existing_experiment_id)
+                    break
+    
+    if existing_experiment_id:
+        experiment_id = existing_experiment_id
     else:
-        experiment_id = args.model.split("/")[-1] + "-" + args.suffix
-
+        # 如果没有找到，创建新的
+        if args.suffix == "":
+            logger.warning("No suffix is provided, the experiment id will be the model name.")
+            experiment_id = args.model.split("/")[-1] + "-" + uuid.uuid4().hex[:8]
+        else:
+            experiment_id = args.model.split("/")[-1] + "-" + args.suffix + "-" + uuid.uuid4().hex[:8]
+        
     env_config = \
     {
         "image_name": "da_agent-image",
@@ -130,20 +148,60 @@ def test(
         instance_id = experiment_id +"/"+ task_config["id"]
         output_dir = os.path.join(args.output_dir, instance_id)
         result_json_path =os.path.join(output_dir, "dabench/result.json")
-        if not args.overwriting and os.path.exists(result_json_path):
-            logger.info("Skipping %s", instance_id)
+        
+        # 检查是否已经有完成的结果（包括其他实验ID的运行）
+        skip_task = False
+        existing_result = None
+        existing_result_path = None
+        
+        if not args.overwriting:
+            # 首先检查当前路径
+            if os.path.exists(result_json_path):
+                with open(result_json_path, "r") as f:
+                    existing_result = json.load(f)
+                existing_result_path = result_json_path
+            else:
+                # 查找是否有其他实验已经完成了这个任务
+                # 获取模型名称（从实验ID中提取）
+                model_name = experiment_id.split("-")[0]
+                # 在当前输出目录的父目录中搜索
+                parent_dir = os.path.dirname(output_dir)
+                if os.path.exists(parent_dir):
+                    for exp_dir in os.listdir(parent_dir):
+                        exp_path = os.path.join(parent_dir, exp_dir)
+                        if os.path.isdir(exp_path):
+                            task_result_path = os.path.join(exp_path, task_config["id"], "dabench/result.json")
+                            if os.path.exists(task_result_path):
+                                try:
+                                    with open(task_result_path, "r") as f:
+                                        result = json.load(f)
+                                        existing_result = result
+                                        existing_result_path = task_result_path
+                                        break
+                                except:
+                                    pass
+            
+            # 决定是否跳过
+            if existing_result:
+                if args.retry_failed:
+                    # 如果设置了 retry_failed，只有成功的任务才跳过
+                    if existing_result.get("finished") and not "FAIL" in existing_result.get("result", "") and not "error" in existing_result.get("result", "").lower():
+                        logger.info("Skipping %s (already succeeded in %s)", instance_id, existing_result_path)
+                        skip_task = True
+                    else:
+                        logger.info("Retrying %s (failed previously in %s)", instance_id, existing_result_path)
+                else:
+                    # 否则，任何已存在的结果都跳过
+                    logger.info("Skipping %s (already exists in %s)", instance_id, existing_result_path)
+                    skip_task = True
+        
+        if skip_task:
             continue
-        elif os.path.exists(result_json_path):
+            
+        if os.path.exists(result_json_path):
             logger.info("Overwriting %s", instance_id)
         else:
             logger.info("Running %s", instance_id)
-        if args.retry_failed and os.path.exists(result_json_path):
-            with open(result_json_path, "r") as f:
-                result = json.load(f)
-                if result["finished"] and (not "FAIL" in result["result"]) and (not "error" in result["result"].lower()):
-                    logger.info("Skipping %s", instance_id)
-                    continue
-            logger.info("Retrying %s", instance_id)
             
         if os.path.exists(output_dir):
             os.system(f"rm -rf {output_dir}")
@@ -168,6 +226,10 @@ def test(
 
         os.makedirs(os.path.join(output_dir, "dabench"), exist_ok=True)
         result_files = env.post_process()
+        
+        # Clean up source files before saving results
+        env._cleanup_source_files()
+        
         dabench_result = {"finished": done, "steps": len(trajectory["trajectory"]),
                            "result": result_output,"result_files": result_files, **trajectory}
         with open(os.path.join(output_dir, "dabench/result.json"), "w") as f:

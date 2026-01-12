@@ -54,7 +54,7 @@ def parse_arguments():
     parser.add_argument("--gold_dir", type=str, default="da_code/gold", help="Directory containing gold standard files")
     parser.add_argument("--eval_json", type=str, default="da_code/configs/eval/eval_all.jsonl", help="JSON file with evaluation configurations")
     parser.add_argument("--result_dir", type=str, default="results", help="Directory to write evaluation results to")
-    parser.add_argument("--timeout_seconds", type=int, default=300, help="Timeout for each evaluation in seconds")
+    parser.add_argument("--timeout_seconds", type=int, default=10, help="Timeout for each evaluation in seconds")
     return parser.parse_args()
 
 def main():

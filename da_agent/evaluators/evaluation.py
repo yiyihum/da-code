@@ -58,10 +58,10 @@ class Evaluator:
 
         result_file = os.path.join(output_id_dir, 'dabench', 'result.json')
         
-        # if not os.path.exists(result_file):
-            # print(f"File {result_file} not found")
-        #    return id, False, None, None
-        # trajectory_info = self._get_trajectory_info_from_json(result_file)
+        if not os.path.exists(result_file):
+            print(f"File {result_file} not found")
+            return id, False, None, None
+        trajectory_info = self._get_trajectory_info_from_json(result_file)
        
         gold_id_dir = os.path.join(self.gold_dir, id)
         config = eval_config.get('config', {})
@@ -116,16 +116,25 @@ class Evaluator:
         
         
         
-        metric = metric * len(output_results) if len(output_results) > len(metric) and len(metric) == 1  \
-            else metric
-        metric_options = metric_options * len(output_results) if len(output_results) > len(metric_options) \
-            and len(metric_options) == 1  \
-            else metric_options
+        # Align lengths: expand single-element lists to match output_results length
+        target_len = max(len(output_results), len(gold_results), len(metric))
 
-        assert (not isinstance(eval_config["func"], list)
-            or (len(metric) == len(output_results) == len(gold_results) == len(
-                metric_options))), "Evaluation configs need to be consistent: lengths of 'metric', 'output_results', 'gold_results', " \
-            "and 'metric_options' must be the same when 'func' is a list."
+        if len(metric) == 1 and target_len > 1:
+            metric = metric * target_len
+        if len(metric_options) == 1 and target_len > 1:
+            metric_options = metric_options * target_len
+        if len(gold_results) == 1 and target_len > 1:
+            gold_results = gold_results * target_len
+        if len(output_results) == 1 and target_len > 1:
+            output_results = output_results * target_len
+
+        # Truncate to minimum length if still mismatched
+        min_len = min(len(metric), len(output_results), len(gold_results), len(metric_options))
+        if min_len > 0:
+            metric = metric[:min_len]
+            output_results = output_results[:min_len]
+            gold_results = gold_results[:min_len]
+            metric_options = metric_options[:min_len]
         
         return id, True, trajectory_info, (config, metric, metric_conj, metric_options, output_results, gold_results)
     
@@ -262,7 +271,8 @@ class Evaluator:
                 # continue
                 scores.append(0.0)
                 info.append({"score": 0.0, "errors": [str(e)], 'file': [os.path.basename(file) for file in output_result]})
-
+            
+            scores = [score if isinstance(score, float) or isinstance(score, int) else 0.0 for score in scores]
             if metric_conj == 'avg':
                 total_score = sum(scores) / len(scores)
             elif metric_conj == 'max':

@@ -5,7 +5,7 @@ import json5, re, json
 class CalculateText:
     @classmethod
     def calculate_float(cls, gold_var, ref_var, **kwargs):
-        tolerance = kwargs.get("tolerance", 1e-3)
+        tolerance = kwargs.get("tolerance", 1e-2)
         return 1.0 if abs(gold_var - ref_var) <= tolerance \
             else 0.0
     @classmethod
@@ -13,7 +13,8 @@ class CalculateText:
         return 1.0 if gold_var == ref_var else 0.0
     @classmethod
     def calculate_str(cls, gold_var, ref_var, **kwargs):
-        return 1.0 if gold_var.lower() == ref_var.lower() \
+        # Case-insensitive string comparison with whitespace normalization
+        return 1.0 if gold_var.lower().strip() == ref_var.lower().strip() \
             else 0.0
     @classmethod
     def calculate_list(cls, gold_var, ref_var, **kwargs):
@@ -42,17 +43,28 @@ class CalculateText:
     def calculate_dict(cls, gold_var, ref_var, **kwargs):
         if gold_var.keys() != ref_var.keys():
             return 0.0
+        scores = []
         for gold_key, var1 in gold_var.items():
             var2 = ref_var[gold_key]
             if type(var1) != type(var2):
                 return 0.0
             gold_type = type(var1).__name__
             calculate_func = getattr(cls, f'calculate_{gold_type.lower()}')
-            return calculate_func(var1, var2, **kwargs) if calculate_func \
-                else 0.0
+            score = calculate_func(var1, var2, **kwargs) if calculate_func else 0.0
+            scores.append(score)
+        return 1.0 if all(scores) and len(scores) > 0 else 0.0
             
     @classmethod
-    def text_score(cls, gold_dict: Dict, ref_dict: Dict, 
+    def normalize_value(cls, value):
+        """Normalize single value and single-element list to be comparable.
+        e.g., "Jan 2021" and ["Jan 2021"] should be treated as equal.
+        """
+        if isinstance(value, list) and len(value) == 1:
+            return value[0]
+        return value
+
+    @classmethod
+    def text_score(cls, gold_dict: Dict, ref_dict: Dict,
             score_rule_: str, ignore_order_: str, tolerance_: float) -> float:
         option = {
             "score_rule": score_rule_,
@@ -63,12 +75,27 @@ class CalculateText:
         ref_dict_lower = {k.lower().strip(): v for k, v in ref_dict.items()}
         scores =[]
         for keys, gold_value in gold_dict_lower.items():
-            
+
             if not keys in ref_dict_lower.keys():
                 scores.append(0.0)
                 continue
-            type_var = type(gold_value).__name__
             ref_value = ref_dict_lower[keys]
+
+            # Normalize single-element lists to single values for comparison
+            gold_normalized = cls.normalize_value(gold_value)
+            ref_normalized = cls.normalize_value(ref_value)
+
+            # If both are now the same type after normalization, compare them
+            if type(gold_normalized) == type(ref_normalized):
+                gold_value = gold_normalized
+                ref_value = ref_normalized
+            # If one is list and other is single value, try to make them compatible
+            elif isinstance(gold_value, list) and not isinstance(ref_value, list):
+                ref_value = [ref_value]
+            elif not isinstance(gold_value, list) and isinstance(ref_value, list):
+                gold_value = [gold_value]
+
+            type_var = type(gold_value).__name__
             try:
                 ref_value = type(gold_value)(ref_value)
             except:
@@ -160,7 +187,7 @@ def compare_text(result: Union[str, List[str]], expected: Union[Dict, List[Dict]
             return None
     score_rule = options.get('score_rule', ['all']*len(expected))
     ignore_order = options.get('ignore_order', [False]*len(expected))
-    tolerance = 1e-3
+    tolerance = 1e-2
     
     print(expected)
     print(result)

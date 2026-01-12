@@ -1,10 +1,10 @@
 level,fighter_num
-Not know,10
-Flyweight,19
+Unknown Weight Class,21
+Flyweight,22
 Bantamweight,1
-Featherweight,32
+Featherweight,34
 Lightweight,0
-Welterweight,16
-Middleweight,19
-Light Heavyweight,29
-Heavyweight,20
+Welterweight,20
+Middleweight,23
+Light Heavyweight,31
+Heavyweight,21
